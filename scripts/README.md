@@ -39,3 +39,41 @@ Lần chạy đầu tiên tool sẽ tự kiểm tra/cài:
 - Chromium browser cho Playwright.
 
 Nếu Windows chặn PowerShell script, vẫn chạy bằng `run-test-tool.cmd` vì file này đã bật `ExecutionPolicy Bypass` cho đúng lần chạy tool.
+
+## Tự nhận diện tài liệu mới
+
+Tool tổng tự quét các folder con trong `tai-lieu-test/`.
+
+Một tài liệu mới sẽ tự hiện thành option nếu có cấu trúc tối thiểu:
+
+```text
+tai-lieu-test/quan-ly-nhan-vien/
+  test/
+    *.spec.js
+```
+
+Tool cũng nhận `tests/*.spec.js`. Nếu folder có `playwright.config.js` riêng thì tool dùng config riêng; nếu chưa có thì dùng `playwright.dynamic.config.js` ở root.
+
+Nếu có thêm file này thì macOS/Linux sẽ ưu tiên chạy runner riêng:
+
+```text
+tai-lieu-test/quan-ly-nhan-vien/scripts/run-playwright-report-tests.sh
+```
+
+Trên Windows, tool sẽ chạy trực tiếp:
+
+```bat
+npx playwright test --config tai-lieu-test/quan-ly-nhan-vien/playwright.config.js --project=chromium
+```
+
+Sau khi thêm folder mới, có thể chạy ngay:
+
+```bat
+run-test-tool.cmd quan-ly-nhan-vien
+```
+
+Hoặc mở menu:
+
+```bat
+run-test-tool.cmd
+```

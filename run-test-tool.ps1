@@ -4,12 +4,43 @@ param(
 
 $ErrorActionPreference = "Stop"
 $ProjectRoot = $PSScriptRoot
-$OrgRoot = Join-Path $ProjectRoot "tai-lieu-test/01-mo-hinh-to-chuc"
-$ProductRoot = Join-Path $ProjectRoot "tai-lieu-test/04-quan-ly-san-pham-danh-muc-san-pham"
+$TestRoot = Join-Path $ProjectRoot "tai-lieu-test"
 
 Set-Location $ProjectRoot
 
 & (Join-Path $ProjectRoot "scripts/bootstrap-env.ps1")
+
+function Get-DocDirs {
+  Get-ChildItem -Path $TestRoot -Directory |
+    Where-Object {
+      (Test-Path (Join-Path $_.FullName "playwright.config.js")) -or
+      ($null -ne (Get-ChildItem -Path $_.FullName -Recurse -Depth 2 -File -Include "*.spec.js","*.playwright.js" -ErrorAction SilentlyContinue | Select-Object -First 1))
+    } |
+    Sort-Object Name |
+    ForEach-Object { $_.FullName }
+}
+
+function Get-DocSlug {
+  param([string]$DocDir)
+  Split-Path $DocDir -Leaf
+}
+
+function Get-DocName {
+  param([string]$DocDir)
+
+  $readme = Join-Path $DocDir "README.md"
+  if (Test-Path $readme) {
+    $title = Get-Content $readme |
+      Where-Object { $_ -match "^#\s+" } |
+      Select-Object -First 1
+
+    if (-not [string]::IsNullOrWhiteSpace($title)) {
+      return ($title -replace "^#\s+", "")
+    }
+  }
+
+  return ((Get-DocSlug $DocDir) -replace "^[0-9]+-", "" -replace "-", " ")
+}
 
 function Open-Report {
   param([string]$ReportFile)
@@ -23,45 +54,81 @@ function Open-Report {
 }
 
 function Print-Menu {
+  param([string[]]$DocDirs)
+
   Write-Host ""
   Write-Host "Chon phan he can chay test:"
-  Write-Host "  1) Mo hinh kinh doanh / Mo hinh to chuc"
-  Write-Host "  2) Danh muc san pham / Quan ly san pham"
-  Write-Host "  3) Chay ca 2 phan he"
+  for ($i = 0; $i -lt $DocDirs.Count; $i++) {
+    $number = $i + 1
+    Write-Host "  $number) $(Get-DocName $DocDirs[$i])"
+  }
+  Write-Host "  all) Chay tat ca phan he"
   Write-Host ""
   Write-Host "Co the chay nhanh:"
   Write-Host "  .\run-test-tool.cmd 1"
-  Write-Host "  .\run-test-tool.cmd 2"
   Write-Host "  .\run-test-tool.cmd all"
+  Write-Host "  .\run-test-tool.cmd quan-ly-nhan-vien"
   Write-Host ""
 }
 
-function Run-Org {
+function Run-Doc {
+  param([string]$DocDir)
+
+  $runner = Join-Path $DocDir "scripts/run-playwright-report-tests.sh"
+  $configFile = Join-Path $DocDir "playwright.config.js"
+  $dynamicConfig = Join-Path $ProjectRoot "playwright.dynamic.config.js"
+
   Write-Host ""
-  Write-Host "==> Chay test Mo hinh kinh doanh / Mo hinh to chuc"
-  npx playwright test --config (Join-Path $OrgRoot "playwright.config.js") --project=chromium
-  Open-Report (Join-Path $OrgRoot "test-output/playwright-report/index.html")
+  Write-Host "==> Chay test $(Get-DocName $DocDir)"
+
+  if (Test-Path $configFile) {
+    npx playwright test --config $configFile --project=chromium
+  } else {
+    $env:DOC_TEST_DIR = $DocDir
+    try {
+      npx playwright test --config $dynamicConfig --project=chromium
+    } finally {
+      Remove-Item Env:DOC_TEST_DIR -ErrorAction SilentlyContinue
+    }
+  }
+  Open-Report (Join-Path $DocDir "test-output/playwright-report/index.html")
 }
 
-function Run-Product {
-  Write-Host ""
-  Write-Host "==> Chay test Danh muc san pham / Quan ly san pham"
-  npx playwright test --config (Join-Path $ProductRoot "playwright.config.js") --project=chromium
-  Open-Report (Join-Path $ProductRoot "test-output/playwright-report/index.html")
+$DocDirs = @(Get-DocDirs)
+if ($DocDirs.Count -eq 0) {
+  throw "Khong tim thay tai lieu test nao trong $TestRoot. Moi folder can co playwright.config.js"
 }
 
 if ([string]::IsNullOrWhiteSpace($Choice)) {
-  Print-Menu
+  Print-Menu $DocDirs
   $Choice = Read-Host "Nhap so lua chon"
 }
 
-switch -Regex ($Choice.ToLowerInvariant()) {
-  "^(1|org|mo-hinh|mo-hinh-kinh-doanh|mo-hinh-to-chuc)$" { Run-Org; break }
-  "^(2|product|category|danh-muc|danh-muc-san-pham|san-pham)$" { Run-Product; break }
-  "^(3|all|tat-ca)$" { Run-Org; Run-Product; break }
-  default {
-    Write-Host "Lua chon khong hop le: $Choice"
-    Print-Menu
-    exit 1
+$choiceLower = $Choice.ToLowerInvariant()
+
+if ($choiceLower -eq "all" -or $choiceLower -eq "tat-ca") {
+  foreach ($docDir in $DocDirs) {
+    Run-Doc $docDir
+  }
+  exit 0
+}
+
+$numericChoice = 0
+if ([int]::TryParse($choiceLower, [ref]$numericChoice)) {
+  $index = $numericChoice - 1
+  if ($index -ge 0 -and $index -lt $DocDirs.Count) {
+    Run-Doc $DocDirs[$index]
+    exit 0
   }
 }
+
+foreach ($docDir in $DocDirs) {
+  if ($choiceLower -eq (Get-DocSlug $docDir).ToLowerInvariant()) {
+    Run-Doc $docDir
+    exit 0
+  }
+}
+
+Write-Host "Lua chon khong hop le: $Choice"
+Print-Menu $DocDirs
+exit 1

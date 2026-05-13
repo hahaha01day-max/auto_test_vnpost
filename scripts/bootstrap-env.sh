@@ -37,7 +37,12 @@ if [[ ! -d "$PROJECT_ROOT/node_modules/@playwright/test" ]]; then
   npm install
 fi
 
-echo "Đang kiểm tra/cài Chromium cho Playwright..."
-npx playwright install chromium
+CHROMIUM_PATH="$(node -e "const { chromium } = require('playwright'); console.log(chromium.executablePath())" 2>/dev/null || true)"
+if [[ -n "$CHROMIUM_PATH" && -x "$CHROMIUM_PATH" ]]; then
+  echo "Chromium cho Playwright đã sẵn sàng."
+else
+  echo "Đang kiểm tra/cài Chromium cho Playwright..."
+  npx playwright install chromium
+fi
 
 echo "Môi trường đã sẵn sàng."

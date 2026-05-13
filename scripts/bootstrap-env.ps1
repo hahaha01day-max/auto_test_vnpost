@@ -35,8 +35,13 @@ if (-not (Test-Path (Join-Path $ProjectRoot "node_modules/@playwright/test"))) {
 }
 
 if (-not $SkipBrowserInstall) {
-  Write-Host "Dang kiem tra/cai Chromium cho Playwright..."
-  npx playwright install chromium
+  $chromiumPath = node -e "const { chromium } = require('playwright'); console.log(chromium.executablePath())" 2>$null
+  if (-not [string]::IsNullOrWhiteSpace($chromiumPath) -and (Test-Path $chromiumPath)) {
+    Write-Host "Chromium cho Playwright da san sang."
+  } else {
+    Write-Host "Dang kiem tra/cai Chromium cho Playwright..."
+    npx playwright install chromium
+  }
 }
 
 Write-Host "Moi truong da san sang."
