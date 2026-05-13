@@ -6,8 +6,11 @@ POS-004,POS,Thanh toan khi chua co san pham,He thong canh bao don hang chua co s
 POS-005,POS,Thanh toan sau khi chua co san pham,He thong canh bao don hang chua co san pham
 POS-006,POS,Mo chuong trinh khuyen mai,Modal drawer khuyen mai hien thi tab Theo don hang Theo san pham va nut Huy Ap dung
 POS-007,POS,Nhap chiet khau doi VND phan tram va ghi chu,Truong chiet khau ghi chu thao tac duoc tong tien van hien thi
-POS-008,POS,Tim kiem khach hang tren don POS,O chon khach hang thao tac duoc theo ten so dien thoai
-POS-009,POS,Tim kiem san pham tren POS,O tim san pham thao tac duoc khong lam hong trang thai bang san pham
+POS-008,POS,Tao don hang tu tim kiem sau do chon khach,Tim kiem san pham chon vao gio chon khach hang thanh toan thanh cong va thay don o danh sach
+POS-009,POS,Tao don hang tu Chon san pham tu phan tim kiem,Tim kiem san pham chon san pham vao gio luu nhap thanh cong va thay ma don o danh sach
 POS-010,POS,Quay lai danh sach don hang tu POS,Dieu huong ve man Quan ly don hang
-POS-011,Quan ly don hang,Kiem tra chuc nang Xuat excel,Nut Xuat excel hien thi click khong lam loi man hinh
-POS-012,Quan ly don hang,Xem chi tiet don hang khi co du lieu,Neu co dong don hang mo chi tiet va thay thong tin chung lich su thanh toan danh sach san pham neu khong co du lieu ghi chu observed
+POS-011,Quan ly don hang,Kiem tra chuc nang Xuat excel,Click Xuat excel phai phat sinh file tai xuong dinh dang excel csv
+POS-012,Quan ly don hang,Xem chi tiet don hang khi co du lieu,Click ma don dieu huong vao detail va thay thong tin chung lich su thanh toan danh sach san pham
+POS-013,POS,Tao don hang tu Chon san pham trong danh sach san pham,Mo danh sach san pham chon san pham con ton luu nhap thanh cong va thay ma don o danh sach
+POS-014,POS,Tao don hang tu Chon san pham chon khach hang nhap giam gia thanh toan thanh cong ghi nhan o danh sach don hang,Thanh toan phai bao thanh cong va don vua tao phai ghi nhan o danh sach don hang
+POS-015,POS,Tao don hang tu chon san pham tu Loc san pham theo danh muc,Loc danh muc chon san pham con ton chon khach hang thanh toan thanh cong va thay don o danh sach
