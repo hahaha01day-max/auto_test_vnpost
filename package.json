@@ -1,0 +1,15 @@
+{
+  "name": "vnpost-document-test-tool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VNPost document-based Playwright test runner",
+  "scripts": {
+    "install:browsers": "playwright install chromium",
+    "test:org": "playwright test --config tai-lieu-test/01-mo-hinh-to-chuc/playwright.config.js --project=chromium",
+    "test:product": "playwright test --config tai-lieu-test/04-quan-ly-san-pham-danh-muc-san-pham/playwright.config.js --project=chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.59.1",
+    "playwright": "1.59.1"
+  }
+}

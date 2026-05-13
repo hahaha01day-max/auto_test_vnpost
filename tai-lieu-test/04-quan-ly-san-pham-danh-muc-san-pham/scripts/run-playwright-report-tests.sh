@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# Runner chuẩn Playwright Test cho tài liệu 04, sinh HTML report và video cả case pass.
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOC_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+PROJECT_ROOT="$(cd "$DOC_ROOT/../.." && pwd)"
+CONFIG_FILE="$DOC_ROOT/playwright.config.js"
+
+cd "$PROJECT_ROOT"
+
+"$PROJECT_ROOT/scripts/bootstrap-env.sh"
+
+COMMAND="${1:-test}"
+shift || true
+
+case "$COMMAND" in
+  test)
+    npx playwright test --config "$CONFIG_FILE" --project=chromium "$@"
+    ;;
+  headed)
+    npx playwright test --config "$CONFIG_FILE" --project=chromium --headed "$@"
+    ;;
+  debug)
+    PWDEBUG=1 npx playwright test --config "$CONFIG_FILE" --project=chromium --headed "$@"
+    ;;
+  ui)
+    npx playwright test --config "$CONFIG_FILE" --ui "$@"
+    ;;
+  report|show-report)
+    npx playwright show-report "$DOC_ROOT/test-output/playwright-report" "$@"
+    ;;
+  trace|show-trace)
+    npx playwright show-trace "$DOC_ROOT"/test-output/playwright-results/**/trace.zip "$@"
+    ;;
+  *)
+    cat <<'HELP'
+Lựa chọn không hợp lệ.
+
+Cách dùng:
+  ./tai-lieu-test/04-quan-ly-san-pham-danh-muc-san-pham/scripts/run-playwright-report-tests.sh test
+  ./tai-lieu-test/04-quan-ly-san-pham-danh-muc-san-pham/scripts/run-playwright-report-tests.sh headed
+  ./tai-lieu-test/04-quan-ly-san-pham-danh-muc-san-pham/scripts/run-playwright-report-tests.sh report
+HELP
+    exit 1
+    ;;
+esac
