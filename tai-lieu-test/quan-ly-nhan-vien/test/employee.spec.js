@@ -48,9 +48,6 @@ test.describe('Quản lý nhân viên', () => {
     await page.getByText('Hôm nay').click();
     
     await page.getByRole('textbox', { name: 'Địa chỉ' }).fill('123456');
-    await page.locator('[id="_r_22_"]').click(); 
-    await page.getByText('Tổng công ty Bưu Điện Việt Nam').click();
-
     await page.locator('#workStatus').click();
     await page.locator('.ant-select-dropdown:visible').getByText('Đang làm', { exact: true }).click({ force: true });
 
