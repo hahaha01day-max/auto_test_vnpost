@@ -1,0 +1,13 @@
+ID,Nhom,Test case,Ky vong
+POS-001,Quan ly don hang,Mo man Quan ly don hang da tao,Hien thi tieu de nut Ban hang Xuat excel thong ke va bang danh sach don hang
+POS-002,Quan ly don hang,Tu danh sach don hang click Ban hang,Dieu huong sang man Ban hang POS
+POS-003,POS,Mo truc tiep man Ban hang,Hien thi tim kiem san pham bang san pham da chon tong quan khach hang chiet khau va nut thanh toan
+POS-004,POS,Thanh toan khi chua co san pham,He thong canh bao don hang chua co san pham
+POS-005,POS,Thanh toan sau khi chua co san pham,He thong canh bao don hang chua co san pham
+POS-006,POS,Mo chuong trinh khuyen mai,Modal drawer khuyen mai hien thi tab Theo don hang Theo san pham va nut Huy Ap dung
+POS-007,POS,Nhap chiet khau doi VND phan tram va ghi chu,Truong chiet khau ghi chu thao tac duoc tong tien van hien thi
+POS-008,POS,Tim kiem khach hang tren don POS,O chon khach hang thao tac duoc theo ten so dien thoai
+POS-009,POS,Tim kiem san pham tren POS,O tim san pham thao tac duoc khong lam hong trang thai bang san pham
+POS-010,POS,Quay lai danh sach don hang tu POS,Dieu huong ve man Quan ly don hang
+POS-011,Quan ly don hang,Kiem tra chuc nang Xuat excel,Nut Xuat excel hien thi click khong lam loi man hinh
+POS-012,Quan ly don hang,Xem chi tiet don hang khi co du lieu,Neu co dong don hang mo chi tiet va thay thong tin chung lich su thanh toan danh sach san pham neu khong co du lieu ghi chu observed

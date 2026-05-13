@@ -6,6 +6,7 @@ Thư mục này dùng để quản lý script, test case và output theo từng 
 | --- | --- | --- |
 | `01-mo-hinh-to-chuc` | `1. Mô hình tổ chức.docx` | Mô hình tổ chức |
 | `04-quan-ly-san-pham-danh-muc-san-pham` | `4. Quản lý sản phẩm_Danh mục sản phẩm.docx` | Quản lý danh mục sản phẩm và Quản lý sản phẩm |
+| `05-ban-hang-pos` | `5. Bán hàng (POS).docx` | Bán hàng POS và quản lý đơn hàng đã tạo |
 
 ## Quy ước
 
