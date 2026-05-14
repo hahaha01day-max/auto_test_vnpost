@@ -8,6 +8,7 @@ Thư mục này dùng để quản lý script, test case và output theo từng 
 | `02-phan-quyen-vai-tro` | `2. Phân quyền vai trò.docx` | Quản lý vai trò và phân quyền chức năng |
 | `04-quan-ly-san-pham-danh-muc-san-pham` | `4. Quản lý sản phẩm_Danh mục sản phẩm.docx` | Quản lý danh mục sản phẩm và Quản lý sản phẩm |
 | `05-ban-hang-pos` | `5. Bán hàng (POS).docx` | Bán hàng POS và quản lý đơn hàng đã tạo |
+| `08-khach-hang-than-thiet-loyalty` | `8. Khách hàng thân thiết (Loyalty).docx` | Chiến dịch Loyalty, tích điểm, đổi điểm và POS áp dụng điểm |
 | `10-nha-cung-cap` | `docx_kho_va_nha_cung_cap/10. Nhà cung cấp.docx` | Nhà cung cấp, nhóm NCC, danh mục NCC, bảng giá, công nợ, trả hàng |
 | `11-kho` | `docx_kho_va_nha_cung_cap/11. Kho.docx` | Phiếu đề xuất, đặt hàng NCC, xuất nhập kho, kiểm kho, cảnh báo, tổng quan, chuyển kho |
 

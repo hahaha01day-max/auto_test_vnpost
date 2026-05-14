@@ -1,0 +1,14 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong
+LOY-001,Mo man Quan ly chien dich Loyalty,Account Admin cap Tong cong ty,"Dang nhap, chon role Admin, vao menu Chien dich Loyalty","Hien thi man Quan ly chien dich Loyalty"
+LOY-002,Kiem tra control chinh man Loyalty,Dang o man Loyalty,"Quan sat nut them tich diem, them doi diem, danh sach/trang thai","Control chinh hien thi dung"
+LOY-003,Mo form Them chuong trinh tich diem,Dang o man Loyalty,"Click Them moi chuong trinh tich diem","Mo form Chuong trinh tich diem"
+LOY-004,Validate rong chuong trinh tich diem,Dang o form them tich diem,"Khong nhap du lieu, click Xac nhan","Hien thi validation bat buoc"
+LOY-005,Tao chuong trinh tich diem theo don hang,Dang o form them tich diem,"Nhap cau hinh tich diem va xac nhan","Luu thanh cong hoac bao loi nghiep vu ro rang"
+LOY-006,Mo form Them chuong trinh doi diem,Dang o man Loyalty,"Click Them moi chuong trinh doi diem","Mo form Chuong trinh doi diem"
+LOY-007,Validate rong chuong trinh doi diem,Dang o form them doi diem,"Khong nhap du lieu, click Xac nhan","Hien thi validation bat buoc"
+LOY-008,Tao chuong trinh doi diem,Dang o form them doi diem,"Nhap cau hinh doi diem va xac nhan","Luu thanh cong hoac bao loi nghiep vu ro rang"
+LOY-009,Xem chi tiet chuong trinh,Danh sach co chuong trinh,"Click ban ghi hoac icon chi tiet","Hien thi chi tiet chuong trinh"
+LOY-010,Kiem tra trang thai chuong trinh,Danh sach co chuong trinh,"Quan sat trang thai chuong trinh","Trang thai dung theo thoi gian ap dung"
+LOY-011,POS hien thi thong tin diem sau khi chon khach,Account co quyen ban hang,"Vao POS va chon khach hang","Hien thi diem tich luy/diem thuong neu co du lieu"
+LOY-012,POS thanh toan bang diem,POS co khach hang va san pham,"Chon khach, them san pham, mo thanh toan, tick Doi diem","Co control Doi diem hoac bao ly do khong du dieu kien"
+
