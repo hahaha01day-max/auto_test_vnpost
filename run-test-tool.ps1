@@ -25,21 +25,40 @@ function Get-DocSlug {
   Split-Path $DocDir -Leaf
 }
 
+function ConvertTo-AsciiText {
+  param([string]$Text)
+
+  if ([string]::IsNullOrWhiteSpace($Text)) {
+    return $Text
+  }
+
+  $normalized = $Text.Replace("Đ", "D").Replace("đ", "d").Normalize([Text.NormalizationForm]::FormD)
+  $builder = New-Object Text.StringBuilder
+  foreach ($char in $normalized.ToCharArray()) {
+    $category = [Globalization.CharUnicodeInfo]::GetUnicodeCategory($char)
+    if ($category -ne [Globalization.UnicodeCategory]::NonSpacingMark) {
+      [void]$builder.Append($char)
+    }
+  }
+
+  return $builder.ToString().Normalize([Text.NormalizationForm]::FormC)
+}
+
 function Get-DocName {
   param([string]$DocDir)
 
   $readme = Join-Path $DocDir "README.md"
   if (Test-Path $readme) {
-    $title = Get-Content $readme |
+    $title = Get-Content $readme -Encoding UTF8 |
       Where-Object { $_ -match "^#\s+" } |
       Select-Object -First 1
 
     if (-not [string]::IsNullOrWhiteSpace($title)) {
-      return ($title -replace "^#\s+", "")
+      return ConvertTo-AsciiText (($title -replace "^#\s+", ""))
     }
   }
 
-  return ((Get-DocSlug $DocDir) -replace "^[0-9]+-", "" -replace "-", " ")
+  return ConvertTo-AsciiText ((Get-DocSlug $DocDir) -replace "^[0-9]+-", "" -replace "-", " ")
 }
 
 function Open-Report {
