@@ -5,6 +5,7 @@ Thư mục này dùng để quản lý script, test case và output theo từng 
 | Folder | Tài liệu | Phạm vi |
 | --- | --- | --- |
 | `01-mo-hinh-to-chuc` | `1. Mô hình tổ chức.docx` | Mô hình tổ chức |
+| `02-phan-quyen-vai-tro` | `2. Phân quyền vai trò.docx` | Quản lý vai trò và phân quyền chức năng |
 | `04-quan-ly-san-pham-danh-muc-san-pham` | `4. Quản lý sản phẩm_Danh mục sản phẩm.docx` | Quản lý danh mục sản phẩm và Quản lý sản phẩm |
 | `05-ban-hang-pos` | `5. Bán hàng (POS).docx` | Bán hàng POS và quản lý đơn hàng đã tạo |
 | `10-nha-cung-cap` | `docx_kho_va_nha_cung_cap/10. Nhà cung cấp.docx` | Nhà cung cấp, nhóm NCC, danh mục NCC, bảng giá, công nợ, trả hàng |

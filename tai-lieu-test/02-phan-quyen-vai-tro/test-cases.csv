@@ -1,0 +1,14 @@
+ID,Nhom,Test case,Ky vong
+PVT-001,Quan ly vai tro,Mo man Quan ly vai tro,Admin mo duoc man Quan ly vai tro thay danh sach vai tro va cac control chinh
+PVT-002,Quan ly vai tro,Kiem tra control chinh tren danh sach vai tro,Co tim kiem loc nut them moi bang danh sach va thao tac theo dong
+PVT-003,Them vai tro,Mo form Them vai tro va kiem tra truong bat buoc,Form co Ma vai tro Ten vai tro Pham vi Mo ta va nut Xac nhan Huy
+PVT-004,Them vai tro,Validate form them vai tro rong,Bam Xac nhan khi chua nhap bat buoc phai hien thi loi validation
+PVT-005,CRUD vai tro,Them vai tro hop le,Nhap Ma vai tro Ten vai tro Pham vi Mo ta luu thanh cong va thay vai tro trong danh sach
+PVT-006,Quan ly vai tro,Tim kiem vai tro theo ma ten,Nhap tu khoa vai tro vua tao va danh sach hien thi dung vai tro
+PVT-007,Cap nhat vai tro,Cap nhat ten pham vi vai tro,Mo form chinh sua sua ten pham vi luu thanh cong va danh sach cap nhat
+PVT-008,Phan quyen chuc nang,Mo man gan quyen chuc nang cho vai tro,Tu dong vai tro mo duoc man Phan quyen chuc nang thay danh sach quyen tick chon
+PVT-009,Phan quyen chuc nang,Tick quyen chuc nang va huy,Co the tick bo tick quyen va bam Huy de thu hoi thao tac
+PVT-010,Phan quyen chuc nang,Tick quyen chuc nang va xac nhan,Tick quyen chuc nang bam Xac nhan he thong luu thanh cong hoac tra loi ro rang
+PVT-011,Xoa vai tro,Huy thao tac xoa vai tro,Click Xoa popup xac nhan hien thi bam Huy thi vai tro van con
+PVT-012,Xoa vai tro,Xoa vai tro vua tao,Click Xoa bam Dong y he thong xoa thanh cong va vai tro khong con trong danh sach
+
