@@ -1,0 +1,14 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong
+PROMO-001,Mo man POS va kiem tra khu vuc CTKM,Account Giao dich vien,"Dang nhap, chon role ban hang, vao man tao don","Co khu vuc Chuong trinh khuyen mai (n)"
+PROMO-002,Mo modal CTKM khi don chua co san pham,Dang o man POS,"Click Chuong trinh khuyen mai khi gio hang rong","Modal mo hoac thong bao khong du dieu kien ro rang"
+PROMO-003,Mo modal CTKM sau khi them san pham,Dang o man POS,"Them san pham, click Chuong trinh khuyen mai","Modal Chuong trinh khuyen mai mo va tai danh sach"
+PROMO-004,Kiem tra tab Theo don hang,Modal CTKM da mo,"Click tab Theo don hang","Hien thi CTKM/ dieu kien theo don hang"
+PROMO-005,Kiem tra tab Theo san pham,Modal CTKM da mo,"Click tab Theo san pham","Hien thi CTKM theo tung san pham"
+PROMO-006,Kiem tra trang thai dieu kien CTKM,Modal CTKM da mo,"Quan sat bieu tuong/text dieu kien","Dieu kien co trang thai thoa/chua thoa"
+PROMO-007,Ap dung CTKM theo don hang neu du dieu kien,Co CTKM theo don hang du dieu kien,"Tick CTKM theo don hang, bam Ap dung","Chiet khau khuyen mai hoac qua tang cap nhat"
+PROMO-008,Ap dung CTKM theo san pham neu du dieu kien,Co CTKM theo san pham du dieu kien,"Tick CTKM theo san pham, bam Ap dung","Dong/san pham KM hien thi dung"
+PROMO-009,Khong tu dong tick CTKM theo san pham,Don hang co san pham,"Mo tab Theo san pham","Khong tu dong tick CTKM"
+PROMO-010,Tach chiet khau nhap tay va CTKM,Dang o POS,"Nhap chiet khau don hang, quan sat tong quan","Chiet khau don hang va chiet khau khuyen mai tach rieng"
+PROMO-011,Go CTKM khi don khong con du dieu kien,Da ap dung CTKM neu co,"Xoa san pham hoac doi so luong","CTKM/qua tang/dong KM bi go hoac yeu cau chon lai"
+PROMO-012,Mo thanh toan sau khi ap dung/kiem tra CTKM,Don co san pham,"Mo thanh toan","Tong giam gia dung, khong tao du lieu gia"
+

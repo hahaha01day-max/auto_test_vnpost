@@ -9,8 +9,10 @@ Thư mục này dùng để quản lý script, test case và output theo từng 
 | `04-quan-ly-san-pham-danh-muc-san-pham` | `4. Quản lý sản phẩm_Danh mục sản phẩm.docx` | Quản lý danh mục sản phẩm và Quản lý sản phẩm |
 | `05-ban-hang-pos` | `5. Bán hàng (POS).docx` | Bán hàng POS và quản lý đơn hàng đã tạo |
 | `08-khach-hang-than-thiet-loyalty` | `8. Khách hàng thân thiết (Loyalty).docx` | Chiến dịch Loyalty, tích điểm, đổi điểm và POS áp dụng điểm |
+| `09-chuong-trinh-khuyen-mai` | `9. Chương trình khuyến mãi.docx` | Quản lý CTKM, điều kiện, đối tượng, phân loại và phạm vi áp dụng |
 | `10-nha-cung-cap` | `docx_kho_va_nha_cung_cap/10. Nhà cung cấp.docx` | Nhà cung cấp, nhóm NCC, danh mục NCC, bảng giá, công nợ, trả hàng |
 | `11-kho` | `docx_kho_va_nha_cung_cap/11. Kho.docx` | Phiếu đề xuất, đặt hàng NCC, xuất nhập kho, kiểm kho, cảnh báo, tổng quan, chuyển kho |
+| `promotion-campaign-usage-guide` | `PROMOTION_CAMPAIGN_USAGE_GUIDE.md` | Chương trình khuyến mãi trong POS: theo đơn hàng, theo sản phẩm, điều kiện, quà tặng, chiết khấu |
 
 ## Quy ước
 
