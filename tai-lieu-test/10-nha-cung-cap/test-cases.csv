@@ -1,0 +1,11 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong
+NCC-C1-001,Dieu huong tu Quan ly nha cung cap sang Nhom Nha cung cap,Account co quyen theo tai lieu,"Dang nhap, vao Kho hang > Nha cung cap, click Quan ly Nhom NCC","Dieu huong toi man Nhom Nha cung cap"
+NCC-C1-002,Hien thi danh sach nhom NCC,Dang o man Nhom Nha cung cap,"Quan sat tieu de, nut them moi, bang danh sach","Hien thi tieu de, nut Them moi va cot STT/Ten Nhom nha cung cap/Ghi chu/Hanh dong"
+NCC-C1-003,Mo drawer Them nhom nha cung cap,Dang o man Nhom Nha cung cap,"Click Them moi","Drawer Them nhom nha cung cap hien thi dung field"
+NCC-C1-004,Validate khi them nhom NCC rong,Dang o drawer them nhom,"Khong nhap ten, click Xac nhan","Hien thi validation truong bat buoc"
+NCC-C1-005,Them nhom NCC hop le,Dang o man Nhom Nha cung cap,"Click Them moi, nhap ten auto, nhap ghi chu, click Xac nhan, tim lai","Them nhom NCC thanh cong va nhom moi hien thi"
+NCC-C1-006,Tim kiem nhom NCC vua tao,Da co nhom NCC auto,"Nhap ten nhom auto vao o Tim kiem","Danh sach loc ra dung nhom vua tao"
+NCC-C1-007,Chinh sua/Xem chi tiet nhom NCC vua tao,Da co nhom NCC auto,"Tim nhom auto, click sua, doi ten, click Xac nhan, tim lai ten moi","Drawer sua mo dung va nhom NCC cap nhat thanh cong"
+NCC-C1-008,Xoa nhom NCC vua sua,Da co nhom NCC auto da sua,"Tim nhom auto da sua, click xoa, xac nhan Dong y, tim lai","Nhom NCC bi xoa va khong con trong danh sach"
+NCC-C1-009,Tim kiem nhom NCC khong co ket qua,Dang o man Nhom Nha cung cap,"Nhap keyword auto khong ton tai vao o Tim kiem","Danh sach hien thi trang thai trong/khong co du lieu"
+NCC-C1-010,Huy popup xoa nhom NCC co san,Danh sach co it nhat mot dong,"Click icon xoa dong dau, click Huy","Popup dong va du lieu van con trong danh sach"
