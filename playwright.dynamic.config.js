@@ -1,5 +1,6 @@
 const { defineConfig, devices } = require('@playwright/test');
 const path = require('node:path');
+const { BASE_URL } = require('./tai-lieu-test/shared/vnpost-config');
 
 const DOC_ROOT = process.env.DOC_TEST_DIR
   ? path.resolve(process.env.DOC_TEST_DIR)
@@ -22,7 +23,7 @@ module.exports = defineConfig({
     ['json', { outputFile: path.join(DOC_ROOT, 'test-output/playwright-results/results.json') }],
   ],
   use: {
-    baseURL: 'https://vnpost.sfin.vn',
+    baseURL: BASE_URL,
     viewport: { width: 1440, height: 1000 },
     actionTimeout: 15_000,
     navigationTimeout: 60_000,

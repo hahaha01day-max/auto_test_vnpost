@@ -1,8 +1,10 @@
 const { expect, test } = require('@playwright/test');
 
+const { BASE_URL } = require('./vnpost-config');
+
 const ACCOUNT = process.env.VNPOST_ACCOUNT || '84862036990';
 const PASSWORD = process.env.VNPOST_PASSWORD || '123456';
-const TARGET = 'https://vnpost.sfin.vn/';
+const TARGET = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
 
 async function visibleText(page, limit = 4000) {
   const text = await page.locator('body').innerText({ timeout: 10_000 }).catch(() => '');

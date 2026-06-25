@@ -1,6 +1,7 @@
 // Cấu hình Playwright Test cho tài liệu 05 - Bán hàng (POS).
 const { defineConfig, devices } = require('@playwright/test');
 const path = require('node:path');
+const { BASE_URL } = require('../shared/vnpost-config');
 
 const DOC_ROOT = __dirname;
 
@@ -21,7 +22,7 @@ module.exports = defineConfig({
     ['json', { outputFile: path.join(DOC_ROOT, 'test-output/playwright-results/results.json') }],
   ],
   use: {
-    baseURL: 'https://vnpost.sfin.vn',
+    baseURL: BASE_URL,
     viewport: { width: 1440, height: 1000 },
     actionTimeout: 15_000,
     navigationTimeout: 60_000,

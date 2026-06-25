@@ -1,5 +1,6 @@
 const { defineConfig, devices } = require('@playwright/test');
 const path = require('node:path');
+const { BASE_URL, isLocal } = require('../shared/vnpost-config');
 
 const DOC_ROOT = __dirname;
 
@@ -18,7 +19,7 @@ module.exports = defineConfig({
     ['json', { outputFile: path.join(DOC_ROOT, 'test-output/playwright-results/results.json') }],
   ],
   use: {
-    baseURL: 'https://vnpost.sfin.vn',
+    baseURL: BASE_URL,
     viewport: { width: 1440, height: 1000 },
     actionTimeout: 15_000,
     navigationTimeout: 60_000,
@@ -26,6 +27,14 @@ module.exports = defineConfig({
     video: 'on',
     trace: 'retain-on-failure',
   },
+  ...(isLocal ? {
+    webServer: {
+      command: 'pnpm dotenv -e .env.development.sofin -- rsbuild dev --mode development --host localhost --port 3000',
+      url: 'http://localhost:3000',
+      reuseExistingServer: !process.env.CI,
+      timeout: 120_000
+    }
+  } : {}),
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
   ],
