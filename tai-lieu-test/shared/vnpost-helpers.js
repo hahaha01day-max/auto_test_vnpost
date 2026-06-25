@@ -1,9 +1,10 @@
 const { expect, test } = require('@playwright/test');
 
 const { BASE_URL } = require('./vnpost-config');
+const { requireEnv } = require('./config');
 
-const ACCOUNT = process.env.VNPOST_ACCOUNT || '84862036990';
-const PASSWORD = process.env.VNPOST_PASSWORD || '123456';
+const ACCOUNT = process.env.VNPOST_ACCOUNT;
+const PASSWORD = process.env.VNPOST_PASSWORD;
 const TARGET = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
 
 async function visibleText(page, limit = 4000) {
@@ -25,6 +26,7 @@ async function clickFirstVisible(page, locators, timeout = 3000) {
 }
 
 async function login(page) {
+  requireEnv(['VNPOST_ACCOUNT', 'VNPOST_PASSWORD']);
   await page.goto(TARGET, { waitUntil: 'domcontentloaded' });
   const passwordInput = page.locator('input[type="password"]').first();
   await passwordInput.waitFor({ timeout: 25_000 });

@@ -6,6 +6,10 @@
   "scripts": {
     "install:browsers": "playwright install chromium",
     "test:org": "playwright test --config tai-lieu-test/01-mo-hinh-to-chuc/playwright.config.js --project=chromium",
+    "test:org:list": "playwright test --config tai-lieu-test/01-mo-hinh-to-chuc/playwright.config.js --project=chromium --list",
+    "test:org:headed": "playwright test --config tai-lieu-test/01-mo-hinh-to-chuc/playwright.config.js --project=chromium --headed",
+    "test:delivery-unit": "playwright test --config tai-lieu-test/12-don-vi-van-tai/playwright.config.js --project=chromium",
+    "test:delivery-unit:list": "playwright test --config tai-lieu-test/12-don-vi-van-tai/playwright.config.js --project=chromium --list",
     "test:product": "playwright test --config tai-lieu-test/04-quan-ly-san-pham-danh-muc-san-pham/playwright.config.js --project=chromium",
     "test:promotion": "playwright test --config tai-lieu-test/09-chuong-trinh-khuyen-mai/playwright.config.js --project=chromium"
   },

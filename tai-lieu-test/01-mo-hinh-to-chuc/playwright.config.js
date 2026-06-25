@@ -3,6 +3,7 @@
 const { defineConfig, devices } = require('@playwright/test');
 const path = require('node:path');
 const { BASE_URL } = require('../shared/vnpost-config');
+const { ADMIN_STORAGE_STATE } = require('../shared/config');
 
 const DOC_ROOT = __dirname;
 
@@ -33,16 +34,35 @@ module.exports = defineConfig({
   },
   projects: [
     {
+      name: 'setup',
+      testMatch: /admin\.setup\.js/,
+    },
+    {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      testMatch: /org\.standard\.spec\.js/,
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: ADMIN_STORAGE_STATE,
+      },
     },
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      testMatch: /org\.standard\.spec\.js/,
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Firefox'],
+        storageState: ADMIN_STORAGE_STATE,
+      },
     },
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      testMatch: /org\.standard\.spec\.js/,
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: ADMIN_STORAGE_STATE,
+      },
     },
   ],
 });

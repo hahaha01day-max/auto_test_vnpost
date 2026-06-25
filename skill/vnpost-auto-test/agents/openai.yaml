@@ -1,0 +1,4 @@
+interface:
+  display_name: "VNPost Auto Test"
+  short_description: "Tạo Playwright test chuẩn từ test case VNPost"
+  default_prompt: "Use $vnpost-auto-test to convert a VNPost spreadsheet test case into a reliable Playwright UI and API verification script."
