@@ -1,0 +1,68 @@
+ID,Nhom,Test case,Ky vong
+FUNC_THUMUC__1,Them moi don vi,Them moi don vi Tong cong ty voi ma hop le '00',Don vi Tong cong ty duoc tao thanh cong voi ma '00' hien thi o cap cao nhat tren cay phan cap ben trai man hinh
+FUNC_THUMUC__2,Them moi don vi,Them moi don vi Buu dien Tinh voi ma hop le trong khoang 11-97,Don vi Buu dien Ha Noi (ma 24) duoc tao thanh cong hien thi la don vi con cua Tong cong ty tren cay phan cap
+FUNC_THUMUC__3,Them moi don vi,Them moi don vi Buu dien Xa voi ma 4 so hop le,Don vi Buu dien Hoan Kiem (ma 2401) duoc tao thanh cong hien thi la don vi con cua Buu dien Ha Noi
+FUNC_THUMUC__4,Them moi don vi,Them moi don vi Diem ban voi ma 6 so hop le,Diem ban Hang Bai (ma 240101) duoc tao thanh cong hien thi la don vi con cua Buu dien Hoan Kieng o cap thap nhat
+FUNC_THUMUC__5,Them moi don vi,Bo trong Ma don vi (bat buoc) khi them moi,He thong hien thi thong bao loi yeu cau nhap Ma don vi (bat buoc) khong tao duoc don vi moi
+FUNC_THUMUC__6,Them moi don vi,Bo trong Ten don vi (bat buoc) khi them moi,He thong hien thi thong bao loi yeu cau nhap Ten don vi (bat buoc) khong tao duoc don vi moi
+FUNC_THUMUC__7,Them moi don vi,Nhap ma cap Tinh ngoai khoang quy dinh (11-97),He thong hien thi thong bao loi ma don vi khong hop le voi cap Tinh (phai trong khoang 11-97) khong tao duoc don vi
+FUNC_THUMUC__8,Them moi don vi,Nhap ma don vi bi trung voi ma da ton tai,He thong hien thi thong bao loi 'Ma don vi da ton tai' khong tao duoc don vi moi khong cho phep trung ma
+FUNC_THUMUC__9,Them moi don vi,Bo trong Don vi cha (bat buoc) khi tao don vi con,He thong hien thi thong bao loi yeu cau chon Don vi cha (bat buoc tru cap Tong cong ty) khong tao duoc don vi
+FUNC_THUMUC__10,Them moi don vi,Huy thao tac them don vi giua chung,Form dong lai khong co don vi moi nao duoc tao du lieu vua nhap bi huy bo
+FUNC_THUMUC__11,Them moi don vi (cach 2),Them don vi con qua icon hover tren cay phan cap - tu dong fill Don vi cha,Form Them moi don vi hien thi truong 'Don vi cha' tu dong dien san khong cho phep chinh sua hoac hien thi read-only
+FUNC_THUMUC__12,Them moi don vi (cach 2),Tao nhanh don vi cap Xa voi 2 truong thong tin (Ma + Ten),Don vi con duoc tao thanh cong hien thi dung vi tri tren cay phan cap
+FUNC_THUMUC__13,Them moi don vi (cach 2),Bo trong Ma don vi khi them nhanh tu cay phan cap,He thong hien thi thong bao loi yeu cau nhap Ma don vi (bat buoc) khong tao duoc don vi moi
+FUNC_THUMUC__14,Them moi don vi (cach 2),Bo trong Ten don vi khi them nhanh tu cay phan cap,He thong hien thi thong bao loi yeu cau nhap Ten don vi (bat buoc) khong tao duoc don vi moi
+FUNC_THUMUC__15,Them moi don vi (cach 2),Nhap ma cap Xa trung voi ma da ton tai trong cung don vi cha,He thong hien thi thong bao loi 'Ma don vi da ton tai trong don vi cha nay' khong tao duoc don vi moi
+FUNC_THUMUC__16,Them moi don vi (cach 2),Icon them moi khong hien thi khi khong hover vao don vi,Icon button them moi khong hien thi tren bat ky don vi nao khi khong co thao tac hover
+FUNC_THUMUC__17,Xem cay phan cap,Xem cay phan cap hien thi day du 4 cap sau khi them moi thanh cong,Cay phan cap hien thi dung 4 cap theo thu tu Tong cong ty den Buu dien Tinh Buu dien Xa va Diem ban
+FUNC_THUMUC__18,Xem cay phan cap,Mo rong (expand) va thu gon (collapse) mot nhanh cay phan cap,Nhanh con hien thi thut le khi expand va an di khi collapse
+FUNC_THUMUC__19,Xem cay phan cap,Cay phan cap hien thi trang thai rong khi chua co don vi nao,Hien thi thong bao trang thai rong phu hop khong hien thi loi giao dien
+FUNC_THUMUC__20,Xem cay phan cap,Tim kiem don vi tren cay phan cap theo ten,Cay phan cap loc hoac highlight dung don vi va hien thi duong dan cha cua no
+FUNC_THUMUC__21,Xem cay phan cap,Tim kiem don vi voi tu khoa khong ton tai,He thong hien thi thong bao 'Khong tim thay don vi phu hop' cay phan cap khong hien thi ket qua nao
+FUNC_THUMUC__22,Xem chinh sua xoa,Xem chi tiet don vi hien thi day du thong tin da tao,Man chi tiet hien thi day du va chinh xac Ma don vi Ten don vi Don vi cha co nut Cap nhat va Xoa
+FUNC_THUMUC__23,Xem chinh sua xoa,Chinh sua Ten don vi thanh cong,Ten don vi duoc cap nhat thanh ten moi tren cay phan cap va man chi tiet
+FUNC_THUMUC__24,Xem chinh sua xoa,Chinh sua Don vi cha - chuyen don vi sang nhanh khac,Don vi duoc chuyen sang lam con cua don vi cha moi tren cay phan cap
+FUNC_THUMUC__25,Xem chinh sua xoa,Chinh sua - bo trong Ma don vi (bat buoc),He thong hien thi loi yeu cau nhap Ma don vi (bat buoc) khong luu duoc thay doi
+FUNC_THUMUC__26,Xem chinh sua xoa,Chinh sua - doi Ma don vi thanh ma da ton tai cua don vi khac,He thong hien thi loi 'Ma don vi da ton tai' khong luu duoc thay doi
+FUNC_THUMUC__27,Xem chinh sua xoa,Huy chinh sua - du lieu khong bi thay doi,Form dong lai du lieu cu giu nguyen khong luu thay doi
+FUNC_THUMUC__28,Xem chinh sua xoa,Xoa Diem ban (cap 4) - chi xoa dung diem ban duoc chi dinh,Diem ban bi xoa khoi cay phan cap cac don vi khac khong bi anh huong
+FUNC_THUMUC__29,Xem chinh sua xoa,Xoa cap Xa - toan bo Diem ban thuoc cap Xa do bi xoa theo,Cap Xa va tat ca diem ban con bi xoa khoi cay phan cap cac nhanh khac khong bi anh huong
+FUNC_THUMUC__30,Xem chinh sua xoa,Xoa cap Tinh - toan bo Xa/Diem ban thuoc Tinh do bi xoa theo,Cap Tinh cung tat ca Xa va Diem ban con bi xoa hoan toan
+FUNC_THUMUC__31,Xem chinh sua xoa,Xoa cap Tong cong ty - toan bo cay phan cap bi xoa theo,Toan bo cay phan cap bi xoa hoan toan khoi he thong cay phan cap tro ve trang thai rong
+FUNC_THUMUC__32,Xem chinh sua xoa,Huy xoa don vi tai popup confirm,Don vi khong bi xoa van hien thi nguyen ven tren cay phan cap popup dong lai
+FUNC_THUMUC__33,Xem chinh sua xoa,Noi dung popup confirm xoa hien thi dung van ban theo SRS,Popup hien thi dung noi dung 'Hanh dong nay se khong the hoan tac ban co chac chan muon xoa' voi 2 nut Dong y va Huy
+FUNC_THUMUC__34,Nhap xuat excel,Tai ve file mau nhap don vi to chuc thanh cong,File mau Excel duoc tai ve may thanh cong dung dinh dang voi cac cot
+FUNC_THUMUC__35,Nhap xuat excel,Upload file Excel hop le - tao hang loat don vi thanh cong,Tat ca don vi trong file duoc tao thanh cong hien thi dung tren cay phan cap
+FUNC_THUMUC__36,Nhap xuat excel,Upload file sai dinh dang (khong phai .xlsx/.xls),He thong hien thi thong bao loi dinh dang file khong hop le khong thuc hien import
+FUNC_THUMUC__37,Nhap xuat excel,Upload file Excel co dong du lieu ma don vi bi trung,He thong tu choi dong du lieu bi trung ma va hien thi thong bao loi phu hop
+FUNC_THUMUC__38,Nhap xuat excel,Upload file Excel voi Don vi cha khong ton tai trong he thong/file,He thong hien thi loi ro rang cho dong du lieu co Don vi cha khong hop le
+FUNC_THUMUC__39,Nhap xuat excel,Upload file Excel rong (chi co header khong co du lieu),He thong hien thi thong bao 'File khong co du lieu de nhap' khong tao don vi nao
+FUNC_THUMUC__40,Nhap xuat excel,Xuat file Excel danh sach toan bo don vi to chuc,File Excel duoc tai ve chua day du va chinh xac toan bo don vi hien co
+FUNC_THUMUC__41,Nhap xuat excel,Xuat Excel khi he thong chua co don vi nao,File Excel duoc tai ve chi chua dong tieu de (header) khong co du lieu
+FUNC_THUMUC__42,Diem ban / Hub,Tao Diem ban phan loai 'Pos mini' voi day du truong bat buoc,Diem ban duoc tao thanh cong duoi cap Xa da chon hien thi tren cay va danh sach
+FUNC_THUMUC__43,Diem ban / Hub,Tao Diem ban phan loai 'Pos plus' thuoc Tong cong ty,Diem ban phan loai 'Pos plus' duoc tao thanh cong va hien thi dung trong Danh sach diem ban
+FUNC_THUMUC__44,Diem ban / Hub,Tao diem ban phan loai 'Hub' va danh dau 'La cua hang mau',Diem ban phan loai 'Hub' duoc tao thanh cong voi co 'La cua hang mau' = true
+FUNC_THUMUC__45,Diem ban / Hub,Bo trong Ten diem ban (bat buoc) khi tao diem ban,He thong hien thi loi yeu cau nhap Ten diem ban (bat buoc) khong tao duoc diem ban moi
+FUNC_THUMUC__46,Diem ban / Hub,Bo trong Buu dien tinh/thanh pho hoac Buu dien xa/phuong (bat buoc),He thong hien thi loi yeu cau chon Buu dien tinh/thanh pho va Buu dien xa/phuong
+FUNC_THUMUC__47,Diem ban / Hub,Bo trong Tinh/thanh pho hoac Xa/phuong (dia chi hanh chinh bat buoc),He thong hien thi loi yeu cau chon Tinh/thanh pho va Xa/phuong (bat buoc)
+FUNC_THUMUC__48,Diem ban / Hub,Tao diem ban khong nhap Dia chi chi tiet (truong khong bat buoc),Diem ban duoc tao thanh cong du no khong co Dia chi chi tiet
+FUNC_THUMUC__49,Diem ban / Hub,Xem danh sach Diem ban/hub tu man chi tiet don vi,Man hinh chuyen sang module Quan ly diem ban/hub hien thi dung danh sach diem ban thuoc don vi
+FUNC_THUMUC__50,Diem ban / Hub,Xem chi tiet diem ban va thuc hien chinh sua thong tin,Man chi tiet hien thi day du thong tin sau chinh sua ten moi duoc luu
+FUNC_THUMUC__51,Diem ban / Hub,Xoa diem ban/hub tu man chi tiet,Diem ban bi xoa khoi Danh sach diem ban/hub va khoi cay phan cap Mo hinh to chuc
+FUNC_THUMUC__52,Diem ban / Hub,Tao diem ban khi danh muc Cua hang mau dang rong,Dropdown 'Cua hang mau' hien thi rong he thong khong cho xac nhan tao diem ban
+FUNC_THUMUC__53,Gan nhan vien,Mo popup 'Gan nhan vien' tu man chi tiet don vi,Popup 'Gan nhan vien' mo ra voi danh sach nhan vien da gan va cac nut thao tac
+FUNC_THUMUC__54,Gan nhan vien,Gan moi 1 nhan vien voi vai tro 'Giam doc xa' cho don vi cap Xa,He thong luu thanh cong nhan vien duoc gan vai tro Giam doc xa voi trang thai Dang lam
+FUNC_THUMUC__55,Gan nhan vien,Gan cung 1 nhan vien cho nhieu don vi/vai tro khac nhau trong cung 1 lan luu,Ca 2 ban ghi duoc luu thanh cong giu dong thoi 2 vai tro o 2 don vi khac nhau
+FUNC_THUMUC__56,Gan nhan vien,Gan nhan vien co trang thai 'Da nghi' van hien thi trong danh sach (doc lich su),Dong nhan vien van hien thi trong danh sach voi trang thai Da nghi
+FUNC_THUMUC__57,Gan nhan vien,Doi trang thai nhan vien tu 'Dang lam' sang 'Da nghi',Trang thai nhan vien duoc cap nhat thanh Da nghi thay doi duoc luu
+FUNC_THUMUC__58,Gan nhan vien,Xoa mot dong gan nhan vien bang nut (x),Dong bi xoa khoi danh sach ban ghi gan nhan vien bi go bo khoi he thong
+FUNC_THUMUC__59,Gan nhan vien,Click '+ Them nhan vien & vai tro' nhieu lan lien tiep,Moi lan click them dung 1 dong moi trong khong bi loi giao dien
+FUNC_THUMUC__60,Gan nhan vien,Click 'Xac nhan' khi dong moi chua chon Nhan vien (bat buoc),He thong hien thi loi yeu cau chon Nhan vien cho dong dang trong khong luu thay doi
+FUNC_THUMUC__61,Gan nhan vien,Click 'Xac nhan' khi dong moi chua chon Vai tro (bat buoc),He thong hien thi loi yeu cau chon Vai tro (bat buoc) khong luu duoc thay doi
+FUNC_THUMUC__62,Gan nhan vien,Gan trung cung 1 nhan vien voi cung 1 vai tro tai cung 1 don vi (da ton tai),He thong hien thi canh bao/loi 'Nhan vien da duoc gan vai tro nay tai don vi da chon'
+FUNC_THUMUC__63,Gan nhan vien,Huy thao tac Gan nhan vien - du lieu khong bi thay doi,Popup dong lai khong co thay doi nao duoc luu
+FUNC_THUMUC__64,Gan nhan vien,Tim kiem/loc nhan vien trong dropdown 'Nhan vien' theo ten hoac SDT,Dropdown loc va hien thi dung ket qua tim kiem
+FUNC_THUMUC__65,Gan nhan vien,Doi Don vi cua mot dong gan da ton tai sang don vi khac,Khi doi Don vi dropdown Vai tro reset hoac chi hien thi vai tro phu hop voi don vi moi
+FUNC_THUMUC__66,Gan nhan vien,So luong nhan vien gan hien thi dong bo tren cay phan cap sau khi gan moi,Sau khi gan thanh cong badge so nhan vien tren cay phan cap tang len phan anh dung thuc te
+FUNC_THUMUC__67,Gan nhan vien,Gan nhan vien cho don vi khong co quyen (nhan vien thuong thao tac),Nut 'Gan nhan vien' khong hien thi hoac bi disabled co truy cap API se tra ve loi 403

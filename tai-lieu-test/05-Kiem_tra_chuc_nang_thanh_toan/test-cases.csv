@@ -1,0 +1,31 @@
+ID,Nhom,Test case,Ky vong
+POS-001,Quan ly don hang,Mo man Quan ly don hang da tao,Hien thi tieu de nut Ban hang Xuat excel thong ke va bang danh sach don hang
+POS-002,Quan ly don hang,Tu danh sach don hang click Ban hang,Dieu huong sang man Ban hang POS
+POS-003,POS,Mo truc tiep man Ban hang,Hien thi tim kiem san pham bang san pham da chon tong quan khach hang chiet khau va nut thanh toan
+POS-004,POS,Thanh toan khi chua co san pham,He thong canh bao don hang chua co san pham
+POS-005,POS,Thanh toan sau khi chua co san pham,He thong canh bao don hang chua co san pham
+POS-006,POS,Mo chuong trinh khuyen mai,Modal drawer khuyen mai hien thi tab Theo don hang Theo san pham va nut Huy Ap dung
+POS-007,POS,Nhap chiet khau doi VND phan tram va ghi chu,Truong chiet khau ghi chu thao tac duoc tong tien van hien thi
+POS-008,POS,Tao don hang tu tim kiem sau do chon khach,Tim kiem san pham chon vao gio chon khach hang thanh toan thanh cong va thay don o danh sach
+POS-009,POS,Tao don hang tu Chon san pham tu phan tim kiem,Tim kiem san pham chon san pham vao gio luu nhap thanh cong va thay ma don o danh sach
+POS-010,POS,Quay lai danh sach don hang tu POS,Dieu huong ve man Quan ly don hang
+POS-011,Quan ly don hang,Kiem tra chuc nang Xuat excel,Click Xuat excel phai phat sinh file tai xuong dinh dang excel csv
+POS-012,Quan ly don hang,Xem chi tiet don hang khi co du lieu,Click ma don dieu huong vao detail va thay thong tin chung lich su thanh toan danh sach san pham
+POS-013,POS,Tao don hang tu Chon san pham trong danh sach san pham,Mo danh sach san pham chon san pham con ton luu nhap thanh cong va thay ma don o danh sach
+POS-014,POS,Tao don hang tu Chon san pham chon khach hang nhap giam gia thanh toan thanh cong ghi nhan o danh sach don hang,Thanh toan phai bao thanh cong va don vua tao phai ghi nhan o danh sach don hang
+POS-015,POS,Tao don hang tu chon san pham tu Loc san pham theo danh muc,Loc danh muc chon san pham con ton chon khach hang thanh toan thanh cong va thay don o danh sach
+POS-016,POS / Thanh toan,Kiem tra thanh toan bang phuong thuc Tien mat,He thong tinh chinh xac tien thua (neu co) dong don hang va chuyen trang thai thanh Da thanh toan
+POS-017,POS / Thanh toan,Kiem tra thanh toan bang phuong thuc Quet the,He thong dong don hang va chuyen trang thai thanh Da thanh toan
+POS-018,POS / Thanh toan,Kiem tra thanh toan bang phuong thuc Chuyen khoan,He thong dong don hang va chuyen trang thai thanh Da thanh toan
+POS-019,POS / Thanh toan,Kiem tra thanh toan bang ma QR dong thanh cong,He thong dong don hang va chuyen trang thai thanh Da thanh toan
+POS-020,POS / Thanh toan,Kiem tra chuc nang Tra soat khi gap loi mang/Timeout giao dich QR,He thong tra ve trang thai cua giao dich de GDV nam duoc
+POS-021,POS / Thanh toan,Kiem tra thanh toan bang diem Loyalty va xac thuc OTP thanh cong,He thong dong don hang va chuyen trang thai thanh Da thanh toan
+POS-022,POS / Thanh toan,Kiem tra chan thanh toan bang diem khi nhap sai ma OTP,He thong hien thi thong bao Sai ma OTP vui long thu lai don o trang thai treo
+POS-023,POS / Thanh toan,Kiem tra thanh toan da phuong thuc,He thong thuc hien thanh toan lan luot cac phuong thuc va chuyen trang thai thanh Da thanh toan
+POS-024,POS / Thanh toan,Kiem tra chan hinh thuc Thanh toan sau doi voi Khach le,He thong hien thi thong bao Thanh toan sau hoac mot phan khong the ap dung cho khach vang lai
+POS-025,POS / Thanh toan,Kiem tra chan Thanh toan 1 phan doi voi Khach le,He thong hien thi thong bao Thanh toan sau hoac mot phan khong the ap dung cho khach vang lai
+POS-026,POS / Thanh toan,Kiem tra hinh thuc Thanh toan sau doi voi khach da co tren he thong,He thong ghi nhan don hang mua no thanh cong dong don va chuyen sang trang thai tuong ung
+POS-027,POS / Thanh toan,Kiem tra hinh thuc Thanh toan 1 phan doi voi khach da co tren he thong,He thong dong don hang va ghi nhan thanh toan 1 phan con no phan con lai
+POS-028,Quan ly don hang,Kiem tra chuc nang Cap nhat thanh toan tren don hang con no,Cap nhat thanh cong don hang chuyen trang thai da thanh toan hoac giam tru no tuong ung
+POS-029,Quan ly don hang,Kiem tra an nut Cap nhat thanh toan tren don hang da thu du tien,Khong hien thi nut Cap nhat thanh toan khi xem chi tiet don hang da thu du tien
+POS-030,POS / Thanh toan,Kiem tra huy giao dich QR dong khi dang cho khach quet ma,Quay tro lai giao dien chon phuong thuc thanh toan ban dau
