@@ -75,20 +75,21 @@ print_menu() {
   cat <<'MENU'
 
 Có thể chạy nhanh:
-  ./run-test-tool.sh 1
-  ./run-test-tool.sh all
-  ./run-test-tool.sh quan-ly-nhan-vien
+  ./run-test-tool.sh 7              (Chạy phân hệ 7)
+  ./run-test-tool.sh 7 "TC 02"      (Chạy riêng case TC 02 của phân hệ 7)
+  ./run-test-tool.sh all            (Chạy tất cả phân hệ)
 
 Windows:
-  run-test-tool.cmd 1
+  run-test-tool.cmd 7
+  run-test-tool.cmd 7 "TC 02"
   run-test-tool.cmd all
-  run-test-tool.cmd quan-ly-nhan-vien
 
 MENU
 }
 
 run_doc() {
   local doc_dir="$1"
+  shift
   local runner="$doc_dir/scripts/run-playwright-report-tests.sh"
   local config_file="$doc_dir/playwright.config.js"
   local dynamic_config="$PROJECT_ROOT/playwright.dynamic.config.js"
@@ -97,11 +98,11 @@ run_doc() {
   echo "==> Chạy test $(doc_name "$doc_dir")"
 
   if [[ -x "$runner" ]]; then
-    "$runner" test
+    "$runner" test "$@"
   elif [[ -f "$config_file" ]]; then
-    npx playwright test --config "$config_file" --project=chromium
+    npx playwright test --config "$config_file" --project=chromium "$@"
   else
-    DOC_TEST_DIR="$doc_dir" npx playwright test --config "$dynamic_config" --project=chromium
+    DOC_TEST_DIR="$doc_dir" npx playwright test --config "$dynamic_config" --project=chromium "$@"
   fi
 
   open_report "$doc_dir/test-output/playwright-report/index.html"
@@ -116,35 +117,119 @@ if [[ "${#DOC_DIRS[@]}" -eq 0 ]]; then
 fi
 
 choice="${1:-}"
+is_interactive=false
+extra_args=()
+
 if [[ -z "$choice" ]]; then
-  print_menu
-  read -r -p "Nhập số lựa chọn: " choice
-fi
-
-choice_lower="$(printf '%s' "$choice" | tr '[:upper:]' '[:lower:]')"
-
-if [[ "$choice_lower" == "all" || "$choice_lower" == "tat-ca" ]]; then
-  for doc_dir in "${DOC_DIRS[@]}"; do
-    run_doc "$doc_dir"
-  done
-  exit 0
-fi
-
-if [[ "$choice_lower" =~ ^[0-9]+$ ]]; then
-  index=$((choice_lower - 1))
-  if [[ "$index" -ge 0 && "$index" -lt "${#DOC_DIRS[@]}" ]]; then
-    run_doc "${DOC_DIRS[$index]}"
-    exit 0
+  is_interactive=true
+else
+  # non-interactive command line mode
+  shift
+  if [[ "$#" -eq 1 ]] && [[ ! "$1" =~ ^- ]]; then
+    extra_args+=("-g" "$1")
+  else
+    extra_args+=("$@")
   fi
 fi
 
-for doc_dir in "${DOC_DIRS[@]}"; do
-  if [[ "$choice_lower" == "$(doc_slug "$doc_dir" | tr '[:upper:]' '[:lower:]')" ]]; then
-    run_doc "$doc_dir"
+while true; do
+  if [[ -z "$choice" ]]; then
+    print_menu
+    read -r -p "Nhập số lựa chọn (hoặc 'q' để thoát): " choice
+  fi
+
+  choice_lower="$(printf '%s' "$choice" | tr '[:upper:]' '[:lower:]')"
+
+  if [[ "$choice_lower" == "q" || "$choice_lower" == "exit" ]]; then
+    echo "Tạm biệt!"
+    exit 0
+  fi
+
+  if [[ "$choice_lower" == "all" || "$choice_lower" == "tat-ca" ]]; then
+    for doc_dir in "${DOC_DIRS[@]}"; do
+      run_doc "$doc_dir"
+    done
+    if [[ "$is_interactive" == "true" ]]; then
+      choice=""
+      continue
+    else
+      exit 0
+    fi
+  fi
+
+  selected_dir=""
+  if [[ "$choice_lower" =~ ^[0-9]+$ ]]; then
+    index=$((choice_lower - 1))
+    if [[ "$index" -ge 0 && "$index" -lt "${#DOC_DIRS[@]}" ]]; then
+      selected_dir="${DOC_DIRS[$index]}"
+    fi
+  else
+    for doc_dir in "${DOC_DIRS[@]}"; do
+      if [[ "$choice_lower" == "$(doc_slug "$doc_dir" | tr '[:upper:]' '[:lower:]')" ]]; then
+        selected_dir="$doc_dir"
+        break
+      fi
+    done
+  fi
+
+  if [[ -z "$selected_dir" ]]; then
+    echo "Lựa chọn không hợp lệ: $choice"
+    choice=""
+    continue
+  fi
+
+  if [[ "$is_interactive" == "true" ]]; then
+    read -r -p "Nhập tên case muốn chạy (ví dụ: TC 02, hoặc nhấn Enter để chạy tất cả): " test_case
+    extra_args=()
+    if [[ -n "$test_case" ]]; then
+      extra_args+=("-g" "$test_case")
+    fi
+  fi
+
+  # Tạm thời tắt set -u để tránh lỗi unbound variable khi mảng extra_args rỗng trên một số phiên bản Bash
+  set +u
+  run_doc "$selected_dir" "${extra_args[@]}"
+  set -u
+
+  if [[ "$is_interactive" == "true" ]]; then
+    while true; do
+      echo
+      echo "Chạy xong phân hệ '$(doc_name "$selected_dir")'."
+      echo "Lựa chọn tiếp theo:"
+      echo "  1) Chạy lại phân hệ này (tất cả các case)"
+      echo "  2) Chạy lại với một case cụ thể trong phân hệ này"
+      echo "  3) Quay lại menu chính"
+      echo "  q) Thoát"
+      echo
+      read -r -p "Nhập lựa chọn của bạn [1/2/3/q, mặc định 1]: " next_action
+      next_action="${next_action:-1}"
+      
+      case "$next_action" in
+        1)
+          run_doc "$selected_dir"
+          ;;
+        2)
+          read -r -p "Nhập tên case muốn chạy (ví dụ: TC 03): " new_case
+          if [[ -n "$new_case" ]]; then
+            run_doc "$selected_dir" "-g" "$new_case"
+          else
+            run_doc "$selected_dir"
+          fi
+          ;;
+        3)
+          choice=""
+          break 2
+          ;;
+        q|Q|[eE][xX][iI][tT])
+          echo "Tạm biệt!"
+          exit 0
+          ;;
+        *)
+          echo "Lựa chọn không hợp lệ."
+          ;;
+      esac
+    done
+  else
     exit 0
   fi
 done
-
-echo "Lựa chọn không hợp lệ: $choice"
-print_menu
-exit 1
