@@ -4,7 +4,7 @@
  */
 
 // const BASE_URL = 'https://vnpost.sfin.vn';
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://dev-vnpost.sfin.vn/';
 const isLocal = BASE_URL.includes('localhost') || BASE_URL.includes('127.0.0.1');
 
 module.exports = {
