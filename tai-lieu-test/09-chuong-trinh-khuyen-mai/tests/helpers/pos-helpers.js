@@ -46,6 +46,16 @@ export function setupApiErrorTracking(page, apiErrors) {
 // ============================================================
 
 export async function loginAndGoToSales(page) {
+  // Tester chuyển màn trong SPA nên Redux vẫn giữ cấu hình chuỗi. Bắt config từ
+  // đầu luồng đăng nhập và chỉ mở màn bán hàng sau khi dữ liệu đã tải xong.
+  const activeChainConfigsPromise = page.waitForResponse(
+    response =>
+      response.url().includes('/api/v1/internal/configs') &&
+      response.request().method() === 'GET' &&
+      response.ok(),
+    { timeout: 45000 }
+  );
+
   await page.goto('/account');
   await page.waitForLoadState('networkidle');
 
@@ -77,7 +87,21 @@ export async function loginAndGoToSales(page) {
     }
   } catch (_) {}
 
-  await page.goto('/order/create-order');
+  const activeChainConfigsResponse = await activeChainConfigsPromise;
+  await activeChainConfigsResponse.finished();
+  // Chờ RTK Query parse response và dispatch activeCoreChainConfigs vào Redux
+  // trước khi OrderCheckoutComponent đọc config để tính số tiền thanh toán.
+  await page.waitForTimeout(300);
+
+  const navigatedInApp = await page.evaluate(() => {
+    if (typeof window.navigatePages?.ORDER_ADD !== 'function') return false;
+    window.navigatePages.ORDER_ADD();
+    return true;
+  });
+  if (!navigatedInApp) {
+    throw new Error('Không tìm thấy điều hướng ORDER_ADD của ứng dụng.');
+  }
+  await page.waitForURL(/\/order\/create-order/);
   await page.waitForLoadState('networkidle');
   await page.waitForTimeout(1500);
 }

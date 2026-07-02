@@ -30,6 +30,7 @@ module.exports = defineConfig({
   ...(isLocal ? {
     webServer: {
       command: 'pnpm dotenv -e .env.development.sofin -- rsbuild dev --mode development --host localhost --port 3000',
+      cwd: path.resolve(DOC_ROOT, '../../..'),
       url: 'http://localhost:3000',
       reuseExistingServer: !process.env.CI,
       timeout: 120_000
@@ -39,4 +40,3 @@ module.exports = defineConfig({
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
   ],
 });
-
