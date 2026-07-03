@@ -166,7 +166,13 @@ export async function setProductQty(page, productName, quantity) {
  * @param {string[]} promotionNames - Tên các promotion cần chọn
  * @param {string} tab - Tab cần vào: 'Theo đơn hàng' | 'Theo sản phẩm' | 'Theo danh mục'
  */
-export async function applyPromotions(page, promotionNames = [], tab = 'Theo đơn hàng', giftSelections = null) {
+export async function applyPromotions(
+  page,
+  promotionNames = [],
+  tab = 'Theo đơn hàng',
+  giftSelections = null,
+  promotionGroups = null
+) {
   const promoBtn = page.getByRole('button', { name: /Chương trình khuyến mãi/i }).first();
   await promoBtn.click({ force: true });
   await page.waitForTimeout(1000);
@@ -206,11 +212,6 @@ export async function applyPromotions(page, promotionNames = [], tab = 'Theo đ�
     }
   }
 
-  // ── Bước 2: Chuyển sang đúng tab cần dùng ───────────────────
-  const targetTab = page.getByRole('tab', { name: tab });
-  await targetTab.click();
-  await page.waitForTimeout(500);
-
   // Mỗi tab có placeholder khác nhau — phải dùng đúng để tránh
   // resolve nhầm sang ô search của tab đang ẩn trong DOM
   const TAB_PLACEHOLDERS = {
@@ -218,10 +219,19 @@ export async function applyPromotions(page, promotionNames = [], tab = 'Theo đ�
     'Theo sản phẩm' : /tìm kiếm theo tên sản phẩm/i,
     'Theo danh mục' : /tìm kiếm theo tên danh mục|tìm kiếm/i,
   };
-  const searchPlaceholder = TAB_PLACEHOLDERS[tab] ?? /tìm kiếm/i;
+  // Các case kết hợp phải chuyển qua từng tab trong cùng một lần mở modal.
+  // Nếu áp dụng từng tab riêng lẻ, bước clear ở lần sau sẽ làm mất CTKM đã chọn trước đó.
+  const groups = promotionGroups ?? [{ tab, promotionNames }];
+  for (const group of groups) {
+    const groupTab = group.tab;
+    const groupPromotionNames = group.promotionNames ?? [];
+    const targetTab = page.getByRole('tab', { name: groupTab });
+    await targetTab.click();
+    await page.waitForTimeout(500);
+    const searchPlaceholder = TAB_PLACEHOLDERS[groupTab] ?? /tìm kiếm/i;
 
-  // ── Bước 3: Search + tick từng promotion ────────────────────
-  for (const promoName of promotionNames) {
+    // ── Bước 3: Search + tick từng promotion của đúng tab ──────
+    for (const promoName of groupPromotionNames) {
     const searchBox = page.locator('.ant-tabs-tabpane-active').getByPlaceholder(searchPlaceholder).first();
     await searchBox.click({ clickCount: 3, force: true });
     await searchBox.fill(promoName);
@@ -321,7 +331,8 @@ export async function applyPromotions(page, promotionNames = [], tab = 'Theo đ�
     // Clear search để tìm promotion tiếp theo
     await searchBox.click({ clickCount: 3, force: true });
     await searchBox.fill('');
-    await page.waitForTimeout(500);
+      await page.waitForTimeout(500);
+    }
   }
 
   // ── Bước 4: Apply ───────────────────────────────────────────
@@ -331,6 +342,10 @@ export async function applyPromotions(page, promotionNames = [], tab = 'Theo đ�
     .first();
   await applyBtn.click();
   await page.waitForTimeout(1000);
+}
+
+export async function applyPromotionsByTabs(page, promotionGroups, giftSelections = null) {
+  return applyPromotions(page, [], 'Theo đơn hàng', giftSelections, promotionGroups);
 }
 
 // ============================================================
@@ -484,7 +499,9 @@ export async function checkoutAndPay(page, apiErrors) {
   const context = page.context();
   const popupPromise = context.waitForEvent('page', { timeout: 8000 }).catch(() => null);
 
-  await page.getByRole('button', { name: 'Thanh toán', exact: true }).first().click();
+  await page.keyboard.press('Escape').catch(() => {});
+  await page.waitForTimeout(500);
+  await page.getByRole('button', { name: /^Thanh toán$/i }).filter({ visible: true }).last().click();
   await page.waitForTimeout(1500);
 
   if (apiErrors && apiErrors.length > 0) {
