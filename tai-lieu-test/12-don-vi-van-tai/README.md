@@ -38,3 +38,13 @@ Chỉ kiểm tra danh sách test:
 ```bash
 npm run test:delivery-unit:list
 ```
+
+## Chạy một case đang viết
+
+Khi viết case mới, đặt file tạm trong `case-tests/`, chạy riêng file đó trước:
+
+```bash
+npm run test:delivery-unit:case -- Vantai_50.spec.js
+```
+
+Sau khi file case lẻ pass, copy nội dung test vào `tests/delivery-unit.standard.spec.js`.
