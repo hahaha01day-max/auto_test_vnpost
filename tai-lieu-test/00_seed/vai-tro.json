@@ -1,0 +1,23 @@
+{
+  "_ghiChu": "Danh mục vai trò seed tạo tài khoản (mỗi vai MỘT tài khoản, một vai). Chụp từ AUTHEN.TBL_CHAIN_ROLE chain 626 ngày 23/09/2026. Sinh lại: SELECT role_code, role_name, allowed_level FROM AUTHEN.TBL_CHAIN_ROLE WHERE chain_id=626 AND active=1. `vai` = khoá trong tai-lieu-test/shared/auth/accounts.js (hồ sơ môi trường lưu theo khoá này); `bi` = vai trùng tài khoản (vd seed_shop dùng chung tài khoản Cửa hàng trưởng).",
+  "vai": [
+    { "roleCode": "CORP_ADMIN", "roleName": "Admin", "cap": "TONG_CONG_TY", "hau": "tct", "vai": "tct" },
+    { "roleCode": "CORP_SUPPLY_CHAIN", "roleName": "Quản lý cung ứng", "cap": "TONG_CONG_TY", "hau": "cut", "vai": "tct_cung_ung" },
+    { "roleCode": "CORP_ACCOUNTANT", "roleName": "Kế toán", "cap": "TONG_CONG_TY", "hau": "ktt", "vai": "tct_ke_toan" },
+    { "roleCode": "CORP_FINANCE", "roleName": "Marketing", "cap": "TONG_CONG_TY", "hau": "mkt", "vai": "tct_marketing" },
+    { "roleCode": "PROVINCE_MANAGER", "roleName": "Quản lý tỉnh", "cap": "BUU_DIEN_TINH", "hau": "qlt", "vai": "province", "bi": ["province_manager"] },
+    { "roleCode": "PROVINCE_SUPPLY_CHAIN", "roleName": "Quản lý cung ứng", "cap": "BUU_DIEN_TINH", "hau": "cui", "vai": "province_cung_ung" },
+    { "roleCode": "PROVINCE_ACCOUNTANT", "roleName": "Kế toán", "cap": "BUU_DIEN_TINH", "hau": "kti", "vai": "province_ke_toan" },
+    { "roleCode": "WARD_MANAGER", "roleName": "Giám đốc xã", "cap": "BUU_DIEN_XA", "hau": "gdx", "vai": "ward" },
+    { "roleCode": "SHOP_MANAGER", "roleName": "Cửa hàng trưởng", "cap": "DIEM_BAN", "hau": "cht", "vai": "shop", "bi": ["seed_shop", "seed_shop2"] },
+    { "roleCode": "SHOP_SALE", "roleName": "Giao dịch viên", "cap": "DIEM_BAN", "hau": "gdv", "vai": "gdv", "bi": ["seed_gdv"] },
+    { "roleCode": "SHOP_Employee", "roleName": "Nhân viên khác", "cap": "DIEM_BAN", "hau": "nvk", "vai": "shop_nhan_vien" }
+  ],
+  "boQua": [
+    { "roleCode": "TEST_ROLE", "lyDo": "0 chức năng — đăng nhập kẹt vòng lặp câm ở màn chọn điểm bán" },
+    { "roleCode": "AUTO_VT_52981950", "lyDo": "vai rác do seed cũ tự tạo, 0 chức năng" },
+    { "roleCode": "AUTO_VT_62391304", "lyDo": "vai rác do seed cũ tự tạo, 0 chức năng" },
+    { "roleCode": "POS_PLUS_SHOP_MANAGER", "lyDo": "cấp POS_PLUS — bộ seed không có đơn vị POS_PLUS để gán" },
+    { "roleCode": "POS_PLUS_SHOP_SALE", "lyDo": "cấp POS_PLUS — bộ seed không có đơn vị POS_PLUS để gán" }
+  ]
+}

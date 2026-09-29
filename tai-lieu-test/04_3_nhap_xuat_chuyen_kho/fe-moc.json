@@ -1,0 +1,101 @@
+{
+  "spec": {
+    "tests/phieu-nhap.seed_gdv.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerImportReceipt.jsx",
+        "src/pages/warehouse/import_receipt/TableDrawerImportReceipt.jsx"
+      ]
+    },
+    "tests/phieu-nhap-ghi.seed_gdv.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerImportReceipt.jsx",
+        "src/pages/warehouse/import_receipt/TableDrawerImportReceipt.jsx",
+        "src/utils/service/productService.js"
+      ]
+    },
+    "tests/phieu-nhap-ghi.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerImportReceipt.jsx",
+        "src/pages/warehouse/import_receipt/DrawerDetailImportReceipt.jsx",
+        "src/pages/warehouse/import_receipt/TableDrawerImportReceipt.jsx"
+      ]
+    },
+    "tests/chung-tu.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerDetailImportReceipt.jsx",
+        "src/features/purchaseOrder/components/InvoiceFileSection.jsx"
+      ]
+    },
+    "tests/phieu-nhap-lo.seed_gdv.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerImportReceipt.jsx",
+        "src/pages/warehouse/import_receipt/TableDrawerImportReceipt.jsx",
+        "src/pages/warehouse/import_receipt/DrawerImportLots.jsx"
+      ]
+    },
+    "tests/phieu-xuat-ghi.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerImportReceipt.jsx",
+        "src/pages/warehouse/import_receipt/TableDrawerExportReceipt.jsx",
+        "src/pages/warehouse/transfer/DrawerBatchSelect.jsx",
+        "src/utils/service/productService.js"
+      ]
+    },
+    "tests/huy-phieu-nhap.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerDetailImportReceipt.jsx",
+        "src/utils/service/stockService.js"
+      ]
+    },
+    "tests/chuyen-kho-ghi.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": [
+        "/inventory/transfer-warehouse"
+      ],
+      "fe": [
+        "src/pages/warehouse/transfer/DrawerAddTransfer.jsx",
+        "src/pages/warehouse/transfer/DrawerBatchSelect.jsx",
+        "src/pages/warehouse/transfer/DrawerDetailTransfer.jsx",
+        "src/components/selectShopMultiple/SelectShopMultiple.jsx",
+        "src/components/uploadImageFormdata/index.jsx",
+        "src/utils/service/stockService.js"
+      ]
+    }
+  }
+}

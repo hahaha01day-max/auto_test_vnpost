@@ -1,0 +1,133 @@
+{'startTime': '2026-09-25T14:43:46.632Z', 'duration': 163830.712, 'expected': 5, 'skipped': 11, 'unexpected': 2, 'flaky': 0}
+
+ skipped | 30 tien de — CTKM rác đã được áp vào đơn (DB)
+   @ tiền đề : {"ten":"A7KH19_KM_30 Giảm giá hè 436106","campaignId":699,"orderId":null,"orderNumber":null,"db":null,"loi":"\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_030_003 — Bảng đơn hàng đã áp dụng chương trình đủ cột
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_030_005 — Tổng tiền giảm của các đơn bằng tiền giảm giá của chương trình
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_050_006 — Tìm chương trình không dấu
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_010_001 — Báo cáo hiệu quả CTKM mở được và hiện thẻ tổng hợp
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_010_002 — Nhận ra chương trình đang tiêu gần hết ngân sách
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_020_001 — Lọc theo tiêu chí thu hẹp bảng và cập nhật thẻ tổng hợp
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_020_002 — Nhiều tiêu chí cùng lúc là điều kiện AND
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_030_001 — Chi tiết chương trình hiện mười chỉ số hiệu quả
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ skipped | 30_030_002 — Truy được từ chỉ số xuống hoá đơn tạo ra nó
+   @ skip : Tiền đề 30 không dựng được: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for get
+
+ failed | 30_040_001 — Xuất báo cáo hiệu quả ra Excel giữ nguyên thứ tự cột
+   @ xuất : 200 · tệp bao_cao_hieu_qua_ctkm_20260925_214615.xlsx · 
+   @ cột màn vs tệp : STT · Tên chương trình · Trạng thái · Số hoá đơn áp dụng · Doanh thu (gồm VAT) · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Doanh số tăng thêm · Lợi nhuận gộp · Ngân sách đã dùng  ||  STT · Mã chương trình · Tên chương trình · Trạng thái · Từ ngày · Đến ngày · Phạm vi ưu đãi · Số hoá đơn · Doanh th
+   ! Error: Thứ tự/tên cột tệp khác màn hình  expect(received).toEqual(expected) // deep equality  - Expected  -  2 + Received  + 11    Array [     "STT", +   "Mã chương trình",     "Tên chương trình",     "Trạng thái", -   "Số hoá đơn áp dụng", +   "Từ ngày", [
+
+ skipped | 30_060_001 — Vai tỉnh thấy số liệu CTKM của các điểm bán trực thuộc
+
+ failed | 30_PQ_001 — Vai điểm bán chỉ thấy số liệu CTKM trong phạm vi
+   @ API báo cáo CTKM (http/code) : 401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness/customer-groups · 401/SSHOP-401 effectiveness
+   ! Error: Vai điểm bán mở màn báo cáo CTKM: API trả lỗi (401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness/customer-groups · 401/SSHOP-401 effectiveness) ⇒ màn hiện nhưng KHÔNG đọc được số liệu nào.  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false

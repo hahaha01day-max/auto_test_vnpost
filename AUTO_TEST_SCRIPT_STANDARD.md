@@ -13,7 +13,7 @@ Tài liệu này chuẩn hóa cách chuyển một test case nghiệp vụ thàn
 Nguồn đối chiếu:
 
 - SRS, test case và script trong `auto_test_vnpost`.
-- Route, page, service Axios/RTK Query trong `sofin-business`.
+- Route, page, service Axios/RTK Query trong `vnpost-web`.
 - Quy ước response backend: `status.code` là chuỗi, dữ liệu ở `data`, phân trang ở `page`.
 
 ## 2. Quy trình tạo test
@@ -40,7 +40,7 @@ Nếu SRS khác code đang chạy, ghi riêng:
 
 ### Bước 2 - Truy vết code trước khi ghi locator
 
-Thứ tự tìm trong `sofin-business`:
+Thứ tự tìm trong `vnpost-web`:
 
 1. Route trong `src/routes/configs/**`.
 2. Page/component được route load.
@@ -54,9 +54,9 @@ Thứ tự tìm trong `sofin-business`:
 Lệnh tìm nhanh:
 
 ```bash
-rg -n "Tên menu|Tên nút|PageContainer" sofin-business/src
-rg -n "url:|method:|builder\\.query|builder\\.mutation" sofin-business/src/features/<domain>
-rg -n "route\\.|path:" sofin-business/src/routes
+rg -n "Tên menu|Tên nút|PageContainer" vnpost-web/src
+rg -n "url:|method:|builder\\.query|builder\\.mutation" vnpost-web/src/features/<domain>
+rg -n "route\\.|path:" vnpost-web/src/routes
 ```
 
 Ví dụ Mô hình tổ chức:
@@ -213,7 +213,7 @@ await drawer.getByLabel(/Tên nhà cung cấp/i).fill(data.name);
 await drawer.getByRole('button', { name: 'Xác nhận', exact: true }).click();
 ```
 
-Nếu component chưa có accessible name ổn định, nên bổ sung vào `sofin-business`:
+Nếu component chưa có accessible name ổn định, nên bổ sung vào `vnpost-web`:
 
 ```jsx
 <Input aria-label="Tên nhà cung cấp" />
@@ -274,7 +274,7 @@ Không chỉ kiểm tra HTTP 200. Backend có thể trả HTTP 200 nhưng `statu
 
 ### Header bắt buộc
 
-API của `sofin-business` có thể cần:
+API của `vnpost-web` có thể cần:
 
 - `Authorization`.
 - `appId`.

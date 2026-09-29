@@ -1,0 +1,388 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong,Task,Ten task,Uu tien,Man hinh,Ma goc,Nguon,Trang thai chay,Ngay chay,Ghi chu chay
+01_010_001,Danh sách hiển thị đầy đủ các cột đúng giao diện,"Đã đăng nhập, vào Vận hành > Quản lý cửa hàng; hệ thống có ít nhất 1 điểm bán","1. Vào Menu > Vận hành > Quản lý cửa hàng
+ 2. Quan sát bảng danh sách","Bảng hiển thị đúng 7 cột: STT, Tên điểm bán/hub, Mã điểm, Phân loại, Bưu điện Xã, Bưu điện Tỉnh, Trạng thái, Hành động; dữ liệu khớp với hệ thống",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,DIEMBAN__1,Sheet QC,Đạt,28/09/2026,
+01_010_002,Phân trang hoạt động đúng - mặc định 10 bản ghi/trang,Hệ thống có hơn 10 điểm bán,"1. Vào màn Danh sách điểm bán
+ 2. Kiểm tra số bản ghi trang 1
+ 3. Click sang trang 2
+ 4. Thay đổi số bản ghi/trang","Trang 1 mặc định hiển thị 10 bản ghi; click sang trang 2 tải đúng 10 bản ghi tiếp theo; có thể thay đổi số bản ghi/trang (10, 20...)",010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,DIEMBAN__2,Sheet QC,Đạt,28/09/2026,
+01_010_003,Tìm kiếm theo tên điểm bán - trả về kết quả đúng,Điểm bán 'Pos mini Liên Châu 12' tồn tại trong hệ thống,"1. Nhập 'Liên Châu' vào ô Tìm theo tên, mã điểm bán
+ 2. Quan sát kết quả",Danh sách lọc chỉ hiển thị các điểm bán có tên chứa 'Liên Châu'; các bản ghi không khớp bị ẩn,010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,DIEMBAN__3,Sheet QC,Đạt,28/09/2026,
+01_010_004,Tìm kiếm theo mã điểm bán - trả về đúng 1 kết quả,Điểm bán mã 'DB67822' tồn tại,"1. Nhập 'DB67822' vào ô tìm kiếm
+ 2. Quan sát kết quả",Danh sách hiển thị đúng 1 bản ghi 'Pos mini Liên Châu 12' - DB67822; không có bản ghi khác,010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,DIEMBAN__4,Sheet QC,Đạt,28/09/2026,
+01_010_005,Lọc theo Phân loại - hiển thị đúng loại được chọn,"Có cả 3 phân loại: Pos mini, Pos plus, Hub trong hệ thống","1. Click dropdown 'Phân loại'
+ 2. Chọn 'Hub'
+ 3. Quan sát danh sách",Danh sách chỉ hiển thị các bản ghi có Phân loại = Hub; Pos mini và Pos plus không xuất hiện,010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,DIEMBAN__5,Sheet QC,Đạt,28/09/2026,
+01_010_006,Lọc theo Trạng thái - chỉ hiển thị bản ghi Ngừng hoạt động,Có ít nhất 1 điểm bán trạng thái Ngừng hoạt động,"1. Click dropdown 'Trạng thái'
+ 2. Chọn 'Ngừng hoạt động'
+ 3. Quan sát danh sách",Danh sách chỉ hiển thị điểm bán có trạng thái 'Ngừng hoạt động' (chữ đỏ); điểm bán Đang hoạt động không xuất hiện,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,DIEMBAN__6,Sheet QC,Đạt,28/09/2026,
+01_010_007,Lọc theo Bưu điện tỉnh/thành phố,Có điểm bán thuộc 'Bưu điện Tỉnh Vĩnh Phúc',"1. Click dropdown 'Bưu điện tỉnh / thành phố'
+ 2. Chọn 'Bưu điện Tỉnh Vĩnh Phúc'
+ 3. Quan sát danh sách",Chỉ hiển thị điểm bán thuộc Bưu điện Tỉnh Vĩnh Phúc; dropdown 'Bưu điện phường/xã' tự lọc theo tỉnh đã chọn,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,DIEMBAN__7,Sheet QC,Đạt,28/09/2026,
+01_010_008,Lọc kết hợp nhiều điều kiện cùng lúc (Phân loại + Trạng thái),Có điểm bán loại Hub đang hoạt động,"1. Chọn Phân loại = Hub
+ 2. Chọn Trạng thái = Đang hoạt động
+ 3. Quan sát danh sách",Danh sách chỉ hiển thị bản ghi thỏa mãn cả 2 điều kiện: Phân loại = Hub VÀ Trạng thái = Đang hoạt động,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,DIEMBAN__8,Sheet QC,Đạt,28/09/2026,
+01_010_009,Tìm kiếm với từ khóa không tồn tại,Hệ thống có dữ liệu điểm bán,"1. Nhập từ khóa không tồn tại: 'XXXXXX' vào ô tìm kiếm
+ 2. Quan sát danh sách",Danh sách hiển thị trạng thái rỗng / thông báo 'Không tìm thấy kết quả'; không bị lỗi giao diện,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,DIEMBAN__9,Sheet QC,Đạt,28/09/2026,
+01_010_010,Danh sách hiển thị trạng thái rỗng khi chưa có điểm bán,Hệ thống chưa có điểm bán nào (môi trường mới),"1. Vào Menu > Vận hành > Quản lý cửa hàng
+ 2. Quan sát màn hình","Hiển thị màn hình trạng thái rỗng phù hợp; không có lỗi giao diện; các nút Nhập Excel, Xuất Excel, Thêm điểm bán vẫn hiển thị",010,Tra cứu và lọc danh sách điểm bán,Thấp,Màn danh sách điểm bán,DIEMBAN__10,Sheet QC,Đạt,28/09/2026,
+01_010_011,Click icon thông tin (ⓘ) mở drawer Chi tiết - hiển thị đúng tất cả trường,Điểm bán 'Pos mini Liên Châu 12' đang ở danh sách,"1. Tại danh sách, click icon ⓘ ở cột Hành động của 'Pos mini Liên Châu 12'
+ 2. Quan sát drawer Chi tiết","Drawer mở hiển thị đúng: Tên điểm bán, Trạng thái (màu xanh 'Đang hoạt động'), Phân loại, Bưu điện Tỉnh/TP, Bưu điện Xã/Phường, Tỉnh/TP, Xã/Phường, Địa chỉ chi tiết (-- nếu trống), Thời gian tạo",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn xem chi tiết điểm bán/hub,DIEMBAN__22,Sheet QC,Không đạt,29/09/2026,"Error: Drawer Chi tiết phải hiện đúng điểm bán vừa bấm. expect(locator).toContainText(expected) failed Locator: locator('.ant-drawer-open').first() Expected substring: ""AUTO7_T_HUB"" Received string: ""Sửa điểm bán / hubThông tin tổ chứcPhân loạiHubTrạng tháiĐang hoạt độngTạm ngừngThông tin điểm bán /"
+01_010_012,Đổi số dòng mỗi trang bằng ô chọn cạnh thanh phân trang,Vai: province. Hệ thống có hơn 10 điểm bán trong phạm vi.,"1. Mở Vận hành > Quản lý cửa hàng
+2. Bấm ô chọn số dòng cạnh thanh phân trang
+3. Chọn mức lớn hơn 10",Bảng hiển thị đúng số dòng vừa chọn; thanh phân trang tính lại số trang.,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,,"HDSD 010 — ""ô chọn bên cạnh cho phép tăng số dòng mỗi trang""",Đạt,28/09/2026,
+01_010_013,Bộ lọc Bưu điện xã/phường chỉ liệt kê xã thuộc tỉnh đã chọn,"Vai: tct. Có ít nhất 2 tỉnh, mỗi tỉnh có xã riêng.","1. Mở màn danh sách điểm bán
+2. Mở bộ lọc Bưu điện xã/phường khi CHƯA chọn tỉnh
+3. Chọn một Bưu điện tỉnh
+4. Mở lại bộ lọc xã/phường","Sau khi chọn tỉnh, danh sách xã chỉ gồm xã thuộc tỉnh đó, không còn xã của tỉnh khác.",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,"HDSD 010 — Mẹo: ""chỉ liệt kê các xã thuộc tỉnh bạn đã chọn""",Đạt,28/09/2026,
+01_010_014,Vai Bưu điện Tỉnh chỉ thấy điểm bán thuộc tỉnh mình,Vai: province. Tồn tại điểm bán thuộc tỉnh khác.,"1. Đăng nhập vai province
+2. Mở màn danh sách điểm bán
+3. Tìm mã điểm bán thuộc tỉnh khác",Không tìm thấy điểm bán ngoài phạm vi tỉnh; tổng số trên tiêu đề chỉ đếm điểm bán trong phạm vi.,010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,"HDSD 010 — Lưu ý phạm vi: ""người dùng cấp tỉnh chỉ thấy điểm bán thuộc tỉnh mình""",Đạt,28/09/2026,
+01_010_015,"Danh sách hiển thị điểm bán ở MỌI trạng thái, kể cả tạm ngừng",Có ít nhất 1 điểm bán Ngừng hoạt động.,"1. Mở màn danh sách, không đặt bộ lọc Trạng thái
+2. Tìm điểm bán đang Ngừng hoạt động",Điểm bán Ngừng hoạt động vẫn hiện trong danh sách khi không lọc trạng thái.,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,,"HDSD 010 — Lưu ý: ""màn hình này hiển thị điểm bán ở mọi trạng thái""",Đạt,28/09/2026,
+01_010_016,Cột Hành động chỉ hiện biểu tượng ứng với quyền của người dùng,Vai không có quyền update_shop.,"1. Đăng nhập bằng vai không có quyền sửa
+2. Mở màn danh sách
+3. Quan sát cột Hành động",Biểu tượng Sửa không hiện; các biểu tượng còn lại hiện theo đúng quyền đang có.,010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,"HDSD 010 — bảng cột: ""Chỉ hiện biểu tượng ứng với quyền bạn có""",Đạt,28/09/2026,
+01_010_017,Dòng Hub có biểu tượng Gắn nhân viên mờ và bấm không được,Có ít nhất 1 điểm bán phân loại Hub.,"1. Mở màn danh sách
+2. Lọc Phân loại = Hub
+3. Quan sát biểu tượng Gắn nhân viên trên dòng hub","Biểu tượng Gắn nhân viên bị làm mờ, bấm không mở màn hình nào.",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,"HDSD 010 + 050 — ""hub không gắn nhân viên""",Đạt,28/09/2026,
+01_010_018,Liên kết Xem danh sách ở cột Số lượng nhân viên mở thẳng danh sách nhân viên,Có điểm bán đã gắn ít nhất 1 nhân viên.,"1. Mở màn danh sách
+2. Bấm Xem danh sách tại cột Số lượng nhân viên của điểm bán đó","Mở thẳng danh sách nhân viên của điểm bán, không phải đi qua màn Chi tiết.",010,Tra cứu và lọc danh sách điểm bán,Thấp,Màn danh sách điểm bán,,"HDSD 010 — Mẹo: ""bấm Xem danh sách ngay ở cột Số lượng nhân viên""",Đạt,28/09/2026,
+01_010_019,Tìm kiếm bằng từ khoá toàn khoảng trắng,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`)","1. Nhập 5 dấu cách vào ô ""Tìm theo tên, mã điểm bán""
+ 2. Chờ request GET /shops/profile/chain
+ 3. Quan sát bảng","Hệ thống KHÔNG báo lỗi đỏ; bảng trả về như khi bỏ trống từ khoá (keyword bị coi là rỗng) HOẶC trả trạng thái rỗng ""Không có dữ liệu"". 🔴 Ghi lại hành vi thật: FE không trim keyword trước khi gửi (ShopManagement.jsx handleKeywordChange), nên đây là case phơi hành vi backend.",010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #2 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_020,Tìm kiếm bằng ký tự đặc biệt,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`)","1. Nhập '%_\'""<>' vào ô tìm kiếm
+ 2. Chờ request GET /shops/profile/chain
+ 3. Quan sát bảng","Không có lỗi 500 và không có màn hình trắng; bảng hiển thị trạng thái rỗng ""Không có dữ liệu"". Ký tự % và _ KHÔNG được hiểu như ký tự đại diện của SQL LIKE (nếu trả về toàn bộ danh sách là lỗi thoát ký tự ở backend).",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #8 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_021,Tìm kiếm không phân biệt hoa/thường,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`)","1. Nhập tên một điểm bán đang có, viết TOÀN CHỮ HOA
+ 2. Ghi lại số dòng trả về
+ 3. Nhập lại cùng tên đó, viết toàn chữ thường
+ 4. So số dòng hai lần","Hai lần tìm trả về cùng một tập bản ghi (cùng số dòng, cùng mã điểm bán). Tìm kiếm không phân biệt hoa/thường.",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #8 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_022,Tìm kiếm bằng từ khoá KHÔNG DẤU,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`)","1. Chọn một điểm bán có tên tiếng Việt có dấu, ví dụ ""Bưu điện Hoàn Kiếm""
+ 2. Nhập phiên bản không dấu ""buu dien hoan kiem"" vào ô tìm kiếm
+ 3. Quan sát bảng","Chưa chốt kỳ vọng — ghi nhận thực tế: tìm bằng từ khoá KHÔNG DẤU có trả về điểm bán có tên viết có dấu hay không.
+
+🔴 Ghi lại hành vi thật: nếu backend có chuẩn hoá dấu thì phải trả về điểm bán đó; nếu không thì trả rỗng. Kỳ vọng chốt sau khi đo — 🚫 không đoán, vì dữ liệu VNPost trộn Anh–Việt.",010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #8 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_023,Khoảng trắng đầu/cuối của từ khoá,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`)","1. Nhập ""  <tên điểm bán>  "" (có khoảng trắng đầu và cuối)
+ 2. Ghi số dòng
+ 3. Nhập lại đúng tên đó không khoảng trắng thừa
+ 4. So hai lần",Hai lần cho cùng kết quả (khoảng trắng thừa bị trim). Nếu lần có khoảng trắng trả rỗng thì là lỗi thiếu trim — ghi nhận.,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #2 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_024,Xoá toàn bộ bộ lọc trả về danh sách đầy đủ,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`)","1. Đặt đồng thời: từ khoá, Phân loại = Hub, Trạng thái = Ngừng hoạt động, Bưu điện tỉnh
+ 2. Ghi lại total_elements
+ 3. Bấm nút xoá (x) của từng ô lọc cho đến khi trống hết
+ 4. Ghi lại total_elements","Sau khi xoá hết lọc, total_elements trở về đúng bằng tổng ban đầu khi mới vào màn; không còn tham số lọc nào trong query string.",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #7 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_025,Ô lọc Bưu điện phường/xã bị vô hiệu khi chưa chọn Bưu điện tỉnh,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`)","1. Vào màn, không chọn Bưu điện tỉnh
+ 2. Thử bấm vào ô lọc ""Bưu điện phường / xã""","Ô ""Bưu điện phường / xã"" ở trạng thái mờ, không mở được danh sách chọn khi chưa chọn Bưu điện tỉnh.
+
+Ô ""Bưu điện phường / xã"" ở trạng thái disabled, không mở được dropdown (ShopManagement.jsx: disabled={!params.orgProvinceCode}).",010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #7 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_026,Đổi bộ lọc khi đang ở trang 3 thì nhảy về trang 1,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`); danh sách có hơn 3 trang","1. Chuyển sang trang 3
+ 2. Chọn Phân loại = Pos mini
+ 3. Quan sát thanh phân trang và query string",Thanh phân trang về trang 1; request gửi page=0. 🔴 Không được giữ page=2 rồi trả bảng rỗng.,010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #7 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_027,Trang cuối hiển thị đúng số bản ghi còn lại,"Vai `tct` (Tổng công ty) đăng nhập, đang ở Vận hành > Quản lý cửa hàng (`/chain/shop-management`); total_elements không chia hết cho pageSize","1. Ghi lại total_elements và pageSize
+ 2. Bấm sang trang cuối
+ 3. Đếm số dòng của bảng",Số dòng trang cuối = total_elements mod pageSize (bằng pageSize nếu chia hết); không có dòng rỗng nào được vẽ thêm.,010,Tra cứu và lọc danh sách điểm bán,TB,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #7 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_010_028,"Vai không có quyền create_shop không thấy nút ""+ Thêm điểm bán""",Đăng nhập bằng vai KHÔNG có quyền `create_shop` (ví dụ vai `province` theo README mục 8),"1. Vào Vận hành > Quản lý cửa hàng
+ 2. Quan sát vùng extra của PageContainer","Nút ""+ Thêm điểm bán"" KHÔNG hiển thị (PermissionButton ẩn hẳn, không phải disabled). Các nút Nhập/Xuất excel cũng chỉ hiện theo permKey import_shop / get_shop.",010,Tra cứu và lọc danh sách điểm bán,Cao,Màn danh sách điểm bán,,Quét kỹ thuật 3.4 #10 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_020_001,Thêm mới Pos mini thành công với đầy đủ trường bắt buộc,"Admin đăng nhập; danh mục Bưu điện tỉnh, Bưu điện xã, Tỉnh/TP, Xã/Phường đã có dữ liệu","1. Click '+ Thêm điểm bán'
+ 2. Drawer hiện ra
+ 3. Chọn Phân loại = Pos mini
+ 4. Nhập Tên điểm bán: 'Pos mini Test 01'
+ 5. Chọn Bưu điện tỉnh/TP: 'Bưu điện Tỉnh Vĩnh Phúc'
+ 6. Chọn Bưu điện xã/phường: 'Bưu điện Huyện Yên Lạc'
+ 7. Chọn Tỉnh/TP: 'Tỉnh Vĩnh Phúc'
+ 8. Chọn Xã/Phường: 'Xã Liên Châu'
+ 9. Click 'Xác nhận'","Điểm bán 'Pos mini Test 01' được tạo thành công với mã tự sinh (DBxxxxx); hiển thị đầu tiên hoặc đúng vị trí trong danh sách với Phân loại=Pos mini, Trạng thái=Đang hoạt động",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,DIEMBAN__11,Sheet QC,Đạt,28/09/2026,
+01_020_002,Thêm mới Pos mini kèm Địa chỉ chi tiết (trường tùy chọn),Admin đăng nhập; điều kiện tương tự CH_2.02,"1. Thực hiện như CH_2.01
+ 2. Bổ sung nhập Địa chỉ: '123 Đường ABC, Xã Liên Châu'
+ 3. Click 'Xác nhận'","Điểm bán được tạo thành công; khi xem chi tiết, trường 'Địa chỉ chi tiết' hiển thị đúng '123 Đường ABC, Xã Liên Châu'",020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,DIEMBAN__12,Sheet QC,Không đạt,29/09/2026,"Error: Chi tiết phải hiện đúng Địa chỉ đã nhập. expect(locator).toContainText(expected) failed Locator: locator('.ant-drawer-open').first() Expected substring: ""AUTO TEST - 123 Duong ABC"" Received string: ""Chi tiết điểm bán / hubTên điểm bán:--Mã điểm bán:--Phân loại:Pos miniLoại hình điểm bán:-Trạn"
+01_020_003,Thêm mới Pos plus - form chỉ hiện Tỉnh/TP và Xã/Phường (không có Bưu điện tỉnh/xã),Admin đăng nhập,"1. Click '+ Thêm điểm bán'
+ 2. Chọn Phân loại = Pos plus
+ 3. Quan sát các trường hiển thị trên form","Form chỉ hiển thị: Tên điểm bán, Tỉnh/TP, Xã/Phường, Địa chỉ. Hai trường 'Bưu điện tỉnh/thành phố' và 'Bưu điện xã/phường' KHÔNG xuất hiện (khác với Pos mini)",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,DIEMBAN__13,Sheet QC,Đạt,28/09/2026,
+01_020_004,Thêm mới Pos plus thành công với đầy đủ trường,Admin đăng nhập; Phân loại đã chọn = Pos plus,"1. Click '+ Thêm điểm bán', chọn Pos plus
+ 2. Nhập Tên điểm bán: 'Pos plus Test 01'
+ 3. Chọn Tỉnh/TP: 'Tỉnh Phú Thọ'
+ 4. Chọn Xã/Phường: 'Thành phố Việt Trì'
+ 5. Click 'Xác nhận'",Điểm bán 'Pos plus Test 01' được tạo thành công; hiển thị trong danh sách với Phân loại = Pos plus và Trạng thái = Đang hoạt động,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,DIEMBAN__14,Sheet QC,Không đạt,29/09/2026,"Error: Cấp ""Xã"" không có phân loại ""Pos plus"". expect(locator).toBeVisible() failed Locator: locator('.ant-drawer-open').first().getByText('Pos plus', { exact: true }).first() Expected: visible Timeout: 15000ms Error: element(s) not found Call log: - Cấp ""Xã"" không có phân loại ""Pos plus"". with time"
+01_020_005,"Thêm mới Hub - label đổi thành 'Tên Hub', có đủ Bưu điện tỉnh/xã và Tỉnh/TP",Admin đăng nhập,"1. Click '+ Thêm điểm bán'
+ 2. Chọn Phân loại = Hub
+ 3. Quan sát các trường hiển thị","Form hiển thị label 'Tên Hub' (không phải 'Tên điểm bán'); có đủ 4 trường địa chỉ: Bưu điện tỉnh/thành phố, Bưu điện xã/phường, Tỉnh/TP, Xã/Phường",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,DIEMBAN__15,Sheet QC,Đạt,28/09/2026,
+01_020_006,Thêm mới Hub thành công với đầy đủ trường,Admin đăng nhập; Phân loại đã chọn = Hub,"1. Click '+ Thêm điểm bán', chọn Hub
+ 2. Nhập Tên Hub: 'Hub Test Hà Nội'
+ 3. Chọn Bưu điện tỉnh/TP, Bưu điện xã/phường, Tỉnh/TP, Xã/Phường
+ 4. Click 'Xác nhận'",Hub 'Hub Test Hà Nội' được tạo thành công; hiển thị trong danh sách với Phân loại = Hub và Trạng thái = Đang hoạt động,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,DIEMBAN__16,Sheet QC,Chưa chạy,29/09/2026,
+01_020_007,Phân loại mặc định khi mở drawer là Pos mini,Admin đăng nhập,"1. Click '+ Thêm điểm bán'
+ 2. Quan sát radio button Phân loại khi drawer vừa mở",Radio button 'Pos mini' được chọn sẵn (selected) khi drawer mở; 'Pos plus' và 'Hub' chưa được chọn,020,Thêm điểm bán hoặc hub mới,Thấp,Màn thêm mới điểm bán/hub,DIEMBAN__17,Sheet QC,Đạt,28/09/2026,
+01_020_008,Bỏ trống Tên điểm bán (bắt buộc) khi thêm mới,"Drawer Thêm điểm bán đang mở, Phân loại = Pos mini","1. Để trống trường Tên điểm bán
+ 2. Điền đầy đủ các trường địa chỉ
+ 3. Click 'Xác nhận'",Hệ thống hiển thị thông báo lỗi yêu cầu nhập Tên điểm bán (bắt buộc); không tạo được bản ghi mới,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,DIEMBAN__18,Sheet QC,Đạt,28/09/2026,
+01_020_009,Bỏ trống Bưu điện tỉnh/thành phố (bắt buộc với Pos mini) khi thêm mới,"Drawer Thêm điểm bán, Phân loại = Pos mini","1. Nhập Tên điểm bán hợp lệ
+ 2. Để trống Bưu điện tỉnh/thành phố
+ 3. Click 'Xác nhận'",Hệ thống hiển thị lỗi yêu cầu chọn Bưu điện tỉnh/thành phố; không tạo được điểm bán,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,DIEMBAN__19,Sheet QC,Đạt,28/09/2026,
+01_020_010,Tên điểm bán vượt quá 200 ký tự (giới hạn theo UI),Drawer Thêm điểm bán đang mở,"1. Nhập Tên điểm bán với chuỗi 201 ký tự
+ 2. Quan sát ô nhập liệu và counter '0/200'",Hệ thống không cho nhập quá 200 ký tự (tự cắt hoặc hiển thị cảnh báo); counter hiển thị '200/200' khi đã đủ giới hạn,020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,DIEMBAN__20,Sheet QC,Đạt,28/09/2026,
+01_020_011,Dropdown Bưu điện xã/phường tự lọc theo Bưu điện tỉnh đã chọn,Drawer Thêm điểm bán (Pos mini) đang mở,"1. Chọn Bưu điện tỉnh/TP = 'Bưu điện Tỉnh Vĩnh Phúc'
+ 2. Click vào dropdown Bưu điện xã/phường
+ 3. Quan sát danh sách tùy chọn",Dropdown Bưu điện xã/phường chỉ hiển thị các bưu điện xã thuộc 'Bưu điện Tỉnh Vĩnh Phúc'; không hiển thị bưu điện xã của tỉnh khác,020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,DIEMBAN__21,Sheet QC,Đạt,28/09/2026,
+01_020_012,Cấp chỉ chọn được từ cấp của người dùng trở xuống,Vai: province.,"1. Mở màn danh sách, bấm Thêm điểm bán
+2. Mở danh sách chọn Cấp",Vai Tỉnh không chọn được cấp TCT; chỉ còn Tỉnh và Xã.,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,"HDSD 020 bước 3 — ""chỉ chọn được từ cấp của mình trở xuống""",Đạt,28/09/2026,
+01_020_013,Phân loại phụ thuộc Cấp — chọn cấp Tỉnh thì chỉ còn Hub,Vai: tct (để chọn được mọi cấp).,"1. Bấm Thêm điểm bán
+2. Chọn Cấp = Tỉnh
+3. Mở danh sách Phân loại",Danh sách Phân loại chỉ có Hub.,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,HDSD 020 bước 4 + bảng cấp↔phân loại,Đạt,28/09/2026,
+01_020_014,Mã điểm bán trùng với điểm bán đã có thì bị chặn,Biết trước mã của một điểm bán đang tồn tại.,"1. Bấm Thêm điểm bán, chọn cấp và phân loại
+2. Nhập Mã điểm bán trùng mã đã có
+3. Điền các trường bắt buộc còn lại
+4. Bấm Xác nhận",Hệ thống báo lỗi trùng mã và KHÔNG tạo điểm bán mới.,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,"HDSD 020 bước 5 — ""Mã và tên không được trùng""",Chưa chạy,29/09/2026,
+01_020_015,Chọn phân loại Hub thì không có trường Loại hình điểm bán,—,"1. Bấm Thêm điểm bán
+2. Chọn Phân loại = Hub
+3. Quan sát form",Trường Loại hình điểm bán (Mua bán / Ký gửi) không xuất hiện.,020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,,"HDSD 020 bước 6 — ""Chọn Hub thì không có trường này""",Đạt,28/09/2026,
+01_020_016,Chưa chọn Cấp thì form không hiện ô nhập nào,"Vai `tct` đăng nhập, vừa bấm ""+ Thêm điểm bán""","1. Quan sát drawer khi chưa chọn Cấp
+ 2. Bấm ""Xác nhận""","Drawer chỉ hiện nhóm ""Thông tin tổ chức"" + dòng chữ ""Chọn cấp để nhập thông tin điểm bán / hub.""; bấm Xác nhận báo lỗi ""Vui lòng chọn cấp"" ngay dưới ô Cấp và không gửi request POST /shops/profile.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_017,Bỏ trống Mã điểm bán,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập đủ các ô khác
+ 2. Để trống ô ""Mã điểm bán""
+ 3. Bấm ""Xác nhận""","Hiện lỗi nguyên văn ""Vui lòng nhập mã điểm bán"" dưới ô Mã điểm bán; không gửi POST /shops/profile. Khi Phân loại = Hub thì nhãn và lỗi đổi thành ""Vui lòng nhập mã Hub"".",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_018,Bỏ trống Loại hình điểm bán,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập đủ Mã, Tên, Bưu điện tỉnh/xã, Email, SĐT
+ 2. Để trống ""Loại hình điểm bán""
+ 3. Bấm ""Xác nhận""","Hiện lỗi nguyên văn ""Vui lòng chọn loại hình điểm bán""; không gửi request. (Ô này là Select mode=""multiple"", chỉ có khi Phân loại ≠ Hub.)",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_019,Bỏ trống Bưu điện xã/phường,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Chọn Bưu điện tỉnh/thành phố
+ 2. Để trống ""Bưu điện xã/phường""
+ 3. Nhập đủ các ô còn lại rồi bấm ""Xác nhận""","Hiện lỗi nguyên văn ""Vui lòng chọn bưu điện xã""; không gửi POST /shops/profile.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_020,Bỏ trống Email,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập đủ mọi ô bắt buộc trừ Email
+ 2. Bấm ""Xác nhận""","Hiện lỗi nguyên văn ""Vui lòng nhập email""; không gửi request. 🔴 HDSD 020 KHÔNG nói Email là bắt buộc — code thì bắt buộc (DrawerCreateShop.jsx nhóm ""Thông tin liên hệ""). Lỗ hổng đặc tả, xem nhận xét tay.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_021,Bỏ trống Số điện thoại,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập đủ mọi ô bắt buộc trừ ""Số điện thoại""
+ 2. Bấm ""Xác nhận""","Hiện lỗi nguyên văn ""Vui lòng nhập số điện thoại""; không gửi request. 🔴 HDSD 020 cũng không khai ô này là bắt buộc.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_022,Bấm Xác nhận khi bỏ trống TẤT CẢ ô bắt buộc,"Vai `tct` đăng nhập, vừa bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini, chưa nhập gì thêm","1. Không nhập ô nào
+ 2. Bấm ""Xác nhận""","Tất cả ô bắt buộc đồng thời hiện lỗi (Mã, Tên, Loại hình, Bưu điện tỉnh, Bưu điện xã, Email, SĐT — 7 ô); drawer cuộn tới ô lỗi đầu tiên; không gửi POST /shops/profile.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_023,Tên điểm bán nhập toàn khoảng trắng,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập 10 dấu cách vào ô ""Tên điểm bán""
+ 2. Nhập đủ các ô bắt buộc còn lại
+ 3. Bấm ""Xác nhận""","🔴 Phơi hành vi thật: rule chỉ có `required: true` nên antd coi chuỗi khoảng trắng là ĐÃ nhập ⇒ request POST /shops/profile được gửi. Kỳ vọng nghiệp vụ đúng là bị chặn (tên rỗng nghĩa là không có tên). Nếu backend cũng nhận thì là LỖI, ghi phiếu.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #2 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_024,Mã điểm bán nhập toàn khoảng trắng,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập 5 dấu cách vào ô ""Mã điểm bán""
+ 2. Nhập đủ các ô bắt buộc còn lại
+ 3. Bấm ""Xác nhận""",🔴 Phơi hành vi thật như 01_020_023: FE không trim nên không chặn được ở client. Mã điểm bán là khoá nghiệp vụ nên kỳ vọng đúng là backend trả lỗi và không tạo bản ghi.,020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #2 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_025,Mã điểm bán tại biên 50 ký tự và vượt 50,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Dán chuỗi 49 ký tự vào ô Mã điểm bán, ghi lại số ký tự nhận được
+ 2. Dán chuỗi 50 ký tự, ghi lại
+ 3. Dán chuỗi 51 ký tự, ghi lại","49 và 50 ký tự được nhận nguyên văn; chuỗi 51 ký tự bị cắt còn đúng 50 (Input maxLength={50}), KHÔNG hiện thông báo lỗi. Bản ghi tạo ra mang mã 50 ký tự.",020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #3 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_026,Email sai định dạng,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập lần lượt 'abc', 'abc@', 'abc@xyz', 'a b@c.vn' vào ô Email
+ 2. Sau mỗi giá trị bấm ""Xác nhận""","Mỗi giá trị đều hiện lỗi nguyên văn ""Email không đúng định dạng""; không gửi POST /shops/profile.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #4 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_027,Số điện thoại sai định dạng,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập lần lượt 'abcdefgh', '123', '0912-345-678', '+84 912 345 678' vào ô Số điện thoại
+ 2. Sau mỗi giá trị bấm ""Xác nhận""","Mỗi giá trị không khớp PHONE_PATTERN đều hiện lỗi nguyên văn ""Số điện thoại không hợp lệ""; không gửi request. Ghi lại giá trị nào được chấp nhận để chốt đúng pattern thật.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #4 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_028,"SĐT người quản lý: bỏ trống được, nhưng sai định dạng thì bị chặn","Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Bỏ trống ô ""SĐT người quản lý"", nhập đủ các ô bắt buộc, bấm ""Xác nhận"" → ghi kết quả
+ 2. Mở lại form, nhập ""abc123"" vào ô này, bấm ""Xác nhận""","Bước 1: tạo thành công (ô này KHÔNG bắt buộc). Bước 2: hiện lỗi ""Số điện thoại không hợp lệ"" và không gửi request.",020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code  + #4 — chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_029,Vĩ độ ngoài khoảng cho phép,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập Vĩ độ = -90 → bấm Xác nhận
+ 2. Nhập Vĩ độ = 90 → bấm Xác nhận
+ 3. Nhập Vĩ độ = 90.1 → bấm Xác nhận
+ 4. Nhập Vĩ độ = -91 → bấm Xác nhận","-90 và 90 được chấp nhận (biên đóng); 90.1 và -91 hiện lỗi nguyên văn ""Vĩ độ phải là số từ -90 đến 90"" và không gửi request.",020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #3 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_030,Kinh độ ngoài khoảng cho phép,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập Kinh độ = -180 → Xác nhận
+ 2. Nhập Kinh độ = 180 → Xác nhận
+ 3. Nhập Kinh độ = 180.5 → Xác nhận
+ 4. Nhập Kinh độ = -181 → Xác nhận","-180 và 180 được chấp nhận; 180.5 và -181 hiện lỗi nguyên văn ""Kinh độ phải là số từ -180 đến 180"" và không gửi request.",020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #3 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_031,Vĩ độ / Kinh độ nhập chữ,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập Vĩ độ = ""hai mốt phẩy không""
+ 2. Bấm ""Xác nhận""
+ 3. Làm lại với ô Kinh độ","Cả hai ô hiện lỗi nguyên văn tương ứng (""Vĩ độ phải là số từ -90 đến 90"" / ""Kinh độ phải là số từ -180 đến 180"") vì Number(value) ra NaN; không gửi request.",020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #4 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_032,Mã điểm bán trùng nhưng khác hoa/thường,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini; đã có điểm bán mã ""dbtest01""","1. Nhập Mã điểm bán = ""DBTEST01""
+ 2. Nhập đủ các ô bắt buộc còn lại
+ 3. Bấm ""Xác nhận""","🔴 Phơi hành vi thật: FE không kiểm trùng, quyết định nằm ở backend. Kỳ vọng nghiệp vụ là CHẶN (mã là khoá, không nên phân biệt hoa/thường). Ghi lại thông báo thật từ `err.data.status.message`.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #5 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Chưa chạy,29/09/2026,
+01_020_033,Tên điểm bán trùng với điểm bán đã có,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini; đã có điểm bán tên ""Pos mini Test 01""","1. Nhập Tên điểm bán = ""Pos mini Test 01"" (mã nhập khác, không trùng)
+ 2. Nhập đủ các ô bắt buộc
+ 3. Bấm ""Xác nhận""","🔴 MÂU THUẪN ĐẶC TẢ: HDSD 020 bước 5 nói ""Mã và tên không được trùng"", nhưng code FE chỉ ràng buộc required — không có rule duy nhất cho tên. Case này để phơi hành vi thật; ghi lại có chặn hay không rồi báo, 🚫 không tự sửa tài liệu.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #5 — trace code  — HDSD 020 vs chain/pages/shopManagement/components/DrawerCreateShop.jsx,Chưa chạy,29/09/2026,
+01_020_034,Đổi Tỉnh/TP thì ô Xã/Phường bị xoá giá trị cũ,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Chọn Tỉnh/TP = A, chọn Xã/Phường thuộc A
+ 2. Đổi Tỉnh/TP sang B
+ 3. Quan sát ô Xã/Phường","Ô Xã/Phường trở về rỗng (onSelect gọi form.setFieldValue(""ward"", null)); dropdown chỉ liệt kê xã thuộc tỉnh B. 🚫 Không được giữ xã của tỉnh A.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #4 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_035,Bấm Hủy giữa chừng thì không tạo bản ghi,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập đủ mọi ô bắt buộc
+ 2. Bấm ""Hủy"" ở footer drawer
+ 3. Tìm mã vừa nhập trong danh sách","Drawer đóng, KHÔNG có request POST /shops/profile; tìm theo mã vừa nhập trả về trạng thái rỗng; total_elements không đổi.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #9 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_036,Đóng drawer bằng X rồi mở lại thì form trắng,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập Tên và Mã điểm bán
+ 2. Đóng drawer bằng nút X góc phải
+ 3. Bấm lại ""+ Thêm điểm bán""","Form mở lại trắng hoàn toàn, không giữ giá trị lần trước (Drawer có `destroyOnHidden`); Cấp cũng chưa chọn nên chỉ hiện dòng ""Chọn cấp để nhập thông tin điểm bán / hub.""",020,Thêm điểm bán hoặc hub mới,TB,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #9 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_020_037,Sau khi tạo thành công thì tổng bản ghi tăng 1 và tìm được ngay,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Ghi lại total_elements của danh sách
+ 2. Tạo mới một Pos mini với mã ""DBAUTO<STT>""
+ 3. Không tải lại trang, quan sát danh sách
+ 4. Tìm theo mã vừa tạo","total_elements tăng đúng 1; bản ghi mới xuất hiện trong danh sách mà KHÔNG cần F5 (mutation addShop invalidate tag chainListVNPost); tìm theo mã trả về đúng 1 dòng, Trạng thái = Đang hoạt động, Số lượng nhân viên = 0.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #11 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Chưa chạy,29/09/2026,
+01_020_038,Bỏ trống Tỉnh/TP và Xã/Phường (địa chỉ hành chính) vẫn tạo được,"Vai `tct` đăng nhập, đã bấm ""+ Thêm điểm bán"", đã chọn Cấp = Xã và Phân loại = Pos mini","1. Nhập đủ Mã, Tên, Loại hình, Bưu điện tỉnh/xã, Email, SĐT
+ 2. Để trống Địa chỉ chi tiết, Tỉnh/TP, Xã/Phường
+ 3. Bấm ""Xác nhận""","Tạo thành công. 🔴 Ba ô này KHÔNG bắt buộc trong code (không có rule required) — khác với nhóm ""Bưu điện tỉnh/xã"" là bắt buộc. Case gốc FUNC_THUMUC__47 (nay thuộc phân hệ 32) khai ngược lại; xem nhận xét tay.",020,Thêm điểm bán hoặc hub mới,Cao,Màn thêm mới điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_030_001,Chỉnh sửa Tên điểm bán thành công,Drawer Sửa đang mở với dữ liệu 'Pos mini Liên Châu 12',"1. Xóa tên cũ, nhập tên mới: 'Pos mini Liên Châu 12 Updated'
+ 2. Giữ nguyên các trường khác
+ 3. Click 'Xác nhận'",Tên điểm bán được cập nhật thành 'Pos mini Liên Châu 12 Updated'; danh sách hiển thị tên mới; mã điểm DB67822 không thay đổi,030,Sửa thông tin điểm bán,Cao,Màn sửa điểm bán/hub,DIEMBAN__25,Sheet QC,Không đạt,29/09/2026,"TimeoutError: page.waitForResponse: Timeout 180000ms exceeded while waiting for event ""response"""
+01_030_002,Chỉnh sửa Bưu điện tỉnh/thành phố và Bưu điện xã/phường thành công,Drawer Sửa điểm bán (Pos mini) đang mở,"1. Đổi Bưu điện tỉnh/TP sang tỉnh khác
+ 2. Chọn lại Bưu điện xã/phường phù hợp
+ 3. Click 'Xác nhận'",Bưu điện tỉnh và xã được cập nhật; hiển thị đúng trong danh sách cột 'Bưu điện Xã' và 'Bưu điện Tỉnh',030,Sửa thông tin điểm bán,TB,Màn sửa điểm bán/hub,DIEMBAN__26,Sheet QC,Không đạt,29/09/2026,"TimeoutError: page.waitForResponse: Timeout 180000ms exceeded while waiting for event ""response"""
+01_030_003,Chỉnh sửa - bỏ trống Tên điểm bán (bắt buộc),Drawer Sửa điểm bán đang mở,"1. Xóa trống trường Tên điểm bán
+ 2. Click 'Xác nhận'","Hệ thống hiển thị lỗi yêu cầu nhập Tên điểm bán; không lưu được thay đổi, dữ liệu cũ giữ nguyên",030,Sửa thông tin điểm bán,Cao,Màn sửa điểm bán/hub,DIEMBAN__27,Sheet QC,Đạt,28/09/2026,
+01_030_004,Chỉnh sửa - bỏ trống Bưu điện tỉnh/thành phố (bắt buộc với Pos mini),Drawer Sửa điểm bán (Pos mini) đang mở,"1. Xóa/bỏ chọn Bưu điện tỉnh/thành phố
+ 2. Click 'Xác nhận'",Hệ thống hiển thị lỗi yêu cầu chọn Bưu điện tỉnh/thành phố; không lưu được thay đổi,030,Sửa thông tin điểm bán,Cao,Màn sửa điểm bán/hub,DIEMBAN__28,Sheet QC,Không đạt,29/09/2026,TimeoutError: locator.click: Timeout 15000ms exceeded. Call log: - waiting for locator('.ant-drawer-open').first().locator('.ant-select').filter({ hasText: /bưu điện tỉnh/i }).first().locator('.ant-select-clear').first()
+01_030_005,Đóng drawer Sửa bằng nút X - dữ liệu không bị thay đổi,"Drawer Sửa đang mở, đã chỉnh sửa một số trường","1. Sửa Tên điểm bán thành tên mới bất kỳ
+ 2. Click dấu X đóng drawer",Drawer đóng lại; danh sách vẫn hiển thị tên điểm bán cũ (không bị lưu thay đổi),030,Sửa thông tin điểm bán,Thấp,Màn sửa điểm bán/hub,DIEMBAN__29,Sheet QC,Đạt,28/09/2026,
+01_030_006,"Phân loại và Mã điểm bán hiển thị mờ, không sửa được",Có điểm bán đang hoạt động.,"1. Mở màn danh sách, bấm biểu tượng Sửa trên một dòng
+2. Thử sửa ô Phân loại và ô Mã điểm bán","Hai trường hiển thị mờ, không nhập/không chọn được.",030,Sửa thông tin điểm bán,Cao,Màn sửa điểm bán/hub,,"HDSD 030 — Lưu ý: ""hiển thị mờ và không sửa được""",Đạt,28/09/2026,
+01_030_007,Form Sửa không có ô Cấp và Phân loại bị vô hiệu,"Vai `tct` đăng nhập, mở drawer Sửa của một điểm bán Pos mini","1. Quan sát nhóm ""Thông tin tổ chức""
+ 2. Thử đổi Phân loại","Ô ""Cấp"" KHÔNG hiển thị (chỉ có khi thêm mới); radio ""Phân loại"" hiển thị nhưng disabled; thay vào đó có thêm ô ""Trạng thái"" với hai lựa chọn Đang hoạt động / Ngừng hoạt động.",030,Sửa thông tin điểm bán,Cao,Màn sửa điểm bán/hub,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_030_008,Sửa: xoá trắng Email thì bị chặn,"Vai `tct` đăng nhập, mở drawer Sửa của một điểm bán đang hoạt động","1. Xoá trắng ô Email
+ 2. Bấm ""Xác nhận""","Hiện lỗi ""Vui lòng nhập email""; không gửi PUT /shops/profile/{shopId}; dữ liệu cũ giữ nguyên.",030,Sửa thông tin điểm bán,Cao,Màn sửa điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Không đạt,29/09/2026,"Error: Điểm bán đang mở không có Email sẵn để xoá. expect(received).not.toBe(expected) // Object.is equality Expected: not """""
+01_030_009,Sửa: Số điện thoại sai định dạng thì bị chặn,"Vai `tct` đăng nhập, mở drawer Sửa của một điểm bán đang hoạt động","1. Sửa ô Số điện thoại thành ""12ab""
+ 2. Bấm ""Xác nhận""","Hiện lỗi ""Số điện thoại không hợp lệ""; không gửi PUT /shops/profile/{shopId}.",030,Sửa thông tin điểm bán,TB,Màn sửa điểm bán/hub,,Quét kỹ thuật 3.4 #4 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Đạt,28/09/2026,
+01_030_010,Sửa: xoá trắng Loại hình điểm bán thì bị chặn,"Vai `tct` đăng nhập, mở drawer Sửa của một điểm bán Pos mini","1. Xoá hết thẻ đã chọn ở ô ""Loại hình điểm bán""
+ 2. Bấm ""Xác nhận""","Hiện lỗi ""Vui lòng chọn loại hình điểm bán""; không gửi PUT. (Với Hub thì ô này không tồn tại.)",030,Sửa thông tin điểm bán,TB,Màn sửa điểm bán/hub,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Không đạt,29/09/2026,Error: Điểm bán đang mở chưa chọn Loại hình nào nên không có gì để xoá. expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+01_030_011,"Sửa xong danh sách tự cập nhật, không cần tải lại trang","Vai `tct` đăng nhập, danh sách đang mở","1. Ghi lại tên hiện tại của một điểm bán
+ 2. Mở Sửa, đổi tên thành ""<tên cũ> ĐÃ SỬA""
+ 3. Bấm ""Xác nhận"", đóng drawer
+ 4. Quan sát đúng dòng đó, KHÔNG bấm F5",Dòng trong bảng đổi sang tên mới ngay (mutation updateShopOrHub invalidate tag chainListVNPost ⇒ danh sách tự refetch); total_elements không đổi.,030,Sửa thông tin điểm bán,Cao,Màn sửa điểm bán/hub,,Quét kỹ thuật 3.4 #11 — trace code chain/pages/shopManagement/components/DrawerCreateShop.jsx,Chưa chạy,29/09/2026,
+01_040_001,Chi tiết điểm bán Ngừng hoạt động - Trạng thái hiển thị màu đỏ + nút Khôi phục,Có điểm bán trạng thái 'Ngừng hoạt động' trong danh sách,"1. Lọc danh sách theo Trạng thái = Ngừng hoạt động
+ 2. Click icon ⓘ của 1 điểm bán
+ 3. Quan sát drawer Chi tiết",Trạng thái hiển thị màu đỏ 'Ngừng hoạt động'; góc trên phải của drawer có nút 'Khôi phục' (màu xanh lá); không có nút Xóa,040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn xem chi tiết điểm bán/hub,DIEMBAN__23,Sheet QC,Đạt,28/09/2026,
+01_040_002,"Chi tiết điểm bán Đang hoạt động - có nút Xóa (đỏ), không có nút Khôi phục",Có điểm bán trạng thái 'Đang hoạt động',"1. Click icon ⓘ của điểm bán đang hoạt động
+ 2. Quan sát các nút action góc trên phải",Góc trên phải có nút 'Xóa' (màu đỏ); nút 'Khôi phục' không xuất hiện,040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,TB,Màn xem chi tiết điểm bán/hub,DIEMBAN__24,Sheet QC,Đạt,28/09/2026,
+01_040_003,Xóa điểm bán - click 'Đồng ý' chuyển trạng thái sang Ngừng hoạt động,Popup confirm xóa đang hiển thị,"1. Click 'Đồng ý' tại popup
+ 2. Quan sát trạng thái điểm bán trong danh sách",Điểm bán chuyển sang trạng thái 'Ngừng hoạt động' (chữ đỏ) trong danh sách; drawer Chi tiết mở lại sẽ hiển thị nút 'Khôi phục' thay vì 'Xóa',040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn xem chi tiết điểm bán/hub,DIEMBAN__30,Sheet QC,Không đạt,29/09/2026,"TimeoutError: page.waitForResponse: Timeout 180000ms exceeded while waiting for event ""response"""
+01_040_004,"Hủy xóa điểm bán - click 'Hủy' tại popup, trạng thái không đổi",Popup confirm xóa đang hiển thị,"1. Click 'Hủy' tại popup
+ 2. Quan sát trạng thái điểm bán",Popup đóng lại; điểm bán vẫn giữ trạng thái 'Đang hoạt động'; không có thay đổi nào xảy ra,040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,TB,Màn xem chi tiết điểm bán/hub,DIEMBAN__31,Sheet QC,Đạt,28/09/2026,
+01_040_005,Khôi phục điểm bán Ngừng hoạt động - click 'Khôi phục' tại Chi tiết,Điểm bán đang ở trạng thái Ngừng hoạt động,"1. Lọc danh sách Trạng thái = Ngừng hoạt động
+ 2. Click icon ⓘ của điểm bán
+ 3. Click nút 'Khôi phục' (xanh lá)
+ 4. Xác nhận (nếu có popup)","Điểm bán chuyển trạng thái từ 'Ngừng hoạt động' sang 'Đang hoạt động'; nút 'Khôi phục' biến mất, xuất hiện nút 'Xóa'",040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn xem chi tiết điểm bán/hub,DIEMBAN__32,Sheet QC,Chưa chạy,29/09/2026,Không có điểm bán rác nào đang Tạm ngừng để khôi phục.
+01_040_006,Điểm bán sau khi xóa không còn hiển thị khi lọc Trạng thái = Đang hoạt động,Điểm bán vừa bị xóa (chuyển sang Ngừng hoạt động),"1. Sau khi xóa điểm bán X
+ 2. Lọc Trạng thái = Đang hoạt động
+ 3. Tìm kiếm điểm bán X",Điểm bán X không xuất hiện trong kết quả lọc Đang hoạt động; chỉ thấy khi lọc Ngừng hoạt động,040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn xem chi tiết điểm bán/hub,DIEMBAN__33,Sheet QC,Chưa chạy,29/09/2026,Không có điểm bán rác nào đang Tạm ngừng.
+01_040_007,Tạm ngừng điểm bán bằng ô Trạng thái trên màn Sửa,Có điểm bán Đang hoạt động.,"1. Mở màn danh sách, bấm biểu tượng Sửa
+2. Ở mục Trạng thái góc trên bên phải, chọn Tạm ngừng
+3. Bấm Xác nhận",Cột Trạng thái của điểm bán đổi sang Tạm ngừng trong danh sách.,040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn sửa điểm bán/hub,,HDSD 040 bước 2–4 — luồng chuẩn nằm ở màn Sửa,Chưa chạy,29/09/2026,Case 01_020_001 chưa chạy nên chưa có điểm bán mới để tạm ngừng.
+01_040_008,Khôi phục hoạt động bằng ô Trạng thái trên màn Sửa,Có điểm bán đang Tạm ngừng.,"1. Mở màn danh sách, lọc Trạng thái = Tạm ngừng
+2. Bấm biểu tượng Sửa
+3. Chọn Đang hoạt động
+4. Bấm Xác nhận",Cột Trạng thái đổi sang Đang hoạt động.,040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn sửa điểm bán/hub,,HDSD 040 bước 3,Chưa chạy,29/09/2026,
+01_040_009,Bảng trạng thái × hành động: điểm bán Ngừng hoạt động còn làm được gì,Vai `tct` đăng nhập; có ít nhất 1 điểm bán Trạng thái = Ngừng hoạt động,"1. Lọc Trạng thái = Ngừng hoạt động
+ 2. Với dòng đó, thử lần lượt: Xem chi tiết · Sửa · Thiết lập điểm bán · Gắn nhân viên
+ 3. Ghi kết quả từng nút","Ghi nhận thực tế từng nút ở cột Hành động của điểm bán đã ngừng hoạt động: nút nào bị chặn và chặn bằng cách nào (ẩn / mờ / báo lỗi).
+
+🔴 Mỗi nút là một ô của bảng quyết định, ghi rõ nút nào bị chặn và chặn bằng cách nào (ẩn / disabled / báo lỗi). Cột Hành động hiện nay chỉ gác theo permKey, KHÔNG gác theo trạng thái (ShopManagement.jsx) ⇒ nếu nghiệp vụ đòi chặn thao tác trên điểm bán đã ngừng thì đây là lỗ hổng. 🚫 Không kết luận trước khi đo.",040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn sửa điểm bán/hub,,Quét kỹ thuật 3.4 #6 — trace code ShopManagement.jsx,Đạt,29/09/2026,
+01_040_010,Sau khi tạm ngừng thì thấy bản ghi ở bộ lọc Ngừng hoạt động,"Vai `tct` đăng nhập; chọn một điểm bán đang hoạt động, không có nhân viên","1. Ghi lại số dòng khi lọc Trạng thái = Ngừng hoạt động
+ 2. Tạm ngừng điểm bán đã chọn
+ 3. Lọc lại Trạng thái = Ngừng hoạt động",Số dòng tăng đúng 1 và có đúng điểm bán vừa tạm ngừng; đối ứng với 01_040_006 (không còn ở bộ lọc Đang hoạt động).,040,Tạm ngừng hoặc khôi phục hoạt động điểm bán,Cao,Màn sửa điểm bán/hub,,Quét kỹ thuật 3.4 #11 — trace code ShopManagement.jsx,Chưa chạy,29/09/2026,Không có điểm bán rác nào đang Tạm ngừng để đối chiếu.
+01_050_001,Gán mới 1 nhân viên với vai trò Cửa hàng trưởng thành công,Popup Gán nhân viên của 'Pos mini Liên Châu 12' đang mở; nhân viên 'Phúc - 84944374459' tồn tại,"1. Click '+ Thêm nhân viên & vai trò'
+ 2. Chọn Nhân viên = 'Phúc - 84944374459'
+ 3. Chọn Vai trò = 'Cửa hàng trưởng'
+ 4. Chọn Trạng thái = 'Đang làm'
+ 5. Click 'Xác nhận'",Nhân viên 'Phúc' được gán vai trò 'Cửa hàng trưởng' tại điểm bán; popup đóng; khi mở lại hiển thị dòng gán vừa thêm,050,Gắn nhân viên và vai trò cho điểm bán,Cao,Màn gắn nhân viên,DIEMBAN__38,Sheet QC,Đạt,29/09/2026,
+01_050_002,Thêm nhiều nhân viên trong 1 lần lưu,Popup Gán nhân viên đang mở; có ít nhất 2 nhân viên trong danh mục,"1. Click '+ Thêm nhân viên & vai trò' 2 lần
+ 2. Dòng 1: NV Phúc - Cửa hàng trưởng - Đang làm
+ 3. Dòng 2: NV khác - Giao dịch viên - Đang làm
+ 4. Click 'Xác nhận'",Cả 2 nhân viên được gán cùng lúc; khi mở lại popup hiển thị đúng 2 dòng vừa gán,050,Gắn nhân viên và vai trò cho điểm bán,Cao,Màn gắn nhân viên,DIEMBAN__39,Sheet QC,Đạt,28/09/2026,
+01_050_003,Xác nhận khi dòng mới bỏ trống Nhân viên (bắt buộc),"Đã click '+ Thêm nhân viên & vai trò', dòng mới chưa chọn Nhân viên","1. Thêm dòng mới
+ 2. Chỉ chọn Vai trò, để trống Nhân viên
+ 3. Click 'Xác nhận'",Hệ thống hiển thị lỗi yêu cầu chọn Nhân viên cho dòng trống; không lưu được,050,Gắn nhân viên và vai trò cho điểm bán,Cao,Màn gắn nhân viên,DIEMBAN__41,Sheet QC,Đạt,28/09/2026,
+01_050_004,Xác nhận khi dòng mới bỏ trống Vai trò (bắt buộc),"Đã click '+ Thêm nhân viên & vai trò', dòng mới chưa chọn Vai trò","1. Thêm dòng mới, chọn Nhân viên
+ 2. Để trống Vai trò
+ 3. Click 'Xác nhận'",Hệ thống hiển thị lỗi yêu cầu chọn Vai trò; không lưu được thay đổi,050,Gắn nhân viên và vai trò cho điểm bán,Cao,Màn gắn nhân viên,DIEMBAN__42,Sheet QC,Đạt,28/09/2026,
+01_050_005,Hủy thao tác Gán nhân viên - dữ liệu không bị lưu,"Popup đang mở, đã thêm dòng mới","1. Thêm dòng mới NV và Vai trò hợp lệ
+ 2. Click 'Hủy'","Popup đóng; mở lại popup điểm bán đó: dòng mới không tồn tại, danh sách gán giữ nguyên như trước",050,Gắn nhân viên và vai trò cho điểm bán,TB,Màn gắn nhân viên,DIEMBAN__43,Sheet QC,Đạt,28/09/2026,
+01_050_006,Bỏ trống ô Trạng thái trên dòng phân công mới thì bị chặn,Có điểm bán không phải Hub.,"1. Mở màn Gắn nhân viên
+2. Bấm + Thêm nhân viên & vai trò
+3. Chọn nhân viên và vai trò, để trống ô Trạng thái
+4. Bấm Xác nhận","Hệ thống báo thiếu thông tin ngay trên dòng đó, không lưu.",050,Gắn nhân viên và vai trò cho điểm bán,Cao,Màn gắn nhân viên,,"HDSD 050 — Lưu ý: ""cả ba ô trên mỗi dòng đều bắt buộc""",Đạt,28/09/2026,
+01_050_007,Cột Số lượng nhân viên tăng đúng sau khi gắn nhân viên,Biết số nhân viên hiện tại của điểm bán.,"1. Ghi lại số ở cột Số lượng nhân viên
+2. Gắn thêm 1 nhân viên và Xác nhận
+3. Quay lại danh sách",Cột Số lượng nhân viên tăng đúng 1 đơn vị.,050,Gắn nhân viên và vai trò cho điểm bán,TB,Màn danh sách điểm bán,,"HDSD 050 — Kết quả: ""Số lượng nhân viên tăng lên tương ứng""",Đạt,28/09/2026,
+01_050_008,Gán trùng vai trò cho cùng một nhân viên bị chặn tại chỗ,"Vai `tct` đăng nhập, mở drawer ""Gắn nhân viên"" của một điểm bán","1. Thêm dòng 1: chọn nhân viên A, vai trò ""Cửa hàng trưởng""
+ 2. Thêm dòng 2: chọn cùng nhân viên A, chọn lại vai trò ""Cửa hàng trưởng""
+ 3. Quan sát","Hiện cảnh báo nguyên văn ""Vai trò này đã được gán cho nhân viên. Vui lòng chọn vai trò khác.""; ô Vai trò của dòng 2 bị trả về giá trị cũ (rỗng) — không gửi request.",050,Gắn nhân viên và vai trò cho điểm bán,Cao,Màn gắn nhân viên,,Quét kỹ thuật 3.4 #5 — trace code chain/pages/shopManagement/components/DrawerAssignEmployee.jsx,Không đạt,29/09/2026,TimeoutError: locator.click: Timeout 15000ms exceeded. Call log: - waiting for locator('.ant-select-dropdown').filter({ has: locator('#_r_5r__list') }).first().locator('.ant-select-item-option').filter({ hasText: 'AUTO8_DC_55976508 - AUTO8DC55976508 - 84855976508' }).first()
+01_050_009,Một nhân viên được gán nhiều vai trò KHÁC nhau trong cùng điểm bán,"Vai `tct` đăng nhập, mở drawer ""Gắn nhân viên"" của một điểm bán","1. Thêm dòng 1: nhân viên A + vai trò ""Cửa hàng trưởng""
+ 2. Thêm dòng 2: nhân viên A + vai trò khác, ví dụ ""Nhân viên bán hàng""
+ 3. Bấm lưu","Không có cảnh báo; lưu thành công với thông báo ""Gán nhân viên thành công""; danh sách phân công hiện 2 dòng cho nhân viên A với 2 vai trò khác nhau.",050,Gắn nhân viên và vai trò cho điểm bán,TB,Màn gắn nhân viên,,Quét kỹ thuật 3.4 #5 — trace code chain/pages/shopManagement/components/DrawerAssignEmployee.jsx,Không đạt,29/09/2026,TimeoutError: locator.click: Timeout 15000ms exceeded. Call log: - waiting for locator('.ant-select-dropdown').filter({ has: locator('#_r_5s__list') }).first().locator('.ant-select-item-option').filter({ hasText: 'AUTO8_DC_55976508' }).first()
+01_050_010,Phân trang danh sách phân công trong drawer Gắn nhân viên,Vai `tct` đăng nhập; điểm bán có số phân công nhiều hơn một trang,"1. Mở drawer ""Gắn nhân viên""
+ 2. Quan sát thanh phân trang trong drawer
+ 3. Sang trang 2","Thanh phân trang trong drawer hiển thị đúng tổng số phân công; sang trang 2 hiện đúng nhóm phân công tiếp theo, không lặp lại dòng của trang 1.",050,Gắn nhân viên và vai trò cho điểm bán,TB,Màn gắn nhân viên,,Quét kỹ thuật 3.4 #7 — trace code chain/pages/shopManagement/components/DrawerAssignEmployee.jsx,Chưa chạy,29/09/2026,Điểm bán ở dòng 0 không có thanh phân trang (ít phân công).
+01_060_001,Xóa 1 dòng gán bằng nút X trên dòng,Popup Gán nhân viên có ít nhất 2 dòng,"1. Mở popup Gán nhân viên
+ 2. Click X ở dòng cuối cùng
+ 3. Click 'Xác nhận'","Dòng được click X bị xóa ngay khỏi danh sách hiển thị; sau khi Xác nhận, nhân viên đó không còn trong danh sách gán của điểm bán",060,Cho nhân viên thôi việc tại điểm bán,TB,Màn gắn nhân viên,DIEMBAN__40,Sheet QC,Đạt,28/09/2026,
+01_060_002,Cho nhân viên thôi việc bằng cách đổi trạng thái sang Đã nghỉ,Điểm bán có ít nhất 1 nhân viên Đang làm.,"1. Mở màn Gắn nhân viên của điểm bán
+2. Trên dòng nhân viên, đổi ô Trạng thái từ Đang làm sang Đã nghỉ
+3. Bấm Xác nhận",Dòng nhân viên VẪN còn trong danh sách nhưng mang trạng thái Đã nghỉ — giữ lịch sử phân công.,060,Cho nhân viên thôi việc tại điểm bán,Cao,Màn gắn nhân viên,,HDSD 060 bước 4–5 + Kết quả,Chưa chạy,29/09/2026,Điểm bán AUTO6_T_01_A01 chưa có phân công nào đã lưu để cho thôi việc.
+01_060_003,Dòng phân công đã lưu trước đó không xoá hẳn được,Điểm bán có nhân viên đã gắn từ phiên trước.,"1. Mở màn Gắn nhân viên
+2. Tìm nút xoá trên dòng nhân viên đã lưu trước đó",Không xoá hẳn được dòng đã lưu; chỉ đổi được trạng thái sang Đã nghỉ.,060,Cho nhân viên thôi việc tại điểm bán,Cao,Màn gắn nhân viên,,"HDSD 060 — cảnh báo đầu bài: ""chỉ xoá hẳn khi dòng vừa được thêm trong cùng phiên""",Đạt,29/09/2026,
+01_060_004,Nút X của dòng phân công đã lưu ở trạng thái vô hiệu,Vai `tct` đăng nhập; điểm bán đã có ít nhất 1 phân công đã lưu,"1. Mở drawer ""Gắn nhân viên""
+ 2. Quan sát nút ✕ ở cuối dòng phân công đã lưu
+ 3. Thêm một dòng mới rồi quan sát nút ✕ của dòng mới",Nút ✕ của dòng ĐÃ LƯU là disabled (điều kiện `disabled={!assignments[name]?.isNew}`); nút ✕ của dòng vừa thêm trong phiên thì bấm được. Bổ sung đo lường cho 01_060_003.,060,Cho nhân viên thôi việc tại điểm bán,TB,Màn gắn nhân viên,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerAssignEmployee.jsx,Đạt,28/09/2026,
+01_070_001,Tải về file mẫu thành công,"Admin đăng nhập, đang ở màn Danh sách điểm bán","1. Click 'Nhập từ excel'
+ 2. Popup 'Nhập điểm bán từ file excel' mở
+ 3. Click '↓ Tải về file mẫu'",File mẫu Excel (.xls hoặc .xlsx) được tải về máy thành công với đúng định dạng cột cần nhập,070,Nhập danh sách điểm bán từ Excel,TB,Màn nhập từ excel,DIEMBAN__44,Sheet QC,Đạt,28/09/2026,
+01_070_002,"Upload file Excel hợp lệ - nhập thành công, hiển thị Tổng/Thành công/Thất bại","File Excel đúng định dạng mẫu, có 20 dòng dữ liệu hợp lệ","1. Click 'Nhập từ excel'
+ 2. Kéo thả hoặc chọn file Excel hợp lệ
+ 3. Click 'Xác nhận nhập'","Quá trình nhập hoàn tất; tab 'Lịch sử nhập' tự cập nhật dòng mới với: Thời gian tạo, Thời gian hoàn thành, Tổng=20, Thành công=20 (xanh), Thất bại=0, Trạng thái='Thành công'; 20 điểm bán xuất hiện trong danh sách",070,Nhập danh sách điểm bán từ Excel,Cao,Màn nhập từ excel,DIEMBAN__45,Sheet QC,Đạt,28/09/2026,
+01_070_003,Lịch sử nhập hiển thị đúng với file có cả bản ghi lỗi và thành công,File Excel có 1 bản ghi hợp lệ và 1 bản ghi lỗi (thiếu Tên),"1. Upload file có 2 bản ghi (1 hợp lệ, 1 thiếu Tên)
+ 2. Click 'Xác nhận nhập'
+ 3. Mở tab 'Lịch sử nhập'","Dòng lịch sử hiển thị: Tổng=2, Thành công=1 (xanh), Thất bại=1 (đỏ), Trạng thái='Thành công'; Chỉ 1 điểm bán được tạo",070,Nhập danh sách điểm bán từ Excel,Cao,Màn nhập từ excel,DIEMBAN__46,Sheet QC,Đạt,28/09/2026,
+01_070_004,"Upload file không phải định dạng Excel (.pdf, .docx, .csv)",Popup Nhập từ excel đang mở,"1. Kéo thả file .pdf hoặc .docx vào vùng upload
+ 2. Quan sát thông báo","Hệ thống hiển thị thông báo lỗi 'Vui lòng chọn file excel' (như giao diện đã thấy) hoặc 'Định dạng file không hợp lệ, chỉ hỗ trợ .xls, .xlsx'; không thực hiện import",070,Nhập danh sách điểm bán từ Excel,Cao,Màn nhập từ excel,DIEMBAN__47,Sheet QC,Đạt,28/09/2026,
+01_070_005,Click 'Xác nhận nhập' khi chưa chọn file,"Popup Nhập từ excel đang mở, chưa chọn file nào","1. Mở popup Nhập từ excel
+ 2. Không chọn file
+ 3. Click 'Xác nhận nhập'",Hệ thống hiển thị thông báo 'Vui lòng chọn file excel'; không thực hiện import,070,Nhập danh sách điểm bán từ Excel,TB,Màn nhập từ excel,DIEMBAN__48,Sheet QC,Đạt,28/09/2026,
+01_070_006,Lọc Lịch sử nhập theo khoảng thời gian,Tab Lịch sử nhập có nhiều bản ghi import trong các ngày khác nhau,"1. Mở popup Nhập từ excel > tab 'Lịch sử nhập'
+ 2. Đổi khoảng ngày từ 01/06/2026 đến 10/06/2026
+ 3. Quan sát danh sách","Popup đóng; mở lại popup điểm bán đó: dòng mới không tồn tại, danh sách gán giữ nguyên như trước",070,Nhập danh sách điểm bán từ Excel,Thấp,Màn nhập từ excel,DIEMBAN__49,Sheet QC,Chưa chạy,29/09/2026,Ô chọn khoảng thời gian không có lựa chọn dựng sẵn để bấm.
+01_070_007,Lọc Lịch sử nhập theo Trạng thái,Tab Lịch sử nhập có bản ghi Thành công và bản ghi Thất bại,"1. Tab 'Lịch sử nhập'
+ 2. Chọn dropdown Trạng thái = 'Thành công'
+ 3. Quan sát danh sách",Chỉ hiển thị các bản ghi import có Trạng thái = 'Thành công'; các bản ghi Thất bại không xuất hiện,070,Nhập danh sách điểm bán từ Excel,Thấp,Màn nhập từ excel,DIEMBAN__50,Sheet QC,Đạt,28/09/2026,
+01_070_008,"Upload file Excel rỗng (chỉ có header, không có dữ liệu)",Popup Nhập từ excel đang mở,"1. Upload file Excel chỉ có dòng tiêu đề, không có dữ liệu
+ 2. Click 'Xác nhận nhập'","Hệ thống hiển thị thông báo 'File không có dữ liệu để nhập' hoặc import hoàn tất với Tổng=0, Thành công=0; không tạo bản ghi mới",070,Nhập danh sách điểm bán từ Excel,TB,Màn nhập từ excel,DIEMBAN__51,Sheet QC,Đạt,28/09/2026,
+01_070_009,Bật Dừng lại khi có lỗi — dừng ở dòng lỗi đầu tiên,Có file Excel chứa dòng lỗi ở giữa.,"1. Mở Nhập từ excel
+2. Bật ô Dừng lại khi có lỗi
+3. Chọn file và Xác nhận nhập",Quá trình dừng tại dòng lỗi đầu tiên; các dòng sau dòng lỗi không được tạo.,070,Nhập danh sách điểm bán từ Excel,Cao,Màn nhập từ excel,,HDSD 070 bước 5,Đạt,28/09/2026,
+01_070_010,Tắt Dừng lại khi có lỗi — bỏ qua dòng lỗi và nhập tiếp,Dùng đúng file như case bật cờ.,"1. Mở Nhập từ excel
+2. Tắt ô Dừng lại khi có lỗi
+3. Chọn file và Xác nhận nhập",Dòng hợp lệ vẫn được tạo; kết quả báo đúng số Thành công / Thất bại.,070,Nhập danh sách điểm bán từ Excel,Cao,Màn nhập từ excel,,HDSD 070 bước 5,Đạt,28/09/2026,
+01_070_011,Tải file lỗi từ thẻ Lịch sử nhập,Đã có lần nhập có dòng thất bại.,"1. Mở thẻ Lịch sử nhập
+2. Tìm lần nhập vừa rồi
+3. Bấm tải file lỗi",Tải về file chỉ chứa các dòng lỗi kèm lý do.,070,Nhập danh sách điểm bán từ Excel,TB,Màn nhập từ excel,,"HDSD 070 — Mẹo: ""mở thẻ Lịch sử nhập, tải file lỗi về""",Chưa chạy,29/09/2026,Lịch sử nhập chưa có lần nhập nào để tải file lỗi.
+01_070_012,Đóng màn hình khi đang nhập thì việc nhập vẫn chạy ngầm,File nhập đủ lớn để kịp đóng màn hình.,"1. Bấm Xác nhận nhập
+2. Đóng màn hình ngay khi đang chạy
+3. Mở lại thẻ Lịch sử nhập",Lần nhập vẫn hoàn tất và xuất hiện trong Lịch sử nhập.,070,Nhập danh sách điểm bán từ Excel,TB,Màn nhập từ excel,,"HDSD 070 — Lưu ý: ""đóng màn hình này không làm dừng việc nhập""",Đạt,28/09/2026,
+01_070_013,Lọc Lịch sử nhập kết hợp khoảng thời gian và Trạng thái,"Vai `tct` đăng nhập, mở drawer ""Nhập điểm bán từ file excel"", thẻ Lịch sử nhập; đã có ít nhất 2 lần nhập khác trạng thái","1. Chọn khoảng thời gian phủ cả 2 lần nhập
+ 2. Thêm điều kiện Trạng thái = Thất bại
+ 3. Quan sát bảng lịch sử","Chỉ còn các lần nhập vừa nằm trong khoảng thời gian vừa có trạng thái Thất bại; hai điều kiện áp đồng thời (AND), không phải thay thế nhau.",070,Nhập danh sách điểm bán từ Excel,TB,Màn nhập từ excel,,Quét kỹ thuật 3.4 #7 — trace code shopApi.js GET /import/api/v1/shops/history,Đạt,28/09/2026,
+01_070_014,Lịch sử nhập ở trạng thái rỗng,Vai `tct` đăng nhập; chọn khoảng thời gian chắc chắn chưa có lần nhập nào (ví dụ 01/01/2020 – 02/01/2020),"1. Mở thẻ Lịch sử nhập
+ 2. Đặt khoảng thời gian nói trên","Bảng hiển thị trạng thái rỗng ""Không có dữ liệu""; không có lỗi đỏ, không có dòng rác.",070,Nhập danh sách điểm bán từ Excel,Thấp,Màn nhập từ excel,,Quét kỹ thuật 3.4 #7 — trace code shopApi.js GET /import/api/v1/shops/history,Đạt,28/09/2026,
+01_080_001,Xuất Excel toàn bộ danh sách điểm bán thành công,Hệ thống có ít nhất 5 điểm bán,"1. Tại màn Danh sách điểm bán
+ 2. Click '↓ Xuất excel'
+ 3. Chờ file được tải về","File Excel được tải về thành công; chứa đúng dữ liệu toàn bộ điểm bán hiện có với các cột: Tên điểm bán/hub, Mã điểm, Phân loại, Bưu điện Xã, Bưu điện Tỉnh, Trạng thái",080,Xuất danh sách điểm bán ra Excel,TB,Màn danh sách điểm bán,DIEMBAN__52,Sheet QC,Đạt,28/09/2026,
+01_080_002,Xuất Excel áp dụng bộ lọc hiện tại - chỉ xuất dữ liệu đang lọc,Đang lọc danh sách theo Phân loại = Hub,"1. Lọc danh sách theo Phân loại = Hub
+ 2. Click '↓ Xuất excel'","File Excel chỉ chứa các điểm bán phân loại Hub (đúng kết quả đang lọc trên màn hình, không xuất tất cả)",080,Xuất danh sách điểm bán ra Excel,TB,Màn danh sách điểm bán,DIEMBAN__53,Sheet QC,Đạt,28/09/2026,
+01_080_003,Xuất Excel khi danh sách đang hiển thị kết quả tìm kiếm,"Đang tìm kiếm theo từ khóa 'Phú Thọ', có 3 kết quả","1. Nhập 'Phú Thọ' vào ô tìm kiếm
+ 2. Click '↓ Xuất excel'",File Excel chứa đúng 3 bản ghi khớp kết quả tìm kiếm 'Phú Thọ'; không xuất toàn bộ dữ liệu,080,Xuất danh sách điểm bán ra Excel,Thấp,Màn danh sách điểm bán,DIEMBAN__54,Sheet QC,Đạt,28/09/2026,
+01_080_004,Bấm Cập nhật trạng thái khi file chưa sẵn sàng,Vừa bấm Xuất file excel.,"1. Bấm Xuất file excel
+2. Khi file chưa hiện, bấm Cập nhật trạng thái",Danh sách file được tải lại và hiện file khi đã tạo xong.,080,Xuất danh sách điểm bán ra Excel,TB,Màn xuất excel,,HDSD 080 bước 5,Đạt,28/09/2026,
+01_080_005,Tải xuống file đã tạo từ cột Hành động,Đã có file xuất ở trạng thái hoàn tất.,"1. Mở màn Xuất excel
+2. Bấm Tải xuống ở cột Hành động trên dòng file",File Excel được tải về máy.,080,Xuất danh sách điểm bán ra Excel,Cao,Màn xuất excel,,HDSD 080 bước 6,Chưa chạy,29/09/2026,Chưa có file xuất nào hoàn tất trong danh sách để kiểm nút Tải xuống.
+01_080_006,Xuất Excel khi danh sách đang rỗng,Vai `tct` đăng nhập; đặt bộ lọc cho ra 0 bản ghi,"1. Lọc để bảng về trạng thái rỗng
+ 2. Bấm ""Xuất excel"" và xác nhận","Hệ thống chặn xuất và báo ""Không có dữ liệu để xuất""; không sinh tệp chỉ có dòng tiêu đề.
+
+🔴 Ghi lại hành vi thật: hệ thống nên chặn kèm thông báo ""Không có dữ liệu để xuất"" thay vì sinh file chỉ có dòng tiêu đề. Kỳ vọng chốt sau khi đo.",080,Xuất danh sách điểm bán ra Excel,TB,Màn xuất excel,,Quét kỹ thuật 3.4 #7 — trace code ShopManagement.jsx,Đạt,28/09/2026,
+01_090_001,Mở wizard Thiết lập điểm bán từ cột Hành động,"Vai `tct` có quyền tương ứng, đang ở danh sách điểm bán","1. Bấm biểu tượng ""Thiết lập điểm bán"" ở cột Hành động của một điểm bán
+ 2. Quan sát drawer","Drawer mở với tiêu đề ""Thiết lập điểm bán — <tên điểm bán>""; thanh Steps hiện đúng 3 bước ""Tồn kho đầu kỳ"" · ""Nhân viên"" · ""Xếp lịch"", đang ở bước 1.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Đạt,28/09/2026,
+01_090_002,Cảnh báo thiếu ca làm việc / quầy thu ngân khi mở wizard,Vai `tct` đăng nhập; chọn điểm bán CHƯA khai ca làm việc hoặc chưa có quầy thu ngân,"1. Mở wizard ""Thiết lập điểm bán"" của điểm bán đó
+ 2. Quan sát vùng Alert phía trên Steps","Hiện Alert vàng tiêu đề ""Chưa tạo đủ ca làm việc / quầy thu ngân"" kèm câu ""Điểm bán đã tạo xong, nhưng cần bổ sung phần này thì nhân viên mới mở ca bán hàng được."" và liệt kê cụ thể phần còn thiếu.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Chưa chạy,29/09/2026,Trang đầu không có điểm bán nào thiếu ca làm việc / quầy thu ngân.
+01_090_003,Bước Tồn kho đầu kỳ chỉ nhận file .xlsx / .xls,"Vai `tct` đăng nhập, đang ở bước 1 của wizard Thiết lập điểm bán","1. Kéo thả một file .pdf vào vùng ""Kéo thả file tồn đầu kỳ vào đây""
+ 2. Quan sát
+ 3. Thử lại với file .csv","Cả hai file bị từ chối (Upload.Dragger accept="".xlsx,.xls""), không phát sinh request tải lên; dòng gợi ý ghi rõ ""Chỉ nhận một file Excel định dạng .xlsx hoặc .xls"".",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #4 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Không đạt,29/09/2026,"Error: File .pdf/.csv phải bị TỪ CHỐI tại client (`beforeUpload`), nhưng sản phẩm vẫn gọi http://192.168.1.47:3200/__api/opening-balance/uploads, http://192.168.1.47:3200/__api/opening-balance/uploads. Thuộc tính accept="".xlsx,.xls"" chỉ lọc hộp chọn file, không chặn kéo–thả ⇒ người dùng kéo nhầm fil"
+01_090_004,Bước Tồn kho đầu kỳ: file có dòng lỗi thì báo đúng số dòng hợp lệ / lỗi,"Vai `tct` đăng nhập, đang ở bước 1; có file tồn đầu kỳ gồm 10 dòng, trong đó 3 dòng sai mã sản phẩm","1. Tải file lên
+ 2. Chờ xử lý xong
+ 3. Quan sát Alert kết quả","Alert kiểu warning ghi đúng ""7/10 dòng hợp lệ, 3 dòng lỗi"" và có liên kết ""Mở màn tồn đầu kỳ để sửa các dòng lỗi"" mở màn tồn đầu kỳ ở tab mới.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #11 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Không đạt,29/09/2026,"Error: {""status"":{""code"":""SSHOP-403"",""message"":""Mã cửa hàng hoặc mã chuỗi trong yêu cầu không khớp với đơn vị đang đăng nhập"",""label"":""ERROR_SCOPE_MISMATCH""},""data"":null} expect(received).toBeLessThan(expected) Expected: < 400 Received: 403"
+01_090_005,Bước Xếp lịch bị khoá khi điểm bán chưa có nhân viên,Vai `tct` đăng nhập; chọn điểm bán chưa gán nhân viên nào,"1. Mở wizard, đi tới bước ""Xếp lịch""
+ 2. Quan sát","Không hiện form xếp lịch; hiện Alert info nguyên văn ""Chưa thể xếp lịch vì điểm bán chưa được gán nhân viên. Bạn có thể bỏ qua bước này nếu chưa cần khai báo.""",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Đạt,28/09/2026,
+01_090_006,Bước Xếp lịch khi mọi nhân viên của điểm bán đều Đã nghỉ,Vai `tct` đăng nhập; điểm bán có nhân viên nhưng tất cả đang trạng thái Đã nghỉ,"1. Mở wizard, đi tới bước ""Xếp lịch""
+ 2. Quan sát","Hiện Alert info nguyên văn ""Chưa thể xếp lịch vì tất cả nhân viên của điểm bán đều đã nghỉ. Bạn có thể bỏ qua bước này nếu chưa cần khai báo."" — 🔴 khác hẳn thông báo của 01_090_005, không được dùng lẫn.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Chưa chạy,29/09/2026,Trang đầu không có điểm bán nào mà toàn bộ nhân viên đã nghỉ.
+01_090_007,Bước Xếp lịch khi điểm bán chưa có ca làm việc,Vai `tct` đăng nhập; điểm bán có nhân viên đang làm nhưng chưa khai ca nào,"1. Mở wizard, đi tới bước ""Xếp lịch""
+ 2. Quan sát","Hiện Alert info nguyên văn ""Điểm bán chưa có ca làm việc nên chưa xếp lịch được.""",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Chưa chạy,29/09/2026,Trang đầu không có điểm bán nào có nhân viên đang làm nhưng chưa khai ca.
+01_090_008,Bước Xếp lịch khi mọi nhân viên đã có lịch,Vai `tct` đăng nhập; điểm bán mà tất cả nhân viên đang làm đều đã được xếp lịch,"1. Mở wizard, đi tới bước ""Xếp lịch""
+ 2. Quan sát","Hiện Alert success ""Tất cả nhân viên tại điểm bán đã được xếp lịch."" kèm hướng dẫn ""Nếu cần chỉnh sửa hoặc xếp thêm lịch, hãy thực hiện tại màn Lịch làm việc.""",090,Thiết lập điểm bán (wizard 3 bước),TB,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Đạt,29/09/2026,
+01_090_009,Bước Xếp lịch: bỏ trống từng ô bắt buộc khi Áp dụng chung,"Vai `tct` đăng nhập; điểm bán có nhân viên đang làm, đã khai ca, còn nhân viên chưa xếp lịch; đang ở bước Xếp lịch với ô ""Áp dụng chung một ca / khung ngày"" ĐANG BẬT","1. Bỏ trống ""Nhân viên"" → bấm nút tiếp tục, ghi lỗi
+ 2. Chọn nhân viên, bỏ trống ""Ca"" → bấm, ghi lỗi
+ 3. Bỏ trống ""Ngày trong tuần"" → bấm, ghi lỗi
+ 4. Bỏ trống ""Từ ngày — đến ngày"" → bấm, ghi lỗi","Từng ô hiện đúng thông báo riêng: ""Chọn nhân viên"" · ""Chọn ca"" · ""Chọn ngày"" · ""Chọn khoảng ngày""; mỗi lần đều không gửi request xếp lịch.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Không đạt,29/09/2026,"Error: Thiếu thông báo riêng ""Chọn nhân viên"" khi bỏ trống ô tương ứng. expect(received).toContain(expected) // indexOf Expected value: ""Chọn nhân viên"" Received array: []"
+01_090_010,Bước Xếp lịch: khai ca riêng cho từng nhân viên,"Vai `tct` đăng nhập; đang ở bước Xếp lịch, ô ""Áp dụng chung một ca / khung ngày"" ĐANG TẮT","1. Tắt ô ""Áp dụng chung một ca / khung ngày"" khi chưa chọn nhân viên → quan sát
+ 2. Chọn 2 nhân viên
+ 3. Quan sát vùng khai ca","Bước 1 hiện dòng chữ ""Chọn nhân viên ở trên để khai ca riêng cho từng người.""; bước 3 hiện đúng 2 khối, mỗi khối mang tên một nhân viên và có riêng bộ ba ô Ca · Ngày trong tuần · Từ ngày — đến ngày, đều bắt buộc.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #1 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Không đạt,29/09/2026,"Error: Tắt ""Áp dụng chung"" khi chưa chọn ai phải hiện dòng hướng dẫn. expect(locator).toContainText(expected) failed Locator: locator('.ant-drawer-open').first() Expected substring: ""Chọn nhân viên ở trên để khai ca riêng cho từng người."" Received string: ""Thiết lập điểm bán — AUTO19_SHOPTồn kho đầu"
+01_090_011,Nhân viên đã có lịch không xuất hiện trong danh sách xếp lịch,Vai `tct` đăng nhập; điểm bán có cả nhân viên đã xếp lịch và nhân viên chưa xếp lịch,"1. Mở wizard, tới bước Xếp lịch
+ 2. Quan sát Alert phía trên form và danh sách ô ""Nhân viên""","Alert info ghi đúng số ""<N> nhân viên đã có lịch nên không hiển thị trong danh sách bên dưới. Không thể xếp lịch trùng với lịch đã có.""; dropdown Nhân viên KHÔNG chứa những người đó.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Đạt,29/09/2026,
+01_090_012,Gán thêm nhân viên từ bước Nhân viên thì wizard tự sang bước Xếp lịch,"Vai `tct` đăng nhập; đang ở bước ""Nhân viên"" của wizard","1. Mở drawer Gắn nhân viên từ bước này
+ 2. Gán thêm 1 nhân viên rồi lưu, đóng drawer
+ 3. Quan sát Steps và cột ""Số lượng nhân viên"" ở danh sách phía sau","Wizard tự chuyển sang bước ""Xếp lịch""; cột ""Số lượng nhân viên"" ngoài danh sách tăng đúng 1 (wizard gọi onSuccess để refetch). Nếu bấm Hủy mà số nhân viên không đổi thì wizard Ở LẠI bước Nhân viên.",090,Thiết lập điểm bán (wizard 3 bước),Cao,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #11 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Đạt,28/09/2026,
+01_090_013,Hoàn tất wizard hiện màn kết quả,Vai `tct` đăng nhập; đã đi hết 3 bước của wizard,"1. Hoàn tất bước Xếp lịch (hoặc bỏ qua)
+ 2. Quan sát","Hiện Result trạng thái success với tiêu đề ""Đã thiết lập xong điểm bán"" và chỉ còn một nút ""Đóng""; footer của drawer không còn nút điều hướng bước.",090,Thiết lập điểm bán (wizard 3 bước),TB,Màn thiết lập điểm bán,,Quét kỹ thuật 3.4 #6 — trace code chain/pages/shopManagement/components/DrawerShopSetup.jsx,Đạt,28/09/2026,

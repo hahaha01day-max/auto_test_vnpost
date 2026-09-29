@@ -1,0 +1,327 @@
+﻿,Chức năng,,QUẢN LÝ SẢN PHẨM,,,,,,,,
+,Mã Testcase,,08_quan_ly_san_pham,,,,,,,,
+,Tổng các tình huống kiểm thử,,99,,,,,,,,
+,Chưa thực hiện,,99,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,QUẢN LÝ SẢN PHẨM,,,,,,,,,,
+,010 — Tra cứu và lọc danh sách sản phẩm,,,,,,,,,,
+08_010_001,Mở màn danh sách sản phẩm,"Đã đăng nhập, có quyền xem sản phẩm","1. Vào Sản phẩm > Sản phẩm
+2. Quan sát ba thẻ loại sản phẩm
+3. Quan sát ô tìm kiếm và các bộ lọc",,"Màn danh sách sản phẩm mở ra với ba thẻ Sản phẩm, Sản phẩm sản xuất, Sản phẩm tự doanh. Ô tìm kiếm cho chọn tiêu chí Tên, SKU hoặc Barcode và tự tìm ngay khi gõ, không cần bấm nút. Có đủ bộ lọc Tìm kiếm theo mã, tên danh mục (chọn được nhiều danh mục), Trạng thái với ba giá trị Kích hoạt / Ngừng kích hoạt / Khoá, Thương hiệu, Hình thức phân phối và Phân loại.",,,,,,
+08_010_002,Danh sách sản phẩm - hiển thị bộ lọc tìm kiếm và trạng thái,Đã đăng nhập vào hệ thống Có quyền thao tác chức năng Xem danh sách Sản phẩm,"1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Nhập chính xác tên sản phẩm cần tìm kiếm vào ô tìm kiếm theo tên
+4. Enter
+1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Nhập chính xác SKU cần tìm kiếm vào ô tìm kiếm theo SKU
+4. Enter
+1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Chọn các danh mục cần lọc sản phẩm ở dropdown tìm kiếm theo mã, danh mục sản phẩm",,Danh sách chỉ hiển thị sản phẩm có tên vừa nhập Danh sách chỉ hiển thị sản phẩm có SKU vừa nhập Danh sách chỉ hiển thị các sản phẩm thuộc danh mục được chọn,,,,,,
+,020 — Thêm sản phẩm mới,,,,,,,,,,
+08_020_001,Thêm sản phẩm - kiểm tra nhóm thông tin cơ bản,,"1. Bỏ trống trường SKU và Mã barcode phần Thông tin chung
+2. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập: - Tên thuộc tính: “size” - Giá trị thuộc tính: nhập “S”
+3. Nhấn Enter
+4. Kiểm tra trường SKU và Mã bardcode phần Thông tin cơ bản
+1. Nhập thông tin phần Thông tin cơ bản: - SKU: a - Mã barcode: tự sinh
+2. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập: - Tên thuộc tính: “size” - Giá trị thuộc tính: nhập “S”
+3. Nhấn Enter
+4. Kiểm tra trường SKU và Mã bardcode phần Thông tin cơ bản",,1. Hiển thị disabled 2. Nội dung placeholder: Quản lý theo biến thể bên dưới,,,,,,
+08_020_002,"Thêm sản phẩm - kiểm tra thông tin vật lý, giá bán, kho hàng","Đã đăng nhập vai Tổng công ty, có quyền thêm sản phẩm; đang mở màn Thêm sản phẩm","1. Vào Sản phẩm > Sản phẩm, bấm Thêm mới
+2. Cuộn tới khối Thông tin vật lý
+3. Cuộn tới khối Kho hàng
+4. Quan sát các ô giá bán ở khối Thông tin cơ bản",,"Màn Thêm sản phẩm gồm đủ năm khối: Thông tin cơ bản, Biến thể & Đơn vị quy đổi, Kho hàng, Thông tin vật lý và Thông tin bổ sung. Các ô nhập của từng khối hiển thị và nhập được đúng kiểu dữ liệu tương ứng.",,,,,,
+08_020_003,Thêm sản phẩm - validate form rỗng,Đã đăng nhập vào hệ thống Có quyền thao tác chức năng Thêm Sản phẩm,"1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Click ""Xác nhận"" mà không nhập thông tin gì vào các trường bắt buộc (có dấu *)",,"Hệ thống không cho lưu, hiển thị thông báo ""Vui lòng điền đầy đủ các thông tin được yêu cầu"" đồng thời báo đỏ tại các trường: Tên sản phẩm, Danh mục, SKU, Mã barcode, Mã kế toán, VAT, Đơn vị",,,,,,
+08_020_004,Thêm sản phẩm - chọn Ký gửi hiển thị Loại hàng ký gửi,"Đã đăng nhập vai Tổng công ty, đang mở màn Thêm sản phẩm","1. Vào Sản phẩm > Sản phẩm, bấm Thêm mới
+2. Ở khối Thông tin cơ bản, chọn Hình thức phân phối là Ký gửi
+3. Quan sát các trường hiện thêm",,Chọn Hình thức phân phối là Ký gửi thì trường Loại hàng ký gửi hiện ra để chọn; chọn hình thức khác thì trường này ẩn đi.,,,,,,
+08_020_005,SKU và Barcode ở Thông tin cơ bản khi thêm rồi XOÁ biến thể,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Nhập SKU và Barcode ở nhóm Thông tin cơ bản
+2. Thêm một biến thể → quan sát hai ô đó
+3. Xoá biến thể vừa thêm → quan sát lại",,"Khi CÓ biến thể: hai ô ở Thông tin cơ bản bị ẩn hoặc vô hiệu (SKU/Barcode chuyển về mức biến thể). Khi xoá hết biến thể: hai ô hiện lại **với giá trị đã nhập trước đó**, không mất dữ liệu.",,,,,,
+08_020_006,"SKU và Barcode ở Thông tin cơ bản khi nhập, xoá, rồi thêm biến thể","Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Nhập SKU và Barcode
+2. Xoá trắng cả hai
+3. Thêm một biến thể → quan sát",,"Hai ô rỗng, thêm biến thể thì chuyển sang mức biến thể như `08_020_005`; không phát sinh lỗi validate ở ô đã xoá trắng.",,,,,,
+08_020_007,Cột SKU và Barcode ở Bảng quy đổi đơn vị khi BỎ TRỐNG rồi thêm biến thể,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Thêm một dòng ở Bảng quy đổi đơn vị, bỏ trống SKU và Barcode của dòng đó
+2. Thêm một biến thể → quan sát bảng quy đổi",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+08_020_008,Cột SKU và Barcode ở Bảng quy đổi khi ĐÃ NHẬP rồi thêm biến thể,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Thêm dòng quy đổi và nhập SKU, Barcode cho dòng đó
+2. Thêm một biến thể → quan sát",,"Giá trị đã nhập không bị mất; nếu hệ thống nhân bản dòng quy đổi cho từng biến thể thì SKU phải **duy nhất cho từng biến thể**, không nhân bản trùng SKU.",,,,,,
+08_020_009,Cột SKU và Barcode ở Bảng quy đổi khi thêm rồi XOÁ biến thể,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Nhập dòng quy đổi có SKU/Barcode
+2. Thêm biến thể
+3. Xoá biến thể → quan sát bảng quy đổi",,"Bảng quy đổi trở về trạng thái một cấp, giữ SKU/Barcode đã nhập ban đầu.",,,,,,
+08_020_010,Tính duy nhất của SKU khi thêm sản phẩm,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm; đã biết một SKU đang tồn tại","1. Nhập SKU trùng với SKU đã có
+2. Lưu
+3. Thử SKU trùng nhưng khác hoa/thường",,"Bị chặn, thông báo nêu rõ SKU đã tồn tại.",,,,,,
+08_020_011,"Validate các ô cần nhập số: Khối lượng, Thể tích, Kích thước","Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Nhập chữ vào từng ô → ghi kết quả
+2. Nhập số âm → ghi kết quả
+3. Nhập 0 → ghi kết quả
+4. Nhập số thập phân → ghi kết quả",,Ký tự chữ bị bỏ qua hoặc báo lỗi; số âm bị chặn,,,,,,
+08_020_012,Thêm nhanh danh mục ngay trong form sản phẩm,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Ở ô Danh mục, dùng chức năng thêm nhanh danh mục
+2. Nhập tên danh mục mới và xác nhận
+3. Quan sát ô Danh mục và màn Quản lý danh mục",,Danh mục mới được tạo và **tự chọn** vào ô Danh mục của sản phẩm đang khai; danh mục cũng xuất hiện ở màn Quản lý danh mục sản phẩm.,,,,,,
+08_020_013,"Thêm sản phẩm có đơn vị quy đổi, KHÔNG có biến thể","Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Khai thông tin cơ bản
+2. Thêm 2 dòng Bảng quy đổi đơn vị với tỉ lệ khác nhau
+3. Lưu
+4. Mở lại chi tiết sản phẩm",,Lưu thành công; mở lại thấy đủ 2 đơn vị quy đổi với đúng tỉ lệ. Đơn vị gốc phải có `convert_to_main_unit = 1`; thiếu là nhãn đơn vị lệch số tồn — kiểm ở màn tồn kho.,,,,,,
+08_020_014,"Thêm sản phẩm có biến thể, KHÔNG có đơn vị quy đổi","Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Khai thông tin cơ bản
+2. Thêm 2 biến thể (ví dụ theo màu)
+3. Lưu
+4. Mở lại chi tiết",,"Lưu thành công; mỗi biến thể có SKU riêng, duy nhất.",,,,,,
+08_020_015,Thêm sản phẩm có biến thể ĐỒNG THỜI có đơn vị quy đổi,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Khai thông tin cơ bản
+2. Thêm 2 biến thể
+3. Thêm 2 đơn vị quy đổi
+4. Lưu và mở lại chi tiết",,"Lưu thành công; ma trận biến thể × đơn vị được sinh đúng, mỗi tổ hợp có SKU riêng.",,,,,,
+08_020_016,Thêm sản phẩm khi chọn danh mục CHA trong cây danh mục,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Ở ô Danh mục, chọn một danh mục cấp cha (có danh mục con)
+2. Lưu
+3. Mở lại và kiểm danh mục của sản phẩm",,Cho phép chọn danh mục cha và lưu thành công.,,,,,,
+08_020_017,Thêm thuộc tính bổ sung cho sản phẩm,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Thêm 2 thuộc tính bổ sung với tên và giá trị
+2. Lưu và mở lại chi tiết
+3. Thử thêm hai thuộc tính TRÙNG tên",,Hai thuộc tính lưu đúng tên và giá trị. Trùng tên thuộc tính: ghi rõ có chặn hay không.,,,,,,
+08_020_018,Tải lên hình ảnh minh hoạ sản phẩm,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Tải lên 1 ảnh hợp lệ
+2. Lưu và mở lại chi tiết
+3. Tải thêm ảnh tới đúng giới hạn số ảnh",,Ảnh hiện ở chi tiết sản phẩm sau khi lưu; tải đủ số ảnh tối đa vẫn nhận.,,,,,,
+08_020_019,Tải lên ảnh sai định dạng hoặc quá dung lượng,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Tải file.pdf → ghi kết quả
+2. Tải ảnh vượt dung lượng cho phép → ghi thông báo
+3. Tải ảnh vượt số lượng cho phép → ghi thông báo",,"Cả ba bị chặn, mỗi trường hợp có thông báo riêng nêu rõ ràng buộc (định dạng / dung lượng / số lượng).",,,,,,
+08_020_020,Thêm sản phẩm thủ công với ĐẦY ĐỦ mọi thông tin,"Vai `tct` đăng nhập, đang ở form Thêm sản phẩm","1. Khai hết mọi ô, cả ô không bắt buộc: danh mục, thuộc tính bổ sung, ảnh, khối lượng, thể tích, kích thước, giá bán, kho, đơn vị quy đổi, biến thể
+2. Lưu
+3. Mở lại chi tiết và đối chiếu từng ô",,"Lưu thành công; **mọi ô đã khai đều hiện đúng** ở chi tiết, không ô nào bị mất. Đây là case bao trùm — nếu một ô mất thì tìm ô đó trong các case riêng.",,,,,,
+,030 — Xem chi tiết và cập nhật sản phẩm,,,,,,,,,,
+08_030_001,"CRUD sản phẩm - thêm, sửa tên, xóa thật","Đã đăng nhập vào hệ thống Có quyền thao tác chức năng Thêm Sản phẩm
+
+Đã đăng nhập vào hệ thống Có quyền thao tác chức năng Sửa Sản phẩm
+
+Đã đăng nhập vào hệ thống Có quyền thao tác chức năng xóa sản phẩm Sản phẩm muốn xóa chưa phát sinh giao dịch","1. Tại màn hình danh sách, nhấn nút “+ Thêm mới”.
+2. Nhập các trường thông tin cơ bản: - Tên sản phẩm: “Nước ngọt Coca-Cola” - Danh mục: chọn “Nước giải khát” - SKU: “SP-001” - Mã Barcode: Tự sinh - Mã kế toán: “KT-COCA” - VAT: 8% - Loại hàng hóa/vật tư: chọn “Hàng hóa” - Hình thức phân phối: chọn “Mua bán
+2. Nhập đơn vị tính chính: cái
+3. Nhập phần Kho hàng: Mặc định phương pháp tính giá vốn = “Bình quân gia quyền”
+5. Nhấn nút “Xác nhận” ở góc trên bên phải drawer.""
+1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Nhập hợp lệ các thông tin cần chỉnh sửa
+5. Click ""Cập nhật""
+1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòngsản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,"1. Hiển thị message ""Thêm thành công"" 2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt"" Hệ thống lưu thông tin sản phẩm vừa chỉnh sửa đồng thời hiển thị thông báo ""Cập nhật thành công"". Màn xem chi tiết cập nhật đúng các thông tin đã sửa 1. Hiển thị toast message ""Xóa sản phẩm thành công"" 2. Không hiển thị sản phẩm đó trên danh sách nữa",,,,,,
+08_030_002,Xem chi tiết sản phẩm,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; có sản phẩm đã tạo đủ thông tin","1. Mở chi tiết một sản phẩm
+2. Đối chiếu từng nhóm thông tin với dữ liệu đã khai",,"Hiện đủ các nhóm: thông tin cơ bản, thông tin vật lý, giá bán, kho hàng, đơn vị quy đổi, biến thể, thuộc tính bổ sung, ảnh. Trường bỏ trống hiện ""—"", không hiện ""null"".",,,,,,
+08_030_003,Đóng pop-up / drawer chi tiết sản phẩm,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Mở chi tiết sản phẩm
+2. Đóng bằng nút X
+3. Đóng bằng bấm ra ngoài
+4. Mở lại",,"Cả hai cách đều đóng được, không phát sinh request ghi nào; mở lại hiện đúng dữ liệu.",,,,,,
+08_030_004,Sửa sản phẩm khi xoá các ô bắt buộc,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có","1. Xoá trắng lần lượt từng ô bắt buộc rồi bấm lưu, ghi lỗi từng lần
+2. Xoá trắng tất cả rồi lưu",,Mỗi ô bắt buộc cho một thông báo RIÊNG; không gửi request lưu; dữ liệu cũ giữ nguyên.,,,,,,
+08_030_005,Sửa SKU trùng với SKU đã có trên hệ thống,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có; đã biết SKU của sản phẩm khác","1. Đổi SKU thành SKU của sản phẩm khác
+2. Lưu",,"Bị chặn, thông báo nêu rõ SKU đã tồn tại; dữ liệu cũ giữ nguyên.",,,,,,
+08_030_006,Sửa Barcode trùng với Barcode đã có trên hệ thống,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có; đã biết Barcode của sản phẩm khác","1. Đổi Barcode thành Barcode của sản phẩm khác
+2. Lưu",,"Bị chặn, thông báo nêu rõ Barcode đã tồn tại.",,,,,,
+08_030_007,Xoá MỘT VÀI biến thể CHƯA phát sinh giao dịch,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có; sản phẩm có ≥3 biến thể, chưa biến thể nào phát sinh giao dịch","1. Xoá 1 biến thể
+2. Lưu
+3. Mở lại chi tiết",,"Biến thể bị xoá khỏi danh sách; các biến thể còn lại giữ nguyên SKU, tồn kho và giá.",,,,,,
+08_030_008,Xoá TẤT CẢ biến thể CHƯA phát sinh giao dịch,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có; sản phẩm có biến thể, chưa phát sinh giao dịch","1. Xoá hết biến thể
+2. Lưu
+3. Mở lại chi tiết",,Sản phẩm trở về dạng không có biến thể; ô SKU/Barcode ở Thông tin cơ bản hiện lại (nối với `08_020_005`).,,,,,,
+08_030_009,Xoá biến thể ĐÃ phát sinh giao dịch,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có; sản phẩm có biến thể đã phát sinh nhập/xuất kho","1. Thử xoá biến thể đó
+2. Lưu
+3. Ghi rõ hệ thống chặn hay cho xoá",,Nếu cho xoá thì tồn kho và các phiếu cũ của biến thể đó đi đâu — câu hỏi mất dữ liệu.,,,,,,
+08_030_010,Xoá MỘT VÀI đơn vị quy đổi CHƯA phát sinh giao dịch,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có; sản phẩm có ≥3 đơn vị quy đổi chưa dùng","1. Xoá 1 đơn vị quy đổi
+2. Lưu và mở lại",,Đơn vị bị xoá; các đơn vị còn lại giữ đúng tỉ lệ,,,,,,
+08_030_011,Xoá TẤT CẢ đơn vị quy đổi CHƯA phát sinh giao dịch,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có","1. Xoá hết đơn vị quy đổi
+2. Lưu và mở lại
+3. Kiểm đơn vị hiển thị ở màn tồn kho",,Sản phẩm phải còn **ít nhất một đơn vị gốc**; nếu xoá được hết thì tồn kho mất đơn vị và nhãn đơn vị sẽ lệch số tồn.,,,,,,
+08_030_012,Xoá đơn vị quy đổi ĐÃ phát sinh giao dịch,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có; đơn vị quy đổi đã dùng trong phiếu kho","1. Thử xoá đơn vị đó
+2. Lưu
+3. Ghi rõ hệ thống chặn hay cho xoá",,Cùng loại câu hỏi với `08_030_009`: xoá đơn vị đã dùng là mất cách quy đổi số lượng của các phiếu cũ ⇒ số lượng trên phiếu cũ đọc sai.,,,,,,
+08_030_013,Huỷ chỉnh sửa sản phẩm,"Vai `tct` đăng nhập, đang mở chi tiết / form sửa một sản phẩm đã có","1. Đổi nhiều ô nhưng KHÔNG lưu
+2. Đóng form bằng Huỷ
+3. Mở lại chi tiết",,Không có request lưu; mọi ô trở về giá trị cũ.,,,,,,
+08_030_014,Xoá sản phẩm ĐÃ phát sinh giao dịch,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; sản phẩm đã có phiếu nhập/xuất kho","1. Thử xoá sản phẩm đó
+2. Đọc thông báo",,"Bị chặn, thông báo nêu rõ sản phẩm đã phát sinh giao dịch.",,,,,,
+08_030_015,"Xoá sản phẩm đang nằm trong ĐƠN NHÁP, chưa phát sinh phiếu kho","Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; sản phẩm đang có trong một đơn nháp","1. Thử xoá sản phẩm đó
+2. Đọc thông báo",,"Bị chặn, thông báo nêu rõ sản phẩm đang nằm trong đơn nháp.",,,,,,
+08_030_016,Xoá sản phẩm sau khi đã xoá đơn nháp chứa nó,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; sản phẩm nằm trong một đơn nháp","1. Xoá đơn nháp đó
+2. Thử xoá sản phẩm
+3. Đọc kết quả",,"Sau khi đơn nháp bị xoá, sản phẩm **xoá được** thành công. Đây là đối ứng của `08_030_015`.",,,,,,
+08_030_017,Xoá sản phẩm đang nằm trong CTKM,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; sản phẩm đang thuộc một chương trình khuyến mại","1. Thử xoá sản phẩm đó
+2. Đọc thông báo",,"Bị chặn. Với combo, toast nguyên văn **Không thể xóa combo vì đang nằm trong CTKM**; Bản ghi vẫn hiển thị trên bảng danh sách. Nếu xoá được thì CTKM còn tham chiếu sản phẩm không tồn tại.",,,,,,
+08_030_018,Xoá sản phẩm đang nằm trong COMBO,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; sản phẩm là thành phần của một combo","1. Thử xoá sản phẩm đó
+2. Đọc thông báo
+3. Mở combo đó và kiểm danh sách thành phần",,"Bị chặn, thông báo nêu rõ sản phẩm đang nằm trong combo; combo giữ nguyên thành phần.",,,,,,
+08_030_019,Xoá sản phẩm đang nằm trong BẢNG GIÁ,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; sản phẩm đang có trong một bảng giá","1. Thử xoá sản phẩm đó
+2. Đọc thông báo",,"Bị chặn. Với combo, toast nguyên văn **Không thể xóa combo vì đang được sử dụng trong bảng giá**; Bản ghi vẫn hiển thị trên bảng.",,,,,,
+08_030_020,Sửa combo sản phẩm khi xoá HẾT sản phẩm trong bảng danh sách,"Vai `tct` đăng nhập, đang sửa một combo đã có","1. Xoá hết dòng sản phẩm trong bảng thành phần combo
+2. Lưu",,Bị chặn — combo phải có tối thiểu một sản phẩm thành phần,,,,,,
+08_030_021,Sửa combo sản phẩm thành công,"Vai `tct` đăng nhập, đang sửa một combo đã có","1. Đổi tên combo, đổi số lượng một thành phần, thêm một thành phần
+2. Lưu và mở lại chi tiết",,Cập nhật thành công; chi tiết hiện đúng dữ liệu mới; giá combo tính lại theo thành phần (nếu hệ thống tự tính).,,,,,,
+08_030_022,Xoá combo CHƯA phát sinh giao dịch,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; có combo chưa dùng","1. Xoá combo đó
+2. Đọc kết quả và danh sách",,"Xoá thành công, combo mất khỏi danh sách; **các sản phẩm thành phần KHÔNG bị xoá theo**.",,,,,,
+,040 — Ngừng kích hoạt sản phẩm theo khu vực và kích hoạt lại,,,,,,,,,,
+08_040_001,Tìm sản phẩm theo tên tương đối,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Nhập một phần tên sản phẩm
+2. Quan sát danh sách",,Trả về các sản phẩm có tên chứa từ khoá.,,,,,,
+08_040_002,Tìm sản phẩm theo tên không tồn tại,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Nhập ""zzzkhongtontai999""",,"Bảng về trạng thái rỗng, tổng = 0; không lỗi đỏ, layout giữ nguyên.",,,,,,
+08_040_003,Tìm sản phẩm theo SKU tương đối,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Nhập một phần SKU của sản phẩm đang có
+2. Quan sát",,Trả về các sản phẩm có SKU chứa đoạn đã nhập.,,,,,,
+08_040_004,Tìm sản phẩm theo SKU không tồn tại,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Nhập ""SKU-KHONG-TON-TAI-999""",,Bảng rỗng; không lỗi đỏ.,,,,,,
+08_040_005,Lọc sản phẩm theo trạng thái,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Mở bộ lọc trạng thái, đọc đủ lựa chọn
+2. Chọn lần lượt từng trạng thái",,Mỗi lựa chọn chỉ còn sản phẩm đúng trạng thái.,,,,,,
+08_040_006,Lọc sản phẩm theo hình thức phân phối,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Mở bộ lọc hình thức phân phối, đọc đủ lựa chọn
+2. Chọn lần lượt",,Mỗi lựa chọn chỉ còn sản phẩm đúng hình thức (tự doanh / ký gửi / …).,,,,,,
+08_040_007,Tìm combo theo tên chính xác và lọc theo danh mục,"Vai `tct` đăng nhập, đang ở màn Danh sách combo sản phẩm","1. Nhập đúng tên đầy đủ một combo → quan sát
+2. Lọc theo mã / tên danh mục → quan sát",,Tên chính xác trả về đúng combo đó; lọc theo danh mục chỉ còn combo thuộc danh mục đã chọn.,,,,,,
+,050 — Xoá sản phẩm,,,,,,,,,,
+08_050_001,Cấu hình ngừng kích hoạt sản phẩm với đầy đủ thông tin,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; có sản phẩm đang kích hoạt","1. Mở chức năng ngừng kích hoạt cho một sản phẩm
+2. Khai đủ thông tin gồm phạm vi áp dụng và thời gian
+3. Lưu
+4. Đọc trạng thái sản phẩm và thử bán sản phẩm đó ở phạm vi đã chọn",,"Lưu thành công; sản phẩm chuyển trạng thái ngừng kích hoạt **trong đúng phạm vi đã chọn**; bán hàng ở phạm vi đó bị chặn, ở phạm vi khác vẫn bán được.",,,,,,
+08_050_002,Ngừng kích hoạt khi KHÔNG chọn phạm vi áp dụng,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm","1. Mở chức năng ngừng kích hoạt
+2. Không chọn phạm vi nào
+3. Lưu",,"Bị chặn, thông báo nêu rõ phải chọn phạm vi áp dụng; không gửi request.",,,,,,
+08_050_003,Cập nhật cấu hình ngừng kích hoạt,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; sản phẩm đã có cấu hình ngừng kích hoạt","1. Mở sửa cấu hình, đổi phạm vi và thời gian
+2. Lưu
+3. Mở lại và kiểm hành vi bán hàng ở phạm vi cũ và phạm vi mới",,"Cập nhật thành công; phạm vi **cũ** không còn bị chặn, phạm vi **mới** bị chặn.",,,,,,
+08_050_004,Kích hoạt lại sản phẩm,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm; có sản phẩm đang ngừng kích hoạt","1. Kích hoạt lại sản phẩm đó
+2. Đọc trạng thái
+3. Thử bán sản phẩm ở phạm vi từng bị chặn",,Sản phẩm trở về trạng thái kích hoạt; bán hàng bình thường ở mọi phạm vi,,,,,,
+,060 — Quản lý danh mục sản phẩm,,,,,,,,,,
+08_060_001,Mở màn Quản lý danh mục sản phẩm,,"1. Nhập SKU và Barcode trên phần Thông tin chung: - SKU: a - Mã barcode: tự sinh
+2. Xóa dữ liệu vừa nhập, hệ thống hiển thị message validate bắt buộc
+2. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập: - Tên thuộc tính: “size” - Giá trị thuộc tính: nhập “S”
+3. Nhấn Enter
+4. Kiểm tra trường SKU và Mã bardcode phần",,1. Hiển thị disabled 2. Nội dung placeholder: Quản lý theo biến thể bên dưới 3. Vẫn hiển thị message validate bắt buộc,,,,,,
+08_060_002,Thêm danh mục - kiểm tra field trên drawer,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+Đúng tên trường và tên tiêu đề",,"1. Hiển thị drawer ""Thêm danh mục"". 2. Trường ""Loại sản phẩm"" mặc định giá trị của loại sản phẩm đang tạo danh mục, hiển thị dạng disabled 3. Các trường bắt buộc hiển thị dấu * màu đỏ.",,,,,,
+08_060_003,Thêm danh mục - validate bỏ trống tên danh mục,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Bỏ trống trường ""Tên danh mục""
+4. Nhấn nút ""Lưu""",,"1. Hiển thị message đỏ dưới trường ""Nhập tên danh mục"" 2. Không lưu lại bản ghi và không điều hướng sang màn khác",,,,,,
+08_060_004,Nhập danh mục từ Excel - validate chưa chọn file,"Đã đăng nhập vai Tổng công ty, có quyền quản trị sản phẩm; đang ở màn Quản lý danh mục","1. Trên màn danh sách sản phẩm, bấm Quản lý danh mục ở thanh tiêu đề
+2. Mở chức năng nhập danh mục từ Excel
+3. Không chọn tệp nào
+4. Bấm nút nhập",,"Hệ thống chặn, báo chưa chọn tệp và không chạy tiến trình nhập.",,,,,,
+08_060_005,Nhập danh mục từ Excel - hiển thị tải file mẫu,Đã đăng nhập vai Tổng công ty; đang ở màn Quản lý danh mục,"1. Trên màn danh sách sản phẩm, bấm Quản lý danh mục ở thanh tiêu đề
+2. Mở chức năng nhập danh mục từ Excel
+3. Quan sát nút tải file mẫu",,"Màn nhập danh mục từ Excel có nút tải về file mẫu, bấm vào tải được tệp mẫu đúng định dạng.",,,,,,
+08_060_006,"CRUD danh mục - thêm, sửa, xóa thật",Đã đăng nhập vào hệ thống Có quyền thao tác chức năng Thêm Sản phẩm,"1. Đơn vị chính: cái
+2. Click vào button ""Thêm đơn vị quy đổi"" Barcode và SKU hiển thị mặc định
+3. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập: - Tên thuộc tính: size - Giá trị thuộc tính: m
+4. Nhấn Enter => 2 trường đó disabled và ko bắt buộc
+5. Xóa hết biến thể
+6. Kiểm tra giao diện trường SKU và Barcode của bảng quy đổi đơn vị
+1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Nhập thông tin sản phẩm, trong đó nhập SKU đã tồn tại
+4. Click ""Xác nhận""",,"Hệ thống hiển thị thông báo ""Mã SKU... đã được đăng ký cho sản phẩm khác, vui lòng kiểm tra lại""",,,,,,
+08_060_007,Thêm danh mục — ba case gốc KHÔNG có nội dung,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Mở drawer thêm danh mục
+2. Ghi lại đủ các ô và ràng buộc của từng ô
+3. Đối chiếu với `dong21` `dong24` trong sheet",,Case này thay thế: liệt kê đủ ô và ràng buộc thật của drawer thêm danh mục để user đối chiếu và bổ sung.,,,,,,
+08_060_008,Thêm danh mục với các ô không hợp lệ,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Bỏ trống tên danh mục → lưu, ghi lỗi
+2. Nhập tên danh mục ĐÃ tồn tại → lưu, ghi lỗi
+3. Nhập tên toàn khoảng trắng → lưu, ghi kết quả",,"Bỏ trống: message đỏ dưới ô ""Nhập tên danh mục"".",,,,,,
+08_060_009,Sửa danh mục — năm case gốc KHÔNG có nội dung,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có danh mục đã tạo","1. Mở sửa một danh mục
+2. Ghi lại đủ các ô sửa được và ô bị khoá
+3. Đối chiếu với `dong27` `dong30`–`dong34` trong sheet",,Case này thay thế: liệt kê đủ ô sửa được / bị khoá của drawer sửa danh mục để user bổ sung.,,,,,,
+08_060_010,Sửa danh mục: bỏ trống các ô bắt buộc,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có danh mục đã tạo","1. Xoá trắng tên danh mục → lưu, ghi lỗi
+2. Lần lượt bỏ trống từng ô bắt buộc khác → lưu, ghi lỗi",,Mỗi ô bắt buộc cho một thông báo riêng; không lưu được; dữ liệu cũ giữ nguyên.,,,,,,
+08_060_011,Sửa trường Danh mục cha,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có cây danh mục nhiều cấp","1. Đổi danh mục cha của một danh mục con sang danh mục khác
+2. Lưu
+3. Đọc lại cây danh mục và các sản phẩm thuộc danh mục đó
+4. Thử đặt danh mục cha là **chính nó** hoặc là **con của nó**",,"Đổi cha thành công, cây danh mục cập nhật, sản phẩm vẫn thuộc đúng danh mục. Đặt cha là chính nó / con của nó phải bị **chặn** — nếu không thì cây danh mục thành vòng lặp và mọi màn đọc cây sẽ treo.",,,,,,
+08_060_012,Xoá danh mục cấp nhỏ nhất KHÔNG chứa sản phẩm,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Xoá danh mục lá không có sản phẩm
+2. Đọc kết quả và cây danh mục",,"Xoá thành công, danh mục mất khỏi cây.",,,,,,
+08_060_013,Xoá danh mục cấp nhỏ nhất CÓ chứa sản phẩm,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Thử xoá danh mục lá đang có sản phẩm
+2. Đọc thông báo
+3. Kiểm các sản phẩm đó",,"Bị chặn, thông báo nêu rõ danh mục còn sản phẩm; sản phẩm không bị ảnh hưởng.",,,,,,
+08_060_014,Xoá danh mục CHA khi cây con KHÔNG có sản phẩm,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Thử xoá danh mục cha mà toàn bộ cây con không có sản phẩm
+2. Đọc kết quả và cây danh mục",,Hai cách khác nhau: xoá cả cây là mất danh mục con mà người dùng không thấy trước.,,,,,,
+08_060_015,Xoá danh mục CHA khi cây con CÓ sản phẩm,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Thử xoá danh mục cha mà một danh mục con đang có sản phẩm
+2. Đọc thông báo",,"Bị chặn, thông báo nêu rõ trong cây còn sản phẩm. Đây là biên quan trọng nhất của nhóm xoá danh mục.",,,,,,
+08_060_016,Xoá danh mục đang nằm trong CTKM,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có danh mục đang được dùng trong một CTKM","1. Thử xoá danh mục đó
+2. Đọc thông báo
+3. Mở CTKM và kiểm điều kiện áp dụng",,"Bị chặn, thông báo nêu rõ danh mục đang nằm trong CTKM; CTKM giữ nguyên điều kiện.",,,,,,
+08_060_017,Tìm kiếm danh mục theo MỘT PHẦN từ khoá,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Nhập một phần tên danh mục
+2. Quan sát cây / danh sách danh mục",,Hiện các danh mục có tên chứa đoạn đã nhập,,,,,,
+08_060_018,Tìm kiếm danh mục theo FULL từ khoá,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Nhập đúng tên đầy đủ một danh mục
+2. Quan sát",,Trả về đúng danh mục đó.,,,,,,
+08_060_019,Tìm kiếm danh mục không tồn tại,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Nhập ""zzzkhongtontai999""",,Trạng thái rỗng; không lỗi đỏ; cây không bị vỡ.,,,,,,
+08_060_020,Tìm kiếm rồi XOÁ tìm kiếm,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Tìm một từ khoá cho ít kết quả
+2. Xoá trắng ô tìm kiếm
+3. Quan sát",,"Cây / danh sách danh mục trở về **đầy đủ như ban đầu**, đúng cấu trúc cây; không giữ trạng thái đã lọc.",,,,,,
+08_060_021,Import Excel danh mục — file toàn dòng HỢP LỆ,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có file Excel danh mục hợp lệ","1. Import file
+2. Đọc kết quả và số dòng thành công
+3. Kiểm cây danh mục",,Mọi dòng được nhận; số danh mục tạo thêm khớp số dòng trong file; cây danh mục có đủ và **đúng quan hệ cha–con** khai trong file.,,,,,,
+08_060_022,Import Excel danh mục — file toàn dòng KHÔNG hợp lệ,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có file Excel toàn dòng lỗi (trùng tên, thiếu tên, cha không tồn tại)","1. Import file
+2. Đọc kết quả và lý do lỗi từng dòng
+3. Kiểm cây danh mục",,Không danh mục nào được tạo; mỗi dòng có lý do lỗi cụ thể; cây danh mục không đổi.,,,,,,
+08_060_023,Import Excel danh mục — file LẪN dòng hợp lệ và lỗi,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có file Excel vừa có dòng hợp lệ vừa có dòng lỗi","1. Import file
+2. Đọc số dòng thành công / thất bại
+3. Kiểm cây danh mục",,Hai cách khác nhau hoàn toàn; nếu nhận một phần thì phải báo rõ dòng nào lỗi để người dùng sửa và import lại.,,,,,,
+08_060_024,Tải file Excel mẫu import danh mục,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Tải file mẫu
+2. Mở file và đọc hàng tiêu đề",,"File mẫu tải được, có đủ cột cần khai (tên danh mục, danh mục cha, …) đúng như trình import mong đợi.",,,,,,
+08_060_025,Xuất Excel danh mục hiện có,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm","1. Bấm xuất Excel
+2. Mở file tải về
+3. Đối chiếu số dòng với số danh mục trên màn",,"File chứa đủ danh mục đang có, đúng quan hệ cha–con; số dòng khớp số danh mục.",,,,,,
+08_060_026,Giao diện màn Sửa danh mục,"Vai `tct` đăng nhập, đang ở màn Quản lý danh mục sản phẩm; có danh mục đã tạo","1. Mở màn/drawer Sửa danh mục của một danh mục đã có
+2. Đọc đủ các ô và giá trị được nạp sẵn
+3. Đối chiếu với drawer Thêm danh mục",,"Màn Sửa hiện đủ ô như màn Thêm, các ô đã nạp đúng giá trị hiện tại của danh mục",,,,,,
+,070 — Nhập sản phẩm từ tệp Excel,,,,,,,,,,
+08_070_001,Nhập sản phẩm từ Excel - mở drawer import,"Đã đăng nhập vai Tổng công ty, có quyền nhập sản phẩm từ Excel; cây danh mục đã khai báo xong","1. Trên màn danh sách sản phẩm, bấm Xem thêm ở thanh tiêu đề
+2. Chọn Nhập từ Excel
+3. Quan sát hai thẻ của màn hình",,Màn Nhập sản phẩm từ file excel mở ra với hai thẻ Nhập file và Lịch sử nhập. Thẻ Nhập file có nút Tải về file mẫu ở góc trên bên phải và vùng Kéo thả hoặc bấm để chọn file.,,,,,,
+08_070_002,Nhập sản phẩm từ Excel - validate chưa chọn file,Đã đăng nhập vai Tổng công ty; đang mở màn Nhập sản phẩm từ file excel,"1. Mở màn Nhập sản phẩm từ file excel, thẻ Nhập file
+2. Không chọn tệp nào
+3. Bấm nút nhập",,"Hệ thống chặn, báo chưa chọn tệp và không chạy tiến trình nhập. Hệ thống chỉ nhận.xls và.xlsx, mỗi lần một tệp, dung lượng tối đa 30MB.",,,,,,
+,080 — In tem nhãn sản phẩm,,,,,,,,,,
+08_080_001,In tem nhãn - mở drawer cấu hình,Đã đăng nhập và đang làm việc tại một điểm bán; sản phẩm cần in đã có mã vạch,"1. Trên màn danh sách sản phẩm, tích ô chọn ở đầu các dòng sản phẩm cần in tem
+2. Bấm Xem thêm ở thanh tiêu đề
+3. Chọn In tem nhãn",,Màn In tem nhãn mở ra gồm hai khối Danh sách sản phẩm và Cấu hình & Chọn giấy in. Các sản phẩm vừa chọn đã nằm sẵn trong bảng; cột Số lượng in được điền sẵn bằng tồn kho hiện tại.,,,,,,
+08_080_002,In tem nhãn - hiển thị tùy chọn mẫu giấy và mã vạch,Đang mở màn In tem nhãn với ít nhất một sản phẩm trong danh sách,"1. Mở màn In tem nhãn từ danh sách sản phẩm
+2. Quan sát khối Cấu hình & Chọn giấy in
+3. Quan sát ô Chọn sản phẩm và cột Hành động của bảng",,Khối Cấu hình & Chọn giấy in hiển thị các mẫu giấy in để chọn và tuỳ chọn mã vạch. Bảng cho bổ sung sản phẩm qua ô Chọn sản phẩm phía trên và bỏ sản phẩm bằng biểu tượng xoá ở cột Hành động.,,,,,,
+,090 — Quản lý sản phẩm gộp,,,,,,,,,,
+08_090_001,Thêm combo khi bỏ trống toàn bộ ô bắt buộc,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Không nhập gì
+2. Bấm lưu
+3. Ghi lại đủ các thông báo lỗi",,Mọi ô bắt buộc đồng thời hiện lỗi RIÊNG; không gửi request. Không gộp — gộp thì không biết ô nào hỏng.,,,,,,
+08_090_002,Thêm combo thủ công với đầy đủ thông tin bắt buộc,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Khai tên, SKU, danh mục, thêm 2 sản phẩm thành phần với số lượng
+2. Lưu
+3. Mở lại chi tiết combo",,Lưu thành công; chi tiết hiện đủ 2 thành phần với đúng số lượng; SKU combo duy nhất.,,,,,,
+08_090_003,Thêm combo khi chọn danh mục CHA trong cây danh mục,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Chọn danh mục cấp cha
+2. Lưu
+3. Lọc danh sách combo theo danh mục con của danh mục cha đó",,Lưu thành công.,,,,,,
+08_090_004,Bỏ trống sản phẩm trong danh sách thành phần combo,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Thêm một dòng thành phần nhưng không chọn sản phẩm
+2. Lưu",,"Bị chặn, thông báo nêu rõ phải chọn sản phẩm cho dòng đó; không gửi request.",,,,,,
+08_090_005,Thêm sản phẩm TRÙNG với sản phẩm đã có trong bảng thành phần,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm; đã có 1 dòng thành phần","1. Thêm dòng mới chọn đúng sản phẩm đã có
+2. Quan sát",,Ba cách cho ba kết quả giá combo khác nhau.,,,,,,
+08_090_006,Thêm sản phẩm CÓ BIẾN THỂ vào combo,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Thêm một sản phẩm có biến thể vào bảng thành phần
+2. Quan sát ô chọn biến thể
+3. Chọn một biến thể cụ thể và lưu",,"Hệ thống buộc chọn **biến thể cụ thể**, không cho chọn sản phẩm cha chung chung.",,,,,,
+08_090_007,Thêm biến thể TRÙNG với biến thể đã có trong bảng,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm; đã có 1 biến thể trong bảng","1. Thêm dòng mới chọn đúng biến thể đã có
+2. Quan sát",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+08_090_008,Tính duy nhất của SKU combo,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm; đã biết một SKU đang tồn tại","1. Nhập SKU combo trùng SKU sản phẩm thường
+2. Lưu
+3. Thử trùng SKU của combo khác",,"Cả hai đều bị chặn — SKU phải duy nhất **trên toàn hệ thống**, không phân biệt combo và sản phẩm thường.",,,,,,
+08_090_009,"Validate ô số của combo: Khối lượng, Thể tích, Kích thước","Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Nhập chữ → ghi kết quả
+2. Nhập số âm → ghi kết quả
+3. Nhập 0 → ghi kết quả",,"Ô số lượng xử lý như ở màn thêm sản phẩm: ký tự chữ bị bỏ qua hoặc báo lỗi, số âm bị chặn, giá trị 0 theo đúng ràng buộc tối thiểu của ô.",,,,,,
+08_090_010,Thêm nhanh danh mục từ form combo,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Dùng chức năng thêm nhanh danh mục ở ô Danh mục
+2. Xác nhận
+3. Kiểm ô Danh mục và màn Quản lý danh mục",,Danh mục mới được tạo và tự chọn; xuất hiện ở màn Quản lý danh mục.,,,,,,
+08_090_011,Thêm thuộc tính bổ sung cho combo,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Thêm 2 thuộc tính bổ sung
+2. Lưu và mở lại chi tiết",,Hai thuộc tính lưu đúng tên và giá trị.,,,,,,
+08_090_012,Tải lên hình ảnh minh hoạ combo,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Tải 1 ảnh hợp lệ
+2. Lưu và mở lại chi tiết",,Ảnh hiện ở chi tiết combo sau khi lưu.,,,,,,
+08_090_013,Tải lên ảnh combo sai định dạng hoặc quá dung lượng,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Tải.pdf → ghi kết quả
+2. Tải ảnh vượt dung lượng → ghi thông báo",,Cả hai bị chặn với thông báo riêng nêu rõ ràng buộc.,,,,,,
+08_090_014,Thêm combo với ĐẦY ĐỦ mọi thông tin,"Vai `tct` đăng nhập, đang ở form Thêm combo sản phẩm","1. Khai hết mọi ô kể cả không bắt buộc
+2. Lưu
+3. Mở lại chi tiết và đối chiếu từng ô",,"Lưu thành công; mọi ô đã khai hiện đúng ở chi tiết, không ô nào bị mất.",,,,,,

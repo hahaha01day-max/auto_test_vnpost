@@ -1,0 +1,399 @@
+{
+  "_ghi_chu": "Khoá là mã case trong test-cases.csv. Mọi case mutates để allowMutation=false — môi trường trỏ DỮ LIỆU THẬT (.env.domain). 070_001/070_004 phát hành hoá đơn thuế: KHÔNG gỡ lại được. 🚫 Không đặt tài khoản/mật khẩu vào file này.",
+  "cases": {
+    "18_4_010_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "KHONGTONTAI-0000"
+      }
+    },
+    "18_4_010_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "   "
+      }
+    },
+    "18_4_010_009": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "18_4_010_010": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_011": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_012": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_013": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_014": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_015": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_016": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_017": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_018": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — tat-hddt.gdv (tắt enableInvoice điểm bán, khôi phục afterAll)"
+    },
+    "18_4_010_019": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_020": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_010_021": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_020_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_020_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_020_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_020_004": {
+      "enabled": false,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "KHÔNG DỰNG ĐƯỢC (đo 28/09/2026): cả 3 pod 0 đơn có SHOP_ORDER.card_amount > 0, và POS v2 chặn thẻ trả trước (PaymentMethodModal_v2.jsx dòng 836 tự đổi PRE_PAY_CARD → MONEY) ⇒ không tạo được kỳ có phát sinh. Vế \"kỳ không phát sinh thì ẩn thẻ\" đọc được nhưng một mình không đủ case. Cần user quyết.",
+      "_blocked": "KHÔNG DỰNG ĐƯỢC (đo 28/09/2026): cả 3 pod 0 đơn có SHOP_ORDER.card_amount > 0, và POS v2 chặn thẻ trả trước (PaymentMethodModal_v2.jsx dòng 836 tự đổi PRE_PAY_CARD → MONEY) ⇒ không tạo được kỳ có phát sinh. Vế \"kỳ không phát sinh thì ẩn thẻ\" đọc được nhưng một mình không đủ case. Cần user quyết."
+    },
+    "18_4_020_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "_note": "28/09: chạy vai shop (GDV không có chức năng EXPORT_EXCEL ⇒ SSHOP-401). Chỉ tạo job export."
+    },
+    "18_4_020_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "_note": "28/09: chạy vai shop (GDV không có chức năng EXPORT_EXCEL ⇒ SSHOP-401). Chỉ tạo job export."
+    },
+    "18_4_030_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_009": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — phan-loai-sp.gdv (combo seed 15)"
+    },
+    "18_4_030_010": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_030_011": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_040_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Ghi nhận thêm tiền là ghi sổ tiền thật; cần đơn còn nợ chuyên dùng cho test, chưa có"
+    },
+    "18_4_040_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_040_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn còn nợ chuyên dùng cho test; thao tác ghi sổ tiền thật"
+    },
+    "18_4_040_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn còn nợ chuyên dùng cho test"
+    },
+    "18_4_040_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn còn nợ chuyên dùng cho test"
+    },
+    "18_4_050_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_050_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_050_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_060_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Sửa đơn nháp là ghi dữ liệu thật; cần đơn nháp chuyên dùng cho test"
+    },
+    "18_4_060_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_060_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Xoá đơn nháp là ghi dữ liệu thật; cần đơn nháp chuyên dùng cho test"
+    },
+    "18_4_060_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn nháp chuyên dùng cho test"
+    },
+    "18_4_060_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_060_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_4_070_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Hoá đơn điện tử đã phát hành lên cơ quan thuế KHÔNG gỡ lại được — tuyệt đối không chạy trên dữ liệu thật"
+    },
+    "18_4_070_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_070_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_4_070_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Cùng lý do 070_001 — phát hành hoá đơn thuế không gỡ lại được"
+    },
+    "18_4_070_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_070_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — tat-hddt.gdv (tắt enableInvoice điểm bán, khôi phục afterAll)"
+    },
+    "18_4_070_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_4_070_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_080_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_4_080_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": false
+    },
+    "18_4_080_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": false
+    },
+    "18_4_080_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "18_4_080_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "18_4_080_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "18_4_080_007": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "18_4_080_008": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": false
+    },
+    "18_4_100_001": {
+      "enabled": true,
+      "role": "ward",
+      "mutates": false,
+      "blockedReason": "Cần tài khoản vai ward — chưa xác nhận đã khai trong .env.accounts",
+      "missingRoleReason": "Vai ward chưa khai trong .env.accounts — skip có lý do, KHÔNG tự pass"
+    },
+    "18_4_100_002": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false,
+      "_note": "28/09: viết pham-vi.province.spec.js — đối chứng đơn điểm bán trực thuộc qua phiên shop."
+    }
+  }
+}

@@ -1,0 +1,1059 @@
+,Chức năng,,NHÀ CUNG CẤP,,,,,,,,,,
+,Mã Testcase,,NCC,,,,,,,,,,
+,Tổng các tình huống kiểm thử,,253,,,,,,,,,,
+,Chưa thực hiện,,68,,,,,,,,,,
+,Đạt yêu cầu,,172,,,,,,,,,,
+,Không đạt yêu cầu,,13,,,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,,,
+,File Script,,68,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,SCRIPT,
+,KIỂM TRA PERMISSION,,,,,,,,,,,,
+NCC_1,Kiểm tra user đăng nhập vào hệ thống ,,"1. Đăng nhập vào https://vnpost.sfin.vn/account
+2. Nhập số điện thoại 0123456700
+3. Nhập mật khẩu là 0123456",,Đăng nhập,Đăng nhập thanh công vào đường link https://vnpost.sfin.vn/lich-ca-nhan/ca-lam-viec,Đăng nhập thanh công vào đường link https://vnpost.sfin.vn/lich-ca-nhan/ca-lam-viec,Pass,,,,,
+,,,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,,,
+,Quản lý nhà cung cấp,,,,,,,,,,,,
+NCC_2,Kiểm tra hiển thị màn hình,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier",,Quản lý nhà cung cấp,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Quản lý nhà cung cấp""
+-  Hiển thị 3 nút Quản lý danh mục"", ""Quản lý Nhóm NCC"" và ""+ Thêm mới""
+- Thanh tìm kiếm: Hiển thị ô input có icon kính lúp và placeholder: ""Tìm kiếm theo tên, sđt nhà cun-  ...""
+- Bảng danh sách nhà cung cấp hiển thị đầy đủ các cột: Tên nhà cung cấp, Mã nhà cung cấp, Liên hệ, Sản phẩm, Công nợ, Trả hàng, Hành động.
+- Cột ""Liên hệ"" hiển thị Số điện thoại và Email
+- Cột ""Hành động"" hiển thị icon Chi tiết (i) và icon Xóa (x) 
+- Hiển thị bộ chọn trang (số 1 được khoanh vùng) và dropdown chọn số lượng hiển thị 
+","1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Quản lý nhà cung cấp""
+-  Hiển thị 3 nút Quản lý danh mục"", ""Quản lý Nhóm NCC"" và ""+ Thêm mới""
+- Thanh tìm kiếm: Hiển thị ô input có icon kính lúp và placeholder: ""Tìm kiếm theo tên, sđt nhà cun-  ...""
+- Bảng danh sách nhà cung cấp hiển thị đầy đủ các cột: Tên nhà cung cấp, Mã nhà cung cấp, Liên hệ, Sản phẩm, Công nợ, Trả hàng, Hành động.
+- Cột ""Liên hệ"" hiển thị Số điện thoại và Email
+- Cột ""Hành động"" hiển thị icon Chi tiết (i) và icon Xóa (x) 
+- Hiển thị bộ chọn trang (số 1 được khoanh vùng) và dropdown chọn số lượng hiển thị 
+",Pass,,,,Có,Quản lý NCC
+NCC_3,Kiểm tra hiển thị danh sách nhà cung cấp,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier",,Quản lý nhà cung cấp,"- Hệ thống điều hướng đến màn Quản lý nhà cung cấp
+- Hiển thị tất cả nhà cung cấp","- Hệ thống điều hướng đến màn Quản lý nhà cung cấp
+- Hiển thị tất cả nhà cung cấp",Pass,,,,Có,Quản lý NCC
+NCC_4,Kiểm tra tìm kiếm theo tên NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Nhập tên Nhà cung cấp văn phòng phẩm",,Quản lý nhà cung cấp,Bảng chỉ hiển thị các NCC khớp tên.,Bảng chỉ hiển thị các NCC khớp tên.,Pass,,,,Có,Quản lý NCC
+NCC_5,Kiểm tra tìm kiếm theo SĐT NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Nhập SĐT tồn tại là 0385766046",,Quản lý nhà cung cấp,Bảng chỉ hiển thị các NCC khớp SĐT.,Bảng chỉ hiển thị các NCC khớp SĐT.,Pass,,,,Có,Quản lý NCC
+NCC_6,Kiểm tra tìm kiếm thông tin không có trong danh sách,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Nhập ký tự lạ",,Quản lý nhà cung cấp,Hiển thị bảng trống.,Hiển thị bảng trống.,Pass,,,,Có,Quản lý NCC
+NCC_7,Kiểm tra phân trang,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Thay đổi lựa chọn sang một mức khác",,Quản lý nhà cung cấp,Bảng tải lại số lượng dòng tương ứng.,Bảng tải lại số lượng dòng tương ứng.,Pass,,,,Có,Quản lý NCC
+NCC_8,Kiểm tra nút 'Quản lý danh mục',,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút 'Quản lý danh mục'",,Quản lý nhà cung cấp,Hệ thống chuyển hướng sang drawer ' Danh mục nhà cung cấp',Hệ thống chuyển hướng sang drawer ' Danh mục nhà cung cấp',Pass,,,,Có,Quản lý NCC
+NCC_9,Kiểm tra nút 'Quản lý Nhóm  NCC',,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút 'Quản lý Nhóm  NCC'",,Quản lý nhà cung cấp,Hệ thống chuyển hướng sang drawer 'Nhóm Nhà cung cấp',Hệ thống chuyển hướng sang drawer 'Nhóm Nhà cung cấp',Pass,,,,Có,Quản lý NCC
+,Thêm mới/ Sửa/Xoá nhà cung cấp,,,,,,,,,,,,
+NCC_10,Kiểm tra hiển thị màn hình,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier",,Quản lý nhà cung cấp,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Thêm nhà cung cấp""
+-  Hiển thị 3 nút ""Huỷ"", ""Xác nhận"" và ""X(Đóng)""
+- Thông tin cơ bản: Mã Nhà cung cấp, Tên Nhà cung cấp, Số điện thoại, Dropdown List Tỉnh / Thành phố,
+Dropdown List Phường / Xã, Dropdown List Nhóm NCC, Dropdown List Danh mục NCC, Tên công ty, Mã số thuế, Email, Ghi chú
+- Thông tin khi đặt hàng: Tên người nhận đơn, Số điện thoại, Email, Số lượng tối thiểu khi đặt hàng
+- Thông tin xử lí khiếu nại: Tên người xử lí khiếu nại, Số điện thoại, Email","1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Thêm nhà cung cấp""
+-  Hiển thị 3 nút ""Huỷ"", ""Xác nhận"" và ""X(Đóng)""
+- Thông tin cơ bản: Mã Nhà cung cấp, Tên Nhà cung cấp, Số điện thoại, Dropdown List Tỉnh / Thành phố,
+Dropdown List Phường / Xã, Dropdown List Nhóm NCC, Dropdown List Danh mục NCC, Tên công ty, Mã số thuế, Email, Ghi chú
+- Thông tin khi đặt hàng: Tên người nhận đơn, Số điện thoại, Email, Số lượng tối thiểu khi đặt hàng
+- Thông tin xử lí khiếu nại: Tên người xử lí khiếu nại, Số điện thoại, Email",Pass,,,,Có,Quản lý NCC
+NCC_11,Kiểm tra thêm mới NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút ' Thêm mới'
+5. Nhập thông tin: Mã Nhà cung cấp, Tên Nhà cung cấp, Số điện thoại, Tỉnh / Thành phố, Phường / Xã, Nhóm NCC, Tên người nhận đơn, Số điện thoại, Email,  Dung sai (%), Tên người xử lí khiếu nại, Số điện thoại, Email
+6. Chọn Xác nhận",,Thêm nhà cung cấp,Hiển thị thông báo 'Thêm thành công',Hiển thị thông báo 'Thêm thành công',Pass,,,,Có,Quản lý NCC
+NCC_12,Kiểm tra xem chi tiết thông tin NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút '(i)'",,Chỉnh sửa nhà cung cấp,"
+Hiển thị thông tin đầy đủ đã nhập của NCC","
+Hiển thị thông tin đầy đủ đã nhập của NCC",Pass,,,,Có,Quản lý NCC
+NCC_13,Kiểm tra chỉnh sửa thông tin NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút '(i)'
+5. Nhập thông tin: Tên Nhà cung cấp
+6. Chọn Xác nhận",,Chỉnh sửa nhà cung cấp,"
+Hiển thị và lưu thông tin đầy đủ đã nhập của NCC","
+Hiển thị và lưu thông tin đầy đủ đã nhập của NCC",Pass,,,,Có,Quản lý NCC
+NCC_14,Kiểm tra bỏ trống các trường bắt buộc,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút ' Thêm mới'
+5. Bỏ trống các trường bắt buộc: Mã Nhà cung cấp, Tên Nhà cung cấp, Số điện thoại, Tỉnh / Thành phố, Phường / Xã, Nhóm NCC, Tên người nhận đơn, Số điện thoại, Email,  Dung sai (%), Tên người xử lí khiếu nại, Số điện thoại, Email
+6. Chọn Xác nhận",,Thêm nhà cung cấp,Highlight focus và hiển thị text cảnh báo với từng trường bắt buộc,Highlight focus và hiển thị text canh báo với từng trường bắt buộc,Pass,,,,Có,Quản lý NCC
+NCC_15,Kiểm tra nhập sai định dang số điện thoại,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút ' Thêm mới'
+5. Nhập sai định dạng số điện thoại: 038716",,Thêm nhà cung cấp,Highlight focus và hiển thị text cảnh báo Số điện thoại không hợp lệ,Highlight focus và hiển thị text cảnh báo Số điện thoại không hợp lệ,Pass,,,,Có,Quản lý NCC
+NCC_16,Kiểm tra Xoá NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút ' Xoá' với nhà cung cấp thêm ở case NCC_10
+5. Chọn Đồng ý",,Quản lý nhà cung cấp,Hiển thị xoá thành công,Hiển thị xoá thành công,Pass,,,,Có,Quản lý NCC
+NCC_17,Kiểm tra huỷ Xoá NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn nút ' Xoá'
+5. Chọn Huỷ",,Quản lý nhà cung cấp,Không xoá NCC đã chọn,Không xoá NCC đã chọn,Pass,,,,Có,Quản lý NCC
+,Quản lý nhóm nhà cung cấp,,,,,,,,,,,,
+NCC_18,Kiểm tra hiển thị màn hình,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group",,Nhóm Nhà cung cấp,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Nhóm Nhà cung cấp""
+-  Hiển thị ""Thêm mới"", phân trang, Ô tìm kiếm
+- Danh sách nhóm NCC hiển thị với các cột STT, Tên Nhóm nhà cung cấp, Ghi chú, Hành động","1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Nhóm Nhà cung cấp""
+-  Hiển thị ""Thêm mới"", phân trang, Ô tìm kiếm
+- Danh sách nhóm NCC hiển thị với các cột STT, Tên Nhóm nhà cung cấp, Ghi chú, Hành động",Pass,,,,Có,Quản lý NCC
+NCC_19,Kiểm tra thêm mới nhóm NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group
+5. Chọn button Thêm mới 
+6. Nhập tên H01
+7. Chọn Xác nhận",,Thêm nhóm nhà cung cấp,Hiển thị thông báo 'Thêm thành công',Hiển thị thông báo 'Thêm thành công',Pass,,,,Có,Quản lý NCC
+NCC_20,Kiểm tra thêm mới nhóm NCC trùng tên với nhóm đã tồn tại,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group
+5. Chọn button Thêm mới 
+6. Nhập tên H01
+7. Chọn Xác nhận",,Thêm nhóm nhà cung cấp,Hiển thị thông báo 'Tên nhóm nhà cung cấp đã tồn tại',Hiển thị thông báo 'Có lỗi xảy ra',Fail,,,,Có,Quản lý NCC
+NCC_21,Kiểm tra chỉnh sửa thông tin nhóm NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group
+5. Chọn nút '(i)'
+6. Nhập thông tin Tên khác là H02
+7. Chọn Xác nhận",,Sửa nhóm nhà cung cấp,"
+Hiển thị và lưu thông tin đầy đủ đã nhập của nhóm NCC","
+Hiển thị và lưu thông tin đầy đủ đã nhập của nhóm NCC",Pass,,,,Có,Quản lý NCC
+NCC_22,Kiểm tra chỉnh sửa thông tin nhóm NCC thành thông tin nhóm NCC đã tồn tại,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group
+5. Chọn nút '(i)'
+6. Nhập thông tin Tên là H02
+7. Chọn Xác nhận",,Sửa nhóm nhà cung cấp,"
+Hiển thị và lưu thông tin đầy đủ đã nhập của nhóm NCC",Hiển thị thông báo 'Có lỗi xảy ra',Fail,,,,Có,Quản lý NCC
+NCC_23,Kiểm tra bỏ trống các trường bắt buộc,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group
+5. Chọn nút ' Thêm mới'
+6. Bỏ trống các trường bắt buộc là Tên nhóm nhà cung cấp
+7. Chọn Xác nhận",,Thêm nhóm nhà cung cấp,Highlight focus và hiển thị text cảnh báo với từng trường bắt buộc,Highlight focus và hiển thị text canh báo với từng trường bắt buộc,Pass,,,,Có,Quản lý NCC
+NCC_24,Kiểm tra Xoá nhom NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group
+5. Chọn nút ' Xoá' với NCC H02
+6. Chọn Đồng ý",,Quản lý nhóm nhà cung cấp,Hiển thị xoá thành công,Hiển thị xoá thành công,Pass,,,,Có,Quản lý NCC
+NCC_25,Kiểm tra huỷ Xoá nhóm NCC,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn Quản lý nhóm NCC https://vnpost.sfin.vn/inventory/supplier-group
+5. Chọn nút ' Xoá' với NCC H02
+6. Chọn Huỷ",,Quản lý nhóm nhà cung cấp,Không xoá nhóm NCC đã chọn,Không xoá nhóm NCC đã chọn,Pass,,,,Có,Quản lý NCC
+,Quản lý Danh sách sản phẩm theo nhà cung cấp,,,,,,,,,,,,
+NCC_26,Kiểm tra hiển thị màn hình,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products",,Danh sách sản phẩm theo nhà cung cấp,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Danh sách sản phẩm theo nhà cung cấp""
+-  Hiển thị 3 nút ""Bảng giá"", ""Thêm mới/Cập nhật SP"" và ""X(Đóng)""
+- Bảng sản phẩm với các cột: Tên sản phẩm, SKU, Đơn vị tính, Nguồn cung cấp, Giá nhập, Mặc định, Cập nhật lần cuối, Hành động
+- Cột hành động: Lịch sử giá, xoá
+- Button Icon: làm mới, cài đặt hiển thị các cột, phóng to/ thu nhỏ","1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Danh sách sản phẩm theo nhà cung cấp""
+-  Hiển thị 3 nút ""Bảng giá"", ""Thêm mới/Cập nhật SP"" và ""X(Đóng)""
+- Bảng sản phẩm với các cột: Tên sản phẩm, SKU, Đơn vị tính, Nguồn cung cấp, Giá nhập, Mặc định, Cập nhật lần cuối, Hành động
+- Cột hành động: Lịch sử giá, xoá
+- Button Icon: làm mới, cài đặt hiển thị các cột, phóng to/ thu nhỏ",Pass,,,,Có,Quản lý NCC
+NCC_27,Kiểm tra danh sách sản phẩm,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products",,Danh sách sản phẩm theo nhà cung cấp,Hiển thị tất cả sản phẩm,Hiển thị tất cả sản phẩm,Pass,,,,Có,Quản lý NCC
+NCC_28,Kiểm tra xem lịch sử giá của sản phẩm,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn lịch sử giá của sản phẩm đầu tiên",,"Lịch sử giá
+",Hiển thị danh sách giá đã áp dụng của sản phẩm,Hiển thị danh sách giá đã áp dụng của sản phẩm,Pass,,,,Có,Quản lý NCC
+NCC_29,Kiểm tra ghi nhận lịch sử giá của sản phẩm,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Bảng giá mới của nhà cung cấp có hiệu lực 
+5. Chọn sản phẩm
+6. Chọn lịch sử giá của sản phẩm đầu tiên",,"Lịch sử giá
+",Ghi nhận giá thay đổi của sản phẩm,Ghi nhận giá thay đổi của sản phẩm,Pass,,,,Có,Quản lý NCC
+NCC_30,Kiểm tra xác nhận xoá sản phẩm,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn lịch sử giá của sản phẩm đầu tiên
+6. Chọn xoá sản phẩm có tên là Bánh bao đầu tiên
+7. Chọn xác nhận ",,"Lịch sử giá
+",Xoá sản phẩm khỏi danh sách sản phẩm,Xoá sản phẩm khỏi danh sách sản phẩm,Fail,,,,Có,Quản lý NCC
+NCC_31,Kiểm tra huỷ xoá sản phẩm,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn lịch sử giá của sản phẩm đầu tiên
+6. Chọn xoá sản phẩm có tên là Bánh bao đầu tiên
+7. Chọn huỷ",,"Lịch sử giá
+",Không xoá sản phẩm,Không xoá sản phẩm,Pass,,,,Có,Quản lý NCC
+,Thêm/ Cập nhật sản phẩm theo nhà cung cấp,,,,,,,,,,,,
+NCC_32,Kiểm tra hiển thị màn hình,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC",,Thêm / Cập nhật sản phẩm NCC,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Thêm / Cập nhật sản phẩm NCC""
+-  Hiển thị 3 nút ""Bảng giá"", ""Thêm mới/Cập nhật SP"" và ""X(Đóng)""
+- Bảng sản phẩm với các cột: Tên sản phẩm, SKU, Đơn vị tính, Nguồn cung cấp, Giá nhập, Mặc định, Cập nhật lần cuối, Hành động
+- Cột hành động: Lịch sử giá, xoá
+- Button Icon: làm mới, cài đặt hiển thị các cột, phóng to/ thu nhỏ
+-","1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Danh sách sản phẩm theo nhà cung cấp""
+-  Hiển thị 3 nút ""Bảng giá"", ""Thêm mới/Cập nhật SP"" và ""X(Đóng)""
+- Bảng sản phẩm với các cột: Tên sản phẩm, SKU, Đơn vị tính, Nguồn cung cấp, Giá nhập, Mặc định, Cập nhật lần cuối, Hành động
+- Cột hành động: Lịch sử giá, xoá
+- Button Icon: làm mới, cài đặt hiển thị các cột, phóng to/ thu nhỏ",Pass,,,,Có,Quản lý NCC
+NCC_33,Kiểm tra Thêm / Cập nhật sản phẩm NCC,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin 
+   - Bánh bao 729211g
+7. Xác nhận",,Thêm / Cập nhật sản phẩm NCC,Hiển thị 'Cập nhật sản phẩm thành công',Hiển thị 'Cập nhật sản phẩm thành công',Pass,,,,Có,Quản lý NCC
+NCC_34,Kiểm tra Tìm kiếm sản phẩm bằng tên sản phẩm,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin 
+   - Bánh bao 729211g
+",,Thêm / Cập nhật sản phẩm NCC,Hiển thị sản phẩm có tên trùng với dữ liệu nhập,Hiển thị sản phẩm có tên trùng với dữ liệu nhập,Pass,,,,Có,Quản lý NCC
+NCC_35,Kiểm tra Tìm kiếm sản phẩm bằng mã SKU,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin 
+    - Chọn Tên SP, chuyển sang SKU
+    - Nhập vào text là SKU729211_S",,Thêm / Cập nhật sản phẩm NCC,Hiển thị sản phẩm có mã  SKU trùng với dữ liệu nhập,Hiển thị sản phẩm có mã  SKU trùng với dữ liệu nhập,Pass,,,,Có,Quản lý NCC
+NCC_36,Kiểm tra Tìm kiếm sản phẩm bằng mã Barcode,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin 
+    - Chọn Tên SP, chuyển sang Barcode
+    - Nhập vào text là BC729211_S",,Thêm / Cập nhật sản phẩm NCC,Hiển thị sản phẩm có mã Barcode trùng với dữ liệu nhập,Hiển thị sản phẩm có mã Barcode trùng với dữ liệu nhập,Pass,,,,Có,Quản lý NCC
+,Thêm/ Cập nhật sản phẩm theo nhà cung cấp bằng file excel chỉ khai báo sản phẩm,,,,,,,,,,,,
+NCC_37,Kiểm tra ghi nhận thông tin từ file excel tải lên,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel
+7. Tải file excel ",,Nhập sản phẩm NCC từ Excel,"- Ghi nhận thông tin Cột A là mã SKU
+- Cột B là Giá nhập
+- Cột C là trạng thái chọn Mặc định
+- Cột trạng thái hiển thị có tìm thấy sản phẩm trong danh sách không","- Ghi nhận thông tin Cột A là mã SKU
+- Cột B là Giá nhập
+- Cột C là trạng thái chọn Mặc định
+- Cột trạng thái hiển thị có tìm thấy sản phẩm trong danh sách không",Pass,,,,Có,Quản lý NCC
+NCC_38,Kiểm tra thêm sản phầm từ file excel,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC, chọn chỉ khai báo sản phẩm
+6. Nhập từ excel
+7. Tải file excel 
+8. Chọn xác nhận",,Nhập sản phẩm NCC từ Excel,- Thêm các sản phấm Trạng thái 'Tìm thấy' vào danh sách sản phẩm,- Thêm các sản phấm Trạng thái 'Tìm thấy' vào danh sách sản phẩm,Pass,,,,Có,Quản lý NCC
+NCC_39,Kiểm tra tải về file excel mẫu,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Tải file excel ",,Nhập sản phẩm NCC từ Excel,"- File excel mẫu bao gồm các cột: SKU, Giá nhập, Mặc định","- File excel mẫu bao gồm các cột: SKU, Giá nhập, Mặc định",Pass,,,,Có,Quản lý NCC
+NCC_40,Upload file chứa SKU đã mapping,SKU tồn tại trong NCC,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có sản phẩm chứa SKU đã mapping",Cao,Nhập sản phẩm NCC từ Excel,"SKU hiển thị tại tab ""SKU đã mapping""",,Pass,,,,Có,Quản lý NCC
+NCC_41,Upload file chứa SKU chưa mapping,SKU chưa liên kết NCC,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có sản phẩm chứa SKU chưa mapping",Cao,Nhập sản phẩm NCC từ Excel,"SKU hiển thị tại tab ""SKU chưa mapping""",,Pass,,,,Có,Quản lý NCC
+NCC_42,Upload file chứa SKU chưa khai báo,SKU chưa tồn tại hệ thống,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có sản phẩm chứa SKU chưa khai báo",Cao,Nhập sản phẩm NCC từ Excel,"SKU hiển thị tại tab ""SKU chưa khai báo""",,Pass,,,,Có,Quản lý NCC
+NCC_43,Xác nhận import khi có SKU hợp lệ,Có SKU mapping hợp lệ,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file 
+7. Click ""Xác nhận""",Cao,Nhập sản phẩm NCC từ Excel,Tạo thành công sản phẩm NCC,,Pass,,,,Có,Quản lý NCC
+NCC_44,Xác nhận khi không có dữ liệu hợp lệ,File lỗi toàn bộ,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file 
+7. Click ""Xác nhận""",Cao,Nhập sản phẩm NCC từ Excel,Không cho phép import,,Pass,,,,Có,Quản lý NCC
+NCC_45,Upload file chứa SKU  có mã trùng nhau,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có mã SKU trùng nhau
+7. Click ""Xác nhận""",Cao,Nhập sản phẩm NCC từ Excel,Hiển thị cảnh báo,,Pass,,,,Có,Quản lý NCC
+NCC_46,Kiểm tra xoá sản phẩm trong danh sách,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Xoá sản phẩm có mã SKU729211_S
+6. Chọn Đồng ý",,Danh sách sản phẩm theo nhà cung cấp,- Hiển thị thông báo thành công,- Hiển thị thông báo thành công,Pass,,,,Có,Quản lý NCC
+,Thêm/ Cập nhật sản phẩm theo nhà cung cấp bằng file excel khai báo sản phẩm và giá,,,,,,,,,,,,
+NCC_47,Kiểm tra ghi nhận thông tin từ file excel tải lên,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Tải file excel ",,Nhập sản phẩm NCC từ Excel,"- Ghi nhận thông tin Cột A là mã SKU
+- Cột B là Giá nhập
+- Cột C là trạng thái chọn Mặc định
+- Cột trạng thái hiển thị có tìm thấy sản phẩm trong danh sách không","- Ghi nhận thông tin Cột A là mã SKU
+- Cột B là Giá nhập
+- Cột C là trạng thái chọn Mặc định
+- Cột trạng thái hiển thị có tìm thấy sản phẩm trong danh sách không",Pass,,,,Có,Quản lý NCC
+NCC_48,Mapping đúng SKU chưa liên kết NCC,SKU tồn tại hệ thống nhưng chưa mapping NCC,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm chưa liên kết với với NCC",Cao,Nhập sản phẩm NCC từ Excel,"Hiển thị tại tab ""SKU chưa mapping""",,Pass,,,,Có,Quản lý NCC
+NCC_49,Mapping đúng SKU đã liên kết NCC,SKU đã mapping NCC,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm đã liên kêt với với NCC",Cao,Nhập sản phẩm NCC từ Excel,"Hiển thị tại tab ""SKU đã mapping""",,Pass,,,,Có,Quản lý NCC
+NCC_50,Kiểm tra giá nhập bằng 0,Giá nhập = 0,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm giá nhập = 0",Cao,Nhập sản phẩm NCC từ Excel,Cảnh báo,,Pass,,,,Có,Quản lý NCC
+NCC_51,Kiểm tra giá nhập âm,Giá nhập < 0,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm giá nhập < 0",Cao,Nhập sản phẩm NCC từ Excel,Báo lỗi,Thêm thành công,Fail,,,,Có,Quản lý NCC
+NCC_52,Kiểm tra VAT = 0%,VAT = 0,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm VAT = 0 ",TB,Nhập sản phẩm NCC từ Excel,Ghi nhận thành công,,Pass,,,,Có,Quản lý NCC
+NCC_53,Kiểm tra VAT = 100%,VAT = 100,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm VAT = 100 ",TB,Nhập sản phẩm NCC từ Excel,Xử lý theo rule hệ thống,,Pass,,,,Có,Quản lý NCC
+NCC_54,Kiểm tra VAT âm,VAT < 0,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm VAT < 0 ",Cao,Nhập sản phẩm NCC từ Excel,Báo lỗi,Thêm thành công,Fail,,,,Có,Quản lý NCC
+NCC_55,Kiểm tra giá nhập có số lẻ,"Giá nhập 50.555,75","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có giá nhập là số lẻ",TB,Nhập sản phẩm NCC từ Excel,Hiển thị đúng định dạng,,Pass,,,,Có,Quản lý NCC
+NCC_56,"Kiểm tra loại giá ""Giá gốc""",File có loại giá gốc,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có giá nhập là giá gốc",Cao,Nhập sản phẩm NCC từ Excel,Hiển thị đúng nhãn,,Pass,,,,Có,Quản lý NCC
+NCC_57,Kiểm tra SL tối thiểu = 0,Dữ liệu hợp lệ,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có số lượng tối thiểu  = 0 ",TB,Nhập sản phẩm NCC từ Excel,Xử lý theo rule,,,,,,Có,Quản lý NCC
+NCC_58,Kiểm tra SL tối thiểu âm,SL tối thiểu < 0,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có số lượng tối thiểu  < 0 ",Cao,Nhập sản phẩm NCC từ Excel,Báo lỗi,,,,,,Có,Quản lý NCC
+NCC_59,Kiểm tra SL tặng âm,SL tặng < 0,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có số lượng tặng < 0",Cao,Nhập sản phẩm NCC từ Excel,Báo lỗi,,,,,,Có,Quản lý NCC
+NCC_60,Xác nhận import thành công,Có dữ liệu hợp lệ,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm hợp lệ",Cao,Nhập sản phẩm NCC từ Excel,Tạo sản phẩm NCC và bảng giá,,Fail,,,,Có,Quản lý NCC
+NCC_61,Xác nhận khi tồn tại dòng lỗi,Có dòng lỗi,"Click ""Xác nhận""",Cao,Nhập sản phẩm NCC từ Excel,Không cho import,,Pass,,,,Có,Quản lý NCC
+,Bảng giá nhà cung cấp,,,,,,,,,,,,
+NCC_62,Kiểm tra hiển thị màn hình,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists",,Bảng giá nhà cung cấp,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Bảng giá nhà cung cấp""
+-  Dropdown list hiển thị danh sách bưu điện tỉnh
+- Button tạo bảng giá
+- Button Icon: Làm mới, cài đặt, phóng to, thu nhỏ
+- Button Xem, Huỷ, Sửa, Ban hành
+-Bảng giá tổng công ty hiển thị đầy đủ các cột: Mã, Tên bảng giá, Trạng thái, Hiệu lực từ, Đến, Số SKU,Ngày tạo, Hành động","1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Bảng giá nhà cung cấp""
+-  Dropdown list hiển thị danh sách bưu điện tỉnh
+- Button tạo bảng giá
+- Button Icon: Làm mới, cài đặt, phóng to, thu nhỏ
+- Button Xem, Huỷ, Sửa, Ban hành
+-Bảng giá tổng công ty hiển thị đầy đủ các cột: Mã, Tên bảng giá, Trạng thái, Hiệu lực từ, Đến	Số SKU,Ngày tạo, Hành động",Pass,,,,,Quản lý NCC
+NCC_63,Kiểm tra hiển thị màn hình Tạo bảng giá mới,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Tạo bảng giá 
+   - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000",,Tạo bảng giá mới,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Tạo bảng giá mới""
+- Ô text nhập: Tên bảng giá, Thời gian hiệu lực, Ghi chú 
+- Danh sách sản phẩm hiển thị đầy đủ các cột: SKU, Loại giá, Giá nhập trước VAT, VAT (%),Giá nhập sau VAT, SL tối thiểu, SL tặng, Mô tả        
+- Button: Tải file mẫu, Import Excel, Thêm dòng, Huỷ, Lưu nháp, Upload chứng từ","1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình:
+- Title ""Tạo bảng giá mới""
+- Ô text nhập: Tên bảng giá, Thời gian hiệu lực, Ghi chú 
+- Danh sách sản phẩm hiển thị đầy đủ các cột: SKU, Loại giá, Giá nhập trước VAT, VAT (%),Giá nhập sau VAT, SL tối thiểu, SL tặng, Mô tả        
+- Button: Tải file mẫu, Import Excel, Thêm dòng, Huỷ, Lưu nháp, Upload chứng từ",Pass,,,,,Quản lý NCC
+NCC_64,Kiểm tra danh sách bảng giá tổng công ty,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists",,Bảng giá nhà cung cấp,"Ở cột hành động:
+- Phiếu trạng thái nháp hiển thị button Xem, Sửa, Ban hành
+- Phiếu trạng thái Đã ban hành hiển thị button Xem, Huỷ
+- Phiếu trạng thái Hết hạn hiển thị button Xem","Ở cột hành động:
+- Phiếu trạng thái nháp hiển thị button Xem, Sửa, Ban hành
+- Phiếu trạng thái Đã ban hành hiển thị button Xem, Huỷ
+- Phiếu trạng thái Hết hạn hiển thị button Xem",Pass,,,,,Quản lý NCC
+NCC_65,Kiểm tra Tạo bảng giá nháp,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Tạo bảng giá 
+   - Nhập tên bảng giá là Bảng giá nháp + 1 mã random
+   - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc
+   - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000
+7. Chọn Lưu nháp",,Tạo bảng giá mới,Hiển thị phiếu trạng thái là Nháp,Hiển thị phiếu trạng thái là Nháp,Pass,,,,Có,Quản lý NCC
+NCC_66,Kiểm tra Ban hành bảng giá nháp,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Chọn bảng giá vừa thêm ở case NCC_45
+7. Chọn button ban hành",,Bảng giá nhà cung cấp,Hiển thị phiếu trạng thái là Đã ban hành,Hiển thị phiếu trạng thái là Đã ban hành,Pass,,,,Có,Quản lý NCC
+NCC_67,Kiểm tra Import Excel sản phẩm với phiếu bảng giá nháp,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Import Excel sản phẩm
+7. Nhập tên bảng giá là Bảng giá nháp + số random 
+8. Nhập Thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc
+9. Chọn lưu nháp",,Tạo bảng giá mới,"Hiển thị danh sách sản phẩm khi thêm file excel, hiển thị thông báo thành công khi lưu nháp","Hiển thị danh sách sản phẩm khi thêm file excel, hiển thị thông báo thành công khi lưu nháp",Pass,,,,,Quản lý NCC
+NCC_68,Kiểm tra Import Excel sản phẩm khi tạo bảng giá,,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Chọn bảng giá vừa thêm ở case NCC_47
+7. Chọn ban hành",,Tạo bảng giá mới,"Hiển thị thành công, xem chi tiết bảng giá hiển thị đúng sản phẩm","Hiển thị thành công, xem chi tiết bảng giá hiển thị đúng sản phẩm",Pass,,,,,Quản lý NCC
+NCC_69,Kiểm tra thêm sản phẩm loại giá gốc,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Tạo bảng giá 
+   - Nhập tên bảng giá là Bảng giá nháp + 1 mã random
+   - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc
+   - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000
+7. Chọn Lưu nháp",,Tạo bảng giá mới,"- Không hiển thị ô nhập SL tối thiếu, SL tặng","- Không hiển thị ô nhập SL tối thiếu, SL tặng",Pass,,,,Có,Quản lý NCC
+NCC_70,Kiểm tra thêm sản phẩm loại giá khuyến mại,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Tạo bảng giá 
+   - Nhập tên bảng giá là Bảng giá nháp + 1 mã random
+   - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc
+   - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000, chọn loại giá là khuyến mại
+7. Chọn Lưu nháp",,Tạo bảng giá mới,- Không hiển thị ô nhập SL tặng,- Không hiển thị ô nhập SL tặng,Pass,,,,Có,Quản lý NCC
+NCC_71,Kiểm tra thêm sản phẩm loại giá tặng hàng,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Tạo bảng giá 
+   - Nhập tên bảng giá là Bảng giá nháp + 1 mã random
+   - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc
+   - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000
+   - Nhập mã SKU: SKU729211_S, chọn loại giá là tặng hàng, nhấp số lượng tối thiểu là 30, số lượng tặng là 1
+7. Chọn Lưu nháp",,Tạo bảng giá mới,"- Hiển thị ô nhập SL tối thiếu, SL tặng","- Hiển thị ô nhập SL tối thiếu, SL tặng",Pass,,,,Có,Quản lý NCC
+NCC_72,Kiểm tra Huỷ bảng giá,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Chọn bảng giá của case NCC_51 ,chọn huỷ
+7. Chọn đồng ý",,Bảng giá nhà cung cấp,"- Trạng thái bảng giá cập nhật là Đã huỷ
+- Hiển thị thông báo 'Hủy bảng giá thành công' ","- Trạng thái bảng giá cập nhật là Đã huỷ
+- Hiển thị thông báo 'Hủy bảng giá thành công' ",Pass,,,,Có,Quản lý NCC
+NCC_73,Kiểm tra Xem chi tiết bảng giá,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Chọn bảng giá của case NCC_51
+7. Chọn Xem",,Chi tiết bảng giá,"Hiển thị : Mã, Tên, NCC,  Hiệu lực từ, Đến, Ngày ban hành,  Ngày tạo, Danh sách sản phẩm (Số lượng sản phẩm)","Hiển thị : Mã, Tên, NCC,  Hiệu lực từ, Đến, Ngày ban hành,  Ngày tạo, Danh sách sản phẩm (Số lượng sản phẩm)",Pass,,,,Có,Quản lý NCC
+NCC_74,Kiểm tra Lọc bảng giá,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn sản phẩm https://vnpost.sfin.vn/inventory/warehouse-supplier/26/products
+5. Chọn Bảng giá https://vnpost.sfin.vn/inventory/warehouse-supplier/26/price-lists
+6. Chọn Bưu điện Hà Tĩnh",,Bảng giá nhà cung cấp,Hiển thị các bảng giá tương ứng với bưu điện tỉnh,Hiển thị các bảng giá tương ứng với bưu điện tỉnh,Pass,,,,Có,Quản lý NCC
+NCC_75,Kiểm tra hết hạn bảng giá,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn Đặt hàng NCC
+4. Chọn Tạo đơn đặt hàng
+5. Chọn Đặt hàng sản phẩm với bảng giá hết hạn
+",,Bảng giá nhà cung cấp,Hiển thị chưa có giả của sản phẩm,Hiển thị chưa có giả của sản phẩm,Pass,,,,,Quản lý NCC
+,Công nợ nhà cung cấp,,,,,,,,,,,,
+NCC_76,Kiểm tra giao diện màn Lịch sử ghi nợ và thanh toán NCC,User có quyền quản lý công nợ NCC,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn NCC văn phòng phẩm
+5. Chọn công nợ",Cao,Lịch sử công nợ NCC,"Hiển thị đầy đủ Tổng còn nợ, tab Lịch sử ghi nợ, Lịch sử thanh toán, Lịch sử trả hàng NCC
+- Bảng dữ liệu, nút Thanh toán, Gạch nợ, Ghi nợ, Xuất excel. ","Hiển thị đầy đủ Tổng còn nợ, tab Lịch sử ghi nợ, Lịch sử thanh toán, Lịch sử trả hàng NCC
+- Bảng dữ liệu, nút Thanh toán, Gạch nợ, Ghi nợ, Xuất excel. ",Pass,,,,,Công nợ NCC
+NCC_77,Thanh toán công nợ thành công,NCC đang còn nợ,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier
+4. Chọn NCC văn phòng phẩm
+5. Chọn công nợ
+6. Chọn Thanh toán
+7. Nhập số tiền 10000
+8. Xác nhận",Cao,Lịch sử công nợ NCC,Giảm công nợ NCC đúng số tiền thanh toán,Giảm công nợ NCC đúng số tiền thanh toán,Pass,,,,,Công nợ NCC
+NCC_78,Thanh toán sinh phiếu thu,Thanh toán thành công,"1. Chọn Tài chính
+2. Chọn phiếu chi",Cao,Quản lý phiếu chi,Sinh ra 1 phiếu chi  tương ứng giao dịch thanh toán,Sinh ra 1 phiếu chi  tương ứng giao dịch thanh toán,Pass,,,,,Công nợ NCC
+NCC_79,Thanh toán lớn hơn số nợ,Nợ NCC = 10 triệu,1. Nhập thanh toán 12 triệu,Cao,Lịch sử công nợ NCC,Hiển thị thành số tiền hiện tại đang còn nợ,Hiển thị thành số tiền hiện tại đang còn nợ,Pass,,,,,Công nợ NCC
+NCC_80,Thanh toán bằng đúng số nợ,Nợ NCC = 10 triệu,1. Nhập thanh toán 10 triệu,Cao,Lịch sử công nợ NCC,Công nợ về 0 và sinh phiếu chi,Công nợ về 0 và sinh phiếu chi,Pass,,,,,Công nợ NCC
+NCC_81,Thanh toán nhiều lần cho 1 PO,PO còn công nợ,"1. Thanh toán lần 1, lần 2, lần 3",Cao,Lịch sử công nợ NCC,Công nợ giảm đúng sau mỗi lần thanh toán,Công nợ giảm đúng sau mỗi lần thanh toán,Pass,,,,,Công nợ NCC
+NCC_82,Lưu lịch sử từng lần thanh toán,Đã thanh toán nhiều lần,"1. Vào Nhà cung cấp
+2. Chọn NCC
+3. Công nợ
+4. Chọn xem chi tiết 1 phiếu PO",Cao,Lịch sử thanh toán,Hiển thị đầy đủ từng giao dịch thanh toán riêng biệt,Hiển thị đầy đủ từng giao dịch thanh toán riêng biệt,Pass,,,,,Công nợ NCC
+NCC_83,Kiểm tra tổng công nợ sau nhiều lần thanh toán,Đã thanh toán nhiều lần,"1. Vào Nhà cung cấp
+2. Chọn NCC
+3. Công nợ
+4. Chọn xem chi tiết 1 phiếu PO
+5. Đối chiếu số dư công nợ",Cao,Lịch sử công nợ NCC,Tổng nợ = Nợ gốc - Tổng đã thanh toán,Tổng nợ = Nợ gốc - Tổng đã thanh toán,Pass,,,,,Công nợ NCC
+NCC_84,Gạch nợ thành công,NCC còn nợ,"1. Chọn Gạch nợ
+2. Nhập số tiền
+3. Xác nhận",Cao,Lịch sử công nợ NCC,Giảm công nợ NCC đúng số tiền gạch nợ,Giảm công nợ NCC đúng số tiền gạch nợ,Pass,,,,,Công nợ NCC
+NCC_85,Gạch nợ không sinh phiếu thu,Gạch nợ thành công,"1. Chọn Tài chính
+2. Chọn phiếu chi",Cao,Quản lý phiếu chi,Không phát sinh phiếu thu,Không phát sinh phiếu thu,Pass,,,,,Công nợ NCC
+NCC_86,Gạch nợ vượt số nợ,Nợ NCC = 5 triệu,Nhập gạch nợ 6 triệu,Cao,Lịch sử công nợ NCC,Hiển thị về là số tiền hiện tại đang nợ,Hiển thị về là số tiền hiện tại đang nợ,Pass,,,,,Công nợ NCC
+NCC_87,Lưu lịch sử gạch nợ,Đã gạch nợ,"1. Vào Nhà cung cấp
+2. Chọn NCC
+3.  Công nợ
+4. Xem lịch sử giao dịch",Cao,Lịch sử công nợ,Hiển thị giao dịch gạch nợ trong lịch sử,Hiển thị giao dịch gạch nợ trong lịch sử,Pass,,,,,Công nợ NCC
+NCC_88,Ghi nợ thành công,User có quyền ghi nợ,"1. Chọn Ghi nợ
+2. Nhập số tiền
+3. Xác nhận",Cao,Lịch sử công nợ NCC,Công nợ NCC tăng đúng số tiền ghi nợ,Công nợ NCC tăng đúng số tiền ghi nợ,Pass,,,,,Công nợ NCC
+NCC_89,Ghi nợ không sinh phiếu chi,Ghi nợ thành công,"1. Chọn Tài chính
+2. Chọn phiếu thu",Cao,Quản lý phiếu thu,Không phát sinh phiếu chi,Không phát sinh phiếu chi,Pass,,,,,Công nợ NCC
+NCC_90,Ghi nợ số tiền âm,Đang mở popup ghi nợ,1. Nhập số tiền âm,Cao,Lịch sử công nợ NCC,Hiển thị mặc định là số 0,Hiển thị mặc định là số 0,Pass,,,,,Công nợ NCC
+NCC_91,Ghi nợ số tiền bằng 0,Đang mở popup ghi nợ,1. Nhập số tiền bằng 0,Cao,Lịch sử công nợ NCC,Báo lỗi số tiền phải lớn hơn 0,Báo lỗi số tiền phải lớn hơn 0,Pass,,,,,Công nợ NCC
+NCC_92,Lưu lịch sử ghi nợ,Đã ghi nợ,1. Mở tab Lịch sử ghi nợ,Cao,Lịch sử ghi nợ,Hiển thị giao dịch ghi nợ vừa tạo,Hiển thị giao dịch ghi nợ vừa tạo,Pass,,,,,Công nợ NCC
+NCC_93,Kiểm tra tab Lịch sử thanh toán,Có giao dịch thanh toán,1. Mở tab Lịch sử thanh toán,TB,Lịch sử công nợ,Hiển thị đầy đủ các lần thanh toán,Hiển thị đầy đủ các lần thanh toán,Pass,,,,,Công nợ NCC
+NCC_94,Kiểm tra tab Lịch sử ghi nợ,Có giao dịch ghi nợ,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Hiển thị đầy đủ các lần ghi nợ,Hiển thị đầy đủ các lần ghi nợ,Pass,,,,,Công nợ NCC
+NCC_95,Kiểm tra tab Lịch sử trả hàng NCC,Có giao dịch trả hàng,1. Mở tab Lịch sử trả hàng NCC,TB,Lịch sử công nợ,Hiển thị đầy đủ các giao dịch trả hàng,Hiển thị đầy đủ các giao dịch trả hàng,Pass,,,,,Công nợ NCC
+NCC_96,Đối chiếu tổng còn nợ,"Có giao dịch ghi nợ, thanh toán, gạch nợ",1. Tính lại số dư công nợ: Tổng còn nợ,Cao,Lịch sử công nợ NCC,Tổng còn nợ = Tổng ghi nợ - Tổng thanh toán - Tổng gạch nợ,Tổng còn nợ = Tổng ghi nợ - Tổng thanh toán - Tổng gạch nợ,Pass,,,,,Công nợ NCC
+NCC_97,Thanh toán một phần PO,PO có giá trị 100 triệu,1. Thanh toán 30 triệu,Cao,Lịch sử công nợ NCC,Còn lại công nợ PO là 70 triệu,Còn lại công nợ PO là 70 triệu,Pass,,,,,Công nợ NCC
+NCC_98,Thanh toán nhiều lần đến hết nợ,PO có giá trị 100 triệu,"1. Thanh toán 30 triệu
+2. 20 triệu
+3. 50 triệu",Cao,Lịch sử công nợ NCC,Sau lần cuối công nợ PO bằng 0,Sau lần cuối công nợ PO bằng 1,Pass,,,,,Công nợ NCC
+NCC_99,Kiểm tra lịch sử khi thanh toán nhiều lần,PO được thanh toán nhiều lần,1. Mở tab Lịch sử thanh toán,Cao,Lịch sử thanh toán,Hiển thị 3 giao dịch thanh toán riêng biệt,Hiển thị 3 giao dịch thanh toán riêng biệt,Pass,,,,,Công nợ NCC
+NCC_100,Gạch nợ một phần công nợ,NCC còn nợ 50 triệu,1. Gạch nợ 10 triệu,Cao,Lịch sử công nợ NCC,Công nợ còn lại 40 triệu,Công nợ còn lại 40 triệu,Pass,,,,,Công nợ NCC
+NCC_101,Ghi nợ bổ sung sau khi đã thanh toán,PO đã thanh toán một phần,1. Ghi nợ thêm 20 triệu,Cao,Lịch sử công nợ NCC,Công nợ tăng thêm 20 triệu,Công nợ tăng thêm 20 triệu,Pass,,,,,Công nợ NCC
+NCC_102,Xuất Excel lịch sử công nợ,Có dữ liệu công nợ,1. Nhấn Xuất excel,TB,Lịch sử công nợ,Tải file thành công và dữ liệu chính xác,Tải file thành công và dữ liệu chính xác,Pass,,,,,Công nợ NCC
+NCC_103,Kiểm tra ghi nhận công nợ khi TCT đặt hàng thẳng về tỉnh,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Ghi nhận công nợ giữ TCT và NCC,Ghi nhận công nợ giữ TCT và NCC,Pass,,,,,Công nợ NCC
+NCC_104,Kiểm tra trừ nợ khi xuất trả hàng NCC,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc - Tổng đã trả hàng,Tổng nợ = Nợ gốc - Tổng đã trả hàng,Pass,,,,,Công nợ NCC
+NCC_105,Kiểm tra ghi nhận công nợ NCC của tỉnh,Tỉnh đặt hàng NCC của tỉnh,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Ghi nhận công nợ giữ Tỉnh và NCC,Ghi nhận công nợ giữ Tỉnh và NCC,Pass,,,,,Công nợ NCC
+NCC_106,Kiểm tra ghi nhận công nợ NCC khi nhận giao 1 phần,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc + Số tiền giao 1 phần chưa thanh toán,Tổng nợ = Nợ gốc + Số tiền giao 1 phần chưa thanh toán,Pass,,,,,Công nợ NCC
+NCC_107,Kiểm tra ghi nhận công nợ NCC với sản phẩm có VAT,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc + Số tiền đơn hàng bao gồm cả VAT sản phẩm,Tổng nợ = Nợ gốc + Số tiền đơn hàng bao gồm cả VAT sản phẩm,Pass,,,,,Công nợ NCC
+NCC_108,"Kiểm tra ghi nhận công nợ NCC với sản phẩm có khuyến mãi, quà tặng",,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc + Số tiền đơn hàng đã giảm giá và số tiền hàng tặng là 0 đ,Tổng nợ = Nợ gốc + Số tiền đơn hàng đã giảm giá và số tiền hàng tặng là 0 đ,Pass,,,,,Công nợ NCC
+,Trả hàng nhà cung cấp,,,,,,,,,,,,
+NCC_109,Kiểm tra giao diện màn hình danh sách Xuất trả nhà cung cấp,User có quyền xem danh sách xuất trả NCC,"1. Truy cậpNCC
+2. Xuất trả nhà cung cấp",TB,Xuất trả nhà cung cấp,"Hiển thị đúng tiêu đề màn hình. 
+Hiển thị đầy đủ bộ lọc Nhà cung cấp, ô tìm kiếm mã phiếu, nút Tìm kiếm, nút Thêm mới. 
+Bảng dữ liệu hiển thị đầy đủ các cột: STT, Mã phiếu, Nhà cung cấp, Tổng tiền, Trạng thái, Ngày tạo, Hành động. ","Hiển thị đúng tiêu đề màn hình. 
+Hiển thị đầy đủ bộ lọc Nhà cung cấp, ô tìm kiếm mã phiếu, nút Tìm kiếm, nút Thêm mới. 
+Bảng dữ liệu hiển thị đầy đủ các cột: STT, Mã phiếu, Nhà cung cấp, Tổng tiền, Trạng thái, Ngày tạo, Hành động. ",Pass,,,,,Trả hàng NCC
+NCC_110,Kiểm tra giao diện màn hình Tạo phiếu xuất trả nhà cung cấp,User có quyền tạo phiếu xuất trả NCC,"1. Từ màn hình danh sách nhấn ""Thêm mới"".",TB,Tạo phiếu xuất trả nhà cung cấp,"Hiển thị đầy đủ các trường thông tin: Nhà cung cấp, Phiếu PO, Ghi chú. 
+Hiển thị bảng Danh sách sản phẩm với các cột: STT, Sản phẩm, Trạng thái, Đã nhập, Đã trả, Còn lại, Đơn giá, SL trả, Thành tiền. Hiển thị tổng tiền góc phải. Các trường bắt buộc có ký hiệu *. 
+Nút tìm kiếm","Hiển thị đầy đủ các trường thông tin: Nhà cung cấp, Phiếu PO, Ghi chú. 
+Hiển thị bảng Danh sách sản phẩm với các cột: STT, Sản phẩm, Trạng thái, Đã nhập, Đã trả, Còn lại, Đơn giá, SL trả, Thành tiền. Hiển thị tổng tiền góc phải. Các trường bắt buộc có ký hiệu *. 
+Nút tìm kiếm",Pass,,,,,Trả hàng NCC
+NCC_111,Kiểm tra bộ lọc NCC,,"1. Truy cậpNCC
+2. Xuất trả nhà cung cấp
+3. Chọn từng giá trị",TB,Xuất trả nhà cung cấp,- Hiển thị các phiếu trả hàng tương ứng,- Hiển thị các phiếu trả hàng tương ứng,Pass,,,,,Trả hàng NCC
+NCC_112,Kiểm tra tìm kiếm theo mã phiếu trả hàng,,"1. Truy cậpNCC
+2. Xuất trả nhà cung cấp
+3. Nhập mã phiếu",TB,Xuất trả nhà cung cấp,- Hiển thị các phiếu trả hàng tương ứng,- Hiển thị các phiếu trả hàng tương ứng,Pass,,,,,Trả hàng NCC
+NCC_113,Kiểm tra 1 phiếu PO có thể trả hàng nhiều lần,"Có PO đã nhập kho hoàn tất. Sản phẩm nhập 100 cái, chưa trả hàng","1. Mở màn hình Xuất trả NCC
+2. Chọn PO đã nhập kho
+ 3. Trả lần 1: 30 sản phẩm
+ 4. Tạo phiếu trả lần 2: 20 sản phẩm",Cao,Xuất trả nhà cung cấp,Hệ thống cho phép tạo nhiều phiếu trả hàng cho cùng PO khi vẫn còn số lượng chưa trả hết. Tổng số lượng đã trả được cộng dồn chính xác.,Hệ thống cho phép tạo nhiều phiếu trả hàng cho cùng PO khi vẫn còn số lượng chưa trả hết. Tổng số lượng đã trả được cộng dồn chính xác.,Pass,,,,,Trả hàng NCC
+NCC_114,Kiểm tra không cho trả hàng khi PO ở trạng thái Nháp,Có PO trạng thái Nháp,"1. Mở Xuất trả NCC
+ 2. Nhập mã PO trạng thái Nháp
+3. Tìm kiếm",Cao,Xuất trả nhà cung cấp,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Pass,,,,,Trả hàng NCC
+NCC_115,Kiểm tra không cho trả hàng khi PO ở trạng thái Đã duyệt,"Có PO trạng thái Đã duyệt, chưa nhập kho","1. Mở Xuất trả NCC
+ 2. Nhập mã PO
+ 3. Tìm kiếm",Cao,Xuất trả nhà cung cấp,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Pass,,,,,Trả hàng NCC
+NCC_116,Kiểm tra không cho trả hàng khi PO ở trạng thái Đã gửi NCC,Có PO trạng thái Đã gửi NCC,"1. Mở Xuất trả NCC
+ 2. Tìm PO",Cao,Xuất trả nhà cung cấp,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Pass,,,,,Trả hàng NCC
+NCC_117,Kiểm tra không cho trả hàng khi PO ở trạng thái NCC xác nhận,Có PO trạng thái NCC xác nhận nhưng chưa nhập kho,"1. Mở Xuất trả NCC
+ 2. Tìm PO",Cao,Xuất trả nhà cung cấp,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Hệ thống hiển thị thông báo Không tìm thấy phiếu PO đủ điều kiện trả hàng,Pass,,,,,Trả hàng NCC
+NCC_118,Kiểm tra chỉ cho trả hàng khi PO đã giao (đã nhập kho),"Có PO trạng thái Đã giao, đã nhập kho","1. Mở Xuất trả NCC
+ 2. Nhập mã PO
+ 3. Tìm kiếm",Cao,Xuất trả nhà cung cấp,Hệ thống hiển thị danh sách sản phẩm để thực hiện trả hàng.,Hệ thống hiển thị danh sách sản phẩm để thực hiện trả hàng.,Pass,,,,,Trả hàng NCC
+NCC_119,Kiểm tra hiển thị số lượng nhận thực tế đối với PO giao một phần,Có PO đặt 100 sản phẩm. Đã nhập kho 60 sản phẩm,"1. Mở Xuất trả NCC
+ 2. Tìm PO giao một phần",Cao,Xuất trả nhà cung cấp,"Cột ""Đã nhập"" hiển thị 60 sản phẩm. Số lượng trả tối đa bằng 60.","Cột ""Đã nhập"" hiển thị 60 sản phẩm. Số lượng trả tối đa bằng 60.",Pass,,,,,Trả hàng NCC
+NCC_120,Kiểm tra tạo phiếu trả hàng cho PO giao một phần,Có PO đặt 100 sản phẩm. Đã nhập 60 sản phẩm,"1. Mở PO
+ 2. Nhập SL trả = 50
+ 3. Lưu phiếu",Cao,Xuất trả nhà cung cấp,Hệ thống tạo phiếu trả thành công do SL trả nhỏ hơn hoặc bằng số lượng đã nhập.,Hệ thống tạo phiếu trả thành công do SL trả nhỏ hơn hoặc bằng số lượng đã nhập.,Pass,,,,,Trả hàng NCC
+NCC_121,Kiểm tra không cho trả vượt số lượng đã nhập đối với PO giao một phần,"Có PO đặt 100 sản phẩm, đã nhập 60 sản phẩm","1. Mở PO
+ 2. Nhập SL trả = 61",Cao,Xuất trả nhà cung cấp,Hiển thị là số lượng max có thể trả,Hiển thị là số lượng max có thể trả,Pass,,,,,Trả hàng NCC
+NCC_122,Kiểm tra công nợ NCC giảm đúng sau khi trả hàng,Có PO nhập kho giá trị 10.000.000đ. Công nợ NCC hiện tại 10.000.000đ,"1. Tạo phiếu trả hàng trị giá 2.000.000đ
+ 2. Hoàn tất phiếu trả",Cao, Công nợ NCC,Công nợ NCC giảm còn 8.000.000đ.,Công nợ NCC giảm còn 8.000.000đ.,Pass,,,,,Trả hàng NCC
+NCC_123,Kiểm tra lịch sử công nợ ghi nhận giao dịch trả hàng,Có công nợ NCC trước khi trả hàng,"1. Tạo phiếu trả hàng
+2. Mở lịch sử công nợ NCC",TB,Công nợ NCC,Hệ thống sinh lịch sử giảm công nợ tương ứng với giá trị hàng trả.,Hệ thống sinh lịch sử giảm công nợ tương ứng với giá trị hàng trả.,Pass,,,,,Trả hàng NCC
+NCC_124,Kiểm tra trả hàng nhiều lần đến đúng số lượng tối đa,Có PO nhập 100 sản phẩm,"1. Trả lần 1: 40
+2. Trả lần 2: 30
+ 3. Trả lần 3: 30",Cao,Xuất trả nhà cung cấp,Tổng số lượng trả = 100. Hệ thống cho phép tạo đủ 3 lần trả.,Tổng số lượng trả = 100. Hệ thống cho phép tạo đủ 3 lần trả.,Pass,,,,,Trả hàng NCC
+NCC_125,Kiểm tra không cho trả vượt tổng số lượng của PO sau nhiều lần trả,Có PO nhập 100 sản phẩm. Đã trả 90 sản phẩm,"1. Tạo phiếu trả mới
+ 2. Nhập SL trả = 11",Cao,Xuất trả nhà cung cấp,Hệ thống báo lỗi vượt số lượng còn lại (chỉ còn được trả 10).,Hệ thống báo lỗi vượt số lượng còn lại (chỉ còn được trả 10).,Pass,,,,,Trả hàng NCC
+NCC_126,Kiểm tra số lượng còn lại được cập nhật sau mỗi lần trả,Có PO nhập 100 sản phẩm,"1. Trả lần 1: 30
+2. Mở lại PO",Cao,Xuất trả nhà cung cấp,"Cột ""Còn lại"" hiển thị 70 sản phẩm.","Cột ""Còn lại"" hiển thị 70 sản phẩm.",Pass,,,,,Trả hàng NCC
+NCC_127,Kiểm tra không hiển thị danh sách sản phẩm PO đã trả hết hàng,Có PO nhập 100 sản phẩm và đã trả đủ 100 sản phẩm,"1. Mở màn hình Xuất trả NCC
+2. Tạo mới xuất trả hàng PO",Cao,Xuất trả nhà cung cấp,Hiển thị danh sách trống,Hiển thị danh sách trống,Pass,,,,,Trả hàng NCC
+NCC_128,Kiểm tra nhập ghi chú ghi trả hàng,,"1. Mở màn hình Xuất trả NCC
+2. Tạo mới xuất trả hàng PO
+3. Nâhoj ghi chú",Cao,Xuất trả nhà cung cấp,Ghi nhận ghi chú khi xem chi tiết phiếu,Ghi nhận ghi chú khi xem chi tiết phiếu,Pass,,,,,Trả hàng NCC
+NCC_129,Kiểm tra Xem chi tiết phiếu trả hàng,,"1. Mở màn hình Xuất trả NCC
+2. Xem chi tiết phiếu xuất trả hàng",Cao,Xuất trả nhà cung cấp,Hiển thị chính xác thông tin phiếu,Hiển thị chính xác thông tin phiếu,Pass,,,,,Trả hàng NCC
+,Đặt hàng nhà cung cấp,,,,,,,,,,,,
+,HAPPY CASE,,,,,,,,,,,,
+NCC_130,Kiểm tra giao diện,,1. Truy cập đặt hàng nhà cung cấp,,Đặt hàng nhà cung cấp,"- Hiển thị đúng tiêu đề ""Đặt hàng nhà cung cấp""
+- Hiển thị đầy đủ bộ lọc: Từ khóa, Trạng thái, Khoảng thời gian, Nhà cung cấp, Điểm bán/Kho
+- Hiển thị nút ""Tìm kiếm"", ""Xóa lọc"", ""Tạo đơn đặt hàng""
+- Hiển thị danh sách phiếu đặt hàng gồm các cột: STT, Mã phiếu, Cửa hàng/Kho, Nhà cung cấp, Ngày gửi, Ngày nhập dự kiến, Trạng thái, Hành động
+- Dữ liệu không bị tràn hoặc lệch cột","- Hiển thị đúng tiêu đề ""Đặt hàng nhà cung cấp""
+- Hiển thị đầy đủ bộ lọc: Từ khóa, Trạng thái, Khoảng thời gian, Nhà cung cấp, Điểm bán/Kho
+- Hiển thị nút ""Tìm kiếm"", ""Xóa lọc"", ""Tạo đơn đặt hàng""
+- Hiển thị danh sách phiếu đặt hàng gồm các cột: STT, Mã phiếu, Cửa hàng/Kho, Nhà cung cấp, Ngày gửi, Ngày nhập dự kiến, Trạng thái, Hành động
+- Dữ liệu không bị tràn hoặc lệch cột",Pass,,,,,
+NCC_131,Tạo phiếu đặt hàng NCC,,"1. Truy cập đặt hàng nhà cung cấp
+2. Tạo phiếu đặt hàng NCC",,Đặt hàng nhà cung cấp,"- Tạo phiếu đặt hàng thành công
+- Trạng thái phiếu là Đã gửi NCC","- Tạo phiếu đặt hàng thành công
+- Trạng thái phiếu là Đã gửi NCC",Pass,,,,,
+NCC_132,Tạo phiếu đặt hàng NCC nháp,,"1. Truy cập đặt hàng nhà cung cấp
+2. Tạo phiếu đặt hàng nháp",,Đặt hàng nhà cung cấp,"- Tạo phiếu đặt hàng thành công
+- Trạng thái phiếu là Bản nháp","- Tạo phiếu đặt hàng thành công
+- Trạng thái phiếu là Bản nháp",Pass,,,,,
+NCC_133,Chỉnh sửa phiếu đặt hàng nháp,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chỉnh sửa phiếu đặt hàng nháp",,Đặt hàng nhà cung cấp,"- Tạo phiếu đặt hàng  với thông tin chỉnh sửa thành công
+- Trạng thái phiếu là Bản nháp","- Tạo phiếu đặt hàng  với thông tin chỉnh sửa thành công
+- Trạng thái phiếu là Bản nháp",Pass,,,,,
+NCC_134,Huỷ phiếu đặt hàng nháp,,"1. Truy cập đặt hàng nhà cung cấp
+2. Huỷ phiếu đặt hàng nháp",,Đặt hàng nhà cung cấp,"- Huỷ phiếu đặt hàng thành công
+- Trạng thái phiếu là Đã huỷ","- Huỷ phiếu đặt hàng thành công
+- Trạng thái phiếu là Đã huỷ",Pass,,,,,
+NCC_135,Xem chi tiết phiếu đặt hàng,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xem chi tiết phiếu đặt hàng",,Đặt hàng nhà cung cấp,"- Hiển thị thông tin chung: Kho đặt hàng, Mã phiếu, Đã gửi NCC, Kho nhận hàng, Nhà cung cấp, Ngày nhập dự kiến, Phiếu đề xuất nhập hàng, Ghi chú, Trạng thái phiếu
+- Tổng giá trị đề xuất 
+- Danh sách sản phẩm ","- Hiển thị thông tin chung: Kho đặt hàng, Mã phiếu, Đã gửi NCC, Kho nhận hàng, Nhà cung cấp, Ngày nhập dự kiến, Phiếu đề xuất nhập hàng, Ghi chú, Trạng thái phiếu
+- Tổng giá trị đề xuất 
+- Danh sách sản phẩm ",Pass,,,,,
+NCC_136,Huỷ phiếu đặt hàng NCC chưa xác nhận,,"1. Truy cập đặt hàng nhà cung cấp
+2. Huỷ phiếu đặt hàng trạng thái Đã gửi NCC",,Đặt hàng nhà cung cấp,"- Huỷ phiếu đặt hàng thành công
+- Trạng thái phiếu là Đã huỷ","- Huỷ phiếu đặt hàng thành công
+- Trạng thái phiếu là Đã huỷ",Pass,,,,,
+NCC_137,Kiểm tra in phiếu đặt hàng,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xem chi tiết phiếu
+3. In phiếu",,Đặt hàng nhà cung cấp,- Phiếu hiển thị dạng xem trước khi in,- Phiếu hiển thị dạng xem trước khi in,Pass,,,,,
+NCC_138,Kiểm tra xác nhận phiếu đặt hàng,,"1. Truy cập đặt hàng nhà cung cấp
+2. Xem chi tiết phiếu
+3. Chọn NCC xác nhận",,Đặt hàng nhà cung cấp,- Phiếu chuyển trạng thái NCC xác nhận,- Phiếu chuyển trạng thái NCC xác nhận,Pass,,,,,
+NCC_139,Kiểm tra nhập kho từ phiếu đặt hàng NCC,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn phiếu trạng thái NCC xác nhận 
+3. Chọn nhập kho",,Đặt hàng nhà cung cấp,"- Nhập kho thành công, ghi nhận số lượng nhập kho ","- Nhập kho thành công, ghi nhận số lượng nhập kho ",Pass,,,,,
+NCC_140,Kiểm tra nhập kho từ mã phiếu PO,,"1. Truy cập Nhập kho
+2. Chọn nhập kho
+3. Tải mã phiếu PO
+4. Chọn nhập kho",,Nhập kho,"- Nhập kho thành công, ghi nhận số lượng nhập kho
+- Hiển thị đúng thông tin từ phiếu PO","- Nhập kho thành công, ghi nhận số lượng nhập kho
+- Hiển thị đúng thông tin từ phiếu PO",Pass,,,,,
+NCC_141,Kiểm tra không cho sửa PO NCC xác nhận,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn chỉnh sửa PO NCC đã xác nhận",,Đặt hàng nhà cung cấp,- Ẩn button chỉnh sửa với trạng thái phiếu NCC đã xác nhận,- Ẩn button chỉnh sửa với trạng thái phiếu NCC đã xác nhận,Pass,,,,,
+NCC_142,Kiểm tra tìm kiếm mã phiếu,,"1. Truy cập đặt hàng nhà cung cấp
+2. Nhập mã phiếu PO",,Đặt hàng nhà cung cấp,- Hiển thị phiếu có mã tương ứng,- Hiển thị phiếu có mã tương ứng,Pass,,,,,
+NCC_143,Kiểm tra tìm kiếm ghi chú,,1. Truy cập đặt hàng nhà cung cấp,,Đặt hàng nhà cung cấp,- Hiển thị có ghi chú tương ứng,- Hiển thị danh sách trống,Fail,,,,,
+NCC_144,Kiểm tra bộ lọc theo trạng thái,,1. Truy cập đặt hàng nhà cung cấp,,Đặt hàng nhà cung cấp,- Hiển thị danh sách các phiếu có trạng thái tương ứng,- Hiển thị danh sách các phiếu có trạng thái tương ứng,Pass,,,,,
+NCC_145,Kiểm tra bộ lọc PO theo NCC,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn từng trạng thái
+3. Ấn button tìm kiếm",,Đặt hàng nhà cung cấp,- Hiển thị danh sách là NCC đã chọn,- Hiển thị danh sách là NCC đã chọn,Fail,,,,,
+NCC_146,Kiểm tra lọc PO theo khoảng thời gian,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn khoảng thời gian 
+3. Chọn tìm kiếm",,Đặt hàng nhà cung cấp,- Hiển thị các phiếu nằm trong khoảng thời gian đã chọn,- Hiển thị các phiếu nằm trong khoảng thời gian đã chọn,Pass,,,,,
+NCC_147,Kiểm tra Xoá bộ lọc,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xoá bộ lọc",,Đặt hàng nhà cung cấp,- Hiển thị tất cả phiếu,- Hiển thị tất cả phiếu,Pass,,,,,
+NCC_148,Kiểm tra phân trang,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn phân trang",,Đặt hàng nhà cung cấp,- Hiển thị thứ tự phiếu tương ứng với phân trang,- Hiển thị thứ tự phiếu tương ứng với phân trang,Pass,,,,,
+NCC_149,Kiểm tra đặt hàng nhà cung cấp với sản phẩm có phân loại,,"1. Truy cập đặt hàng nhà cung cấp
+2. Đặt hàng NCC có sản phẩm phân loại",,Đặt hàng nhà cung cấp,- Đặt hàng thành công,- Đặt hàng thành công,Pass,,,,,Đặt hàng NCC
+NCC_150,Kiểm tra nhận hàng số lượng khác dung sai,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn số lượng nhập kho sai dung sai",,Đặt hàng nhà cung cấp,- Ghi nhận mặc định số lượng cho phép với dung sai,- Ghi nhận mặc định số lượng cho phép với dung sai,Pass,,,,,Đặt hàng NCC
+NCC_151,Kiểm tra chỉnh sửa giá sản phẩm ,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chỉnh sửa giá khác so với bảng giá",,Đặt hàng nhà cung cấp,- Disable ô hiển thị giá sản phẩm,- Disable ô hiển thị giá sản phẩm,Pass,,,,,Đặt hàng NCC
+NCC_152,"Kiểm tra đặt hàng nhà cung cấp với giá gốc, giá khuyến mãi, tặng hàng theo bảng giá NCC",,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn sản phẩm có cả phẩn giá gốc, giá khuyến mãi, tặng hàng theo bảng giá",,Đặt hàng nhà cung cấp,- Hiển thị đúng giá và số lượng tặng trong bảng giá,- Hiển thị đúng giá và số lượng tặng trong bảng giá,Pass,,,,,Đặt hàng NCC
+NCC_153,Tạo phiếu đặt hàng NCC tại cấp Tỉnh,,"1. Truy cập đặt hàng nhà cung cấp
+2. Tỉnh đặt hàng NCC sản phẩm tự doanh",,Đặt hàng nhà cung cấp,- Đặt hàng thành công,- Đặt hàng thành công,Pass,,,,,Đặt hàng NCC
+NCC_154,Phiếu đặt hàng sản phẩm tự doanh của tỉnh không hiển thị ở TCT,,"1. Truy cập đặt hàng nhà cung cấp
+2. Role cấp TCT tìm kiếm phiếu PO tỉnh tự tạo",,Đặt hàng nhà cung cấp,- Hiển thị danh sách trống,- Hiển thị danh sách trống,Pass,,,,,Đặt hàng NCC
+NCC_155,Kiểm tra cấp tỉnh chỉ được đặt hàng sản phẩm tự doanh,,"1. Truy Thêm/ Cập nhật sản phẩm NCC
+2. Role cấp tỉnh chọn sản phẩm map với NCC",,Danh sách sản phẩm cảu NCC,- Chỉ hiển thị danh sách sản phẩm tự doanh,- Chỉ hiển thị danh sách sản phẩm tự doanh,Pass,,,,,Đặt hàng NCC
+NCC_156,Kiểm tra không cho đặt hàng khi sản phẩm chưa có bảng giá map với NCC,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn sản phẩm không map với NCC",,Đặt hàng nhà cung cấp,- Disable ô Gửi NCC,- Disable ô Gửi NCC,Pass,,,,,Đặt hàng NCC
+NCC_157,Kiểm tra xuất trả hàng toàn phần NCC,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xuất trả hàng NCC",,Đặt hàng nhà cung cấp,"- Xuất trả hàng thành công, trừ công nợ NCC","- Xuất trả hàng thành công, trừ công nợ NCC
+- Bị che mất sản phẩm cuối cùng trong danh sách sản phẩm",Fail,,,,,Đặt hàng NCC
+NCC_158,Kiểm tra xuất trả hàng nhiều lần trong 1 đơn PO cho  NCC,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xuất trả hàng NCC",,Đặt hàng nhà cung cấp,"- Xuất trả hàng thành công, trừ công nợ NCC
+- Nếu phiếu còn hàng mới hiển thị danh sách sản phẩm còn hàng để trả","- Xuất trả hàng thành công, trừ công nợ NCC
+- Nếu phiếu còn hàng mới hiển thị danh sách sản phẩm còn hàng để trả",Pass,,,,,Đặt hàng NCC
+NCC_159,Kiểm tra công nợ giữ TCT và NCC,,"1. Truy cập tài chính
+2. Hiển thị công nợ của phiếu vừa nhập hàng",,Công nợ NCC,- Ghi nhận phiếu nhập hàng vào công nợ NCC,- Ghi nhận phiếu nhập hàng vào công nợ NCC,Pass,,,,,Đặt hàng NCC
+,Phiếu nhập hàng từ NCC thuộc TCT,,,,,,,,,,,,
+NCC_160,Kiểm tra giao diện ,,1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT,,Đơn giao thẳng cần xác nhận,"- Hiển thị title"" Đơn giao thẳng cần xác nhận""
+- Ô tìm kiếm với hyperplace ""Tìm theo mã PO""
+- Trạng thái phiếu: Xác nhận, Chờ xác nhận
+- Danh sách đơn cần duyệt với các cột thông tin: STT, Mã phiếu, Nhà cung cấp, Ngày nhập dự kiến, Tổng SL, SL nhận, Tổng tiền, Trạng thái, Hành động
+- Button Tải lại, Cài đặt hiển thị , Phóng to/ Thu nhỏ","- Hiển thị title"" Đơn giao thẳng cần xác nhận""
+- Ô tìm kiếm với hyperplace ""Tìm theo mã PO""
+- Trạng thái phiếu: Xác nhận, Chờ xác nhận
+- Danh sách đơn cần duyệt với các cột thông tin: STT, Mã phiếu, Nhà cung cấp, Ngày nhập dự kiến, Tổng SL, SL nhận, Tổng tiền, Trạng thái, Hành động
+- Button Tải lại, Cài đặt hiển thị , Phóng to/ Thu nhỏ",Pass,,,,,Đặt hàng NCC
+NCC_161,Kiểm tra tìm kiểm theo mã PO,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Nhập mã PO",,Đơn giao thẳng cần xác nhận,- Hiển thị danh sách phiếu PO có mã tương ứng,- Hiển thị danh sách phiếu PO có mã tương ứng,Pass,,,,,Đặt hàng NCC
+NCC_162,Kiểm tra bộ lọc trạng thái phiếu,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn từng trạng thái",,Đơn giao thẳng cần xác nhận,- Hiển thị danh sách phiếu PO có trạng thái tương ứng,- Hiển thị thiếu trạng thái nhận một phần,Fail,,,,,Đặt hàng NCC
+NCC_163,Kiểm tra xem chi tiết phiếu PO,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu",,Đơn giao thẳng cần xác nhận,"- Hiển thị Thông tin chung, Thông tin khác, Danh sách sản phẩm","- Hiển thị Thông tin chung, Thông tin khác, Danh sách sản phẩm",Pass,,,,,Đặt hàng NCC
+NCC_164,Kiểm tra xác nhận phiếu đặt hàng,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận ",,Đơn giao thẳng cần xác nhận,"- Nhập kho thành công
+- Sinh một phiếu nhập kho, và 1 phiếu xuất chuyển kho của TCT cho Tỉnh","- Nhập kho thành công
+- Sinh một phiếu nhập kho, và 1 phiếu xuất chuyển kho của TCT cho Tỉnh",Pass,,,,,Đặt hàng NCC
+NCC_165,Kiểm tra xác nhận phiếu đặt hàng sản phẩm MAC,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận ",,Đơn giao thẳng cần xác nhận,"- Nhập kho thành công, tính lại giá vốn khi nhập kho","- Nhập kho thành công, tính lại giá vốn khi nhập kho",Pass,,,,,Đặt hàng NCC
+NCC_166,Kiểm tra xác nhận phiếu đặt hàng sản phẩm FIFO,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận ",,Đơn giao thẳng cần xác nhận,"- Nhập kho thành công, ghi nhận lô mới","- Hiển thị thông báo lỗi, sản phẩm FIFO cần quản lý theo lô
+- Chưa tự sinh lô cho sản phẩm FIFO",Fail,,,,,Đặt hàng NCC
+NCC_167,Kiểm tra xác nhận nhận hàng 1 phần,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận ",,Đơn giao thẳng cần xác nhận,"- Nhập kho thành công, ghi nhận đúng số lượng xác nhận","- Nhập kho thành công, ghi nhận đúng số lượng xác nhận",Pass,,,,,Đặt hàng NCC
+NCC_168,Kiểm tra ghi nhận công nợ nội bộ giữa TCT và tỉnh,,"1. Truy cập tài chính
+2. Hiển thị công nợ của phiếu vừa nhập hàng",,Công nợ nội bộ,- Ghi nhận phiếu nhập kho vào công nợ nội bộ,- Ghi nhận phiếu nhập kho vào công nợ nội bộ,Pass,,,,,Đặt hàng NCC
+NCC_169,Kiểm tra không hiển thị phiếu tỉnh tự đặt hàng NCC,,"1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Tìm phiếu Tỉnh tự đặt hàng NCC",,Công nợ nội bộ,- Hiển thị danh sách trống,- Hiển thị danh sách trống,Pass,,,,,Đặt hàng NCC
+,Đối soát chứng từ,,,,,,,,,,,,
+NCC_170,Kiểm tra giao diện ,,"1. Truy cập Đối soát hoá đơn, chứng từ",,Đối soát hoá đơn PO,"- Hiển thị title"" Đối soát hoá đơn PO""
+- Ô tìm kiếm với hyperplace Mã PO , số HĐ
+- Bộ lọc trạng thái đối soát
+- Bộ lọc NCC
+- Tab Theo hoá đơn , Tab Theo phiếu PO
+- Danh sách hoá đơn hiển thị theo các cột: Mã PO, Hoá đơn, Nhà cung cấp, Tổng tiền, Trạng thái, File, Thao tác
+- Button tải lại, cài đặt hiển thị, phóng to/thu nhỏ
+- Button + Upload XML","- Hiển thị title"" Đối soát hoá đơn PO""
+- Ô tìm kiếm với hyperplace Mã PO , số HĐ
+- Bộ lọc trạng thái đối soát
+- Bộ lọc NCC
+- Tab Theo hoá đơn , Tab Theo phiếu PO
+- Danh sách hoá đơn hiển thị theo các cột: Mã PO, Hoá đơn, Nhà cung cấp, Tổng tiền, Trạng thái, File, Thao tác
+- Button tải lại, cài đặt hiển thị, phóng to/thu nhỏ
+- Button + Upload XML",Pass,,,,,Đặt hàng NCC
+NCC_171,Kiểm tra tìm kiểm theo mã PO,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Nhập mã PO",,Đối soát hoá đơn PO,- Hiển thị danh sách phiếu PO có mã tương ứng,- Hiển thị danh sách phiếu PO có mã tương ứng,Pass,,,,,Đặt hàng NCC
+NCC_172,Kiểm tra tìm kiểm theo mã HĐ,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Nhập mã HĐ",,Đối soát hoá đơn PO,- Hiển thị danh sách phiếu HĐ có mã tương ứng,- Hiển thị danh sách phiếu HĐ có mã tương ứng,Pass,,,,,Đặt hàng NCC
+NCC_173,Kiểm tra lọc trạng thái đối soát,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn từng trạng thái đối soát chứng từ",,Đối soát hoá đơn PO,- Hiển thị danh sách phiếu có trạng thái đã chọn,- Hiển thị danh sách phiếu có trạng thái đã chọn,Pass,,,,,Đặt hàng NCC
+NCC_174,Kiểm tra lọc trạng theo nhà cung cấp,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn từng nhà cung cấp",,Đối soát hoá đơn PO,- Hiển thị danh sách phiếu có NCC đã chọn,- Hiển thị danh sách phiếu có NCC đã chọn,Pass,,,,,Đặt hàng NCC
+NCC_175,Kiểm tra hiển thị NCC đúng role cấp tỉnh và TCT,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn xem danh sách nhà cung cấp",,Đối soát hoá đơn PO,"- Tỉnh chỉ xem được danh sách NCC của tỉnh
+- Tổng công ty chỉ xem được danh sách NCC của TCT","- Tỉnh chỉ xem được danh sách NCC của tỉnh
+- Tổng công ty chỉ xem được danh sách NCC của TCT",Pass,,,,,Đặt hàng NCC
+NCC_176,Kiểm tra hiển thị tab theo hoá đơn,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn tab Theo hoá đơn",,Đối soát hoá đơn PO,- Hiển thị danh sách phiếu đã đối soát theo hoá đơn,- Hiển thị danh sách phiếu đã đối soát theo hoá đơn,Pass,,,,,Đặt hàng NCC
+NCC_177,Kiểm tra hiển thị tab Theo phiếu PO,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn tab Theo phiếu PO",,Đối soát hoá đơn PO,- Hiển thị danh sách phiếu đã đối soát theo phiếu PO,- Hiển thị danh sách phiếu đã đối soát theo phiếu PO,Pass,,,,,Đặt hàng NCC
+NCC_178,Kiểm tra xem chi tiết đối soát khớp hoá đơn,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn xem chi tiết đối soát khớp",,"Đối soát hoá đơn, chứng từ","- Hiển thị phiếu nhập kho, đề xuất đặt hàng, trạng thái đối soát",- Hiển thị thiếu trạng thái nhận một phần,Fail,,,,,Đặt hàng NCC
+NCC_179,Kiểm tra xem chi tiết đối soát lệch hoá đơn,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn xem chi tiết đối soát hoá đơn lệch",,"Đối soát hoá đơn, chứng từ","- Hiển thị phiếu nhập kho, đề xuất đặt hàng, và hiển thị dòng đối soát lệch",- Hiển thị thiếu trạng thái nhận một phần,Fail,,,,,Đặt hàng NCC
+NCC_180,Kiểm tra xoá file xml ,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn xem chi tiết đối soát hoá đơn
+3. Chọn Xoá file XML",,"Đối soát hoá đơn, chứng từ","- Xoá thành công, không hiển thị phiếu trong tab Theo hoá đơn","- Xoá thành công, không hiển thị phiếu trong tab Theo hoá đơn",Pass,,,,,Đặt hàng NCC
+NCC_181,Kiểm tra tải lại đối soát,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. chọn tải lại",,Đối soát hoá đơn PO,- Cập nhật trạng thái đối soát,- Cập nhật trạng thái đối soát,Pass,,,,,Đặt hàng NCC
+NCC_182,Kiểm tra phân trang,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn từng phân trang",,Đối soát hoá đơn PO,- Hiển thị danh sách phiếu đúng với phân trang đã chọn,- Hiển thị danh sách phiếu đúng với phân trang đã chọn,Pass,,,,,Đặt hàng NCC
+NCC_183,Kiểm tra upload danh sách file XML,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn upload nhiều file XML",,Đối soát hoá đơn PO,- Thực hiện đối soát từng file XML và hiển thị kết quả ở Tab Theo hoá đơn,- Thực hiện đối soát từng file XML và hiển thị kết quả ở Tab Theo hoá đơn,Pass,,,,,Đặt hàng NCC
+NCC_184,Kiểm tra upload trùng file XML,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn upload lại file đã upload",,Đối soát hoá đơn PO,- Thực hiện đối soát lại file XML và hiển thị kết quả ở Tab Theo hoá đơn,- Thực hiện đối soát lại file XML và hiển thị kết quả ở Tab Theo hoá đơn,Pass,,,,,Đặt hàng NCC
+NCC_185,Kiểm tra upload file lệch sau khi đã upload file khớp,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn upload file lệch sau khi đã upload file khớp",,Đối soát hoá đơn PO,- Thực hiện đối soát lại file XML và hiển thị kết quả ở Tab Theo hoá đơn,- Thực hiện đối soát lại file XML và hiển thị kết quả ở Tab Theo hoá đơn,Pass,,,,,Đặt hàng NCC
+NCC_186,Kiểm tra đổi soát phiếu PO,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Chọn tab Theo phiếu PO
+3. Chọn xem chi tiết",,Đối soát hoá đơn PO,"- Hiển thị phiếu nhập kho, đề xuất đặt hàng và ô để tải file xml, ảnh phiếu nhận hàng","- Hiển thị phiếu nhập kho, đề xuất đặt hàng và ô để tải file xml, ảnh phiếu nhận hàng",Pass,,,,,Đặt hàng NCC
+NCC_187,Kiểm tra tái ảnh vượt giới hạn của tab đổi soát phiếu PO,,"1. Truy cập Đối soát hoá đơn, chứng từ
+2. Thực hiện tải 1 file xml và 10 ảnh",,Đối soát hoá đơn PO,- Ghi nhận 9 ảnh và 1 file xml,- Ghi nhận 9 ảnh và 1 file xml,Pass,,,,,Đặt hàng NCC
+NCC_188,Kiểm tra báo cáo đối soát,,1. Truy cập báo cáo đối soát,,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,"- Hiển thị đúng số lượng đã đối soát, số lượng khớp, lệch, chưa đối soát","- Hiển thị đúng số lượng đã đối soát, số lượng khớp, lệch, chưa đối soát",Pass,,,,,Đặt hàng NCC
+,Hợp đồng nhà cung cấp,,,,,,,,,,,,
+,HAPPY CASE,,,,,,,,,,,,
+NCC_189,Kiểm tra hiển thị giao diện màn hình Hợp đồng nhà cung cấp,Người dùng có quyền truy cập,"1. Đăng nhập hệ thống.
+2. Mở menu Hợp đồng nhà cung cấp.",Cao,Hợp đồng nhà cung cấp,"Giao diện hiển thị đúng theo thiết kế: tiêu đề, ô tìm kiếm, bộ lọc trạng thái, nút Thêm mới, bảng dữ liệu, phân trang và các nút thao tác (Xem/Kích hoạt/Ngừng) hiển thị đầy đủ, không bị vỡ giao diện.",,,,,,,
+NCC_190,Kiểm tra thêm mới nhà cung cấp nhập đầy đủ thông tin bắt buộc,Có dữ liệu hợp đồng,"1. Mở màn hình danh sách hợp đồng.
+2. Chọn Thêm mới
+3. Nhập thông tin bắt buộc
+4. Click button thêm mới",TB,Popup Thêm hợp đồng NCC,"Thêm thành công hợp đồng, hiển thị hợp đồng ở màn danh sách",,,,,,,
+NCC_191,Kiểm tra thêm mới nhà cung cấp bỏ trống trường thông tin bắt buộc,Có dữ liệu hợp đồng,"1. Mở màn hình danh sách hợp đồng.
+2. Chọn Thêm mới
+3. Bỏ trống thông tin bắt buộc
+4. Click button thêm mới",Cao,Popup Thêm hợp đồng NCC,"- Hiển thị thông báo lỗi:
+Vui lòng nhập số hợp đồng
+Vui lòng chọn nhà cung cấp
+Chọn thời hạn hiệu lực",,,,,,,
+NCC_192,Kiểm tra xem chi tiết thông tin hợp đồng,Có dữ liệu hợp đồng,"1. Mở màn hình danh sách hợp đồng.
+2. Chọn Xem",Cao,Hợp đồng nhà cung cấp,- Hiển thị chi tiết thông tin hợp đồng đã thêm,,,,,,,
+NCC_193,Kiểm tra sửa thông tin hợp đồng,Có dữ liệu hợp đồng,"1. Mở màn hình danh sách hợp đồng.
+2. Chọn Sửa
+3. Nhập thông tin thay đổi
+4. Click button Lưu",Cao,Cập nhật hợp đồng NCC,-Hợp đồng mới ở trạng thái Nháp.,,,,,,,
+NCC_194,Kiểm tra phê duyệt hợp đồng,Có dữ liệu hợp đồng,"1. Mở màn hình danh sách hợp đồng.
+2. Chọn Phê duyệt
+3. Click button Phê duyệt",Cao,Cập nhật hợp đồng NCC,- Thông tin hợp đồng được áp dụng theo thông tin đã sửa đổi. Hợp đồng mới ở trạng thái Hiệu lực,,,,,,,
+NCC_195,Kiểm tra ngừng hợp đồng,Có dữ liệu hợp đồng,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng",Cao,Đặt hàng NCC,- Không hiển thị hợp đồng trạng thái Ngừng hoạt động,,,,,,,
+NCC_196,Kiểm tra kích hoạt hợp đồng,Có dữ liệu hợp đồng,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng",Cao,Đặt hàng NCC,- Hiển thị hợp đồng trạng thái Hoạt động,,,,,,,
+NCC_197,Kiểm tra loại hợp đồng,Có dữ liệu hợp đồng,"1. Mở màn hình danh sách hợp đồng.
+2. Thêm hợp đồng mới
+3. Chọn 1 trong 2 loại hợp đồng
+4. Chọn lưu",Cao,Cập nhật hợp đồng NCC,"- Đối với loại hợp đồng trọn gói: Sẽ có Tổng giá trị hợp đồng (trọn gói) - Tỉnh là toàn bộ Công nợ NCC trong thời gian phát sinh giao dịch
+- Đối với loại hợp đồng Nguyên tắc(Khung): Ghi nhận công nợ đối với các giao dịch phát sinh",,,,,,,
+NCC_198,Kiểm tra chiết khấu %,Có dữ liệu hợp đồng,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng
+4. Chọn sản phẩm đặt hàng
+5. Xem thông tin giảm giá",Cao,Đặt hàng NCC,- Xem giảm giá % toàn đơn đúng với hợp đồng đã cài đặt,,,,,,,
+NCC_199,Kiểm tra theo hạn mức công nợ,Có dữ liệu hợp đồng,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng
+4. Chọn sản phẩm đặt hàng
+5. Đặt hàng NCC",Cao,Đặt hàng NCC,- Trong trường hợp tổng số tiền phát sinh chưa thanh toán > Hạn mức công nợ sẽ thêm cảnh báo với số tiền vượt mức Hạn mức công nợ,,,,,,,
+NCC_200,Kiểm tra hạn thanh toán,Có dữ liệu hợp đồng,1. Chọn nhà cung cấp,Cao,Đặt hàng NCC,- Hiển thị thông báo cảnh báo các đơn hàng quá hạn thanh toán,,,,,,,
+NCC_201,Kiểm tra thời hạn được trả hàng,Có dữ liệu hợp đồng,"1. Cửa hàng tạo đơn trả hàng NCC
+2. Đến bước TCT duyệt trả hàng NCC
+3. Kiểm tra thời hạn trả hàng",Cao,Đặt hàng NCC,- Kiểm tra đơn dặt ứng với hợp đồng nào. Nếu quá hạn hiển thị thông báo không cho trả hàng và nhập hàng trả lại Cửa hàng,,,,,,,
+NCC_202,Tìm kiếm theo số hợp đồng,Có hợp đồng,Nhập số HĐ → Enter,Cao,Danh sách,Chỉ hiển thị hợp đồng phù hợp,,,,,,,
+NCC_203,Tìm kiếm theo tên NCC,Có hợp đồng,Nhập tên NCC,Cao,Danh sách,Trả về đúng kết quả,,,,,,,
+NCC_204,Tìm kiếm theo mã NCC,Có hợp đồng,Nhập mã NCC,Cao,Danh sách,Hiển thị đúng hợp đồng,,,,,,,
+NCC_205,Tìm kiếm không tồn tại,Có dữ liệu,Nhập giá trị không tồn tại,TB,Danh sách,"Hiển thị ""Không có dữ liệu""",,,,,,,
+NCC_206,Lọc trạng thái Hiệu lực,Có hợp đồng nhiều trạng thái,Chọn Hiệu lực,Cao,Danh sách,Chỉ hiển thị hợp đồng hiệu lực,,,,,,,
+NCC_207,Lọc trạng thái Ngừng,Có hợp đồng ngừng,Chọn Ngừng,Cao,Danh sách,Chỉ hiển thị hợp đồng ngừng,,,,,,,
+NCC_208,Xóa bộ lọc,Đang lọc,Nhấn Xóa bộ lọc,TB,Danh sách,Hiển thị toàn bộ dữ liệu,,,,,,,
+NCC_209,Refresh danh sách,Có dữ liệu,Nhấn Refresh,TB,Danh sách,Reload dữ liệu mới nhất,,,,,,,
+NCC_210,Phân trang,Có nhiều hơn 1 trang,Chuyển trang,TB,Danh sách,Hiển thị đúng dữ liệu trang được chọn,,,,,,,
+NCC_211,Mở popup thêm hợp đồng,Có quyền thêm,Nhấn Thêm mới,Cao,Popup thêm,Hiển thị form thêm hợp đồng,,,,,,,
+NCC_212,Bỏ trống số hợp đồng,Mở popup thêm,Không nhập số HĐ → Lưu,Cao,Popup thêm,Hiển thị validate bắt buộc,,,,,,,
+NCC_213,Bỏ trống nhà cung cấp,Mở popup,Không chọn NCC,Cao,Popup thêm,Hiển thị validate,,,,,,,
+NCC_214,Bỏ trống loại hợp đồng,Mở popup,Không chọn loại,Cao,Popup thêm,Hiển thị validate,,,,,,,
+NCC_215,Bỏ trống thời hạn hiệu lực,Mở popup,Không chọn ngày,Cao,Popup thêm,Hiển thị validate,,,,,,,
+NCC_216,Ngày kết thúc nhỏ hơn ngày bắt đầu,Mở popup,Chọn ngày kết thúc trước ngày bắt đầu,Cao,Popup thêm,"Không cho lưu, hiển thị lỗi",,,,,,,
+NCC_217,Thêm hợp đồng thành công,Dữ liệu hợp lệ,Nhập đầy đủ thông tin → Thêm mới,Cao,Popup thêm,"Thêm thành công, hiển thị trên danh sách",,,,,,,
+NCC_218,Trùng số hợp đồng,Đã tồn tại số HĐ,Nhập số HĐ trùng,Cao,Popup thêm,Hiển thị thông báo trùng dữ liệu,,,,,,,
+NCC_219,Upload tài liệu hợp đồng,Có file hợp lệ,Upload file,TB,Popup thêm,Upload thành công,,,,,,,
+NCC_220,Upload file sai định dạng,Có file không hợp lệ,Upload file exe,TB,Popup thêm,Báo lỗi định dạng,,,,,,,
+NCC_221,Upload file vượt dung lượng,Có file lớn,Upload file,TB,Popup thêm,Hiển thị lỗi dung lượng,,,,,,,
+NCC_222,Hủy thêm mới,Popup đang mở,Nhấn Hủy,TB,Popup thêm,"Đóng popup, không lưu dữ liệu",,,,,,,
+NCC_223,Xem chi tiết hợp đồng,Có hợp đồng,Nhấn Xem,Cao,Chi tiết HĐ,Hiển thị đầy đủ thông tin hợp đồng,,,,,,,
+NCC_224,Xem tài liệu hợp đồng,Có file đính kèm,Nhấn file,TB,Chi tiết,Mở/tải đúng file,,,,,,,
+NCC_225,Hiển thị đúng trạng thái hợp đồng,Có nhiều trạng thái,Mở chi tiết,TB,Chi tiết,Trạng thái hiển thị đúng,,,,,,,
+NCC_226,Kích hoạt hợp đồng đang Ngừng,Có hợp đồng trạng thái Ngừng,Nhấn Kích hoạt → Xác nhận,Cao,Danh sách,Trạng thái chuyển sang Hiệu lực,,,,,,,
+NCC_227,Hủy thao tác kích hoạt,Có popup xác nhận,Chọn Hủy,TB,Danh sách,Không thay đổi trạng thái,,,,,,,
+NCC_228,Ngừng hợp đồng đang Hiệu lực,Có hợp đồng hiệu lực,Nhấn Ngừng → Xác nhận,Cao,Danh sách,Trạng thái chuyển sang Ngừng,,,,,,,
+NCC_229,Hủy thao tác ngừng,Có popup xác nhận,Chọn Hủy,TB,Danh sách,Không thay đổi trạng thái,,,,,,,
+NCC_230,Không hiển thị nút Kích hoạt khi hợp đồng đang Hiệu lực,Có hợp đồng hiệu lực,Quan sát thao tác,Cao,Danh sách,Chỉ hiển thị nút Ngừng,,,,,,,
+NCC_231,Không hiển thị nút Ngừng khi hợp đồng đã Ngừng,Có hợp đồng ngừng,Quan sát thao tác,Cao,Danh sách,Chỉ hiển thị nút Kích hoạt,,,,,,,
+NCC_232,Người không có quyền thao tác,User không có quyền,Mở màn hình,Cao,Danh sách,Không hiển thị nút Thêm/Kích hoạt/Ngừng,,,,,,,
+NCC_233,Kiểm tra tổng giá trị hợp đồng,Có hợp đồng có giá trị,Mở chi tiết,TB,Chi tiết,Tổng giá trị hiển thị đúng,,,,,,,
+NCC_234,Đóng popup chi tiết,Popup mở,Nhấn Đóng hoặc X,Thấp,Chi tiết,Popup đóng,,,,,,,
+NCC_235,Kiểm tra dữ liệu sau khi reload,Đã thay đổi trạng thái,Refresh màn hình,TB,Danh sách,Trạng thái vẫn chính xác,,,,,,,
+NCC_236,Kiểm tra hiệu lực theo ngày hiện tại,Hợp đồng hết hạn,Mở danh sách,TB,Danh sách,Trạng thái hiển thị đúng theo quy tắc nghiệp vụ,,,,,,,
+NCC_237,Kiểm tra khoảng trắng đầu/cuối khi nhập số HĐ,Mở popup,"Nhập "" HD001 """,TB,Popup thêm,Hệ thống tự trim hoặc validate đúng,,,,,,,
+NCC_238,Nhập giá trị âm cho hạn mức công nợ,Mở popup,Nhập -1000,Cao,Popup thêm,"Không cho lưu, hiển thị lỗi",,,,,,,
+NCC_239,Nhập chiết khấu >100%,Mở popup,Nhập 120,Cao,Popup thêm,Hiển thị validate không hợp lệ,,,,,,,
+,Khuyến mãi đặt hàng nhà cung cấp,,,,,,,,,,,,
+,HAPPY CASE,,,,,,,,,,,,
+NCC_240,Kiểm tra hiển thị giao diện màn hình Khuyến mãi đặt hàng NCC,Người dùng có quyền truy cập,"1. Đăng nhập hệ thống.
+2. Mở menu Khuyến mãi đặt hàng nhà cung cấp.",Cao,Khuyến mãi đặt hàng NCC,"Hiển thị titile Khuyến mãi đặt hàng NCC
+- Ô tìm kiếm theo mã/tên chương trình khuyến mãi NCC
+- Bộ lọc NCC, trạng thái chương trình, Hình thức ưu đãi
+- Bộ lọc Ngày bắt đầu - Ngày kết thúc
+- Bảng hiển thị danh sách chương trình khuyến mãi: Mã CTKM, Tên chương trình, Nhà cung cấp, Hình thức, Thời gian, Trạng thái, Thao tác
+- Button: Load lại trang, Cài đặt hiển thị, Phóng to/ Thu nhỏ, Thêm mới
+- Phân trang",,,,,,,
+NCC_241,Kiểm tra thêm mới chương trình khuyến mãi nhập đầy đủ thông tin bắt buộc,,"1. Mở màn hình danh sách Khuyến mãi đặt hàng NCC
+2. Chọn thêm mới chương trình khuyến mãi
+3. Nhập đầy đủ thông tin bắt buộc
+4. Click button Lưu",TB,Popup Thêm chương trình khuyến mãi,"Thêm thành công chương trình khuyến mãi, hiển thị hợp đồng ở màn danh sách",,,,,,,
+NCC_242,Kiểm tra thêm mới CTKM bỏ trống trường thông tin bắt buộc,,"1. Mở màn hình danh sách CTKM
+2. Chọn Thêm mới
+3. Bỏ trống thông tin bắt buộc
+4. Click button thêm mới",Cao,Popup Thêm chương trình khuyến mãi,"- Hiển thị thông báo lỗi:
+Hãy nhập thông tin cho trường Tên chương trình
+Hãy nhập thông tin cho trường Nhà cung cấp
+Hãy nhập thông tin cho trường Thời gian hiệu lực",,,,,,,
+NCC_243,Kiểm tra xem chi tiết thông tin CTKM,,"1. Mở màn hình danh sách CTKM.
+2. Chọn Xem",Cao,Chi tiết chương trình khuyến mãi,- Hiển thị chi tiết thông tin chương trình khuyến mãi,,,,,,,
+NCC_244,Kiểm tra sửa thông tin CTKM,,"1. Mở màn hình danh sách CTKM
+2. Chọn Sửa
+3. Nhập thông tin thay đổi
+4. Click button Lưu",Cao,Cập nhật CTKM,"- Trong trường hợp đang có phiếu PO đang trong tiến trình phê duyệt/tạo chưa hoàn thành có sử dụng CTKM không được phép chỉnh sửa.
+- Còn lại thì chỉnh sửa và áp dụng bình thường
+- CTKM khi cập nhật ở trạng thái Nháp",,,,,,,
+NCC_245,Kiểm tra ngừng CTKM,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp",Cao,Đặt hàng NCC,- Không hiển thị giảm giá/ tặng kèm với CTKM đã ngừng hoạt động,,,,,,,
+NCC_246,Kiểm tra kích hoạt CTKM,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp",Cao,Đặt hàng NCC,- Hiển thị giám giá/tặng kèm với CTKM đang hoạt động,,,,,,,
+NCC_247,Kiểm tra Huỷ CTKM,,"1. Truy cập màn Khuyến mãi đặt hàng NCC
+2. Chọn Huỷ CTKM của NCC",Cao,Khuyến mãi đặt hàng NCC,"- Trạng thái CTKM ở trạng thái Đã huỷ, không thể kích hoạt lại CTKM",,,,,,,
+NCC_248,Kiểm tra chiết khấu % toàn đơn,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng 
+4. Chọn sản phẩm đặt hàng
+5. Xem thông tin giảm giá",Cao,Đặt hàng NCC,- Xem giảm giá % toàn đơn đúng với CTKM đã cài đặt đáp ứng đủ số lượng / số tiền,,,,,,,
+NCC_249,Kiểm tra chiết khấu giảm tiền toàn đơn,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng 
+4. Chọn sản phẩm đặt hàng
+5. Xem thông tin giảm giá",Cao,Đặt hàng NCC,- Xem giảm giá tiền toàn đơn đúng với CTKM đã cài đặt đáp ứng đủ số lượng / số tiền,,,,,,,
+NCC_250,Kiểm tra hình thức Mua X tặng Y,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng 
+4. Chọn sản phẩm đặt hàng
+5. Xem thông tin giảm giá",Cao,Đặt hàng NCC,"- Xem tặng số lượng đáp ứng đúng giá trị Mua X tặng Y, theo đúng MÃ SKU  đã chọn",,,,,,,
+NCC_251,Kiểm tra giảm giá tiền theo sản phẩm,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng 
+4. Chọn sản phẩm đặt hàng
+5. Xem thông tin giảm giá",Cao,Đặt hàng NCC,- Xem số tiền đúng với mã SKU đã chọn. giảm đúng số tiền đã cài đặt,,,,,,,
+NCC_252,Kiểm tra áp dụng CTKM với giá trị đơn tối thiểu,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng 
+4. Chọn sản phẩm đặt hàng
+5. Xem thông tin giảm giá",Cao,Đặt hàng NCC,- Kiểm tra số tiền Tổng đơn được áp dụng CTKM,,,,,,,
+NCC_253,Kiểm tra áp dụng CTKM với số lượng đơn tối thiểu,,"1. Tạo đơn đặt hàng NCC
+2. Chọn nhà cung cấp
+3. Chọn hợp đồng 
+4. Chọn sản phẩm đặt hàng
+5. Xem thông tin giảm giá",Cao,Đặt hàng NCC,- Kiểm tra số lượng Tổng đơn được áp dụng CTKM,,,,,,,

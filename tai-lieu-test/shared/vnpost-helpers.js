@@ -2,6 +2,7 @@ const { expect, test } = require('@playwright/test');
 
 const { BASE_URL } = require('./vnpost-config');
 const { requireEnv } = require('./config');
+const { dangNhapVai } = require('./auth/login');
 
 const ACCOUNT = process.env.VNPOST_ACCOUNT;
 const PASSWORD = process.env.VNPOST_PASSWORD;
@@ -25,41 +26,19 @@ async function clickFirstVisible(page, locators, timeout = 3000) {
   return false;
 }
 
+/**
+ * Đăng nhập vai mặc định (`tct`).
+ *
+ * 🔴 Bản cũ tự dò ô mật khẩu bằng `input[type="password"]` và **luôn trúng ô ẩn `aria-hidden`**
+ * mà trang chèn để chặn autofill ⇒ `waitFor` treo 25s rồi cả bộ test đỏ với lý do trông như lỗi
+ * môi trường. Đo 20/09/2026: đúng lỗi này làm **58/58 case** của phân hệ `12-don-vi-van-tai`
+ * đỏ hàng loạt. Nay uỷ quyền cho `dangNhapVai()` ở `shared/auth/login.js` — nơi đã xử lý ô ẩn,
+ * form nuốt giá trị, và màn chọn phạm vi.
+ */
 async function login(page) {
   requireEnv(['VNPOST_ACCOUNT', 'VNPOST_PASSWORD']);
-  await page.goto(TARGET, { waitUntil: 'domcontentloaded' });
-  const passwordInput = page.locator('input[type="password"]').first();
-  await passwordInput.waitFor({ timeout: 25_000 });
-
-  const inputs = page.locator('input:visible');
-  let usernameInput = null;
-  for (let i = 0; i < await inputs.count(); i++) {
-    const input = inputs.nth(i);
-    if (((await input.getAttribute('type')) || '') !== 'password') {
-      usernameInput = input;
-      break;
-    }
-  }
-  if (!usernameInput) throw new Error('Không tìm thấy ô tài khoản');
-
-  await usernameInput.fill(ACCOUNT);
-  await passwordInput.fill(PASSWORD);
-  const loginButton = page.getByRole('button', { name: /tiếp tục|đăng nhập|login|sign in/i });
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    await loginButton.click({ timeout: 10_000 });
-    await page.waitForLoadState('networkidle', { timeout: 20_000 }).catch(() => {});
-    try {
-      await page.waitForFunction(
-        () => /Admin|Quản lý cung ứng|Quản lý Tỉnh|Đăng xuất|Truy cập trang quản lý|Kho hàng/.test(document.body?.innerText || ''),
-        null,
-        { timeout: 15_000 },
-      );
-      return;
-    } catch (error) {
-      if (attempt === 3) throw error;
-      await page.waitForTimeout(1000);
-    }
-  }
+  await page.goto(BASE_URL, { waitUntil: 'domcontentloaded' });
+  await dangNhapVai(page, 'tct');
 }
 
 async function selectSupplyScope(page) {

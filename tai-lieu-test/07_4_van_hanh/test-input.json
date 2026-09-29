@@ -1,0 +1,348 @@
+{
+  "_note": "Phân hệ 07_4 Cấu hình vận hành (Nhận đặt hàng trước · Hạn mức duyệt · Cấu hình thông báo · Hòm mail nhận hoá đơn). 🔴 Nhóm 050 là cấu hình LUỒNG PHÊ DUYỆT: đổi khoảng tiền hay bước duyệt là đổi đường đi của mọi phiếu sau đó, và có thể làm phiếu đang chờ bị treo.",
+  "cases": {
+    "07_4_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_4_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo.",
+      "data": {
+        "thongBao": "Vui lòng nhập tên cấu hình"
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi — 24/09/2026 (form thật là Nhận đặt hàng trước)",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_4_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "allowMutation": false,
+      "role": "tct",
+      "data": {
+        "thongBao": "Vui lòng chọn ít nhất một phạm vi áp dụng"
+      },
+      "_goBoi": "26/09/2026: viết script — bỏ chọn trên form, request lưu bị chặn ở mạng ⇒ không đụng cấu hình chuỗi"
+    },
+    "07_4_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "gioiHan": 200
+      },
+      "_blocked": "🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo.",
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi — 24/09/2026 (form thật là Nhận đặt hàng trước)",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_4_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_4_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần có sẵn ít nhất 1 cấu hình hạn mức duyệt đã khai"
+    },
+    "07_4_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Chưa có đặc tả: cấu hình đang TẮT thì phiếu thuộc khoảng tiền đó được duyệt thẳng hay bị kẹt. Case còn GHI cấu hình."
+    },
+    "07_4_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Chưa có đặc tả: phiếu ĐANG chờ duyệt theo cấu hình cũ đi theo luồng nào sau khi sửa. Case còn GHI cấu hình."
+    },
+    "07_4_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "required": [
+        "tuKhoa"
+      ],
+      "data": {
+        "tuKhoa": ""
+      }
+    },
+    "07_4_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tuKhoaKhongKhop": "zzz-khong-ton-tai-zzz",
+        "thongBao": "Không tìm thấy loại thông báo"
+      }
+    },
+    "07_4_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_4_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_4_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_goBoi": "26/09/2026: hòm tạm host .invalid (không chạm thư thật), xoá ở finally"
+    },
+    "07_4_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_goBoi": "26/09/2026: hòm tạm host .invalid (không chạm thư thật), xoá ở finally"
+    },
+    "07_4_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Chưa rõ hệ thống có cho lưu hai khoảng tiền GIAO THOA hay chặn ngay lúc lưu. Case còn GHI cấu hình."
+    },
+    "07_4_050_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "STOCK_REQUESTS_APPROVE",
+        "vaiBuoc1": "ward",
+        "vaiBuoc2": "province_manager"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Chưa có đặc tả: phiếu ngoài mọi khoảng tiền bị kẹt hay duyệt thẳng — nguồn phiếu treo. Case còn GHI."
+    },
+    "07_4_050_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "STOCK_REQUESTS_APPROVE",
+        "vaiBuoc1": "ward",
+        "vaiBuoc2": "province_manager"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_050_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "STOCK_REQUESTS_APPROVE",
+        "vaiBuoc1": "ward",
+        "vaiBuoc2": "province_manager"
+      },
+      "allowMutation": true,
+      "required": [
+        "vaiBuoc1",
+        "vaiBuoc2"
+      ],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần tài khoản đúng vai của bước 2 trong luồng duyệt — chưa có tài khoản nền."
+    },
+    "07_4_050_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "STOCK_REQUESTS_APPROVE",
+        "vaiBuoc1": "ward",
+        "vaiBuoc2": "province_manager"
+      },
+      "allowMutation": true,
+      "required": [
+        "vaiBuoc1",
+        "vaiBuoc2"
+      ],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần tài khoản vai bước 1 và bước 2 để chạy tuần tự — chưa có tài khoản nền."
+    },
+    "07_4_050_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "STOCK_REQUESTS_APPROVE",
+        "vaiBuoc1": "ward",
+        "vaiBuoc2": "province_manager"
+      },
+      "allowMutation": true,
+      "required": [
+        "vaiBuoc1",
+        "vaiBuoc2"
+      ],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần tài khoản vai bước 1; và từ chối phiếu là GHI trạng thái phiếu thật."
+    },
+    "07_4_050_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "STOCK_REQUESTS_APPROVE",
+        "vaiBuoc1": "ward",
+        "vaiBuoc2": "province_manager"
+      },
+      "allowMutation": true,
+      "required": [
+        "vaiBuoc1",
+        "vaiBuoc2"
+      ],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần tài khoản vai NGOÀI luồng duyệt — chưa có tài khoản nền."
+    },
+    "07_4_050_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Chưa có đặc tả: phiếu đang chờ ở đúng bước vừa bị xoá đi đâu. Case còn GHI cấu hình."
+    },
+    "07_4_050_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maCauHinh": "",
+        "vaiBuoc1": "",
+        "vaiBuoc2": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI cấu hình HẠN MỨC DUYỆT — đổi là đổi luồng phê duyệt của mọi phiếu phát sinh sau đó; phiếu đang chờ duyệt dở có thể bị treo."
+    },
+    "07_4_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    }
+  }
+}

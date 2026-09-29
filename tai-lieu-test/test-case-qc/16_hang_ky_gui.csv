@@ -1,0 +1,238 @@
+﻿,Chức năng,,HÀNG KÝ GỬI,,,,,,,,
+,Mã Testcase,,16_hang_ky_gui,,,,,,,,
+,Tổng các tình huống kiểm thử,,138,,,,,,,,
+,Chưa thực hiện,,138,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,HÀNG KÝ GỬI,,,,,,,,,,
+,010 — Tra cứu công nợ hàng ký gửi,,,,,,,,,,
+16_010_001,Màn Công nợ hàng ký gửi mở được và nêu rõ là số tạm tính,Vai: province; có khoản công nợ ký gửi,"1. Vào Đối soát, công nợ › Công nợ hàng ký gửi (/debt-reconciliation/consignment-debt)",,"Bảng khoản nghĩa vụ hiện ra; đầu màn có dải Alert nhắc ""Khoản ở trạng thái Tạm tính chưa được đối soát với nhà cung cấp...""",,,,,,
+16_010_002,Bảng công nợ hiện đủ mười cột,Vai: province; có dữ liệu,"1. Mở /debt-reconciliation/consignment-debt;
+2. Đọc tiêu đề cột",,"Đủ 10 cột: Ngày giao dịch, Đơn bán, SKU, Nhà cung cấp, Số lượng, Đơn giá ký gửi, VAT, Thành tiền, Nguồn giá, Trạng thái",,,,,,
+16_010_003,Không có chức năng lập khoản công nợ bằng tay,Vai: province,"1. Mở /debt-reconciliation/consignment-debt;
+2. Tìm nút thêm mới hoặc lập khoản",,KHÔNG có nút lập khoản nào — mọi khoản do hệ thống tự treo khi bán được hàng ký gửi,,,,,,
+16_010_004,Màn công nợ ký gửi cố ý không có nút chi tiền,Vai: province,"1. Mở /debt-reconciliation/consignment-debt;
+2. Tìm nút chi tiền / lập lệnh chi",,KHÔNG có nút chi tiền. Việc chi làm ở màn Công nợ NCC,,,,,,
+16_010_005,Lọc theo phạm vi tỉnh / xã / điểm bán,Vai: province; có khoản ở nhiều đơn vị,"1. Chọn một đơn vị ở ô ""Lọc theo tỉnh / xã / điểm bán""",,Bảng chỉ còn khoản thuộc đơn vị đã chọn,,,,,,
+16_010_006,Tìm theo mã đơn bán,Vai: province; biết mã đơn bán có thật,"1. Gõ mã đơn bán vào ô ""Mã đơn bán"";
+2. Nhấn Enter",,Bảng chỉ còn khoản phát sinh từ đơn bán đó,,,,,,
+16_010_007,Tìm mã đơn bán không tồn tại,Vai: province,"1. Gõ ""DONKHONGCO999"";
+2. Nhấn Enter",,"Bảng rỗng, không báo lỗi kỹ thuật",,,,,,
+16_010_008,Tìm mã đơn bán toàn khoảng trắng,Vai: province,"1. Gõ 5 dấu cách vào ô ""Mã đơn bán"";
+2. Nhấn Enter",,"Kết quả bằng danh sách không lọc (chuỗi được trim), không báo lỗi",,,,,,
+16_010_009,Tìm mã đơn bán bằng ký tự đặc biệt,Vai: province,"1. Gõ ""' OR 1=1 --"";
+2. Nhấn Enter",,Bảng rỗng; không có response 500; không lộ thông báo kỹ thuật ra màn hình,,,,,,
+16_010_010,Lọc theo ba trạng thái khoản nghĩa vụ,Vai: province; có khoản ở nhiều trạng thái,"1. Chọn lần lượt ""Tạm tính"", ""Đã đối soát"", ""Đã đảo"" ở ô Trạng thái",,"Mỗi lần lọc bảng chỉ còn đúng nhóm đó. Ba nhãn đúng bộ: ""Tạm tính"" (cam), ""Đã đối soát"" (xanh), ""Đã đảo"" (xám)",,,,,,
+16_010_011,Lọc theo khoảng ngày giao dịch,Vai: province; có khoản ở nhiều ngày,"1. Chọn ""Từ ngày"" – ""Đến ngày"" bao đúng một ngày có khoản",,Mọi dòng có Ngày giao dịch nằm trong khoảng; khoản ngoài khoảng biến mất,,,,,,
+16_010_012,Chọn Từ ngày lớn hơn Đến ngày,Vai: province,1. Trong RangePicker chọn ngày đầu muộn hơn ngày cuối,,RangePicker không cho chọn ngược; ép qua URL thì kết quả rỗng,,,,,,
+16_010_013,Tổ hợp bốn bộ lọc cùng lúc,Vai: province,"1. Chọn đơn vị + mã đơn bán + trạng thái + khoảng ngày;
+2. Đọc kết quả",,Kết quả thoả đồng thời cả bốn điều kiện (phép AND),,,,,,
+16_010_014,Xoá lọc trả về danh sách đầy đủ,Vai: province; đang lọc,1. Xoá cả bốn ô lọc (allowClear),,Tổng số bản ghi trở về đúng bằng lúc chưa lọc,,,,,,
+16_010_015,Phân trang hoạt động đúng,Vai: province; có > 20 khoản,"1. Đọc số dòng trang 1;
+2. Đổi số dòng mỗi trang;
+3. Sang trang cuối",,Đổi số dòng thì request mang size mới và page về 1; trang cuối hiện phần dư đúng bằng tổng trừ các trang trước,,,,,,
+16_010_016,Nguồn giá Danh mục sản phẩm cảnh báo thiếu bảng giá,Vai: province; có khoản lấy giá từ danh mục sản phẩm,"1. Đọc cột ""Nguồn giá"" của dòng đó",,"Cột hiện nhãn ""Danh mục sản phẩm"" màu vàng — nghĩa là hệ thống không tìm được giá trong bảng giá NCC nên lấy tạm giá vốn danh mục; số đưa NCC ký sẽ khác giá hợp đồng",,,,,,
+16_010_017,"Cột Đơn bán là mã đơn tại quầy, không phải số hoá đơn",Vai: province; có khoản phát sinh,"1. Đọc cột ""Đơn bán"";
+2. So với số hoá đơn ở thẻ Hoá đơn NCC của kỳ",,Hai giá trị khác nhau — cột Đơn bán KHÔNG phải số hoá đơn tài chính,,,,,,
+16_010_018,Lập lệnh chi bị chặn khi NCC còn khoản Tạm tính,Vai: province; NCC còn ≥ 1 khoản ký gửi Tạm tính,"1. Mở màn Công nợ NCC;
+2. Thử lập lệnh chi cho NCC đó",,"Bị chặn với thông báo nguyên văn ""Nghĩa vụ tạm tính chưa đối soát, không được lập lệnh chi"" (CONSIGN-004). Chặn kể cả khi khoản Tạm tính thuộc kỳ KHÁC",,,,,,
+16_010_019,Vai điểm bán xem được công nợ ký gửi,Vai: shop; điểm bán có khoản ký gửi,1. Mở /debt-reconciliation/consignment-debt bằng tài khoản điểm bán,,Màn mở được; chỉ thấy khoản của chính điểm bán mình,,,,,,
+16_010_020,Vai cấp xã chỉ thấy khoản trong xã,Vai: ward; có khoản ở xã khác cùng tỉnh,1. Mở /debt-reconciliation/consignment-debt bằng tài khoản cấp xã,,Không dòng nào thuộc xã khác,,,,,,
+16_010_021,Bán hàng ký gửi khi hợp đồng hết hiệu lực bị chặn,Vai: shop; sản phẩm ký gửi có hợp đồng đã hết hiệu lực,1. Bán sản phẩm đó tại quầy,,"Bị chặn với thông báo nguyên văn ""Hàng ký gửi không còn hợp đồng hiệu lực, không được bán"" (CONSIGN-005)",,,,,,
+16_010_022,Sản phẩm ký gửi chưa gán NCC không treo được công nợ,Vai: shop; sản phẩm ký gửi chưa gán nhà cung cấp,"1. Bán sản phẩm đó;
+2. Mở màn công nợ ký gửi tìm khoản tương ứng",,"Hệ thống báo ""Sản phẩm ký gửi chưa gán nhà cung cấp, không thể treo công nợ"" (CONSIGN-002); khoản không xuất hiện trên màn công nợ",,,,,,
+,020 — Sinh kỳ đối soát và theo dõi kỳ theo nhà cung cấp,,,,,,,,,,
+16_020_001,Màn Đối soát hàng ký gửi mở được,Vai: province,"1. Vào Đối soát, công nợ › Đối soát hàng ký gửi (/debt-reconciliation/consignment-recon)",,"PageContainer tiêu đề ""Đối soát hàng ký gửi""; bảng nhà cung cấp hiện ra",,,,,,
+16_020_002,Bảng nhà cung cấp hiện đủ năm cột,Vai: province; có dữ liệu,1. Đọc tiêu đề cột bảng nhà cung cấp,,"Đủ 5 cột: Nhà cung cấp, Tổng số kỳ, Kỳ đang gom số, Kỳ đã chốt, Kỳ gần nhất (cộng cột nút ""Xem tất cả các kỳ"")",,,,,,
+16_020_003,Sinh kỳ từ hợp đồng và đọc kết quả,"Vai: province; NCC có hợp đồng ký gửi hiệu lực đã khai đủ chu kỳ, ngày neo kỳ, thời hạn trả hàng tồn","1. Bấm ""Sinh kỳ từ hợp đồng"" ở góc trên bên phải",,"Báo dạng ""Sinh kỳ xong: <N> kỳ mới, <M> kỳ đã có""; các kỳ mới ở trạng thái ""Đang gom số""",,,,,,
+16_020_004,Sinh kỳ nhiều lần không tạo kỳ trùng,Vai: province; đã sinh kỳ một lần,"1. Bấm ""Sinh kỳ từ hợp đồng"" lần thứ hai;
+2. Đọc thông báo",,"Thông báo ghi ""0 kỳ mới, <M> kỳ đã có""; tổng số kỳ KHÔNG tăng",,,,,,
+16_020_005,Hợp đồng khai thiếu bị bỏ qua khi sinh kỳ,Vai: province; có hợp đồng ký gửi thiếu chu kỳ hoặc ngày neo kỳ,"1. Bấm ""Sinh kỳ từ hợp đồng"";
+2. Đọc dòng ""hợp đồng lỗi"" trong thông báo;
+3. Kiểm danh sách kỳ",,Thông báo nêu số hợp đồng lỗi; KHÔNG sinh kỳ nào cho hợp đồng khai thiếu; các hợp đồng còn lại vẫn được xử lý bình thường,,,,,,
+16_020_006,Sinh kỳ thất bại hiện thông báo backend,Vai: province; cấu hình hợp đồng lỗi nặng,"1. Bấm ""Sinh kỳ từ hợp đồng""",,Hiện chuỗi lỗi của Hệ thống thay vì thông báo thành công,,,,,,
+16_020_007,Cột Kỳ đang gom số chỉ đếm kỳ đã tới ngày bắt đầu,Vai: province; NCC có kỳ tất toán sinh sẵn chưa tới ngày bắt đầu,"1. Đọc cột ""Kỳ đang gom số"";
+2. Rê chuột lên con số",,Con số KHÔNG đếm kỳ chưa tới ngày bắt đầu; tooltip cho biết còn bao nhiêu kỳ chưa tới ngày,,,,,,
+16_020_008,Khối kỳ bung sẵn dưới nhà cung cấp còn việc,Vai: province; NCC còn kỳ phải xử lý,1. Đọc khối bung sẵn dưới dòng NCC,,"Mỗi dòng ghi khoảng kỳ, chu kỳ, số ngày, loại kỳ, đơn vị và trạng thái",,,,,,
+16_020_009,Xem tất cả các kỳ của một nhà cung cấp,Vai: province; NCC có ≥ 3 kỳ,"1. Bấm ""Xem tất cả các kỳ"" ở cuối dòng NCC",,"Mở màn ""Kỳ đối soát"" liệt kê toàn bộ lịch sử kỳ với 7 cột: Kỳ, Chu kỳ, Loại kỳ, Đơn vị, Trạng thái, Chốt lúc, và cột nút",,,,,,
+16_020_010,Cột Loại kỳ phân biệt đúng ba loại,Vai: province; NCC có cả ba loại kỳ,"1. Đọc cột ""Loại kỳ""",,"Đúng bộ 3: ""Kỳ thường"", ""Kỳ đầu (cắt cụt)"", ""Kỳ tất toán""",,,,,,
+16_020_011,Kỳ tất toán không có giao dịch bán nên cột tiền trống,Vai: province; NCC có kỳ tất toán đã chạy,"1. Mở Chi tiết kỳ tất toán;
+2. Đọc các cột tiền",,"Cột tiền để trống là ĐÚNG — kỳ tất toán theo thiết kế chỉ có trả NCC, khách trả lại, xuất huỷ và kiểm kê, không có giao dịch bán",,,,,,
+16_020_012,Cột Chu kỳ của kỳ tất toán chép từ hợp đồng nên gây nhầm,Vai: province; NCC có kỳ tất toán,"1. Đọc cột ""Chu kỳ"" của kỳ tất toán;
+2. Đọc số ngày ghi dưới khoảng kỳ ở khối bung",,"Cột ""Chu kỳ"" vẫn ghi ""Tuần""/""Tháng"" chép từ hợp đồng, nhưng độ dài THẬT bằng thời hạn được phép trả hàng — đọc số ngày ở khối bung mới đúng",,,,,,
+16_020_013,Nút Hoá đơn NCC chỉ hiện trên kỳ đã chốt hoặc đã ghi nợ,Vai: province; có kỳ Đang gom số và kỳ Đã chốt,1. So cột nút của hai dòng kỳ,,"Kỳ ""Đang gom số"": chỉ có nút ""Chi tiết"". Kỳ ""Đã chốt""/""Đã ghi nợ"": có thêm ""Hoá đơn NCC"", bấm vào mở thẳng thẻ hoá đơn",,,,,,
+16_020_014,Vai điểm bán không sinh kỳ được,Vai: shop,1. Mở /debt-reconciliation/consignment-recon bằng tài khoản điểm bán,,"Bị chặn hoặc không có nút ""Sinh kỳ từ hợp đồng""",,,,,,
+16_020_015,Vai cấp xã không sinh kỳ được,Vai: ward,1. Mở /debt-reconciliation/consignment-recon bằng tài khoản cấp xã,,"Bị chặn hoặc không có nút ""Sinh kỳ từ hợp đồng""",,,,,,
+16_020_016,Mở kỳ của đơn vị khác bị chặn,Vai: province; biết id kỳ thuộc tỉnh khác,1. Mở /debt-reconciliation/consignment-recon/<id> của kỳ đó,,"Hệ thống trả lỗi nguyên văn ""Kỳ đối soát này thuộc đơn vị khác, bạn không có quyền xem""",,,,,,
+16_020_017,Mở kỳ không tồn tại,Vai: province,1. Mở /debt-reconciliation/consignment-recon/999999999,,"Hệ thống trả lỗi dạng ""Không tìm thấy kỳ đối soát id=999999999""",,,,,,
+,030 — Rà soát số liệu và chốt kỳ đối soát,,,,,,,,,,
+16_030_001,Màn chi tiết kỳ có đủ sáu thẻ,Vai: province; có kỳ Đang gom số,"1. Bấm ""Chi tiết"" trên dòng kỳ;
+2. Đọc danh sách thẻ",,"Đủ 6 thẻ: ""Nhập xuất tồn"", ""Nhập trong kỳ (N)"", ""Xuất trong kỳ (N)"", ""Chênh lệch kiểm kê (N)"", ""Hoá đơn NCC"", ""Cần rà soát (N)""",,,,,,
+16_030_002,"Tiêu đề màn nêu khoảng kỳ, tên NCC và trạng thái",Vai: province; có kỳ,"1. Mở Chi tiết kỳ;
+2. Đọc phần tiêu đề",,"Hiện khoảng kỳ, tên nhà cung cấp và nhãn trạng thái kỳ",,,,,,
+16_030_003,Lọc đơn vị áp cho cả bảng số liệu lẫn khối cảnh báo,Vai: province; kỳ có số liệu ở nhiều đơn vị,"1. Chọn một đơn vị ở ô ""Đơn vị"";
+2. Đọc bảng NXT và thẻ ""Cần rà soát""",,Cả bảng số liệu và số cảnh báo đều thu hẹp theo đơn vị đã chọn,,,,,,
+16_030_004,Thẻ Nhập xuất tồn đối chiếu được năm cột số lượng,Vai: province; kỳ có phát sinh,"1. Mở thẻ ""Nhập xuất tồn"";
+2. Đọc một dòng mặt hàng",,"Có đủ ""Tồn đầu"", ""Nhập"", ""Xuất bán"", ""Tồn cuối"", ""SL phải trả""",,,,,,
+16_030_005,Cột Xuất tặng và Trả hàng KHÔNG tính vào số phải trả,Vai: province; kỳ có hàng tặng kèm CTKM và hàng trả NCC,"1. Đọc cột ""Xuất tặng"", ""Trả hàng"" và ""SL phải trả"" của một mặt hàng",,"""SL phải trả"" KHÔNG cộng ""Xuất tặng"" và ""Trả hàng"" dù hai lượng đó đã xuất kho. Con số đúng để trả tiền NCC là ""SL phải trả""",,,,,,
+16_030_006,Ô tiền để trống khác hẳn số 0,Vai: province; kỳ có dòng chưa đóng dấu giá,1. Đọc ô tiền của dòng đó,,"Ô hiện dấu gạch ngang nghĩa là **chưa đóng dấu giá**, KHÔNG phải giá trị 0. Giá chỉ lấy từ dấu giá đóng lúc lập phiếu, hệ thống không tra lại bảng giá NCC",,,,,,
+16_030_007,Hai nhãn Nguồn giá có hệ quả khác hẳn nhau,Vai: province; kỳ có dòng chưa có giá và dòng không rõ nguồn giá,"1. Đọc cột ""Nguồn giá"" của hai dòng đó",,"Nhãn ĐỎ ""Chưa có giá — chặn chốt kỳ"" thật sự chặn chốt; nhãn VÀNG ""Không rõ nguồn giá"" chỉ cảnh báo, vẫn chốt kỳ được bình thường",,,,,,
+16_030_008,Thẻ Nhập trong kỳ hiện đủ cột chứng từ,Vai: province; kỳ có chứng từ nhập,"1. Mở thẻ ""Nhập trong kỳ""",,"Mỗi dòng có Sản phẩm, Nghiệp vụ, Đơn vị, Kho / Điểm bán, Đơn giá, Nguồn giá, Thuế, Thành tiền trước thuế, Thành tiền sau thuế, Số dòng",,,,,,
+16_030_009,"Cột Số dòng là số dòng chứng từ đã gộp, không phải số đơn hàng",Vai: province; kỳ có dòng gộp,"1. Đọc cột ""Số dòng"" và tooltip của nó",,"Là COUNT dòng chứng từ đã gộp (trùng nhau về mặt hàng, nghiệp vụ, đơn vị, kho, đơn giá), KHÔNG phải số đơn hàng",,,,,,
+16_030_010,Nhãn nhiều mức thuế cảnh báo phải tách dòng,Vai: province; mặt hàng phát sinh nhiều mức thuế suất trong kỳ,"1. Đọc cột ""Thuế"" của mặt hàng đó",,"Nhãn vàng kèm chữ ""nhiều mức"" và tooltip dạng ""Mặt hàng này phát sinh <N> mức thuế suất khác nhau trong kỳ""; con số hiển thị chỉ là một trong số đó ⇒ phải tách dòng trước khi đưa NCC ký",,,,,,
+16_030_011,Thẻ Xuất trong kỳ hiện đủ loại nghiệp vụ,Vai: province; kỳ có chứng từ xuất,"1. Mở thẻ ""Xuất trong kỳ""",,"Có các dòng bán ra, trả nhà cung cấp, xuất huỷ và điều chuyển",,,,,,
+16_030_012,Thiếu hụt kiểm kê tính là hàng phải thanh toán,Vai: province; kỳ có chênh lệch kiểm kê ÂM,"1. Mở thẻ ""Chênh lệch kiểm kê"";
+2. Đọc dòng âm;
+3. So với số trên hoá đơn kỳ",,Số ÂM được tính là **hàng phải thanh toán** cho NCC ( không xem là mất mát nội bộ) và nằm trên hoá đơn kỳ,,,,,,
+16_030_013,"Thừa kiểm kê chỉ điều chỉnh số lượng, không phát sinh tiền",Vai: province; kỳ có chênh lệch kiểm kê DƯƠNG,"1. Đọc dòng dương ở thẻ ""Chênh lệch kiểm kê"";
+2. So tổng tiền kỳ trước và sau",,Số dương chỉ điều chỉnh số lượng; tổng tiền phải trả NCC KHÔNG đổi,,,,,,
+16_030_014,Thẻ Cần rà soát có đúng hai bảng cảnh báo,Vai: province; kỳ có cảnh báo,"1. Mở thẻ ""Cần rà soát""",,"Đúng 2 bảng: đơn bán lệch giữa thẻ kho và sổ công nợ, và các dòng chưa gán được nhà cung cấp. Số trên nhãn thẻ = tổng số dòng của hai bảng",,,,,,
+16_030_015,Bung số liệu một mặt hàng theo cây đơn vị,Vai: province; kỳ có số liệu ở nhiều tỉnh,"1. Ở thẻ NXT bấm ""Xem theo tỉnh"" cuối dòng mặt hàng;
+2. Bấm mũi tên đầu dòng để bung xã;
+3. Bấm ""Xem điểm bán""",,Bung được ba cấp tỉnh → xã → điểm bán; tổng mỗi cấp bằng tổng cấp dưới,,,,,,
+16_030_016,Dữ liệu bung tới điểm bán chỉ lưu 2 năm,Vai: province; có kỳ cũ hơn 2 năm,"1. Mở kỳ cũ;
+2. Bấm ""Xem điểm bán""",,"Hệ thống báo rõ dữ liệu đã bị dọn; chỉ xem được số ở cấp đơn vị. Số trên BIÊN BẢN đối soát vẫn đầy đủ, không giới hạn thời gian",,,,,,
+16_030_017,Hộp xác nhận chốt kỳ nêu rõ số cảnh báo còn tồn,Vai: province; kỳ Đang gom số còn 2 đơn lệch và 3 dòng chưa gán NCC,"1. Bấm ""Chốt kỳ"";
+2. Đọc hộp xác nhận",,"Hộp tiêu đề ""Chốt kỳ đối soát?"" nêu ""Kỳ đã chốt không mở lại được"" và dòng đỏ dạng ""Đang còn 2 đơn lệch đối chiếu và 3 dòng chưa gán nhà cung cấp. Nên xử lý trước khi chốt.""; hai nút ""Chốt kỳ"" / ""Để sau""",,,,,,
+16_030_018,🔴 Cảnh báo rà soát KHÔNG chặn chốt kỳ,Vai: province; kỳ Đang gom số còn cảnh báo chưa xử lý,"1. Bấm ""Chốt kỳ"";
+2. Bấm ""Chốt kỳ"" trong hộp xác nhận",,"Kỳ VẪN CHỐT ĐƯỢC dù còn đơn lệch và dòng chưa gán NCC — hộp chỉ khuyên ""Nên xử lý trước khi chốt"".",,,,,,
+16_030_019,Chốt kỳ khi còn mặt hàng chưa đóng dấu giá bị chặn,Vai: province; kỳ Đang gom số có mặt hàng chưa đóng dấu giá hợp đồng,"1. Bấm ""Chốt kỳ"";
+2. Xác nhận",,"Hệ thống chặn với thông báo dạng ""Không chốt được kỳ <id>: <N>... chưa đóng dấu giá hợp đồng (...). Khai giá cho hợp đồng rồi lập lại chứng từ, hoặc rà chỉ tiêu B3.5 — biên bản không được có đơn giá 0.""",,,,,,
+16_030_020,🔴 Chốt kỳ bị chặn khi Thẻ kho đã bị dọn theo tiering,"Vai: province; kỳ cũ, dữ liệu Thẻ kho trước ngày bắt đầu kỳ đã bị dọn","1. Bấm ""Chốt kỳ"";
+2. Xác nhận",,"Hệ thống chặn với thông báo dạng ""Không chốt được kỳ <id>: tồn đầu kỳ phải cộng dồn từ Thẻ kho, nhưng dữ liệu Thẻ kho trước ngày <ngày> đã bị dọn theo cấu hình tiering...""",,,,,,
+16_030_021,Khoản nghĩa vụ đã thuộc kỳ khác chặn chốt,Vai: province; có khoản nghĩa vụ bị gắn sai kỳ,"1. Bấm ""Chốt kỳ"";
+2. Xác nhận",,"Hệ thống chặn với thông báo dạng ""Khoản nghĩa vụ id=<x> đã thuộc kỳ đối soát khác (id=<y>), không thể gắn vào kỳ <z>. Kiểm tra lại biên kỳ trước khi chốt.""",,,,,,
+16_030_022,Chốt kỳ thành công đổi trạng thái khoản nghĩa vụ,Vai: province; kỳ Đang gom số đã sạch dữ liệu,"1. Bấm ""Chốt kỳ"";
+2. Xác nhận",,"Báo ""Đã chốt kỳ đối soát""; nhãn kỳ đổi thành ""Đã chốt""; nút chốt chuyển thành trạng thái không bấm được; các khoản nghĩa vụ của kỳ chuyển sang ""Đã đối soát"" trên màn công nợ ký gửi",,,,,,
+16_030_023,Chốt kỳ là thao tác một chiều,Vai: province; kỳ đã chốt,1. Tìm chức năng mở lại kỳ hoặc xoá biên bản,,Không có chức năng nào mở lại kỳ; biên bản đã đóng băng không xoá được,,,,,,
+16_030_024,Kỳ đã chốt không còn nút chốt,Vai: province; có kỳ Đang gom số và kỳ Đã chốt,"1. Mở Chi tiết từng kỳ;
+2. Tìm nút ""Chốt kỳ""",,"Chỉ kỳ ""Đang gom số"" có nút chốt bấm được; kỳ ""Đã chốt"" và ""Đã ghi nợ"" thì nút bị khoá",,,,,,
+16_030_025,Sửa ngày chứng từ về kỳ đã chốt bị chặn,"Vai: province; kỳ đã chốt, có phiếu thuộc kỳ đó","1. Mở phiếu thuộc kỳ đã chốt;
+2. Sửa ngày chứng từ",,"Bị chặn với thông báo nguyên văn ""Kỳ đối soát đã khoá, không thể sửa ngày chứng từ về kỳ này"" (CONSIGN-003)",,,,,,
+16_030_026,Bật lọc đơn vị lúc chốt không ảnh hưởng biên bản,Vai: province; kỳ có số liệu nhiều đơn vị,"1. Chọn một đơn vị ở ô lọc;
+2. Chốt kỳ;
+3. Đọc biên bản",,Biên bản vẫn lấy TOÀN BỘ phát sinh của kỳ và loại mọi giao dịch điều chuyển nội bộ — không bị bộ lọc cắt,,,,,,
+16_030_027,Đóng hộp xác nhận chốt kỳ không chốt gì,Vai: province; kỳ Đang gom số,"1. Bấm ""Chốt kỳ"";
+2. Bấm ""Để sau""",,"Kỳ vẫn ở ""Đang gom số""; không phát sinh POST /consignment-recon/periods/<id>/lock",,,,,,
+16_030_028,Chốt kỳ thất bại hiện thông báo backend,Vai: province; kỳ chưa đủ điều kiện,"1. Bấm ""Chốt kỳ"";
+2. Xác nhận",,"Hiện chuỗi lỗi của Hệ thống; khi Hệ thống không trả chuỗi thì hiện ""Không chốt được kỳ đối soát""",,,,,,
+,040 — Ghi nhận hoá đơn nhà cung cấp cho kỳ,,,,,,,,,,
+16_040_001,Kỳ chưa chốt thì thẻ hoá đơn chỉ hiện ô nhắc,Vai: province; kỳ Đang gom số,"1. Mở Chi tiết kỳ;
+2. Mở thẻ ""Hoá đơn NCC""",,"Chỉ hiện dải Alert ""Kỳ chưa chốt"" với mô tả ""Nhà cung cấp chỉ xuất hoá đơn sau khi ba bên (Bưu điện tỉnh · Tổng công ty · Nhà cung cấp) đối soát xong. Hãy chốt kỳ trước, rồi tải hoá đơn vào đây.""; KHÔNG có vùng tải tệp",,,,,,
+16_040_002,Gọi API tải hoá đơn cho kỳ chưa chốt bị chặn,Vai: province; kỳ Đang gom số,1. Gọi POST /consignment-invoices/upload cho kỳ đó,,"Hệ thống trả lỗi dạng ""Kỳ <id> chưa chốt nên chưa nhận hoá đơn nhà cung cấp. Hãy chốt kỳ trước — hoá đơn phải khớp với biên bản đã đóng băng.""",,,,,,
+16_040_003,Tải hoá đơn XML cho kỳ đã chốt,Vai: province; kỳ Đã chốt và có tệp XML hoá đơn NCC,"1. Bấm ""Hoá đơn NCC"" trên dòng kỳ đã chốt;
+2. Kéo tệp XML vào vùng ""Kéo thả hoặc bấm để tải hoá đơn XML vào kỳ này""",,"Báo ""Đã ghi nhận hoá đơn""; hoá đơn xuất hiện trong bảng; ô thông báo đầu thẻ cho biết kết quả đối chiếu",,,,,,
+16_040_004,Tải hoá đơn đã tồn tại hiện cảnh báo,"Vai: province; đã tải một hoá đơn, tải lại đúng tệp đó",1. Kéo lại tệp XML đã tải,,"Hiện cảnh báo (message.warning) với nội dung do Hệ thống trả về, không phải thông báo thành công; hoá đơn không bị nhân đôi",,,,,,
+16_040_005,Tệp XML hỏng bị chặn,Vai: province; có tệp XML hỏng,1. Kéo tệp đó vào vùng tải,,"Hệ thống trả lỗi dạng ""Không đọc được file XML hoá đơn: <lý do>""",,,,,,
+16_040_006,Ba kết quả đối chiếu hiển thị đúng nhãn,"Vai: province; có kỳ khớp, kỳ lệch và kỳ chưa kiểm","1. Đọc ô thông báo đầu thẻ ""Hoá đơn NCC"" của từng kỳ",,"Đúng bộ 3: ""Khớp biên bản"" (xanh), ""Lệch biên bản"" (đỏ, kèm nội dung lệch), ""Chưa kiểm"" (xám)",,,,,,
+16_040_007,Bảng hoá đơn của kỳ hiện đủ chín cột,Vai: province; kỳ đã có hoá đơn,1. Đọc tiêu đề cột bảng hoá đơn,,"Đủ 9 cột: Loại, Ký hiệu / Số, Ngày hoá đơn, Hạn thanh toán, Điều chỉnh, Trước thuế, Thuế, Tổng tiền, Nguồn (cộng cột nút Xoá)",,,,,,
+16_040_008,Hạn thanh toán trống khi hợp đồng chưa khai ngày trả chậm,Vai: province; hợp đồng chưa khai số ngày trả chậm,"1. Đọc cột ""Hạn thanh toán""",,"Cột hiện nhãn ""Chưa xác định hạn""; hệ thống KHÔNG chặn việc gì",,,,,,
+16_040_009,Cột Nguồn phân biệt ba đường vào hệ thống,Vai: province; kỳ có hoá đơn từ nhiều nguồn,"1. Đọc cột ""Nguồn""",,"Phân biệt ""Email"" (hệ thống tự đọc từ thư NCC), ""Tải lên"" (tự tải tệp XML), ""Nhập tay"" (gõ trực tiếp)",,,,,,
+16_040_010,Một kỳ nhiều hoá đơn thì đối chiếu TỔNG của cả cụm,Vai: province; kỳ có 1 hoá đơn gốc và 1 hoá đơn điều chỉnh,"1. Đọc ô kết quả đối chiếu;
+2. So tổng cột ""Tổng tiền"" với số biên bản",,"Hệ thống đối chiếu **tổng của cả cụm** với biên bản, KHÔNG đối chiếu từng dòng hàng",,,,,,
+16_040_011,Kiểm tổng lại sau khi NCC sửa hoá đơn,"Vai: province; kỳ đã có hoá đơn, vừa nạp thêm hoá đơn điều chỉnh","1. Bấm ""Kiểm tổng lại""",,Hệ thống chạy lại đối chiếu và cập nhật ô kết quả đầu thẻ,,,,,,
+16_040_012,Xoá hoá đơn nhập sai,"Vai: province; kỳ Đã chốt chưa ghi nợ, có hoá đơn","1. Bấm ""Xoá"" cuối dòng hoá đơn;
+2. Xác nhận trong hộp ""Xoá hoá đơn nhà cung cấp?""",,"Báo ""Đã xoá hoá đơn""; hệ thống kiểm tổng lại ngay, không để số cũ nằm lại",,,,,,
+16_040_013,Kỳ đã ghi nợ thì nút Xoá bị khoá,Vai: province; kỳ ở trạng thái Đã ghi nợ,"1. Đọc nút ""Xoá"" ở cuối dòng hoá đơn",,Nút ở trạng thái disabled,,,,,,
+16_040_014,Gọi API xoá hoá đơn của kỳ đã ghi nợ bị chặn,Vai: province; kỳ Đã ghi nợ,1. Gọi DELETE /consignment-invoices/<id>,,"Hệ thống trả lỗi dạng ""Kỳ <id> đã ghi nợ chính thức nên không xoá được hoá đơn. Nếu cần điều chỉnh, hãy nạp hoá đơn điều chỉnh tăng/giảm.""",,,,,,
+16_040_015,Xoá hoá đơn không tồn tại bị chặn,Vai: province,1. Gọi DELETE /consignment-invoices/999999999,,"Hệ thống trả lỗi dạng ""Không tìm thấy hoá đơn id=999999999""",,,,,,
+16_040_016,Vùng tải tệp bị khoá khi kỳ đã ghi nợ,Vai: province; kỳ Đã ghi nợ,"1. Mở thẻ ""Hoá đơn NCC"";
+2. Thử kéo tệp vào vùng tải",,Vùng tải ở trạng thái disabled,,,,,,
+16_040_017,Nút Tải XML mẫu để test chỉ dùng khi kiểm thử,Vai: province,"1. Bấm ""Tải XML mẫu để test""",,Sinh tệp mẫu ngay tại máy; nghiệp vụ THẬT luôn dùng tệp XML do NCC phát hành — không dùng tệp mẫu cho kỳ thật,,,,,,
+16_040_018,Đóng hộp xác nhận xoá hoá đơn không xoá gì,Vai: province; kỳ có hoá đơn,"1. Bấm ""Xoá"";
+2. Bấm Huỷ trong hộp xác nhận",,Hoá đơn vẫn còn trong bảng; không phát sinh DELETE,,,,,,
+16_040_019,🔴 Chưa xác định được ngưỡng dung sai khi kiểm tổng,Vai: province; hoá đơn lệch biên bản vài đồng do làm tròn,"1. Tải hoá đơn lệch 5 đồng so với biên bản;
+2. Đọc kết quả đối chiếu",,Chưa chốt kỳ vọng — ghi nhận thực tế: hệ thống chấp nhận lệch tổng tới mức nào thì vẫn cho là khớp. Đối chiếu tham khảo: nghiệp vụ hoá đơn hàng trả lại dùng dung sai 10 đồng.,,,,,,
+,050 — Ghi nợ chính thức cho kỳ,,,,,,,,,,
+16_050_001,Nút Ghi nợ chính thức bị khoá khi chưa Khớp biên bản,Vai: province; kỳ Đã chốt có hoá đơn nhưng kết quả LỆCH,"1. Mở thẻ ""Hoá đơn NCC"";
+2. Đọc nút ""Ghi nợ chính thức""",,Nút ở trạng thái disabled,,,,,,
+16_050_002,Gọi API ghi nợ khi hoá đơn LỆCH bị chặn,Vai: province; kỳ Đã chốt có hoá đơn LỆCH,1. Gọi POST /consignment-recon/periods/<id>/post-debt,,"Hệ thống chặn với thông báo dạng ""Kỳ <id> có hoá đơn NCC LỆCH so với biên bản đã chốt: <nội dung>. Liên hệ NCC xuất lại hoặc xuất hoá đơn điều chỉnh, rồi kiểm tổng lại trước khi ghi nợ.""",,,,,,
+16_050_003,Ghi nợ khi kỳ chưa chốt bị chặn,Vai: province; kỳ Đang gom số,1. Gọi POST.../post-debt,,"Hệ thống chặn với thông báo dạng ""Kỳ <id> đang ở trạng thái <status>. Phải CHỐT KỲ (đóng băng biên bản) trước khi ghi nợ chính thức.""",,,,,,
+16_050_004,Ghi nợ khi kỳ chưa có hoá đơn bị chặn,Vai: province; kỳ Đã chốt chưa có hoá đơn nào,1. Gọi POST.../post-debt,,"Hệ thống chặn với thông báo dạng ""Kỳ <id> chưa có hoá đơn NCC. Nhà cung cấp xuất hoá đơn sau khi 3 bên đối soát xong — hãy tải hoá đơn vào kỳ này trước khi ghi nợ chính thức.""",,,,,,
+16_050_005,Màn xác nhận ghi nợ có đúng một trường bắt buộc,"Vai: province; kỳ Đã chốt, hoá đơn Khớp biên bản","1. Bấm ""Ghi nợ chính thức""",,"Mở màn ""Ghi nợ chính thức cho kỳ này?"" có ô cảnh báo vàng nêu hệ quả và đúng MỘT trường bắt buộc ""Kho ghi nợ"" (có dấu * đỏ)",,,,,,
+16_050_006,Nhãn mỗi kho gồm tên kho và số chứng từ,Vai: province; đơn vị có ≥ 2 kho hợp lệ,"1. Bung ô ""Kho ghi nợ""",,Mỗi lựa chọn hiện tên kho kèm số chứng từ kho đó đã phát sinh với NCC của kỳ,,,,,,
+16_050_007,Chỉ một kho hợp lệ thì hệ thống điền sẵn,Vai: province; đơn vị chỉ có 1 kho phát sinh chứng từ với NCC của kỳ,"1. Mở màn ghi nợ;
+2. Đọc ô ""Kho ghi nợ""",,Ô được điền sẵn kho đó,,,,,,
+16_050_008,"Nhiều kho hợp lệ thì để trống, không đoán hộ",Vai: province; đơn vị có ≥ 2 kho hợp lệ,"1. Mở màn ghi nợ;
+2. Đọc ô ""Kho ghi nợ""",,"Ô kho để TRỐNG, hệ thống không tự điền hộ — người dùng phải chọn kho, vì chọn sai kho thì khoản nợ không hiện trên màn công nợ của kho đúng.",,,,,,
+16_050_009,Bỏ trống Kho ghi nợ bị chặn,"Vai: province; kỳ đủ điều kiện ghi nợ, nhiều kho hợp lệ","1. Để trống ""Kho ghi nợ"";
+2. Bấm ""Ghi nợ chính thức""",,"Báo lỗi nguyên văn ""Chọn kho ghi nợ trước khi ghi nợ chính thức""; không phát sinh POST post-debt",,,,,,
+16_050_010,Kỳ không có kho hợp lệ hiện thông báo riêng,Vai: province; kỳ mà không kho nào phát sinh chứng từ với NCC,"1. Mở màn ghi nợ;
+2. Đọc ô ""Kho ghi nợ""",,"Hiện dòng nguyên văn ""Không có kho nào đã phát sinh chứng từ với nhà cung cấp của kỳ này""",,,,,,
+16_050_011,Ô Kho ghi nợ chỉ liệt kê kho của đúng đơn vị đứng tên kỳ,"Vai: province; tỉnh có kho, tỉnh khác cũng có kho","1. Bung ô ""Kho ghi nợ""",,Chỉ có kho thuộc đúng đơn vị đứng tên kỳ; không có kho của đơn vị khác,,,,,,
+16_050_012,Chọn kho của đơn vị khác bị chặn,Vai: province; biết shopId kho thuộc đơn vị khác,1. Gọi POST.../post-debt với shopGhiNo là kho đơn vị khác,,Hệ thống chặn và nói rõ kho đó thuộc đơn vị nào,,,,,,
+16_050_013,Ghi nợ chính thức thành công,"Vai: province; kỳ Đã chốt, hoá đơn Khớp biên bản, đã chọn kho","1. Chọn ""Kho ghi nợ"";
+2. Bấm ""Ghi nợ chính thức""",,"Báo ""Đã ghi nợ chính thức""; khoản nợ vào sổ công nợ NCC và cộng vào dư nợ của kho đã chọn; nhãn kỳ đổi thành ""Đã ghi nợ""; nút chuyển sang trạng thái không bấm được",,,,,,
+16_050_014,Ghi nợ lại kỳ đã ghi nợ thì bỏ qua,Vai: province; kỳ Đã ghi nợ,1. Gọi POST.../post-debt lần thứ hai,,Hệ thống bỏ qua và thông báo kỳ đã ghi nợ trước đó; KHÔNG tạo dữ liệu trùng,,,,,,
+16_050_015,Kỳ không phát sinh nghĩa vụ thì khép kỳ mà không ghi nợ,Vai: province; kỳ có phần giảm trừ lớn hơn phần phát sinh,"1. Bấm ""Ghi nợ chính thức""",,"Hệ thống KHÔNG ghi nợ nhưng vẫn khép kỳ — đây là trường hợp bình thường, không cần xử lý thêm",,,,,,
+16_050_016,Bút toán sau ghi nợ không sửa trực tiếp được,Vai: province; kỳ đã ghi nợ,"1. Mở sổ kế toán tìm bút toán vừa sinh;
+2. Thử sửa",,"Không sửa trực tiếp được, chỉ điều chỉnh bằng chứng từ điều chỉnh (§8.5 cấm sửa trực tiếp bút toán đã sinh)",,,,,,
+16_050_017,Sau khi ghi nợ thì lập được lệnh chi cho NCC,Vai: province; NCC không còn khoản nào Tạm tính,"1. Mở màn Công nợ NCC;
+2. Lập lệnh chi cho NCC đó",,"Lệnh chi lập được — điều kiện mở khoá là NCC KHÔNG còn khoản nào ở trạng thái ""Tạm tính"", kể cả khoản thuộc kỳ khác",,,,,,
+16_050_018,Đóng màn xác nhận ghi nợ không ghi gì,Vai: province; kỳ đủ điều kiện,"1. Bấm ""Ghi nợ chính thức"";
+2. Đóng màn xác nhận bằng dấu X",,"Nhãn kỳ vẫn ""Đã chốt""; không phát sinh POST post-debt; không sinh bút toán",,,,,,
+16_050_019,Ghi nợ cho kỳ không tồn tại bị chặn,Vai: province,1. Gọi POST /consignment-recon/periods/999999999/post-debt,,"Hệ thống trả lỗi dạng ""Không tìm thấy kỳ đối soát id=999999999""",,,,,,
+16_050_020,Vai điểm bán không ghi nợ được,Vai: shop,"1. Mở Chi tiết kỳ bằng tài khoản điểm bán;
+2. Tìm nút ""Ghi nợ chính thức""",,"Không vào được màn chi tiết kỳ, hoặc không có nút ghi nợ",,,,,,
+,"060 — Xem, đối chiếu và xuất báo cáo hàng ký gửi",,,,,,,,,,
+16_060_001,Màn Báo cáo hàng ký gửi mở được và nêu rõ là số quản trị,Vai: province,1. Vào Báo cáo › Báo cáo hàng ký gửi (/report/consignment),,"Đầu màn có ô nhãn nêu đây là số quản trị đọc từ kho dữ liệu báo cáo, kèm thời điểm dữ liệu đã cập nhật tới",,,,,,
+16_060_002,Nhãn chuyển đỏ khi dữ liệu trễ quá ngưỡng,Vai: province; kho dữ liệu báo cáo đang trễ,"1. Mở báo cáo;
+2. Đọc ô nhãn đầu màn",,Ô nhãn chuyển màu ĐỎ kèm số phút chậm. Đây KHÔNG phải số liệu sai — phải đợi rồi xem lại,,,,,,
+16_060_003,Báo cáo có đúng bốn thẻ,Vai: province; có dữ liệu,"1. Bấm ""Xem báo cáo"";
+2. Đọc danh sách thẻ",,"Đúng 4 thẻ: ""Nhập - Xuất - Tồn"", ""Sản lượng bán"", ""Hiệu suất hàng hoá"", ""Tồn theo NCC / đơn vị""",,,,,,
+16_060_004,Chọn Theo kỳ đối soát tự đặt đúng biên kỳ,Vai: province; đã có kỳ đối soát được sinh,"1. Chọn một kỳ ở ô ""Theo kỳ đối soát""",,"Ô ""Khoảng thời gian"" tự đặt đúng bằng biên kỳ và báo cáo khoá theo nhà cung cấp của kỳ đó",,,,,,
+16_060_005,Sửa khoảng thời gian tay thì bỏ chọn kỳ,Vai: province; đang chọn theo kỳ,"1. Sửa ""Khoảng thời gian"" bằng tay",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+16_060_006,Bỏ trống khoảng thời gian bị chặn,Vai: province,"1. Xoá ô ""Khoảng thời gian"";
+2. Bấm ""Xem báo cáo""",,"Cảnh báo nguyên văn ""Vui lòng chọn khoảng thời gian""",,,,,,
+16_060_007,Từ ngày lớn hơn Đến ngày bị chặn,Vai: province,"1. Đặt ""Từ ngày"" muộn hơn ""Đến ngày"";
+2. Bấm ""Xem báo cáo""",,"Cảnh báo nguyên văn: ""Từ ngày"" phải nhỏ hơn hoặc bằng ""Đến ngày""",,,,,,
+16_060_008,Chọn Bưu điện xã thì chỉ được tối đa một Bưu điện tỉnh,Vai: province,"1. Chọn Bưu điện xã ở ô ""Phạm vi tổ chức"";
+2. Chọn 2 Bưu điện tỉnh;
+3. Bấm ""Xem báo cáo""",,"Cảnh báo nguyên văn ""Khi đã chọn Bưu điện xã thì chỉ được chọn tối đa một Bưu điện tỉnh""; KHÔNG truy vấn",,,,,,
+16_060_009,Không xác định được chuỗi thì chặn xem báo cáo,Vai: province; tài khoản thiếu chainId,"1. Bấm ""Xem báo cáo""",,"Báo lỗi nguyên văn ""Không xác định được chuỗi""",,,,,,
+16_060_010,Lọc thêm bằng nhóm hàng và mã hàng,Vai: province; có dữ liệu nhiều nhóm hàng,"1. Chọn ""Nhóm hàng"";
+2. Gõ ""Mã hàng / SKU / tên hàng"";
+3. Bấm ""Xem báo cáo""",,Kết quả thoả đồng thời cả hai điều kiện,,,,,,
+16_060_011,Thẻ Nhập - Xuất - Tồn tách rõ từng loại nhập xuất,Vai: province; có dữ liệu,"1. Mở thẻ ""Nhập - Xuất - Tồn""",,"Mỗi dòng là một mặt hàng tại một điểm bán; nhập tách theo mua NCC, khách trả, điều chuyển; xuất tách theo bán, hàng tặng, trả NCC, huỷ hỏng, điều chuyển",,,,,,
+16_060_012,Thẻ Sản lượng bán hiện bán thuần,Vai: province; có dữ liệu bán,"1. Mở thẻ ""Sản lượng bán""",,"Mỗi mặt hàng có xuất bán, khách trả và bán thuần; bán thuần = xuất bán − khách trả",,,,,,
+16_060_013,Thẻ Hiệu suất hàng hoá hiện vòng quay và xếp loại,Vai: province; có dữ liệu,"1. Mở thẻ ""Hiệu suất hàng hoá""",,"Mỗi mặt hàng có vòng quay, số ngày tồn (DIO) và xếp loại",,,,,,
+16_060_014,Đổi ngưỡng xếp loại đổi kết quả phân nhãn,Vai: province; có dữ liệu,"1. Sửa ô ""Bán chạy = top (%)"";
+2. Sửa ô ""Chậm luân chuyển khi DIO ≥ (ngày)"";
+3. Đọc lại cột Xếp loại",,Xếp loại của từng mặt hàng đổi theo đúng ngưỡng mới,,,,,,
+16_060_015,Vòng quay hiện gạch ngang khi tồn bình quân bằng 0,Vai: province; có mặt hàng tồn bình quân = 0,"1. Đọc cột ""Vòng quay"" của mặt hàng đó",,"Hiện dấu gạch ngang vì không tính được, KHÔNG hiện 0",,,,,,
+16_060_016,Ô tiền trống kèm nhãn nghĩa là chưa khai giá,Vai: province; có mặt hàng chưa khai giá,1. Đọc ô tiền của mặt hàng đó,,"Ô trống kèm nhãn nghĩa là **chưa khai giá**, KHÔNG phải giá trị bằng 0",,,,,,
+16_060_017,Bung tồn theo cây đơn vị tới điểm bán,Vai: province; có dữ liệu nhiều tỉnh,"1. Mở thẻ ""Tồn theo NCC / đơn vị"";
+2. Chọn ""Đơn vị tổ chức"" ở ô ""Nhóm theo"";
+3. Bấm dấu cộng cấp tỉnh;
+4. Bấm ""Xem điểm bán"" trên dòng cấp xã",,Bung được ba cấp tỉnh → xã → điểm bán; tổng mỗi cấp bằng tổng cấp dưới,,,,,,
+16_060_018,Cột Tồn quá hạn trả cảnh báo mất quyền trả hàng,Vai: province; có đơn vị còn tồn vượt thời hạn trả theo hợp đồng,"1. Mở thẻ ""Tồn theo NCC / đơn vị"";
+2. Đọc cột ""Tồn quá hạn trả""",,Cột cho biết lượng hàng đã vượt thời hạn được phép trả theo hợp đồng của đơn vị đó,,,,,,
+16_060_019,Đối chiếu báo cáo với màn Đối soát kỳ khi KHỚP,Vai: province; đang xem theo một kỳ đã chốt,"1. Bấm ""Đối chiếu với màn Đối soát kỳ""",,"Kết quả ""Khớp""; tổng của báo cáo BẰNG tổng trên biên bản kỳ",,,,,,
+16_060_020,Đối chiếu ra LỆCH thì liệt kê từng mặt hàng,Vai: province; kỳ có số báo cáo lệch số đối soát,"1. Bấm ""Đối chiếu với màn Đối soát kỳ""",,"Hiện bảng liệt kê từng mặt hàng kèm số báo cáo, số đối soát và mức chênh. Cùng một kỳ thì hai bên PHẢI bằng nhau — lệch là có lỗi cần rà",,,,,,
+16_060_021,Kết quả Chưa đối chiếu được khác hẳn Khớp,Vai: province; kỳ chưa đủ điều kiện đối chiếu,"1. Bấm ""Đối chiếu với màn Đối soát kỳ""",,"Kết quả ""Chưa đối chiếu được"" kèm lý do trong ô thông báo — KHÔNG được đọc thành ""Khớp""",,,,,,
+16_060_022,Số báo cáo có độ trễ so với biên bản,Vai: province; vừa phát sinh giao dịch,"1. Bán một đơn hàng ký gửi;
+2. Mở ngay báo cáo lọc theo khoảng ngày đó",,"Báo cáo đọc từ kho dữ liệu báo cáo nên có ĐỘ TRỄ. Số đưa NCC ký luôn lấy từ **biên bản** ở màn chi tiết kỳ, không lấy từ báo cáo",,,,,,
+16_060_023,Xuất Excel chỉ dùng được ở thẻ Nhập - Xuất - Tồn,Vai: province; có dữ liệu,"1. Đứng ở thẻ ""Sản lượng bán"";
+2. Đọc nút ""Xuất Excel"";
+3. Chuyển về thẻ ""Nhập - Xuất - Tồn""",,"Nút disabled ở ba thẻ còn lại; chỉ bật ở thẻ ""Nhập - Xuất - Tồn""",,,,,,
+16_060_024,Xuất Excel tải được tệp khớp số dòng,Vai: province; có dữ liệu,"1. Ở thẻ ""Nhập - Xuất - Tồn"" bấm ""Xuất Excel""",,Tệp.xlsx tải về mở được; số dòng khớp số dòng đang hiển thị,,,,,,
+16_060_025,Xuất Excel thất bại hiện thông báo backend,Vai: province,"1. Bấm ""Xuất Excel"" khi API lỗi",,"Hiện chuỗi lỗi của Hệ thống; khi Hệ thống không trả chuỗi thì hiện ""Không xuất được file Excel""",,,,,,
+16_060_026,Báo cáo gọi đúng service prefix /report,Vai: province,"1. Mở báo cáo;
+2. Bấm ""Xem báo cáo"";
+3. Đọc request trong Network",,Báo cáo nhập - xuất - tồn hàng ký gửi tải được dữ liệu và hiển thị đúng kỳ đã chọn.,,,,,,
+16_060_027,Vai điểm bán xem được báo cáo trong phạm vi mình,Vai: shop,1. Mở /report/consignment bằng tài khoản điểm bán,,Báo cáo mở được; chỉ thấy số của chính điểm bán mình,,,,,,
+16_060_028,Kỳ không trùng đầu tháng nên gõ tay dễ lệch biên kỳ,Vai: province; có kỳ chạy 26/06–25/07,"1. Chọn kỳ đó ở ô ""Theo kỳ đối soát"";
+2. Ghi lại tổng;
+3. Đổi sang gõ tay 01/07–31/07;
+4. So tổng",,"Hai tổng KHÁC nhau. Muốn so với biên bản thì phải chọn ô ""Theo kỳ đối soát"", không gõ tay khoảng ngày",,,,,,
+,070 — *(không có trong HDSD)* ghi nợ nội bộ TCT↔BĐT,,,,,,,,,,
+16_070_001,🔴 Ghi nợ nội bộ TCT ↔ Bưu điện tỉnh sau khi ghi nợ NCC,Vai: tct; kỳ ở trạng thái Đã ghi nợ với NCC,1. Gọi POST /consignment-recon/periods/<id>/post-internal-debt,,Sinh công nợ nội bộ TCT ↔ BĐT.,,,,,,
+16_070_002,Ghi nợ nội bộ khi chưa ghi nợ chính thức bị chặn,"Vai: tct; kỳ mới Đã chốt, chưa ghi nợ NCC",1. Gọi POST.../post-internal-debt,,"Hệ thống chặn với thông báo dạng ""Kỳ <id> đang ở trạng thái <status>. Phải GHI NỢ CHÍNH THỨC với NCC trước, rồi mới ghi công nợ nội bộ TCT ↔ BĐT.""",,,,,,
+16_070_003,Ghi nợ nội bộ cho kỳ không tồn tại bị chặn,Vai: tct,1. Gọi POST /consignment-recon/periods/999999999/post-internal-debt,,"Hệ thống trả lỗi dạng ""Không tìm thấy kỳ đối soát id=999999999""",,,,,,
+16_070_004,🔴 TCT không ăn chênh trên hàng ký gửi,Vai: tct; kỳ đã ghi nợ nội bộ,1. So số công nợ nội bộ TCT ↔ BĐT với số nợ NCC của kỳ,,"Hai số BẰNG NHAU — TCT chỉ chuyển tiếp nghĩa vụ của NCC, không ăn chênh lệch",,,,,,

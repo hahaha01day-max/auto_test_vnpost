@@ -1,0 +1,14 @@
+{
+  "spec": {
+    "tests/cau-hinh-validate.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/settings"
+      ],
+      "fe": [],
+      "ghiBu": true,
+      "ghiChu": "Đo DOM bằng probe (drawer Cấu hình…, #decimal, #configValue); chưa đọc file FE cụ thể"
+    }
+  }
+}

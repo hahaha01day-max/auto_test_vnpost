@@ -1,0 +1,1040 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ward",
+        "name": "ward",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.ward\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 125,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:18:19.152Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "don-hang.shop.spec.js",
+      "file": "don-hang.shop.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "24 · Công nợ theo đơn hàng (vai shop, CHẶN GHI)",
+          "file": "don-hang.shop.spec.js",
+          "line": 47,
+          "column": 6,
+          "specs": [
+            {
+              "title": "24_010_006 — Tìm nhân viên bằng số điện thoại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "keyword",
+                      "description": "84955425924"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15005,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:18:19.581Z",
+                      "annotations": [
+                        {
+                          "type": "keyword",
+                          "description": "84955425924"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-74b59-hân-viên-bằng-số-điện-thoại-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-c315d15341afe45eb35a",
+              "file": "don-hang.shop.spec.js",
+              "line": 57,
+              "column": 2
+            },
+            {
+              "title": "24_010_009 — Tìm với từ khoá có khoảng trắng thừa ở đầu và cuối",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "keyword gửi",
+                      "description": "\"  AUTO7_GDV  \""
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16540,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:18:34.657Z",
+                      "annotations": [
+                        {
+                          "type": "keyword gửi",
+                          "description": "\"  AUTO7_GDV  \""
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-6272a-ng-trắng-thừa-ở-đầu-và-cuối-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-c382357b416917fe3c87",
+              "file": "don-hang.shop.spec.js",
+              "line": 68,
+              "column": 2
+            },
+            {
+              "title": "24_010_010 — Tìm với chữ hoa chữ thường và không dấu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 76920,
+                      "error": {
+                        "message": "TimeoutError: page.waitForResponse: Timeout 60000ms exceeded while waiting for event \"response\"",
+                        "stack": "TimeoutError: page.waitForResponse: Timeout 60000ms exceeded while waiting for event \"response\"\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/debt-page.js:45:19)\n    at go (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:42:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:84:27",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/debt-page.js",
+                          "column": 19,
+                          "line": 45
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mdebt-page.js:45\n\n  43 | /** 🔴 Đăng ký chờ TRƯỚC hành động. Bỏ qua 401 đầu tiên do storageState cũ. */\n  44 | async function taiLaiBoi(page, hanhDong, { timeout = 60_000 } = {}) {\n> 45 | \tconst cho = page.waitForResponse((r) => r.url().includes(API) && r.status() !== 401, { timeout });\n     | \t                 ^\n  46 | \tawait hanhDong();\n  47 | \tconst res = await cho;\n  48 | \tawait page.waitForTimeout(1_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/debt-page.js",
+                            "column": 19,
+                            "line": 45
+                          },
+                          "message": "TimeoutError: page.waitForResponse: Timeout 60000ms exceeded while waiting for event \"response\"\n\n   at debt-page.js:45\n\n  43 | /** 🔴 Đăng ký chờ TRƯỚC hành động. Bỏ qua 401 đầu tiên do storageState cũ. */\n  44 | async function taiLaiBoi(page, hanhDong, { timeout = 60_000 } = {}) {\n> 45 | \tconst cho = page.waitForResponse((r) => r.url().includes(API) && r.status() !== 401, { timeout });\n     | \t                 ^\n  46 | \tawait hanhDong();\n  47 | \tconst res = await cho;\n  48 | \tawait page.waitForTimeout(1_000);\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/debt-page.js:45:19)\n    at go (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:42:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:84:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:18:51.203Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-2b520-hoa-chữ-thường-và-không-dấu-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-2b520-hoa-chữ-thường-và-không-dấu-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-2b520-hoa-chữ-thường-và-không-dấu-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-2b520-hoa-chữ-thường-và-không-dấu-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/debt-page.js",
+                        "column": 19,
+                        "line": 45
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-3f646cbeb74c0f281fda",
+              "file": "don-hang.shop.spec.js",
+              "line": 78,
+              "column": 2
+            },
+            {
+              "title": "24_010_011 — Xoá rỗng ô tìm kiếm sau khi đã lọc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16203,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:20:08.746Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-03baa-g-ô-tìm-kiếm-sau-khi-đã-lọc-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-3a24197fb3fd92cb2613",
+              "file": "don-hang.shop.spec.js",
+              "line": 91,
+              "column": 2
+            },
+            {
+              "title": "24_010_012 — Nhập toàn khoảng trắng liên tiếp vào ô tìm kiếm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "keyword gửi",
+                      "description": "\"     \""
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14461,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:20:25.025Z",
+                      "annotations": [
+                        {
+                          "type": "keyword gửi",
+                          "description": "\"     \""
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-ed050-ng-liên-tiếp-vào-ô-tìm-kiếm-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-6701437ef745d74f1e29",
+              "file": "don-hang.shop.spec.js",
+              "line": 105,
+              "column": 2
+            },
+            {
+              "title": "24_010_015 — Lọc theo khoảng ngày",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "tham số",
+                      "description": "{\"page\":\"0\",\"size\":\"10\",\"begin\":\"1735664400000\",\"end\":\"1738256400000\"}"
+                    },
+                    {
+                      "type": "tổng",
+                      "description": "1770000 → 0 (tháng 1 năm trước)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14100,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:20:39.492Z",
+                      "annotations": [
+                        {
+                          "type": "tham số",
+                          "description": "{\"page\":\"0\",\"size\":\"10\",\"begin\":\"1735664400000\",\"end\":\"1738256400000\"}"
+                        },
+                        {
+                          "type": "tổng",
+                          "description": "1770000 → 0 (tháng 1 năm trước)"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-25804--015-—-Lọc-theo-khoảng-ngày-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-704f5f2248e2fa7ecb0f",
+              "file": "don-hang.shop.spec.js",
+              "line": 113,
+              "column": 2
+            },
+            {
+              "title": "24_010_017 — Đổi điểm bán khi đang ở trang 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Danh sách chỉ có 1 trang (vai điểm bán cũng KHÔNG có ô chọn điểm bán) — case cần vai trên điểm bán + > 3 trang.",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                        "line": 140,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 12876,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:20:53.597Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Danh sách chỉ có 1 trang (vai điểm bán cũng KHÔNG có ô chọn điểm bán) — case cần vai trên điểm bán + > 3 trang.",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                            "line": 140,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-6bb0b-điểm-bán-khi-đang-ở-trang-3-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-12d956e65777e6d2d0ec",
+              "file": "don-hang.shop.spec.js",
+              "line": 137,
+              "column": 2
+            },
+            {
+              "title": "24_010_018 — Quyền của nút Xuất Excel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13121,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:21:06.480Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-2ce4d--—-Quyền-của-nút-Xuất-Excel-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-3237659828538a0dd0b2",
+              "file": "don-hang.shop.spec.js",
+              "line": 143,
+              "column": 2
+            },
+            {
+              "title": "24_030_001 — Chi tiết công nợ nhân viên bung được lịch sử trả tiền",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Chi tiết nhân viên không có phiếu nào trong 30 ngày.",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                        "line": 157,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 15968,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:21:19.605Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Chi tiết nhân viên không có phiếu nào trong 30 ngày.",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                            "line": 157,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-474ce--bung-được-lịch-sử-trả-tiền-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-3590d7f225333b3feabe",
+              "file": "don-hang.shop.spec.js",
+              "line": 150,
+              "column": 2
+            },
+            {
+              "title": "24_030_002 — Nhân viên làm ở một điểm bán thì ô cửa hàng không đổi được",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 31607,
+                      "error": {
+                        "message": "TimeoutError: locator.innerText: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select').filter({ hasText: /AUTO|Cửa hàng/ }).first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.innerText: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select').filter({ hasText: /AUTO|Cửa hàng/ }).first()\u001b[22m\n\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:174:38",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                          "column": 38,
+                          "line": 174
+                        },
+                        "snippet": "  172 | \t\tawait page.waitForTimeout(3_000);\n  173 | \t\tconst o = page.locator('.ant-select').filter({ hasText: /AUTO|Cửa hàng/ }).first();\n> 174 | \t\tghiChu('ô cửa hàng', chuan(await o.innerText()));\n      | \t\t                                   ^\n  175 | \t\tawait expect(o, 'Nhân viên một điểm bán mà ô cửa hàng đổi được').toHaveClass(/ant-select-disabled/);\n  176 | \t\texpect(chuan(await o.innerText()), 'Ô cửa hàng không hiện sẵn tên điểm bán').not.toBe('');\n  177 | \t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                            "column": 38,
+                            "line": 174
+                          },
+                          "message": "TimeoutError: locator.innerText: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select').filter({ hasText: /AUTO|Cửa hàng/ }).first()\u001b[22m\n\n\n  172 | \t\tawait page.waitForTimeout(3_000);\n  173 | \t\tconst o = page.locator('.ant-select').filter({ hasText: /AUTO|Cửa hàng/ }).first();\n> 174 | \t\tghiChu('ô cửa hàng', chuan(await o.innerText()));\n      | \t\t                                   ^\n  175 | \t\tawait expect(o, 'Nhân viên một điểm bán mà ô cửa hàng đổi được').toHaveClass(/ant-select-disabled/);\n  176 | \t\texpect(chuan(await o.innerText()), 'Ô cửa hàng không hiện sẵn tên điểm bán').not.toBe('');\n  177 | \t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:174:38"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:21:35.585Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-8f071-ì-ô-cửa-hàng-không-đổi-được-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-8f071-ì-ô-cửa-hàng-không-đổi-được-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-8f071-ì-ô-cửa-hàng-không-đổi-được-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-8f071-ì-ô-cửa-hàng-không-đổi-được-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                        "column": 38,
+                        "line": 174
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-e97a4d91d6a05388fe9b",
+              "file": "don-hang.shop.spec.js",
+              "line": 167,
+              "column": 2
+            },
+            {
+              "title": "24_030_003 — Lọc theo trạng thái Còn nợ hoặc Đã thanh toán",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 31140,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select').filter({ hasText: 'Trạng thái' }).first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select').filter({ hasText: 'Trạng thái' }).first()\u001b[22m\n\n    at chon (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:189:14)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:195:19",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                          "column": 14,
+                          "line": 189
+                        },
+                        "snippet": "  187 | \t\tconst chon = async (nhan) => {\n  188 | \t\t\tconst cho = page.waitForResponse((r) => /employee\\/get-debt-detail/.test(r.url()), { timeout: 20_000 });\n> 189 | \t\t\tawait oTt.click();\n      | \t\t\t          ^\n  190 | \t\t\tawait page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').filter({ hasText: nhan }).click();\n  191 | \t\t\tconst r = await cho;\n  192 | \t\t\tawait page.waitForTimeout(1_500);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                            "column": 14,
+                            "line": 189
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select').filter({ hasText: 'Trạng thái' }).first()\u001b[22m\n\n\n  187 | \t\tconst chon = async (nhan) => {\n  188 | \t\t\tconst cho = page.waitForResponse((r) => /employee\\/get-debt-detail/.test(r.url()), { timeout: 20_000 });\n> 189 | \t\t\tawait oTt.click();\n      | \t\t\t          ^\n  190 | \t\t\tawait page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').filter({ hasText: nhan }).click();\n  191 | \t\t\tconst r = await cho;\n  192 | \t\t\tawait page.waitForTimeout(1_500);\n    at chon (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:189:14)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:195:19"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                            "column": 21,
+                            "line": 188
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n  186 | \t\tconst oTt = page.locator('.ant-select').filter({ hasText: 'Trạng thái' }).first();\n  187 | \t\tconst chon = async (nhan) => {\n> 188 | \t\t\tconst cho = page.waitForResponse((r) => /employee\\/get-debt-detail/.test(r.url()), { timeout: 20_000 });\n      | \t\t\t                 ^\n  189 | \t\t\tawait oTt.click();\n  190 | \t\t\tawait page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').filter({ hasText: nhan }).click();\n  191 | \t\t\tconst r = await cho;\n    at chon (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:188:21)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:195:19"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:22:07.769Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-958cb-i-Còn-nợ-hoặc-Đã-thanh-toán-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-958cb-i-Còn-nợ-hoặc-Đã-thanh-toán-shop/error-context.md"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-958cb-i-Còn-nợ-hoặc-Đã-thanh-toán-shop/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-958cb-i-Còn-nợ-hoặc-Đã-thanh-toán-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                        "column": 14,
+                        "line": 189
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-df80a35ce06140bf8b99",
+              "file": "don-hang.shop.spec.js",
+              "line": 179,
+              "column": 2
+            },
+            {
+              "title": "24_020_001 — Xuất Excel lấy đúng điều kiện đang hiển thị",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "xuất",
+                      "description": "401 {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"} · params {\"shopId\":\"68151\"} · Không có quyền truy cập"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 14045,
+                      "error": {
+                        "message": "Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:220:146",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                          "column": 146,
+                          "line": 220
+                        },
+                        "snippet": "  218 | \t\t\tconst tb = chuan((await page.locator('.ant-message-notice, .ant-notification-notice').allInnerTexts()).join(' | '));\n  219 | \t\t\tghiChu('xuất', `${r.status()} ${JSON.stringify(b?.status)} · params ${JSON.stringify(thamSo(r))} · ${tb}`);\n> 220 | \t\t\texpect(String(b?.status?.code), `Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): ${JSON.stringify(b?.status)}`).toBe('200');\n      | \t\t\t                                                                                                                                              ^\n  221 | \t\t\tif (tu) expect(thamSo(r).keyword).toBe(tu);\n  222 | \t\t\texpect(tb).toContain('Đã tạo yêu cầu xuất công nợ nhân viên');\n  223 | \t\t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                            "column": 146,
+                            "line": 220
+                          },
+                          "message": "Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  218 | \t\t\tconst tb = chuan((await page.locator('.ant-message-notice, .ant-notification-notice').allInnerTexts()).join(' | '));\n  219 | \t\t\tghiChu('xuất', `${r.status()} ${JSON.stringify(b?.status)} · params ${JSON.stringify(thamSo(r))} · ${tb}`);\n> 220 | \t\t\texpect(String(b?.status?.code), `Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): ${JSON.stringify(b?.status)}`).toBe('200');\n      | \t\t\t                                                                                                                                              ^\n  221 | \t\t\tif (tu) expect(thamSo(r).keyword).toBe(tu);\n  222 | \t\t\texpect(tb).toContain('Đã tạo yêu cầu xuất công nợ nhân viên');\n  223 | \t\t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:220:146"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:22:39.483Z",
+                      "annotations": [
+                        {
+                          "type": "xuất",
+                          "description": "401 {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"} · params {\"shopId\":\"68151\"} · Không có quyền truy cập"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-e115f-úng-điều-kiện-đang-hiển-thị-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-e115f-úng-điều-kiện-đang-hiển-thị-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-e115f-úng-điều-kiện-đang-hiển-thị-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-e115f-úng-điều-kiện-đang-hiển-thị-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                        "column": 146,
+                        "line": 220
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-8dc6d8ca69b51e2be1ef",
+              "file": "don-hang.shop.spec.js",
+              "line": 208,
+              "column": 3
+            },
+            {
+              "title": "24_020_002 — Bộ lọc không ra dòng nào vẫn tạo tệp chỉ có tiêu đề",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "xuất",
+                      "description": "401 {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"} · params {\"shopId\":\"68151\",\"keyword\":\"ZZZ_KHONG_CO_NHAN_VIEN\"} · Không có quyền truy cập"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15582,
+                      "error": {
+                        "message": "Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:220:146",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                          "column": 146,
+                          "line": 220
+                        },
+                        "snippet": "  218 | \t\t\tconst tb = chuan((await page.locator('.ant-message-notice, .ant-notification-notice').allInnerTexts()).join(' | '));\n  219 | \t\t\tghiChu('xuất', `${r.status()} ${JSON.stringify(b?.status)} · params ${JSON.stringify(thamSo(r))} · ${tb}`);\n> 220 | \t\t\texpect(String(b?.status?.code), `Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): ${JSON.stringify(b?.status)}`).toBe('200');\n      | \t\t\t                                                                                                                                              ^\n  221 | \t\t\tif (tu) expect(thamSo(r).keyword).toBe(tu);\n  222 | \t\t\texpect(tb).toContain('Đã tạo yêu cầu xuất công nợ nhân viên');\n  223 | \t\t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                            "column": 146,
+                            "line": 220
+                          },
+                          "message": "Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  218 | \t\t\tconst tb = chuan((await page.locator('.ant-message-notice, .ant-notification-notice').allInnerTexts()).join(' | '));\n  219 | \t\t\tghiChu('xuất', `${r.status()} ${JSON.stringify(b?.status)} · params ${JSON.stringify(thamSo(r))} · ${tb}`);\n> 220 | \t\t\texpect(String(b?.status?.code), `Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): ${JSON.stringify(b?.status)}`).toBe('200');\n      | \t\t\t                                                                                                                                              ^\n  221 | \t\t\tif (tu) expect(thamSo(r).keyword).toBe(tu);\n  222 | \t\t\texpect(tb).toContain('Đã tạo yêu cầu xuất công nợ nhân viên');\n  223 | \t\t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js:220:146"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:22:54.086Z",
+                      "annotations": [
+                        {
+                          "type": "xuất",
+                          "description": "401 {\"code\":\"SSHOP-401\",\"message\":\"Không có quyền truy cập\",\"label\":\"ERROR_UNAUTHORIZED\"} · params {\"shopId\":\"68151\",\"keyword\":\"ZZZ_KHONG_CO_NHAN_VIEN\"} · Không có quyền truy cập"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-29026--vẫn-tạo-tệp-chỉ-có-tiêu-đề-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-29026--vẫn-tạo-tệp-chỉ-có-tiêu-đề-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-29026--vẫn-tạo-tệp-chỉ-có-tiêu-đề-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/don-hang.shop-24-·-Công-nợ-29026--vẫn-tạo-tệp-chỉ-có-tiêu-đề-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/don-hang.shop.spec.js",
+                        "column": 146,
+                        "line": 220
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b83f2a8afd506d212569-e6215e377ae0b9dc35dd",
+              "file": "don-hang.shop.spec.js",
+              "line": 208,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T12:18:18.814Z",
+    "duration": 291167.76,
+    "expected": 7,
+    "skipped": 2,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

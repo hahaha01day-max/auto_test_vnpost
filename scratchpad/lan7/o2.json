@@ -1,0 +1,2114 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/(vnpost-org|org\\.standard)\\.(playwright\\.)?spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 116,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:12.692Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:12.884Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_manager (Quản lý Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 97,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:12.977Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-08f00-ager-Quản-lý-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f8f6b4aac219a09d704d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai ward (Bưu điện Xã)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.078Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-ward-Bưu-điện-Xã--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2d044c7a88341d00c4f3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.162Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop (Nhân viên điểm bán seed (AUTO_SHOP))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 119,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.263Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-edaa4-ên-điểm-bán-seed-AUTO-SHOP--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-21ce4f527c1091b58dc7",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop2 (Nhân viên điểm bán seed (tồn đầu kỳ))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.387Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2bfc1-n-điểm-bán-seed-tồn-đầu-kỳ--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f0046fb8388f9f34d70f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_gdv (Giao dịch viên điểm bán seed)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 88,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.480Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-f973e-ao-dịch-viên-điểm-bán-seed--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-279e54db4435dd5b2b7f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_cung_ung (Quản lý cung ứng Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 87,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.571Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-a2b0c-n-lý-cung-ứng-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-dc10cbea1b53e3115f7d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_ke_toan (Kế toán Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 104,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.663Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-b0041--toan-Kế-toán-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-810d07ac3b8180d5b8cd",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_marketing (Marketing Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 87,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.770Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-1d056-ing-Marketing-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-ad384e1a74119c1d55a2",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_cung_ung (Quản lý cung ứng Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 88,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.862Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-4db67--ung-Quản-lý-cung-ứng-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-3fc0d4a301467ed2a16a",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_ke_toan (Kế toán Tỉnh (vai PROVINCE_ACCOUNTANT))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 94,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:13.953Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2a396-nh-vai-PROVINCE-ACCOUNTANT--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2ad6ba1bf90fea1e4edf",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop_nhan_vien (Nhân viên khác điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 87,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:14.052Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-bd39c-en-Nhân-viên-khác-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2720920e7dafcea1da21",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 117,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:51:14.146Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "don-vi-ghi.tct.spec.js",
+      "file": "don-vi-ghi.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "32 · Đơn vị tổ chức — ghi trên cây rác (vai tct)",
+          "file": "don-vi-ghi.tct.spec.js",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "32 don rac — xoá nút A7MH32* còn sót",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đã xoá",
+                      "description": "(không có)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13889,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:51:14.537Z",
+                      "annotations": [
+                        {
+                          "type": "đã xoá",
+                          "description": "(không có)"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-cba01-ac-—-xoá-nút-A7MH32-còn-sót-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-4a5807ef826bed989ab8",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 38,
+              "column": 2
+            },
+            {
+              "title": "32_100_001 — Thêm đơn vị cấp Tổng công ty với mã hợp lệ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "chọn cha VNPOST ⇒ \"Loại đơn vị / Cấp tổ chức\" = \"Bưu điện tỉnh\" (ô khoá: true)"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "(không còn gì)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 18212,
+                      "error": {
+                        "message": "Error: Không có cách tạo đơn vị cấp \"Tổng công ty\" từ form (cấp tự suy = cấp dưới của cha, ô cấp bị khoá)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Tổng công ty\"\u001b[39m\nReceived: \u001b[31m\"Bưu điện tỉnh\"\u001b[39m",
+                        "stack": "Error: Không có cách tạo đơn vị cấp \"Tổng công ty\" từ form (cấp tự suy = cấp dưới của cha, ô cấp bị khoá)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Tổng công ty\"\u001b[39m\nReceived: \u001b[31m\"Bưu điện tỉnh\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:57:118",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                          "column": 118,
+                          "line": 57
+                        },
+                        "snippet": "  55 | \t\t\tawait dr.getByRole('button', { name: 'Huỷ' }).click();\n  56 | \t\t\t// Cấp tự suy theo cha, ô cấp bị khoá; cha chọn được chỉ TCT/tỉnh ⇒ không có đường tạo đơn vị cấp TCT từ giao diện.\n> 57 | \t\t\texpect(cap, 'Không có cách tạo đơn vị cấp \"Tổng công ty\" từ form (cấp tự suy = cấp dưới của cha, ô cấp bị khoá)').toBe('Tổng công ty');\n     | \t\t\t                                                                                                                  ^\n  58 | \t\t} finally { await don(ps, ma); }\n  59 | \t});\n  60 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                            "column": 118,
+                            "line": 57
+                          },
+                          "message": "Error: Không có cách tạo đơn vị cấp \"Tổng công ty\" từ form (cấp tự suy = cấp dưới của cha, ô cấp bị khoá)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Tổng công ty\"\u001b[39m\nReceived: \u001b[31m\"Bưu điện tỉnh\"\u001b[39m\n\n  55 | \t\t\tawait dr.getByRole('button', { name: 'Huỷ' }).click();\n  56 | \t\t\t// Cấp tự suy theo cha, ô cấp bị khoá; cha chọn được chỉ TCT/tỉnh ⇒ không có đường tạo đơn vị cấp TCT từ giao diện.\n> 57 | \t\t\texpect(cap, 'Không có cách tạo đơn vị cấp \"Tổng công ty\" từ form (cấp tự suy = cấp dưới của cha, ô cấp bị khoá)').toBe('Tổng công ty');\n     | \t\t\t                                                                                                                  ^\n  58 | \t\t} finally { await don(ps, ma); }\n  59 | \t});\n  60 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:57:118"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:51:28.505Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "chọn cha VNPOST ⇒ \"Loại đơn vị / Cấp tổ chức\" = \"Bưu điện tỉnh\" (ô khoá: true)"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "(không còn gì)"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-17b42--Tổng-công-ty-với-mã-hợp-lệ-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-17b42--Tổng-công-ty-với-mã-hợp-lệ-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-17b42--Tổng-công-ty-với-mã-hợp-lệ-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-17b42--Tổng-công-ty-với-mã-hợp-lệ-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                        "column": 118,
+                        "line": 57
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-6a147adc794a582ff3e5",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 43,
+              "column": 2
+            },
+            {
+              "title": "32_100_002 — Thêm đơn vị cấp Bưu điện Tỉnh với mã hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "{\"unitCode\":\"A7MH32T521360\",\"unitName\":\"A7MH32 Tỉnh UI 521360\",\"unitType\":\"BUU_DIEN_TINH\",\"parentCode\":\"VNPOST\",\"taxCode\":null,\"effectiveDate\":null,\"status\":true} · 200 · tb \"Thêm đơn vị tổ chức thành công\" · DB {\"ma\":\"A7MH32T521360\",\"ten\":\"A7MH32 Tỉnh UI 521360\",\"loai\":\"BUU_DIEN_TINH\",\"cha\":\"VNPOST\",\"tree\":\"VNPOST/A7MH32T521360\",\"xoa\":false,\"status\":\"1\"}"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T521360→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25019,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:51:47.437Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "{\"unitCode\":\"A7MH32T521360\",\"unitName\":\"A7MH32 Tỉnh UI 521360\",\"unitType\":\"BUU_DIEN_TINH\",\"parentCode\":\"VNPOST\",\"taxCode\":null,\"effectiveDate\":null,\"status\":true} · 200 · tb \"Thêm đơn vị tổ chức thành công\" · DB {\"ma\":\"A7MH32T521360\",\"ten\":\"A7MH32 Tỉnh UI 521360\",\"loai\":\"BUU_DIEN_TINH\",\"cha\":\"VNPOST\",\"tree\":\"VNPOST/A7MH32T521360\",\"xoa\":false,\"status\":\"1\"}"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T521360→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-95683-Bưu-điện-Tỉnh-với-mã-hợp-lệ-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-90099456ba6d280c2ab5",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 61,
+              "column": 2
+            },
+            {
+              "title": "32_100_003 — Thêm đơn vị cấp Bưu điện Xã với mã hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "{\"unitCode\":\"A7MH32T54635501\",\"unitName\":\"A7MH32 Xã UI\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T546355\",\"effectiveDate\":null,\"status\":true,\"taxCode\":null} · tb \"Thêm đơn vị tổ chức thành công\" · DB {\"ma\":\"A7MH32T54635501\",\"ten\":\"A7MH32 Xã UI\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T546355\",\"tree\":\"VNPOST/A7MH32T546355/A7MH32T54635501\",\"xoa\":false,\"status\":\"1\"}"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T54635501→200 · A7MH32T546355→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25593,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:52:12.547Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "{\"unitCode\":\"A7MH32T54635501\",\"unitName\":\"A7MH32 Xã UI\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T546355\",\"effectiveDate\":null,\"status\":true,\"taxCode\":null} · tb \"Thêm đơn vị tổ chức thành công\" · DB {\"ma\":\"A7MH32T54635501\",\"ten\":\"A7MH32 Xã UI\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T546355\",\"tree\":\"VNPOST/A7MH32T546355/A7MH32T54635501\",\"xoa\":false,\"status\":\"1\"}"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T54635501→200 · A7MH32T546355→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-5e14b-p-Bưu-điện-Xã-với-mã-hợp-lệ-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-b13ad07bf702d90ea975",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 81,
+              "column": 2
+            },
+            {
+              "title": "32_100_004 — Nhập mã cấp Tỉnh ngoài khoảng quy định",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "200 Thành công · tb \"Thêm đơn vị tổ chức thành công\" · lỗi ô "
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T9999999999999999999999999999999999999999→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 20127,
+                      "error": {
+                        "message": "Error: Tạo được tỉnh với mã 47 ký tự — không có kiểm khoảng/độ dài mã\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: Tạo được tỉnh với mã 47 ký tự — không có kiểm khoảng/độ dài mã\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:113:102",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                          "column": 102,
+                          "line": 113
+                        },
+                        "snippet": "  111 | \t\t\tconst kq = await o.xacNhan(page, dr);\n  112 | \t\t\tghiChu('nguyên văn', `${kq.res?.status?.code} ${kq.res?.status?.message} · tb \"${kq.tb}\" · lỗi ô ${kq.loi.join(' | ')}`);\n> 113 | \t\t\texpect(o.conSong(ma), `Tạo được tỉnh với mã ${ma.length} ký tự — không có kiểm khoảng/độ dài mã`).toBe(false);\n      | \t\t\t                                                                                                  ^\n  114 | \t\t} finally { await don(ps, ma); }\n  115 | \t});\n  116 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                            "column": 102,
+                            "line": 113
+                          },
+                          "message": "Error: Tạo được tỉnh với mã 47 ký tự — không có kiểm khoảng/độ dài mã\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  111 | \t\t\tconst kq = await o.xacNhan(page, dr);\n  112 | \t\t\tghiChu('nguyên văn', `${kq.res?.status?.code} ${kq.res?.status?.message} · tb \"${kq.tb}\" · lỗi ô ${kq.loi.join(' | ')}`);\n> 113 | \t\t\texpect(o.conSong(ma), `Tạo được tỉnh với mã ${ma.length} ký tự — không có kiểm khoảng/độ dài mã`).toBe(false);\n      | \t\t\t                                                                                                  ^\n  114 | \t\t} finally { await don(ps, ma); }\n  115 | \t});\n  116 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:113:102"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:52:38.145Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "200 Thành công · tb \"Thêm đơn vị tổ chức thành công\" · lỗi ô "
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T9999999999999999999999999999999999999999→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-52617--Tỉnh-ngoài-khoảng-quy-định-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-52617--Tỉnh-ngoài-khoảng-quy-định-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-52617--Tỉnh-ngoài-khoảng-quy-định-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-52617--Tỉnh-ngoài-khoảng-quy-định-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                        "column": 102,
+                        "line": 113
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-6ea406f5ddf60fecc74a",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 101,
+              "column": 2
+            },
+            {
+              "title": "32_100_005 — Nhập mã đơn vị trùng mã đã tồn tại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "SSHOP-409 Mã đơn vị đã tồn tại trong hệ thống (kzwnVy) · tb \"Mã đơn vị đã tồn tại trong hệ thống (kzwnVy)\""
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19465,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:52:59.011Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "SSHOP-409 Mã đơn vị đã tồn tại trong hệ thống (kzwnVy) · tb \"Mã đơn vị đã tồn tại trong hệ thống (kzwnVy)\""
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-a582c--đơn-vị-trùng-mã-đã-tồn-tại-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-3282e8c139d3a614fd1e",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 117,
+              "column": 2
+            },
+            {
+              "title": "32_100_006 — Bỏ trống Đơn vị cha khi thêm mới",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "Vui lòng chọn đơn vị cha"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26401,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:53:18.567Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "Vui lòng chọn đơn vị cha"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-30a80-ống-Đơn-vị-cha-khi-thêm-mới-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-8f698ee1d419340652a8",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 132,
+              "column": 2
+            },
+            {
+              "title": "32_110_001 — Thêm đơn vị con qua icon hover trên cây",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "cha nạp sẵn \"A7MH32T639238 - A7MH32 Tỉnh rác 639238\" · {\"unitCode\":\"A7MH32T63923801\",\"unitName\":\"A7MH32 Xã hover\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T639238\",\"effectiveDate\":null,\"status\":true,\"taxCode\":null} · tb \"Thêm đơn vị tổ chức thành công\" · DB {\"ma\":\"A7MH32T63923801\",\"ten\":\"A7MH32 Xã hover\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T639238\",\"tree\":\"VNPOST/A7MH32T639238/A7MH32T63923801\",\"xoa\":false,\"status\":\"1\"}"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T63923801→200 · A7MH32T639238→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 28329,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:53:44.973Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "cha nạp sẵn \"A7MH32T639238 - A7MH32 Tỉnh rác 639238\" · {\"unitCode\":\"A7MH32T63923801\",\"unitName\":\"A7MH32 Xã hover\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T639238\",\"effectiveDate\":null,\"status\":true,\"taxCode\":null} · tb \"Thêm đơn vị tổ chức thành công\" · DB {\"ma\":\"A7MH32T63923801\",\"ten\":\"A7MH32 Xã hover\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T639238\",\"tree\":\"VNPOST/A7MH32T639238/A7MH32T63923801\",\"xoa\":false,\"status\":\"1\"}"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T63923801→200 · A7MH32T639238→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-460b0-con-qua-icon-hover-trên-cây-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-4b3435d3b47341234ace",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 158,
+              "column": 2
+            },
+            {
+              "title": "32_110_002 — Tạo nhanh đơn vị cấp Xã với hai trường",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "cấp nạp sẵn \"Bưu điện xã\" · body {\"unitCode\":\"A7MH32T66712502\",\"unitName\":\"A7MH32 Xã 2 trường\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T667125\",\"effectiveDate\":null,\"status\":true,\"taxCode\":null} · tb \"Thêm đơn vị tổ chức thành công\" · lỗi "
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T66712502→200 · A7MH32T667125→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 28015,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:54:13.308Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "cấp nạp sẵn \"Bưu điện xã\" · body {\"unitCode\":\"A7MH32T66712502\",\"unitName\":\"A7MH32 Xã 2 trường\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T667125\",\"effectiveDate\":null,\"status\":true,\"taxCode\":null} · tb \"Thêm đơn vị tổ chức thành công\" · lỗi "
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T66712502→200 · A7MH32T667125→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-ed325-ơn-vị-cấp-Xã-với-hai-trường-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-55e227b76ed76d63b917",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 178,
+              "column": 2
+            },
+            {
+              "title": "32_110_003 — Bỏ trống Mã đơn vị khi thêm nhanh từ cây",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "Vui lòng nhập mã đơn vị"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T694983→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 37240,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:54:41.330Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "Vui lòng nhập mã đơn vị"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T694983→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-99136-ơn-vị-khi-thêm-nhanh-từ-cây-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-b2d45d9735504f8f7bec",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 203,
+              "column": 3
+            },
+            {
+              "title": "32_110_004 — Bỏ trống Tên đơn vị khi thêm nhanh từ cây",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "Vui lòng nhập tên đơn vị"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T732231→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 37212,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:55:18.577Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "Vui lòng nhập tên đơn vị"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T732231→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-38310-ơn-vị-khi-thêm-nhanh-từ-cây-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-c57bfbad23907ab7bb96",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 203,
+              "column": 3
+            },
+            {
+              "title": "32_110_005 — Nhập mã cấp Xã trùng mã đã tồn tại khi thêm nhanh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "Mã đơn vị đã tồn tại trong hệ thống (RxfINT) · tb \"Mã đơn vị đã tồn tại trong hệ thống (RxfINT)\""
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T77050701→200 · A7MH32T770507→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 28729,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:55:55.817Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "Mã đơn vị đã tồn tại trong hệ thống (RxfINT) · tb \"Mã đơn vị đã tồn tại trong hệ thống (RxfINT)\""
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T77050701→200 · A7MH32T770507→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-e4004-ã-đã-tồn-tại-khi-thêm-nhanh-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-023394077dc20c6df591",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 221,
+              "column": 2
+            },
+            {
+              "title": "32_120_001 — Cây phân cấp hiển thị trạng thái rỗng khi chưa có đơn vị",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "1 nút · chữ: Mô hình tổ chức Nhập từ excel Xuất excel Thêm đơn vị Lọc theo vùng Trạng thái Vui lòng chọn một đơn vị để xem chi tiết"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17010,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:248:13",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                          "column": 13,
+                          "line": 248
+                        },
+                        "snippet": "  246 | \t\tconst chu = o.chuan(await o.khung(page).innerText()).slice(0, 300);\n  247 | \t\tghiChu('đo', `${n} nút · chữ: ${chu}`);\n> 248 | \t\texpect(n).toBe(0);\n      | \t\t          ^\n  249 | \t\texpect(await rong.count() > 0 || /Không có|Trống|No data|Không tìm thấy/i.test(chu), 'Cây rỗng mà KHÔNG có dòng chữ trạng thái rỗng').toBe(true);\n  250 | \t});\n  251 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                            "column": 13,
+                            "line": 248
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  246 | \t\tconst chu = o.chuan(await o.khung(page).innerText()).slice(0, 300);\n  247 | \t\tghiChu('đo', `${n} nút · chữ: ${chu}`);\n> 248 | \t\texpect(n).toBe(0);\n      | \t\t          ^\n  249 | \t\texpect(await rong.count() > 0 || /Không có|Trống|No data|Không tìm thấy/i.test(chu), 'Cây rỗng mà KHÔNG có dòng chữ trạng thái rỗng').toBe(true);\n  250 | \t});\n  251 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:248:13"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:56:24.554Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "1 nút · chữ: Mô hình tổ chức Nhập từ excel Xuất excel Thêm đơn vị Lọc theo vùng Trạng thái Vui lòng chọn một đơn vị để xem chi tiết"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-2e8e6-hái-rỗng-khi-chưa-có-đơn-vị-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-2e8e6-hái-rỗng-khi-chưa-có-đơn-vị-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-2e8e6-hái-rỗng-khi-chưa-có-đơn-vị-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-2e8e6-hái-rỗng-khi-chưa-có-đơn-vị-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                        "column": 13,
+                        "line": 248
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-b1239483c838e68b8ba0",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 239,
+              "column": 2
+            },
+            {
+              "title": "32_130_001 — Chỉnh sửa Đơn vị cha chuyển đơn vị sang nhánh khác",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "{\"unitCode\":\"A7MH32T81589501\",\"unitName\":\"A7MH32 Xã rác 815895-1\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T816326\",\"address\":null,\"effectiveDate\":null,\"contactName\":null,\"status\":true,\"regionCodes\":[],\"taxCode\":null} · tb \"Mã đơn vị 'A7MH32T81589501' không hợp lệ. Mã đơn vị phải bắt đầu bằng mã đơn vị cha: A7MH32T816326 (dRUBtP)\" · DB {\"ma\":\"A7MH32T81589501\",\"ten\":\"A7MH32 Xã rác 815895-1\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T815895\",\"tree\":\"VNPOST/A7MH32T815895/A7MH32T81589501\",\"xoa\":false,\"status\":\"1\"}"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T81589501→200 · A7MH32T815895→200 · A7MH32T816326→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 31902,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Cập nhật đơn vị tổ chức thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Mã đơn vị 'A7MH32T81589501' không hợp lệ. Mã đơn vị phải bắt đầu bằng mã đơn vị cha: A7MH32T816326 (dRUBtP)\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Cập nhật đơn vị tổ chức thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Mã đơn vị 'A7MH32T81589501' không hợp lệ. Mã đơn vị phải bắt đầu bằng mã đơn vị cha: A7MH32T816326 (dRUBtP)\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:276:18",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                          "column": 18,
+                          "line": 276
+                        },
+                        "snippet": "  274 | \t\t\tconst db = o.dbDv(a.xa[0].ma);\n  275 | \t\t\tghiChu('đo', `${JSON.stringify(kq.req)} · tb \"${kq.tb}\" · DB ${JSON.stringify(db)}`);\n> 276 | \t\t\texpect(kq.tb).toContain('Cập nhật đơn vị tổ chức thành công');\n      | \t\t\t              ^\n  277 | \t\t\texpect(db.cha).toBe(b.tinh);\n  278 | \t\t\texpect(db.tree, 'Cây (tree) không cập nhật theo cha mới').toBe(`${o.VNPOST}/${b.tinh}/${a.xa[0].ma}`);\n  279 | \t\t} finally { await don(ps, a.xa.map((x) => x.ma), a.tinh, b.tinh); }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                            "column": 18,
+                            "line": 276
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Cập nhật đơn vị tổ chức thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Mã đơn vị 'A7MH32T81589501' không hợp lệ. Mã đơn vị phải bắt đầu bằng mã đơn vị cha: A7MH32T816326 (dRUBtP)\"\u001b[39m\n\n  274 | \t\t\tconst db = o.dbDv(a.xa[0].ma);\n  275 | \t\t\tghiChu('đo', `${JSON.stringify(kq.req)} · tb \"${kq.tb}\" · DB ${JSON.stringify(db)}`);\n> 276 | \t\t\texpect(kq.tb).toContain('Cập nhật đơn vị tổ chức thành công');\n      | \t\t\t              ^\n  277 | \t\t\texpect(db.cha).toBe(b.tinh);\n  278 | \t\t\texpect(db.tree, 'Cây (tree) không cập nhật theo cha mới').toBe(`${o.VNPOST}/${b.tinh}/${a.xa[0].ma}`);\n  279 | \t\t} finally { await don(ps, a.xa.map((x) => x.ma), a.tinh, b.tinh); }\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:276:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:56:42.174Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "{\"unitCode\":\"A7MH32T81589501\",\"unitName\":\"A7MH32 Xã rác 815895-1\",\"unitType\":\"BUU_DIEN_XA\",\"parentCode\":\"A7MH32T816326\",\"address\":null,\"effectiveDate\":null,\"contactName\":null,\"status\":true,\"regionCodes\":[],\"taxCode\":null} · tb \"Mã đơn vị 'A7MH32T81589501' không hợp lệ. Mã đơn vị phải bắt đầu bằng mã đơn vị cha: A7MH32T816326 (dRUBtP)\" · DB {\"ma\":\"A7MH32T81589501\",\"ten\":\"A7MH32 Xã rác 815895-1\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T815895\",\"tree\":\"VNPOST/A7MH32T815895/A7MH32T81589501\",\"xoa\":false,\"status\":\"1\"}"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T81589501→200 · A7MH32T815895→200 · A7MH32T816326→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-12729-uyển-đơn-vị-sang-nhánh-khác-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-12729-uyển-đơn-vị-sang-nhánh-khác-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-12729-uyển-đơn-vị-sang-nhánh-khác-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-12729-uyển-đơn-vị-sang-nhánh-khác-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                        "column": 18,
+                        "line": 276
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-19a1198179393a8d20ae",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 263,
+              "column": 2
+            },
+            {
+              "title": "32_130_002 — Chỉnh sửa bỏ trống Mã đơn vị",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "hành vi thật",
+                      "description": "ô Mã đơn vị BỊ KHOÁ khi cập nhật (không sửa được mã)"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T848633→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26301,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:57:14.830Z",
+                      "annotations": [
+                        {
+                          "type": "hành vi thật",
+                          "description": "ô Mã đơn vị BỊ KHOÁ khi cập nhật (không sửa được mã)"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T848633→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-11492-hỉnh-sửa-bỏ-trống-Mã-đơn-vị-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-ed5cc35130697701af5c",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 286,
+              "column": 3
+            },
+            {
+              "title": "32_130_003 — Chỉnh sửa đổi Mã đơn vị thành mã đã tồn tại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "hành vi thật",
+                      "description": "ô Mã đơn vị BỊ KHOÁ khi cập nhật (không sửa được mã)"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T874987→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26326,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:57:41.209Z",
+                      "annotations": [
+                        {
+                          "type": "hành vi thật",
+                          "description": "ô Mã đơn vị BỊ KHOÁ khi cập nhật (không sửa được mã)"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T874987→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-8c073--đơn-vị-thành-mã-đã-tồn-tại-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-f26cb3b72b64be052cca",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 286,
+              "column": 3
+            },
+            {
+              "title": "32_140_001 — Xoá cấp Xã kéo theo Điểm bán trực thuộc",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "tạo nút điểm bán rác",
+                      "description": "200 Thành công"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "popup \"Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \"A7MH32 Xã rác 901183-1\" không ? Huỷ Xoá\" · SSHOP-402 · tb \"Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (vOUGUb)\" · xã {\"ma\":\"A7MH32T90118301\",\"ten\":\"A7MH32 Xã rác 901183-1\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T901183\",\"tree\":\"VNPOST/A7MH32T901183/A7MH32T90118301\",\"xoa\":false,\"status\":\"1\"} · điểm bán {\"ma\":\"A7MH32T90118301A01\",\"ten\":\"A7MH32 Điểm bán rác\",\"loai\":\"DIEM_BAN\",\"cha\":\"A7MH32T90118301\",\"tree\":\"VNPOST/A7MH32T901183/A7MH32T90118301/A7MH32T90118301A01\",\"xoa\":false,\"status\":\"1\"}"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T90118301A01→SSHOP-402 · A7MH32T90118301→SSHOP-402 · A7MH32T901183→SSHOP-402"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 27695,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Xoá đơn vị thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (vOUGUb)\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Xoá đơn vị thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (vOUGUb)\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:335:18",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                          "column": 18,
+                          "line": 335
+                        },
+                        "snippet": "  333 | \t\t\tconst kq = await xoaQuaUi(page, r.xa[0].ten);\n  334 | \t\t\tghiChu('đo', `popup \"${kq.chu}\" · ${kq.res?.status?.code} · tb \"${kq.tb}\" · xã ${JSON.stringify(o.dbDv(r.xa[0].ma))} · điểm bán ${JSON.stringify(o.dbDv(shop))}`);\n> 335 | \t\t\texpect(kq.tb).toContain('Xoá đơn vị thành công');\n      | \t\t\t              ^\n  336 | \t\t\texpect(o.conSong(r.xa[0].ma)).toBe(false);\n  337 | \t\t\texpect(o.conSong(shop), 'Xoá xã mà điểm bán trực thuộc VẪN còn (mồ côi)').toBe(false);\n  338 | \t\t} finally { await don(ps, shop, r.xa.map((x) => x.ma), r.tinh); }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                            "column": 18,
+                            "line": 335
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Xoá đơn vị thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (vOUGUb)\"\u001b[39m\n\n  333 | \t\t\tconst kq = await xoaQuaUi(page, r.xa[0].ten);\n  334 | \t\t\tghiChu('đo', `popup \"${kq.chu}\" · ${kq.res?.status?.code} · tb \"${kq.tb}\" · xã ${JSON.stringify(o.dbDv(r.xa[0].ma))} · điểm bán ${JSON.stringify(o.dbDv(shop))}`);\n> 335 | \t\t\texpect(kq.tb).toContain('Xoá đơn vị thành công');\n      | \t\t\t              ^\n  336 | \t\t\texpect(o.conSong(r.xa[0].ma)).toBe(false);\n  337 | \t\t\texpect(o.conSong(shop), 'Xoá xã mà điểm bán trực thuộc VẪN còn (mồ côi)').toBe(false);\n  338 | \t\t} finally { await don(ps, shop, r.xa.map((x) => x.ma), r.tinh); }\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:335:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:58:07.540Z",
+                      "annotations": [
+                        {
+                          "type": "tạo nút điểm bán rác",
+                          "description": "200 Thành công"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "popup \"Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \"A7MH32 Xã rác 901183-1\" không ? Huỷ Xoá\" · SSHOP-402 · tb \"Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (vOUGUb)\" · xã {\"ma\":\"A7MH32T90118301\",\"ten\":\"A7MH32 Xã rác 901183-1\",\"loai\":\"BUU_DIEN_XA\",\"cha\":\"A7MH32T901183\",\"tree\":\"VNPOST/A7MH32T901183/A7MH32T90118301\",\"xoa\":false,\"status\":\"1\"} · điểm bán {\"ma\":\"A7MH32T90118301A01\",\"ten\":\"A7MH32 Điểm bán rác\",\"loai\":\"DIEM_BAN\",\"cha\":\"A7MH32T90118301\",\"tree\":\"VNPOST/A7MH32T901183/A7MH32T90118301/A7MH32T90118301A01\",\"xoa\":false,\"status\":\"1\"}"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T90118301A01→SSHOP-402 · A7MH32T90118301→SSHOP-402 · A7MH32T901183→SSHOP-402"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-c8046-éo-theo-Điểm-bán-trực-thuộc-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-c8046-éo-theo-Điểm-bán-trực-thuộc-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-c8046-éo-theo-Điểm-bán-trực-thuộc-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-c8046-éo-theo-Điểm-bán-trực-thuộc-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                        "column": 18,
+                        "line": 335
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-b46d38ee75fef8e97d7a",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 321,
+              "column": 2
+            },
+            {
+              "title": "32_140_002 — Xoá cấp Tỉnh kéo theo toàn bộ Xã và Điểm bán",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "popup \"Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \"A7MH32 Tỉnh rác 929672\" không ? Huỷ Xoá\" · SSHOP-402 Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (wkKywy) · tb \"Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (wkKywy)\" · tỉnh sống true · xã còn A7MH32T92967201,A7MH32T92967202"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T92967201→200 · A7MH32T92967202→200 · A7MH32T929672→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 27861,
+                      "error": {
+                        "message": "Error: Không xoá được tỉnh có xã con (Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (wkKywy))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: Không xoá được tỉnh có xã con (Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (wkKywy))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:351:101",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                          "column": 101,
+                          "line": 351
+                        },
+                        "snippet": "  349 | \t\t\tconst con = r.xa.filter((x) => o.conSong(x.ma)).map((x) => x.ma);\n  350 | \t\t\tghiChu('đo', `popup \"${kq.chu}\" · ${kq.res?.status?.code} ${kq.res?.status?.message} · tb \"${kq.tb}\" · tỉnh sống ${o.conSong(r.tinh)} · xã còn ${con.join(',')}`);\n> 351 | \t\t\texpect(o.conSong(r.tinh), `Không xoá được tỉnh có xã con (${kq.res?.status?.message ?? kq.tb})`).toBe(false);\n      | \t\t\t                                                                                                 ^\n  352 | \t\t\texpect(con, 'Xoá tỉnh mà xã con VẪN còn (mồ côi)').toEqual([]);\n  353 | \t\t} finally { await don(ps, r.xa.map((x) => x.ma), r.tinh); }\n  354 | \t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                            "column": 101,
+                            "line": 351
+                          },
+                          "message": "Error: Không xoá được tỉnh có xã con (Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (wkKywy))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  349 | \t\t\tconst con = r.xa.filter((x) => o.conSong(x.ma)).map((x) => x.ma);\n  350 | \t\t\tghiChu('đo', `popup \"${kq.chu}\" · ${kq.res?.status?.code} ${kq.res?.status?.message} · tb \"${kq.tb}\" · tỉnh sống ${o.conSong(r.tinh)} · xã còn ${con.join(',')}`);\n> 351 | \t\t\texpect(o.conSong(r.tinh), `Không xoá được tỉnh có xã con (${kq.res?.status?.message ?? kq.tb})`).toBe(false);\n      | \t\t\t                                                                                                 ^\n  352 | \t\t\texpect(con, 'Xoá tỉnh mà xã con VẪN còn (mồ côi)').toEqual([]);\n  353 | \t\t} finally { await don(ps, r.xa.map((x) => x.ma), r.tinh); }\n  354 | \t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:351:101"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:58:35.950Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "popup \"Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \"A7MH32 Tỉnh rác 929672\" không ? Huỷ Xoá\" · SSHOP-402 Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (wkKywy) · tb \"Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (wkKywy)\" · tỉnh sống true · xã còn A7MH32T92967201,A7MH32T92967202"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T92967201→200 · A7MH32T92967202→200 · A7MH32T929672→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-da9bc-theo-toàn-bộ-Xã-và-Điểm-bán-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-da9bc-theo-toàn-bộ-Xã-và-Điểm-bán-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-da9bc-theo-toàn-bộ-Xã-và-Điểm-bán-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-da9bc-theo-toàn-bộ-Xã-và-Điểm-bán-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                        "column": 101,
+                        "line": 351
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-7aec16f9a1326554f44c",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 341,
+              "column": 2
+            },
+            {
+              "title": "32_140_005 — Nội dung popup xác nhận xoá đơn vị",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn popup",
+                      "description": "Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \"A7MH32 Tỉnh rác 958505\" không ? Huỷ Xoá"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "A7MH32T95850501→200 · A7MH32T958505→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 26104,
+                      "error": {
+                        "message": "Error: Popup KHÔNG nêu hậu quả xoá lan xuống cấp dưới (xã/điểm bán trực thuộc)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/cấp dưới|trực thuộc|đơn vị con|toàn bộ/i\u001b[39m\nReceived string:  \u001b[31m\"Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \\\"A7MH32 Tỉnh rác 958505\\\" không ? Huỷ Xoá\"\u001b[39m",
+                        "stack": "Error: Popup KHÔNG nêu hậu quả xoá lan xuống cấp dưới (xã/điểm bán trực thuộc)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/cấp dưới|trực thuộc|đơn vị con|toàn bộ/i\u001b[39m\nReceived string:  \u001b[31m\"Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \\\"A7MH32 Tỉnh rác 958505\\\" không ? Huỷ Xoá\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:371:91",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                          "column": 91,
+                          "line": 371
+                        },
+                        "snippet": "  369 | \t\t\tawait pop.getByRole('button', { name: /Huỷ|Hủy/ }).click();\n  370 | \t\t\texpect(chu).toContain(r.tenTinh);\n> 371 | \t\t\texpect(chu, 'Popup KHÔNG nêu hậu quả xoá lan xuống cấp dưới (xã/điểm bán trực thuộc)').toMatch(/cấp dưới|trực thuộc|đơn vị con|toàn bộ/i);\n      | \t\t\t                                                                                       ^\n  372 | \t\t} finally { await don(ps, r.xa.map((x) => x.ma), r.tinh); }\n  373 | \t});\n  374 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                            "column": 91,
+                            "line": 371
+                          },
+                          "message": "Error: Popup KHÔNG nêu hậu quả xoá lan xuống cấp dưới (xã/điểm bán trực thuộc)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/cấp dưới|trực thuộc|đơn vị con|toàn bộ/i\u001b[39m\nReceived string:  \u001b[31m\"Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \\\"A7MH32 Tỉnh rác 958505\\\" không ? Huỷ Xoá\"\u001b[39m\n\n  369 | \t\t\tawait pop.getByRole('button', { name: /Huỷ|Hủy/ }).click();\n  370 | \t\t\texpect(chu).toContain(r.tenTinh);\n> 371 | \t\t\texpect(chu, 'Popup KHÔNG nêu hậu quả xoá lan xuống cấp dưới (xã/điểm bán trực thuộc)').toMatch(/cấp dưới|trực thuộc|đơn vị con|toàn bộ/i);\n      | \t\t\t                                                                                       ^\n  372 | \t\t} finally { await don(ps, r.xa.map((x) => x.ma), r.tinh); }\n  373 | \t});\n  374 | });\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js:371:91"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:59:04.570Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn popup",
+                          "description": "Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị \"A7MH32 Tỉnh rác 958505\" không ? Huỷ Xoá"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "A7MH32T95850501→200 · A7MH32T958505→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-4d297-g-popup-xác-nhận-xoá-đơn-vị-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-4d297-g-popup-xác-nhận-xoá-đơn-vị-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-4d297-g-popup-xác-nhận-xoá-đơn-vị-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/don-vi-ghi.tct-32-·-Đơn-vị-4d297-g-popup-xác-nhận-xoá-đơn-vị-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/don-vi-ghi.tct.spec.js",
+                        "column": 91,
+                        "line": 371
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eaeb3c04302b846200e7-61e696e5757c75a19f13",
+              "file": "don-vi-ghi.tct.spec.js",
+              "line": 356,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T15:51:12.402Z",
+    "duration": 498684.022,
+    "expected": 27,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}

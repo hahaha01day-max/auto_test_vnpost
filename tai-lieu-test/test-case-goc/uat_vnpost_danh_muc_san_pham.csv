@@ -1,0 +1,168 @@
+,Chức năng,,QUẢN LÝ ĐẶT HÀNG,,,,,,,
+,Mã Testcase,,DANHMUCSP,,,,,,,
+,Tổng các tình huống kiểm thử,,32,,,,,,,
+,Chưa thực hiện,,2,,,,,,,
+,Đạt yêu cầu,,26,,,,,,,
+,Không đạt yêu cầu,,4,,,,,,,
+,Thực hiện sau,,0,,,,,,,
+,Không phải thực hiện,,0,,,,,,,
+,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,
+,Kiểm tra giao diện màn Thêm danh mục,,,,,,,,,
+,Kiểm tra hiển thị màn hình Thêm danh mục,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""",,,"1. Hiển thị drawer ""Thêm danh mục"".
+2. Trường ""Loại sản phẩm"" mặc định giá trị của loại sản phẩm đang tạo danh mục, hiển thị dạng disabled
+3. Các trường bắt buộc hiển thị dấu * màu đỏ.",,Pass,,
+,Kiểm tra dữ liệu trường Danh mục cha,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Click trường ""Danh mục cha""",,,"1. Dữ liệu hiển thị dạng cây cha con, mặc định mở ra tất cả các cấp
+2. 1 cây danh mục chỉ hiển thị đến danh mục cấp 4 để chọn",,Pass,,
+,Kiểm tra giao diện màn Sửa danh mục,,,,,,,,,
+,Kiểm tra hiển thị màn hình Sửa danh mục,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi",,,"1. Hiển thị drawer ""Sửa danh mục"".
+2. Trường ""Loại sản phẩm"" mặc định giá trị của loại sản phẩm đang tạo danh mục, hiển thị dạng disabled
+3. Các trường bắt buộc hiển thị dấu * màu đỏ.
+4. Hiển thị đúng dữ liệu các trường đã khai báo ở màn Thêm danh mục",,Pass,,
+,Kiểm tra giao diện màn Quản lý danh mục,,,,,,,,,
+,Kiểm tra hiển thị bảng danh sách danh mục,,1. Vào màn hình Quản lý danh mục,,,Mặc định mở hết tất cả các cấp,,Pass,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,
+,Kiểm tra chức năng Thêm danh mục,,,,,,,,,
+,Kiểm tra chức năng thêm danh mục thành công với các trường thông tin hợp lệ,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Nhập đầy đủ các trường thông tin hợp lệ: Tên danh mục ko trùng với tên danh mục khác cùng thuộc cấp cha
+4. Chọn danh mục cha cấp 1/2/3/4 không chứa các sản phẩm nào
+5. Nhấn nút ""Xác nhận""",,,"1. Hiển thị message ""Thêm thành công""
+2. Lưu 1 bản ghi ngoài danh sách bảng giá với dữ liệu đúng như dữ liệu đã nhập
+3. Bản ghi vừa thêm thuộc danh mục cấp 2/3/4/5 của danh mục cha vừa chọn",,Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Nhập đầy đủ các trường thông tin hợp lệ: Tên danh mục ko trùng với tên danh mục cấp 1 khác
+4. Không chọn danh mục cha
+5. Nhấn nút ""Xác nhận""",,,"1. Hiển thị message ""Thêm thành công""
+2. Lưu 1 bản ghi ngoài danh sách bảng giá với dữ liệu đúng như dữ liệu đã nhập.
+3. Bản ghi vừa thêm là danh mục cấp 1",,Pass,,
+,Kiểm tra chức năng thêm danh mục khi bỏ trống các trường bắt buộc,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Bỏ trống trường ""Tên danh mục""
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message đỏ dưới trường ""Nhập tên danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,Kiểm tra chức năng thêm danh mục khi khai báo các trường không hợp lệ,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Nhập ""Tên danh mục"" trùng với tên danh mục khác cùng thuộc cấp cha
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Tên danh mục '[Tên danh mục]' đã tồn tại trong cùng cấp cha""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Nhập ""Tên danh mục"" trùng với tên danh mục khác cùng thuộc cấp cha
+4. Gán cấp cha là danh mục đã chứa sản phẩm
+5. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Không thể gán danh mục '[Tên danh mục]' làm danh mục cha vì danh mục đã được gán sản phẩm. Vui lòng chuyển sản phẩm sang danh mục cấp nhỏ nhất trước khi thay đổi cấu trúc danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,Kiểm tra chức năng Sửa danh mục,,,,,,,,,
+,Kiểm tra khi sửa trường tên danh mục,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Sửa ""Tên danh mục"" sang giá trị khác không trùng với tên danh mục khác cùng thuộc cấp cha
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Cập nhật thành công""
+2. Danh sách danh mục cập nhật tên danh mục đã sửa
+3. Nhấn button Sửa để xem chi tiết, hiển thị đúng giá trị vừa sửa",,Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Sửa ""Tên danh mục"" sang giá trị khác trùng với tên danh mục khác cùng thuộc cấp cha
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Không thể gán danh mục '[Tên danh mục]' làm danh mục cha vì đang có danh mục con cùng cấp trùng tên""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,Kiểm tra để trống các trường bắt buộc khi sửa,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Xóa giá trị hiện tại ở trường Tên danh mục
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message đỏ dưới trường ""Nhập tên danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,Kiểm tra khi sửa trường Danh mục cha,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Gán cấp cha là danh mục không chứa sản phẩm
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Cập nhật danh mục thành công""
+2. Danh mục vừa sửa trở thành danh mục cấp dưới của danh mục cha vừa được gán",,Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Gán cấp cha là danh mục đã chứa sản phẩm
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Không thể gán danh mục '[Tên danh mục]' làm danh mục cha vì danh mục đã được gán sản phẩm. Vui lòng chuyển sản phẩm sang danh mục cấp nhỏ nhất trước khi thay đổi cấu trúc danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác","1. Hiển thị message ""Không thể gán danh mục '[Tên danh mục]' làm danh mục cha vì danh mục đã được gán sản phẩm. Vui lòng chuyển sản phẩm sang danh mục cấp nhỏ nhất trước khi thay đổi cấu trúc danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Bỏ trống trường danh mục cha
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Cập nhật danh mục thành công""
+2. Danh mục vừa sửa trở thành danh mục cấp 1",,Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Gán cấp cha trong đó có cấp con ngay dưới trùng tên với danh mục đang sửa
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Không thể gán danh mục '[Tên danh mục]' làm danh mục cha vì đang có danh mục con cùng cấp trùng tên""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Gán cấp cha làm cây phân cấp vừa đủ 5 cấp
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Cập nhật danh mục thành công""
+2. Cây danh mục hiển thị đúng như vừa sửa",,Pass,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi
+3. Gán cấp cha làm cây phân cấp vượt quá 5 cấp
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Tổng số cấp sau khi di chuyển vượt quá giới hạn 5 cấp""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,Kiểm tra chức năng Xóa danh mục,,,,,,,,,
+,Kiểm tra Xóa danh mục cấp nhỏ nhất không chứa sản phẩm nào,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button xóa của danh mục cấp nhỏ nhất, chưa được gán với sản phẩm
+3. Nhấn nút ""Đồng ý""",,,"1. Hiển thị message ""Xóa thành công""
+2. Không hiển thị danh mục đó trên danh sách nữa","1. Hiển thị message ""Xóa thành công""
+2. Không hiển thị danh mục đó trên danh sách nữa",Pass,,
+,Kiểm tra Xóa danh mục cấp nhỏ nhất có chứa sản phẩm,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button xóa của danh mục cấp nhỏ nhất, đã được gán với sản phẩm
+3. Nhấn nút ""Đồng ý""",,,"1. Hiển thị message ""Xóa thành công""
+2. Danh mục đó và tất cả các cấp dưới nó không hiển thị trên danh sách nữa","1. Hiển thị message ""Danh mục đang được sử dụng bởi x sản phẩm. Vui lòng cập nhật sản phẩm trước khi xóa!""
+2. Danh mục vẫn hiển thị trên danh sách",Pass,,
+,"Kiểm tra Xóa danh mục cấp cha, trong đó danh mục cấp nhỏ nhất trong cây danh mục không chứa sản phẩm",,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button xóa của danh mục cấp cha, trong đó danh mục cấp nhỏ nhất trong cây danh mục không chứa sản phẩm
+3. Nhấn nút ""Đồng ý""",,,"1. Hiển thị message đỏ dưới trường ""Nhập tên danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,Pass,,
+,"Kiểm tra Xóa danh mục cấp cha, trong đó danh mục cấp nhỏ nhất trong cây danh mục có chứa sản phẩm",,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button xóa của danh mục cấp cha, trong đó danh mục cấp nhỏ nhất trong cây danh mục có chứa sản phẩm
+3. Nhấn nút ""Đồng ý""",,,"1. Hiển thị message ""Danh mục cấp dưới '[Tên danh mục cấp dưới]' đang có x sản phẩm đang sử dụng. Vui lòng cập nhật sản phẩm trước khi xóa!""
+2. Danh mục vẫn hiển thị trên danh sách",,Pass,,
+,Kiểm tra Xóa danh mục khi đang nằm trong CTKM,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button xóa của danh mục cần xóa
+3. Nhấn nút ""Đồng ý""",,,"1. Hiển thị message ""Không thể xóa vì danh mục đang nằm trong CTKM""
+2. Danh mục vẫn hiển thị trên danh sách",,,,
+,Kiểm tra chức năng Tìm kiếm danh mục,,,,,,,,,
+,Kiểm tra Tìm kiếm danh mục chứa 1 phần từ khóa,,"1. Vào màn hình Quản lý danh mục
+2. Nhập một phần tên của danh mục",,,"Hiển thị danh sách các danh mục chứa 1 phần từ khóa.
+Nếu danh mục được tìm kiếm là cấp con, hiển thị mở ra từ cấp cha đến danh mục đó và vẫn còn button expand để mở xem các cấp dưới","Nếu tìm kiếm mà danh mục cấp cha chứa từ khóa, còn danh mục cấp dưới không chưa từ khóa thì đang chỉ hiển thị cấp cha và không có button expand để mở ra xem cấp dưới.",Fail,Phúc,
+,Kiểm tra Tìm kiếm danh mục chứa full từ khóa,,"1. Vào màn hình Quản lý danh mục
+2. Nhập toàn bộ tên danh mục",,,"Hiển thị danh sách các danh mục chứa 1 phần từ khóa.
+Nếu danh mục được tìm kiếm là cấp con, hiển thị mở ra từ cấp cha đến danh mục đó và vẫn còn button expand để mở xem các cấp dưới",,Fail,Phúc,
+,Kiểm tra Tìm kiếm danh mục không chứa từ khóa,,"1. Vào màn hình Quản lý danh mục
+2. Nhập từ khóa không chứa trong danh mục nào",,,Trả ra danh sách trống,,,,
+,Kiểm tra Tìm kiếm sau đó xóa tìm kiếm,,"1. Vào màn hình Quản lý danh mục
+2. Nhập từ khóa sau đó xóa đi",,,Trả về full danh sách,,Pass,,
+,Kiểm tra chức năng Import Excel,,,,,,,,,
+,Kiểm tra Import file chức các danh mục hợp lệ,,"1. Vào màn hình Quản lý danh mục
+2. Chọn Nhập từ Excel
+3. Upload file
+4. Xác nhận",,,"1. Hiển thị message ""Nhập file excel thành công""
+2. Các danh mục vừa nhập hiển thị trên danh sách theo đúng cây phân cấp",,Pass,,
+,Kiểm tra Import file chức các danh mục không hợp lệ,,"1. Vào màn hình Quản lý danh mục
+2. Chọn Nhập từ Excel
+3. Upload file
+4. Xác nhận",,,"1. Hiển thị popup ""Nhập file excel thất bại"" và liệt kê tổng số danh mục lỗi/tổng số danh mục trong file
+2. Liệt kệ lỗi từng dòng trong file","Đang hiển thị ""Thành công: Tổng số danh mục thành công, Lỗi: Tổng số danh mục lỗi/0""",Fail,Phúc,
+,Kiểm tra Import file chức cả danh mục hợp lệ và không hợp lệ,,"1. Vào màn hình Quản lý danh mục
+2. Chọn Nhập từ Excel
+3. Upload file
+4. Xác nhận",,,"1. Hiển thị popup ""Nhập file excel thất bại"" và liệt kê tổng số danh mục thành công/tổng số danh mục trong file và tổng số danh mục lỗi/tổng số danh mục trong file
+2. Liệt kệ lỗi từng dòng trong file
+3. Các danh mục vừa nhập thành công hiển thị trên danh sách theo đúng cây phân cấp",,Fail,Phúc,
+,Kiểm tra tải file Import mẫu,,"1. Vào màn hình Quản lý danh mục
+2. Chọn Tải file mẫu",,,"Tải về thiết bị thành công.
+Dữ liệu đầy đủ các case, không lỗi font.","Tải về thiết bị thành công.
+Dữ liệu đầy đủ các case, không lỗi font.",Pass,,
+,Kiểm tra chức năng Export Excel,,,,,,,,,
+,Kiểm tra tải file excel danh mục hiện có,,"1. Vào màn hình Quản lý danh mục
+2. Chọn Xuất Excel",,,"Tải về thiết bị thành công.
+Đầy đủ danh mục và phân cấp đúng như trogn danh sách, không lỗi font.",,Pass,,

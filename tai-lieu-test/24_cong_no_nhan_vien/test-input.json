@@ -1,0 +1,312 @@
+{
+  "_note": "Phân hệ 24 Công nợ nhân viên. 🔴 Nhóm 040_* và 070_* GHI TIỀN THẬT (ghi nhận khách trả nợ, nhân viên nộp tiền) — mọi case mutates để allowMutation=false. Route đúng là /debt-reconciliation/employee-debt.",
+  "cases": {
+    "24_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "24_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_060_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_070_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "24_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_010_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_050_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_050_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_050_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_050_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_050_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "24_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_070_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_070_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_070_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_070_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_070_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "allowMutation": true,
+      "data": {}
+    },
+    "24_PQ_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "ward",
+      "data": {}
+    },
+    "24_PQ_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "24_PQ_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    }
+  }
+}

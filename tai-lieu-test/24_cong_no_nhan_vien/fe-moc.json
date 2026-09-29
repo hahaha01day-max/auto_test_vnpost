@@ -1,0 +1,61 @@
+{
+  "spec": {
+    "tests/don-hang.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/debt-reconciliation/employee-debt",
+        "/employee/detail/:ten/:sysUserId/:shopId"
+      ],
+      "fe": [
+        "src/features/employeeDebt/tabs/OrderDebtTab.jsx",
+        "src/pages/employee/employeeDebt/EmployeeDebt.jsx",
+        "src/features/exportExcel/filterEmployeeDebt.jsx"
+      ]
+    },
+    "tests/cua-hang.province.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/debt-reconciliation/employee-debt"
+      ],
+      "fe": [
+        "src/features/employeeDebt/tabs/ShopDebtTab.jsx",
+        "src/features/employeeDebt/components/DrawerEmployeeDebtDetail.jsx",
+        "src/features/employeeDebt/components/DrawerPayEmployeeDebt.jsx"
+      ]
+    },
+    "tests/thu-tien.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/employee/detail/:ten/:sysUserId/:shopId"
+      ],
+      "fe": [
+        "src/pages/employee/employeeDebt/DrawerPaymentEmployeeDebt.jsx"
+      ]
+    },
+    "tests/pham-vi-cap.ward.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/debt-reconciliation/employee-debt"
+      ],
+      "fe": [
+        "src/features/employeeDebt/tabs/ShopDebtTab.jsx",
+        "src/routes/routesPermission.js"
+      ]
+    },
+    "tests/tien-de.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/inventory/import"
+      ],
+      "fe": [
+        "src/pages/warehouse/import_receipt/DrawerDetailImportReceipt.jsx",
+        "src/features/employeeDebt/components/DrawerAllocateExportDebt.jsx"
+      ]
+    }
+  }
+}

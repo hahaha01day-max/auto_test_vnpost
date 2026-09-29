@@ -1,0 +1,129 @@
+﻿,Chức năng,,CÔNG NỢ NHÂN VIÊN,,,,,,,,
+,Mã Testcase,,24_cong_no_nhan_vien,,,,,,,,
+,Tổng các tình huống kiểm thử,,49,,,,,,,,
+,Chưa thực hiện,,49,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,CÔNG NỢ NHÂN VIÊN,,,,,,,,,,
+,010 — Tra cứu công nợ theo đơn hàng của nhân viên,,,,,,,,,,
+24_010_001,Màn Công nợ nhân viên mở được ở thẻ Công nợ theo đơn hàng,Vai: province,1. Mở /debt-reconciliation/employee-debt,,"Thẻ ""Công nợ theo đơn hàng"" hiện; có ô chọn điểm bán, khoảng ngày và ô tìm nhân viên",,,,,,
+24_010_002,Ô chọn điểm bán chỉ hiện với cấp trên điểm bán,Vai: gdv,1. Mở /debt-reconciliation/employee-debt,,KHÔNG có ô chọn điểm bán; danh sách giới hạn trong phạm vi điểm bán của tài khoản,,,,,,
+24_010_003,Tổng công nợ là tổng của toàn bộ danh sách đang lọc,Vai: province. Danh sách có nhiều hơn 1 trang,"1. Đọc dòng ""Tổng công nợ"" phía trên bảng;
+2. Cộng cột nợ của riêng trang đang xem",,Tổng công nợ LỚN HƠN tổng của riêng trang đang xem (nó tính toàn bộ danh sách đang lọc),,,,,,
+24_010_004,Danh sách sắp sẵn theo số tiền giảm dần,Vai: province. Có nhiều nhân viên có nợ,1. Đọc cột số tiền từ trên xuống,,Giá trị giảm dần; nhân viên có nợ lớn nhất ở đầu trang,,,,,,
+,020 — Kết xuất danh sách công nợ ra tệp Excel,,,,,,,,,,
+24_020_001,Xuất Excel lấy đúng điều kiện đang hiển thị,Vai: province. Đã đặt bộ lọc,"1. Đặt điểm bán, khoảng ngày, từ khoá;
+2. Bấm ""Xuất Excel"";
+3. Chờ tệp sẵn sàng rồi tải về",,Tệp Excel giữ nguyên cấu trúc cột như trên màn hình và chỉ chứa dòng thoả bộ lọc,,,,,,
+24_020_002,Bộ lọc không ra dòng nào vẫn tạo tệp chỉ có tiêu đề,Vai: province. Đặt bộ lọc chắc chắn không ra dòng nào,"1. Bấm Xuất Excel;
+2. Tải tệp về và mở",,"Tệp có đúng hàng tiêu đề cột, không có dòng dữ liệu nào",,,,,,
+,030 — Xem chi tiết công nợ theo đơn hàng của một nhân viên,,,,,,,,,,
+24_030_001,Chi tiết công nợ nhân viên bung được lịch sử trả tiền,Vai: province. Nhân viên có phiếu khách còn nợ,"1. Bấm ""Chi tiết"" trên dòng nhân viên;
+2. Bấm dấu cộng ở đầu một dòng",,"Bung ra lịch sử các lần khách đã trả tiền cho phiếu đó, kèm thời gian và số tiền từng lần",,,,,,
+24_030_002,Nhân viên làm ở một điểm bán thì ô cửa hàng không đổi được,Vai: province. Nhân viên chỉ làm ở một điểm bán,"1. Mở chi tiết công nợ nhân viên đó;
+2. Thử đổi ô cửa hàng",,Ô hiện sẵn tên điểm bán và KHÔNG đổi được,,,,,,
+24_030_003,Lọc theo trạng thái Còn nợ hoặc Đã thanh toán,Vai: province. Nhân viên có cả phiếu còn nợ và đã thanh toán,"1. Chọn ""Còn nợ"";
+2. Chọn ""Đã thanh toán"";
+3. Bỏ chọn",,Mỗi lựa chọn chỉ trả đúng nhóm phiếu tương ứng; bỏ chọn thì xem được tất cả,,,,,,
+,040 — Ghi nhận tiền khách trả cho các phiếu còn nợ,,,,,,,,,,
+24_040_001,Chặn lưu phiếu thu khi chưa nhập số tiền,Vai: shop. Có phiếu khách còn nợ,"1. Bấm ""Thanh toán"";
+2. Không nhập số tiền nào;
+3. Bấm ""Lưu""",,"Hệ thống báo nguyên văn ""Số tiền phải lớn hơn 0"" và KHÔNG ghi nhận gì",,,,,,
+24_040_002,Số tiền thu từng phiếu không vượt quá Còn nợ,Vai: shop. Có phiếu khách còn nợ,"1. Bấm ""Thanh toán"";
+2. Nhập số tiền lớn hơn cột Còn nợ của một phiếu",,Hệ thống giới hạn đúng bằng số ở cột Còn nợ,,,,,,
+24_040_003,Ghi nhận tiền khách trả và cập nhật trạng thái phiếu,Vai: shop. Có phiếu khách còn nợ,"1. Bấm ""Thanh toán"";
+2. Tích phiếu và nhập đủ số còn nợ;
+3. Chọn Phương thức thanh toán và Quỹ thu;
+4. Bấm ""Lưu""",,"Hệ thống báo nguyên văn ""Thêm thành công""; số còn nợ của phiếu tính lại; phiếu trả đủ chuyển sang ""Đã thanh toán""",,,,,,
+,050 — Tra cứu công nợ nhân viên với cửa hàng,,,,,,,,,,
+24_050_001,Thẻ Công nợ với cửa hàng hiện đủ chỉ tiêu,Vai: province. Có nhân viên nợ cửa hàng,"1. Mở /debt-reconciliation/employee-debt;
+2. Chọn thẻ ""Công nợ với cửa hàng""",,"Mỗi dòng có Tổng nợ, Đã trả, Còn lại và số Khoản chưa thanh toán",,,,,,
+24_050_002,Lọc theo trạng thái trả nợ,Vai: province. Có nhân viên ở nhiều trạng thái trả nợ,1. Mở ô trạng thái trả nợ,,"Ô có đúng 4 lựa chọn: Tất cả, Chưa trả, Trả một phần, Đã trả",,,,,,
+24_050_003,Hai thẻ công nợ là hai loại tiền khác nhau,Vai: province,"1. Đọc tổng ở thẻ ""Công nợ theo đơn hàng"";
+2. Đọc tổng ở thẻ ""Công nợ với cửa hàng""",,"Hai con số độc lập: một là tiền KHÁCH nợ, một là tiền NHÂN VIÊN nợ cửa hàng. Không cộng gộp",,,,,,
+,060 — Xem chi tiết công nợ nhân viên với cửa hàng,,,,,,,,,,
+24_060_001,Ba thẻ số liệu là số cộng dồn không giới hạn thời gian,Vai: province. Nhân viên có lịch sử nợ dài,"1. Mở Chi tiết công nợ với cửa hàng;
+2. Đọc ba thẻ Tổng nợ, Đã trả, Còn lại;
+3. Đổi khoảng thời gian nếu có",,Ba thẻ KHÔNG đổi theo khoảng thời gian — chúng là số cộng dồn từ trước tới nay,,,,,,
+24_060_002,Cột Loại phiếu cho biết nguồn khoản nợ,Vai: province. Có khoản nợ từ kiểm kho và từ xuất kho,1. Đọc cột Loại phiếu ở thẻ Công nợ chưa thanh toán,,"""Phiếu kiểm kho"" = thiếu hụt khi kiểm kho; ""Phiếu xuất kho"" = hàng hỏng lúc xuất kho. Ghi chú nêu lý do cụ thể",,,,,,
+24_060_003,Ba thẻ lịch sử tách bạch nhau,Vai: province. Nhân viên có khoản đã trả xong,"1. Mở thẻ ""Công nợ chưa thanh toán"";
+2. Mở thẻ ""Lịch sử ghi nợ"";
+3. Mở thẻ ""Lịch sử thanh toán""",,"Công nợ chưa thanh toán: chỉ khoản dở dang. Lịch sử ghi nợ: mọi khoản đã ghi kể cả đã trả xong. Lịch sử thanh toán: các lần nộp tiền kèm ngày, tổng tiền, phương thức",,,,,,
+,070 — Ghi nhận nhân viên nộp tiền trả nợ cửa hàng,,,,,,,,,,
+24_070_001,Hệ thống tự chia tiền ưu tiên khoản ghi nợ sớm nhất,Vai: province. Nhân viên có từ 2 khoản nợ trở lên,"1. Bấm ""Thanh toán"";
+2. Nhập Tổng số tiền thanh toán nhỏ hơn tổng nợ;
+3. Đọc cột Số tiền trả từng khoản",,Tiền được chia ưu tiên khoản ghi nợ sớm nhất,,,,,,
+24_070_002,Ghi nhận nhân viên nộp tiền trả nợ,Vai: province. Nhân viên có khoản nợ cửa hàng,"1. Bấm ""Thanh toán"";
+2. Nhập Tổng số tiền;
+3. Chọn Phương thức thanh toán;
+4. Nhập Ghi chú;
+5. Bấm ""Thanh toán""",,"Hệ thống báo nguyên văn ""Thanh toán công nợ thành công""; khoản trả đủ chuyển ""Đã thanh toán"", khoản trả chưa đủ chuyển ""Thanh toán một phần""; số Còn lại giảm tương ứng",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+24_PQ_001,Giao dịch viên chỉ thấy công nợ trong phạm vi điểm bán,Vai: gdv. Hệ thống có nhiều điểm bán,1. Mở /debt-reconciliation/employee-debt,,Chỉ hiện công nợ của điểm bán tài khoản đang thuộc về,,,,,,
+,010 — Tra cứu công nợ theo đơn hàng của nhân viên,,,,,,,,,,
+24_010_005,Tìm nhân viên bằng tên ở thẻ Công nợ theo đơn hàng,Vai: province. Đã chọn điểm bán có nhân viên đang có nợ,"1. Gõ đúng tên một nhân viên vào ô ""Tìm kiếm tên, số điện thoại..."";
+2. Chờ 0,5 giây",,"Bảng chỉ còn các dòng có tên chứa từ khoá; cột STT đánh lại từ 1; dòng ""Tổng công nợ"" tính lại theo kết quả lọc",,,,,,
+24_010_006,Tìm nhân viên bằng số điện thoại,Vai: province. Đã chọn điểm bán,1. Gõ số điện thoại của một nhân viên vào ô tìm kiếm,,"Bảng chỉ còn nhân viên có số điện thoại khớp; cột ""Số điện thoại"" hiện đúng số đã gõ",,,,,,
+24_010_007,Tìm với từ khoá không tồn tại,Vai: province. Đã chọn điểm bán,1. Gõ chuỗi chắc chắn không có ví dụ zzzkhongton,,"Bảng rỗng hiện đúng chữ ""Chưa có dữ liệu công nợ""; không có lỗi đỏ; phân trang hiện 0 dòng; Tổng công nợ về 0",,,,,,
+24_010_008,Tìm với ký tự đặc biệt,Vai: province. Đã chọn điểm bán,1. Gõ lần lượt các chuỗi: phần trăm · gạch dưới · dấu nháy đơn · chuỗi thẻ script vào ô tìm kiếm,,Không có lỗi hệ thống và không có toast đỏ; bảng rỗng hoặc trả đúng dòng khớp.,,,,,,
+24_010_009,Tìm với từ khoá có khoảng trắng thừa ở đầu và cuối,Vai: province. Đã chọn điểm bán,1. Gõ dấu cách + tên nhân viên + dấu cách,,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+24_010_010,Tìm với chữ hoa chữ thường và không dấu,Vai: province. Có nhân viên tên có dấu tiếng Việt,"1. Gõ tên viết HOA;
+2. Gõ tên viết thường;
+3. Gõ tên bỏ hết dấu",,Viết hoa và viết thường cho cùng kết quả (LIKE trên collation _ci).,,,,,,
+24_010_011,Xoá rỗng ô tìm kiếm sau khi đã lọc,Vai: province. Đang có kết quả lọc,"1. Bấm dấu x (allowClear) trên ô tìm kiếm;
+2. Chờ 0,5 giây",,Danh sách trở về đầy đủ như lúc mới vào màn; Tổng công nợ về giá trị ban đầu,,,,,,
+24_010_012,Nhập toàn khoảng trắng liên tiếp vào ô tìm kiếm,Vai: province. Đã chọn điểm bán,1. Gõ 5 dấu cách liên tiếp,,Danh sách giữ nguyên đầy đủ — backend coi chuỗi toàn khoảng trắng là rỗng và bỏ điều kiện keyword; không được trả bảng rỗng,,,,,,
+24_010_013,Ô tìm kiếm chỉ gọi API một lần sau khi ngừng gõ,Vai: province,"1. Gõ liên tục 6 ký tự trong dưới nửa giây;
+2. Đếm số request get-debt-summary",,Chỉ phát sinh 1 request với keyword đầy đủ; không phải 6 request,,,,,,
+24_010_014,Phân trang danh sách công nợ theo đơn hàng,Vai: province. Danh sách có trên 10 nhân viên,"1. Đọc số dòng trang đầu;
+2. Sang trang 2;
+3. Đổi số dòng mỗi trang sang 20;
+4. Vào trang cuối",,"Mặc định 10 dòng; params gửi page 0-based (trang 2 gửi page=1); đổi size gửi size=20; cột STT trang sau tiếp tục đánh số (index + size × page + 1), không quay về 1",,,,,,
+24_010_015,Lọc theo khoảng ngày,Vai: province. Có công nợ ở nhiều mốc thời gian,"1. Chọn khoảng ngày trong PresetRangePicker;
+2. Quan sát tham số gửi lên và kết quả",,Gửi begin/end dạng timestamp; bảng chỉ còn công nợ trong khoảng; Tổng công nợ tính lại. Ô chọn không cho chọn ngày kết thúc trước ngày bắt đầu,,,,,,
+24_010_016,Cấp tỉnh chưa chọn điểm bán,Vai: province. Chưa chọn điểm bán nào ở ô SelectShopMultiple,"1. Mở /debt-reconciliation/employee-debt;
+2. Quan sát bảng và tab Network",,KHÔNG gọi get-debt-summary; bảng rỗng — đây là hoạt động bình thường,,,,,,
+24_010_017,Đổi điểm bán khi đang ở trang 3,Vai: province. Danh sách có trên 3 trang,"1. Sang trang 3;
+2. Đổi sang điểm bán khác",,"Trang nhảy về trang 1 (params.page đặt lại 0); dữ liệu là của điểm bán mới, không giữ trang cũ rồi ra bảng rỗng",,,,,,
+24_010_018,Quyền của nút Xuất Excel,Vai: tài khoản KHÔNG có quyền view_employee_debt,"1. Mở màn Công nợ nhân viên;
+2. Tìm nút Xuất Excel",,Bảng dữ liệu vẫn hiện bình thường,,,,,,
+,050 — Tra cứu công nợ nhân viên với cửa hàng,,,,,,,,,,
+24_050_004,Tìm nhân viên ở thẻ Công nợ với cửa hàng,Vai: province. Có nhân viên nợ cửa hàng,"1. Chọn thẻ ""Công nợ với cửa hàng"";
+2. Gõ tên hoặc SĐT vào ô ""Tìm tên/SĐT nhân viên""",,Gọi GET /employee-debt với keyword; bảng lọc đúng. Đây là API KHÁC thẻ Công nợ theo đơn hàng — kết quả hai thẻ không phải lúc nào cũng khớp nhau,,,,,,
+24_050_005,Cấp tỉnh chọn điểm bán ở thẻ Công nợ với cửa hàng,Vai: province. Đã chọn một điểm bán cụ thể,"1. Chọn thẻ Công nợ với cửa hàng;
+2. Chọn một điểm bán;
+3. So danh sách với khi chưa chọn",,Cần user xác nhận đây là cố ý hay lỗi,,,,,,
+24_050_006,Lọc trạng thái Tất cả tương đương không lọc,Vai: province,"1. Chọn ""Tất cả"" ở ô trạng thái trả nợ;
+2. So với lần đầu vào màn",,Số dòng giống hệt lúc chưa lọc — backend quy ALL về null (EmployeeDebtServiceImpl:206),,,,,,
+24_050_007,Trạng thái từng dòng khớp bộ lọc đã chọn,Vai: province. Có nhân viên ở cả ba trạng thái,"1. Lần lượt chọn ""Chưa trả"", ""Trả một phần"", ""Đã trả""",,Chưa trả: mọi dòng có Đã trả = 0. Trả một phần: 0 < Đã trả < Tổng nợ. Đã trả: Còn lại = 0 và Khoản chưa thanh toán = 0,,,,,,
+24_050_008,Phân trang thẻ Công nợ với cửa hàng,Vai: province. Có trên 10 nhân viên nợ cửa hàng,"1. Sang trang 2;
+2. Đổi số dòng mỗi trang",,Gọi /employee-debt với page 0-based và size theo lựa chọn; tổng số dòng lấy từ page.total_element; dữ liệu gom theo sys_user_id (GROUP BY) nên mỗi nhân viên chỉ một dòng,,,,,,
+,070 — Ghi nhận nhân viên nộp tiền trả nợ cửa hàng,,,,,,,,,,
+24_070_003,Bỏ trống tổng số tiền khi nhân viên nộp tiền,Vai: province. Nhân viên có khoản nợ cửa hàng,"1. Bấm ""Thanh toán"";
+2. Không nhập Tổng số tiền;
+3. Bấm nút Thanh toán",,"Chặn với toast đỏ nguyên văn ""Vui lòng nhập số tiền thanh toán""; không gọi POST /employee-debt/payment",,,,,,
+24_070_004,Nhập số tiền bằng 0 hoặc số âm khi nộp tiền,Vai: province,"1. Nhập 0 rồi bấm Thanh toán;
+2. Thử nhập -100.000",,"0 bị chặn bằng ""Vui lòng nhập số tiền thanh toán""; ô số không nhận dấu trừ nên giá trị âm không gửi được lên API",,,,,,
+24_070_005,Nộp nhiều hơn tổng nợ còn lại,Vai: province. Nhân viên còn nợ một khoản xác định,"1. Nhập Tổng số tiền lớn hơn Còn lại;
+2. Đọc cột Số tiền trả của từng khoản;
+3. Bấm Thanh toán",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+24_070_006,API thanh toán trả lỗi,Vai: province. Giả lập response lỗi từ /employee-debt/payment,1. Thực hiện thanh toán khi API trả lỗi,,"Hiện thông báo của backend nếu có, nếu không thì hiện đúng chuỗi mặc định ""Thanh toán công nợ thất bại""; số liệu trên màn KHÔNG đổi",,,,,,
+24_070_007,Đóng form thanh toán giữa chừng,Vai: province,"1. Nhập số tiền và ghi chú;
+2. Đóng drawer;
+3. Mở lại",,Không gọi API; mở lại thì các ô trống trở lại và số nợ không đổi,,,,,,
+24_070_008,Số liệu liên quan cập nhật sau khi nộp tiền,Vai: province. Nhân viên nợ 1.000.000,"1. Ghi lại Tổng nợ, Đã trả, Còn lại, Khoản chưa thanh toán;
+2. Nộp 400.000;
+3. Đọc lại bốn số",,"Tổng nợ giữ nguyên 1.000.000; Đã trả tăng đúng 400.000; Còn lại = 600.000; trạng thái dòng chuyển ""Trả một phần""; khoản được phân bổ xuất hiện trong thẻ Lịch sử thanh toán kèm ngày và phương thức",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+24_PQ_002,Cán bộ Bưu điện xã xem công nợ nhân viên,Vai: ward,"1. Mở /debt-reconciliation/employee-debt;
+2. Chọn thẻ Công nợ với cửa hàng",,"Vai cấp xã chỉ thấy công nợ của các điểm bán thuộc xã mình, không thấy điểm bán của xã khác.",,,,,,
+24_PQ_003,Tổng công ty xem công nợ toàn mạng lưới,Vai: tct,"1. Mở màn Công nợ nhân viên;
+2. Chọn thẻ Công nợ với cửa hàng",,Không bị lọc theo đơn vị; chọn điểm bán nào thì lọc đúng điểm bán đó,,,,,,
+24_PQ_004,Tài khoản thiếu quyền mở màn Công nợ nhân viên,Vai: tài khoản không có quyền trong ROUTES_PERMISSION.EMPLOYEE_DEBT,"1. Tìm menu Đối soát công nợ › Công nợ nhân viên;
+2. Gõ thẳng URL",,Menu không hiện và route bị chặn,,,,,,

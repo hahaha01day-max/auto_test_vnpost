@@ -1,0 +1,331 @@
+{
+  "cases": {
+    "12_1_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_010_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_010_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_010_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_020_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_020_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_020_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_020_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_030_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_030_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: thêm/sửa/xoá nhà cung cấp hoặc nhóm NCC. NCC dùng chung cho PO và công nợ — xoá sai là mất tham chiếu.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "12_1_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: đăng nhập bằng GDV điểm bán seed (bật 24/09/2026)"
+    },
+    "12_1_070_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO / SỬA / XOÁ nhóm NCC thật trên hệ thống (POST·PUT·DELETE /chain-supplier-groups) — trước đây phân loại nhầm là đọc. Nhóm NCC là khoá phân loại của mọi nhà cung cấp."
+    },
+    "12_1_070_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO / SỬA / XOÁ nhóm NCC thật trên hệ thống (POST·PUT·DELETE /chain-supplier-groups) — trước đây phân loại nhầm là đọc. Nhóm NCC là khoá phân loại của mọi nhà cung cấp."
+    },
+    "12_1_070_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      },
+      "allowMutation": true,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO / SỬA / XOÁ nhóm NCC thật trên hệ thống (POST·PUT·DELETE /chain-supplier-groups) — trước đây phân loại nhầm là đọc. Nhóm NCC là khoá phân loại của mọi nhà cung cấp."
+    },
+    "12_1_070_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    },
+    "12_1_070_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenNCC": "AUTO TEST KHONG DUNG - NCC kiem thu",
+        "sdtNCC": ""
+      }
+    }
+  },
+  "_note": "Phân hệ 12_1 Hồ sơ nhà cung cấp. 🔴 Xoá NCC khi đã có PO / công nợ phải bị chặn — nếu xoá được thì công nợ mất tham chiếu. Phân biệt `CHAIN_SUPPLIER` (cấp chuỗi) và `SHOP_SUPPLIER` (cấp điểm bán)."
+}

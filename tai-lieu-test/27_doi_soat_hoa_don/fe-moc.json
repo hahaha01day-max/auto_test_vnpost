@@ -1,0 +1,17 @@
+{
+  "spec": {
+    "tests/po-rieng.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/supplier/invoice-reconcile",
+        "/supplier/invoice-reconcile/detail"
+      ],
+      "fe": [
+        "src/features/purchaseOrder/pages/InvoiceReconcileDetailPage.jsx",
+        "src/features/purchaseOrder/pages/InvoiceReconcilePage.jsx",
+        "src/features/purchaseOrder/services/poInvoiceReconcileApi.js"
+      ]
+    }
+  }
+}

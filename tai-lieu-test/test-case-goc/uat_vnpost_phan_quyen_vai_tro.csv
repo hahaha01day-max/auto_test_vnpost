@@ -1,0 +1,260 @@
+,Chức năng,,,ĐỔI TRẢ HÀNG,,,,,,,
+,Mã Testcase,,,FUNC_VAITRO_,,,,,,,
+,Tổng các tình huống kiểm thử,,,45,,,,,,,
+,Chưa thực hiện,,,45,,,,,,,
+,Đạt yêu cầu,,,0,,,,,,,
+,Không đạt yêu cầu,,,0,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng hiển thị ban đầu của màn Quản lý vai trò,,,,,,,,,,
+FUNC_VAITRO__1,Kiểm tra hiển thị màn hình Quản lý vai trò,,,"1. Truy cập vào link https://vnpost.sfin.vn
+2. Đăng nhập hệ thống
+3. Chọn menu ""Quản lý vai trò""",TB,Màn quản lý vai trò,"1. Hệ thống hiển thị màn hình Quản lý vai trò đúng giao diện thiết kế (đúng về font chữ; cỡ chữ; màu sắc; khoảng cách các hàng; màu sắc...)
+2. Bố cục tổng thể: title, filter, bảng dữ liệu, phân trang căn chỉnh đúng thiết kế, không có lỗi trắng trang.",,,,
+FUNC_VAITRO__2,Kiểm tra giao diện chung,,,"1. Vào màn hình ""Quản lý vai trò""
+2. Kiểm tra thanh tìm kiếm, thêm vai trò, bảng dữ liệu, chỉnh sửa, xóa, phân quyền chức năng",TB,Màn quản lý vai trò,"1. Ô tìm kiếm xuất hiện trên cùng, placeholder đúng: ""Tìm kiếm vai trò""
+2. Bảng dữ liệu có các cột: Tên vai trò / nhóm, phạm vi, ghi chú, thao tác",,,,
+FUNC_VAITRO__3,Kiểm tra tiêu đề cột trong bảng,,,"1. Vào màn hình ""Quản lý vai trò""
+2. Xác định bảng dữ liệu
+3. Quan sát tiêu đề các cột hiển thị trên bảng",TB,Màn quản lý vai trò,"1. Các cột hiển thị: Tên vai trò / nhóm, phạm vi, ghi chú, thao tác
+2. Các tiêu đề viết hoa chữ cái đầu (theo chuẩn hệ thống)
+3. Giao diện căn giữa, trái, phải đúng thiết kế",,,,
+FUNC_VAITRO__4,Kiểm tra dữ liệu hiển thị trong bảng,,,"1. Vào màn hình ""Quản lý vai trò""
+2. Quan sát dữ liệu từng dòng trong bảng",TB,Màn quản lý vai trò,"1. Hành động mô tả đầy đủ
+2. Text mô tả hành động không bị mất hay cắt ngang
+3. Không hiển thị giá tị NULL hoặc rỗng bất thường",,,,
+FUNC_VAITRO__5,Kiểm tra ô Tìm kiếm hiển thị đầy đủ,,,"1. Vào màn hình ""Quản lý vai trò""
+2. Quan sát góc trên của màn hình danh sách vai trò
+3. Xác nhận sự hiện diện của ô Tìm kiếm",TB,Màn quản lý vai trò,"1. Ô tìm kiếm hiển thị rõ ràng, placeholder chuẩn (Tìm kiếm vai trò)
+2. Không tràn ra ngoài giao diện
+3. Không lỗi font, không lệch lề",,,,
+FUNC_VAITRO__6,"Kiểm tra nút ""Thêm vai trò"" hiển thị đúng",,,"1. Vào màn ""Quản lý vai trò""
+2. Quan sát góc phải màn hình
+3. Xác nhận sự hiện diện của nút ""Thêm vai trò""",TB,Màn quản lý vai trò,"1. Nút ""Thêm vai trò"" hiển thị rõ, màu sắc đúng theo design
+2. Không bị tràn viền hoặc mờ",,,,
+FUNC_VAITRO__7,Kiểm tra nút thu gọn tất cả hiển thị đúng,,,"1. Vào màn hình ""Quản lý vai trò""
+2. Quan sát góc phải trên bảng danh sách
+3. Xác nhận sự hiện diện của nút ""Thu gọn tất cả""",TB,Màn quản lý vai trò,"1. Nút thu gọn tất cả hiển thị rõ, màu sắc đúng theo design
+2. Khi click, bảng danh sách vai trò sẽ thu gọn
+3. Nút thu gọn tất cả chuyển thành nút mở rộng tất cả",,,,
+FUNC_VAITRO__8,Kiểm tra cột Thao tác hiển thị đủ nút,,,"1. Vào màn hình ""Quản lý vai trò"" 
+2. Quan sát cột ""Thao tác"" trên từng dòng
+3. Xác nhận sự hiện diện của nút Chỉnh sửa, xóa, gán chức năng theo vai trò",TB,Màn quản lý vai trò,"1. Nút hiển thị rõ, không bị mờ
+2. Các nút căn giữa cột, không vỡ bố cục.",,,,
+FUNC_VAITRO__9,Kiểm tra phản hồi UI khi thu nhỏ màn hình,,,"1. Vào màn hình ""Quản lý vai trò""
+2. Thu nhỏ trình duyệt (kéo cửa sổ nhỏ lại)
+3. Quan sát xem các cột, nút, ô tìm kiếm có co giãn hợp lý không",TB,Màn quản lý vai trò,"1. Giao diện đúng chuẩn: các cột co giãn vừa phải, không mất cột nào
+2. Không vỡ bố cục, không tràn lề",,,,
+FUNC_VAITRO__10,Kiểm tra font chữ và khoảng cách hiển thị,,,"1. Vào màn hình ""Quản lý vai trò""
+2. Quan sát font chữ các tiêu đề cột, dòng dữ liệu, nút bấm
+3. Đối chiếu khoảng cách giữa các dòng, cột",TB,Màn quản lý vai trò,"1. Font chữ chuẩn theo design
+2. Các dòng cách nhau đều, không bị dính hoặc cách xa bất thường
+3. Bảng hiển thị sạch sẽ, không lỗi font, không bị lệch dòng hoặc tràn chữ.",,,,
+FUNC_VAITRO__11,"Kiểm tra hiển thị nút ""Chỉnh sửa""",,,"1. Vào màn hình ""Quản lý vai trò""
+2. Quan sát cột hành động",TB,Màn quản lý vai trò,"1. Mỗi dòng đều có nút ""Chính sửa"" hiển thị đầy đủ
+2. Khi click, màn hình chỉnh sửa vai trò sẽ hiển thị",,,,
+FUNC_VAITRO__12,"Kiểm tra hiển thị nút ""Xóa""",,,"1. Vào màn hình ""Quản lý vai trò""
+2. Quan sát cột hành động",TB,Màn quản lý vai trò,"1. Mỗi dòng đều có nút ""Xóa"" hiển thị đầy đủ
+2. Khi click, màn hình hiển thị popup confirm xóa vai trò sẽ hiển thị",,,,
+FUNC_VAITRO__13,"Kiểm tra hiển thị nút ""Phân quyền chức năng""",,,"1. Vào màn hình ""Quản lý vai trò""
+2. Quan sát cột hành động",TB,Màn quản lý vai trò,"1. Mỗi dòng đều có nút ""Phân quyền chức năng"" hiển thị đầy đủ
+2. Khi click, màn hình Phân quyền chức năng theo vai trò sẽ hiển thị",,,,
+,"Kiểm tra chức năng Tìm kiếm tên, vai trò",,,,,,,,,,
+FUNC_VAITRO__14,Kiểm tra tìm kiếm với từ khóa hợp lệ,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Xác định một từ khóa hợp lệ (VD: Marketing)
+3. Nhập từ khóa vào ô tìm kiếm
+4. Nhấn phím Enter
+5. Kiểm tra kết quả trả về",TB,Màn quản lý vai trò,"1. Hệ thống hiển thị danh sách có chứa từ khóa tìm kiếm
+2. Giao diện bảng dữ liệu đúng định dạng, không lỗi căn lề, font chữ, màu sắc
+3. Cột Tên vai trò / nhóm, phạm vi, ghi chú, thao tác vẫn đủ, không thiếu trường
+4. Không xảy ra lỗi giao diện hoặc lỗi hệ thống",,,,
+FUNC_VAITRO__15,Kiểm tra tìm kiếm với từ khóa không tồn tại,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Nhập một từ khóa không có trong hệ thống vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý vai trò,"1. Hệ thống trả về bảng trống
+2. Không phát sinh lỗi giao diện, giao diện vẫm giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__16,Kiểm tra tìm kiếm với ký tự đặc biệt,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Nhập các ký tự đặc biệt như: 
+!@#$%^&*() vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý vai trò,"1. Hệ thống xử lý bình thường, không báo lỗi hệ thống
+2. Hệ thống trả về bảng trống
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__17,Kiểm tra tìm kiếm với từ khóa có khoảng trắng,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Nhập từ khóa có chứa khoảng trắng ở đầu hoặc cuối (VD: "" Marketing "")
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý vai trò,"1. Hệ thống tự động loại bỏ khoảng trắng thừa
+2. Hiển thị kết quả tìm kiếm đúng với từ khóa chuẩn
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__18,"Kiểm tra tìm kiếm với phân biệt chữ hoa và chữ thường, không dấu",,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Nhập từ khóa bằng chữ hoa, chữ thường hoặc kết hợp
+3. Nhấn phím Enter
+4. So sánh kết quả tìm kiếm",TB,Màn quản lý vai trò,"1. Hệ thống tìm kiếm không phân biệt chữ hoa chữ thường
+2. Hiển thị đúng danh sách bản ghi phù hợp
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__19,Kiểm tra tìm kiếm khi để trống ô tìm kiếm,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Không nhập gì vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý vai trò,"1. Hệ thống về giao diện như lúc đầu
+2. Không phát sinh lỗi hệ thống, không phát sinh lỗi giao diện, giao diện giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__20,Kiểm tra nhập khoảng trắng liên tiếp vào ô tìm kiếm,,,"1. Tại ô tìm kiếm, nhập 1 chuỗi toàn dấu 
+("" "")
+2. Ấn phím Enter",TB,Màn quản lý vai trò,"1. Hệ thống tự động tìm khoảng trắng
+2. Nếu chuỗi rỗng sau tìm. Hệ thống hiển thị danh sách ban đầu",,,,
+,Kiểm tra chức năng Thêm vai trò,,,,,,,,,,
+FUNC_VAITRO__21,Kiểm tra khi mở màn Thêm vai trò,,,"1. Truy cập màn hình ""Quản lý vai trò""
+2. Click vào ""Thêm vai trò""",TB,Màn Thêm vai trò,Màn thêm mới vai trò hiển thị,,,,
+FUNC_VAITRO__22,Kiểm tra khi thêm vai trò thành công,,,"1. Truy cập màn hình ""Quản lý vai trò""
+2. Click vào thêm vai trò
+3. Nhập đầy đủ thông tin hợp lệ: Mã vai trò, tên vai trò, phạm vi, mô tả
+4. Click nút xác nhận thêm",TB,Màn Thêm vai trò,"1. Hiển thị thông báo ""Thêm mới thành công""
+2. Vai trò mới hiển thị ngay trong danh sách
+3. Dữ liệu đúng theo thông tin đã nhập",,,,
+FUNC_VAITRO__23,Kiểm tra thêm vai trò thiếu trường bắt buộc,,,"1. Truy cập màn hình ""Quản lý vai trò""
+2. Click Thêm vai trò
+3. Bỏ trống mã vai trò
+4. Nhập đầy đủ các trường khác
+5. Quan sát danh sách kết quả hiển thị
+6. Click xác nhận thêm",TB,Màn Thêm vai trò,"1. Hệ thống hiển thị cảnh báo ""Vui lòng nhập mã vai trò""
+2. Không lưu dữ liệu, form giữ nguyên để người dùng sửa",,,,
+FUNC_VAITRO__24,Kiểm tra thêm vai trò thiếu trường bắt buộc,,,"1. Truy cập màn hình ""Quản lý vai trò""
+2. Click Thêm vai trò
+3. Bỏ trống Tên vai trò
+4. Nhập đầy đủ các trường khác
+5. Quan sát danh sách kết quả hiển thị
+6. Click xác nhận thêm",TB,Màn Thêm vai trò,"1. Hệ thống hiển thị cảnh báo ""Vui lòng nhập Tên vai trò""
+2. Không lưu dữ liệu, form giữ nguyên để người dùng sửa",,,,
+FUNC_VAITRO__25,Kiểm tra thêm vai trò thiếu trường bắt buộc,,,"1. Truy cập màn hình ""Quản lý vai trò""
+2. Click Thêm vai trò
+3. Bỏ trống Phạm vi
+4. Nhập đầy đủ các trường khác
+5. Quan sát danh sách kết quả hiển thị
+6. Click xác nhận thêm",TB,Màn Thêm vai trò,"1. Hệ thống hiển thị cảnh báo ""Vui lòng chọn phạm vi""
+2. Không lưu dữ liệu, form giữ nguyên để người dùng sửa",,,,
+FUNC_VAITRO__26,Kiểm tra thêm vai trò bị trùng tên vai trò,,,"1. Truy cập màn hình ""Quản lý vai trò""
+2. Click Thêm vai trò
+3. Nhập Mã vai trò trùng với tài khoản có sẵn
+4. Click xác nhận thêm",TB,Màn Thêm vai trò,"1. Hệ thống hiển thị lỗi: ""Mã vai trò đã tồn tại""
+2. Không thêm mới",,,,
+,Kiểm tra chức năng Chỉnh sửa vai trò,,,,,,,,,,
+FUNC_VAITRO__27,Kiểm tra khi mở màn chỉnh sửa thông tin,,,"1. Truy cập màn ""Quản lý vai trò""
+2. Tại cột thao tác, click vào sửa thông tin của 1 vai trò",TB,Màn Thêm vai trò,"1. Màn hình chỉnh sửa thông tin vai trò hiển thị
+2. Không lỗi hiển thị, giao diện bảng cân đối, không xộc xệch",,,,
+FUNC_VAITRO__28,Kiểm tra khi sửa Tên vai trò,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào sửa thông tin của 1 vai trò
+3. Đổi tên vai trò sang giá trị mới
+4. Click xác nhận sửa",TB,Màn Thêm vai trò,"1. Hiển thị thông báo ""Chỉnh sửa vai trò thành công""
+2. Danh sách vai trò cập nhật tên vai trò mới",,,,
+FUNC_VAITRO__29,Kiểm tra khi sửa Phạm vi,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào sửa thông tin của 1 vai trò
+3. Chọn phạm vi vai trò sang giá trị mới
+4. Click xác nhận sửa",TB,Màn Thêm vai trò,"1. Hiển thị thông báo ""Chỉnh sửa vai trò thành công""
+2. Danh sách vai trò cập nhật theo phạm vi đã chỉnh sửa",,,,
+FUNC_VAITRO__30,"Kiểm tra lỗi để trống những trường bắt buộc khi sửa (Tên vai trò, Phạm vi)",,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào sửa thông tin của 1 vai trò
+3. Xóa trắng trường Tên vai trò hoặc không tick chọn phạm vi
+4. Click xác nhận sửa",TB,Màn Thêm vai trò,"1. Hiển thị thông báo: ""Vui lòng nhập tên vai trò"" hay ""Vui lòng chọn phạm vi""
+2. Không lưu dữ liệu, form giữ nguyên để sửa, giao diện không bị lỗi",,,,
+FUNC_VAITRO__31,Kiểm tra khi hủy thao tác sửa thông tin,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào sửa thông tin của 1 vai trò
+3. Sửa một số trường như tên vai trò, phạm vi...
+4. Click hủy",TB,Màn Thêm vai trò,"1. Màn chỉnh sửa vai trò đóng lại
+2. Dữ liệu cũ không bị thay đổi, danh sách hiển thị như cũ
+3. Giao diện không bị lỗi",,,,
+,Kiểm tra chức năng xóa thông tin vai trò,,,,,,,,,,
+FUNC_VAITRO__32,Kiểm tra khi mở màn Xóa vai trò,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào xóa thông tin của 1 vai trò",TB,Màn Thêm vai trò,"1. Màn hình hiển thị popup: ""Bạn có muốn xóa vai trò này không?""
+2. Không lỗi hiển thị, giao diện bảng cân đối, không xộc xệch",,,,
+FUNC_VAITRO__33,Kiểm tra khi xác nhận xóa vai trò,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào xóa thông tin của 1 vai trò
+3. Click nút đồng ý xóa vai trò",TB,Màn Thêm vai trò,"1. Màn hình hiển thị popup: ""Bạn có muốn xóa vai trò này không?""
+2. Xóa dữ liệu thành công, danh sách vai trò cập nhật không hiển thị dữ liệu đã xóa 
+3. Giao diện không bị lỗi",,,,
+FUNC_VAITRO__34,Kiểm tra khi hủy vai trò,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào xóa thông tin của 1 vai trò
+3. Click nút hủy xóa vai trò",TB,Màn Thêm vai trò,"1. Màn hình hiển thị popup: ""Bạn có muốn xóa vai trò này không?""
+2. Dữ liệu cũ không bị thay đổi, danh sách vai trò hiển thị như cũ
+3. Giao diện không bị lỗi",,,,
+,Kiểm tra chức năng Phân quyền chức năng theo vai trò,,,,,,,,,,
+FUNC_VAITRO__35,Kiểm tra khi mở màn Phân quyền chức năng,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò",TB,Màn phân quyền chức năng theo vai trò,"1. Màn hình phân quyền chức năng vai trò hiển thị
+2. Không lỗi hiển thị, giao diện bảng cân đối, không xộc xệch",,,,
+FUNC_VAITRO__36,Kiểm tra khi tìm kiếm với từ khóa hợp lệ,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Xác định một từ khóa hợp lệ (VD: ""nhân viên"")
+4. Nhập từ khóa vào ô tìm kiếm
+5. Nhấn phím Enter
+6. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống hiển thị danh sách có chứ từ khóa tìm kiếm
+2. Giao diện bảng dữ liệu đúng định dạng, không lỗi căn lề, font chữ, màu sắc
+3. Không xảy ra lỗi giao diện hoặc lỗi hệ thống",,,,
+FUNC_VAITRO__37,Kiểm tra tìm kiếm với ký tự đặc biệt,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Nhập các ký tự đặc biệt như: 
+!@#$%^&*() vào ô tìm kiếm
+4. Nhấn phím Enter
+5. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống xử lý bình thường, không báo lỗi hệ thống
+2. Hệ thống trả về bảng trống
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__38,Kiểm tra tìm kiếm với từ khóa có khoảng trắng,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Nhập từ khóa có chứa khoảng trắng ở đầu hoặc cuối (VD: "" nhân viên "")
+4. Nhấn phím Enter
+5. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống tự động loại bỏ khoảng trắng thừa
+2. Hiển thị kết quả tìm kiếm đúng với từ khóa chuẩn
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__39,"Kiểm tra tìm kiếm với phân biệt chữ hoa và chữ thường, không dấu",,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Nhập từ khóa bằng chữ hoa, chữ thường hoặc kết hợp
+4. Nhấn phím Enter
+5. So sánh kết quả tìm kiếm",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống tìm kiếm không phân biệt chữ hoa chữ thường
+2. Hiển thị đúng danh sách bản ghi phù hợp
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__40,Kiểm tra tìm kiếm khi để trống ô tìm kiếm,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Không nhập gì vào ô tìm kiếm
+4. Nhấn phím Enter
+5. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống về giao diện như lúc đầu
+2. Không phát sinh lỗi hệ thống, không phát sinh lỗi giao diện, giao diện giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_VAITRO__41,Kiểm tra nhập khoảng trắng liên tiếp vào ô tìm kiếm,,,"1. Tại ô tìm kiếm, nhập 1 chuỗi toàn dấu 
+("" "")
+2. Ấn phím Enter",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống tự động tìm khoảng trắng
+2. Nếu chuỗi rỗng sau tìm. Hệ thống hiển thị danh sách ban đầu",,,,
+FUNC_VAITRO__42,Kiểm tra khi chọn tất cả chức năng cho vai trò,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Tick chọn checkbox cột Tên
+4. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống tự động chọn tất cả các chức năng có trong bảng danh sách chức năng 
+2. Hiển thị số lượng chức năng đã chọn
+3. Giao diện không phát sinh lỗi",,,,
+FUNC_VAITRO__43,Kiểm tra khi chọn từng chức năng cho vai trò,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Tick chọn chức năng trong bảng danh sách
+4. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống hiển thị các chức năng đã chọn trong bảng danh sách chức năng
+2. Hiển thị số lượng chức năng đã chọn
+3. Giao diện không phát sinh lỗi",,,,
+FUNC_VAITRO__44,Kiểm tra khi chọn chỉ hiển thị mục đã chọn,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Tick chọn chức năng trong bảng danh sách
+4. Nhấn chỉ hiển thị mục đã chọn
+5. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống hiển thị các chức năng đã chọn trong bảng danh sách chức năng
+2. Hiển thị số lượng chức năng đã chọn
+3. Chỉ hiển thị danh sách các chức năng đã chọn
+4. Giao diện không phát sinh lỗi",,,,
+FUNC_VAITRO__45,Kiểm tra khi làm mới chức năng đã chọn,,,"1. Truy cập vào màn hình ""Quản lý vai trò""
+2. Tại cột thao tác, click vào phân quyền chức năng của 1 vai trò
+3. Chọn các chức năng trong bảng danh sách
+4. Nhấn làm mới
+5. Kiểm tra kết quả trả về",TB,Màn phân quyền chức năng theo vai trò,"1. Hệ thống hiển thị các chức năng đã chọn trong bảng danh sách chức năng
+2. Hiển thị số lượng chức năng đã chọn
+3. Khi click, dữ liệu đã chọn trong bảng danh sách chức năng sẽ trở về như ban đầu khi chưa được tick chọn
+4. Giao diện không bị lỗi",,,,

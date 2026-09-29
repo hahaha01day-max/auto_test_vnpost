@@ -1,0 +1,104 @@
+﻿,Chức năng,,KIỂM KHO,,,,,,,,
+,Mã Testcase,,04_4_kiem_kho,,,,,,,,
+,Tổng các tình huống kiểm thử,,33,,,,,,,,
+,Chưa thực hiện,,33,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,KIỂM KHO,,,,,,,,,,
+,010 — Mở phiên kiểm kho và lập phiếu kiểm,,,,,,,,,,
+04_4_010_001,Thêm phiếu kiểm kho - mở form và validate,"Đã đăng nhập, có quyền tạo phiếu kiểm kho; kho cần kiểm chưa có phiên nào đang mở","1. Vào Kho hàng > Kiểm kho
+2. Vai cấp Bưu điện xã hoặc tỉnh: chọn điểm bán ở ô Chọn Kho / Điểm bán
+3. Bấm Mở phiên kiểm kho ở góc trên bên phải
+4. Để trống ô Chọn kho kiểm rồi bấm Mở lượt kiểm kho",,"Vai cấp trên điểm bán chưa chọn điểm bán thì nút mở phiên không hiện. Sau khi chọn điểm bán, màn chọn kho mở ra với ô Chọn kho kiểm bắt buộc, ô Phiên đang mở của kho và Nhân viên kiểm ở dạng chỉ đọc. Bỏ trống kho kiểm rồi bấm Mở lượt kiểm kho thì hệ thống báo Vui lòng chọn kho và không mở phiên. Kho đã có phiên đang mở thì nút đổi thành Tiếp tục kiểm kho.",,,,,,
+,"020 — Nhập số đếm theo sản phẩm, lô và serial",,,,,,,,,,
+04_4_020_001,Tải file mẫu Excel TRỐNG,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho","1. Tải file mẫu trống
+2. Mở file và đọc hàng tiêu đề",,File có đủ cột: SKU · Tên sản phẩm · Tên biến thể · Đơn vị · PP tính giá vốn · (các cột còn lại lấy đúng từ file mẫu thật); không có dòng dữ liệu nào.,,,,,,
+04_4_020_002,Tải file mẫu Excel CÓ dữ liệu sẵn,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho","1. Tải file mẫu có sẵn danh sách sản phẩm
+2. Mở file",,"Cùng bộ cột với file trống, nhưng đã điền sẵn danh sách sản phẩm của kho đang chọn kèm số tồn hiện tại; số dòng khớp số sản phẩm có tồn.",,,,,,
+04_4_020_003,Upload SKU hoặc tên sản phẩm có trong hệ thống,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho; có file khai theo SKU và file khai theo tên sản phẩm","1. Upload file khai theo SKU
+2. Đọc các dòng nhận diện được
+3. Upload file khai theo TÊN sản phẩm",,Cả hai cách đều nhận diện đúng sản phẩm / biến thể; dòng ở trạng thái hợp lệ.,,,,,,
+04_4_020_004,Upload SKU và tên sản phẩm KHÔNG có trong hệ thống,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho; có file chứa SKU và tên không tồn tại","1. Upload file
+2. Đọc trạng thái và lý do của dòng đó",,"Dòng bị đánh lỗi, lý do nêu rõ không tìm thấy sản phẩm / biến thể theo SKU hoặc tên sản phẩm; không tính vào số dòng hợp lệ.",,,,,,
+04_4_020_005,Bỏ trống mã lô với sản phẩm FIFO,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho; có file khai sản phẩm FIFO nhưng để trống cột mã lô","1. Upload file
+2. Đọc lý do lỗi của dòng đó",,"Dòng bị đánh lỗi với lý do nguyên văn ""Sản phẩm FIFO/LIFO bắt buộc có mã lô""; không tính vào dòng hợp lệ.",,,,,,
+,030 — Nhập số đếm hàng loạt từ tệp Excel,,,,,,,,,,
+04_4_030_001,Số lượng thực tế LỚN HƠN tồn kho,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho; sản phẩm có tồn 100","1. Nhập số lượng thực tế = 120
+2. Đọc cột chênh lệch
+3. Mở thẻ ""Tồn kho tăng""",,"Chênh lệch = **+20**, đúng dấu; dòng xuất hiện ở thẻ ""Tồn kho tăng"", không ở thẻ giảm hay khớp.",,,,,,
+04_4_030_002,Số lượng thực tế NHỎ HƠN tồn kho,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho; sản phẩm có tồn 100","1. Nhập số lượng thực tế = 20
+2. Đọc cột chênh lệch
+3. Mở thẻ ""Tồn kho giảm""",,"Chênh lệch = **-80**, đúng dấu; dòng xuất hiện ở thẻ ""Tồn kho giảm"".",,,,,,
+04_4_030_003,Số lượng thực tế BẰNG tồn kho,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho; sản phẩm có tồn 100","1. Nhập số lượng thực tế = 100
+2. Đọc chênh lệch và các thẻ",,"Chênh lệch = 0; dòng ở thẻ ""Tồn kho khớp"".",,,,,,
+04_4_030_004,Nhập tồn kho thực tế ÂM,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho","1. Nhập số lượng thực tế = -5
+2. Ghi lại ô có nhận giá trị âm hay không và chênh lệch tính ra sao",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_4_030_005,Nhập chữ vào cột số lượng thực tế,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho","1. Nhập ""abc"" vào cột số lượng thực tế
+2. Đọc giá trị ô và cột số lượng mới",,"Đây là chỗ dễ lẫn với **""chưa đếm""**: nếu chữ bị bỏ thành rỗng thì dòng đó là chưa đếm, không được coi là đếm 0.",,,,,,
+04_4_030_006,Dòng CHƯA ĐẾM khác dòng ĐẾM 0,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho; phiếu có nhiều dòng sản phẩm","1. Để trống số lượng thực tế ở dòng A
+2. Nhập 0 ở dòng B
+3. Đọc chênh lệch và thẻ của từng dòng
+4. Áp dụng phiếu rồi đọc tồn của A và B",,"Dòng A (chưa đếm) và dòng B (đếm 0) phải được xử lý KHÁC nhau: A không sinh điều chỉnh, B sinh điều chỉnh giảm về 0.",,,,,,
+,040 — Điều hành phiên và chốt phiên kiểm kho,,,,,,,,,,
+04_4_040_001,Tạo phiếu kiểm kho nháp,"Vai `shop` đăng nhập, đang ở form lập phiếu kiểm kho","1. Nhập đủ thông tin và vài dòng sản phẩm
+2. Lưu nháp
+3. Kiểm tồn kho của các sản phẩm trong phiếu",,Phiếu ở trạng thái nháp; **tồn kho CHƯA đổi** — nháp không áp dụng vào kho.,,,,,,
+04_4_040_002,Chỉnh sửa phiếu kiểm kho nháp,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho; có phiếu kiểm kho nháp","1. Mở phiếu nháp
+2. Đổi số lượng thực tế một dòng, thêm một dòng
+3. Lưu và mở lại
+4. Kiểm tồn kho",,"Sửa được, mở lại thấy đúng dữ liệu mới; tồn kho vẫn chưa đổi.",,,,,,
+04_4_040_003,Tạo phiếu kiểm kho mới khi còn phiếu nháp,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho; đang có một phiếu kiểm kho nháp chưa hoàn thành","1. Bấm thêm phiếu kiểm kho mới
+2. Đọc thông báo",,"Bị chặn với thông báo yêu cầu hoàn thành phiếu kiểm kho trước khi tạo phiếu mới; không mở được form mới. Ràng buộc ""một phiếu nháp tại một thời điểm"" — quan trọng vì hai phiếu nháp cùng lúc sẽ điều chỉnh tồn hai lần.",,,,,,
+04_4_040_004,Tồn kho sau khi áp dụng phiếu kiểm kho,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho; có phiếu kiểm kho nháp với dòng tăng và dòng giảm","1. Ghi lại tồn từng sản phẩm trong phiếu
+2. Áp dụng phiếu
+3. Đọc lại tồn và cột ""Số lượng mới"" trên phiếu",,"Tồn mới = đúng số lượng thực tế đã kiểm (không phải tồn cũ ± chênh lệch tính lại); cột ""Số lượng mới"" khớp tồn thật.",,,,,,
+04_4_040_005,Không sửa được phiếu kiểm kho đã áp dụng,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho; có phiếu kiểm kho đã áp dụng","1. Mở phiếu đã áp dụng
+2. Tìm nút chỉnh sửa",,Nút chỉnh sửa **bị ẩn hẳn** (không phải disabled); phiếu chỉ xem được. Muốn sửa thì phải lập phiếu kiểm kho mới.,,,,,,
+,050 — Tra cứu phiên và xuất báo cáo chênh lệch kiểm kho,,,,,,,,,,
+04_4_050_001,Mở màn Phiếu kiểm kho,,"1. Truy cập Kho
+2. Chọn kiểm kho",,"- Hiển thị tiêu đề ""Phiếu kiểm kho"" - Hiển thị bộ lọc Trạng thái: Nháp, Đã áp dụng - Hiển thị ô tìm kiếm mã phiếu - Hiển thị khoảng thời gian - Hiển thị button: Thêm phiếu nhập kho, Chi tiết",,Đạt,,,,
+04_4_050_002,Tìm kiếm theo mã phiếu kiểm kho đúng,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho; đã biết một mã phiếu","1. Nhập đúng mã phiếu
+2. Quan sát",,Trả về đúng phiếu có mã trùng với mã đã nhập.,,,,,,
+04_4_050_003,Tìm kiếm mã phiếu không tồn tại,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho","1. Nhập ""KK999999999""",,Bảng về trạng thái rỗng; không lỗi đỏ.,,,,,,
+04_4_050_004,Bộ lọc trạng thái phiếu kiểm kho,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho","1. Mở bộ lọc trạng thái, đọc đủ lựa chọn
+2. Chọn lần lượt từng trạng thái",,Mỗi lựa chọn chỉ còn phiếu đúng trạng thái đó.,,,,,,
+04_4_050_005,Bộ lọc khoảng thời gian,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho","1. Chọn khoảng bao một phiếu đã biết
+2. Thu khoảng để loại phiếu đó
+3. Chọn khoảng đúng một ngày lập phiếu",,"Danh sách đúng theo khoảng chọn. DATETIME naive +7 — ngày biên phải ra đúng phiếu, không lệch một ngày.",,Đạt,,,,
+04_4_050_006,Chi tiết phiếu kiểm kho hiện đủ các phần,"Vai `shop` đăng nhập, đang ở màn Phiếu kiểm kho; có phiếu kiểm kho đã lập","1. Mở chi tiết một phiếu
+2. Đọc các phần và các thẻ",,Hiện đủ: **Thông tin phiếu** · **Bảng tính chi phí** · các thẻ **Tất cả** / **Tồn kho khớp** / **Tồn kho tăng** / **Tồn kho giảm**. Số dòng mỗi thẻ cộng lại = số dòng thẻ Tất cả.,,,,,,
+,"060 — Kiểm kê theo lô, tồn 0 / âm",,,,,,,,,,
+04_4_060_001,Kiểm kê THIẾU hàng của một lô,Vai `shop` đăng nhập; lô L001 có tồn 10,"1. Lập phiếu kiểm kho, khai số thực tế của lô L001 = 8
+2. Áp dụng phiếu
+3. Đọc tồn lô L001",,Tồn lô L001 giảm còn **8**; các lô khác của cùng sản phẩm KHÔNG đổi; chênh lệch -2 ghi đúng vào lô đó.,,,,,,
+04_4_060_002,Kiểm kê THỪA hàng của một lô,Vai `shop` đăng nhập; lô L001 có tồn 10,"1. Khai số thực tế của lô L001 = 12
+2. Áp dụng phiếu
+3. Đọc tồn lô và giá vốn lô",,Tồn lô L001 tăng thành **12**; chênh lệch +2.,,,,,,
+04_4_060_003,Kiểm kho GIẢM khi tồn đang bằng 0,Vai `shop` đăng nhập; sản phẩm có tồn = 0,"1. Khai số lượng thực tế nhỏ hơn 0 hoặc khai giảm cho sản phẩm tồn 0
+2. Bấm xác nhận áp dụng",,Hệ thống **không cho xác nhận**; Tồn giữ nguyên 0.,,,,,,
+04_4_060_004,Kiểm kho GIẢM khi tồn đang âm,Vai `shop` đăng nhập; sản phẩm đang có tồn âm,"1. Khai giảm thêm cho sản phẩm đó
+2. Bấm xác nhận",,Hệ thống **chặn**; tồn không âm sâu hơn.,,,,,,
+04_4_060_005,Kiểm kho TĂNG khi tồn đang âm,Vai `shop` đăng nhập; sản phẩm đang có tồn âm (ví dụ -2),"1. Khai số lượng thực tế = 3
+2. Áp dụng phiếu
+3. Đọc tồn và giá vốn sau điều chỉnh",,"**Cho phép**; tồn sau điều chỉnh = **3** (bằng số thực tế đã kiểm, không phải -2 + 3).",,,,,,
+,070 — Kỳ kế toán và bán âm,,,,,,,,,,
+04_4_070_001,Đóng kỳ kế toán thì giá vốn chứng từ đã chốt không đổi,Vai kế toán đăng nhập; đã có chứng từ kiểm kho được chốt trong kỳ,"1. Ghi lại giá vốn trên các chứng từ đã chốt
+2. Đóng kỳ kế toán
+3. Đọc lại giá vốn các chứng từ đó
+4. Thử lập phiếu kiểm kho có ngày thuộc kỳ đã đóng",,Giá vốn các chứng từ đã chốt **không thay đổi** sau khi đóng kỳ; lập phiếu ngược về kỳ đã đóng bị chặn.,,,,,,
+04_4_070_002,Bán hàng khi tồn kho bằng 0,Vai `gdv` đăng nhập; sản phẩm có tồn = 0; đã biết chính sách tồn âm đang bật,"1. Tạo đơn bán sản phẩm đó
+2. Xác nhận đơn
+3. Đọc tồn sau bán",,Cho phép tạo và xác nhận đơn bán (theo chính sách bán âm đang bật); tồn thành số âm đúng bằng số đã bán.,,,,,,
+04_4_070_003,Bán hàng khi tồn kho đang âm,"Vai `gdv` đăng nhập; sản phẩm đang có tồn âm (ví dụ -3), chính sách bán âm đang bật","1. Bán thêm 3 đơn vị
+2. Đọc tồn sau bán và giá vốn ghi trên đơn",,Cho phép bán tiếp; tồn = **-6**.,,,,,,
+04_4_070_004,Bán âm với sản phẩm quản lý theo Serial,"Vai `gdv` đăng nhập; sản phẩm quản lý serial, tồn = 0","1. Tạo đơn bán sản phẩm đó
+2. Ghi lại hệ thống có đòi chọn serial hay không
+3. Xác nhận đơn",,Đây là mâu thuẫn giữa chính sách bán âm và quản lý serial,,,,,,
+04_4_070_005,Nhập kho bù sau khi bán âm,Vai `shop` đăng nhập; sản phẩm đang có tồn -6,"1. Nhập kho 6 đơn vị, duyệt phiếu
+2. Đọc tồn và giá vốn",,Tồn quay về **0**; Đây là chỗ giá vốn hay sai nhất khi có bán âm.,,,,,,

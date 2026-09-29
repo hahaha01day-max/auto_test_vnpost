@@ -1,0 +1,76 @@
+<div class="flex">
+  <h1 style="margin:0">Bộ dữ liệu <%= t.lane %> <span class="mono small muted"><%= t.prefix %></span></h1>
+  <span class="right" id="tong"></span>
+</div>
+<p class="sub">Seed bằng API — các bước chạy nối tiếp; bước nào hỏng thì các bước sau tự huỷ.
+  Màn này tự cập nhật, 🚫 cần tải lại. <a href="/seed?tab=bo">← Các bộ đã tạo</a></p>
+
+<div class="card">
+  <table class="small" style="width:100%">
+    <thead><tr><th style="text-align:left">Bước</th><th style="text-align:left">Trạng thái</th><th style="text-align:left">Ghi chú</th><th></th></tr></thead>
+    <tbody id="buoc"></tbody>
+  </table>
+  <div class="flex" id="chay-tiep" style="margin-top:8px" hidden>
+    <form method="post" action="/seed/chay-tiep" class="flex right" style="margin:0">
+      <input type="hidden" name="lane" value="<%= t.lane %>">
+      <% const mt = profiles.find((p) => p.id === t.profileId); %>
+      <% if (mt) { %>
+        <span class="small muted">Môi trường của bộ: <b><%= mt.name %></b> <span class="mono"><%= mt.baseUrl %></span></span>
+      <% } else { %>
+        <label class="small" style="margin:0">Môi trường bộ này đã tạo:
+          <select name="profileId">
+            <% profiles.forEach((p) => { %><option value="<%= p.id %>" <%= p.name === 'Server dev' ? 'selected' : '' %>><%= p.name %></option><% }) %>
+          </select>
+        </label>
+      <% } %>
+      <button class="primary" style="white-space:nowrap;flex:0 0 auto;width:auto">Chạy tiếp bước chưa xong</button>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <div class="flex"><b id="log-tieu-de">Log</b><a class="right small" id="log-link" href="#" hidden>Mở run</a></div>
+  <div id="log" style="margin-top:8px"></div>
+</div>
+
+<script>
+(() => {
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const ve = (t) => {
+    document.getElementById('buoc').innerHTML = t.buoc.map((b) => `
+      <tr>
+        <td style="white-space:nowrap">${b.so}. ${esc(b.ten)}</td>
+        <td><span class="badge ${b.lop}">${esc(b.nhan)}</span></td>
+        <td class="muted">${esc(b.loi)}</td>
+        <td>${b.runId ? `<a href="/runs/${b.runId}">log</a>` : ''}</td>
+      </tr>`).join('');
+    const tong = t.conChay ? '<span class="badge b-run">Đang chạy</span>'
+      : t.soXong === t.buoc.length ? `<span class="badge b-pass">Xong ${t.soXong}/${t.buoc.length} bước</span>`
+      : `<span class="badge b-fail">Dừng ở ${t.soXong}/${t.buoc.length} bước</span>`;
+    document.getElementById('tong').innerHTML = tong;
+    document.getElementById('chay-tiep').hidden = t.conChay || t.soXong === t.buoc.length;
+    const log = document.getElementById('log');
+    const link = document.getElementById('log-link');
+    if (t.log) {
+      document.getElementById('log-tieu-de').textContent = `Log — bước ${t.log.so}. ${t.log.ten}`;
+      link.hidden = false; link.href = `/runs/${t.log.runId}`;
+      const cuoi = log.scrollTop + log.clientHeight >= log.scrollHeight - 20;
+      log.textContent = t.log.dong;
+      if (cuoi) log.scrollTop = log.scrollHeight;
+    } else {
+      log.textContent = 'Chưa có bước nào chạy.';
+    }
+    return t.conChay;
+  };
+  let lan = ve(<%- JSON.stringify(t).replace(/</g, '\\u003c') %>);
+  const hoi = async () => {
+    try {
+      const t = await (await fetch(location.pathname + '/state', { cache: 'no-store' })).json();
+      lan = ve(t);
+    } catch (e) { /* mạng chập chờn — lần sau hỏi lại */ }
+    // Còn chạy thì hỏi mỗi 2s; xong thì thưa ra 15s phòng có người bấm "Chạy tiếp" ở tab khác.
+    setTimeout(hoi, lan ? 2000 : 15000);
+  };
+  setTimeout(hoi, 2000);
+})();
+</script>

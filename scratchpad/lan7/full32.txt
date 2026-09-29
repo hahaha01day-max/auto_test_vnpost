@@ -1,0 +1,152 @@
+{'startTime': '2026-09-25T16:54:31.347Z', 'duration': 2099533.65, 'expected': 33, 'skipped': 3, 'unexpected': 36, 'flaky': 0}
+
+ failed | 32_160_004 — Bỏ trống Tên điểm bán khi tạo
+   ! Error: Không điều hướng được tới /chain/organization-management (đã quét 0 menu cha). URL hiện tại: http://192.168.1.47:3200/account. Khai đường đi vào MENU_THEO_ROUTE trong shared/auth/login.js, hoặc kiểm quyền của vai đang đăng nhập.
+
+ failed | 32_160_006 — Bỏ trống Tỉnh thành phố hoặc Xã phường khi tạo điểm bán
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('main').last().getByRole('button', { name: /Tạo điểm bán\/hub|Tạo Hub/ }) 
+
+ failed | 32_160_007 — Tạo điểm bán không nhập Địa chỉ chi tiết
+   ! TimeoutError: locator.fill: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-layout-content').first().locator('input[placeholder*="m ki"]').first() 
+
+ failed | 32_160_008 — Xem chi tiết điểm bán và chỉnh sửa
+   @ đo : tb "Request failed with status code 401" · lỗi  · SHOP_PROFILE ["A7MH32 RÁC Pos plus 315577","1"]
+   ! Error: expect(received).toContain(expected) // indexOf  Expected substring: "Cập nhật điểm bán thành công" Received string:    "Request failed with status code 401"
+
+ failed | 32_160_009 — Xoá điểm bán từ màn chi tiết
+   @ nút ở chi tiết điểm bán : Gán nhân viên · Thiết lập nhanh · Cập nhật điểm bán · Xem QR · Xem QR · Xem QR · Xem QR
+   ! Error: Chi tiết điểm bán KHÔNG có nút Xoá (Xoá bị ẩn với DIEM_BAN; BE cũng cấm xoá điểm bán từ cây)  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false
+
+ failed | 32_160_003 — Tạo điểm bán phân loại Hub và đánh dấu Là cửa hàng mẫu
+   ! TimeoutError: locator.innerText: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-drawer-open').filter({ hasText: 'Thêm điểm bán / hub' }).last() 
+
+ failed | 32_160_010 — Tạo điểm bán khi danh mục Cửa hàng mẫu rỗng
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('main').last().getByRole('button', { name: /Tạo điểm bán\/hub|Tạo Hub/ }) 
+
+ failed | 32_100_001 — Thêm đơn vị cấp Tổng công ty với mã hợp lệ
+   @ dọn : (không còn gì)
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-layout-content').first().getByRole('button', { name: 'Thêm đơn vị' }).first() 
+
+ failed | 32_100_002 — Thêm đơn vị cấp Bưu điện Tỉnh với mã hợp lệ
+   @ đo : null · undefined · tb "" · DB null
+   @ dọn : (không còn gì)
+   ! Error: expect(received).toContain(expected) // indexOf  Expected substring: "Thêm đơn vị tổ chức thành công" Received string:    ""
+
+ failed | 32_100_003 — Thêm đơn vị cấp Bưu điện Xã với mã hợp lệ
+   ! Error: Tạo đơn vị rác A7MH32T976710 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_100_004 — Nhập mã cấp Tỉnh ngoài khoảng quy định
+   @ dọn : (không còn gì)
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-layout-content').first().getByRole('button', { name: 'Thêm đơn vị' }).first() 
+
+ failed | 32_100_006 — Bỏ trống Đơn vị cha khi thêm mới
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-layout-content').first().getByRole('button', { name: 'Thêm đơn vị' }).first() 
+
+ failed | 32_110_002 — Tạo nhanh đơn vị cấp Xã với hai trường
+   ! Error: Tạo đơn vị rác A7MH32T150809 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_110_004 — Bỏ trống Tên đơn vị khi thêm nhanh từ cây
+   ! Error: Tạo đơn vị rác A7MH32T203692 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_110_005 — Nhập mã cấp Xã trùng mã đã tồn tại khi thêm nhanh
+   ! Error: Không điều hướng được tới /chain/organization-management (đã quét 0 menu cha). URL hiện tại: http://192.168.1.47:3200/account. Khai đường đi vào MENU_THEO_ROUTE trong shared/auth/login.js, hoặc kiểm quyền của vai đang đăng nhập.
+
+ failed | 32_120_001 — Cây phân cấp hiển thị trạng thái rỗng khi chưa có đơn vị
+   @ đo : 1 nút () · chữ: Mô hình tổ chức Nhập từ excel Xuất excel Thêm đơn vị Lọc theo vùng Trạng thái Vui lòng chọn một đơn vị để xem chi tiết
+   ! Error: Tìm từ khoá không tồn tại mà cây vẫn còn nút  expect(received).toBe(expected) // Object.is equality  Expected: 0 Received: 1
+
+ failed | 32_130_001 — Chỉnh sửa Đơn vị cha chuyển đơn vị sang nhánh khác
+   ! Error: Tạo đơn vị rác A7MH32T276011 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_130_002 — Chỉnh sửa bỏ trống Mã đơn vị
+   ! Error: Tạo đơn vị rác A7MH32T290750 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_130_003 — Chỉnh sửa đổi Mã đơn vị thành mã đã tồn tại
+   ! Error: Tạo đơn vị rác A7MH32T305418 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_140_001 — Xoá cấp Xã kéo theo Điểm bán trực thuộc
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('main').last().getByRole('button', { name: /^Xoá$/ }) 
+
+ failed | 32_140_002 — Xoá cấp Tỉnh kéo theo toàn bộ Xã và Điểm bán
+   @ đo : popup "Xoá đơn vị Bạn có chắc chắn muốn xoá đơn vị "A7MH32 Tỉnh rác 355217" không ? Huỷ Xoá" · SSHOP-402 Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (ovFZYx) · tb "Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lò
+   @ dọn : A7MH32T35521701→SSHOP-405 · A7MH32T35521702→SSHOP-405 · A7MH32T355217→SSHOP-405
+   ! Error: Không xoá được tỉnh có xã con (Không thể xoá đơn vị khi đơn vị này đang có đơn vị cấp dưới. Vui lòng chuyển hoặc xoá các đơn vị cấp dưới trước. (ovFZYx))  expect(received).toBe(expected) // Object.is equality  Expected: false Received: true
+
+ failed | 32_140_005 — Nội dung popup xác nhận xoá đơn vị
+   ! Error: Tạo đơn vị rác A7MH32T400435 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ skipped | 32_140_003 — Xoá cấp Tổng công ty kéo theo toàn bộ cây
+   @ tạo TCT rác : SSHOP-405 Mã truy cập hết hạn
+   @ skip : Không tạo được nút cấp TCT rác (Mã truy cập hết hạn) — không thử xoá trên VNPOST thật.
+
+ failed | 32_170_002 — Gán mới một nhân viên với vai trò Giám đốc
+   ! Error: Tạo đơn vị rác A7MH32T493994 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_170_003 — Gán cùng một nhân viên cho nhiều đơn vị và vai trò
+   ! Error: Tạo đơn vị rác A7MH32T526624 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_170_004 — Gán nhân viên có trạng thái Đã nghỉ
+   ! Error: Tạo đơn vị rác A7MH32T559700 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_170_005 — Đổi trạng thái nhân viên từ Đang làm sang Đã nghỉ
+   ! Error: Tạo đơn vị rác A7MH32T596712 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_170_006 — Xoá một dòng gán nhân viên bằng nút x
+   ! Error: Tạo đơn vị rác A7MH32T612455 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_170_008 — Xác nhận khi dòng mới chưa chọn nhân viên
+   ! Error: Tạo đơn vị rác A7MH32T656902 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_170_009 — Xác nhận khi dòng mới chưa chọn vai trò
+   @ dọn : phân công 29943 xoá SSHOP-405 → nghỉ SSHOP-405 (status 1) · đơn vị A7MH32T67150201→SSHOP-405,A7MH32T671502→SSHOP-405
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden)').last().locator('.ant-select-item-option').filter({ hasText: 'AUTO7_CUI' }).first()     - waiting for" http://192.168.1.47:3200/account" navigation to finish...     - navigated to "http://192.168.1.47:3200/account" 
+
+ failed | 32_170_010 — Gán trùng cùng nhân viên với cùng vai trò
+   @ dọn : phân công 29943 xoá SSHOP-405 → nghỉ SSHOP-405 (status 1) · đơn vị A7MH32T72354401→SSHOP-405,A7MH32T723544→SSHOP-405
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden)').last().locator('.ant-select-item-option').filter({ hasText: 'AUTO7_CUI' }).first() 
+
+ failed | 32_170_011 — Huỷ thao tác Gán nhân viên
+   @ dọn : phân công 29943 xoá SSHOP-405 → nghỉ SSHOP-405 (status 1) · đơn vị A7MH32T77537001→SSHOP-405,A7MH32T775370→SSHOP-405
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('main').last().getByRole('button', { name: /Gán nhân viên/ }) 
+
+ failed | 32_170_013 — Đổi Đơn vị của một dòng gán đã có
+   @ hành vi thật : ô đơn vị dòng đã lưu mở được, lựa chọn:  | A7MH32 Xã rác 936159-1 · null · xã cũ [["29956","A7MH32T93615901","9","1"]] · xã mới []
+   @ dọn : phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1),29956 xoá SSHOP-401 → nghỉ 200 (status 0) · đơn vị A7MH32T93615901→200,A7MH32T93615902→200,A7MH32T936159→200
+   ! Error: Không đổi được đơn vị của dòng gán đã có sang "A7MH32 Xã rác 936159-2" (không có trong lựa chọn)  expect(received).toHaveLength(expected)  Expected length: 1 Received length: 0 Received array:  []
+
+ failed | 32_170_014 — Số lượng nhân viên gán hiển thị đồng bộ
+   ! Error: Tạo đơn vị rác A7MH32T988972 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ skipped | 32_130_004 — Huỷ chỉnh sửa đơn vị
+   @ skip : Khung chi tiết của "Tong cong ty Buu dien Viet Nam 51" không có nút chỉnh sửa. Nút đang có: Xoá · Gán nhân viên · Cập nhật · Tạo điểm bán/hub · Xem danh sách · Xem danh sách · Xem QR · Xem QR · Xem QR · Xem QR
+
+ skipped | 32_170_012 — Tìm kiếm nhân viên trong dropdown
+   @ skip : Dropdown nhân viên rỗng ⇒ 🚫 không kiểm được việc thu hẹp.
+
+ failed | 32_150_003 — Nhập Excel có dòng mã đơn vị trùng
+   @ hành vi thật : tb "Nhập file Excel thành công" · job excel:"200" status:"PENDING" status:"SUCCESS" · đơn vị có sẵn tên "A7MH32 GHI ĐÈ TÊN" (gốc "A7MH32 Tỉnh rác 276668") · dòng hợp lệ ĐƯỢC tạo · nút tải file lỗi: 0
+   @ dọn : A7MH32I276861→200
+   @ dọn : A7MH32T276668→200
+   ! Error: Nhập trùng mã GHI ĐÈ đơn vị có sẵn (không báo trùng)  expect(received).toBe(expected) // Object.is equality  Expected: "A7MH32 Tỉnh rác 276668" Received: "A7MH32 GHI ĐÈ TÊN"
+
+ failed | 32_150_004 — Nhập Excel có Đơn vị cha không tồn tại
+   @ đo : tb "Nhập file Excel thành công" · job excel:"200" status:"PENDING" status:"SUCCESS" · DB null
+   ! Error: expect(received).toMatch(expected)  Expected pattern: /không hợp lệ|lỗi/i Received string:  "Nhập file Excel thành công"
+
+ failed | 32_150_005 — Nhập Excel rỗng chỉ có dòng tiêu đề
+   @ nguyên văn : tb "Nhập file Excel thành công" · job excel:"200" status:"PENDING" status:"SUCCESS" · số đơn vị 1359 → 1359
+   ! Error: Tệp rỗng mà báo "thành công" / không báo rõ tệp không có dữ liệu  expect(received).toMatch(expected)  Expected pattern: /không có dữ liệu|trống|rỗng|không hợp lệ/i Received string:  "Nhập file Excel thành công"
+content').first().getByRole('button', { name: 'Nhập từ excel' }) 
+
+ failed | 32_150_003 — Nhập Excel có dòng mã đơn vị trùng
+   ! Error: Tạo đơn vị rác A7MH32T651007 lỗi: {"code":"SSHOP-405","message":"Mã truy cập hết hạn","label":"ERROR_TOKEN_EXPIRED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-405"
+
+ failed | 32_150_004 — Nhập Excel có Đơn vị cha không tồn tại
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-layout-content').first().getByRole('button', { name: 'Nhập từ excel' }) 
+
+ failed | 32_150_005 — Nhập Excel rỗng chỉ có dòng tiêu đề
+   @ nguyên văn : tb "Nhập file Excel thành công" · job excel:"200" status:"PENDING" status:"SUCCESS" · số đơn vị 1380 → 1380
+   ! Error: Tệp rỗng mà báo "thành công" / không báo rõ tệp không có dữ liệu  expect(received).toMatch(expected)  Expected pattern: /không có dữ liệu|trống|rỗng|không hợp lệ/i Received string:  "Nhập file Excel thành công"
+
+ failed | 32_150_006 — Xuất Excel danh sách toàn bộ đơn vị
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-layout-content').first().getByRole('button', { name: 'Xuất excel' }) 

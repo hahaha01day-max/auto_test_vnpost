@@ -1,0 +1,1766 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ward",
+        "name": "ward",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.ward\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:13.751Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 91,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:13.983Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_manager (Quản lý Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.079Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-08f00-ager-Quản-lý-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f8f6b4aac219a09d704d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai ward (Bưu điện Xã)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.178Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-ward-Bưu-điện-Xã--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2d044c7a88341d00c4f3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.278Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop (Nhân viên điểm bán seed (AUTO_SHOP))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 104,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.393Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-edaa4-ên-điểm-bán-seed-AUTO-SHOP--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-21ce4f527c1091b58dc7",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop2 (Nhân viên điểm bán seed (tồn đầu kỳ))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 109,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.501Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2bfc1-n-điểm-bán-seed-tồn-đầu-kỳ--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f0046fb8388f9f34d70f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_gdv (Giao dịch viên điểm bán seed)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 119,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.613Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-f973e-ao-dịch-viên-điểm-bán-seed--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-279e54db4435dd5b2b7f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_cung_ung (Quản lý cung ứng Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 99,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.735Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-a2b0c-n-lý-cung-ứng-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-dc10cbea1b53e3115f7d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_ke_toan (Kế toán Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 85,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.838Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-b0041--toan-Kế-toán-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-810d07ac3b8180d5b8cd",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_marketing (Marketing Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:14.927Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-1d056-ing-Marketing-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-ad384e1a74119c1d55a2",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_cung_ung (Quản lý cung ứng Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:15.011Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-4db67--ung-Quản-lý-cung-ứng-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-3fc0d4a301467ed2a16a",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_ke_toan (Kế toán Tỉnh (vai PROVINCE_ACCOUNTANT))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 88,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:15.094Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2a396-nh-vai-PROVINCE-ACCOUNTANT--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2ad6ba1bf90fea1e4edf",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop_nhan_vien (Nhân viên khác điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 88,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:15.185Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-v-bd39c-en-Nhân-viên-khác-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2720920e7dafcea1da21",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:33:15.278Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "lich-su-ghi.tct.spec.js",
+      "file": "lich-su-ghi.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "33 · Lịch sử thao tác có tiền đề (vai trò rác A7LS33)",
+          "file": "lich-su-ghi.tct.spec.js",
+          "line": 45,
+          "column": 6,
+          "specs": [
+            {
+              "title": "33_010_001 — Màn Lịch sử người dùng mở được và xếp mới nhất trước",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "20 dòng · dòng đầu \"1 Quản lý vai trò & phân quyền Xóa A7LS33_403375 AUTO7_TCT AUTO7_TCT Admin Tong cong ty Buu dien Viet Nam 42.114.78.51 25/09/2026 22:33:24\""
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 21931,
+                      "error": {
+                        "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:75:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 38
+                        },
+                        "snippet": "  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 38
+                          },
+                          "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:75:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:33:15.658Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "20 dòng · dòng đầu \"1 Quản lý vai trò & phân quyền Xóa A7LS33_403375 AUTO7_TCT AUTO7_TCT Admin Tong cong ty Buu dien Viet Nam 42.114.78.51 25/09/2026 22:33:24\""
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--7dd1e--được-và-xếp-mới-nhất-trước-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--7dd1e--được-và-xếp-mới-nhất-trước-tct/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--7dd1e--được-và-xếp-mới-nhất-trước-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--7dd1e--được-và-xếp-mới-nhất-trước-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--7dd1e--được-và-xếp-mới-nhất-trước-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-9f99380cf3977f57fcb6",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 72,
+              "column": 2
+            },
+            {
+              "title": "33_020_001 — Đổi bộ lọc luôn quay về trang đầu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "trang 2: {\"page\":\"1\",\"size\":\"20\"} · đổi lọc: {\"page\":\"0\",\"size\":\"20\",\"action\":\"CREATE\"} · trang đang chọn \"1\""
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 26689,
+                      "error": {
+                        "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:90:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 38
+                        },
+                        "snippet": "  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 38
+                          },
+                          "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:90:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:33:52.514Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "trang 2: {\"page\":\"1\",\"size\":\"20\"} · đổi lọc: {\"page\":\"0\",\"size\":\"20\",\"action\":\"CREATE\"} · trang đang chọn \"1\""
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--4e742--lọc-luôn-quay-về-trang-đầu-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--4e742--lọc-luôn-quay-về-trang-đầu-tct/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--4e742--lọc-luôn-quay-về-trang-đầu-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--4e742--lọc-luôn-quay-về-trang-đầu-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--4e742--lọc-luôn-quay-về-trang-đầu-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-2f7c00c62721e4e62bc3",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 88,
+              "column": 2
+            },
+            {
+              "title": "33_020_002 — Nhiều điều kiện lọc cùng lúc là AND",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "chỉ A 715 · A+B 52 · dòng sai 0 · CREATE rác ở A: true, ở A+B: false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22355,
+                      "error": {
+                        "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:114:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 38
+                        },
+                        "snippet": "  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 38
+                          },
+                          "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:114:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:34:34.555Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "chỉ A 715 · A+B 52 · dòng sai 0 · CREATE rác ở A: true, ở A+B: false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--73c47-ều-kiện-lọc-cùng-lúc-là-AND-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--73c47-ều-kiện-lọc-cùng-lúc-là-AND-tct/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--73c47-ều-kiện-lọc-cùng-lúc-là-AND-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--73c47-ều-kiện-lọc-cùng-lúc-là-AND-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--73c47-ều-kiện-lọc-cùng-lúc-là-AND-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-178a1448fa213a5438cd",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 111,
+              "column": 2
+            },
+            {
+              "title": "33_030_001 — Chi tiết thao tác hiện thuộc tính đã đổi kèm trước và sau",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                    },
+                    {
+                      "type": "bảng so sánh",
+                      "description": "Tên vai trò roleName A7LS33 rác A7LS33_519676 A7LS33 rác A7LS33_519676 SỬA | Ghi chú note rác 33 trước rác 33 sau"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22730,
+                      "error": {
+                        "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:134:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 38
+                        },
+                        "snippet": "  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 38
+                          },
+                          "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:134:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:35:12.063Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                        },
+                        {
+                          "type": "bảng so sánh",
+                          "description": "Tên vai trò roleName A7LS33 rác A7LS33_519676 A7LS33 rác A7LS33_519676 SỬA | Ghi chú note rác 33 trước rác 33 sau"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--f2a86-ính-đã-đổi-kèm-trước-và-sau-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--f2a86-ính-đã-đổi-kèm-trước-và-sau-tct/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--f2a86-ính-đã-đổi-kèm-trước-và-sau-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--f2a86-ính-đã-đổi-kèm-trước-và-sau-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--f2a86-ính-đã-đổi-kèm-trước-và-sau-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-23d6cf3246e8b3abbbfa",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 131,
+              "column": 2
+            },
+            {
+              "title": "33_040_001 — Đối chiếu toàn văn dữ liệu trước và sau",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                    },
+                    {
+                      "type": "JSON",
+                      "description": "Trước thay đổi: { \"role\": { \"roleId\": 111, \"roleCode\": \"A7LS33_557168\", \"roleName\": \"A7LS33 rác A7LS33_557168\", \"chainId\": 626, \"allowedLevel\": \"DIEM_BAN\", \"note\": \"rác 33 trước\", \"active\": true, \"functions\": [] }, \"functions\": [] } Sau thay đổi: { \"role\": { \"roleId\": 111, \"roleCode\": \"A7LS33_557168\", \"roleName\": \"A7LS33 rác A7LS33_557168 SỬA\", \"chainId\": 626, \"allowedLevel\": \"DIEM_BAN\", \"note\": \"rác 33 sau\", \"active\": true, \"functions\": [] }, \"functions\": [] }"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 23384,
+                      "error": {
+                        "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:154:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 38
+                        },
+                        "snippet": "  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 38
+                          },
+                          "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:154:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:35:49.440Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                        },
+                        {
+                          "type": "JSON",
+                          "description": "Trước thay đổi: { \"role\": { \"roleId\": 111, \"roleCode\": \"A7LS33_557168\", \"roleName\": \"A7LS33 rác A7LS33_557168\", \"chainId\": 626, \"allowedLevel\": \"DIEM_BAN\", \"note\": \"rác 33 trước\", \"active\": true, \"functions\": [] }, \"functions\": [] } Sau thay đổi: { \"role\": { \"roleId\": 111, \"roleCode\": \"A7LS33_557168\", \"roleName\": \"A7LS33 rác A7LS33_557168 SỬA\", \"chainId\": 626, \"allowedLevel\": \"DIEM_BAN\", \"note\": \"rác 33 sau\", \"active\": true, \"functions\": [] }, \"functions\": [] }"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--64e36-àn-văn-dữ-liệu-trước-và-sau-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--64e36-àn-văn-dữ-liệu-trước-và-sau-tct/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--64e36-àn-văn-dữ-liệu-trước-và-sau-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--64e36-àn-văn-dữ-liệu-trước-và-sau-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--64e36-àn-văn-dữ-liệu-trước-và-sau-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-9e17f4ee26d3543e5a5f",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 151,
+              "column": 2
+            },
+            {
+              "title": "33_050_001 — Trang chủ hiện mười thao tác mới nhất",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 39858,
+                      "error": {
+                        "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:172:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 38
+                        },
+                        "snippet": "  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 38
+                          },
+                          "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:172:3"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 75,
+                            "line": 179
+                          },
+                          "message": "Error: Trang chủ không có khối \"Nhật ký thao tác gần đây\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.ant-pro-card').filter({ hasText: 'Nhật ký thao tác gần đây' }).first()\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Trang chủ không có khối \"Nhật ký thao tác gần đây\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.ant-pro-card').filter({ hasText: 'Nhật ký thao tác gần đây' }).first()\u001b[22m\n\n\n  177 | \t\tawait page.waitForTimeout(6_000);\n  178 | \t\tconst the = page.locator('.ant-pro-card').filter({ hasText: 'Nhật ký thao tác gần đây' }).first();\n> 179 | \t\tawait expect(the, 'Trang chủ không có khối \"Nhật ký thao tác gần đây\"').toBeVisible({ timeout: 20_000 });\n      | \t\t                                                                        ^\n  180 | \t\tconst muc = the.locator('.ant-pro-card-body [class*=cursor-pointer], .ant-pro-card-body li, .ant-list-item');\n  181 | \t\tconst n = await muc.count();\n  182 | \t\tconst ds = await k.goiGhi(page, st, 'GET', API, { page: 0, size: 10 });\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:179:75"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:36:27.638Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--097b2-hiện-mười-thao-tác-mới-nhất-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--097b2-hiện-mười-thao-tác-mới-nhất-tct/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--097b2-hiện-mười-thao-tác-mới-nhất-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--097b2-hiện-mười-thao-tác-mới-nhất-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--097b2-hiện-mười-thao-tác-mới-nhất-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-b4123a44b51549078b3e",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 170,
+              "column": 2
+            },
+            {
+              "title": "33_050_002 — Mở chi tiết ngay từ Trang chủ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35767,
+                      "error": {
+                        "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:192:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 38
+                        },
+                        "snippet": "  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 38
+                          },
+                          "message": "Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  36 | \t\tconst n = await dong(ps.page).count();\n  37 | \t\tghiChu('vai province', `API ${b?.status?.code} · ${b?.page?.total_elements ?? '-'} bản ghi · bảng ${n} dòng`);\n> 38 | \t\texpect.soft(String(b?.status?.code), `Vai tỉnh KHÔNG đọc được lịch sử thao tác (${b?.status?.code} ${b?.status?.message})`).toBe('200');\n     | \t\t                                                                                                                            ^\n  39 | \t} finally { await ps.dong(); }\n  40 | }\n  41 | /** Chờ response danh sách sau một thao tác trên màn. */\n    at kiemTinh (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:38:127)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:192:3"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 75,
+                            "line": 198
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-card').filter({ hasText: 'Nhật ký thao tác gần đây' }).first().locator('.ant-pro-card-body [class*=cursor-pointer]').first()\u001b[22m\n\n\n  196 | \t\tawait page.waitForTimeout(6_000);\n  197 | \t\tconst the = page.locator('.ant-pro-card').filter({ hasText: 'Nhật ký thao tác gần đây' }).first();\n> 198 | \t\tawait the.locator('.ant-pro-card-body [class*=cursor-pointer]').first().click();\n      | \t\t                                                                        ^\n  199 | \t\tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết lịch sử thao tác' }).last();\n  200 | \t\tawait expect(dr, 'Bấm dòng nhật ký không mở chi tiết').toBeVisible({ timeout: 10_000 });\n  201 | \t\tghiChu('đo', `url vẫn là \"${new URL(page.url()).pathname}\" · ${chuan(await dr.innerText()).slice(0, 200)}`);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:198:75"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:37:23.257Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-401 · - bản ghi · bảng 0 dòng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--a78ad--chi-tiết-ngay-từ-Trang-chủ-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--a78ad--chi-tiết-ngay-từ-Trang-chủ-tct/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--a78ad--chi-tiết-ngay-từ-Trang-chủ-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--a78ad--chi-tiết-ngay-từ-Trang-chủ-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--a78ad--chi-tiết-ngay-từ-Trang-chủ-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-5cbac144d5d37b8bb24f",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 190,
+              "column": 2
+            },
+            {
+              "title": "33_010_004 — Hiển thị dấu ba gạch khi không tra được tên",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "8 trang đầu không có bản ghi nào thiếu tên người thao tác / vai trò / đơn vị.",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "line": 224,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 26278,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:38:13.881Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "8 trang đầu không có bản ghi nào thiếu tên người thao tác / vai trò / đơn vị.",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "line": 224,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--91dc0-gạch-khi-không-tra-được-tên-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-d60b0c9ee0c4dfadd462",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 207,
+              "column": 2
+            },
+            {
+              "title": "33_010_005 — Thời gian hiển thị theo giờ Việt Nam",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "chữ \"25/09/2026 22:38:22\" · thao tác thật 2026-09-25T15:38:21.569Z – 2026-09-25T15:38:22.283Z · TZ máy Asia/Saigon"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13793,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:38:54.213Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "chữ \"25/09/2026 22:38:22\" · thao tác thật 2026-09-25T15:38:21.569Z – 2026-09-25T15:38:22.283Z · TZ máy Asia/Saigon"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--f8b05--hiển-thị-theo-giờ-Việt-Nam-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-1ad2e30148ec0742dfc0",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 230,
+              "column": 2
+            },
+            {
+              "title": "33_020_007 — Bỏ chọn bộ lọc thì không lọc theo tiêu chí đó",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "lọc: page=0&size=20&module=PRICE_LIST · bỏ lọc: page=0&size=20&module=PRICE_LIST · tổng  → "
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 49264,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:39:08.010Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "lọc: page=0&size=20&module=PRICE_LIST · bỏ lọc: page=0&size=20&module=PRICE_LIST · tổng  → "
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--1bffc--không-lọc-theo-tiêu-chí-đó-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-f8b225ebe83ef94768b9",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 244,
+              "column": 2
+            },
+            {
+              "title": "33_020_010 — Lọc khoảng ngày có Đến ngày trước Từ ngày",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "hành vi thật",
+                      "description": "ô  → 20/09/2026 · lời gọi null · 20 dòng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30212,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:39:57.277Z",
+                      "annotations": [
+                        {
+                          "type": "hành vi thật",
+                          "description": "ô  → 20/09/2026 · lời gọi null · 20 dòng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--17f4c-y-có-Đến-ngày-trước-Từ-ngày-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-8baf1795910c108ce45d",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 268,
+              "column": 2
+            },
+            {
+              "title": "33_060_001 — Danh sách lịch sử rỗng khi kỳ không có thao tác",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "null · undefined · undefined"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 30477,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:305:35",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                          "column": 35,
+                          "line": 305
+                        },
+                        "snippet": "  303 | \t\tconst b = r ? await r.json().catch(() => null) : null;\n  304 | \t\tghiChu('đo', `${JSON.stringify(q(r))} · ${b?.status?.code} · ${b?.page?.total_elements}`);\n> 305 | \t\texpect(String(b?.status?.code)).toBe('200');\n      | \t\t                                ^\n  306 | \t\texpect(await dong(page).count()).toBe(0);\n  307 | \t\tconst rong = khung(page).locator('.ant-empty').first();\n  308 | \t\tawait expect(rong).toBeVisible();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                            "column": 35,
+                            "line": 305
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m\n\n  303 | \t\tconst b = r ? await r.json().catch(() => null) : null;\n  304 | \t\tghiChu('đo', `${JSON.stringify(q(r))} · ${b?.status?.code} · ${b?.page?.total_elements}`);\n> 305 | \t\texpect(String(b?.status?.code)).toBe('200');\n      | \t\t                                ^\n  306 | \t\texpect(await dong(page).count()).toBe(0);\n  307 | \t\tconst rong = khung(page).locator('.ant-empty').first();\n  308 | \t\tawait expect(rong).toBeVisible();\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js:305:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:40:27.495Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "null · undefined · undefined"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--894f9-ng-khi-kỳ-không-có-thao-tác-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--894f9-ng-khi-kỳ-không-có-thao-tác-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--894f9-ng-khi-kỳ-không-có-thao-tác-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/test-output/playwright-results/lich-su-ghi.tct-33-·-Lịch--894f9-ng-khi-kỳ-không-có-thao-tác-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/33_lich_su_thao_tac_nguoi_dung/tests/lich-su-ghi.tct.spec.js",
+                        "column": 35,
+                        "line": 305
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0ad2d02159aad56173af-fa3cfd037583e5c7c29d",
+              "file": "lich-su-ghi.tct.spec.js",
+              "line": 289,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T15:33:13.453Z",
+    "duration": 464934.226,
+    "expected": 18,
+    "skipped": 1,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

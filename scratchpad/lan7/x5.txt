@@ -1,0 +1,7 @@
+{'startTime': '2026-09-25T13:50:16.196Z', 'duration': 57564.807, 'expected': 1, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 27_070_005 — Tải lên trùng file XML đã đối soát
+   @ lượt 1 (file đã đối soát) : {"hoi":"","tb":"","kq":"{\"fileId\":274,\"invoiceId\":52,\"filename\":\"AUTOTEST_tai_lai_00001000.xml\",\"poCode\":\"PO2609238817\",\"parseStatus\":\"PARSED\",\"mappingStatus\":\"MAPPED\",\"reconcileStatus\":\"MISMATCHED\",\"message\":null,\"requireCo"} · trạng thái MISMATCHED · hoá đơn 52:C26PO0000
+   @ lượt 2 (tải lại đúng file) : {"hoi":"","tb":"","kq":"{\"fileId\":275,\"invoiceId\":52,\"filename\":\"AUTOTEST_tai_lai_00001000.xml\",\"poCode\":\"PO2609238817\",\"parseStatus\":\"PARSED\",\"mappingStatus\":\"MAPPED\",\"reconcileStatus\":\"MISMATCHED\",\"message\":null,\"requireCo"} · trạng thái MISMATCHED · hoá đơn 52:C26PO0000
+   @ trả snapshot : {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"gSWZPs"} · MATCHED
+   ! SyntaxError: Expected ':' after property name in JSON at position 201 (line 1 column 202)

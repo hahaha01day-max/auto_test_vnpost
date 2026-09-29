@@ -1,0 +1,90 @@
+{
+  "spec": {
+    "tests/tiep-nhan.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteBatchBlock.jsx",
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteReconcileDrawer.jsx",
+        "src/features/returnToSupplier/services/returnCreditNoteApi.js",
+        "src/features/returnToSupplier/components/returnRequest/SupplierBatchSection.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx",
+        "src/features/purchaseOrder/utils/poInvoiceXml.js",
+        "src/features/returnToSupplier/utils/buildSampleCreditNoteXml.js"
+      ]
+    },
+    "tests/doi-soat.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteBatchBlock.jsx",
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteReconcileDrawer.jsx",
+        "src/features/returnToSupplier/services/returnCreditNoteApi.js",
+        "src/features/returnToSupplier/components/returnRequest/SupplierBatchSection.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx"
+      ]
+    },
+    "tests/chot.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteBatchBlock.jsx",
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteReconcileDrawer.jsx",
+        "src/features/returnToSupplier/services/returnCreditNoteApi.js",
+        "src/features/returnToSupplier/components/returnRequest/SupplierBatchSection.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js"
+      ]
+    },
+    "tests/phat-hanh.province.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteBatchBlock.jsx",
+        "src/features/returnToSupplier/components/returnRequest/IssueReturnInvoiceDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/SupplierBatchSection.jsx",
+        "src/features/returnToSupplier/services/returnCreditNoteApi.js"
+      ]
+    },
+    "tests/phat-hanh.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteBatchBlock.jsx",
+        "src/features/returnToSupplier/components/returnRequest/IssueReturnInvoiceDrawer.jsx",
+        "src/features/returnToSupplier/services/returnCreditNoteApi.js",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx"
+      ]
+    },
+    "tests/hoa-don-tra.shop.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteBatchBlock.jsx",
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteReconcileDrawer.jsx",
+        "src/features/returnToSupplier/services/returnCreditNoteApi.js",
+        "src/features/returnToSupplier/components/returnRequest/SupplierBatchSection.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx"
+      ]
+    }
+  }
+}

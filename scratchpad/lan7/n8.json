@@ -1,0 +1,330 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 134,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:53:34.184Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 92,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:53:34.404Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "ctkm-nhom.gdv.spec.js",
+      "file": "ctkm-nhom.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "19_130_002 — Thêm CTKM theo nhóm đối tượng cập nhật realtime trên đơn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [
+                {
+                  "type": "tạo CTKM",
+                  "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"RKjYDU\"}"
+                },
+                {
+                  "type": "dựng",
+                  "description": "nhóm 207 · CTKM 689 A7KH19_KM_130_002_047938 · điểm bán AUTO7_T_01_A01"
+                },
+                {
+                  "type": "1 SP (100k)",
+                  "description": "tổng {\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":95000} · dòng CTKM: A7KH19_KM_130_002_047938 Giảm giá Giảm giá 10% toàn đơn A7KH19_NHOM_130_002_047938 Không áp dụng 1 · checkbox khoá: 1"
+                },
+                {
+                  "type": "3 SP (300k)",
+                  "description": "tổng {\"truocVat\":300000,\"vat\":0,\"sauVat\":300000,\"canThanhToan\":265000} · dòng CTKM: A7KH19_KM_130_002_047938 Giảm giá Giảm giá 10% toàn đơn A7KH19_NHOM_130_002_047938 Không áp dụng 1 · khoá 0 · đã tick 1"
+                },
+                {
+                  "type": "sau áp CTKM",
+                  "description": "{\"truocVat\":300000,\"vat\":0,\"sauVat\":300000,\"canThanhToan\":265000}"
+                },
+                {
+                  "type": "mức giảm",
+                  "description": "100k: 5000 · 300k: 35000"
+                },
+                {
+                  "type": "dừng CTKM",
+                  "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"UBgSzQ\"}"
+                },
+                {
+                  "type": "xoá nhóm",
+                  "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"bMJFxu\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "gdv",
+              "projectName": "gdv",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 85563,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:53:34.734Z",
+                  "annotations": [
+                    {
+                      "type": "tạo CTKM",
+                      "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"RKjYDU\"}"
+                    },
+                    {
+                      "type": "dựng",
+                      "description": "nhóm 207 · CTKM 689 A7KH19_KM_130_002_047938 · điểm bán AUTO7_T_01_A01"
+                    },
+                    {
+                      "type": "1 SP (100k)",
+                      "description": "tổng {\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":95000} · dòng CTKM: A7KH19_KM_130_002_047938 Giảm giá Giảm giá 10% toàn đơn A7KH19_NHOM_130_002_047938 Không áp dụng 1 · checkbox khoá: 1"
+                    },
+                    {
+                      "type": "3 SP (300k)",
+                      "description": "tổng {\"truocVat\":300000,\"vat\":0,\"sauVat\":300000,\"canThanhToan\":265000} · dòng CTKM: A7KH19_KM_130_002_047938 Giảm giá Giảm giá 10% toàn đơn A7KH19_NHOM_130_002_047938 Không áp dụng 1 · khoá 0 · đã tick 1"
+                    },
+                    {
+                      "type": "sau áp CTKM",
+                      "description": "{\"truocVat\":300000,\"vat\":0,\"sauVat\":300000,\"canThanhToan\":265000}"
+                    },
+                    {
+                      "type": "mức giảm",
+                      "description": "100k: 5000 · 300k: 35000"
+                    },
+                    {
+                      "type": "dừng CTKM",
+                      "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"UBgSzQ\"}"
+                    },
+                    {
+                      "type": "xoá nhóm",
+                      "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"bMJFxu\"}"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/ctkm-nhom.gdv-19-130-002-—-0b478--cập-nhật-realtime-trên-đơn-gdv/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "baadcf3549bde8678dbe-160ba4896c73c6ae5890",
+          "file": "ctkm-nhom.gdv.spec.js",
+          "line": 35,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T09:53:33.916Z",
+    "duration": 86518.795,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

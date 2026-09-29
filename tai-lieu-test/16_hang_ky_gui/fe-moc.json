@@ -1,0 +1,181 @@
+{
+  "spec": {
+    "tests/tra-cuu-cong-no.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/debt-reconciliation/consignment-debt"
+      ],
+      "fe": [
+        "src/features/consignmentDebt/pages/ConsignmentDebtPage.jsx",
+        "src/features/consignmentDebt/services/consignmentDebtApi.js",
+        "src/features/consignmentInvoice/services/consignmentInvoiceApi.js",
+        "src/components/selectShopMultiple/SelectShopTree.jsx"
+      ]
+    },
+    "tests/doi-soat-ky.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/debt-reconciliation/consignment-recon"
+      ],
+      "fe": [
+        "src/features/consignmentRecon/pages/ConsignmentReconListPage.jsx",
+        "src/features/consignmentRecon/services/consignmentReconApi.js"
+      ]
+    },
+    "tests/pham-vi-ky-gui.shop.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/debt-reconciliation/consignment-debt",
+        "/debt-reconciliation/consignment-recon"
+      ],
+      "fe": [
+        "src/features/consignmentDebt/pages/ConsignmentDebtPage.jsx",
+        "src/features/consignmentRecon/pages/ConsignmentReconListPage.jsx",
+        "src/features/finance/debtReconciliationRoutes.js"
+      ]
+    },
+    "tests/pham-vi-ky-gui.ward.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/debt-reconciliation/consignment-debt",
+        "/debt-reconciliation/consignment-recon"
+      ],
+      "fe": [
+        "src/features/consignmentDebt/pages/ConsignmentDebtPage.jsx",
+        "src/features/consignmentRecon/pages/ConsignmentReconListPage.jsx",
+        "src/features/finance/debtReconciliationRoutes.js"
+      ]
+    },
+    "tests/pham-vi-ky-gui.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/debt-reconciliation/consignment-recon/:id"
+      ],
+      "fe": [
+        "src/features/consignmentRecon/pages/ConsignmentReconDetailPage.jsx",
+        "src/features/consignmentRecon/services/consignmentReconApi.js"
+      ]
+    },
+    "tests/chi-tiet-ky.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy; spec viết 24/09, chạy lần đầu 25/09)",
+      "man": [
+        "/debt-reconciliation/consignment-recon/:id"
+      ],
+      "fe": [
+        "src/features/consignmentRecon/pages/ConsignmentReconDetailPage.jsx",
+        "src/features/consignmentRecon/services/consignmentReconApi.js",
+        "src/components/selectShopMultiple/SelectShopMultiple.jsx"
+      ]
+    },
+    "tests/bao-cao.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/report/consignment"
+      ],
+      "fe": [
+        "src/features/consignmentReport/ConsignmentReport.jsx",
+        "src/features/consignmentReport/services/consignmentReportApi.js",
+        "src/features/consignmentReport/components/ConsignmentFilterPanel.jsx",
+        "src/features/consignmentReport/components/ConsignmentNxtTable.jsx",
+        "src/features/consignmentReport/components/ConsignmentSalesTable.jsx",
+        "src/features/consignmentReport/components/ConsignmentTurnoverTable.jsx",
+        "src/features/consignmentReport/components/ConsignmentDashboard.jsx",
+        "src/features/consignmentReport/components/ConsignmentShopDrawer.jsx",
+        "src/features/consignmentReport/components/ReconcileCheckPanel.jsx",
+        "src/features/consignmentReport/components/ReportMetaBanner.jsx",
+        "src/features/consignmentReport/components/priceCells.jsx",
+        "src/components/selectShopMultiple/SelectShopMultiple.jsx"
+      ]
+    },
+    "tests/bao-cao.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/report/consignment"
+      ],
+      "fe": [
+        "src/features/consignmentReport/ConsignmentReport.jsx",
+        "src/features/consignmentReport/components/ReportMetaBanner.jsx",
+        "src/features/consignmentReport/components/ConsignmentFilterPanel.jsx",
+        "src/features/consignmentReport/services/consignmentReportApi.js"
+      ]
+    },
+    "tests/bao-cao.shop.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/report/consignment"
+      ],
+      "fe": [
+        "src/features/consignmentReport/ConsignmentReport.jsx",
+        "src/features/consignmentReport/services/consignmentReportApi.js"
+      ]
+    },
+    "tests/hoa-don-ky.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/debt-reconciliation/consignment-recon/:id"
+      ],
+      "fe": [
+        "src/features/consignmentInvoice/pages/ConsignmentInvoiceTab.jsx",
+        "src/features/consignmentInvoice/services/consignmentInvoiceApi.js",
+        "src/features/consignmentInvoice/utils/sampleInvoiceXml.js",
+        "src/features/consignmentRecon/pages/ConsignmentReconDetailPage.jsx"
+      ]
+    },
+    "tests/sinh-ky.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/debt-reconciliation/consignment-recon"
+      ],
+      "fe": [
+        "src/features/consignmentRecon/pages/ConsignmentReconListPage.jsx",
+        "src/features/consignmentRecon/services/consignmentReconApi.js",
+        "src/features/consignmentInvoice/services/consignmentInvoiceApi.js"
+      ]
+    },
+    "tests/chi-tiet-ky.shop.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-25 (vnpost-web nhánh develop-tungnt-hoan-tra trên máy)",
+      "man": [
+        "/debt-reconciliation/consignment-recon/:id"
+      ],
+      "fe": [
+        "src/features/consignmentRecon/pages/ConsignmentReconDetailPage.jsx",
+        "src/features/consignmentInvoice/pages/ConsignmentInvoiceTab.jsx"
+      ]
+    },
+    "tests/ban-ky-gui.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "ghiBu": true,
+      "ghiChu": "Thao tác quầy dùng helper 18_1/tests/pos-18.js; luật chặn trace ở pod StockOwnershipStamper / ConsignmentObligationService.",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/nguon-gia.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/debt-reconciliation/consignment-recon/:id"
+      ],
+      "fe": [
+        "src/features/consignmentRecon/pages/ConsignmentReconDetailPage.jsx",
+        "src/features/consignmentRecon/services/consignmentReconApi.js"
+      ]
+    }
+  }
+}

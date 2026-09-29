@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "tests/ncc-sp-gia.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/supplier/:supplierId/products",
+        "/supplier/:supplierId/price-lists"
+      ],
+      "fe": [
+        "src/features/supplierProduct/pages/SupplierProductPage.jsx",
+        "src/features/supplierProduct/pages/BatchAddDrawer.jsx",
+        "src/features/supplierProduct/pages/ImportExcelModal.jsx",
+        "src/features/supplierProduct/pages/PriceHistoryDrawer.jsx",
+        "src/features/supplierProduct/pages/SupplierPriceListPage.jsx",
+        "src/features/supplierProduct/pages/PriceListFormDrawer.jsx",
+        "src/features/supplierProduct/pages/PriceListDetailDrawer.jsx",
+        "src/features/supplierProduct/services/supplierProductApi.js",
+        "src/features/stockAlert/components/ProductUnitSearchSelector.jsx"
+      ]
+    }
+  }
+}

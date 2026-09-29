@@ -1,0 +1,71 @@
+{
+  "spec": {
+    "tests/loc-ds.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/purchase-request"
+      ],
+      "fe": [
+        "src/features/purchaseOrder/pages/StockRequestListPage.jsx",
+        "src/components/appProTable/AppProTable.jsx"
+      ]
+    },
+    "tests/loc-ds.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/purchase-request"
+      ],
+      "fe": [
+        "src/features/purchaseOrder/pages/StockRequestListPage.jsx",
+        "src/routes/helpers.js",
+        "src/features/chain/services/chainApi.js"
+      ]
+    },
+    "tests/chon-diem-ban.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/purchase-request/create"
+      ],
+      "fe": [
+        "src/features/purchaseOrder/pages/StockRequestFormPage.jsx",
+        "src/components/selectShopMultiple/SelectShopMultiple.jsx"
+      ]
+    },
+    "tests/gop-tach.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/purchase-request",
+        "/inventory/purchase-request/merge",
+        "/inventory/purchase-request/split/:id",
+        "/inventory/purchase-request/detail/:id"
+      ],
+      "fe": [
+        "src/features/purchaseOrder/pages/StockRequestListPage.jsx",
+        "src/features/purchaseOrder/pages/StockRequestMergePage.jsx",
+        "src/features/purchaseOrder/pages/StockRequestSplitPage.jsx",
+        "src/features/purchaseOrder/pages/StockRequestDetailPage.jsx",
+        "src/features/purchaseOrder/pages/StockRequestHistoryDrawer.jsx"
+      ]
+    },
+    "tests/han-muc.ward.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/purchase-request",
+        "/inventory/purchase-request/detail/:id",
+        "/settings"
+      ],
+      "fe": [
+        "src/features/purchaseOrder/components/ApprovalProgressBlock.jsx",
+        "src/features/purchaseOrder/pages/StockRequestDetailPage.jsx",
+        "src/features/purchaseOrder/pages/ApprovalPendingList.jsx",
+        "src/features/purchaseOrder/pages/StockRequestListPage.jsx",
+        "src/features/shop/pages/settingPage/settingContents/ApprovalLimitSetting.jsx"
+      ]
+    }
+  }
+}

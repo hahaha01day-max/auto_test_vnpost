@@ -1,0 +1,102 @@
+{
+  "spec": {
+    "tests/bang-gia-form.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/pricing",
+        "/product/pricing/create"
+      ],
+      "fe": [
+        "src/features/pricing/pages/PricingFormPage.jsx",
+        "src/features/pricing/pages/PricingListPage.jsx",
+        "src/features/pricing/components/tabs/TabGeneralInfo.jsx",
+        "src/features/pricing/components/tabs/TabProducts.jsx",
+        "src/features/pricing/components/tabs/components/ProductPriceTable.jsx",
+        "src/features/pricing/components/tabs/components/PanelLeft.jsx",
+        "src/features/pricing/services/pricingApi.js",
+        "src/components/regionSelector/RegionSelector.jsx"
+      ]
+    },
+    "tests/bang-gia-ghi.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/pricing",
+        "/product/pricing/create",
+        "/product/pricing/edit/:id",
+        "/product/pricing/detail/:id"
+      ],
+      "fe": [
+        "src/features/pricing/pages/PricingFormPage.jsx",
+        "src/features/pricing/pages/PricingListPage.jsx",
+        "src/features/pricing/components/tabs/TabGeneralInfo.jsx",
+        "src/features/pricing/components/tabs/TabProducts.jsx",
+        "src/features/pricing/components/tabs/components/ProductPriceTable.jsx",
+        "src/features/pricing/components/tabs/components/PanelLeft.jsx",
+        "src/features/pricing/services/pricingApi.js",
+        "src/components/regionSelector/RegionSelector.jsx",
+        "src/features/pricing/components/tabs/components/ExistingProductsTable.jsx",
+        "src/features/pricing/components/tabs/components/NewProductsTable.jsx",
+        "src/features/pricing/components/tabs/TabGeneralInfoView.jsx"
+      ]
+    },
+    "tests/bang-gia-excel.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/pricing/create"
+      ],
+      "fe": [
+        "src/features/pricing/components/DrawerImportPriceListExcel.jsx",
+        "src/features/pricing/pages/PricingFormPage.jsx",
+        "src/features/pricing/services/pricingApi.js"
+      ]
+    },
+    "tests/lich-su.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/pricing",
+        "/product/pricing/detail/:id"
+      ],
+      "fe": [
+        "src/features/pricing/components/tabs/TabAuditLogView.jsx",
+        "src/features/pricing/components/tabs/components/DrawerPriceListAuditLogDetail.jsx",
+        "src/features/pricing/pages/PricingDetailPage.jsx"
+      ]
+    },
+    "tests/sua-don-vi-khac.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/pricing",
+        "/product/pricing/edit/:id"
+      ],
+      "fe": [
+        "src/features/pricing/pages/PricingListPage.jsx",
+        "src/features/pricing/pages/PricingFormPage.jsx"
+      ]
+    },
+    "tests/ban-hang-gia.seed_gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/lich-ca-nhan/ca-lam-viec",
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/components/regionSelector/RegionSelector.jsx",
+        "src/features/pricing/components/tabs/TabGeneralInfo.jsx",
+        "src/features/pricing/components/tabs/TabProducts.jsx",
+        "src/features/pricing/components/tabs/components/PanelLeft.jsx",
+        "src/features/pricing/components/tabs/components/ProductPriceTable.jsx",
+        "src/features/pricing/pages/PricingFormPage.jsx",
+        "src/features/pricing/pages/PricingListPage.jsx",
+        "src/features/pricing/services/pricingApi.js",
+        "src/features/timekeeping/pages/WorkShiftPage.jsx",
+        "src/features/timekeeping/services/shiftReportApi.js"
+      ]
+    }
+  }
+}

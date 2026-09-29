@@ -1,0 +1,175 @@
+﻿,Chức năng,,BÁO CÁO QUẢN TRỊ,,,,,,,,
+,Mã Testcase,,29_bao_cao,,,,,,,,
+,Tổng các tình huống kiểm thử,,77,,,,,,,,
+,Chưa thực hiện,,77,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,BÁO CÁO QUẢN TRỊ,,,,,,,,,,
+,"010 — Xem báo cáo doanh thu theo kỳ, đơn vị và ngành hàng",,,,,,,,,,
+29_010_001,Báo cáo doanh thu mở được và hiện đủ khối,Vai: province,1. Mở /report/revenue-sale,,"Màn hiện các thẻ chỉ tiêu, bảng phân cấp đơn vị, đồ thị và bảng ""Top SKU"" cùng của một kỳ và một phạm vi",,,,,,
+29_010_002,Tổng hợp lại báo cáo cập nhật mốc thời gian,Vai: province,"1. Ghi lại mốc ""Thời gian tổng hợp báo cáo lần cuối"";
+2. Bấm tổng hợp lại",,"Hệ thống báo nguyên văn ""Tổng hợp báo cáo doanh thu thành công""; mốc đổi sang thời điểm vừa chạy",,,,,,
+29_010_003,Đổi kỳ thì mọi khối cùng đổi theo,Vai: province. Có dữ liệu ở 2 kỳ khác nhau,"1. Ghi số ở thẻ chỉ tiêu, bảng và đồ thị của kỳ A;
+2. Đổi sang kỳ B",,"Cả thẻ chỉ tiêu, bảng phân cấp, đồ thị và Top SKU đều đổi sang số của kỳ B (không khối nào giữ số cũ)",,,,,,
+,020 — Xuất dữ liệu báo cáo doanh thu ra Excel,,,,,,,,,,
+29_020_001,Xuất dữ liệu doanh thu ra Excel,Vai: province. Có dữ liệu trong kỳ,"1. Mở /report/revenue-sale;
+2. Bấm xuất Excel",,Tệp bảng tính tải về máy; tên tệp mang mốc thời gian của kỳ đang xem,,,,,,
+,030 — Xem báo cáo lãi lỗ của điểm bán hoặc toàn chuỗi,,,,,,,,,,
+29_030_001,Bảng lãi lỗ cân từ trên xuống,Vai: province,"1. Mở /report/profit-loss;
+2. Kiểm tra các dòng cộng trừ",,Bảng kết quả kinh doanh cân từ trên xuống dưới (doanh thu - giá vốn = lợi nhuận gộp; lợi nhuận gộp - chi phí = lợi nhuận ròng),,,,,,
+29_030_002,Kỳ không có phiếu chi thì lợi nhuận ròng bằng lợi nhuận gộp,Vai: province. Chọn kỳ không có phiếu chi nào,"1. Mở /report/profit-loss;
+2. Chọn kỳ đó",,Phần chi phí = 0 và lợi nhuận ròng = lợi nhuận gộp; bảng vẫn đúng chứ không lỗi,,,,,,
+29_030_003,Làm mới số liệu lãi lỗ báo đúng thông điệp,Vai: province,1. Bấm làm mới số liệu,,"Hệ thống báo nguyên văn ""Đã tải lại số liệu Lãi/Lỗ.""",,,,,,
+29_030_004,Vai điểm bán không vào được báo cáo lãi lỗ,Vai: gdv,1. Mở /report/profit-loss,,"Bị chặn — task 030 chỉ khai TONG_CONG_TY, BUU_DIEN_TINH, BUU_DIEN_XA",,,,,,
+,040 — Chốt trị giá tồn kho theo tháng,,,,,,,,,,
+29_040_001,Chốt trị giá tồn kho theo tháng đổi trạng thái đơn vị,Vai: province. Chưa chốt tháng đang chọn,"1. Mở /report/inventory-value;
+2. Chốt trị giá tồn kho tháng",,"Trạng thái chốt đổi thành ""Đã chốt"" hoặc ""Chốt một phần""; cột ""Shop đã chốt"" tăng lên",,,,,,
+29_040_002,Tổng hợp báo cáo tồn kho chạy nền và báo khi xong,Vai: province. Vừa chốt trị giá tồn kho,1. Quan sát thông báo sau khi chốt,,"Hiện ""Đang tổng hợp báo cáo tồn kho trên hệ thống báo cáo"" rồi chuyển thành ""Báo cáo tồn kho đã sẵn sàng"" khi số liệu xem được",,,,,,
+,050 — Tra cứu trị giá tồn kho và đối soát với sổ cái,,,,,,,,,,
+29_050_001,Mỗi dòng trị giá tồn kho tự kiểm chứng được,Vai: province. Có dữ liệu tồn kho,"1. Mở /report/inventory-value;
+2. Với một dòng, nhân Số lượng với Đơn giá vốn bình quân",,Kết quả BẰNG cột Tổng giá trị kho của dòng đó,,,,,,
+29_050_002,Đối soát trị giá tồn kho với sổ cái,Vai: province. Có dữ liệu tồn kho,1. Đọc tổng trị giá tồn kho cuối tháng và cột chênh lệch với sổ cái,,Hiện tổng trị giá tồn kho tại cuối tháng đã chọn và chênh lệch với sổ cái,,,,,,
+,060 — Theo dõi nhập - xuất - tồn theo mặt hàng,,,,,,,,,,
+29_060_001,Báo cáo nhập xuất tồn theo đúng khoảng tháng và phạm vi,Vai: province. Có biến động kho trong kỳ,"1. Mở báo cáo NXT;
+2. Chọn khoảng tháng và phạm vi",,Bảng hiển thị biến động của từng mặt hàng đúng khoảng tháng và phạm vi đã chọn,,,,,,
+29_060_002,Xuất NXT đặt tên tệp đúng quy ước,Vai: province. Có dữ liệu NXT,1. Bấm xuất Excel,,"Tệp mang tên dạng ""bao-cao-nhap-xuat-ton"" kèm thời điểm xuất",,,,,,
+,070 — Xem sản lượng bán và hàng khách trả lại,,,,,,,,,,
+29_070_001,Sản lượng bán hiện ngày phát sinh bán gần nhất,Vai: province. Có mặt hàng đã bán trong kỳ,1. Mở báo cáo sản lượng bán,,Mỗi mặt hàng hiện sản lượng thực bán trong kỳ và ngày phát sinh bán gần nhất,,,,,,
+,080 — Đánh giá vòng quay và số ngày tồn kho,,,,,,,,,,
+29_080_001,Vòng quay và số ngày tồn kho tính theo đúng kỳ đã lọc,Vai: province. Có dữ liệu kho trong kỳ,"1. Mở báo cáo;
+2. Đổi kỳ",,Vòng quay và số ngày tồn kho của từng mặt hàng đổi theo kỳ và phạm vi đã lọc,,,,,,
+,"090 — Tìm hàng bán chạy, chậm luân chuyển và hàng chết",,,,,,,,,,
+29_090_001,Lọc theo nhãn hàng bán chạy chậm luân chuyển hàng chết,Vai: province. Có mặt hàng ở nhiều nhóm,1. Lọc lần lượt từng nhãn,,Mỗi nhãn trả đúng nhóm mặt hàng tương ứng kèm số tiền đang đọng,,,,,,
+,100 — Tra cứu tồn kho theo hạn sử dụng,,,,,,,,,,
+29_100_001,Tồn theo hạn sử dụng xếp theo mức cấp bách,Vai: province. Có lô hàng có hạn sử dụng,1. Mở báo cáo tồn theo hạn sử dụng,,"Danh sách lô xếp theo mức cấp bách của hạn sử dụng, kèm số lượng và giá trị tiền tương ứng",,,,,,
+,110 — Xem báo cáo đối soát hoá đơn mua hàng và công nợ nhà cung cấp,,,,,,,,,,
+29_110_001,Báo cáo đối soát hiện công nợ từng NCC trong tháng,Vai: province,1. Mở /report/po-reconciliation,,Hiện công nợ từng nhà cung cấp trong tháng và đơn nào lệch bao nhiêu tiền giữa các nguồn,,,,,,
+29_110_002,Tổng hợp lại báo cáo đối soát báo đúng thông điệp,Vai: province,1. Bấm tổng hợp lại,,"Hệ thống báo nguyên văn ""Tổng hợp báo cáo thành công""",,,,,,
+,120 — Xem báo cáo nhân viên theo ca làm việc và hàng hoá đã bán,,,,,,,,,,
+29_120_001,Báo cáo nhân viên xếp hạng theo ba chỉ tiêu,Vai: province. Có dữ liệu bán hàng của nhân viên,1. Mở báo cáo nhân viên,,Bảng xếp hạng nhân viên theo ba chỉ tiêu; tra được xuống từng ca và từng mặt hàng của một người,,,,,,
+29_120_002,Tổng hợp báo cáo nhân viên báo đúng thông điệp,Vai: province,1. Bấm tổng hợp,,"Hệ thống báo nguyên văn ""Tổng hợp báo cáo nhân viên thành công""",,,,,,
+,130 — Xem các báo cáo tuỳ chỉnh,,,,,,,,,,
+29_130_001,Báo cáo tuỳ chỉnh dựng thanh báo cáo và tự chọn báo cáo đầu tiên,Vai: province. Danh mục có ít nhất 1 báo cáo đang hiển thị,1. Mở /report/dynamic,,Hệ thống dựng thanh báo cáo ngang theo thứ tự đã cấu hình và TỰ CHỌN báo cáo đầu tiên,,,,,,
+29_130_002,Chuyển báo cáo trên thanh nạp lại khung nội dung,Vai: province. Danh mục có từ 2 báo cáo trở lên,1. Bấm tên một báo cáo khác trên thanh,,Khung nội dung nạp lại; dữ liệu giới hạn theo phạm vi đơn vị của người đăng nhập,,,,,,
+29_130_003,Danh mục rỗng báo đúng thông điệp và không phải lỗi quyền,Vai: province. Danh mục chưa có báo cáo nào đang hiển thị,1. Mở /report/dynamic,,"Trang báo ""Chưa có báo cáo"" — nghĩa là danh mục rỗng, KHÔNG phải thiếu quyền",,,,,,
+,140 — Cấu hình danh mục báo cáo tuỳ chỉnh,,,,,,,,,,
+29_140_001,Cấu hình danh mục báo cáo tuỳ chỉnh cập nhật thanh báo cáo ngay,Vai: tct,"1. Mở cấu hình danh mục báo cáo tuỳ chỉnh;
+2. Thêm mới một báo cáo;
+3. Lưu",,"Hệ thống báo nguyên văn ""Tạo báo cáo thành công"" (hoặc ""Cập nhật thành công"" khi sửa); danh sách cấu hình nạp lại; thanh báo cáo của người dùng cập nhật theo danh mục mới NGAY",,,,,,
+29_140_002,Vai Bưu điện Tỉnh không cấu hình được danh mục báo cáo,Vai: province,1. Mở cấu hình danh mục báo cáo tuỳ chỉnh,,Bị chặn — task 140 chỉ khai vai_tro TONG_CONG_TY,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+29_PQ_001,Vai điểm bán chỉ thấy số liệu trong phạm vi của mình,Vai: gdv. Hệ thống có nhiều điểm bán,1. Mở /report/revenue-sale,,Số liệu giới hạn trong phạm vi điểm bán của tài khoản đang đăng nhập,,,,,,
+,"200 — Báo cáo kho — lọc tháng, 4 cấp phạm vi, tìm kiếm phạm vi",,,,,,,,,,
+29_200_001,Báo cáo kho lọc theo tháng,Vai: shop. Có số liệu ở nhiều tháng,"1. Mở báo cáo kho;
+2. Chọn một tháng cụ thể",,Chỉ hiện số liệu của tháng đã chọn; đổi tháng thì số liệu đổi theo,,,,,,
+29_200_002,Báo cáo kho phạm vi Tổng công ty,Vai: tct,"1. Mở báo cáo kho;
+2. Chọn phạm vi Tổng công ty",,"Hiện số liệu tổng hợp toàn hệ thống, bằng tổng các tỉnh cộng lại",,,,,,
+29_200_003,Báo cáo kho phạm vi Tỉnh,Vai: tct,"1. Mở báo cáo kho;
+2. Chọn phạm vi một Tỉnh cụ thể",,"Hiện đúng số liệu của tỉnh đã chọn, không lẫn tỉnh khác",,,,,,
+29_200_004,Báo cáo kho phạm vi Xã,Vai: province,"1. Mở báo cáo kho;
+2. Chọn phạm vi một Bưu điện Xã",,Hiện đúng số liệu phạm vi xã đã chọn,,,,,,
+29_200_005,Báo cáo kho phạm vi Điểm bán,Vai: province,"1. Mở báo cáo kho;
+2. Chọn phạm vi một Điểm bán",,Hiện đúng số liệu của điểm bán đã chọn,,,,,,
+29_200_006,Tìm kiếm Tỉnh trong bộ chọn phạm vi,Vai: tct,"1. Mở bộ chọn phạm vi;
+2. Gõ tên một Tỉnh",,"Hiện tỉnh đó kèm các xã, điểm bán và kho trực thuộc tỉnh đó",,,,,,
+29_200_007,Tìm kiếm Bưu điện Xã trong bộ chọn phạm vi,Vai: province,"1. Mở bộ chọn phạm vi;
+2. Gõ tên một Bưu điện Xã",,Hiện các điểm bán và kho thuộc bưu điện xã đó,,,,,,
+29_200_008,Tìm kiếm Điểm bán hoặc kho trong bộ chọn phạm vi,Vai: province,"1. Mở bộ chọn phạm vi;
+2. Gõ tên một điểm bán hoặc kho",,Hiện đúng điểm bán hoặc kho tìm được,,,,,,
+,210 — **Chốt tồn kho**,,,,,,,,,,
+29_210_001,Chốt tồn kho khi còn đơn phát sinh,Vai: shop. Trong kỳ còn đơn chưa hoàn tất,"1. Mở màn chốt tồn kho;
+2. Chọn kỳ còn đơn phát sinh;
+3. Chốt",,Hiện cảnh báo phù hợp hoặc không cho chốt.,,,,,,
+29_210_002,Cảnh báo số đơn vị chưa chốt trong phạm vi,Vai: province. Một số đơn vị trực thuộc chưa chốt,"1. Mở màn chốt tồn kho;
+2. Chọn phạm vi toàn tỉnh;
+3. Đọc cảnh báo",,Hiện đúng số lượng đơn vị chưa chốt trong phạm vi,,,,,,
+29_210_003,Phiếu xuất kho nháp không được tính vào chốt tồn,Vai: shop. Trong kỳ có phiếu xuất kho ở trạng thái nháp,"1. Ghi lại số tồn trước;
+2. Chốt tồn kho kỳ đó;
+3. Đọc số tồn đã chốt",,Số tồn KHÔNG bị trừ phần của phiếu xuất nháp,,,,,,
+29_210_004,Phiếu nhập kho nháp không được tính vào chốt tồn,Vai: shop. Trong kỳ có phiếu nhập kho ở trạng thái nháp,"1. Ghi lại số tồn trước;
+2. Chốt tồn kho kỳ đó;
+3. Đọc số tồn đã chốt",,Số tồn KHÔNG được cộng phần của phiếu nhập nháp,,,,,,
+29_210_005,Đơn bán hàng nháp không được tính vào chốt tồn,Vai: shop. Trong kỳ có đơn bán hàng ở trạng thái nháp,"1. Ghi lại số tồn trước;
+2. Chốt tồn kho kỳ đó;
+3. Đọc số tồn đã chốt",,Số tồn KHÔNG bị trừ phần của đơn bán nháp,,,,,,
+29_210_006,Khoảng thời gian cho phép chốt tồn kho,Vai: shop,"1. Mở màn chốt tồn kho;
+2. Đọc danh sách kỳ chọn được",,Chỉ cho chọn kỳ trong phạm vi 2 tháng trước tháng hiện tại; kỳ ngoài phạm vi không chọn được,,,,,,
+29_210_007,Phạm vi chốt kho của vai cấp điểm bán,Vai: shop,"1. Mở màn chốt tồn kho;
+2. Đọc các lựa chọn phạm vi",,"Chỉ hiện đúng một lựa chọn ""Chốt shop của tôi""",,,,,,
+29_210_008,Phạm vi chốt kho của vai cấp tỉnh,Vai: province,"1. Mở màn chốt tồn kho;
+2. Đọc các lựa chọn phạm vi",,"Hiện lựa chọn toàn bộ phạm vi gồm cấp dưới, và lựa chọn chỉ đơn vị trực thuộc trực tiếp",,,,,,
+29_210_009,Phạm vi chốt kho của vai cấp TCT,Vai: tct,"1. Mở màn chốt tồn kho;
+2. Đọc các lựa chọn phạm vi",,"Hiện lựa chọn toàn bộ phạm vi gồm cấp dưới, và lựa chọn chỉ đơn vị trực thuộc trực tiếp",,,,,,
+29_210_010,Sửa phiếu xuất kho nháp sau khi đã chốt kho,Vai: shop. Kỳ đã chốt và còn phiếu xuất nháp trong kỳ đó,"1. Mở phiếu xuất nháp thuộc kỳ đã chốt;
+2. Sửa và lưu",,"Bị chặn với nguyên văn ""Tháng MM/yyyy đã chốt tồn kho, không thể thực hiện nghiệp vụ kho"" (mã INVENTORY_PERIOD_CLOSED)",,,,,,
+29_210_011,Sửa phiếu nhập kho nháp sau khi đã chốt kho,Vai: shop. Kỳ đã chốt và còn phiếu nhập nháp trong kỳ đó,"1. Mở phiếu nhập nháp thuộc kỳ đã chốt;
+2. Sửa và lưu",,"Bị chặn với nguyên văn ""Tháng MM/yyyy đã chốt tồn kho, không thể thực hiện nghiệp vụ kho"" (mã INVENTORY_PERIOD_CLOSED)",,,,,,
+29_210_012,Chốt kho tháng sau khi tháng trước chưa chốt,Vai: shop. Tháng trước chưa chốt,"1. Mở màn chốt tồn kho;
+2. Chọn tháng sau;
+3. Chốt",,"Bị chặn, không chốt được.",,,,,,
+29_210_013,Chốt kho tháng nhỏ hơn tháng có phiếu tồn đầu kỳ,Vai: shop. Đã có phiếu tồn kho đầu kỳ ở một tháng,"1. Chọn tháng nhỏ hơn tháng có phiếu tồn đầu kỳ;
+2. Chốt",,"Bị chặn, không chốt được.",,,,,,
+29_210_014,Chốt kho tháng cũ sau khi đã thêm phiếu tồn đầu kỳ vào tháng mới,Vai: shop,"1. Thêm phiếu tồn kho đầu kỳ vào tháng mới;
+2. Quay lại chốt tháng cũ",,"Bị chặn, không chốt được.",,,,,,
+29_210_015,Chốt kho hai lần trong cùng một tháng,Vai: shop. Kỳ đó đã chốt một lần,"1. Chọn lại đúng kỳ đã chốt;
+2. Chốt lần hai",,Bị chặn với thông báo nêu rõ kỳ tháng đó đã được chốt trước đó.,,,,,,
+29_210_016,Chốt kho với Toàn bộ phạm vi gồm cấp dưới,Vai: province,"1. Chọn phạm vi toàn bộ gồm cấp dưới;
+2. Chốt;
+3. Đọc trạng thái chốt của các đơn vị",,Chốt thành công; mọi đơn vị cấp dưới trong phạm vi đều chuyển sang đã chốt,,,,,,
+29_210_017,Chốt kho chỉ với đơn vị trực thuộc trực tiếp,Vai: province,"1. Chọn phạm vi chỉ đơn vị trực thuộc trực tiếp;
+2. Chốt;
+3. Đọc trạng thái chốt",,"Chốt thành công; CHỈ đơn vị trực thuộc trực tiếp chuyển sang đã chốt, cấp sâu hơn giữ nguyên",,,,,,
+,220 — Báo cáo đối soát NCC,,,,,,,,,,
+29_220_001,Báo cáo đối soát lọc theo tháng,Vai: shop,"1. Mở báo cáo đối soát;
+2. Chọn một tháng",,Chỉ hiện dữ liệu của tháng đã chọn,,,,,,
+29_220_002,Báo cáo đối soát lọc theo nhà cung cấp,Vai: shop,"1. Mở báo cáo đối soát;
+2. Chọn một nhà cung cấp",,Chỉ hiện dữ liệu của nhà cung cấp đã chọn,,,,,,
+29_220_003,Xuất Excel báo cáo đối soát,Vai: shop. Kỳ lọc có dữ liệu,"1. Đặt bộ lọc;
+2. Bấm xuất Excel",,Tệp Excel tải về thành công; dữ liệu trong tệp khớp bộ lọc đang đặt,,,,,,
+29_220_004,Tổng nợ phải trả nhà cung cấp,Vai: shop,"1. Mở báo cáo đối soát;
+2. Đọc chỉ tiêu tổng nợ phải trả NCC;
+3. Cộng tay công nợ từng NCC",,Tổng nợ phải trả = tổng công nợ của tất cả nhà cung cấp trong kỳ,,,,,,
+29_220_005,Số lượng PO khớp đối soát,Vai: shop,"1. Mở báo cáo đối soát;
+2. Đọc chỉ tiêu PO khớp;
+3. Đếm tay danh sách PO khớp",,Số hiển thị bằng đúng số PO ở trạng thái khớp,,,,,,
+29_220_006,Số lượng PO lệch đối soát,Vai: shop,"1. Đọc chỉ tiêu PO lệch;
+2. Đếm tay danh sách PO lệch",,Số hiển thị bằng đúng số PO ở trạng thái lệch,,,,,,
+29_220_007,Số lượng PO chưa đối soát,Vai: shop,"1. Đọc chỉ tiêu PO chưa đối soát;
+2. Đếm tay danh sách",,Số hiển thị bằng đúng số PO chưa đối soát; tổng ba nhóm khớp lệch chưa = tổng PO trong kỳ,,,,,,
+29_220_008,Mở chi tiết đối soát của một nhà cung cấp,Vai: shop,1. Bấm vào dòng của một nhà cung cấp,,Mở popup danh sách PO của đúng nhà cung cấp đó,,,,,,
+29_220_009,Giao diện popup Đối soát hoá đơn mua hàng,Vai: shop. Đã mở popup từ một NCC,"1. Mở popup;
+2. Đọc tiêu đề và các thành phần",,"Tiêu đề đúng ""Đối soát hoá đơn mua hàng"".",,,,,,
+29_220_010,Nội dung chi tiết đối soát khớp với lúc thực hiện,Vai: shop. NCC đã có phiếu đối soát,"1. Mở chi tiết đối soát;
+2. So với dữ liệu lúc thực hiện đối soát ở phân hệ 27",,Thông tin đối soát hiển thị khớp với dữ liệu đã ghi nhận lúc thực hiện,,,,,,
+29_220_011,Bộ lọc trạng thái đối soát,Vai: shop,1. Lần lượt chọn từng trạng thái đối soát ở bộ lọc,,Chỉ hiện các bản ghi đúng trạng thái đang lọc,,,,,,
+29_220_012,Bộ lọc trạng thái thanh toán,Vai: shop,1. Lần lượt chọn từng trạng thái thanh toán ở bộ lọc,,Chỉ hiện các bản ghi đúng trạng thái thanh toán đang lọc,,,,,,
+29_220_013,Giao diện drawer Chi tiết đối soát PO,Vai: shop. Đã mở một PO đã đối soát,"1. Mở drawer Chi tiết đối soát PO;
+2. Đọc các khối",,Hiện thông tin Phiếu nhập kho và Hoá đơn.,,,,,,
+29_220_014,Nội dung Chi tiết đối soát PO,Vai: shop. Đã mở một PO đã đối soát,"1. Mở drawer;
+2. So số liệu Phiếu nhập kho và Hoá đơn",,Số liệu hai bên hiển thị đúng và cho thấy rõ khoản khớp hay lệch,,,,,,
+,230 — Báo cáo doanh thu theo cấp,,,,,,,,,,
+29_230_001,Báo cáo doanh thu xem theo các tỉnh,Vai: tct,"1. Mở báo cáo doanh thu;
+2. Xem ở cấp các tỉnh;
+3. Đọc breadcrumb và bảng",,"Breadcrumb hiện ""Tổng công ty""; bảng liệt kê từng tỉnh với số liệu riêng",,,,,,
+29_230_002,Báo cáo doanh thu xem theo các xã,Vai: tct,"1. Chọn một tỉnh để đi sâu xuống cấp xã;
+2. Đọc breadcrumb và bảng",,"Breadcrumb hiện ""Tổng công ty/<Tỉnh đã chọn>""; bảng liệt kê các xã của tỉnh đó",,,,,,
+29_230_003,Báo cáo doanh thu xem theo các điểm bán,Vai: tct,"1. Đi sâu tiếp xuống cấp điểm bán;
+2. Đọc breadcrumb và bảng",,"Breadcrumb hiện ""Tổng công ty/<Tỉnh>/<Xã>""; bảng liệt kê các điểm bán",,,,,,
+29_230_004,Lọc bảng Doanh thu Lợi nhuận gộp Biên LN theo tháng,Vai: tct,"1. Mở bảng Doanh thu, Lợi nhuận gộp, Biên LN của các tỉnh;
+2. Đổi tháng lọc",,Số liệu bảng đổi đúng theo tháng đã chọn,,,,,,
+29_230_005,Lọc bảng Doanh thu theo tên Tỉnh Xã Điểm bán,Vai: tct,"1. Mở bảng;
+2. Gõ tên một Tỉnh, Xã hoặc Điểm bán vào ô lọc",,Danh sách thu hẹp đúng theo tên đã gõ,,,,,,
+,240 — Quét kỹ thuật 3.4,,,,,,,,,,
+29_240_001,Báo cáo rỗng khi kỳ không có số liệu,Vai: shop,1. Chọn một kỳ chắc chắn không có số liệu,,"Hiện trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+29_240_002,Phân trang bảng báo cáo,Vai: tct. Bảng có nhiều hơn một trang,"1. Sang trang 2;
+2. Đổi số dòng mỗi trang;
+3. Về trang cuối",,Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi,,,,,,
+29_240_003,Tìm phạm vi bằng ký tự đặc biệt,Vai: tct,1. Gõ chuỗi chứa % và _ vào ô tìm phạm vi,,Không lỗi 500; không trả về toàn bộ đơn vị.,,,,,,
+29_240_004,Tìm phạm vi không dấu,Vai: tct,1. Gõ tên tỉnh KHÔNG dấu vào ô tìm phạm vi,,Chưa chốt kỳ vọng — ghi nhận thực tế: tìm bằng từ khoá KHÔNG DẤU có trả về đơn vị tên viết có dấu hay không.,,,,,,
+29_240_005,Chọn khoảng thời gian có ngày kết thúc trước ngày bắt đầu,Vai: shop,1. Chọn ngày bắt đầu sau ngày kết thúc,,Bị chặn ở bộ chọn ngày hoặc trả rỗng.,,,,,,

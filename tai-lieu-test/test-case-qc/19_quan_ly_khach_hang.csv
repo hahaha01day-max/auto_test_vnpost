@@ -1,0 +1,229 @@
+﻿,Chức năng,,QUẢN LÝ KHÁCH HÀNG,,,,,,,,
+,Mã Testcase,,19_quan_ly_khach_hang,,,,,,,,
+,Tổng các tình huống kiểm thử,,70,,,,,,,,
+,Chưa thực hiện,,70,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,QUẢN LÝ KHÁCH HÀNG,,,,,,,,,,
+,010 — Tra cứu và tìm kiếm khách hàng,,,,,,,,,,
+19_010_001,Tìm khách tự lọc khi ngừng gõ và quay về trang đầu,Vai: province. Có khách hàng trong hệ thống,"1. Mở /customer;
+2. Sang trang 2;
+3. Gõ tên khách vào ô ""Tên / số điện thoại khách hàng""",,"Danh sách tự lọc, KHÔNG cần bấm nút tìm, và quay về trang đầu. Tiêu đề bảng hiện đúng số khách tìm được",,,,,,
+19_010_002,Bốn ô lọc chỉ hiện với cấp trên điểm bán,Vai: gdv,"1. Mở /customer;
+2. Quan sát vùng trên bảng",,"Chỉ có ô tìm kiếm; KHÔNG có bốn ô Trạng thái, Loại khách hàng, Nhóm khách hàng, Chi nhánh/điểm bán. Danh sách giới hạn trong phạm vi điểm bán",,,,,,
+19_010_003,Tuỳ chỉnh cột hiển thị bật được cột đang tắt,Vai: province,"1. Mở /customer;
+2. Bấm ""Tùy chỉnh cột hiển thị"";
+3. Bật cột ""Nợ cần thu hiện tại""",,Cột Nợ cần thu hiện tại xuất hiện trên bảng,,,,,,
+,020 — Thêm khách hàng mới,,,,,,,,,,
+19_020_001,Thêm khách hàng mới,Vai: shop. Có quyền create_customer,"1. Bấm ""Thêm khách hàng"";
+2. Nhập Tên khách hàng, Mã khách hàng, Số điện thoại;
+3. Bấm ""Hoàn thành""",,"Hệ thống báo nguyên văn ""Thêm khách hàng thành công""; màn nhập đóng lại; khách vừa lập đứng ĐẦU danh sách",,,,,,
+19_020_002,Sinh mã khách hàng ngẫu nhiên,Vai: shop. Đang mở màn Thêm khách hàng,1. Bấm biểu tượng bánh xe ở cuối ô Mã khách hàng,,Ô Mã khách hàng được điền một mã ngẫu nhiên khác rỗng,,,,,,
+19_020_003,Chặn thêm khách trùng số điện thoại tại điểm bán,Vai: shop. Điểm bán đã có khách dùng số điện thoại X,"1. Thêm khách hàng với Số điện thoại = X;
+2. Bấm ""Hoàn thành""",,Hệ thống báo lỗi và KHÔNG lưu,,,,,,
+,030 — Cập nhật hồ sơ khách hàng,,,,,,,,,,
+19_030_001,Cập nhật hồ sơ khách hàng,Vai: shop. Có khách hàng trong phạm vi,"1. Mở chi tiết khách;
+2. Bấm ""Sửa thông tin"";
+3. Đổi tên;
+4. Bấm ""Hoàn thành""",,"Hệ thống báo nguyên văn ""Cập nhật thành công""; màn chi tiết hiển thị thông tin mới",,,,,,
+19_030_002,Đổi sang số điện thoại đã có khách khác dùng bị chặn,Vai: shop. Có hai khách A và B tại cùng điểm bán,"1. Sửa khách A sang số điện thoại của khách B;
+2. Lưu",,Hệ thống báo lỗi và KHÔNG lưu,,,,,,
+,040 — Xem hồ sơ và số liệu tổng hợp của khách hàng,,,,,,,,,,
+19_040_001,Hồ sơ khách hiện ba con số tổng hợp,Vai: shop. Khách đã có giao dịch,"1. Mở chi tiết khách;
+2. Đọc tab Thông tin cá nhân",,"Hiện tổng tiền khách đã mua, số đã thanh toán và số còn nợ",,,,,,
+19_040_002,Trường chưa khai hiển thị dấu hiệu rõ ràng,Vai: shop. Khách có trường chưa khai,"1. Mở chi tiết khách;
+2. Đọc các trường trống",,"Hiển thị ""--"" hoặc ""Chưa khai báo"", KHÔNG để trống",,,,,,
+,"050 — Ngừng hoạt động, kích hoạt lại và xoá khách hàng",,,,,,,,,,
+19_050_001,Ngừng hoạt động khách hàng,Vai: province. Có khách đang hoạt động,"1. Mở chi tiết khách;
+2. Bấm ""Ngừng hoạt động"";
+3. Bấm Đồng ý ở hộp ""Xác nhận ngừng hoạt động khách hàng này?""",,"Báo nguyên văn ""Ngừng hoạt động khách hàng thành công""; nhãn trạng thái cột trái đổi sang ""Ngừng hoạt động"" màu đỏ; hồ sơ vẫn tra cứu được",,,,,,
+19_050_002,Kích hoạt lại khách đã ngừng,Vai: province. Có khách đang Ngừng hoạt động,"1. Mở hồ sơ;
+2. Bấm ""Kích hoạt lại"";
+3. Đồng ý",,Khách trở lại trạng thái hoạt động,,,,,,
+19_050_003,Chặn xoá khách còn công nợ,Vai: province. Có khách CÒN công nợ,"1. Mở chi tiết khách;
+2. Bấm ""Xóa"";
+3. Đồng ý",,"Hệ thống từ chối và báo nguyên văn ""Vui lòng cập nhật công nợ khách hàng trước khi xóa!""",,,,,,
+19_050_004,Xoá khách hàng không hoàn tác được,Vai: province. Có khách KHÔNG còn công nợ dựng riêng để test,"1. Bấm ""Xóa"";
+2. Đọc hộp xác nhận;
+3. Bấm Đồng ý",,"Hộp xác nhận ghi nguyên văn ""Hành động này sẽ không thể hoàn tác, bạn có chắc chắn muốn xóa?"". Sau khi xoá báo ""Xoá khách hàng thành công"" và khách không còn trong danh sách",,,,,,
+19_050_005,Vai điểm bán không ngừng hoạt động khách được,Vai: gdv,"1. Mở chi tiết một khách;
+2. Tìm nút Ngừng hoạt động",,"Không có thao tác — task 050 chỉ khai vai_tro BUU_DIEN_XA, BUU_DIEN_TINH, TONG_CONG_TY",,,,,,
+,060 — Xem đơn hàng của khách hàng,,,,,,,,,,
+19_060_001,Tab Đơn hàng mặc định chỉ lấy đơn trong tháng hiện tại,Vai: shop. Khách có đơn ở tháng trước và tháng này,"1. Mở chi tiết khách;
+2. Bấm tab Đơn hàng",,Bảng chỉ hiện đơn trong tháng hiện tại; nới khoảng thời gian thì đơn cũ hiện ra,,,,,,
+19_060_002,Đơn trả một phần vẫn hiện Chưa thanh toán,Vai: shop. Khách có đơn đã trả một phần,"1. Mở tab Đơn hàng;
+2. Đọc cột Trạng thái thanh toán và cột Còn nợ",,"Cột Trạng thái thanh toán = ""Chưa thanh toán""; cột Còn nợ hiện đúng số còn thiếu",,,,,,
+,070 — Xem ví điểm và lịch sử tích điểm của khách hàng,,,,,,,,,,
+19_070_001,Ô Phân loại chỉ chọn được sau khi chọn Hình thức,Vai: shop. Khách có biến động điểm,"1. Mở tab Ví điểm;
+2. Thử chọn Phân loại khi chưa chọn Hình thức;
+3. Chọn Hình thức rồi chọn Phân loại;
+4. Đổi lại Hình thức",,Chưa chọn Hình thức thì Phân loại không chọn được. Đổi Hình thức thì Phân loại bị xoá về trống,,,,,,
+19_070_002,Điểm còn lại đọc ở dòng gần nhất không phải cộng gộp,Vai: shop. Khách có nhiều biến động điểm gồm cả điểm âm,"1. Mở tab Ví điểm;
+2. Đọc cột Điểm còn lại ở dòng trên cùng",,Cột Điểm còn lại ở dòng trên cùng chính là số điểm khách đang có; các dòng Điểm mang dấu âm là điểm bị trừ,,,,,,
+,080 — Xem sản phẩm khách hàng đã mua,,,,,,,,,,
+19_080_001,Tab Sản phẩm đã mua hiện đủ cột,Vai: shop. Khách đã mua hàng,1. Mở tab Sản phẩm đã mua,,"Bảng có các cột Ngày mua, Tên sản phẩm, Đơn hàng, Loại, Số lượng kèm đơn vị tính, Tổng tiền",,,,,,
+19_080_002,Cột Loại chỉ có Sản phẩm hoặc Combo,Vai: shop. Khách đã mua cả dịch vụ hoặc hàng chỉ định,1. Đọc cột Loại của các dòng,,"Chỉ hiện nhãn ""Sản phẩm"" hoặc ""Combo""; loại khác hiện ""--"" (không phải lỗi dữ liệu)",,,,,,
+,090 — Theo dõi và thu hồi công nợ khách hàng,,,,,,,,,,
+19_090_001,Thu hồi công nợ khách tạo phiếu thu thật,Vai: shop. Khách còn công nợ,"1. Mở tab Công nợ khách hàng;
+2. Bấm ""Thanh toán"";
+3. Chọn Nhân viên tạo phiếu;
+4. Nhập Số tiền thanh toán;
+5. Tích đơn cần thu;
+6. Bấm ""Lưu""",,"Công nợ giảm đúng số tiền vừa thu; hệ thống sinh một phiếu thu loại ""Thu hồi nợ""; bốn thẻ tổng hợp cập nhật ngay",,,,,,
+,100 — Nhập khách hàng từ tệp Excel,,,,,,,,,,
+19_100_001,Nhập khách hàng từ Excel chạy nền và báo kết quả,Vai: shop. Có tệp mẫu đã điền,"1. Bấm ""Nhập Excel"";
+2. Tải về file mẫu và điền;
+3. Kéo thả tệp;
+4. Bấm ""Xác nhận nhập""",,"Hệ thống xử lý ở chế độ nền rồi hiện ""Import thành công"" hoặc ""Import thất bại"" kèm tổng số dòng, số dòng thành công và số dòng thất bại",,,,,,
+19_100_002,Tải được file lỗi của lần nhập có dòng sai,Vai: shop. Đã có lần nhập với dòng lỗi,"1. Bấm tab ""Lịch sử nhập"";
+2. Bấm ""Tải file lỗi"" ở cột Thao tác",,Tệp liệt kê đúng những dòng chưa vào được,,,,,,
+,110 — Xuất danh sách khách hàng ra tệp Excel,,,,,,,,,,
+19_110_001,Xuất Excel theo bộ lọc hiện tại,Vai: province. Có khách hàng,"1. Đặt bộ lọc;
+2. Bấm ""Xuất Excel"";
+3. Bấm ""Xuất file excel""",,"Hệ thống báo nguyên văn ""Đã tạo yêu cầu xuất dữ liệu"" và thêm một dòng vào Lịch sử xuất excel",,,,,,
+19_110_002,Chặn xuất khi chưa chọn điểm bán,Vai: province. Chưa chọn điểm bán trên thanh đầu trang,"1. Bấm ""Xuất Excel"";
+2. Bấm ""Xuất file excel""",,"Hệ thống cảnh báo nguyên văn ""Vui lòng chọn điểm bán trước khi xuất dữ liệu"" và KHÔNG tạo yêu cầu",,,,,,
+19_110_003,Tệp xuất chỉ lưu trong 7 ngày,Vai: province. Có dòng trong Lịch sử xuất excel,"1. Mở bảng Lịch sử xuất excel;
+2. Đọc dòng chữ ghi chú trên bảng",,Bảng ghi rõ tệp chỉ được lưu trong vòng 7 ngày,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+19_PQ_001,Giao dịch viên chỉ thấy khách trong phạm vi điểm bán,Vai: gdv. Hệ thống có khách của nhiều điểm bán,1. Mở /customer,,Danh sách chỉ gồm khách thuộc điểm bán của tài khoản đang đăng nhập,,,,,,
+,020 — Thêm khách hàng mới,,,,,,,,,,
+19_020_004,Tạo khách hàng tại cấp Tổng công ty đồng bộ xuống mọi điểm bán,Vai: tct,"1. Mở /customer;
+2. Thêm khách hàng mới;
+3. Lưu;
+4. Đăng nhập vai gdv của một điểm bán thuộc TCT;
+5. Mở /customer",,Khách vừa tạo xuất hiện trong danh sách khách hàng của điểm bán đó,,,,,,
+19_020_005,Tạo khách hàng tại điểm bán đồng bộ ngược lên TCT,Vai: gdv,"1. Thêm khách hàng mới tại điểm bán;
+2. Lưu;
+3. Đăng nhập vai tct;
+4. Mở /customer",,Khách vừa tạo xuất hiện trong danh sách cấp TCT và ở các điểm bán khác cùng chuỗi,,,,,,
+19_020_006,Huỷ thao tác thêm khách hàng giữa chừng,Vai: gdv,"1. Mở form thêm khách hàng;
+2. Nhập đủ thông tin;
+3. Đóng form bằng Huỷ hoặc X;
+4. Đọc lại danh sách",,Form đóng; KHÔNG có khách hàng mới trong danh sách; dữ liệu vừa nhập bị bỏ hoàn toàn,,,,,,
+19_020_007,Bỏ trống Tên khách hàng khi thêm mới,Vai: gdv,"1. Mở form thêm khách hàng;
+2. Để trống ô Tên khách hàng;
+3. Điền các ô còn lại;
+4. Lưu",,"Bị chặn, không tạo khách.",,,,,,
+19_020_008,Bỏ trống Số điện thoại khi thêm mới,Vai: gdv,"1. Mở form thêm khách hàng;
+2. Để trống ô Số điện thoại;
+3. Điền các ô còn lại;
+4. Lưu",,"Bị chặn, không tạo khách.",,,,,,
+19_020_009,Thêm khách hàng với số điện thoại sai định dạng,Vai: gdv,"1. Mở form thêm khách hàng;
+2. Nhập số điện thoại sai định dạng (chứa chữ, thiếu số);
+3. Lưu",,"Bị chặn, không tạo khách.",,,,,,
+19_020_010,Thêm khách hàng với email sai định dạng,Vai: gdv,"1. Mở form thêm khách hàng;
+2. Nhập email thiếu @ hoặc thiếu tên miền;
+3. Lưu",,"Bị chặn, không tạo khách.",,,,,,
+19_020_011,Số điện thoại toàn khoảng trắng,Vai: gdv,"1. Mở form thêm khách hàng;
+2. Nhập toàn dấu cách vào ô Số điện thoại;
+3. Lưu",,"Bị chặn như bỏ trống, KHÔNG được coi là đã nhập.",,,,,,
+19_020_012,Tên khách hàng có khoảng trắng đầu cuối,Vai: gdv,"1. Nhập tên khách có dấu cách ở đầu và cuối;
+2. Lưu;
+3. Mở lại chi tiết khách",,Tên được cắt khoảng trắng thừa (trim).,,,,,,
+,010 — Tra cứu và tìm kiếm khách hàng,,,,,,,,,,
+19_010_004,Danh sách hiển thị đúng khách vừa thêm,Vai: gdv. Vừa tạo một khách hàng mới,"1. Thêm khách hàng;
+2. Quay về danh sách",,"Khách vừa tạo xuất hiện trong danh sách với đúng tên, số điện thoại, mã khách",,,,,,
+19_010_005,Danh sách khách hàng khi chưa có khách nào,Vai: gdv. Lọc điều kiện chắc chắn không khớp khách nào,"1. Mở /customer;
+2. Đặt bộ lọc không khớp khách nào",,"Hiện trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+19_010_006,Danh sách hiện khách được tạo từ điểm bán khác,Vai: gdv điểm bán A. Điểm bán B vừa tạo một khách,"1. Điểm bán B tạo khách;
+2. Đăng nhập gdv điểm bán A;
+3. Mở /customer",,Khách do điểm bán B tạo xuất hiện trong danh sách của điểm bán A (đồng bộ toàn chuỗi),,,,,,
+19_010_007,Bấm tên khách trong danh sách mở màn chi tiết,Vai: gdv. Danh sách có ít nhất một khách,"1. Mở /customer;
+2. Bấm vào tên khách hàng",,Điều hướng tới /customer/detail/:customerId của đúng khách đó,,,,,,
+19_010_008,Truy cập link chi tiết của khách đã bị xoá,Vai: gdv. Biết customerId của một khách đã xoá,1. Mở thẳng /customer/detail/<id đã xoá>,,"Hiện message.error nguyên văn ""Khách hàng không tồn tại""",,,,,,
+,060 — Xem đơn hàng của khách hàng,,,,,,,,,,
+19_060_003,Tab Đơn hàng khi khách chưa có đơn nào,Vai: gdv. Khách mới tạo chưa phát sinh đơn,"1. Mở chi tiết khách;
+2. Vào tab Đơn hàng",,"Hiện trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+,090 — Theo dõi và thu hồi công nợ khách hàng,,,,,,,,,,
+19_090_002,Gạch nợ không tạo phiếu thu hồi nợ,Vai: shop. Khách có đơn còn nợ,"1. Mở chi tiết khách;
+2. Vào tab Công nợ;
+3. Chọn đơn còn nợ;
+4. Thực hiện Gạch nợ (không tạo phiếu thu)",,Đơn chuyển trạng thái đã thanh toán; công nợ khách giảm tương ứng; KHÔNG sinh phiếu thu trong sổ quỹ,,,,,,
+19_090_003,Ghi nợ thủ công cho khách hàng,Vai: shop. Khách đang có hồ sơ,"1. Mở tab Công nợ;
+2. Chọn Ghi nợ;
+3. Nhập số tiền và lý do;
+4. Xác nhận",,Khoản nợ mới được ghi nhận; tổng công nợ của khách tăng đúng số vừa ghi,,,,,,
+19_090_004,Bấm Thanh toán khi chưa chọn đơn hàng nào,Vai: shop. Khách có đơn còn nợ,"1. Mở tab Công nợ;
+2. Không tick đơn nào;
+3. Bấm Thanh toán",,Bị chặn.,,,,,,
+19_090_005,Ghi nợ với số tiền bằng 0 hoặc âm,Vai: shop. Khách đang có hồ sơ,"1. Mở tab Công nợ;
+2. Chọn Ghi nợ;
+3. Nhập 0 rồi thử nhập số âm;
+4. Xác nhận",,"Hiện message nguyên văn ""Số tiền phải lớn hơn 0""; không ghi nhận khoản nợ nào",,,,,,
+19_090_006,Thanh toán công nợ với số tiền bằng 0,Vai: shop. Khách có đơn còn nợ,"1. Mở tab Công nợ;
+2. Chọn đơn;
+3. Nhập số tiền thanh toán 0;
+4. Xác nhận",,"Hiện message nguyên văn ""Vui lòng nhập số tiền thanh toán lớn hơn 0""",,,,,,
+,030 — Cập nhật hồ sơ khách hàng,,,,,,,,,,
+19_030_003,Huỷ chỉnh sửa khách hàng giữa chừng,Vai: gdv. Khách đang có hồ sơ,"1. Mở form sửa khách;
+2. Đổi tên và số điện thoại;
+3. Đóng bằng Huỷ hoặc X;
+4. Mở lại chi tiết khách",,Form đóng; thông tin khách giữ nguyên như trước khi sửa,,,,,,
+19_030_004,Chỉnh sửa bỏ trống Tên khách hàng,Vai: gdv. Khách đang có hồ sơ,"1. Mở form sửa khách;
+2. Xoá trắng ô Tên khách hàng;
+3. Lưu",,"Bị chặn, không lưu.",,,,,,
+19_030_005,Chỉnh sửa bỏ trống Số điện thoại,Vai: gdv. Khách đang có hồ sơ,"1. Mở form sửa khách;
+2. Xoá trắng ô Số điện thoại;
+3. Lưu",,"Bị chặn, không lưu.",,,,,,
+19_030_006,Chỉnh sửa nhập email sai định dạng,Vai: gdv. Khách đang có hồ sơ,"1. Mở form sửa khách;
+2. Nhập email thiếu @;
+3. Lưu",,"Bị chặn, không lưu.",,,,,,
+,"050 — Ngừng hoạt động, kích hoạt lại và xoá khách hàng",,,,,,,,,,
+19_050_006,Huỷ xoá khách hàng ở popup xác nhận,Vai: shop. Khách đang có hồ sơ,"1. Chọn xoá khách;
+2. Bấm Huỷ ở popup xác nhận;
+3. Đọc lại danh sách",,"Khách KHÔNG bị xoá, vẫn nguyên trong danh sách",,,,,,
+19_050_007,Nội dung popup xác nhận xoá khách hàng,Vai: shop. Khách đang có hồ sơ,"1. Chọn xoá khách;
+2. Đọc nội dung popup",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+19_050_008,Xoá khách hàng tạo từ TCT đồng bộ xoá toàn chuỗi,Vai: tct. Khách do TCT tạo và đã đồng bộ xuống điểm bán,"1. Vai tct xoá khách;
+2. Đăng nhập gdv một điểm bán;
+3. Mở /customer",,Khách biến mất khỏi danh sách của mọi điểm bán thuộc TCT,,,,,,
+,"130 — Nhóm đối tượng, khuyến mại và nâng hạng realtime",,,,,,,,,,
+19_130_001,Tạo nhóm đối tượng khách hàng theo điều kiện,Vai: shop,"1. Mở màn nhóm đối tượng;
+2. Tạo nhóm mới kèm điều kiện;
+3. Lưu",,"Hiện thông báo nguyên văn ""Tạo nhóm đối tượng thành công""; nhóm xuất hiện trong danh sách",,,,,,
+19_130_002,Thêm CTKM theo nhóm đối tượng cập nhật realtime trên đơn,Vai: gdv. Đã có nhóm đối tượng và CTKM gắn nhóm đó,"1. Lập đơn cho khách thuộc nhóm;
+2. Đọc giá trị đơn trước và sau khi khách vào nhóm",,"Giá trị đơn được cập nhật realtime theo CTKM của nhóm, không cần tải lại màn",,,,,,
+19_130_003,Nâng hạng realtime khi thanh toán hết bằng tiền mặt,Vai: gdv. Khách đang ở hạng thấp và sắp đủ điều kiện lên hạng,"1. Chọn khách (ghi lại hạng hiện tại);
+2. Lập đơn đủ điều kiện nâng hạng;
+3. Thanh toán hết bằng tiền mặt;
+4. Đọc lại hạng khách",,"Hạng khách được nâng ngay sau khi thanh toán, không cần chờ job",,,,,,
+19_130_004,Nâng hạng realtime khi thanh toán sau rồi trả nợ,Vai: gdv. Khách sắp đủ điều kiện lên hạng,"1. Lập đơn thanh toán sau;
+2. Đọc hạng khách;
+3. Trả nợ đơn đó;
+4. Đọc lại hạng",,"Hạng chỉ được nâng ở thời điểm khách TRẢ NỢ, không phải lúc lập đơn ghi nợ",,,,,,
+19_130_005,Không nâng hạng khi đơn còn ở trạng thái nháp,Vai: gdv. Khách sắp đủ điều kiện lên hạng,"1. Lập đơn đủ điều kiện nâng hạng;
+2. Lưu nháp, chưa thanh toán;
+3. Đọc hạng khách",,Hạng khách KHÔNG đổi khi đơn còn là nháp,,,,,,
+19_130_006,Nâng hạng realtime khi thanh toán trả góp,Vai: gdv. Khách sắp đủ điều kiện lên hạng,"1. Lập đơn;
+2. Thanh toán trả góp một phần;
+3. Đọc hạng khách",,Chưa chốt kỳ vọng — ghi nhận thực tế: khách trả góp thì hạng nâng theo phần đã trả hay chờ tất toán mới nâng.,,,,,,
+19_130_007,Nâng hạng realtime khi thanh toán hết bằng chuyển khoản,Vai: gdv. Khách sắp đủ điều kiện lên hạng,"1. Lập đơn đủ điều kiện;
+2. Thanh toán hết bằng chuyển khoản;
+3. Đọc lại hạng khách",,"Hạng khách được nâng ngay sau khi thanh toán, giống luồng tiền mặt",,,,,,
+19_130_008,Nâng hạng realtime khi thanh toán bằng QR,Vai: gdv. Khách sắp đủ điều kiện lên hạng,"1. Lập đơn đủ điều kiện;
+2. Thanh toán bằng quét QR;
+3. Đọc lại hạng khách",,Hạng khách được nâng ngay sau khi giao dịch QR được ghi nhận,,,,,,
+,120 — Phân trang và tìm kiếm danh sách khách hàng,,,,,,,,,,
+19_120_001,Phân trang danh sách khách hàng,Vai: gdv. Danh sách có nhiều hơn một trang,"1. Mở /customer;
+2. Sang trang 2;
+3. Đổi số dòng mỗi trang;
+4. Về trang cuối",,Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi,,,,,,
+19_120_002,Tìm khách bằng ký tự đặc biệt,Vai: gdv,"1. Gõ chuỗi chứa % và _ vào ô tìm khách;
+2. Chờ tự lọc",,Không lỗi 500; không trả về toàn bộ khách.,,,,,,
+19_120_003,Tìm khách không dấu ra khách có dấu,Vai: gdv. Có khách tên chứa dấu tiếng Việt,"1. Gõ tên khách KHÔNG dấu vào ô tìm;
+2. Chờ tự lọc",,Chưa chốt kỳ vọng — ghi nhận thực tế: tìm bằng từ khoá KHÔNG DẤU có trả về khách hàng tên viết có dấu hay không.,,,,,,
+19_120_004,Tìm khách bằng chuỗi toàn khoảng trắng,Vai: gdv,"1. Gõ toàn dấu cách vào ô tìm khách;
+2. Chờ tự lọc",,"Coi như không lọc hoặc trả rỗng, không lỗi.",,,,,,
+19_120_005,Tổ hợp nhiều bộ lọc khách hàng,Vai: province,"1. Đặt đồng thời nhiều ô lọc cấp trên điểm bán;
+2. Thêm từ khoá tìm kiếm",,Kết quả thoả đồng thời mọi điều kiện đang đặt,,,,,,
+19_120_006,Tải ảnh vượt giới hạn dung lượng,Vai: gdv. Đang ở form có ô tải ảnh của khách,"1. Chọn một ảnh lớn hơn 800Kb;
+2. Tải lên",,"Hiện thông báo nguyên văn ""Ảnh up không được vượt quá giới hạn 800Kb!""",,,,,,
+19_120_007,Tải tệp sai định dạng vào ô ảnh,Vai: gdv. Đang ở form có ô tải ảnh của khách,"1. Chọn một tệp không phải ảnh;
+2. Tải lên",,"Hiện thông báo nguyên văn ""Bạn chỉ có thể tải lên file có định dạng image!""",,,,,,

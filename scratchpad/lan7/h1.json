@@ -1,0 +1,1122 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 165,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:43:47.180Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:43:47.431Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:43:47.531Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 102,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:43:47.662Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "hieu-qua.gdv.spec.js",
+      "file": "hieu-qua.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "30 · Hiệu quả CTKM có phát sinh (tiền đề gdv bán 1 đơn)",
+          "file": "hieu-qua.gdv.spec.js",
+          "line": 45,
+          "column": 15,
+          "specs": [
+            {
+              "title": "30 tien de — CTKM rác đã được áp vào đơn (DB)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "tiền đề",
+                      "description": "{\"ten\":\"A7KH19_KM_30 Giảm giá hè 436106\",\"campaignId\":699,\"orderId\":null,\"orderNumber\":null,\"db\":null,\"loi\":\"\\u001b[2mexpect(\\u001b[22m\\u001b[31mlocator\\u001b[39m\\u001b[2m).\\u001b[22mtoBeVisible\\u001b[2m(\\u001b[22m\\u001b[2m)\\u001b[22m failed\\n\\nLocator: getByRole('dialog').last()\\nExpected: visible\\nTimeout: 15000ms\\nError: element(s) not found\\n\\nCall log:\\n\\u001b[2m  - Expect \\\"toBeVisible\\\" with timeout 15000ms\\u001b[22m\\n\\u001b[2m  - waiting for getByRole('dialog').last()\\u001b[22m\",\"nganSach\":11000}"
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:43:48.163Z",
+                      "annotations": [
+                        {
+                          "type": "tiền đề",
+                          "description": "{\"ten\":\"A7KH19_KM_30 Giảm giá hè 436106\",\"campaignId\":699,\"orderId\":null,\"orderNumber\":null,\"db\":null,\"loi\":\"\\u001b[2mexpect(\\u001b[22m\\u001b[31mlocator\\u001b[39m\\u001b[2m).\\u001b[22mtoBeVisible\\u001b[2m(\\u001b[22m\\u001b[2m)\\u001b[22m failed\\n\\nLocator: getByRole('dialog').last()\\nExpected: visible\\nTimeout: 15000ms\\nError: element(s) not found\\n\\nCall log:\\n\\u001b[2m  - Expect \\\"toBeVisible\\\" with timeout 15000ms\\u001b[22m\\n\\u001b[2m  - waiting for getByRole('dialog').last()\\u001b[22m\",\"nganSach\":11000}"
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-62de44772ea23877d956",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 88,
+              "column": 2
+            },
+            {
+              "title": "30_030_003 — Bảng đơn hàng đã áp dụng chương trình đủ cột",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:44:54.571Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-299d89d57dcbe1ea3c36",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 96,
+              "column": 2
+            },
+            {
+              "title": "30_030_004 — Doanh thu thuần nhỏ hơn hoặc bằng doanh thu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "{\"shop\":{\"n\":12,\"coHoan\":0},\"tct\":{\"n\":591,\"coHoan\":2}}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 52458,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:44:54.577Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "{\"shop\":{\"n\":12,\"coHoan\":0},\"tct\":{\"n\":591,\"coHoan\":2}}"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8b583249102f46d5a817-4fd9bcdcc89959a0a855",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 114,
+              "column": 2
+            },
+            {
+              "title": "30_030_005 — Tổng tiền giảm của các đơn bằng tiền giảm giá của chương trình",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.040Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-85822239c2046ef0b1c5",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 141,
+              "column": 2
+            },
+            {
+              "title": "30_050_006 — Tìm chương trình không dấu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.047Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-d3eff2a3f0a4da080efe",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 157,
+              "column": 2
+            },
+            {
+              "title": "30_010_001 — Báo cáo hiệu quả CTKM mở được và hiện thẻ tổng hợp",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.052Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-c784f40a1046df5c6a00",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 173,
+              "column": 2
+            },
+            {
+              "title": "30_010_002 — Nhận ra chương trình đang tiêu gần hết ngân sách",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.056Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-bbb684dbb4c16e1d4151",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 188,
+              "column": 2
+            },
+            {
+              "title": "30_020_001 — Lọc theo tiêu chí thu hẹp bảng và cập nhật thẻ tổng hợp",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.060Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-8d2a5fcfbe63bf260557",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 203,
+              "column": 2
+            },
+            {
+              "title": "30_020_002 — Nhiều tiêu chí cùng lúc là điều kiện AND",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.064Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-f5476fe6e9ea1a76de79",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 219,
+              "column": 2
+            },
+            {
+              "title": "30_030_001 — Chi tiết chương trình hiện mười chỉ số hiệu quả",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.067Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-fceebcf6a41cd9dcebfb",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 234,
+              "column": 2
+            },
+            {
+              "title": "30_030_002 — Truy được từ chỉ số xuống hoá đơn tạo ra nó",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "line": 42,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.071Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Tiền đề 30 không dựng được: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').last()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').last()\u001b[22m",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "line": 42,
+                            "column": 30
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-e5b4c6430e1a18211a4d",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 255,
+              "column": 2
+            },
+            {
+              "title": "30_040_001 — Xuất báo cáo hiệu quả ra Excel giữ nguyên thứ tự cột",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "xuất",
+                      "description": "200 · tệp bao_cao_hieu_qua_ctkm_20260925_214615.xlsx · "
+                    },
+                    {
+                      "type": "cột màn vs tệp",
+                      "description": "STT · Tên chương trình · Trạng thái · Số hoá đơn áp dụng · Doanh thu (gồm VAT) · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Doanh số tăng thêm · Lợi nhuận gộp · Ngân sách đã dùng  ||  STT · Mã chương trình · Tên chương trình · Trạng thái · Từ ngày · Đến ngày · Phạm vi ưu đãi · Số hoá đơn · Doanh thu (gồm VAT) · Tiền hoàn trả hàng · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Tiền giảm là ước tính · Giá vốn · Lợi nhuận gộp · Doanh số kỳ trước liền kề · Doanh số tăng thêm · Ngân sách duyệt · Ngân sách đã dùng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 28849,
+                      "error": {
+                        "message": "Error: Thứ tự/tên cột tệp khác màn hình\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  2\u001b[39m\n\u001b[31m+ Received  + 11\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"STT\",\u001b[22m\n\u001b[31m+   \"Mã chương trình\",\u001b[39m\n\u001b[2m    \"Tên chương trình\",\u001b[22m\n\u001b[2m    \"Trạng thái\",\u001b[22m\n\u001b[32m-   \"Số hoá đơn áp dụng\",\u001b[39m\n\u001b[31m+   \"Từ ngày\",\u001b[39m\n\u001b[31m+   \"Đến ngày\",\u001b[39m\n\u001b[31m+   \"Phạm vi ưu đãi\",\u001b[39m\n\u001b[31m+   \"Số hoá đơn\",\u001b[39m\n\u001b[2m    \"Doanh thu (gồm VAT)\",\u001b[22m\n\u001b[31m+   \"Tiền hoàn trả hàng\",\u001b[39m\n\u001b[2m    \"Doanh thu thuần (gồm VAT)\",\u001b[22m\n\u001b[2m    \"Tiền giảm giá\",\u001b[22m\n\u001b[32m-   \"Doanh số tăng thêm\",\u001b[39m\n\u001b[31m+   \"Tiền giảm là ước tính\",\u001b[39m\n\u001b[31m+   \"Giá vốn\",\u001b[39m\n\u001b[2m    \"Lợi nhuận gộp\",\u001b[22m\n\u001b[31m+   \"Doanh số kỳ trước liền kề\",\u001b[39m\n\u001b[31m+   \"Doanh số tăng thêm\",\u001b[39m\n\u001b[31m+   \"Ngân sách duyệt\",\u001b[39m\n\u001b[2m    \"Ngân sách đã dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: Thứ tự/tên cột tệp khác màn hình\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  2\u001b[39m\n\u001b[31m+ Received  + 11\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"STT\",\u001b[22m\n\u001b[31m+   \"Mã chương trình\",\u001b[39m\n\u001b[2m    \"Tên chương trình\",\u001b[22m\n\u001b[2m    \"Trạng thái\",\u001b[22m\n\u001b[32m-   \"Số hoá đơn áp dụng\",\u001b[39m\n\u001b[31m+   \"Từ ngày\",\u001b[39m\n\u001b[31m+   \"Đến ngày\",\u001b[39m\n\u001b[31m+   \"Phạm vi ưu đãi\",\u001b[39m\n\u001b[31m+   \"Số hoá đơn\",\u001b[39m\n\u001b[2m    \"Doanh thu (gồm VAT)\",\u001b[22m\n\u001b[31m+   \"Tiền hoàn trả hàng\",\u001b[39m\n\u001b[2m    \"Doanh thu thuần (gồm VAT)\",\u001b[22m\n\u001b[2m    \"Tiền giảm giá\",\u001b[22m\n\u001b[32m-   \"Doanh số tăng thêm\",\u001b[39m\n\u001b[31m+   \"Tiền giảm là ước tính\",\u001b[39m\n\u001b[31m+   \"Giá vốn\",\u001b[39m\n\u001b[2m    \"Lợi nhuận gộp\",\u001b[22m\n\u001b[31m+   \"Doanh số kỳ trước liền kề\",\u001b[39m\n\u001b[31m+   \"Doanh số tăng thêm\",\u001b[39m\n\u001b[31m+   \"Ngân sách duyệt\",\u001b[39m\n\u001b[2m    \"Ngân sách đã dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js:300:52",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                          "column": 52,
+                          "line": 300
+                        },
+                        "snippet": "  298 | \t\t\tws.eachRow((row, i) => { if (!hdr.length && i < 10) { const v = row.values.slice(1).map((x) => c.chuan(String(x ?? ''))); if (v.includes('STT') || v.some((x) => /chương trình/i.test(x))) hdr = v.filter(Boolean); } });\n  299 | \t\t\tghiChu('cột màn vs tệp', `${cotMan.join(' · ')}  ||  ${hdr.join(' · ')}`);\n> 300 | \t\t\texpect(hdr, 'Thứ tự/tên cột tệp khác màn hình').toEqual(cotMan);\n      | \t\t\t                                                ^\n  301 | \t\t} finally { await ps.dong(); }\n  302 | \t});\n  303 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                            "column": 52,
+                            "line": 300
+                          },
+                          "message": "Error: Thứ tự/tên cột tệp khác màn hình\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  2\u001b[39m\n\u001b[31m+ Received  + 11\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"STT\",\u001b[22m\n\u001b[31m+   \"Mã chương trình\",\u001b[39m\n\u001b[2m    \"Tên chương trình\",\u001b[22m\n\u001b[2m    \"Trạng thái\",\u001b[22m\n\u001b[32m-   \"Số hoá đơn áp dụng\",\u001b[39m\n\u001b[31m+   \"Từ ngày\",\u001b[39m\n\u001b[31m+   \"Đến ngày\",\u001b[39m\n\u001b[31m+   \"Phạm vi ưu đãi\",\u001b[39m\n\u001b[31m+   \"Số hoá đơn\",\u001b[39m\n\u001b[2m    \"Doanh thu (gồm VAT)\",\u001b[22m\n\u001b[31m+   \"Tiền hoàn trả hàng\",\u001b[39m\n\u001b[2m    \"Doanh thu thuần (gồm VAT)\",\u001b[22m\n\u001b[2m    \"Tiền giảm giá\",\u001b[22m\n\u001b[32m-   \"Doanh số tăng thêm\",\u001b[39m\n\u001b[31m+   \"Tiền giảm là ước tính\",\u001b[39m\n\u001b[31m+   \"Giá vốn\",\u001b[39m\n\u001b[2m    \"Lợi nhuận gộp\",\u001b[22m\n\u001b[31m+   \"Doanh số kỳ trước liền kề\",\u001b[39m\n\u001b[31m+   \"Doanh số tăng thêm\",\u001b[39m\n\u001b[31m+   \"Ngân sách duyệt\",\u001b[39m\n\u001b[2m    \"Ngân sách đã dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  298 | \t\t\tws.eachRow((row, i) => { if (!hdr.length && i < 10) { const v = row.values.slice(1).map((x) => c.chuan(String(x ?? ''))); if (v.includes('STT') || v.some((x) => /chương trình/i.test(x))) hdr = v.filter(Boolean); } });\n  299 | \t\t\tghiChu('cột màn vs tệp', `${cotMan.join(' · ')}  ||  ${hdr.join(' · ')}`);\n> 300 | \t\t\texpect(hdr, 'Thứ tự/tên cột tệp khác màn hình').toEqual(cotMan);\n      | \t\t\t                                                ^\n  301 | \t\t} finally { await ps.dong(); }\n  302 | \t});\n  303 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js:300:52"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:45:47.075Z",
+                      "annotations": [
+                        {
+                          "type": "xuất",
+                          "description": "200 · tệp bao_cao_hieu_qua_ctkm_20260925_214615.xlsx · "
+                        },
+                        {
+                          "type": "cột màn vs tệp",
+                          "description": "STT · Tên chương trình · Trạng thái · Số hoá đơn áp dụng · Doanh thu (gồm VAT) · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Doanh số tăng thêm · Lợi nhuận gộp · Ngân sách đã dùng  ||  STT · Mã chương trình · Tên chương trình · Trạng thái · Từ ngày · Đến ngày · Phạm vi ưu đãi · Số hoá đơn · Doanh thu (gồm VAT) · Tiền hoàn trả hàng · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Tiền giảm là ước tính · Giá vốn · Lợi nhuận gộp · Doanh số kỳ trước liền kề · Doanh số tăng thêm · Ngân sách duyệt · Ngân sách đã dùng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/hieu-qua.gdv-30-·-Hiệu-quả-933e8-Excel-giữ-nguyên-thứ-tự-cột-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/hieu-qua.gdv-30-·-Hiệu-quả-933e8-Excel-giữ-nguyên-thứ-tự-cột-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/hieu-qua.gdv-30-·-Hiệu-quả-933e8-Excel-giữ-nguyên-thứ-tự-cột-gdv/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/hieu-qua.gdv-30-·-Hiệu-quả-933e8-Excel-giữ-nguyên-thứ-tự-cột-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/hieu-qua.gdv-30-·-Hiệu-quả-933e8-Excel-giữ-nguyên-thứ-tự-cột-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/hieu-qua.gdv.spec.js",
+                        "column": 52,
+                        "line": 300
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8b583249102f46d5a817-6fcea7f2de4db5ff6fae",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 281,
+              "column": 2
+            },
+            {
+              "title": "30_060_001 — Vai tỉnh thấy số liệu CTKM của các điểm bán trực thuộc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:46:16.442Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8b583249102f46d5a817-4f81f6eb383a29173721",
+              "file": "hieu-qua.gdv.spec.js",
+              "line": 304,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "phan-quyen.gdv.spec.js",
+      "file": "phan-quyen.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "30_PQ_001 — Vai điểm bán chỉ thấy số liệu CTKM trong phạm vi",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "API báo cáo CTKM (http/code)",
+                  "description": "401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness/customer-groups · 401/SSHOP-401 effectiveness"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "gdv",
+              "projectName": "gdv",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13415,
+                  "error": {
+                    "message": "Error: Vai điểm bán mở màn báo cáo CTKM: API trả lỗi (401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness/customer-groups · 401/SSHOP-401 effectiveness) ⇒ màn hiện nhưng KHÔNG đọc được số liệu nào.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: Vai điểm bán mở màn báo cáo CTKM: API trả lỗi (401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness/customer-groups · 401/SSHOP-401 effectiveness) ⇒ màn hiện nhưng KHÔNG đọc được số liệu nào.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/phan-quyen.gdv.spec.js:22:130",
+                    "location": {
+                      "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/phan-quyen.gdv.spec.js",
+                      "column": 130,
+                      "line": 22
+                    },
+                    "snippet": "  20 | \tif (kq.length === 0) test.skip(true, 'Vai gdv không phát sinh lời gọi báo cáo nào để đo.');\n  21 | \t// 🔴 Cả 4 task khai đủ 4 cấp ⇒ vai gdv PHẢI đọc được dữ liệu trong phạm vi. BE trả lỗi quyền dạng HTTP 200 + code SSHOP-401.\n> 22 | \texpect(okHet(kq), `Vai điểm bán mở màn báo cáo CTKM: API trả lỗi (${tomTat(kq)}) ⇒ màn hiện nhưng KHÔNG đọc được số liệu nào.`).toBe(true);\n     | \t                                                                                                                                ^\n  23 | });\n  24 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/phan-quyen.gdv.spec.js",
+                        "column": 130,
+                        "line": 22
+                      },
+                      "message": "Error: Vai điểm bán mở màn báo cáo CTKM: API trả lỗi (401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness/customer-groups · 401/SSHOP-401 effectiveness) ⇒ màn hiện nhưng KHÔNG đọc được số liệu nào.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  20 | \tif (kq.length === 0) test.skip(true, 'Vai gdv không phát sinh lời gọi báo cáo nào để đo.');\n  21 | \t// 🔴 Cả 4 task khai đủ 4 cấp ⇒ vai gdv PHẢI đọc được dữ liệu trong phạm vi. BE trả lỗi quyền dạng HTTP 200 + code SSHOP-401.\n> 22 | \texpect(okHet(kq), `Vai điểm bán mở màn báo cáo CTKM: API trả lỗi (${tomTat(kq)}) ⇒ màn hiện nhưng KHÔNG đọc được số liệu nào.`).toBe(true);\n     | \t                                                                                                                                ^\n  23 | });\n  24 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/phan-quyen.gdv.spec.js:22:130"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:46:16.762Z",
+                  "annotations": [
+                    {
+                      "type": "API báo cáo CTKM (http/code)",
+                      "description": "401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness/customer-groups · 401/SSHOP-401 effectiveness"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/phan-quyen.gdv-30-PQ-001-—-ee109--số-liệu-CTKM-trong-phạm-vi-gdv/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/phan-quyen.gdv-30-PQ-001-—-ee109--số-liệu-CTKM-trong-phạm-vi-gdv/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/phan-quyen.gdv-30-PQ-001-—-ee109--số-liệu-CTKM-trong-phạm-vi-gdv/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/phan-quyen.gdv-30-PQ-001-—-ee109--số-liệu-CTKM-trong-phạm-vi-gdv/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/phan-quyen.gdv.spec.js",
+                    "column": 130,
+                    "line": 22
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "4e1c667652a30cefecbd-4d604573e0d0d7e1903a",
+          "file": "phan-quyen.gdv.spec.js",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T14:43:46.632Z",
+    "duration": 163830.712,
+    "expected": 5,
+    "skipped": 11,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

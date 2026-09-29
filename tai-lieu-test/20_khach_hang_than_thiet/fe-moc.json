@@ -1,0 +1,87 @@
+{
+  "spec": {
+    "tests/form-bo-sung.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/care/loyalty"
+      ],
+      "fe": [
+        "src/features/loyalty/pages/tabCampaign/DrawerUpdateCampaign.jsx",
+        "src/features/loyalty/pages/tabCampaign/DrawerUpdateRedeemCampaign.jsx",
+        "src/features/loyalty/pages/tabCampaign/CampaignList.jsx"
+      ]
+    },
+    "tests/tao-sua-luu.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/care/loyalty"
+      ],
+      "fe": [
+        "src/features/loyalty/pages/tabCampaign/DrawerUpdateCampaign.jsx",
+        "src/features/loyalty/pages/tabCampaign/DrawerUpdateRedeemCampaign.jsx",
+        "src/features/loyalty/pages/tabCampaign/CampaignList.jsx",
+        "src/features/loyalty/services/loyaltyApi.js"
+      ]
+    },
+    "tests/pham-vi.province.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/care/loyalty"
+      ],
+      "fe": [
+        "src/components/regionSelector/RegionSelector.jsx",
+        "src/features/loyalty/pages/tabCampaign/DrawerUpdateCampaign.jsx"
+      ]
+    },
+    "tests/tich-diem.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order",
+        "/care/loyalty"
+      ],
+      "fe": [
+        "src/components/paymentModals/PaymentMethodModal.jsx",
+        "src/pages/promotionCampaign/campaignManagement/controllers/CampaignManagementControllers.jsx"
+      ]
+    },
+    "tests/doi-diem.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order",
+        "/care/loyalty"
+      ],
+      "fe": [
+        "src/components/paymentModals/PaymentMethodModal.jsx",
+        "src/components/paymentModals/ModalLoyaltyPointOtp.jsx",
+        "src/features/loyalty/pages/tabCampaign/DrawerUpdateRedeemCampaign.jsx"
+      ]
+    },
+    "tests/quyen-cau-hinh.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/care/loyalty",
+        "/settings"
+      ],
+      "fe": [
+        "src/routes/configs/dashboard/careRoutes.js",
+        "src/features/shop/pages/settingPage/settingContents/CustomerSetting.jsx"
+      ]
+    },
+    "tests/loyalty-goc.tct.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/care/loyalty"
+      ],
+      "fe": [
+        "src/features/loyalty/services/loyaltyApi.js"
+      ]
+    }
+  }
+}

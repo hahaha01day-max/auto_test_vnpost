@@ -1,0 +1,144 @@
+﻿,Chức năng,,HOÁ ĐƠN CHO HÀNG TRẢ LẠI NHÀ CUNG CẤP,,,,,,,,
+,Mã Testcase,,14_3_hoa_don_hang_tra_lai,,,,,,,,
+,Tổng các tình huống kiểm thử,,89,,,,,,,,
+,Chưa thực hiện,,89,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,HOÁ ĐƠN CHO HÀNG TRẢ LẠI NHÀ CUNG CẤP,,,,,,,,,,
+,010 — Tiếp nhận hoá đơn điều chỉnh giảm của nhà cung cấp,,,,,,,,,,
+14_3_010_001,Khối hoá đơn của đợt hiện thẻ NCC phát hành và nút tiếp nhận,Vai: province; NCC được khai là bên lập hoá đơn; đợt trả ở Chờ NCC xác nhận,"1. mở Chi tiết phiếu › khối ""Các đợt trả nhà cung cấp"";
+2. Đọc khối hoá đơn của đợt",,"Khối mang thẻ ""NCC phát hành"" và thẻ ""Chưa tiếp nhận""; có nút ""Tiếp nhận hoá đơn NCC""",,,,,,
+14_3_010_002,NCC do Bưu điện lập hoá đơn hiện nút khác hẳn,Vai: province; NCC khai để VNPost lập hoá đơn,"1. mở Chi tiết phiếu › khối ""Các đợt trả nhà cung cấp"";
+2. Đọc khối hoá đơn",,"Khối mang thẻ ""VNPost phát hành"" và nút ""Phát hành hoá đơn""; KHÔNG có nút ""Tiếp nhận hoá đơn NCC""",,,,,,
+14_3_010_003,Màn tiếp nhận mở đúng tiêu đề và dải căn cứ pháp lý,Vai: province; đợt Chưa tiếp nhận,"1. Bấm ""Tiếp nhận hoá đơn NCC""",,"Drawer tiêu đề ""Đối soát hoá đơn điều chỉnh giảm với phiếu xuất kho trả NCC""; dải info ""Đợt trả này chưa tiếp nhận hoá đơn điều chỉnh giảm"" nêu Nghị định 70/2025/NĐ-CP; có vùng kéo thả tệp nét đứt",,,,,,
+14_3_010_004,"Tải XML hợp lệ, đối soát khớp",Vai: province; có tệp XML hoá đơn điều chỉnh giảm khớp phiếu trả,1. Kéo thả tệp XML vào vùng nét đứt,,"Báo ""Đã đọc XML — đối soát KHỚP với phiếu xuất trả""; màn chuyển sang hiển thị kết quả đối soát; dải kết luận XANH ""Hoá đơn khớp với phiếu xuất kho trả NCC""",,,,,,
+14_3_010_005,Tải XML hợp lệ nhưng lệch,Vai: province; tệp XML có số liệu lệch phiếu trả,1. Kéo thả tệp XML,,"Báo ""Đã đọc XML — đối soát LỆCH, xem chi tiết bên dưới""; dải kết luận ĐỎ ""Hoá đơn lệch so với phiếu xuất kho trả NCC — không thể chốt chứng từ""",,,,,,
+14_3_010_006,Tải XML chưa xác định được tính chất điều chỉnh,Vai: province; tệp XML không khai rõ tăng hay giảm,1. Kéo thả tệp XML,,"Báo ""Đã đọc XML, chưa đối soát được — bấm Đối soát lại để xem lý do""; hiện dải VÀNG ""Chưa xác định được hoá đơn điều chỉnh tăng hay giảm"" và thẻ ""Chưa xác định dấu""",,,,,,
+14_3_010_007,Tệp vượt 10MB bị chặn ngay tại giao diện,Vai: province; có tệp XML > 10MB,1. Kéo thả tệp đó,,"Báo lỗi dạng: File ""<tên tệp>"" vượt quá 10MB. Chặn ở Giao diện, KHÔNG phát sinh POST /stock/v2/return-credit-note/upload",,,,,,
+14_3_010_008,Tệp đúng 10MB được chấp nhận,Vai: province; có tệp XML dung lượng sát 10MB,1. Kéo thả tệp đó,,Không hiện cảnh báo vượt dung lượng; tệp được gửi lên hệ thống,,,,,,
+14_3_010_009,Tệp không đọc được bị chặn,Vai: province; có tệp XML hỏng hoặc PDF đổi đuôi,1. Kéo thả tệp đó,,"Giao diện báo ""Đọc XML thất bại"" hoặc hiện chuỗi của Hệ thống dạng ""Không đọc được nội dung tệp hoá đơn: <lý do>""",,,,,,
+14_3_010_010,Gửi lên mà không kèm tệp bị chặn,Vai: province,1. Gọi POST /stock/v2/return-credit-note/upload không kèm file,,"Hệ thống trả lỗi nguyên văn ""Chưa chọn tệp hoá đơn"" (MISS_PARAM)",,,,,,
+14_3_010_011,Hoá đơn không phải loại điều chỉnh bị chặn,Vai: province; có tệp XML hoá đơn GỐC hoặc THAY_THẾ,1. Kéo thả tệp đó,,"Hệ thống trả lỗi dạng ""Tệp không phải hoá đơn điều chỉnh (nhận được: <loại>)"".",,,,,,
+14_3_010_012,Hoá đơn điều chỉnh TĂNG bị chặn,Vai: province; tệp XML điều chỉnh tăng,1. Kéo thả tệp đó,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn điều chỉnh TANG không dùng được cho trả hàng (cần điều chỉnh GIẢM)""",,,,,,
+14_3_010_013,Hoá đơn điều chỉnh KHÔNG ĐỔI GIÁ TRỊ bị chặn,Vai: province; tệp XML điều chỉnh không đổi giá trị,1. Kéo thả tệp đó,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn điều chỉnh KHONG_DOI không dùng được cho trả hàng (cần điều chỉnh GIẢM)""",,,,,,
+14_3_010_014,Hoá đơn không có dòng hàng hoá bị chặn ngay lúc nạp,Vai: province; tệp XML chỉ có dòng chiết khấu hoặc dòng diễn giải,1. Kéo thả tệp đó,,"Hệ thống chặn NGAY với ""Hoá đơn không có dòng hàng hoá nào đọc được — kiểm tra lại tệp XML""; hoá đơn KHÔNG được neo vào đợt trả (trước đây lưu thành công rồi mới vỡ ở bước đối soát)",,,,,,
+14_3_010_015,Hoá đơn trùng trong hệ thống bị chặn,Vai: province; đã tiếp nhận một hoá đơn; có tệp cùng MST người bán + ký hiệu + số,1. Kéo thả tệp đó cho một đợt trả KHÁC,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn đã tồn tại trong hệ thống (trùng MST người bán + ký hiệu + số)"" (ENTITY_EXISTED).",,,,,,
+14_3_010_016,Đợt đã gắn hoá đơn không nạp thêm được,Vai: province; đợt trả đã tiếp nhận một hoá đơn,1. Gọi POST.../upload cho đúng đợt đó,,"Hệ thống trả lỗi nguyên văn ""Đợt trả đã gắn hoá đơn điều chỉnh, không thể nạp thêm"" (CREDIT_NOTE_ALREADY_SETTLED)",,,,,,
+14_3_010_017,Tiếp nhận cho đợt không ở trạng thái chờ xác nhận bị chặn,Vai: province; đợt trả đã bị NCC từ chối và đã huỷ hàng,1. Gọi POST.../upload cho đợt đó,,"Hệ thống trả lỗi nguyên văn ""Đợt trả không ở trạng thái chờ xác nhận"" (RETURN_BATCH_NOT_WAIT_CONFIRM, RTN-CN-006)",,,,,,
+14_3_010_018,Hoá đơn đến qua hộp thư điện tử hiện đúng nguồn tiếp nhận,Vai: province; có hoá đơn tự phân loại về đợt trả qua email,"1. Mở ""Xem đối soát"";
+2. Đọc mục ""Nguồn tiếp nhận""",,"Mục ""Nguồn tiếp nhận"" ghi rõ hoá đơn đến bằng đường email, khác với hoá đơn tải tay",,,,,,
+14_3_010_019,Chỉ tải được một tệp mỗi lần,Vai: province,1. Chọn nhiều tệp cùng lúc vào vùng kéo thả,,"Hệ thống chỉ nhận một tệp (Upload khai name=""file"", không multiple)",,,,,,
+14_3_010_020,Đóng màn tiếp nhận trước khi tải không ghi gì,Vai: province; đợt Chưa tiếp nhận,"1. Mở ""Tiếp nhận hoá đơn NCC"";
+2. Đóng bằng dấu X;
+3. Đọc lại khối hoá đơn",,"Khối vẫn mang thẻ ""Chưa tiếp nhận""; không phát sinh POST upload",,,,,,
+14_3_010_021,Vai điểm bán không thấy khối hoá đơn thao tác được,Vai: shop; phiếu của điểm bán đã có đợt trả,"1. Mở Chi tiết phiếu;
+2. Đọc khối hoá đơn của đợt",,"Không có nút ""Tiếp nhận hoá đơn NCC"" và không có nút ""Phát hành hoá đơn""",,,,,,
+,020 — Đối soát hoá đơn và chốt chứng từ,,,,,,,,,,
+14_3_020_001,Đợt đã có hoá đơn hiện nút Xem đối soát,Vai: province; đợt trả đã tiếp nhận hoá đơn,"1. mở Chi tiết phiếu › khối ""Các đợt trả nhà cung cấp"";
+2. Đọc khối hoá đơn",,"Khối hiện số hoá đơn, ngày, tiền giảm trừ và nút ""Xem đối soát""; không còn nút tiếp nhận hay phát hành",,,,,,
+14_3_020_002,Bảng đối soát chéo hiện đủ mười cột,Vai: province; đợt đã có hoá đơn,"1. Bấm ""Xem đối soát"";
+2. Đọc tiêu đề cột bảng ""Đối soát chéo theo dòng hàng""",,"Đủ 10 cột: #, Mặt hàng, ĐVT trên hoá đơn, SL hoá đơn, SL phiếu trả, Tiền hoá đơn, Tiền phiếu trả, Thuế suất, Tiền thuế, Kết quả",,,,,,
+14_3_020_003,Cột Kết quả có đúng bốn giá trị,"Vai: province; hoá đơn có dòng khớp, dòng lệch và dòng chưa ghép","1. Đọc cột ""Kết quả"" của từng dòng",,"Chỉ nhận 4 giá trị: ""Khớp"" (xanh), ""Lệch"" (đỏ), ""Chưa ghép được"" (cam), ""Chờ đối soát"" (vàng)",,,,,,
+14_3_020_004,Dòng lệch được tô nền đỏ nhạt,Vai: province; hoá đơn có dòng lệch,"1. Mở màn đối soát;
+2. Quan sát nền dòng lệch",,"Dòng có Kết quả = ""Lệch"" được tô nền đỏ nhạt, khác hẳn dòng khớp",,,,,,
+14_3_020_005,Tên hàng khác nhau vẫn ghép được và hiện cả hai tên,Vai: province; NCC đặt tên hàng khác tên trên phiếu trả,"1. Đọc cột ""Mặt hàng"" của dòng đó",,Hiện tên trên hoá đơn ở dòng chính và tên trên phiếu trả ở dòng nhỏ bên dưới kèm dấu mũi tên hai chiều,,,,,,
+14_3_020_006,Dòng chưa ghép được hiện dấu gạch ngang ở hai cột phiếu trả,Vai: province; hoá đơn có dòng ĐVT không quy đổi được,1. Đọc dòng đó,,"Cột ""SL phiếu trả"" và ""Tiền phiếu trả"" hiện ""--""; cột ""Kết quả"" là ""Chưa ghép được"", KHÔNG phải ""Lệch""",,,,,,
+14_3_020_007,Số lượng phải khớp TUYỆT ĐỐI sau quy đổi,"Vai: province; phiếu trả 10, hoá đơn ghi 10 ở ĐVT khác quy đổi ra 10","1. Mở màn đối soát;
+2. Đọc cột ""SL hoá đơn"" và ""SL phiếu trả""",,"Hai cột bằng nhau sau quy đổi về đơn vị gốc; Kết quả = ""Khớp"". Lệch dù 1 đơn vị là ""Lệch"" — số lượng KHÔNG có dung sai",,,,,,
+14_3_020_008,Tiền lệch trong dung sai 10 đồng vẫn coi là khớp,Vai: province; tiền hoá đơn lệch tiền phiếu trả 8 đồng,"1. Mở màn đối soát;
+2. Đọc dòng Tổng cộng và cột Kết quả",,"Kết quả = ""Khớp""; mô tả ghi dạng ""... — khớp (dung sai 10đ)"". Ngưỡng dung sai là **10 đồng**",,,,,,
+14_3_020_009,Tiền lệch đúng 10 đồng vẫn khớp,Vai: province; tiền lệch đúng 10 đồng,1. Đọc cột Kết quả,,"Kết quả = ""Khớp"" (phép so là ≤ MONEY_TOLERANCE, không phải <)",,,,,,
+14_3_020_010,Tiền lệch 11 đồng là lệch,Vai: province; tiền lệch 11 đồng,1. Đọc cột Kết quả và dải kết luận,,"Kết quả = ""Lệch""; dải kết luận ĐỎ; nút chốt bị khoá",,,,,,
+14_3_020_011,Dòng Tổng cộng cộng đủ hai vế và nêu mức lệch,Vai: province; hoá đơn nhiều dòng,1. Đọc dòng cuối bảng đối soát,,"Dòng ""Tổng cộng"" cộng đủ ""SL hoá đơn"", ""SL phiếu trả"", ""Tiền hoá đơn"", ""Tiền phiếu trả"" và nêu mức lệch giữa hai vế tiền",,,,,,
+14_3_020_012,Cột Thuế suất kèm thẻ cho biết nguồn,Vai: province; đợt đã có hoá đơn,"1. Đọc cột ""Thuế suất""",,Mỗi dòng kèm thẻ nêu hệ thống lấy thuế suất từ đâu (bảng giá NCC / hoá đơn gốc / PO / phiếu nhập / nhập tay),,,,,,
+14_3_020_013,Chốt chứng từ khi khớp ghi giảm công nợ,"Vai: province; hoá đơn đối soát KHỚP, chưa chốt","1. Bấm ""Chốt chứng từ & ghi giảm công nợ"";
+2. Bấm ""Chốt chứng từ"" trong hộp ""Chốt chứng từ hoá đơn điều chỉnh này?""",,"Báo ""Đã chốt chứng từ và ghi giảm công nợ""; thẻ trạng thái chứng từ đổi sang ""Đã chốt chứng từ""; mục ""Người chốt chứng từ"" hiện tên người thao tác kèm thời điểm; bảng ""Bút toán ghi giảm công nợ"" xuất hiện ở cuối màn",,,,,,
+14_3_020_014,Nút chốt bị khoá khi chưa khớp,Vai: province; hoá đơn đối soát LỆCH,"1. Quan sát nút ""Chốt chứng từ & ghi giảm công nợ""",,Nút ở trạng thái disabled; KHÔNG có cách ghi đè nào,,,,,,
+14_3_020_015,Gọi API chốt khi chưa khớp bị chặn,Vai: province; hoá đơn LỆCH,1. Gọi POST /stock/v2/return-credit-note/<id>/settle,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn chưa đối soát khớp với phiếu xuất kho trả NCC, không thể chốt chứng từ"" (CREDIT_NOTE_RECONCILE_MISMATCH, RTN-CN-003)",,,,,,
+14_3_020_016,Chốt lần thứ hai bị chặn,Vai: province; hoá đơn đã chốt chứng từ,1. Gọi POST.../settle lần thứ hai,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn điều chỉnh đã chốt hoặc đã gắn cho đợt trả khác"" (CREDIT_NOTE_ALREADY_SETTLED, RTN-CN-002).",,,,,,
+14_3_020_017,Chốt hoá đơn không có số tiền bị chặn,Vai: province; hoá đơn tổng tiền = 0,1. Gọi POST.../settle,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn không có số tiền, không thể chốt""",,,,,,
+14_3_020_018,Chốt hoá đơn chưa gắn đợt trả bị chặn,Vai: province; hoá đơn không gắn đợt trả nào,1. Gọi POST.../settle,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn chưa gắn với đợt trả nào""",,,,,,
+14_3_020_019,Chốt chứng từ TỰ ĐỘNG xác nhận đợt trả còn chờ,Vai: province; đợt ở Chờ NCC xác nhận và hoá đơn đã đối soát KHỚP,"1. Bấm chốt chứng từ;
+2. Đọc thẻ của đợt trả",,"Đợt TỰ chuyển khỏi ""Chờ NCC xác nhận"" mà KHÔNG cần bấm nút ""NCC xác nhận"" — hoá đơn khớp là bằng chứng NCC đã nhận hàng.",,,,,,
+14_3_020_020,Ngày ghi sổ bút toán là NGÀY HOÁ ĐƠN,"Vai: province; hoá đơn ngày 01/09, phiếu xuất trả ngày 20/08, bấm chốt ngày 19/09","1. Chốt chứng từ;
+2. Đọc cột ngày hạch toán của bút toán",,"Ngày hạch toán = **01/09** (ngày hoá đơn điều chỉnh), KHÔNG phải ngày phiếu xuất trả và KHÔNG phải ngày bấm chốt",,,,,,
+14_3_020_021,Bút toán tách riêng tiền hàng và thuế GTGT đầu vào,Vai: province; hoá đơn có tiền hàng và tiền thuế,"1. Chốt chứng từ;
+2. Đọc bảng ""Bút toán ghi giảm công nợ""",,"Bảng có 4 cột ""Tài khoản"", ""Diễn giải"", ""Nợ"", ""Có""; phần tiền hàng và phần thuế GTGT đầu vào nằm ở **hai dòng riêng**, mỗi dòng gắn đối tượng là nhà cung cấp tương ứng",,,,,,
+14_3_020_022,Số tiền ghi sổ lấy từ HOÁ ĐƠN không lấy từ đợt trả,Vai: province; tiền đợt trả và tiền hoá đơn lệch nhau 7 đồng (trong dung sai),"1. Chốt chứng từ;
+2. So số tiền bút toán với tiền hoá đơn và tiền đợt trả",,"Bút toán ghi theo **tổng tiền hoá đơn gồm VAT**, không theo batch.amount — hoá đơn là căn cứ pháp lý",,,,,,
+14_3_020_023,Đóng hộp xác nhận chốt không chốt gì,Vai: province; hoá đơn KHỚP chưa chốt,"1. Bấm ""Chốt chứng từ & ghi giảm công nợ"";
+2. Bấm Huỷ trong hộp xác nhận",,"Thẻ chứng từ vẫn ""Chưa chốt""; không phát sinh POST settle; không sinh bút toán",,,,,,
+14_3_020_024,Hai trạng thái chứng từ hiển thị đúng nhãn,Vai: province; có hoá đơn đã chốt và hoá đơn chưa chốt,1. Đọc thẻ trạng thái chứng từ của từng hoá đơn,,"Đúng bộ 2 nhãn: ""Chưa chốt"" (xám) và ""Đã chốt chứng từ"" (xanh)",,,,,,
+14_3_020_025,Thẻ kết quả đối soát ở khối đợt trả hiện đúng ba nhãn,"Vai: province; có đợt khớp, lệch và chờ đối soát","1. mở Chi tiết phiếu › khối ""Các đợt trả nhà cung cấp"";
+2. Đọc thẻ kết quả đối soát trong khối hoá đơn của từng đợt",,"Đúng bộ 3: ""Đối soát khớp"" (xanh), ""Đối soát lệch"" (đỏ), ""Chờ đối soát"" (vàng)",,,,,,
+,030 — Xử lý khi đối soát lệch hoặc chưa xác định được tính chất điều chỉnh,,,,,,,,,,
+14_3_030_001,Đối soát lại sau khi sửa phiếu trả,"Vai: province; hoá đơn LỆCH, vừa sửa phiếu trả cho đúng","1. Bấm ""Đối soát lại""",,"Báo ""Đã đối soát lại""; kết luận và bảng so sánh được cập nhật theo số liệu mới",,,,,,
+14_3_030_002,Đối soát lại thất bại hiện thông báo backend,Vai: province; hoá đơn thiếu điều kiện đối soát,"1. Bấm ""Đối soát lại""",,"Hiện chuỗi lỗi của Hệ thống; khi Hệ thống không trả chuỗi thì hiện ""Không đối soát được""",,,,,,
+14_3_030_003,Đối soát hoá đơn không có dòng hàng bị chặn,Vai: province; hoá đơn đã nạp nhưng không còn dòng hàng,1. Gọi POST /stock/v2/return-credit-note/<id>/reconcile,,"Hệ thống trả lỗi nguyên văn ""Hoá đơn không có dòng hàng nào""",,,,,,
+14_3_030_004,Đối soát khi phiếu xuất kho không có dòng hàng bị chặn,Vai: province; phiếu xuất kho trả NCC rỗng,1. Gọi POST.../reconcile,,"Hệ thống trả lỗi nguyên văn ""Phiếu xuất kho trả NCC không có dòng hàng""",,,,,,
+14_3_030_005,Đối soát hoá đơn đã chốt bị chặn,Vai: province; hoá đơn đã chốt chứng từ,1. Gọi POST.../reconcile,,"Hệ thống trả lỗi ""Hoá đơn điều chỉnh đã chốt hoặc đã gắn cho đợt trả khác"" (CREDIT_NOTE_ALREADY_SETTLED)",,,,,,
+14_3_030_006,Chưa xác định dấu thì dừng đối soát và hiện ba lựa chọn,Vai: province; hoá đơn có adjustmentType = UNKNOWN,"1. Mở ""Xem đối soát"";
+2. Đọc dải vàng",,"Dải vàng ""Chưa xác định được hoá đơn điều chỉnh tăng hay giảm"" với 3 lựa chọn ""Điều chỉnh giảm"", ""Điều chỉnh tăng"", ""Không đổi giá trị"" và nút ""Ghi nhận""; bảng đối soát dừng ở ""Chờ đối soát""",,,,,,
+14_3_030_007,Chưa chọn tính chất mà bấm Ghi nhận bị chặn,Vai: province; hoá đơn chưa xác định dấu,"1. Không chọn lựa chọn nào;
+2. Bấm ""Ghi nhận""",,"Báo lỗi nguyên văn ""Chọn tính chất điều chỉnh trước""; hệ thống KHÔNG tự mặc định là điều chỉnh giảm",,,,,,
+14_3_030_008,Ghi nhận Điều chỉnh giảm rồi đối soát lại ngay,Vai: province; hoá đơn chưa xác định dấu,"1. Chọn ""Điều chỉnh giảm"";
+2. Bấm ""Ghi nhận""",,"Báo ""Đã ghi nhận tính chất điều chỉnh""; hệ thống đối soát lại ngay và cập nhật kết luận",,,,,,
+14_3_030_009,🔴 Chọn Điều chỉnh TĂNG bị backend từ chối,Vai: province; hoá đơn chưa xác định dấu,"1. Chọn ""Điều chỉnh tăng"";
+2. Bấm ""Ghi nhận""",,"Hệ thống trả lỗi nguyên văn ""Chỉ chọn được điều chỉnh GIẢM cho hoá đơn trả hàng"".",,,,,,
+14_3_030_010,🔴 Chọn Không đổi giá trị bị backend từ chối,Vai: province; hoá đơn chưa xác định dấu,"1. Chọn ""Không đổi giá trị"";
+2. Bấm ""Ghi nhận""",,"Hệ thống trả lỗi nguyên văn ""Chỉ chọn được điều chỉnh GIẢM cho hoá đơn trả hàng""",,,,,,
+14_3_030_011,Ghi nhận dấu làm mất kết quả đối soát cũ,Vai: province; hoá đơn đã đối soát rồi đổi dấu,"1. Ghi nhận tính chất điều chỉnh;
+2. Đọc trạng thái đối soát",,"Trạng thái đối soát trở về ""Chờ đối soát"" và phần mô tả cũ bị xoá — bắt chạy lại",,,,,,
+14_3_030_012,Ghi nhận dấu cho hoá đơn đã chốt bị chặn,Vai: province; hoá đơn đã chốt,1. Gọi POST.../adjustment-type,,"Hệ thống trả lỗi ""Hoá đơn điều chỉnh đã chốt hoặc đã gắn cho đợt trả khác""",,,,,,
+14_3_030_013,Gỡ hoá đơn nạp nhầm,Vai: province; hoá đơn CHƯA chốt chứng từ,"1. Bấm biểu tượng thùng rác đỏ cạnh chữ ""Hoá đơn điều chỉnh giảm"";
+2. Bấm ""Gỡ hoá đơn"" trong hộp ""Gỡ hoá đơn điều chỉnh này?""",,"Báo ""Đã gỡ hoá đơn khỏi đợt trả""; khối hoá đơn quay về thẻ ""Chưa tiếp nhận"" và hiện lại nút ""Tiếp nhận hoá đơn NCC""",,,,,,
+14_3_030_014,Biểu tượng gỡ không hiện với hoá đơn đã chốt,Vai: province; hoá đơn đã chốt chứng từ,1. Đọc khối hoá đơn của đợt,,"Biểu tượng thùng rác KHÔNG hiện; tooltip ""Gỡ hoá đơn khỏi đợt trả để nạp lại tệp khác"" cũng không có",,,,,,
+14_3_030_015,Gọi API xoá hoá đơn đã chốt bị chặn,Vai: province; hoá đơn đã chốt,1. Gọi DELETE /stock/v2/return-credit-note/<id>,,"Hệ thống trả lỗi ""Hoá đơn điều chỉnh đã chốt hoặc đã gắn cho đợt trả khác"" (CREDIT_NOTE_ALREADY_SETTLED)",,,,,,
+14_3_030_016,Gỡ hoá đơn là xoá hẳn khỏi đợt trả,Vai: province; vừa gỡ một hoá đơn,1. Mở lại màn đối soát của đợt đó,,Đợt KHÔNG còn chứng từ nào; phải tiếp nhận lại mới có. Hoá đơn không bị ẩn mà bị xoá,,,,,,
+14_3_030_017,Đóng hộp xác nhận gỡ không gỡ gì,Vai: province; hoá đơn chưa chốt,"1. Bấm biểu tượng gỡ;
+2. Bấm Huỷ trong hộp xác nhận",,Hoá đơn vẫn gắn với đợt; không phát sinh DELETE,,,,,,
+14_3_030_018,Sửa thuế suất tay cho dòng chưa xác định,Vai: province; hoá đơn có dòng thiếu thuế suất,1. Gọi POST /stock/v2/return-credit-note/<id>/items/<itemId>/vat-rate với vatRate = 10,,Ghi nhận thành công; nguồn thuế suất của dòng đổi sang MANUAL,,,,,,
+14_3_030_019,Thuế suất ngoài bốn giá trị hợp lệ bị chặn,Vai: province; hoá đơn có dòng thiếu thuế suất,1. Gọi POST.../items/<itemId>/vat-rate với vatRate = 7,,"Hệ thống trả lỗi nguyên văn ""Thuế suất không hợp lệ, chỉ nhận 0%, 5%, 8% hoặc 10%""",,,,,,
+14_3_030_020,Thuế suất âm bị chặn,Vai: province; hoá đơn có dòng thiếu thuế suất,1. Gọi POST.../items/<itemId>/vat-rate với vatRate = -10,,"Hệ thống trả lỗi ""Thuế suất không hợp lệ, chỉ nhận 0%, 5%, 8% hoặc 10%""",,,,,,
+14_3_030_021,Sửa thuế suất cho dòng không thuộc hoá đơn bị chặn,Vai: province,1. Gọi POST.../items/<itemId>/vat-rate với itemId của hoá đơn khác,,"Hệ thống trả lỗi nguyên văn ""Không tìm thấy dòng hàng của hoá đơn""",,,,,,
+14_3_030_022,Dòng Chưa ghép được sửa quy đổi đơn vị rồi đối soát lại là khớp,Vai: province; hoá đơn có dòng ĐVT không quy đổi được,"1. Sửa quy đổi đơn vị của mặt hàng;
+2. Bấm ""Đối soát lại""",,"Dòng đó chuyển từ ""Chưa ghép được"" sang ""Khớp""; cột ""SL phiếu trả"" và ""Tiền phiếu trả"" hết dấu ""--""",,,,,,
+,040 — Phát hành hoá đơn xuất trả hàng,,,,,,,,,,
+14_3_040_001,Màn phát hành mở với bản nháp tự tổng hợp,Vai: province; NCC khai VNPost lập hoá đơn; đợt đã có phiếu xuất kho hoàn tất,"1. Bấm ""Phát hành hoá đơn"" trên đợt mang thẻ ""VNPost phát hành""",,"Drawer tiêu đề ""Phát hành hoá đơn xuất trả hàng""; có bảng ""Hàng hoá tổng hợp từ phiếu xuất trả"" và khối tổng tiền ở góc dưới bên phải",,,,,,
+14_3_040_002,Bảy trường thông tin đầu màn chỉ để đọc,Vai: province; đợt mang thẻ VNPost phát hành,"1. Mở màn phát hành;
+2. Thử sửa từng trường thông tin",,"Đủ 7 mục chỉ hiển thị: ""Người bán"", ""Người mua (NCC)"", ""Địa chỉ người mua"", ""Mẫu số / Ký hiệu"", ""Hình thức thanh toán"", ""Phiếu xuất trả kho"", ""Phiếu xuất trả NCC"" — không sửa được mục nào",,,,,,
+14_3_040_003,Bảng hàng hoá hiện đủ tám cột,Vai: province; đợt có bản nháp,1. Đọc tiêu đề cột bảng hàng hoá,,"Đủ 8 cột: #, Mặt hàng, ĐVT, SL trả, Đơn giá gốc, Tiền trước thuế, Thuế suất, Tiền thuế, Tổng cộng",,,,,,
+14_3_040_004,Dòng diễn giải điền sẵn và sửa được,Vai: province; đợt có bản nháp,"1. Đọc ô ""Dòng diễn giải trên hoá đơn""",,"Ô đã điền sẵn nội dung dẫn chiếu hoá đơn gốc và lý do; sửa được; placeholder là ""Điều chỉnh cho hoá đơn Mẫu số… ký hiệu… số… ngày…""",,,,,,
+14_3_040_005,Phát hành hoá đơn thành công,Vai: province; bản nháp đủ điều kiện,"1. Sửa dòng diễn giải;
+2. Bấm ""Phát hành hoá đơn"";
+3. Bấm ""Phát hành"" trong hộp ""Phát hành hoá đơn xuất trả hàng?""",,"Báo ""Đã phát hành hoá đơn xuất trả hàng""; khối hoá đơn của đợt chuyển sang hiển thị số hoá đơn, ngày, tiền giảm trừ và nút ""Xem đối soát""",,,,,,
+14_3_040_006,Chưa có phiếu xuất kho hoàn tất thì chỉ hiện cảnh báo,Vai: province; đợt chưa có phiếu xuất kho trả NCC hoàn tất,"1. Bấm ""Phát hành hoá đơn""",,"Màn chỉ hiện dải cảnh báo ""Chưa tổng hợp được bản nháp hoá đơn""; không có bảng hàng hoá; nút phát hành bị khoá",,,,,,
+14_3_040_007,Còn dòng thiếu thuế suất thì chặn phát hành,Vai: province; bản nháp có 2 dòng chưa xác định thuế suất,"1. Mở màn phát hành;
+2. Quan sát dải đỏ và nút phát hành",,"Dải đỏ dạng ""Còn 2 dòng chưa xác định được thuế suất"" kèm mô tả nêu thứ tự tra: bảng giá NCC → hoá đơn gốc NCC → phiếu đặt hàng → phiếu nhập gốc; nút ""Phát hành hoá đơn"" bị khoá",,,,,,
+14_3_040_008,Hệ thống KHÔNG tự mặc định thuế suất bằng không,Vai: province; bản nháp có dòng không suy được thuế suất,"1. Đọc cột ""Thuế suất"" của dòng đó",,"Cột để trống hoặc đánh dấu chưa xác định, KHÔNG hiện 0%. Kế toán phải nhập tay",,,,,,
+14_3_040_009,Gọi API phát hành khi còn dòng thiếu thuế suất bị chặn,Vai: province; bản nháp thiếu thuế suất,1. Gọi POST /stock/v2/return-credit-note/issue,,"Hệ thống trả lỗi nguyên văn ""Không xác định được thuế suất của mặt hàng, vui lòng nhập tay"" (VAT_RATE_NOT_RESOLVED, RTN-CN-007)",,,,,,
+14_3_040_010,Phát hành cho đợt đã có hoá đơn chốt bị chặn,Vai: province; đợt đã có hoá đơn đã chốt,1. Gọi POST.../issue,,"Hệ thống trả lỗi ""Hoá đơn điều chỉnh đã chốt hoặc đã gắn cho đợt trả khác"" (CREDIT_NOTE_ALREADY_SETTLED)",,,,,,
+14_3_040_011,Phát hành lên hệ thống HĐĐT thất bại,Vai: province; cấu hình HĐĐT sai hoặc nhà cung cấp dịch vụ lỗi,"1. Bấm ""Phát hành hoá đơn"";
+2. Bấm ""Phát hành""",,"Hệ thống trả lỗi ""Phát hành hoá đơn điện tử không thành công"" (EINVOICE_ISSUE_FAILED, RTN-CN-008); trạng thái đợt giữ nguyên",,,,,,
+14_3_040_012,Phát hành lại sau khi thất bại không tạo hoá đơn trùng,Vai: province; lần phát hành trước thất bại,"1. Bấm ""Phát hành hoá đơn"" lần nữa;
+2. Bấm ""Phát hành""",,Phát hành thành công và đợt trả chỉ gắn **một** hoá đơn; không sinh hoá đơn thứ hai cho cùng đợt,,,,,,
+14_3_040_013,Phát hành cho đợt trả không tồn tại bị chặn,Vai: province,1. Gọi POST.../issue với batchId = 999999999,,"Hệ thống trả lỗi nguyên văn ""Không tìm thấy đợt trả""",,,,,,
+14_3_040_014,Lấy bản nháp khi phiếu xuất kho không có dòng hàng bị chặn,Vai: province; phiếu xuất kho trả NCC rỗng,1. Gọi GET /stock/v2/return-credit-note/issue-draft,,"Hệ thống trả lỗi nguyên văn ""Phiếu xuất kho trả NCC không có dòng hàng""",,,,,,
+14_3_040_015,Hoá đơn phát hành xong không thu hồi được,Vai: province; vừa phát hành hoá đơn,1. Tìm chức năng thu hồi hoặc huỷ hoá đơn vừa phát hành,,Không có chức năng nào thu hồi. Hộp xác nhận đã nói rõ trước khi bấm.,,,,,,
+14_3_040_016,Đóng hộp xác nhận phát hành không phát hành gì,Vai: province; bản nháp đủ điều kiện,"1. Bấm ""Phát hành hoá đơn"";
+2. Bấm Huỷ trong hộp xác nhận",,"Khối hoá đơn vẫn mang thẻ ""Chưa phát hành""; không phát sinh POST issue",,,,,,
+14_3_040_017,Dòng diễn giải bỏ trống,Vai: province; bản nháp đủ điều kiện,"1. Xoá trắng ô ""Dòng diễn giải trên hoá đơn"";
+2. Bấm ""Phát hành hoá đơn""",,Chưa chốt kỳ vọng — ghi nhận thực tế: bỏ trống trường này thì phát hành được hoá đơn hay bị chặn.,,,,,,
+14_3_040_018,Dòng diễn giải toàn khoảng trắng,Vai: province; bản nháp đủ điều kiện,"1. Gõ 5 dấu cách vào ô diễn giải;
+2. Bấm ""Phát hành hoá đơn""",,Nếu phát hành được thì hoá đơn ra ngoài cơ quan thuế với dòng diễn giải rỗng,,,,,,
+14_3_040_019,Bên lập hoá đơn khai theo từng nhà cung cấp,"Vai: province; có 2 NCC, 1 khai NCC lập, 1 khai VNPost lập",1. Mở khối hoá đơn của đợt thuộc từng NCC,,"Đợt của NCC thứ nhất hiện ""NCC phát hành"" + ""Tiếp nhận hoá đơn NCC""; đợt của NCC thứ hai hiện ""VNPost phát hành"" + ""Phát hành hoá đơn"". Người dùng không chọn được, hệ thống tự quyết theo hồ sơ NCC",,,,,,
+14_3_040_020,Vai TCT phát hành được hoá đơn cho đợt của mình,"Vai: tct; đợt trả ở cấp TCT, NCC khai VNPost lập","1. Mở khối hoá đơn;
+2. Bấm ""Phát hành hoá đơn""",,"Màn phát hành mở được; mục ""Người bán"" là đơn vị TCT với mã số thuế tương ứng",,,,,,
+14_3_040_021,Vai điểm bán không phát hành hoá đơn được,Vai: shop; phiếu của điểm bán đã có đợt trả,"1. Mở Chi tiết phiếu;
+2. Tìm nút ""Phát hành hoá đơn""",,Không có nút phát hành,,,,,,

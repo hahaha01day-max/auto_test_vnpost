@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Đăng nhập — Công cụ auto test VNPost</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<main style="max-width:360px;margin-top:80px">
+  <h1>Công cụ auto test VNPost</h1>
+  <p class="sub">Đăng nhập để tiếp tục.</p>
+  <% if (error) { %><div class="err"><%= error %></div><% } %>
+  <form method="post" action="/login" class="card">
+    <input type="hidden" name="next" value="<%= next %>">
+    <div style="margin-bottom:12px">
+      <label>Tên đăng nhập</label>
+      <input name="username" autofocus autocomplete="username">
+    </div>
+    <div style="margin-bottom:16px">
+      <label>Mật khẩu</label>
+      <input name="password" type="password" autocomplete="current-password">
+    </div>
+    <button class="primary" style="width:100%">Đăng nhập</button>
+  </form>
+</main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong,Ma goc,Nguon,Trang thai chay,Ngay chay,Ghi chu chay
+50_TT01_010,TT01 · Điểm bán lập phiếu đề xuất đặt hàng gửi phê duyệt,"Làn seed có kho HUB tỉnh và bảng giá mua của NCC seed phủ Tổng công ty + tỉnh. Case chạy tuần tự, bước sau dùng chứng từ của bước trước. Đăng nhập Cửa hàng trưởng.","1. Kho hàng > Phiếu đề xuất đặt hàng > Tạo phiếu đề xuất
+2. Thêm 2 sản phẩm (tiêu chuẩn, FIFO), mỗi loại số lượng N
+3. Gửi phê duyệt",Gửi phê duyệt thành công; phiếu có đủ 2 dòng với số lượng N. Ghi lại công nợ NCC trước khi chạy chuỗi.,,Toàn trình TT01 — user chốt 28/09/2026,Đạt,29/09/2026,
+50_TT01_020,TT01 · Xã duyệt phiếu đề xuất,Như 50_TT01_010. Đăng nhập Giám đốc xã.,"1. Mở phiếu đề xuất vừa gửi
+2. Xác nhận duyệt",Phiếu sang Đã duyệt.,,Toàn trình TT01 — user chốt 28/09/2026,Đạt,29/09/2026,
+50_TT01_030,TT01 · Tỉnh gửi phiếu lên Tổng công ty,"Như 50_TT01_020, kho HUB tỉnh không đủ hàng. Đăng nhập Quản lý tỉnh.","1. Mở phiếu đề xuất đã duyệt
+2. Gửi lên TCT, chọn kho nhận là HUB tỉnh",Sinh phiếu đề xuất cấp TCT (ĐXTCT-…); phiếu gốc sang Đã gửi TCT. Ghi lại tồn HUB trước khi nhận hàng.,,Toàn trình TT01 — user chốt 28/09/2026,Đạt,29/09/2026,
+50_TT01_040,TT01 · TCT đặt hàng NCC giao thẳng về HUB tỉnh,Như 50_TT01_030. Đăng nhập Tổng công ty.,"1. Mở phiếu ĐXTCT, duyệt
+2. Tạo phiếu đặt hàng NCC từ phiếu (kho đặt TCT, kho nhận HUB tỉnh), gửi NCC
+3. NCC xác nhận",PO tạo từ phiếu điền sẵn SP; gửi NCC và NCC xác nhận thành công.,,Toàn trình TT01 — user chốt 28/09/2026,Không đạt,29/09/2026,"Error: expect(locator).toBeVisible() failed Locator: getByText('Danh sách sản phẩm').first() Expected: visible Timeout: 30000ms Error: element(s) not found Call log: - Expect ""toBeVisible"" with timeout 30000ms - waiting for getByText('Danh sách sản phẩm').first()"
+50_TT01_050,TT01 · Tỉnh xác nhận đơn giao thẳng,Như 50_TT01_040. Đăng nhập Quản lý tỉnh.,"1. Mở đơn giao thẳng cần xác nhận
+2. Nhập lô/hạn dùng từng dòng, xác nhận",Xác nhận thành công; tồn HUB tỉnh tăng đúng N mỗi SP; phiếu gốc sang TCT đã giao.,,Toàn trình TT01 — user chốt 28/09/2026,Chưa chạy,29/09/2026,Bước trước chưa xong (thiếu nccXacNhan).
+50_TT01_060,TT01 · Tỉnh tạo phiếu chuyển kho về điểm bán theo phiếu đề xuất,Như 50_TT01_050. Đăng nhập Quản lý tỉnh.,"1. Mở phiếu đề xuất gốc > Kiểm tra tồn kho
+2. Tạo phiếu chuyển kho từ HUB, xuất kho ngay
+3. Xác nhận tạo","Tạo phiếu chuyển thành công; tồn HUB về lại như trước bước 050 (đã xuất ngay); phiếu gốc sang Đã chuyển kho, gắn phiếu chuyển.",,Toàn trình TT01 — user chốt 28/09/2026,Chưa chạy,29/09/2026,Bước trước chưa xong (thiếu hubNhan).
+50_TT01_070,TT01 · Điểm bán xác nhận nhận hàng,Như 50_TT01_060. Đăng nhập Cửa hàng trưởng.,"1. Kho hàng > Chuyển kho, mở phiếu chuyển đến
+2. Xác nhận nhận hàng đủ số lượng",Nhận thành công; tồn điểm bán tăng đúng N mỗi SP.,,Toàn trình TT01 — user chốt 28/09/2026,Chưa chạy,29/09/2026,Bước trước chưa xong (thiếu maChuyen).
+50_TT01_080,TT01 · Đối chiếu cuối: công nợ NCC và trạng thái phiếu đề xuất,Như 50_TT01_070. Đăng nhập Tổng công ty.,"1. Mở Công nợ NCC, xem NCC seed
+2. So với số ghi lại ở bước 010
+3. Xem trạng thái cuối của phiếu đề xuất gốc","Tổng phát sinh công nợ NCC tăng đúng giá trị hàng đã đặt (2 × N × giá mua). Trạng thái cuối của phiếu đề xuất: ghi nhận, chờ chốt kỳ vọng.",,Toàn trình TT01 — user chốt 28/09/2026,Chưa chạy,29/09/2026,Bước trước chưa xong (thiếu shopNhan).
+50_TT02_010,TT02 · Điểm bán lập phiếu trả hàng NCC,"Điểm bán có hàng tự doanh tỉnh (TD1, nguồn NCC tỉnh) và hàng TCT (TC, nguồn PO TCT — từ TT01). Case chạy tuần tự. Đăng nhập Cửa hàng trưởng.","1. Kho hàng > Xuất trả nhà cung cấp > Tạo phiếu trả
+2. Chọn lô TD1 và lô TC, mỗi loại số lượng N
+3. Gửi duyệt","Tạo phiếu thành công (Chờ duyệt). Ghi lại tồn điểm bán, công nợ NCC tỉnh và NCC TCT trước khi trả. Thời điểm hệ thống giữ/trừ tồn điểm bán được ghi nhận ở các bước duyệt.",,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Đạt,29/09/2026,
+50_TT02_020,TT02 · Xã duyệt phiếu trả,Như 50_TT02_010. Đăng nhập Giám đốc xã.,"1. Mở phiếu trả
+2. Duyệt đủ số lượng","Duyệt thành công, phiếu chuyển lên tỉnh.",,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Không đạt,29/09/2026,"Error: Xã duyệt xong phiếu không sang Xã đã duyệt expect(received).toBe(expected) // Object.is equality Expected: ""WARD_APPROVED"" Received: ""SPLIT"""
+50_TT02_030,TT02 · Tỉnh duyệt phiếu trả,Như 50_TT02_020. Đăng nhập Quản lý tỉnh.,"1. Mở phiếu trả
+2. Duyệt đủ số lượng",Phiếu sang Đã duyệt.,,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Không đạt,29/09/2026,"Error: expect(received).toBe(expected) // Object.is equality Expected: ""APPROVED"" Received: ""SPLIT"""
+50_TT02_040,TT02 · Tỉnh tách phiếu theo nguồn NCC,Như 50_TT02_030.,"1. Mở phiếu đã duyệt
+2. Tách phiếu",Ra 2 phiếu con: NCC tỉnh (Chưa trả hàng) cho TD1 và hàng TCT (Chưa gửi TCT) cho TC.,,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Đạt,29/09/2026,
+50_TT02_050,"TT02 · Nhánh NCC tỉnh: tỉnh trả NCC, NCC xác nhận",Như 50_TT02_040.,"1. Mở phiếu con NCC tỉnh > Trả hàng NCC đủ N
+2. NCC xác nhận đợt trả",Sinh đợt trả chờ NCC xác nhận; NCC xác nhận xong đợt sang Đã xác nhận.,,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Không đạt,29/09/2026,"Error: expect(received).toBe(expected) // Object.is equality Expected: ""CONFIRMED"" Received: ""SETTLED"""
+50_TT02_060,"TT02 · Nhánh NCC tỉnh: hoá đơn điều chỉnh giảm, chốt chứng từ",Như 50_TT02_050.,"1. Ở đợt trả, nạp XML hoá đơn điều chỉnh giảm của NCC khớp dòng hàng
+2. Xem đối soát > Chốt chứng từ & ghi giảm công nợ",Đối soát KHỚP; chốt chứng từ thành công.,,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Đạt,29/09/2026,
+50_TT02_070,TT02 · Nhánh TCT: tỉnh gửi phiếu con hàng TCT lên TCT,Như 50_TT02_040.,1. Mở phiếu con hàng TCT > Gửi TCT,Gửi thành công; TCT thấy phiếu sinh từ phiếu con.,,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Không đạt,29/09/2026,"Error: Tỉnh gửi TCT (lô TC có nguồn PO TCT — 14_2 050_001 từng bị BE chặn) lỗi: Đơn vị nhận hàng chưa khai báo kho mặc định để nhận hàng trả từ cấp dưới (QFJBka) expect(received).toBe(expected) // Object.is equality Expected: ""200"" Received: ""SSHOP-500"""
+50_TT02_080,"TT02 · Nhánh TCT: TCT duyệt, tách, trả NCC, NCC xác nhận",Như 50_TT02_070. Đăng nhập Tổng công ty.,"1. Duyệt phiếu ở TCT
+2. Tách
+3. Trả hàng NCC đủ N
+4. NCC xác nhận đợt",Đợt trả của TCT sang Đã xác nhận.,,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Chưa chạy,29/09/2026,Bước trước chưa xong (thiếu phieuTct).
+50_TT02_090,"TT02 · Nhánh TCT: hoá đơn điều chỉnh giảm, chốt chứng từ",Như 50_TT02_080.,"1. Nạp XML hoá đơn điều chỉnh giảm khớp đợt
+2. Chốt chứng từ",Đối soát KHỚP; chốt chứng từ thành công.,,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Chưa chạy,29/09/2026,Bước trước chưa xong (thiếu dotTct).
+50_TT02_100,"TT02 · Đối chiếu cuối: tồn, công nợ NCC, trạng thái phiếu",Như 50_TT02_090.,"1. Xem tồn điểm bán TD1, TC
+2. Xem công nợ NCC tỉnh (tỉnh) và NCC TCT (TCT)
+3. Xem trạng thái phiếu gốc và các phiếu con","Tồn điểm bán mỗi SP giảm đúng N so với trước khi lập phiếu; công nợ NCC tỉnh và NCC TCT ghi nhận trả hàng. Trạng thái phiếu: ghi nhận, chờ chốt kỳ vọng.",,Toàn trình TT02 — user duyệt trình tự 28/09/2026,Không đạt,29/09/2026,Error: Tồn điểm bán SP 1171522 không giảm đúng 1 sau khi trả expect(received).toBe(expected) // Object.is equality Expected: 1 Received: -59

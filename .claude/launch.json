@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "test-tool",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "tool"],
+      "port": 4100
+    }
+  ]
+}

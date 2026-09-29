@@ -1,0 +1,109 @@
+{
+  "spec": {
+    "tests/hddt-form.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/khach-pos.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/coupon-pos.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/diem-pos.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/thanh-toan-kh.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/bien-lai.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order",
+        "/order/created-orders/detail/:id"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx",
+        "src/features/order/pages/createOrderPage/components/navigateInOrder/ModalNavigateInOrder_v2.jsx",
+        "src/features/order/components/ButtonOrderPrint.jsx",
+        "src/components/printComponent/content/InvoiceContent_v2.jsx"
+      ]
+    },
+    "tests/tat-hddt.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/OrderOverviewInfo.jsx",
+        "src/features/shop/services/shopConfigApi.js"
+      ]
+    },
+    "tests/ctkm-nhom.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/campaign/OrderCampaignSelection.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/campaign/useOrderCampaignSync.js",
+        "src/pages/promotionCampaign/campaignManagement/controllers/CampaignManagementControllers.jsx"
+      ]
+    },
+    "tests/tao-don.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/components/AddOrEditProductModal.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/campaign/OrderCampaignSelection.jsx"
+      ]
+    }
+  }
+}

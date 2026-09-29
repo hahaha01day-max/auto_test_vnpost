@@ -1,0 +1,258 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 122,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:42:59.230Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tu-sinh-khac.tct.spec.js",
+      "file": "tu-sinh-khac.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "26_060_006 — Thu hồi nợ đơn vị vận tải sinh phiếu thu tự động",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tct",
+              "projectName": "tct",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 31042,
+                  "error": {
+                    "message": "Error: Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('AUTO7_SHOP', { exact: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('AUTO7_SHOP', { exact: true }).first()\u001b[22m\n",
+                    "stack": "Error: Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('AUTO7_SHOP', { exact: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('AUTO7_SHOP', { exact: true }).first()\u001b[22m\n\n    at dangNhapVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:122:5)\n    at moTrang (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:359:28)\n    at Object.moPhienPhu (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/04_3_nhap_xuat_chuyen_kho/tests/ghi-kho.js:278:2)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh-khac.tct.spec.js:34:14",
+                    "location": {
+                      "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js",
+                      "column": 5,
+                      "line": 122
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../../shared/auth/login.js:122\n\n  120 |     ten.first(),\n  121 |     `Không thấy đơn vị \"${cred.scopeLabel}\" trên màn chọn phạm vi — kiểm lại ${role.envScope}`,\n> 122 |   ).toBeVisible({ timeout: 30_000 });\n      |     ^\n  123 |\n  124 |   const dong = cred.roleLabel\n  125 |     ? ten.locator("
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js",
+                        "column": 5,
+                        "line": 122
+                      },
+                      "message": "Error: Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('AUTO7_SHOP', { exact: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('AUTO7_SHOP', { exact: true }).first()\u001b[22m\n\n\n   at ../../shared/auth/login.js:122\n\n  120 |     ten.first(),\n  121 |     `Không thấy đơn vị \"${cred.scopeLabel}\" trên màn chọn phạm vi — kiểm lại ${role.envScope}`,\n> 122 |   ).toBeVisible({ timeout: 30_000 });\n      |     ^\n  123 |\n  124 |   const dong = cred.roleLabel\n  125 |     ? ten.locator(\n    at dangNhapVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:122:5)\n    at moTrang (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:359:28)\n    at Object.moPhienPhu (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/04_3_nhap_xuat_chuyen_kho/tests/ghi-kho.js:278:2)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh-khac.tct.spec.js:34:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:42:59.644Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh-khac.tct-26-060-00-2287e--tải-sinh-phiếu-thu-tự-động-tct/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh-khac.tct-26-060-00-2287e--tải-sinh-phiếu-thu-tự-động-tct/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh-khac.tct-26-060-00-2287e--tải-sinh-phiếu-thu-tự-động-tct/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js",
+                    "column": 5,
+                    "line": 122
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b55f38927feb022ccc62-f802e263945b452a055b",
+          "file": "tu-sinh-khac.tct.spec.js",
+          "line": 32,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T13:42:58.998Z",
+    "duration": 32001.742,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

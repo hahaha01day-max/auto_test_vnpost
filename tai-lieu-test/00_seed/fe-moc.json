@@ -1,0 +1,56 @@
+{
+  "spec": {
+    "tests/10-san-pham-san-xuat.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/normal"
+      ],
+      "fe": [
+        "src/pages/product/index.jsx",
+        "src/pages/product/addProduct/AddProductDrawer.jsx",
+        "src/pages/product/addProduct/components/TableIngredients.jsx",
+        "src/pages/product/addProduct/components/SelectShopProduct.jsx"
+      ]
+    },
+    "tests/11-ca-lam-viec.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/employee/shift",
+        "/employee/schedule"
+      ],
+      "fe": [
+        "src/pages/timekeeping/ShiftPage.jsx",
+        "src/pages/timekeeping/DrawerSchedule.jsx"
+      ]
+    },
+    "tests/12-cong-no-ncc.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/debt-reconciliation/supplier-debt"
+      ],
+      "fe": [
+        "src/features/supplierDebt/pages/ShopDebtSupplierPage.jsx",
+        "src/features/supplierDebt/pages/DrawerDebtAdjustment.jsx"
+      ]
+    },
+    "api-tests/14-tu-doanh-tinh.api.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/normal",
+        "/supplier/list",
+        "/supplier/:supplierId/products",
+        "/supplier/contracts",
+        "/supplier/:supplierId/price-lists"
+      ],
+      "fe": [
+        "src/pages/product/addProduct/AddProductDrawer.jsx",
+        "src/features/supplier/pages/AddModal.jsx",
+        "src/features/supplierProduct/services/supplierProductApi.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,901 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ward",
+        "name": "ward",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.ward\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:50:54.564Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "cong-no.province.spec.js",
+      "file": "cong-no.province.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "24 · Công nợ nhân viên (cấp tỉnh)",
+          "file": "cong-no.province.spec.js",
+          "line": 31,
+          "column": 6,
+          "specs": [
+            {
+              "title": "24_050_001 — Thẻ Công nợ với cửa hàng hiện đủ chỉ tiêu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": null,
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cong-no.province.spec.js",
+                        "line": 232,
+                        "column": 20
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 24763,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:50:55.296Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": null,
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cong-no.province.spec.js",
+                            "line": 232,
+                            "column": 20
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cong-no.province-24-·-Công-bbcaf-i-cửa-hàng-hiện-đủ-chỉ-tiêu-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7475d8db2487f2d4f036-27cda8497bb71879c2a0",
+              "file": "cong-no.province.spec.js",
+              "line": 224,
+              "column": 2
+            },
+            {
+              "title": "24_050_003 — Hai thẻ công nợ là hai loại tiền khác nhau",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "cột hai thẻ",
+                      "description": "đơn hàng: # · Tên nhân viên · Số điện thoại · Tổng tiền khách nợ · Hành động || cửa hàng: STT · Nhân viên · Tổng nợ · Đã trả · Còn lại · Khoản chưa thanh toán · Hành động"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15758,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:51:20.128Z",
+                      "annotations": [
+                        {
+                          "type": "cột hai thẻ",
+                          "description": "đơn hàng: # · Tên nhân viên · Số điện thoại · Tổng tiền khách nợ · Hành động || cửa hàng: STT · Nhân viên · Tổng nợ · Đã trả · Còn lại · Khoản chưa thanh toán · Hành động"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cong-no.province-24-·-Công-6cd79--là-hai-loại-tiền-khác-nhau-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7475d8db2487f2d4f036-5ad50089f00342ee25f2",
+              "file": "cong-no.province.spec.js",
+              "line": 243,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cua-hang.province.spec.js",
+      "file": "cua-hang.province.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "24 · Công nợ với cửa hàng (vai province)",
+          "file": "cua-hang.province.spec.js",
+          "line": 121,
+          "column": 6,
+          "specs": [
+            {
+              "title": "24_050_002 — Lọc theo trạng thái trả nợ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "lựa chọn",
+                      "description": "Tất cả · Chưa trả · Trả một phần · Đã trả"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26216,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:51:35.902Z",
+                      "annotations": [
+                        {
+                          "type": "lựa chọn",
+                          "description": "Tất cả · Chưa trả · Trả một phần · Đã trả"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-c739a--Lọc-theo-trạng-thái-trả-nợ-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-6b44ef8acd3f29f78855",
+              "file": "cua-hang.province.spec.js",
+              "line": 124,
+              "column": 2
+            },
+            {
+              "title": "24_050_004 — Tìm nhân viên ở thẻ Công nợ với cửa hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "tham số",
+                      "description": "{\"page\":\"0\",\"size\":\"20\",\"keyword\":\"AUTO7_GDV\",\"shopId\":\"68151\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27561,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:52:02.122Z",
+                      "annotations": [
+                        {
+                          "type": "tham số",
+                          "description": "{\"page\":\"0\",\"size\":\"20\",\"keyword\":\"AUTO7_GDV\",\"shopId\":\"68151\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-9e8b3--ở-thẻ-Công-nợ-với-cửa-hàng-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-0165cd37c0d35e5827e8",
+              "file": "cua-hang.province.spec.js",
+              "line": 134,
+              "column": 2
+            },
+            {
+              "title": "24_050_005 — Cấp tỉnh chọn điểm bán ở thẻ Công nợ với cửa hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "so sánh",
+                      "description": "shopId 68151: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · shopId khác 68154: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · màn: 2 dòng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26600,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:52:29.688Z",
+                      "annotations": [
+                        {
+                          "type": "so sánh",
+                          "description": "shopId 68151: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · shopId khác 68154: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · màn: 2 dòng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-09581--ở-thẻ-Công-nợ-với-cửa-hàng-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-d9a48d8c6460d4e9138d",
+              "file": "cua-hang.province.spec.js",
+              "line": 148,
+              "column": 2
+            },
+            {
+              "title": "24_050_006 — Lọc trạng thái Tất cả tương đương không lọc",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 58461,
+                      "error": {
+                        "message": "TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event \"response\"",
+                        "stack": "TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event \"response\"\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:59:19)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:68:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:170:19",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 19,
+                          "line": 59
+                        },
+                        "snippet": "  57 |\n  58 | async function taiLai2(page, hanhDong) {\n> 59 | \tconst cho = page.waitForResponse((r) => API2.test(r.url()) && r.status() !== 401, { timeout: 30_000 });\n     | \t                 ^\n  60 | \tawait hanhDong();\n  61 | \tconst r = await cho;\n  62 | \tawait page.waitForTimeout(1_200);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 19,
+                            "line": 59
+                          },
+                          "message": "TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event \"response\"\n\n  57 |\n  58 | async function taiLai2(page, hanhDong) {\n> 59 | \tconst cho = page.waitForResponse((r) => API2.test(r.url()) && r.status() !== 401, { timeout: 30_000 });\n     | \t                 ^\n  60 | \tawait hanhDong();\n  61 | \tconst r = await cho;\n  62 | \tawait page.waitForTimeout(1_200);\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:59:19)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:68:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:170:19"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:52:56.293Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 19,
+                        "line": 59
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-ed22434651579dfef7c7",
+              "file": "cua-hang.province.spec.js",
+              "line": 165,
+              "column": 2
+            },
+            {
+              "title": "24_050_007 — Trạng thái từng dòng khớp bộ lọc đã chọn",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "theo trạng thái",
+                      "description": "{\"Chưa trả\":[{\"tong\":10000,\"tra\":0,\"con\":10000,\"chua\":1},{\"tong\":50000,\"tra\":0,\"con\":50000,\"chua\":2}],\"Trả một phần\":[],\"Đã trả\":[]}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31619,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:53:55.376Z",
+                      "annotations": [
+                        {
+                          "type": "theo trạng thái",
+                          "description": "{\"Chưa trả\":[{\"tong\":10000,\"tra\":0,\"con\":10000,\"chua\":1},{\"tong\":50000,\"tra\":0,\"con\":50000,\"chua\":2}],\"Trả một phần\":[],\"Đã trả\":[]}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-fd6ce-ng-dòng-khớp-bộ-lọc-đã-chọn-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-6727af72273c1fe8d955",
+              "file": "cua-hang.province.spec.js",
+              "line": 176,
+              "column": 2
+            },
+            {
+              "title": "24_050_008 — Phân trang thẻ Công nợ với cửa hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "trang đầu",
+                      "description": "{\"q\":{\"page\":\"0\",\"size\":\"20\",\"shopId\":\"68151\"},\"page\":{\"total_pages\":1,\"has_next\":false,\"has_previous\":false,\"current_page\":0,\"total_elements\":2}}"
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Chỉ 2 nhân viên — không có trang 2 với size 10.",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "line": 210,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 26256,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:54:27.072Z",
+                      "annotations": [
+                        {
+                          "type": "trang đầu",
+                          "description": "{\"q\":{\"page\":\"0\",\"size\":\"20\",\"shopId\":\"68151\"},\"page\":{\"total_pages\":1,\"has_next\":false,\"has_previous\":false,\"current_page\":0,\"total_elements\":2}}"
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Chỉ 2 nhân viên — không có trang 2 với size 10.",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "line": 210,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-07a95-ng-thẻ-Công-nợ-với-cửa-hàng-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-5a8ddb3ead1c6f64be14",
+              "file": "cua-hang.province.spec.js",
+              "line": 199,
+              "column": 2
+            },
+            {
+              "title": "24_060_001 — Ba thẻ số liệu là số cộng dồn không giới hạn thời gian",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "thẻ vs DB",
+                      "description": "{\"tong\":0,\"daTra\":0,\"conLai\":0} · DB {\"tong\":50000,\"daTra\":0}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 28610,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50000\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50000\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:222:18",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 18,
+                          "line": 222
+                        },
+                        "snippet": "  220 | \t\tconst mong = { tong: db.reduce((a, d) => a + d.amount, 0), daTra: db.reduce((a, d) => a + d.paid, 0) };\n  221 | \t\tghiChu('thẻ vs DB', `${JSON.stringify(t)} · DB ${JSON.stringify(mong)}`);\n> 222 | \t\texpect(t.tong).toBe(mong.tong);\n      | \t\t               ^\n  223 | \t\texpect(t.daTra).toBe(mong.daTra);\n  224 | \t\texpect(t.conLai).toBe(mong.tong - mong.daTra);\n  225 | \t\texpect(await dr.locator('.ant-picker').count(), 'Drawer chi tiết có ô thời gian (thẻ không còn là số cộng dồn)').toBe(0);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 18,
+                            "line": 222
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50000\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  220 | \t\tconst mong = { tong: db.reduce((a, d) => a + d.amount, 0), daTra: db.reduce((a, d) => a + d.paid, 0) };\n  221 | \t\tghiChu('thẻ vs DB', `${JSON.stringify(t)} · DB ${JSON.stringify(mong)}`);\n> 222 | \t\texpect(t.tong).toBe(mong.tong);\n      | \t\t               ^\n  223 | \t\texpect(t.daTra).toBe(mong.daTra);\n  224 | \t\texpect(t.conLai).toBe(mong.tong - mong.daTra);\n  225 | \t\texpect(await dr.locator('.ant-picker').count(), 'Drawer chi tiết có ô thời gian (thẻ không còn là số cộng dồn)').toBe(0);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:222:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:54:53.333Z",
+                      "annotations": [
+                        {
+                          "type": "thẻ vs DB",
+                          "description": "{\"tong\":0,\"daTra\":0,\"conLai\":0} · DB {\"tong\":50000,\"daTra\":0}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 18,
+                        "line": 222
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-440d1369d966e42f706b",
+              "file": "cua-hang.province.spec.js",
+              "line": 213,
+              "column": 2
+            },
+            {
+              "title": "24_060_002 — Cột Loại phiếu cho biết nguồn khoản nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 28492,
+                      "error": {
+                        "message": "Error: Thiếu cột \"Loại phiếu\". Cột: \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m-1\u001b[39m",
+                        "stack": "Error: Thiếu cột \"Loại phiếu\". Cột: \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m-1\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:235:64",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 64,
+                          "line": 235
+                        },
+                        "snippet": "  233 | \t\tconst cot = (await dr.locator('.ant-tabs-tabpane-active .ant-table-thead th').allInnerTexts()).map(chuan);\n  234 | \t\tconst i = cot.indexOf('Loại phiếu');\n> 235 | \t\texpect(i, `Thiếu cột \"Loại phiếu\". Cột: ${cot.join(' · ')}`).toBeGreaterThanOrEqual(0);\n      | \t\t                                                             ^\n  236 | \t\tconst loai = (await dr.locator(`.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row td:nth-child(${i + 1})`).allInnerTexts()).map(chuan);\n  237 | \t\tconst chu = chuan(await dr.locator('.ant-tabs-tabpane-active .ant-table-tbody').innerText());\n  238 | \t\tghiChu('loại phiếu', `${loai.join(' · ')} · ${chu.slice(0, 200)}`);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 64,
+                            "line": 235
+                          },
+                          "message": "Error: Thiếu cột \"Loại phiếu\". Cột: \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m-1\u001b[39m\n\n  233 | \t\tconst cot = (await dr.locator('.ant-tabs-tabpane-active .ant-table-thead th').allInnerTexts()).map(chuan);\n  234 | \t\tconst i = cot.indexOf('Loại phiếu');\n> 235 | \t\texpect(i, `Thiếu cột \"Loại phiếu\". Cột: ${cot.join(' · ')}`).toBeGreaterThanOrEqual(0);\n      | \t\t                                                             ^\n  236 | \t\tconst loai = (await dr.locator(`.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row td:nth-child(${i + 1})`).allInnerTexts()).map(chuan);\n  237 | \t\tconst chu = chuan(await dr.locator('.ant-tabs-tabpane-active .ant-table-tbody').innerText());\n  238 | \t\tghiChu('loại phiếu', `${loai.join(' · ')} · ${chu.slice(0, 200)}`);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:235:64"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:55:22.509Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 64,
+                        "line": 235
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-5823ce6cb48ceca79169",
+              "file": "cua-hang.province.spec.js",
+              "line": 228,
+              "column": 2
+            },
+            {
+              "title": "24_060_003 — Ba thẻ lịch sử tách bạch nhau",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "ba thẻ",
+                      "description": "{\"chua\":0,\"ghi\":0,\"tt\":0}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 33194,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:55:51.562Z",
+                      "annotations": [
+                        {
+                          "type": "ba thẻ",
+                          "description": "{\"chua\":0,\"ghi\":0,\"tt\":0}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0cc07--thẻ-lịch-sử-tách-bạch-nhau-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-3085e669fe7db44434ed",
+              "file": "cua-hang.province.spec.js",
+              "line": 244,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T12:50:54.261Z",
+    "duration": 330596.511,
+    "expected": 7,
+    "skipped": 2,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

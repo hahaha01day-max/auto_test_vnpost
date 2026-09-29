@@ -1,0 +1,1353 @@
+{
+  "cases": {
+    "04_3_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "required": []
+    },
+    "04_3_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "required": []
+    },
+    "04_3_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "_blocked_cu": "Thẻ kho đọc từ ClickHouse DW: đối chiếu số phải theo post−pre và phải biết bẫy ReplacingMergeTree thiếu FINAL. Chưa chốt được cách đối chiếu trong auto test.",
+      "_goBoi": "26/09/2026: so file với phần đang lọc trên màn (cùng DW) — đúng/sai số DW thuộc báo cáo"
+    },
+    "04_3_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_010_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "_blocked": "Chưa biết giới hạn số ảnh chứng từ — phải lấy con số thật từ code; nếu màn không ghi giới hạn thì là lỗ hổng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_010_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026: tự dựng phiếu nhập kèm ảnh (môi trường test)"
+    },
+    "04_3_010_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_010_018": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked": "Cùng lý do 04_3_010_015 — chưa biết biên trên.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_010_019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "_blocked_cu": "Cần sản phẩm MAC đã có ≥2 lần nhập giá khác nhau — chưa có dữ liệu nền; và đối chiếu giá vốn phải tính tay ngoài UI.",
+      "_batBoi": "seed 00_seed — sản phẩm theo từng phương pháp giá vốn, có lô và serial (seed bước 4)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Điểm bán chỉ nhập tay được SP giá tiêu chuẩn: SP MAC/FIFO/đích danh \"Chưa có bảng giá\", ô số lượng bị khoá (isPriceMissing) vì không chọn được NCC. Không tạo được lần nhập thứ hai giá khác. Đo 23/09/2026."
+    },
+    "04_3_010_020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "_blocked_cu": "Cần sản phẩm FIFO có ≥2 lô giá khác nhau — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_010_021": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "_blocked_cu": "Cần sản phẩm tính giá thực tế đích danh có lô + serial — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — sản phẩm theo từng phương pháp giá vốn, có lô và serial (seed bước 4)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: SP đích danh AUTO8_SP_DD (serial) tồn 0 ở điểm bán seed và không nhập được ở điểm bán (thiếu bảng giá). Điểm bán chỉ nhập tay được SP giá tiêu chuẩn: SP MAC/FIFO/đích danh \"Chưa có bảng giá\", ô số lượng bị khoá (isPriceMissing) vì không chọn được NCC. Không tạo được lần nhập thứ hai giá khác. Đo 23/09/2026."
+    },
+    "04_3_010_022": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "_blocked_cu": "Cần sản phẩm dùng giá tiêu chuẩn đã khai đơn giá chuẩn — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_gdv",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": false,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_ghiChu": "Mở 23/09/2026 — chỉ đọc/validate, chanGhi chặn mọi request ghi kho"
+    },
+    "04_3_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_gdv",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: điểm bán + SP giá tiêu chuẩn đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: điểm bán + SP giá tiêu chuẩn đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: điểm bán + SP giá tiêu chuẩn đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_020_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_gdv",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": false,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_ghiChu": "Mở 23/09/2026 — chỉ đọc/validate, chanGhi chặn mọi request ghi kho"
+    },
+    "04_3_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8."
+    },
+    "04_3_020_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [
+        "sku"
+      ],
+      "_blocked_cu": "Điểm bán không lập đơn đặt hàng NCC (chỉ có \"Phiếu đề xuất đặt hàng\"); PO nằm ở pod TCT. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_vai": "tct — điểm bán không có PO NCC (form không có ô Nhập từ); chạy ở vai có chức năng",
+      "_goBoi": "26/09/2026"
+    },
+    "04_3_020_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_020_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + tồn thật + BỘ 4 SẢN PHẨM theo 4 phương pháp giá vốn (MAC · FIFO · đích danh có serial · giá tiêu chuẩn) — seed bước 2, 4, 8",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Nút \"Huỷ phiếu\"/\"Điều chỉnh phiếu\" của phiếu nhập đã duyệt bị khoá: /adjustable trả NOT_SUPPLIER_IMPORT \"Chỉ huỷ được phiếu nhập kho từ nhà cung cấp\" — điểm bán không có phiếu nhập NCC. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8."
+    },
+    "04_3_020_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Nút \"Huỷ phiếu\"/\"Điều chỉnh phiếu\" của phiếu nhập đã duyệt bị khoá: /adjustable trả NOT_SUPPLIER_IMPORT \"Chỉ huỷ được phiếu nhập kho từ nhà cung cấp\" — điểm bán không có phiếu nhập NCC. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8. Thêm: kỳ vọng chưa chốt (xem báo cáo)."
+    },
+    "04_3_020_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Tiền điều kiện \"phiếu nhập từ NCC\" + công nợ NCC. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8."
+    },
+    "04_3_020_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Tiền điều kiện \"phiếu nhập từ NCC\" + công nợ NCC. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8."
+    },
+    "04_3_020_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + tồn thật + BỘ 4 SẢN PHẨM theo 4 phương pháp giá vốn (MAC · FIFO · đích danh có serial · giá tiêu chuẩn) — seed bước 2, 4, 8",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Điểm bán chỉ nhập tay được SP giá tiêu chuẩn: SP MAC/FIFO/đích danh \"Chưa có bảng giá\", ô số lượng bị khoá (isPriceMissing) vì không chọn được NCC. Không tạo được lần nhập thứ hai giá khác. Đo 23/09/2026."
+    },
+    "04_3_020_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + tồn thật + BỘ 4 SẢN PHẨM theo 4 phương pháp giá vốn (MAC · FIFO · đích danh có serial · giá tiêu chuẩn) — seed bước 2, 4, 8",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Điểm bán chỉ nhập tay được SP giá tiêu chuẩn: SP MAC/FIFO/đích danh \"Chưa có bảng giá\", ô số lượng bị khoá (isPriceMissing) vì không chọn được NCC. Không tạo được lần nhập thứ hai giá khác. Đo 23/09/2026."
+    },
+    "04_3_020_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + tồn thật + BỘ 4 SẢN PHẨM theo 4 phương pháp giá vốn (MAC · FIFO · đích danh có serial · giá tiêu chuẩn) — seed bước 2, 4, 8",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Điểm bán chỉ nhập tay được SP giá tiêu chuẩn: SP MAC/FIFO/đích danh \"Chưa có bảng giá\", ô số lượng bị khoá (isPriceMissing) vì không chọn được NCC. Không tạo được lần nhập thứ hai giá khác. Đo 23/09/2026."
+    },
+    "04_3_020_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_020_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_030_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Điểm bán seed không có SP KHÔNG-serial tồn 0 (mọi SP không-serial đều còn tồn; SP tồn 0 duy nhất là AUTO8_SP_DD quản lý serial). Kỳ vọng còn phụ thuộc cấu hình tồn âm — chưa chốt."
+    },
+    "04_3_030_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần SP đang tồn ÂM ở điểm bán seed — không có; kỳ vọng chưa chốt (tuỳ chính sách tồn âm)."
+    },
+    "04_3_030_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + tồn thật + BỘ 4 SẢN PHẨM theo 4 phương pháp giá vốn (MAC · FIFO · đích danh có serial · giá tiêu chuẩn) — seed bước 2, 4, 8",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: SP serial AUTO8_SP_DD tồn 0, không nhập được ở điểm bán (thiếu bảng giá)."
+    },
+    "04_3_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_040_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8."
+    },
+    "04_3_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [
+        "sku"
+      ],
+      "_blocked_cu": "Điểm bán không có đơn đặt hàng NCC. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_vai": "tct — điểm bán không có PO NCC (form không có ô Nhập từ); chạy ở vai có chức năng",
+      "_goBoi": "26/09/2026"
+    },
+    "04_3_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_3_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [
+        "sku"
+      ],
+      "_blocked_cu": "Cần đơn bán hàng đã hoàn trả (luồng 18_5 đổi trả) ở điểm bán seed — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026: tự dựng đơn bán + hoàn trả POS (helper 18_5)"
+    },
+    "04_3_050_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [
+        "sku"
+      ],
+      "_blocked_cu": "Cần đơn bán lấy từ nhiều lô rồi hoàn trả (18_5) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026: tự dựng đơn bán + hoàn trả POS (helper 18_5)"
+    },
+    "04_3_050_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Nút \"Huỷ phiếu\"/\"Điều chỉnh phiếu\" của phiếu nhập đã duyệt bị khoá: /adjustable trả NOT_SUPPLIER_IMPORT \"Chỉ huỷ được phiếu nhập kho từ nhà cung cấp\" — điểm bán không có phiếu nhập NCC. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8."
+    },
+    "04_3_050_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Nút \"Huỷ phiếu\"/\"Điều chỉnh phiếu\" của phiếu nhập đã duyệt bị khoá: /adjustable trả NOT_SUPPLIER_IMPORT \"Chỉ huỷ được phiếu nhập kho từ nhà cung cấp\" — điểm bán không có phiếu nhập NCC. Điểm bán seed không có phiếu nhập từ NCC: form nhập cấp điểm bán không có ô \"Nhập từ\" (NCC bị lọc bỏ), không vai nào lập tay phiếu nhập NCC; hàng NCC chỉ về kho TCT qua đơn đặt hàng (PO, phân hệ 13_3) rồi chuyển xuống. Đo 23/09/2026, làn 8. Thêm: kỳ vọng chưa chốt (xem báo cáo)."
+    },
+    "04_3_050_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": false,
+      "required": [
+        "sku"
+      ],
+      "_blocked_cu": "Không tìm thấy màn \"lịch sử lô\" trong vnpost-web (af8cda07): thẻ \"Thẻ kho\" theo SẢN PHẨM, không lọc theo lô. Cần user chỉ màn.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026: rà FE+report-service không có màn lịch sử lô — đo trên Thẻ kho"
+    },
+    "04_3_050_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maPhieu": "",
+        "maLo": "",
+        "soLuong": 0,
+        "giaNhap": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + tồn thật + BỘ 4 SẢN PHẨM theo 4 phương pháp giá vốn (MAC · FIFO · đích danh có serial · giá tiêu chuẩn) — seed bước 2, 4, 8",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần SP đang tồn ÂM — không có; kỳ vọng giá vốn sau bù âm chưa chốt."
+    },
+    "04_3_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_060_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_060_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_060_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_060_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần SP đang tồn ÂM ở kho xuất — không có; kỳ vọng chưa chốt."
+    },
+    "04_3_060_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "SP serial AUTO8_SP_DD tồn 0 ở kho xuất.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + tồn thật + BỘ 4 SẢN PHẨM theo 4 phương pháp giá vốn (MAC · FIFO · đích danh có serial · giá tiêu chuẩn) — seed bước 2, 4, 8",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026: tự nhập 3 serial ở TCT"
+    },
+    "04_3_060_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)",
+      "required": []
+    },
+    "04_3_060_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_060_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    },
+    "04_3_070_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được. Thêm: công nợ Tỉnh–TCT/điểm bán chưa có màn đối chiếu trong kịch bản."
+    },
+    "04_3_070_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được. Thêm: công nợ Tỉnh–TCT/điểm bán chưa có màn đối chiếu trong kịch bản."
+    },
+    "04_3_070_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_070_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI TỒN KHO / GIÁ VỐN / CÔNG NỢ thật. Cần điểm bán + kho dựng riêng cho test và bộ sản phẩm đủ 4 phương pháp tính giá (MAC/FIFO/đích danh/tiêu chuẩn) — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — điểm bán + kho + sản phẩm có SKU + tồn thật (seed bước 2, 4, 8)",
+      "_doLuc": "2026-09-23 làn 8",
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần kho HUB của Bưu điện tỉnh AUTO8_TINH có tồn + tồn SP seed ở kho TCT. Bộ chọn \"Chọn Điểm bán / Kho\" ở cấp AUTO8_TINH, thẻ \"Kho\" rỗng; kho TCT (DC/Kho tổng) không có SP AUTO8_*. Cần bước seed mới (tạo HUB tỉnh + tồn đầu kỳ) — chờ user duyệt vì tạo bản ghi không xoá được."
+    },
+    "04_3_080_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": ""
+      }
+    }
+  },
+  "_note": "Phân hệ 04_3 Nhập / xuất / chuyển kho — phân hệ GHI nặng nhất hệ thống. 🔴 Mọi case ghi đều chạm TỒN KHO, GIÁ VỐN và CÔNG NỢ; huỷ phiếu nhập là bút toán đảo theo Điều 27 Luật Kế toán, không hoàn tác được. Tất cả `allowMutation:false` và phần lớn `enabled:false` vì chưa có kho + bộ sản phẩm dựng riêng cho test."
+}

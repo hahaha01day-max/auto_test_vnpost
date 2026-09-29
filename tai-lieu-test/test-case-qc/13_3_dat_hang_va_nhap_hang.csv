@@ -1,0 +1,304 @@
+﻿,Chức năng,,ĐẶT HÀNG NHÀ CUNG CẤP VÀ NHẬP HÀNG,,,,,,,,
+,Mã Testcase,,13_3_dat_hang_va_nhap_hang,,,,,,,,
+,Tổng các tình huống kiểm thử,,98,,,,,,,,
+,Chưa thực hiện,,98,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,ĐẶT HÀNG NHÀ CUNG CẤP VÀ NHẬP HÀNG,,,,,,,,,,
+,010 — Tạo và gửi đơn đặt hàng nhà cung cấp,,,,,,,,,,
+13_3_010_001,Tạo phiếu đặt hàng NCC - mở form và validate rỗng,,"1. Truy cập đặt hàng nhà cung cấp
+2. Tạo phiếu đặt hàng NCC",,- Tạo phiếu đặt hàng thành công - Trạng thái phiếu là Đã gửi NCC,,,,,,
+13_3_010_002,Kiểm tra hiển thị màn hình với tạo phiếu đặt hàng trạng thái chờ duyệt,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái chờ duyệt/ đã duyệt
+5. Click Tạo phiếu đặt hàng NCC",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: - Có nút ""Lưu"" nút ""Hủy"", nút ""Quay lại"" và nút ""Gửi nhà cung cấp"", nút ""Lưu nháp"" - Hiển thị các khu vực: Thông tin chung, Thông tin khác, Danh sách hàng hóa. - Thông tin chung: Mã phiếu, Điểm bán, Drop down list Nhà cung cấp, Ghi chú, Ngày nhập dự kiến, Phiếu đề xuất nhập hàng - Thông tin khác: Tổng sản phẩm, Người tạo, Ngày tạo, hàng tặng kèm - Ô tìm kiếm sản phẩm - Danh sách sản phẩm với các cột: STT, Sản phẩm, Đơn vị, Số lượng, Mức giá, Đơn giá, VAT%, Thành tiền(sau VAT)",,,,,,
+13_3_010_003,Kiểm tra Tạo phiếu đặt hàng NCC,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái chờ duyệt/ đã duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Nhập thông tin
+7. Chọn Gửi nhà cung cấp",,- Hiển thị Tạo phiếu đặt hàng thành công! - Các phiếu vừa tách cập nhật trạng thái Đã gửi NCC,,,,,,
+13_3_010_004,Kiểm tra để trống danh sách sản phẩm,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái chờ duyệt/ đã duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Xoá danh sách sản phẩm
+7. Chọn Gửi nhà cung cấp",,Hiển thị ' Vui lòng thêm ít nhất 1 sản phẩm',,,,,,
+13_3_010_005,Kiểm tra chọn nhà cung cấp không cung cấp sản phẩm trong danh sách sản phẩm,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái chờ duyệt/ đã duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Nhập thông tin
+7. Chọn Gửi nhà cung cấp",,Hiển thị 'Một số sản phẩm không thuộc nhà cung cấp mới',,,,,,
+13_3_010_006,Kiểm tra loại loại bỏ sản phẩm không thuộc nhà cung cấp,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái chờ duyệt/ đã duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Nhập thông tin
+7. Chọn loại bỏ sản phẩm",,Loại bỏ các sản phẩm không thuộc nhà cung cấp vừa chọn,,,,,,
+13_3_010_007,Kiểm tra Bỏ trống trường bắt buộc,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái chờ duyệt/ đã duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Bỏ trống các trường thông tin
+7. Chọn loại bỏ sản phẩm",,Hiển thị text đỏ: - Nhập mã phiếu - Chọn điểm bán - Vui lòng chọn nhà cung cấp - Vui lòng chọn ngày nhập dự kiến,,,,,,
+13_3_010_008,Kiểm tra chỉnh sửa thông tin phiếu,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt
+5. Click Sửa phiếu
+6. Nhập thông tin
+7. Chọn Lưu",,- Cập nhật thông tin phiếu - Trạng thái phiếu là đã duyệt,,,,,,
+13_3_010_009,Kiểm tra lưu nháp phiếu,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt/ chờ duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Nhập thông tin
+7. Lưu nháp",,- Phiếu cập nhật trạng thái Bản nháp,,,,,,
+13_3_010_010,Kiểm tra nút huỷ,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt/ chờ duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Nhập thông tin
+7. Huỷ",,- Không cập nhật thông tin phiếu,,,,,,
+13_3_010_011,Kiểm tra lưu phiếu,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt/ chờ duyệt
+5. Click Tạo phiếu đặt hàng NCC
+6. Nhập thông tin
+7. Lưu",,- Phiếu cập nhật trạng thái Đã duyệt,,,,,,
+13_3_010_012,Kiểm tra danh sách phiếu đề xuất sau tạo đơn,"Vai `tct` đăng nhập, đang ở form tạo phiếu đặt hàng NCC","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng",,- Phiếu cập nhật trạng thái Đã đặt hàng - Sinh một phiếu ở Đặt hàng nhà cung cấp,,,,,,
+,030 — Theo dõi đơn và ghi nhận số lượng nhà cung cấp xác nhận,,,,,,,,,,
+13_3_030_001,Mở màn Đặt hàng NCC,,1. Truy cập đặt hàng nhà cung cấp,,"- Hiển thị đúng tiêu đề ""Đặt hàng nhà cung cấp"" - Hiển thị đầy đủ bộ lọc: Từ khóa, Trạng thái, Khoảng thời gian, Nhà cung cấp, Điểm bán/Kho - Hiển thị nút ""Tìm kiếm"", ""Xóa lọc"", ""Tạo đơn đặt hàng"" - Hiển thị danh sách phiếu đặt hàng gồm các cột: STT, Mã phiếu, Cửa hàng/Kho, Nhà cung cấp, Ngày gửi, Ngày nhập dự kiến, Trạng thái, Hành động - Dữ liệu không bị tràn hoặc lệch cột",,,,,,
+13_3_030_002,Xem chi tiết phiếu đặt hàng NCC khi có dữ liệu,,"1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xem chi tiết phiếu đặt hàng",,"- Hiển thị thông tin chung: Kho đặt hàng, Mã phiếu, Đã gửi NCC, Kho nhận hàng, Nhà cung cấp, Ngày nhập dự kiến, Phiếu đề xuất nhập hàng, Ghi chú, Trạng thái phiếu - Tổng giá trị đề xuất - Danh sách sản phẩm",,,,,,
+13_3_030_003,Tạo phiếu đặt hàng NCC nháp,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Tạo phiếu đặt hàng nháp",,- Tạo phiếu đặt hàng thành công - Trạng thái phiếu là Bản nháp,,,,,,
+13_3_030_004,Chỉnh sửa phiếu đặt hàng nháp,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chỉnh sửa phiếu đặt hàng nháp",,- Tạo phiếu đặt hàng với thông tin chỉnh sửa thành công - Trạng thái phiếu là Bản nháp,,,,,,
+13_3_030_005,Huỷ phiếu đặt hàng nháp,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Huỷ phiếu đặt hàng nháp",,- Huỷ phiếu đặt hàng thành công - Trạng thái phiếu là Đã huỷ,,,,,,
+13_3_030_006,Huỷ phiếu đặt hàng NCC chưa xác nhận,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Huỷ phiếu đặt hàng trạng thái Đã gửi NCC",,- Huỷ phiếu đặt hàng thành công - Trạng thái phiếu là Đã huỷ,,,,,,
+13_3_030_007,Kiểm tra in phiếu đặt hàng,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xem chi tiết phiếu
+3. In phiếu",,- Phiếu hiển thị dạng xem trước khi in,,,,,,
+13_3_030_008,Kiểm tra xác nhận phiếu đặt hàng,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Xem chi tiết phiếu
+3. Chọn NCC xác nhận",,- Phiếu chuyển trạng thái NCC xác nhận,,,,,,
+13_3_030_009,Kiểm tra nhập kho từ phiếu đặt hàng NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn phiếu trạng thái NCC xác nhận
+3. Chọn nhập kho",,"- Nhập kho thành công, ghi nhận số lượng nhập kho",,,,,,
+13_3_030_010,Kiểm tra nhập kho từ mã phiếu PO,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập Nhập kho
+2. Chọn nhập kho
+3. Tải mã phiếu PO
+4. Chọn nhập kho",,"- Nhập kho thành công, ghi nhận số lượng nhập kho - Hiển thị đúng thông tin từ phiếu PO",,,,,,
+13_3_030_011,Kiểm tra không cho sửa PO NCC xác nhận,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn chỉnh sửa PO NCC đã xác nhận",,- Ẩn button chỉnh sửa với trạng thái phiếu NCC đã xác nhận,,,,,,
+13_3_030_012,Kiểm tra tìm kiếm mã phiếu,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Nhập mã phiếu PO",,- Hiển thị phiếu có mã tương ứng,,,,,,
+13_3_030_013,Kiểm tra tìm kiếm ghi chú,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp",1. Truy cập đặt hàng nhà cung cấp,,- Hiển thị có ghi chú tương ứng,,,,,,
+13_3_030_014,Kiểm tra bộ lọc theo trạng thái,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp",1. Truy cập đặt hàng nhà cung cấp,,- Hiển thị danh sách các phiếu có trạng thái tương ứng,,,,,,
+13_3_030_015,Kiểm tra bộ lọc PO theo NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn từng trạng thái
+3. Ấn button tìm kiếm",,- Hiển thị danh sách là NCC đã chọn,,,,,,
+13_3_030_016,Kiểm tra lọc PO theo khoảng thời gian,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn khoảng thời gian
+3. Chọn tìm kiếm",,- Hiển thị các phiếu nằm trong khoảng thời gian đã chọn,,,,,,
+13_3_030_017,Kiểm tra Xoá bộ lọc,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xoá bộ lọc",,- Hiển thị tất cả phiếu,,,,,,
+13_3_030_018,Kiểm tra phân trang,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn phân trang",,- Hiển thị thứ tự phiếu tương ứng với phân trang,,,,,,
+13_3_030_019,Kiểm tra đặt hàng nhà cung cấp với sản phẩm có phân loại,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Đặt hàng NCC có sản phẩm phân loại",,- Đặt hàng thành công,,,,,,
+13_3_030_020,Kiểm tra nhận hàng số lượng khác dung sai,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn số lượng nhập kho sai dung sai",,- Ghi nhận mặc định số lượng cho phép với dung sai,,,,,,
+13_3_030_021,Kiểm tra chỉnh sửa giá sản phẩm,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chỉnh sửa giá khác so với bảng giá",,- Disable ô hiển thị giá sản phẩm,,,,,,
+13_3_030_022,"Kiểm tra đặt hàng nhà cung cấp với giá gốc, giá khuyến mãi, tặng hàng theo bảng giá NCC","Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn sản phẩm có cả phẩn giá gốc, giá khuyến mãi, tặng hàng theo bảng giá",,- Hiển thị đúng giá và số lượng tặng trong bảng giá,,,,,,
+13_3_030_023,Tạo phiếu đặt hàng NCC tại cấp Tỉnh,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Tỉnh đặt hàng NCC sản phẩm tự doanh",,- Đặt hàng thành công,,,,,,
+13_3_030_024,Phiếu đặt hàng sản phẩm tự doanh của tỉnh không hiển thị ở TCT,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Role cấp TCT tìm kiếm phiếu PO tỉnh tự tạo",,- Hiển thị danh sách trống,,,,,,
+13_3_030_025,Kiểm tra cấp tỉnh chỉ được đặt hàng sản phẩm tự doanh,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy Thêm/ Cập nhật sản phẩm NCC
+2. Role cấp tỉnh chọn sản phẩm map với NCC",,- Chỉ hiển thị danh sách sản phẩm tự doanh,,,,,,
+13_3_030_026,Kiểm tra không cho đặt hàng khi sản phẩm chưa có bảng giá map với NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn sản phẩm không map với NCC",,- Disable ô Gửi NCC,,,,,,
+13_3_030_027,Kiểm tra xuất trả hàng toàn phần NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xuất trả hàng NCC",,"- Xuất trả hàng thành công, trừ công nợ NCC",,,,,,
+13_3_030_028,Kiểm tra xuất trả hàng nhiều lần trong 1 đơn PO cho NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xuất trả hàng NCC",,"- Xuất trả hàng thành công, trừ công nợ NCC - Nếu phiếu còn hàng mới hiển thị danh sách sản phẩm còn hàng để trả",,,,,,
+13_3_030_029,Kiểm tra công nợ giữ TCT và NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập tài chính
+2. Hiển thị công nợ của phiếu vừa nhập hàng",,- Ghi nhận phiếu nhập hàng vào công nợ NCC,,,,,,
+13_3_030_030,Kiểm tra giao diện,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp",1. Truy cập đặt hàng nhà cung cấp,,"- Hiển thị đúng tiêu đề ""Đặt hàng nhà cung cấp"" - Hiển thị đầy đủ bộ lọc: Từ khóa, Trạng thái, Khoảng thời gian, Nhà cung cấp, Điểm bán/Kho - Hiển thị nút ""Tìm kiếm"", ""Xóa lọc"", ""Tạo đơn đặt hàng"" - Hiển thị danh sách phiếu đặt hàng gồm các cột: STT, Mã phiếu, Cửa hàng/Kho, Nhà cung cấp, Ngày gửi, Ngày nhập dự kiến, Trạng thái, Hành động - Dữ liệu không bị tràn hoặc lệch cột",,,,,,
+13_3_030_031,Tạo phiếu đặt hàng NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Tạo phiếu đặt hàng NCC",,- Tạo phiếu đặt hàng thành công - Trạng thái phiếu là Đã gửi NCC,,,,,,
+13_3_030_032,Tạo phiếu đặt hàng NCC nháp,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Tạo phiếu đặt hàng nháp",,- Tạo phiếu đặt hàng thành công - Trạng thái phiếu là Bản nháp,,,,,,
+13_3_030_033,Chỉnh sửa phiếu đặt hàng nháp,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chỉnh sửa phiếu đặt hàng nháp",,- Tạo phiếu đặt hàng với thông tin chỉnh sửa thành công - Trạng thái phiếu là Bản nháp,,,,,,
+13_3_030_034,Huỷ phiếu đặt hàng nháp,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Huỷ phiếu đặt hàng nháp",,- Huỷ phiếu đặt hàng thành công - Trạng thái phiếu là Đã huỷ,,,,,,
+13_3_030_035,Xem chi tiết phiếu đặt hàng,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xem chi tiết phiếu đặt hàng",,"- Hiển thị thông tin chung: Kho đặt hàng, Mã phiếu, Đã gửi NCC, Kho nhận hàng, Nhà cung cấp, Ngày nhập dự kiến, Phiếu đề xuất nhập hàng, Ghi chú, Trạng thái phiếu - Tổng giá trị đề xuất - Danh sách sản phẩm",,,,,,
+13_3_030_036,Huỷ phiếu đặt hàng NCC chưa xác nhận,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Huỷ phiếu đặt hàng trạng thái Đã gửi NCC",,- Huỷ phiếu đặt hàng thành công - Trạng thái phiếu là Đã huỷ,,,,,,
+13_3_030_037,Kiểm tra in phiếu đặt hàng,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xem chi tiết phiếu
+3. In phiếu",,- Phiếu hiển thị dạng xem trước khi in,,,,,,
+13_3_030_038,Kiểm tra xác nhận phiếu đặt hàng,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Xem chi tiết phiếu
+3. Chọn NCC xác nhận",,- Phiếu chuyển trạng thái NCC xác nhận,,,,,,
+13_3_030_039,Kiểm tra nhập kho từ phiếu đặt hàng NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn phiếu trạng thái NCC xác nhận
+3. Chọn nhập kho",,"- Nhập kho thành công, ghi nhận số lượng nhập kho",,,,,,
+13_3_030_040,Kiểm tra nhập kho từ mã phiếu PO,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập Nhập kho
+2. Chọn nhập kho
+3. Tải mã phiếu PO
+4. Chọn nhập kho",,"- Nhập kho thành công, ghi nhận số lượng nhập kho - Hiển thị đúng thông tin từ phiếu PO",,,,,,
+13_3_030_041,Kiểm tra không cho sửa PO NCC xác nhận,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn chỉnh sửa PO NCC đã xác nhận",,- Ẩn button chỉnh sửa với trạng thái phiếu NCC đã xác nhận,,,,,,
+13_3_030_042,Kiểm tra tìm kiếm mã phiếu,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Nhập mã phiếu PO",,- Hiển thị phiếu có mã tương ứng,,,,,,
+13_3_030_043,Kiểm tra tìm kiếm ghi chú,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp",1. Truy cập đặt hàng nhà cung cấp,,- Hiển thị có ghi chú tương ứng,,,,,,
+13_3_030_044,Kiểm tra bộ lọc theo trạng thái,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp",1. Truy cập đặt hàng nhà cung cấp,,- Hiển thị danh sách các phiếu có trạng thái tương ứng,,,,,,
+13_3_030_045,Kiểm tra bộ lọc PO theo NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn từng trạng thái
+3. Ấn button tìm kiếm",,- Hiển thị danh sách là NCC đã chọn,,,,,,
+13_3_030_046,Kiểm tra lọc PO theo khoảng thời gian,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn khoảng thời gian
+3. Chọn tìm kiếm",,- Hiển thị các phiếu nằm trong khoảng thời gian đã chọn,,,,,,
+13_3_030_047,Kiểm tra Xoá bộ lọc,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xoá bộ lọc",,- Hiển thị tất cả phiếu,,,,,,
+13_3_030_048,Kiểm tra phân trang,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn phân trang",,- Hiển thị thứ tự phiếu tương ứng với phân trang,,,,,,
+13_3_030_049,Kiểm tra đặt hàng nhà cung cấp với sản phẩm có phân loại,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Đặt hàng NCC có sản phẩm phân loại",,- Đặt hàng thành công,,,,,,
+13_3_030_050,Kiểm tra nhận hàng số lượng khác dung sai,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn số lượng nhập kho sai dung sai",,- Ghi nhận mặc định số lượng cho phép với dung sai,,,,,,
+13_3_030_051,Kiểm tra chỉnh sửa giá sản phẩm,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chỉnh sửa giá khác so với bảng giá",,- Disable ô hiển thị giá sản phẩm,,,,,,
+13_3_030_052,"Kiểm tra đặt hàng nhà cung cấp với giá gốc, giá khuyến mãi, tặng hàng theo bảng giá NCC","Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn sản phẩm có cả phẩn giá gốc, giá khuyến mãi, tặng hàng theo bảng giá",,- Hiển thị đúng giá và số lượng tặng trong bảng giá,,,,,,
+13_3_030_053,Tạo phiếu đặt hàng NCC tại cấp Tỉnh,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Tỉnh đặt hàng NCC sản phẩm tự doanh",,- Đặt hàng thành công,,,,,,
+13_3_030_054,Phiếu đặt hàng sản phẩm tự doanh của tỉnh không hiển thị ở TCT,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Role cấp TCT tìm kiếm phiếu PO tỉnh tự tạo",,- Hiển thị danh sách trống,,,,,,
+13_3_030_055,Kiểm tra cấp tỉnh chỉ được đặt hàng sản phẩm tự doanh,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy Thêm/ Cập nhật sản phẩm NCC
+2. Role cấp tỉnh chọn sản phẩm map với NCC",,- Chỉ hiển thị danh sách sản phẩm tự doanh,,,,,,
+13_3_030_056,Kiểm tra không cho đặt hàng khi sản phẩm chưa có bảng giá map với NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn sản phẩm không map với NCC",,- Disable ô Gửi NCC,,,,,,
+13_3_030_057,Kiểm tra xuất trả hàng toàn phần NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xuất trả hàng NCC",,"- Xuất trả hàng thành công, trừ công nợ NCC",,,,,,
+13_3_030_058,Kiểm tra xuất trả hàng nhiều lần trong 1 đơn PO cho NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập đặt hàng nhà cung cấp
+2. Chọn xuất trả hàng NCC",,"- Xuất trả hàng thành công, trừ công nợ NCC - Nếu phiếu còn hàng mới hiển thị danh sách sản phẩm còn hàng để trả",,,,,,
+13_3_030_059,Kiểm tra công nợ giữ TCT và NCC,"Vai `tct` đăng nhập, đang ở màn Đặt hàng nhà cung cấp","1. Truy cập tài chính
+2. Hiển thị công nợ của phiếu vừa nhập hàng",,- Ghi nhận phiếu nhập hàng vào công nợ NCC,,,,,,
+,"040 — Nhập hàng theo đơn đặt hàng, nhiều đợt",,,,,,,,,,
+13_3_040_001,Kiểm tra giao diện,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty",1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT,,"- Hiển thị title"" Đơn giao thẳng cần xác nhận"" - Ô tìm kiếm với hyperplace ""Tìm theo mã PO"" - Trạng thái phiếu: Xác nhận, Chờ xác nhận - Danh sách đơn cần duyệt với các cột thông tin: STT, Mã phiếu, Nhà cung cấp, Ngày nhập dự kiến, Tổng SL, SL nhận, Tổng tiền, Trạng thái, Hành động - Button Tải lại, Cài đặt hiển thị, Phóng to/ Thu nhỏ",,,,,,
+13_3_040_002,Kiểm tra tìm kiểm theo mã PO,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Nhập mã PO",,- Hiển thị danh sách phiếu PO có mã tương ứng,,,,,,
+13_3_040_003,Kiểm tra bộ lọc trạng thái phiếu,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn từng trạng thái",,- Hiển thị danh sách phiếu PO có trạng thái tương ứng,,,,,,
+13_3_040_004,Kiểm tra xem chi tiết phiếu PO,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu",,"- Hiển thị Thông tin chung, Thông tin khác, Danh sách sản phẩm",,,,,,
+13_3_040_005,Kiểm tra xác nhận phiếu đặt hàng,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công - Sinh một phiếu nhập kho, và 1 phiếu xuất chuyển kho của TCT cho Tỉnh",,,,,,
+13_3_040_006,Kiểm tra xác nhận phiếu đặt hàng sản phẩm MAC,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công, tính lại giá vốn khi nhập kho",,,,,,
+13_3_040_007,Kiểm tra xác nhận phiếu đặt hàng sản phẩm FIFO,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công, ghi nhận lô mới",,,,,,
+13_3_040_008,Kiểm tra xác nhận nhận hàng 1 phần,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công, ghi nhận đúng số lượng xác nhận",,,,,,
+13_3_040_009,Kiểm tra ghi nhận công nợ nội bộ giữa TCT và tỉnh,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập tài chính
+2. Hiển thị công nợ của phiếu vừa nhập hàng",,- Ghi nhận phiếu nhập kho vào công nợ nội bộ,,,,,,
+13_3_040_010,Kiểm tra không hiển thị phiếu tỉnh tự đặt hàng NCC,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Tìm phiếu Tỉnh tự đặt hàng NCC",,- Hiển thị danh sách trống,,,,,,
+13_3_040_011,Kiểm tra giao diện,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty",1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT,,"- Hiển thị title"" Đơn giao thẳng cần xác nhận"" - Ô tìm kiếm với hyperplace ""Tìm theo mã PO"" - Trạng thái phiếu: Xác nhận, Chờ xác nhận - Danh sách đơn cần duyệt với các cột thông tin: STT, Mã phiếu, Nhà cung cấp, Ngày nhập dự kiến, Tổng SL, SL nhận, Tổng tiền, Trạng thái, Hành động - Button Tải lại, Cài đặt hiển thị, Phóng to/ Thu nhỏ",,,,,,
+13_3_040_012,Kiểm tra tìm kiểm theo mã PO,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Nhập mã PO",,- Hiển thị danh sách phiếu PO có mã tương ứng,,,,,,
+13_3_040_013,Kiểm tra bộ lọc trạng thái phiếu,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn từng trạng thái",,- Hiển thị danh sách phiếu PO có trạng thái tương ứng,,,,,,
+13_3_040_014,Kiểm tra xem chi tiết phiếu PO,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu",,"- Hiển thị Thông tin chung, Thông tin khác, Danh sách sản phẩm",,,,,,
+13_3_040_015,Kiểm tra xác nhận phiếu đặt hàng,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công - Sinh một phiếu nhập kho, và 1 phiếu xuất chuyển kho của TCT cho Tỉnh",,,,,,
+13_3_040_016,Kiểm tra xác nhận phiếu đặt hàng sản phẩm MAC,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công, tính lại giá vốn khi nhập kho",,,,,,
+13_3_040_017,Kiểm tra xác nhận phiếu đặt hàng sản phẩm FIFO,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công, ghi nhận lô mới",,,,,,
+13_3_040_018,Kiểm tra xác nhận nhận hàng 1 phần,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Chọn xem chi tiết phiếu
+3. Chọn Xác nhận",,"- Nhập kho thành công, ghi nhận đúng số lượng xác nhận",,,,,,
+13_3_040_019,Kiểm tra ghi nhận công nợ nội bộ giữa TCT và tỉnh,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập tài chính
+2. Hiển thị công nợ của phiếu vừa nhập hàng",,- Ghi nhận phiếu nhập kho vào công nợ nội bộ,,,,,,
+13_3_040_020,Kiểm tra không hiển thị phiếu tỉnh tự đặt hàng NCC,"Vai `province` đăng nhập, đang ở màn Phiếu nhập hàng từ NCC thuộc Tổng công ty","1. Truy cập Phiếu nhập hàng từ NCC thuộc TCT
+2. Tìm phiếu Tỉnh tự đặt hàng NCC",,- Hiển thị danh sách trống,,,,,,
+,050 — Xác nhận đơn giao thẳng và chuyển tiếp về kho yêu cầu,,,,,,,,,,
+13_3_050_001,Kiểm tra hiển thị màn hình,"Vai `province` đăng nhập, đang ở phiếu đề xuất cần gửi Tổng công ty","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái chờ duyệt/ đã duyệt
+5. Click gửi lên TCT",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: - Có nút ""Xác nhận gửi"" nút ""Hủy"", nút ""X(Đóng)"" - Hiển thị Thông báo 'Hệ thống sẽ chuyển trạng thái phiếu hiện tại thành ""Đã gửi Tổng công ty"", và tạo phiếu mới để gửi lên Tổng công ty.' - Mã đề xuất TCT tự sinh - Dropdown list Điểm bán nhận hàng - Mô tả Chỉ dựng MỘT case ở đây (luật 2 của bàn giao); cột `Ma goc` mang cả hai mã.",,,,,,
+13_3_050_002,Kiểm tra Tạo phiếu Gửi lên tổng công ty,"Vai `province` đăng nhập, đang ở phiếu đề xuất cần gửi Tổng công ty","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt
+5. Click gửi lên TCT
+6. Nhập thông tin
+7. Xác nhận gửi",,- Hiển thị Gửi thành công! Chỉ dựng MỘT case ở đây (luật 2 của bàn giao); cột `Ma goc` mang cả hai mã.,,,,,,
+13_3_050_003,Kiểm tra để trống điểm bán nhận hàng,"Vai `province` đăng nhập, đang ở phiếu đề xuất cần gửi Tổng công ty","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt
+5. Click gửi lên TCT
+6. Bỏ trống điểm bán
+7. Xác nhận gửi",,Hiển thị ' Vui lòng chọn điểm bán' Chỉ dựng MỘT case ở đây (luật 2 của bàn giao); cột `Ma goc` mang cả hai mã.,,,,,,
+13_3_050_004,Kiểm tra danh sách điểm bán nhận hàng,"Vai `province` đăng nhập, đang ở phiếu đề xuất cần gửi Tổng công ty","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt
+5. Click gửi lên TCT
+6. Xem danh sách điểm bán",,Danh sách hiển thị là danh sách các HUB của tỉnh đang truy cập Chỉ dựng MỘT case ở đây (luật 2 của bàn giao); cột `Ma goc` mang cả hai mã.,,,,,,
+13_3_050_005,Kiểm tra để trống mã phiếu đề xuất TCT,"Vai `province` đăng nhập, đang ở phiếu đề xuất cần gửi Tổng công ty","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt
+5. Click gửi lên TCT
+6. Bỏ trống Mã phiếu đề xuất TCT
+7. Xác nhận gửi",,Sinh mã tự động cho phiếu Chỉ dựng MỘT case ở đây (luật 2 của bàn giao); cột `Ma goc` mang cả hai mã.,,,,,,
+13_3_050_006,Kiểm tra nút Huỷ,"Vai `province` đăng nhập, đang ở phiếu đề xuất cần gửi Tổng công ty","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu đề xuất trạng thái đã duyệt
+5. Click gửi lên TCT
+6. Chọn Huỷ",,"Không gửi phiếu lên TCT, trạng thái phiếu không đổi Chỉ dựng MỘT case ở đây (luật 2 của bàn giao); cột `Ma goc` mang cả hai mã.",,,,,,
+13_3_050_007,Kiểm tra Xem chi tiết phiếu đề xuất,"Vai `province` đăng nhập, đang ở phiếu đề xuất cần gửi Tổng công ty","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn xem chi tiết phiếu",,"Hiển thị đủ toàn bộ thông tin chung, danh sách sản phẩm, số lượng đề xuất, số lượng đã xác nhận và số lượng đã nhập kho của một phiếu cụ thể Chỉ dựng MỘT case ở đây (luật 2 của bàn giao); cột `Ma goc` mang cả hai mã.",,,,,,

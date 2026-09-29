@@ -1,0 +1,1243 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:10:49.278Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "form-bo-sung.shop.spec.js",
+      "file": "form-bo-sung.shop.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "20 · Form loyalty — validate bổ sung (vai shop, CHẶN GHI)",
+          "file": "form-bo-sung.shop.spec.js",
+          "line": 64,
+          "column": 6,
+          "specs": [
+            {
+              "title": "20_010_015 — Đặt ngày bắt đầu ở tương lai rồi bật công tắc",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "ngày",
+                      "description": "[\"26/09/2026\",\"\"]"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Không có quyền truy cập Ngày bắt đầu ở trong tương lai, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16173,
+                      "error": {
+                        "message": "Error: Vẫn gọi API ghi: PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: Vẫn gọi API ghi: PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:79:58",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                          "column": 58,
+                          "line": 79
+                        },
+                        "snippet": "  77 | \t\tghiChu('thông báo', loi.join(' | '));\n  78 | \t\texpect(loi.join(' | ')).toContain('Ngày bắt đầu ở trong tương lai, không thể kích hoạt chương trình');\n> 79 | \t\texpect(daGoi, `Vẫn gọi API ghi: ${daGoi.join(' ; ')}`).toEqual([]);\n     | \t\t                                                       ^\n  80 | \t});\n  81 |\n  82 | \ttest('20_010_016 — Đặt ngày kết thúc bằng hôm nay rồi bật công tắc', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                            "column": 58,
+                            "line": 79
+                          },
+                          "message": "Error: Vẫn gọi API ghi: PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  77 | \t\tghiChu('thông báo', loi.join(' | '));\n  78 | \t\texpect(loi.join(' | ')).toContain('Ngày bắt đầu ở trong tương lai, không thể kích hoạt chương trình');\n> 79 | \t\texpect(daGoi, `Vẫn gọi API ghi: ${daGoi.join(' ; ')}`).toEqual([]);\n     | \t\t                                                       ^\n  80 | \t});\n  81 |\n  82 | \ttest('20_010_016 — Đặt ngày kết thúc bằng hôm nay rồi bật công tắc', async ({ page }) => {\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:79:58"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:10:49.750Z",
+                      "annotations": [
+                        {
+                          "type": "ngày",
+                          "description": "[\"26/09/2026\",\"\"]"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Không có quyền truy cập Ngày bắt đầu ở trong tương lai, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-bddfc--tương-lai-rồi-bật-công-tắc-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-bddfc--tương-lai-rồi-bật-công-tắc-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-bddfc--tương-lai-rồi-bật-công-tắc-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-bddfc--tương-lai-rồi-bật-công-tắc-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                        "column": 58,
+                        "line": 79
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-c0661916da70ed5605ed",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 71,
+              "column": 2
+            },
+            {
+              "title": "20_010_016 — Đặt ngày kết thúc bằng hôm nay rồi bật công tắc",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "ngày",
+                      "description": "[\"25/09/2026\",\"25/09/2026\"]"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16087,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:90:17",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                          "column": 17,
+                          "line": 90
+                        },
+                        "snippet": "  88 | \t\tghiChu('thông báo', loi.join(' | '));\n  89 | \t\texpect(loi.join(' | ')).toContain('Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình');\n> 90 | \t\texpect(daGoi).toEqual([]);\n     | \t\t              ^\n  91 | \t});\n  92 |\n  93 | \ttest('20_010_017 — Chọn ngày kết thúc trước ngày bắt đầu', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                            "column": 17,
+                            "line": 90
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/campaign/edit-campaign/14\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  88 | \t\tghiChu('thông báo', loi.join(' | '));\n  89 | \t\texpect(loi.join(' | ')).toContain('Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình');\n> 90 | \t\texpect(daGoi).toEqual([]);\n     | \t\t              ^\n  91 | \t});\n  92 |\n  93 | \ttest('20_010_017 — Chọn ngày kết thúc trước ngày bắt đầu', async ({ page }) => {\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:90:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:11:06.566Z",
+                      "annotations": [
+                        {
+                          "type": "ngày",
+                          "description": "[\"25/09/2026\",\"25/09/2026\"]"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-19ac4-ng-hôm-nay-rồi-bật-công-tắc-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-19ac4-ng-hôm-nay-rồi-bật-công-tắc-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-19ac4-ng-hôm-nay-rồi-bật-công-tắc-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-19ac4-ng-hôm-nay-rồi-bật-công-tắc-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                        "column": 17,
+                        "line": 90
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-bdf0586bc00722550841",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 82,
+              "column": 2
+            },
+            {
+              "title": "20_010_017 — Chọn ngày kết thúc trước ngày bắt đầu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "ô ngày sau khi chọn ngược",
+                      "description": "25/09/2026 → 25/09/2026"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Không có quyền truy cập Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15543,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:11:23.317Z",
+                      "annotations": [
+                        {
+                          "type": "ô ngày sau khi chọn ngược",
+                          "description": "25/09/2026 → 25/09/2026"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Không có quyền truy cập Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-282bc-kết-thúc-trước-ngày-bắt-đầu-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-986f083d74151e820a4b",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 93,
+              "column": 2
+            },
+            {
+              "title": "20_010_023 — Tích ngành hàng nhưng để trống danh mục",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "thông báo",
+                      "description": "Vui lòng chọn danh mục hoặc combo"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 14888,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Bạn chưa chọn ngành hàng nào\"\u001b[39m\nReceived string:    \u001b[31m\"Vui lòng chọn danh mục hoặc combo\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Bạn chưa chọn ngành hàng nào\"\u001b[39m\nReceived string:    \u001b[31m\"Vui lòng chọn danh mục hoặc combo\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:117:27",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                          "column": 27,
+                          "line": 117
+                        },
+                        "snippet": "  115 | \t\tghiChu('thông báo', loi.join(' | '));\n  116 | \t\texpect(loi.join(' | ')).toContain('Vui lòng chọn danh mục hoặc combo');\n> 117 | \t\texpect(loi.join(' | ')).toContain('Bạn chưa chọn ngành hàng nào');\n      | \t\t                        ^\n  118 | \t\texpect(daGoi).toEqual([]);\n  119 | \t});\n  120 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                            "column": 27,
+                            "line": 117
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Bạn chưa chọn ngành hàng nào\"\u001b[39m\nReceived string:    \u001b[31m\"Vui lòng chọn danh mục hoặc combo\"\u001b[39m\n\n  115 | \t\tghiChu('thông báo', loi.join(' | '));\n  116 | \t\texpect(loi.join(' | ')).toContain('Vui lòng chọn danh mục hoặc combo');\n> 117 | \t\texpect(loi.join(' | ')).toContain('Bạn chưa chọn ngành hàng nào');\n      | \t\t                        ^\n  118 | \t\texpect(daGoi).toEqual([]);\n  119 | \t});\n  120 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:117:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:11:38.943Z",
+                      "annotations": [
+                        {
+                          "type": "thông báo",
+                          "description": "Vui lòng chọn danh mục hoặc combo"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-7c485-àng-nhưng-để-trống-danh-mục-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-7c485-àng-nhưng-để-trống-danh-mục-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-7c485-àng-nhưng-để-trống-danh-mục-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-7c485-àng-nhưng-để-trống-danh-mục-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                        "column": 27,
+                        "line": 117
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-b9c15e4ce2e8b18b8340",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 106,
+              "column": 2
+            },
+            {
+              "title": "20_010_024 — Đổi loại danh mục sau khi đã chọn danh mục",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "đã chọn",
+                      "description": "2"
+                    },
+                    {
+                      "type": "sau khi đổi loại",
+                      "description": "hộp xác nhận: 0 · ô danh mục: \"\""
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30518,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:11:54.836Z",
+                      "annotations": [
+                        {
+                          "type": "đã chọn",
+                          "description": "2"
+                        },
+                        {
+                          "type": "sau khi đổi loại",
+                          "description": "hộp xác nhận: 0 · ô danh mục: \"\""
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-ff70e-ục-sau-khi-đã-chọn-danh-mục-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-56c622ab208ce4742c7d",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 121,
+              "column": 2
+            },
+            {
+              "title": "20_010_025 — Chọn trùng một nhóm khách hàng hai lần",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "nhóm",
+                      "description": "Nhóm hạng điểm cho khách kim cương · dòng 1 → 1 · Không có quyền truy cập Không có quyền truy cập Nhóm đã tồn tại trong danh sách"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14943,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:12:25.525Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm",
+                          "description": "Nhóm hạng điểm cho khách kim cương · dòng 1 → 1 · Không có quyền truy cập Không có quyền truy cập Nhóm đã tồn tại trong danh sách"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-4ffa2-một-nhóm-khách-hàng-hai-lần-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-40328eef4f575e6ed4c5",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 149,
+              "column": 2
+            },
+            {
+              "title": "20_010_026 — Chọn Nhóm khách hàng nhưng để bảng trống",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "thông báo",
+                      "description": "Vui lòng chọn ít nhất một nhóm khách hàng | Không có quyền truy cập"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14597,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:12:40.482Z",
+                      "annotations": [
+                        {
+                          "type": "thông báo",
+                          "description": "Vui lòng chọn ít nhất một nhóm khách hàng | Không có quyền truy cập"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-f11a6-ch-hàng-nhưng-để-bảng-trống-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-42d24976874eba79de52",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 173,
+              "column": 2
+            },
+            {
+              "title": "20_010_027 — Xoá một nhóm khách hàng khỏi bảng đã chọn",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16271,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:12:55.084Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-48e6e-hách-hàng-khỏi-bảng-đã-chọn-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-932362887d3aa4dfcda5",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 185,
+              "column": 2
+            },
+            {
+              "title": "20_010_028 — Tìm nhóm khách hàng bằng chữ thường và không dấu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "tìm",
+                      "description": "\"nhom hang\" (từ \"Nhóm hạng điểm cho khách kim cương\") → n · 1 kết quả: Nhóm hạng điểm cho khách kim cương"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 14183,
+                      "error": {
+                        "message": "Error: Từ khoá không được gửi lên API\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"n\u001b[7mhom hang\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"n\"\u001b[39m",
+                        "stack": "Error: Từ khoá không được gửi lên API\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"n\u001b[7mhom hang\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"n\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:227:90",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                          "column": 90,
+                          "line": 227
+                        },
+                        "snippet": "  225 | \t\tconst kq = (await ds.allInnerTexts()).map(chuan);\n  226 | \t\tghiChu('tìm', `\"${tu}\" (từ \"${coDau}\") → ${new URL(r.url()).searchParams.get('keyword')} · ${kq.length} kết quả: ${kq.slice(0, 5).join(' · ')}`);\n> 227 | \t\texpect(new URL(r.url()).searchParams.get('keyword'), 'Từ khoá không được gửi lên API').toBe(tu);\n      | \t\t                                                                                       ^\n  228 | \t\texpect(kq, `Tìm không dấu \"${tu}\" không ra nhóm \"${coDau}\" (giới hạn tìm kiếm BE)`).toContain(coDau);\n  229 | \t});\n  230 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                            "column": 90,
+                            "line": 227
+                          },
+                          "message": "Error: Từ khoá không được gửi lên API\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"n\u001b[7mhom hang\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"n\"\u001b[39m\n\n  225 | \t\tconst kq = (await ds.allInnerTexts()).map(chuan);\n  226 | \t\tghiChu('tìm', `\"${tu}\" (từ \"${coDau}\") → ${new URL(r.url()).searchParams.get('keyword')} · ${kq.length} kết quả: ${kq.slice(0, 5).join(' · ')}`);\n> 227 | \t\texpect(new URL(r.url()).searchParams.get('keyword'), 'Từ khoá không được gửi lên API').toBe(tu);\n      | \t\t                                                                                       ^\n  228 | \t\texpect(kq, `Tìm không dấu \"${tu}\" không ra nhóm \"${coDau}\" (giới hạn tìm kiếm BE)`).toContain(coDau);\n  229 | \t});\n  230 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:227:90"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:13:11.359Z",
+                      "annotations": [
+                        {
+                          "type": "tìm",
+                          "description": "\"nhom hang\" (từ \"Nhóm hạng điểm cho khách kim cương\") → n · 1 kết quả: Nhóm hạng điểm cho khách kim cương"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-f2128-ằng-chữ-thường-và-không-dấu-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-f2128-ằng-chữ-thường-và-không-dấu-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-f2128-ằng-chữ-thường-và-không-dấu-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-f2128-ằng-chữ-thường-và-không-dấu-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                        "column": 90,
+                        "line": 227
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-b6504f4564e795eda656",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 210,
+              "column": 2
+            },
+            {
+              "title": "20_010_029 — Cuộn danh sách nhóm khách hàng để tải thêm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "request",
+                      "description": "[{\"page\":\"0\",\"size\":\"10\"},{\"page\":\"1\",\"size\":\"10\"},{\"page\":\"2\",\"size\":\"10\"},{\"page\":\"3\",\"size\":\"10\"},{\"page\":\"4\",\"size\":\"10\"}]"
+                    },
+                    {
+                      "type": "số nhóm",
+                      "description": "10 → 11"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18543,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:13:26.135Z",
+                      "annotations": [
+                        {
+                          "type": "request",
+                          "description": "[{\"page\":\"0\",\"size\":\"10\"},{\"page\":\"1\",\"size\":\"10\"},{\"page\":\"2\",\"size\":\"10\"},{\"page\":\"3\",\"size\":\"10\"},{\"page\":\"4\",\"size\":\"10\"}]"
+                        },
+                        {
+                          "type": "số nhóm",
+                          "description": "10 → 11"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-76079-nhóm-khách-hàng-để-tải-thêm-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-976720a8b4e9e41ced33",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 231,
+              "column": 2
+            },
+            {
+              "title": "20_040_011 — Hai thẻ loại tích điểm luôn hiện ở màn Cập nhật",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12360,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:13:44.768Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-0d724-ểm-luôn-hiện-ở-màn-Cập-nhật-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-60867372549b9a74cf11",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 255,
+              "column": 2
+            },
+            {
+              "title": "20_040_014 — Không có nút xoá chương trình trên màn hình",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18221,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:13:57.132Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-30f62--chương-trình-trên-màn-hình-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-708967fec7c19dbeb151",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 265,
+              "column": 2
+            },
+            {
+              "title": "20_030_008 — Đóng form khi đang khai phạm vi dở dang",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15802,
+                      "error": {
+                        "message": "Error: locator.check: Element is not visible\nCall log:\n\u001b[2m  - waiting for locator('.ant-drawer-open, .ant-modal-wrap:visible').last().locator('.ant-checkbox-input').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\" class=\"ant-checkbox-input\" id=\"noPointForDiscountedProduct\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n",
+                        "stack": "Error: locator.check: Element is not visible\nCall log:\n\u001b[2m  - waiting for locator('.ant-drawer-open, .ant-modal-wrap:visible').last().locator('.ant-checkbox-input').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\" class=\"ant-checkbox-input\" id=\"noPointForDiscountedProduct\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:294:40",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                          "column": 40,
+                          "line": 294
+                        },
+                        "snippet": "  292 | \t\tawait page.waitForTimeout(1_500);\n  293 | \t\tconst o = hop.locator('.ant-checkbox-input');\n> 294 | \t\tif (await o.count()) await o.first().check({ force: true });\n      | \t\t                                     ^\n  295 | \t\tawait hop.getByRole('button', { name: /Hủy/ }).first().click();\n  296 | \t\tawait page.waitForTimeout(1_000);\n  297 | \t\thop = await moFormCapNhat(page, 0);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                            "column": 40,
+                            "line": 294
+                          },
+                          "message": "Error: locator.check: Element is not visible\nCall log:\n\u001b[2m  - waiting for locator('.ant-drawer-open, .ant-modal-wrap:visible').last().locator('.ant-checkbox-input').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\" class=\"ant-checkbox-input\" id=\"noPointForDiscountedProduct\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\n\n  292 | \t\tawait page.waitForTimeout(1_500);\n  293 | \t\tconst o = hop.locator('.ant-checkbox-input');\n> 294 | \t\tif (await o.count()) await o.first().check({ force: true });\n      | \t\t                                     ^\n  295 | \t\tawait hop.getByRole('button', { name: /Hủy/ }).first().click();\n  296 | \t\tawait page.waitForTimeout(1_000);\n  297 | \t\thop = await moFormCapNhat(page, 0);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:294:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:14:15.360Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-2a6af-i-đang-khai-phạm-vi-dở-dang-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-2a6af-i-đang-khai-phạm-vi-dở-dang-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-2a6af-i-đang-khai-phạm-vi-dở-dang-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-2a6af-i-đang-khai-phạm-vi-dở-dang-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                        "column": 40,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-8ab3718167728003c083",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 286,
+              "column": 2
+            },
+            {
+              "title": "20_020_007 — Đặt ngày bắt đầu tương lai cho chương trình đổi điểm rồi bật công tắc",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "thông báo",
+                      "description": "Ngày bắt đầu ở trong tương lai, không thể kich hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15396,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/redeem-campaign/edit-campaign/5\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/redeem-campaign/edit-campaign/5\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:319:17",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                          "column": 17,
+                          "line": 319
+                        },
+                        "snippet": "  317 | \t\tghiChu('thông báo', loi.join(' | '));\n  318 | \t\texpect(loi.join(' | ')).toContain('Ngày bắt đầu ở trong tương lai, không thể kich hoạt chương trình');\n> 319 | \t\texpect(daGoi).toEqual([]);\n      | \t\t              ^\n  320 | \t});\n  321 |\n  322 | \ttest('20_020_009 — Đặt ngày kết thúc đã qua cho chương trình đổi điểm rồi bật công tắc', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                            "column": 17,
+                            "line": 319
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"PUT http://192.168.1.47:3200/__api/loyalty/redeem-campaign/edit-campaign/5\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  317 | \t\tghiChu('thông báo', loi.join(' | '));\n  318 | \t\texpect(loi.join(' | ')).toContain('Ngày bắt đầu ở trong tương lai, không thể kich hoạt chương trình');\n> 319 | \t\texpect(daGoi).toEqual([]);\n      | \t\t              ^\n  320 | \t});\n  321 |\n  322 | \ttest('20_020_009 — Đặt ngày kết thúc đã qua cho chương trình đổi điểm rồi bật công tắc', async ({ page }) => {\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js:319:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:14:31.744Z",
+                      "annotations": [
+                        {
+                          "type": "thông báo",
+                          "description": "Ngày bắt đầu ở trong tương lai, không thể kich hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-1abb9-h-đổi-điểm-rồi-bật-công-tắc-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-1abb9-h-đổi-điểm-rồi-bật-công-tắc-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-1abb9-h-đổi-điểm-rồi-bật-công-tắc-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-1abb9-h-đổi-điểm-rồi-bật-công-tắc-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/form-bo-sung.shop.spec.js",
+                        "column": 17,
+                        "line": 319
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-d622119a2a99bd2e54cb",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 305,
+              "column": 2
+            },
+            {
+              "title": "20_020_009 — Đặt ngày kết thúc đã qua cho chương trình đổi điểm rồi bật công tắc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "số ô ngày",
+                      "description": "1"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15170,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:14:47.775Z",
+                      "annotations": [
+                        {
+                          "type": "số ô ngày",
+                          "description": "1"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-d76f2-h-đổi-điểm-rồi-bật-công-tắc-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-6395070f280ee9468c8e",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 322,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "20 · Form TẠO MỚI (giả chuỗi chưa có chương trình, CHẶN GHI)",
+          "file": "form-bo-sung.shop.spec.js",
+          "line": 343,
+          "column": 6,
+          "specs": [
+            {
+              "title": "20_010_031 — Tắt công tắc khi đang TẠO MỚI chương trình tích điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "thẻ loại",
+                      "description": "tắt ⇒ ẩn: true · bật ⇒ hiện: true"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11002,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:15:03.022Z",
+                      "annotations": [
+                        {
+                          "type": "thẻ loại",
+                          "description": "tắt ⇒ ẩn: true · bật ⇒ hiện: true"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-d9bf3--MỚI-chương-trình-tích-điểm-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-c740038af0e4d9f25ae2",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 344,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T10:10:48.980Z",
+    "duration": 265086.96,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

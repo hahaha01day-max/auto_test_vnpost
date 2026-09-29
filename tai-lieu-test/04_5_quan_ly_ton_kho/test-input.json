@@ -1,0 +1,493 @@
+{
+  "cases": {
+    "04_5_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "tenSanPham": "",
+        "danhMuc": ""
+      }
+    },
+    "04_5_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "tenSanPham": "",
+        "danhMuc": ""
+      }
+    },
+    "04_5_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "tenSanPham": "",
+        "danhMuc": ""
+      }
+    },
+    "04_5_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "tenSanPham": "",
+        "danhMuc": ""
+      }
+    },
+    "04_5_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "tenSanPham": "",
+        "danhMuc": ""
+      }
+    },
+    "04_5_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "tenSanPham": "",
+        "danhMuc": ""
+      }
+    },
+    "04_5_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "tenSanPham": "",
+        "danhMuc": ""
+      }
+    },
+    "04_5_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      }
+    },
+    "04_5_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá kho, đổi kho mặc định hoặc lập phiếu trên kho vật lý. Kho đã phát sinh giao dịch không xoá được; đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá kho, đổi kho mặc định hoặc lập phiếu trên kho vật lý. Kho đã phát sinh giao dịch không xoá được; đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá kho, đổi kho mặc định hoặc lập phiếu trên kho vật lý. Kho đã phát sinh giao dịch không xoá được; đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_020_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      }
+    },
+    "04_5_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá kho, đổi kho mặc định hoặc lập phiếu trên kho vật lý. Kho đã phát sinh giao dịch không xoá được; đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_020_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá kho, đổi kho mặc định hoặc lập phiếu trên kho vật lý. Kho đã phát sinh giao dịch không xoá được; đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_020_008": {
+      "enabled": false,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "_blocked": "Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, \"Kho nhận\" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), \"Mở phiên kiểm kho\" tự lấy kho mặc định (đo 23–24/09/2026, làn 8) ⇒ không thao tác được trên kho vật lý thứ hai. Kỳ vọng còn chưa chốt (ẩn / hiện kèm nhãn / chọn được rồi báo lỗi).",
+      "_doLuc": "2026-09-24 làn 8"
+    },
+    "04_5_020_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá kho, đổi kho mặc định hoặc lập phiếu trên kho vật lý. Kho đã phát sinh giao dịch không xoá được; đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_020_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Kỳ vọng gốc để NGỎ: \"Xoá kho thành công - Số lượng còn lại trong kho ?\". Câu hỏi MẤT HÀNG — cần user quyết. Case còn GHI thật.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_020_011": {
+      "enabled": false,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": false,
+      "_blocked": "Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, \"Kho nhận\" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), \"Mở phiên kiểm kho\" tự lấy kho mặc định (đo 23–24/09/2026, làn 8) ⇒ không thao tác được trên kho vật lý thứ hai. Kỳ vọng gốc chép nhầm.",
+      "_doLuc": "2026-09-24 làn 8"
+    },
+    "04_5_020_012": {
+      "enabled": false,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": false,
+      "_blocked": "Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, \"Kho nhận\" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), \"Mở phiên kiểm kho\" tự lấy kho mặc định (đo 23–24/09/2026, làn 8) ⇒ không thao tác được trên kho vật lý thứ hai.",
+      "_doLuc": "2026-09-24 làn 8"
+    },
+    "04_5_020_013": {
+      "enabled": false,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": false,
+      "_blocked": "Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, \"Kho nhận\" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), \"Mở phiên kiểm kho\" tự lấy kho mặc định (đo 23–24/09/2026, làn 8) ⇒ không thao tác được trên kho vật lý thứ hai.",
+      "_doLuc": "2026-09-24 làn 8"
+    },
+    "04_5_020_014": {
+      "enabled": false,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": false,
+      "_blocked": "Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, \"Kho nhận\" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), \"Mở phiên kiểm kho\" tự lấy kho mặc định (đo 23–24/09/2026, làn 8) ⇒ không thao tác được trên kho vật lý thứ hai.",
+      "_doLuc": "2026-09-24 làn 8"
+    },
+    "04_5_020_015": {
+      "enabled": false,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": false,
+      "_blocked": "Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, \"Kho nhận\" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), \"Mở phiên kiểm kho\" tự lấy kho mặc định (đo 23–24/09/2026, làn 8) ⇒ không thao tác được trên kho vật lý thứ hai. Phần công nợ cùng đơn vị cần user xác nhận.",
+      "_doLuc": "2026-09-24 làn 8"
+    },
+    "04_5_020_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "tenKho": "AUTO TEST KHONG DUNG - Kho kiem thu"
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá kho, đổi kho mặc định hoặc lập phiếu trên kho vật lý. Kho đã phát sinh giao dịch không xoá được; đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_5_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "maKho": ""
+      },
+      "required": [
+        "sku"
+      ]
+    },
+    "04_5_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "maKho": ""
+      },
+      "required": [
+        "sku"
+      ]
+    },
+    "04_5_030_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "maKho": ""
+      },
+      "_doLuc": "2026-09-24 làn 8",
+      "_blocked_cu": "Thẻ \"Thẻ kho\" (vai shop, /inventory/import) mở ra RỖNG hoàn toàn — không ô lọc, không bảng (đo lại 24/09/2026 làn 8, xem 04_5_030_002 đang đỏ).",
+      "_goBoi": "26/09/2026: Thẻ kho vai shop đã có dữ liệu"
+    },
+    "04_5_030_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      },
+      "_doLuc": "2026-09-24 làn 8",
+      "_blocked_cu": "Thẻ \"Thẻ kho\" (vai shop, /inventory/import) mở ra RỖNG hoàn toàn — không ô lọc, không bảng (đo lại 24/09/2026 làn 8, xem 04_5_030_002 đang đỏ).",
+      "_goBoi": "26/09/2026: Thẻ kho vai shop đã có dữ liệu"
+    },
+    "04_5_030_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      },
+      "_doLuc": "2026-09-24 làn 8",
+      "_blocked_cu": "Thẻ \"Thẻ kho\" (vai shop, /inventory/import) mở ra RỖNG hoàn toàn — không ô lọc, không bảng (đo lại 24/09/2026 làn 8, xem 04_5_030_002 đang đỏ).",
+      "_goBoi": "26/09/2026: Thẻ kho vai shop đã có dữ liệu"
+    },
+    "04_5_030_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "maKho": ""
+      },
+      "_doLuc": "2026-09-24 làn 8",
+      "_blocked_cu": "Thẻ \"Thẻ kho\" (vai shop, /inventory/import) mở ra RỖNG hoàn toàn — không ô lọc, không bảng (đo lại 24/09/2026 làn 8, xem 04_5_030_002 đang đỏ).",
+      "_goBoi": "26/09/2026: Thẻ kho vai shop đã có dữ liệu"
+    },
+    "04_5_030_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "maKho": ""
+      },
+      "_doLuc": "2026-09-24 làn 8",
+      "_blocked_cu": "Thẻ \"Thẻ kho\" (vai shop, /inventory/import) mở ra RỖNG hoàn toàn — không ô lọc, không bảng (đo lại 24/09/2026 làn 8, xem 04_5_030_002 đang đỏ).",
+      "_goBoi": "26/09/2026: Thẻ kho vai shop đã có dữ liệu"
+    },
+    "04_5_030_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      },
+      "_doLuc": "2026-09-24 làn 8",
+      "_blocked_cu": "Thẻ \"Thẻ kho\" (vai shop, /inventory/import) mở ra RỖNG hoàn toàn — không ô lọc, không bảng (đo lại 24/09/2026 làn 8, xem 04_5_030_002 đang đỏ). (đã có phiên kiểm thừa/thiếu áp dụng hôm nay trên AUTO8_SP_FIFO).",
+      "_goBoi": "26/09/2026: Thẻ kho vai shop đã có dữ liệu"
+    },
+    "04_5_030_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      }
+    },
+    "04_5_030_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "maKho": ""
+      },
+      "_doLuc": "2026-09-24 làn 8",
+      "_blocked_cu": "Thẻ \"Thẻ kho\" (vai shop, /inventory/import) mở ra RỖNG hoàn toàn — không ô lọc, không bảng (đo lại 24/09/2026 làn 8, xem 04_5_030_002 đang đỏ). (đã có phiên kiểm thiếu).",
+      "_goBoi": "26/09/2026: Thẻ kho vai shop đã có dữ liệu"
+    },
+    "04_5_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "04_5_050_001": {
+      "enabled": false,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_blocked": "Case đăng nhập/phân quyền, trùng nghiệp vụ phân hệ 31 — cần user chốt giữ ở đâu (xem nhận xét tay)."
+    },
+    "04_5_050_002": {
+      "enabled": false,
+      "mutates": false,
+      "role": "province",
+      "data": {},
+      "_blocked": "Cùng lý do 04_5_050_001."
+    },
+    "04_5_050_003": {
+      "enabled": false,
+      "mutates": false,
+      "role": "ward",
+      "data": {},
+      "_blocked": "Cùng lý do 04_5_050_001; và chưa có tài khoản vai `ward` xác nhận trong .env.accounts."
+    },
+    "04_5_050_004": {
+      "enabled": false,
+      "mutates": false,
+      "role": "shop",
+      "data": {},
+      "_blocked": "Cùng lý do 04_5_050_001."
+    }
+  },
+  "_note": "Phân hệ 04_5 Quản lý tồn kho (Tổng quan kho · Thẻ kho · Quản lý kho hàng). 🔴 Nhóm 020 GHI: tạo/sửa/xoá kho, đổi kho mặc định. Nhóm 030 Thẻ kho là báo cáo ĐỌC nhưng đối chiếu số phải theo post−pre ở DW và biết ba bẫy đã gặp (thiếu FINAL đếm đôi · tồn đầu kỳ đếm hai lần · phiếu con kiểm kho vào thẻ kho)."
+}

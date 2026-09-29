@@ -1,0 +1,9 @@
+node_modules
+tool-data
+test-output
+**/test-output
+.auth
+.env
+.env.*
+!.env.example
+*.log

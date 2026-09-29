@@ -1,0 +1,583 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 154,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:15:40.847Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "form-bo-sung.shop.spec.js",
+      "file": "form-bo-sung.shop.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "20 · Form loyalty — validate bổ sung (vai shop, CHẶN GHI)",
+          "file": "form-bo-sung.shop.spec.js",
+          "line": 65,
+          "column": 6,
+          "specs": [
+            {
+              "title": "20_010_015 — Đặt ngày bắt đầu ở tương lai rồi bật công tắc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "ngày",
+                      "description": "[\"26/09/2026\",\"\"]"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Không có quyền truy cập Ngày bắt đầu ở trong tương lai, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15512,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:15:41.493Z",
+                      "annotations": [
+                        {
+                          "type": "ngày",
+                          "description": "[\"26/09/2026\",\"\"]"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Không có quyền truy cập Ngày bắt đầu ở trong tương lai, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-bddfc--tương-lai-rồi-bật-công-tắc-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-c0661916da70ed5605ed",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 72,
+              "column": 2
+            },
+            {
+              "title": "20_010_016 — Đặt ngày kết thúc bằng hôm nay rồi bật công tắc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "ngày",
+                      "description": "[\"25/09/2026\",\"25/09/2026\"]"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15346,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:15:57.128Z",
+                      "annotations": [
+                        {
+                          "type": "ngày",
+                          "description": "[\"25/09/2026\",\"25/09/2026\"]"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-19ac4-ng-hôm-nay-rồi-bật-công-tắc-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-bdf0586bc00722550841",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 83,
+              "column": 2
+            },
+            {
+              "title": "20_010_017 — Chọn ngày kết thúc trước ngày bắt đầu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "ô ngày sau khi chọn ngược",
+                      "description": "25/09/2026 → 25/09/2026"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Không có quyền truy cập Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14917,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:16:12.479Z",
+                      "annotations": [
+                        {
+                          "type": "ô ngày sau khi chọn ngược",
+                          "description": "25/09/2026 → 25/09/2026"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Không có quyền truy cập Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-282bc-kết-thúc-trước-ngày-bắt-đầu-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-986f083d74151e820a4b",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 94,
+              "column": 2
+            },
+            {
+              "title": "20_010_028 — Tìm nhóm khách hàng bằng chữ thường và không dấu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "tìm",
+                      "description": "\"nhom hang\" (từ \"Nhóm hạng điểm cho khách kim cương\") → nhom hang · 1 kết quả: Nhóm hạng điểm cho khách kim cương"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14456,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:16:27.402Z",
+                      "annotations": [
+                        {
+                          "type": "tìm",
+                          "description": "\"nhom hang\" (từ \"Nhóm hạng điểm cho khách kim cương\") → nhom hang · 1 kết quả: Nhóm hạng điểm cho khách kim cương"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-f2128-ằng-chữ-thường-và-không-dấu-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-b6504f4564e795eda656",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 211,
+              "column": 2
+            },
+            {
+              "title": "20_030_008 — Đóng form khi đang khai phạm vi dở dang",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "đã tích",
+                      "description": "1"
+                    },
+                    {
+                      "type": "phạm vi",
+                      "description": "trước: Chọn phạm vi cụ thể · mở lại: Chọn phạm vi cụ thể"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21251,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:16:41.864Z",
+                      "annotations": [
+                        {
+                          "type": "đã tích",
+                          "description": "1"
+                        },
+                        {
+                          "type": "phạm vi",
+                          "description": "trước: Chọn phạm vi cụ thể · mở lại: Chọn phạm vi cụ thể"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-2a6af-i-đang-khai-phạm-vi-dở-dang-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-8ab3718167728003c083",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 287,
+              "column": 2
+            },
+            {
+              "title": "20_020_007 — Đặt ngày bắt đầu tương lai cho chương trình đổi điểm rồi bật công tắc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "thông báo",
+                      "description": "Ngày bắt đầu ở trong tương lai, không thể kich hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15619,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:17:03.121Z",
+                      "annotations": [
+                        {
+                          "type": "thông báo",
+                          "description": "Ngày bắt đầu ở trong tương lai, không thể kich hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-1abb9-h-đổi-điểm-rồi-bật-công-tắc-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-d622119a2a99bd2e54cb",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 307,
+              "column": 2
+            },
+            {
+              "title": "20_020_009 — Đặt ngày kết thúc đã qua cho chương trình đổi điểm rồi bật công tắc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "số ô ngày",
+                      "description": "1"
+                    },
+                    {
+                      "type": "thông báo",
+                      "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14790,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:17:18.745Z",
+                      "annotations": [
+                        {
+                          "type": "số ô ngày",
+                          "description": "1"
+                        },
+                        {
+                          "type": "thông báo",
+                          "description": "Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/form-bo-sung.shop-20-·-For-d76f2-h-đổi-điểm-rồi-bật-công-tắc-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c149c6eea6ca791c936e-6395070f280ee9468c8e",
+              "file": "form-bo-sung.shop.spec.js",
+              "line": 324,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T10:15:40.351Z",
+    "duration": 113409.01999999999,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

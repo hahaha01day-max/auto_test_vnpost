@@ -1,0 +1,24 @@
+{'startTime': '2026-09-25T12:18:18.814Z', 'duration': 291167.76, 'expected': 7, 'skipped': 2, 'unexpected': 5, 'flaky': 0}
+
+ failed | 24_010_010 — Tìm với chữ hoa chữ thường và không dấu
+   ! TimeoutError: page.waitForResponse: Timeout 60000ms exceeded while waiting for event "response"
+
+ skipped | 24_010_017 — Đổi điểm bán khi đang ở trang 3
+   @ skip : Danh sách chỉ có 1 trang (vai điểm bán cũng KHÔNG có ô chọn điểm bán) — case cần vai trên điểm bán + > 3 trang.
+
+ skipped | 24_030_001 — Chi tiết công nợ nhân viên bung được lịch sử trả tiền
+   @ skip : Chi tiết nhân viên không có phiếu nào trong 30 ngày.
+
+ failed | 24_030_002 — Nhân viên làm ở một điểm bán thì ô cửa hàng không đổi được
+   ! TimeoutError: locator.innerText: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-select').filter({ hasText: /AUTO|Cửa hàng/ }).first() 
+
+ failed | 24_030_003 — Lọc theo trạng thái Còn nợ hoặc Đã thanh toán
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-select').filter({ hasText: 'Trạng thái' }).first() 
+
+ failed | 24_020_001 — Xuất Excel lấy đúng điều kiện đang hiển thị
+   @ xuất : 401 {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"} · params {"shopId":"68151"} · Không có quyền truy cập
+   ! Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 24_020_002 — Bộ lọc không ra dòng nào vẫn tạo tệp chỉ có tiêu đề
+   @ xuất : 401 {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"} · params {"shopId":"68151","keyword":"ZZZ_KHONG_CO_NHAN_VIEN"} · Không có quyền truy cập
+   ! Error: Tạo yêu cầu xuất lỗi (quyền EXPORT_TASK_EMPLOYEE_DEBT_GET không gán vai nào): {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"

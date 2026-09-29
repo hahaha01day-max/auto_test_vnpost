@@ -1,0 +1,153 @@
+{
+  "cases": {
+    "50_TT01_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "soLuong": 2
+      },
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT01_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT01_030": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT01_040": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT01_050": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT01_060": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT01_070": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT01_080": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "soLuong": 1
+      },
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_030": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_040": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_050": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_060": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_070": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_080": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_090": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    },
+    "50_TT02_100": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "required": []
+    }
+  },
+  "_note": "Phân hệ 50 — case TOÀN TRÌNH (user chốt 28/09/2026). Mỗi luồng một spec describe.serial, mỗi bước một case; bước nghiệp vụ dùng helper của phân hệ gốc."
+}

@@ -1,0 +1,23 @@
+{'startTime': '2026-09-25T14:46:48.183Z', 'duration': 182722.658, 'expected': 18, 'skipped': 9, 'unexpected': 1, 'flaky': 0}
+
+ failed | 30_030_005 — Tổng tiền giảm của các đơn bằng tiền giảm giá của chương trình
+   @ đo : bảng: {"n":0,"giam":0} · 1 đơn cộng giảm 10000 · DB ["26092568151Q06SQ","10000","10000"]
+   ! Error: Số hoá đơn áp dụng: báo cáo 0, DB có 1 đơn 26092568151Q06SQ  expect(received).toBe(expected) // Object.is equality  Expected: 1 Received: 0
+
+ skipped | 30_050_006 — Tìm chương trình không dấu
+
+ skipped | 30_010_001 — Báo cáo hiệu quả CTKM mở được và hiện thẻ tổng hợp
+
+ skipped | 30_010_002 — Nhận ra chương trình đang tiêu gần hết ngân sách
+
+ skipped | 30_020_001 — Lọc theo tiêu chí thu hẹp bảng và cập nhật thẻ tổng hợp
+
+ skipped | 30_020_002 — Nhiều tiêu chí cùng lúc là điều kiện AND
+
+ skipped | 30_030_001 — Chi tiết chương trình hiện mười chỉ số hiệu quả
+
+ skipped | 30_030_002 — Truy được từ chỉ số xuống hoá đơn tạo ra nó
+
+ skipped | 30_040_001 — Xuất báo cáo hiệu quả ra Excel giữ nguyên thứ tự cột
+
+ skipped | 30_060_001 — Vai tỉnh thấy số liệu CTKM của các điểm bán trực thuộc

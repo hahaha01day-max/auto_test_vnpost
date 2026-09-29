@@ -1,0 +1,40 @@
+{
+  "spec": {
+    "tests/khoa-kho-ghi.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/settings",
+        "/inventory/import",
+        "/inventory/transfer-warehouse"
+      ],
+      "fe": [
+        "src/features/shop/pages/settingPage/settingContents/StockFreezeSetting.jsx",
+        "src/features/shop/pages/settingPage/settingContents/StockFreezeDrawer.jsx",
+        "src/features/stockAlert/components/ProductUnitSearchSelector.jsx"
+      ]
+    },
+    "tests/cau-hinh-kho-validate.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/settings"
+      ],
+      "fe": [
+        "src/features/stockAlert/components/ExpiryAlertConfigTab.jsx",
+        "src/features/shop/pages/settingPage/settingContents/StockFreezeDrawer.jsx"
+      ]
+    },
+    "tests/gia-von-ban-am.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/chain/services/negativeStockPolicyApi.js",
+        "src/features/shop/pages/settingPage/settingContents/NegativeStockPolicySetting.jsx"
+      ]
+    }
+  }
+}

@@ -1,0 +1,215 @@
+﻿,Chức năng,,"GOM, TÁCH VÀ XỬ LÝ HÀNG TRẢ",,,,,,,,
+,Mã Testcase,,14_2_gom_tach_va_xu_ly_hang_tra,,,,,,,,
+,Tổng các tình huống kiểm thử,,108,,,,,,,,
+,Chưa thực hiện,,108,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,"GOM, TÁCH VÀ XỬ LÝ HÀNG TRẢ",,,,,,,,,,
+,010 — Gom nhiều phiếu đã duyệt thành một phiếu,,,,,,,,,,
+14_2_010_001,Ô chọn gom chỉ bật với phiếu Đã duyệt,Vai: province; danh sách có phiếu Đã duyệt và phiếu trạng thái khác,"1. Mở /inventory/stock-return-request;
+2. Quan sát ô tích ở đầu mỗi dòng",,"Chỉ dòng mang thẻ ""Đã duyệt"" tích được; mọi dòng khác có checkbox disabled",,,,,,
+14_2_010_002,Nút Gom phiếu hiện đúng số phiếu đang chọn,Vai: province; có ≥ 2 phiếu Đã duyệt,"1. Tích 2 phiếu Đã duyệt;
+2. Đọc nhãn nút gom",,"Nút hiện đúng ""Gom phiếu (2)""; tích thêm 1 phiếu thì đổi thành ""Gom phiếu (3)""",,,,,,
+14_2_010_003,Chọn ít hơn 2 phiếu thì nút Gom phiếu bị khoá,Vai: province; chỉ tích 1 phiếu Đã duyệt,"1. Tích đúng 1 phiếu;
+2. Quan sát nút gom",,"Nút ""Gom phiếu (1)"" ở trạng thái disabled",,,,,,
+14_2_010_004,Gọi API gom với ít hơn 2 phiếu bị chặn,Vai: province,1. Gọi POST /stock/v2/stock-return-request/consolidate với ids gồm 1 phần tử,,"Hệ thống trả lỗi nguyên văn ""Chọn ít nhất 2 phiếu để gom"". Giao diện khi bị ép bấm cũng cảnh báo ""Chọn ít nhất 2 phiếu Đã duyệt để gom"" (hai chuỗi KHÁC nhau)",,,,,,
+14_2_010_005,Gom hai id trùng nhau bị coi là một phiếu,Vai: province,"1. Gọi POST.../consolidate với ids = [X, X]",,"Hệ thống distinct trước khi đếm ⇒ trả lỗi ""Chọn ít nhất 2 phiếu để gom""",,,,,,
+14_2_010_006,Gom nhiều phiếu Đã duyệt thành một phiếu tổng,Vai: province; có ≥ 2 phiếu Đã duyệt trong phạm vi tỉnh,"1. Tích 2 phiếu Đã duyệt;
+2. Bấm ""Gom phiếu"";
+3. Bấm OK trong hộp ""Gom 2 phiếu Đã duyệt?""",,"Báo ""Đã gom phiếu""; sinh 1 phiếu tổng mới ở đầu danh sách; 2 phiếu nguồn đổi sang thẻ ""Đã gom phiếu""; tổng tiền phiếu tổng = tổng 2 phiếu nguồn; bỏ tích mọi dòng",,,,,,
+14_2_010_007,Ghi chú khi gom là tuỳ chọn,Vai: province; có ≥ 2 phiếu Đã duyệt,"1. Tích 2 phiếu;
+2. Bấm ""Gom phiếu"";
+3. Để trống ô ghi chú;
+4. Bấm OK",,"Gom thành công, không bị chặn (placeholder ghi rõ ""Ghi chú (tuỳ chọn)"")",,,,,,
+14_2_010_008,Gom phiếu chưa ở trạng thái Đã duyệt bị chặn,Vai: province,1. Gọi POST.../consolidate với 1 phiếu Chờ duyệt và 1 phiếu Đã duyệt,,"Hệ thống trả lỗi dạng ""Phiếu <mã> chưa ở trạng thái Đã duyệt — không gom được""",,,,,,
+14_2_010_009,Gom phiếu con hoặc phiếu tổng bị chặn,Vai: province; có phiếu con sinh từ tách và phiếu tổng đã gom,1. Gọi POST.../consolidate gồm một phiếu con (parentId != null) hoặc phiếu tổng (isConsolidated = 1),,"Hệ thống trả lỗi dạng ""Phiếu <mã> là phiếu con/phiếu tổng — không gom được""",,,,,,
+14_2_010_010,Cấp tỉnh không gom được phiếu của tỉnh khác,Vai: province; biết mã phiếu Đã duyệt thuộc tỉnh khác,1. Gọi POST.../consolidate gồm phiếu tỉnh khác,,"Hệ thống trả lỗi dạng ""Phiếu <mã> không thuộc phạm vi tỉnh của bạn""",,,,,,
+14_2_010_011,Gom phiếu khác chuỗi bị chặn,Vai: province; hai phiếu Đã duyệt thuộc hai chainId khác nhau,1. Gọi POST.../consolidate gồm hai phiếu đó,,"Hệ thống trả lỗi nguyên văn ""Các phiếu gom phải cùng chuỗi""",,,,,,
+14_2_010_012,Gom phiếu không còn sản phẩm hiệu lực bị chặn,Vai: province; phiếu Đã duyệt có mọi dòng SL duyệt = 0,1. Gom phiếu đó với một phiếu Đã duyệt khác cũng rỗng,,"Hệ thống trả lỗi nguyên văn ""Các phiếu gom không còn sản phẩm hiệu lực""",,,,,,
+14_2_010_013,Vai điểm bán không gom phiếu được,Vai: shop,"1. Mở /inventory/stock-return-request;
+2. Tìm nút Gom phiếu;
+3. Gọi thẳng POST.../consolidate",,"Không có nút ""Gom phiếu"" và không có ô tích ở đầu dòng; gọi API trả lỗi nguyên văn ""Chỉ cấp tỉnh/TCT được gom phiếu trả""",,,,,,
+14_2_010_014,Vai cấp xã không gom phiếu được,Vai: ward,"1. Mở /inventory/stock-return-request;
+2. Tìm nút Gom phiếu",,"Không có nút ""Gom phiếu""; gọi API trả ""Chỉ cấp tỉnh/TCT được gom phiếu trả""",,,,,,
+14_2_010_015,Đóng hộp xác nhận gom không gom gì,Vai: province; đã tích 2 phiếu,"1. Bấm ""Gom phiếu"";
+2. Bấm Huỷ trong hộp xác nhận",,"Không phát sinh POST consolidate; hai phiếu vẫn ở ""Đã duyệt""; ô tích vẫn còn nguyên",,,,,,
+14_2_010_016,Phiếu đã gom không thao tác được nữa,Vai: province; phiếu nguồn ở trạng thái Đã gom phiếu,"1. Mở menu ""Xử lý"" của phiếu nguồn",,"Cột Hành động chỉ còn nút ""Chi tiết""; không có menu ""Xử lý""",,,,,,
+14_2_010_017,Gom xong không tách ngược về phiếu cũ được,Vai: province; vừa gom 2 phiếu,1. Tìm chức năng huỷ gom / tách ngược trên cả phiếu tổng lẫn phiếu nguồn,,Không có chức năng nào hoàn tác việc gom.,,,,,,
+,020 — Tách phiếu theo nhà cung cấp,,,,,,,,,,
+14_2_020_001,Tách phiếu nhiều nhà cung cấp sinh ra phiếu con,Vai: province; phiếu Đã duyệt gồm hàng của ≥ 2 NCC,"1. Bấm ""Xử lý"" › ""Tách phiếu"";
+2. Bấm OK trong hộp ""Tách phiếu theo nhà cung cấp?""",,"Mở màn ""Kết quả tách phiếu"" liệt kê các phiếu con, mỗi phiếu kèm nhà cung cấp và tổng tiền; phiếu gốc đổi sang ""Đã tách phiếu""",,,,,,
+14_2_020_002,Mở thẳng chi tiết một phiếu con từ màn kết quả tách,Vai: province; vừa tách xong một phiếu,"1. Bấm ""Xem chi tiết"" trên một phiếu con",,Màn chi tiết của đúng phiếu con đó mở ra; drawer chi tiết phiếu gốc đã đóng trước đó,,,,,,
+14_2_020_003,Nội dung hộp xác nhận tách đổi theo cấp,Vai: province; phiếu Đã duyệt,"1. Mở hộp xác nhận tách bằng tài khoản cấp tỉnh;
+2. Lặp lại bằng tài khoản TCT",,"Cấp tỉnh: ""Hệ thống sẽ tách sản phẩm tự doanh theo NCC cấp tỉnh và tách riêng hàng Tổng công ty."" · Cấp TCT: ""Hệ thống sẽ tách các sản phẩm theo đúng nhà cung cấp ban đầu""",,,,,,
+14_2_020_004,"Phiếu chỉ một nhà cung cấp thì gán tại chỗ, không tạo phiếu con",Vai: province; phiếu Đã duyệt toàn hàng của cùng 1 NCC tỉnh,"1. Bấm ""Xử lý"" › ""Tách phiếu"";
+2. Bấm OK",,"KHÔNG mở màn ""Kết quả tách phiếu"". Báo dạng ""Phiếu chỉ có 1 nhà cung cấp — đã gán: <tên NCC>""; phiếu hiện tại được gán NCC và đổi sang ""Chưa trả hàng""",,,,,,
+14_2_020_005,Phiếu toàn hàng Tổng công ty chuyển thẳng sang Chưa gửi TCT,Vai: province; phiếu Đã duyệt toàn hàng TCT,"1. Bấm ""Xử lý"" › ""Tách phiếu"";
+2. Bấm OK",,"KHÔNG mở màn kết quả tách. Báo nguyên văn ""Phiếu chỉ gồm sản phẩm của Tổng công ty — đã chuyển 'Chưa gửi TCT'""; phiếu đổi sang thẻ ""Chưa gửi TCT""",,,,,,
+14_2_020_006,Phiếu con mang đúng hai loại nhãn theo nguồn hàng,Vai: province; phiếu Đã duyệt có cả hàng tự doanh và hàng TCT,"1. Tách phiếu;
+2. Đọc thẻ trạng thái của từng phiếu con",,"Phiếu con hàng tự doanh mang thẻ ""Chưa trả hàng""; phiếu con hàng Tổng công ty mang thẻ ""Chưa gửi TCT""",,,,,,
+14_2_020_007,Mã phiếu con bắt đầu bằng mã phiếu gốc,Vai: province; vừa tách xong một phiếu,"1. Gõ mã phiếu gốc vào ô ""Tìm theo mã phiếu"";
+2. Bấm ""Tìm kiếm""",,Kết quả gồm cả phiếu gốc và mọi phiếu con (mã phiếu con = mã gốc + đuôi số thứ tự),,,,,,
+14_2_020_008,Đóng nhầm màn Kết quả tách phiếu không mất gì,Vai: province; vừa tách xong,"1. Đóng màn ""Kết quả tách phiếu"" bằng dấu X;
+2. Tìm theo mã phiếu gốc trên danh sách",,"Mọi phiếu con vẫn có trên danh sách, không mất phiếu nào",,,,,,
+14_2_020_009,Tách phiếu chưa ở trạng thái Đã duyệt bị chặn,Vai: province; phiếu Chờ duyệt,1. Gọi POST /stock/v2/stock-return-request/<id>/split,,"Hệ thống trả lỗi nguyên văn ""Phiếu chưa ở trạng thái có thể tách""",,,,,,
+14_2_020_010,TCT tách được phiếu ở trạng thái Đã gửi TCT,Vai: tct; phiếu Đã gửi TCT,"1. Bấm ""Xử lý"" › ""Tách phiếu""",,"Tách thành công; phiếu gốc đổi sang ""TCT đã tách""",,,,,,
+14_2_020_011,Cấp tỉnh không tách được phiếu Đã gửi TCT,Vai: province; phiếu Đã gửi TCT,1. Gọi POST.../split,,"Hệ thống trả lỗi nguyên văn ""Phiếu chưa ở trạng thái có thể tách""",,,,,,
+14_2_020_012,Vai điểm bán và cấp xã không tách phiếu được,Vai: shop,"1. Mở menu ""Xử lý"" của phiếu Đã duyệt;
+2. Gọi thẳng POST.../split",,"Menu không có mục ""Tách phiếu""; gọi API trả lỗi nguyên văn ""Chỉ cấp tỉnh/TCT được tách phiếu""",,,,,,
+14_2_020_013,Cấp tỉnh không tách được phiếu của tỉnh khác,Vai: province; biết id phiếu Đã duyệt thuộc tỉnh khác,1. Gọi POST.../split,,"Hệ thống trả lỗi nguyên văn ""Phiếu không thuộc phạm vi tỉnh của bạn""",,,,,,
+14_2_020_014,Tách phiếu không có sản phẩm bị chặn,Vai: province; phiếu Đã duyệt không còn dòng hàng nào,1. Gọi POST.../split,,"Hệ thống trả lỗi nguyên văn ""Phiếu không có sản phẩm để tách""",,,,,,
+14_2_020_015,Phiếu đã tách không sửa và không huỷ được,Vai: province; phiếu ở trạng thái Đã tách phiếu,"1. Mở menu ""Xử lý"";
+2. Gọi POST.../cancel",,"Menu không có ""Sửa"" và không có ""Huỷ phiếu""/""Từ chối""; gọi cancel trả lỗi nguyên văn ""Không thể hủy phiếu đã xử lý/đã tách/đã gom""",,,,,,
+14_2_020_016,Đóng hộp xác nhận tách không tách gì,Vai: province; phiếu Đã duyệt,"1. Bấm ""Xử lý"" › ""Tách phiếu"";
+2. Bấm Huỷ trong hộp xác nhận",,"Không phát sinh POST split; phiếu vẫn ở ""Đã duyệt""",,,,,,
+14_2_020_017,Tách phiếu thất bại hiện thông báo của backend,Vai: province; phiếu Đã duyệt có dòng hàng mất truy xuất nguồn gốc,"1. Bấm ""Xử lý"" › ""Tách phiếu"";
+2. Bấm OK",,"Hiện thông báo lỗi lấy từ Hệ thống; khi Hệ thống không trả chuỗi thì hiện ""Không tách được phiếu""",,,,,,
+,030 — Nhập hàng tạm treo về kho tỉnh,,,,,,,,,,
+14_2_030_001,Nhập hàng tạm treo về kho tỉnh,"Vai: province; phiếu Đã duyệt chọn Tạm treo, chưa nhập kho lần nào","1. Bấm ""Xử lý"" › ""Nhập hàng về kho"";
+2. Chọn ""Kho nhận"";
+3. Bấm ""Nhập kho""",,"Báo ""Đã nhập hàng về kho tỉnh""; trên màn chi tiết mốc vòng đời đổi từ ""Chờ nhập kho về tỉnh"" sang ""Đã nhập kho về tỉnh"" kèm dấu tích xanh; tồn kho tỉnh tăng đúng phần đang treo",,,,,,
+14_2_030_002,Bỏ trống Kho nhận bị chặn,Vai: province; phiếu Đã duyệt đang treo hàng,"1. Mở ""Nhập hàng về kho"";
+2. Để trống ""Kho nhận"";
+3. Bấm ""Nhập kho""",,"Cảnh báo nguyên văn ""Vui lòng chọn kho nhận hàng""; không phát sinh POST receive-to-province",,,,,,
+14_2_030_003,Kho mặc định có chữ đánh dấu trong danh sách chọn,"Vai: province; đơn vị có ≥ 2 kho, 1 kho là mặc định","1. Mở ""Nhập hàng về kho"";
+2. Bung ô ""Chọn kho nhận hàng""",,"Kho mặc định có chữ ""(mặc định)"" sau tên; các kho khác không có",,,,,,
+14_2_030_004,Đơn vị chưa khai kho nào thì không nhập kho được,Vai: province; đơn vị chưa có kho nào trên hệ thống,"1. Bấm ""Xử lý"" › ""Nhập hàng về kho""",,"Danh sách ""Chọn kho nhận hàng"" rỗng nên không chọn được; bấm ""Nhập kho"" bị chặn với ""Vui lòng chọn kho nhận hàng""",,,,,,
+14_2_030_005,Nhập kho lần thứ hai cho cùng phiếu bị chặn,Vai: province; phiếu đã nhập về kho tỉnh rồi,"1. Mở menu ""Xử lý"";
+2. Gọi thẳng POST.../receive-to-province",,"Menu không còn mục ""Nhập hàng về kho""; gọi API trả lỗi nguyên văn ""Hàng của phiếu này đã được nhập về kho tỉnh"" (mã ERROR_RETURN_ALREADY_RECEIVED)",,,,,,
+14_2_030_006,Nhập kho phiếu chưa duyệt bị chặn,Vai: province; phiếu Chờ duyệt,1. Gọi POST.../receive-to-province,,"Hệ thống trả lỗi nguyên văn ""Chỉ nhập kho được phiếu đã duyệt và đang treo hàng"" (ERROR_RETURN_NOT_APPROVED)",,,,,,
+14_2_030_007,Nhập kho phiếu chưa khoá tồn bị chặn,Vai: province; phiếu Đã duyệt nhưng reserveStockInOutId = null,1. Gọi POST.../receive-to-province,,"Hệ thống trả lỗi nguyên văn ""Phiếu chưa khoá tồn ở kho điểm bán nên không có hàng đang treo"" (ERROR_RETURN_NOT_RESERVED)",,,,,,
+14_2_030_008,Nhập kho khi không còn hàng treo bị chặn,Vai: province; phiếu Đã duyệt đã trả hết hàng cho NCC,1. Gọi POST.../receive-to-province,,"Hệ thống trả lỗi nguyên văn ""Phiếu không còn hàng đang treo để nhập kho"" (ERROR_RETURN_NOTHING_TO_RECEIVE)",,,,,,
+14_2_030_009,Thiếu kho đích trong payload bị chặn,Vai: province; phiếu Đã duyệt đang treo hàng,1. Gọi POST.../receive-to-province với targetInventoryId = null,,"Hệ thống trả lỗi nguyên văn ""Thiếu shop nhận hàng hoặc kho đích"" (ERROR_PROVINCE_INVENTORY_REQUIRED)",,,,,,
+14_2_030_010,"Chỉ nhập phần hàng đang treo, không tính phần đã trả hoặc đã huỷ","Vai: province; phiếu đã trả NCC 3, đã huỷ 2, còn treo 5","1. Nhập hàng về kho;
+2. Đối chiếu số lượng trên phiếu nhập kho sinh ra",,"Phiếu IMPORT về kho tỉnh chỉ ghi 5 đơn vị, không gồm 3 đã trả và 2 đã huỷ",,,,,,
+14_2_030_011,Không cần tách phiếu trước mới nhập kho được,Vai: province; phiếu Đã duyệt chưa tách,"1. Mở menu ""Xử lý"" của phiếu Đã duyệt chưa tách",,"Mục ""Nhập hàng về kho"" có sẵn ngay ở trạng thái ""Đã duyệt"", không đòi tách trước",,,,,,
+14_2_030_012,Vai điểm bán và cấp xã không nhập kho tỉnh được,Vai: shop; phiếu Đã duyệt của chính điểm bán,"1. Mở menu ""Xử lý""",,"Menu không có mục ""Nhập hàng về kho""",,,,,,
+14_2_030_013,Đóng màn Nhập hàng về kho giữa chừng,Vai: province; phiếu Đã duyệt đang treo hàng,"1. Mở ""Nhập hàng về kho"";
+2. Chọn kho;
+3. Đóng bằng dấu X;
+4. Mở lại màn chi tiết",,"Mốc ""Chờ nhập kho về tỉnh"" vẫn xám; không phát sinh POST receive-to-province",,,,,,
+,"040 — Xử lý hàng chờ trả — trả nhà cung cấp, nhập lại kho, huỷ vỡ hỏng",,,,,,,,,,
+14_2_040_001,Menu Xử lý hiện đúng ba việc xử lý hàng,Vai: province; phiếu ở Chưa trả hàng hoặc Xử lý một phần,"1. Bấm ""Xử lý"" ở cột Hành động",,"Menu có đủ 3 mục ""Trả hàng NCC"", ""Nhập lại kho"", ""Huỷ vỡ hỏng""",,,,,,
+14_2_040_002,"Ba việc dùng chung bố cục, khác tiêu đề và nút chính",Vai: province; phiếu Chưa trả hàng,"1. Mở lần lượt ""Trả hàng NCC"", ""Nhập lại kho"", ""Huỷ vỡ hỏng""",,"Tiêu đề / nút chính lần lượt là ""Trả hàng nhà cung cấp""/""Trả hàng"" · ""Nhập lại kho""/""Nhập lại kho"" · ""Huỷ hàng vỡ hỏng""/""Xác nhận huỷ"". Bảng của cả ba đều có cột STT, Sản phẩm, Còn lại, SL xử lý, Serial",,,,,,
+14_2_040_003,Trả hàng cho nhà cung cấp tạo một đợt trả,Vai: province; phiếu còn số lượng chưa xử lý,"1. Mở ""Trả hàng NCC"";
+2. Nhập SL xử lý;
+3. Bấm ""Trả hàng""",,"Báo ""Xử lý thành công""; khối ""Các đợt trả nhà cung cấp"" có thêm 1 đợt mang thẻ ""Chờ NCC xác nhận""; cột ""Đã trả"" tăng và ""Còn lại"" giảm đúng số đã khai",,,,,,
+14_2_040_004,Nhập lại kho giữ hàng ở kho cấp đang xử lý,Vai: province; phiếu còn số lượng chưa xử lý,"1. Mở ""Nhập lại kho"";
+2. Nhập SL xử lý;
+3. Bấm ""Nhập lại kho""",,"Báo ""Xử lý thành công""; tồn kho mặc định của TỈNH tăng đúng số đã khai; tồn kho điểm bán KHÔNG đổi; cột ""Đã nhập lại"" tăng tương ứng",,,,,,
+14_2_040_005,Huỷ vỡ hỏng không nhập lại tồn kho,Vai: province; phiếu còn số lượng chưa xử lý,"1. Mở ""Huỷ vỡ hỏng"";
+2. Nhập SL xử lý;
+3. Bấm ""Xác nhận huỷ""",,"Báo ""Xử lý thành công""; cột ""Đã huỷ"" tăng, ""Còn lại"" giảm; KHÔNG kho nào tăng tồn; công nợ NCC không đổi",,,,,,
+14_2_040_006,Ba việc đều không trừ tồn kho lần nữa,"Vai: province; phiếu Chưa trả hàng, ghi lại tồn điểm bán trước khi xử lý","1. Ghi tồn điểm bán;
+2. Lần lượt trả NCC 3, nhập lại kho 1, huỷ 2;
+3. Đọc lại tồn điểm bán",,Tồn kho điểm bán KHÔNG đổi sau cả ba việc (hàng đã bị trừ ở phiếu xuất reserve lúc tỉnh duyệt),,,,,,
+14_2_040_007,Chia một phiếu cho cả ba việc,Vai: province; phiếu còn 10 đơn vị chưa xử lý,"1. Trả NCC 7;
+2. Huỷ vỡ hỏng 2;
+3. Nhập lại kho 1",,"Sau bước 1 và 2 phiếu ở ""Xử lý một phần""; sau bước 3 ""Còn lại"" = 0 và phiếu chuyển sang ""Đã xử lý xong""",,,,,,
+14_2_040_008,Không nhập số lượng dòng nào bị chặn,Vai: province; phiếu Chưa trả hàng,"1. Mở bất kỳ việc nào trong ba việc;
+2. Để mọi ô ""SL xử lý"" = 0;
+3. Bấm nút chính",,"Cảnh báo nguyên văn ""Vui lòng nhập số lượng xử lý cho ít nhất 1 sản phẩm""; không phát sinh POST",,,,,,
+14_2_040_009,SL xử lý vượt Còn lại không nhập được,Vai: province; dòng hàng Còn lại = 5,"1. Gõ 6 vào ô ""SL xử lý""",,"Ô tự chặn ở 5. Chặn bằng UI, không có thông báo",,,,,,
+14_2_040_010,Gọi API với SL xử lý vượt Còn lại bị chặn,Vai: province; dòng hàng Còn lại = 5,1. Gọi POST.../return-to-supplier với quantity = 6,,"Hệ thống trả lỗi dạng ""Vượt số lượng còn lại: yêu cầu 6, còn 5""",,,,,,
+14_2_040_011,SL xử lý bằng đúng Còn lại được chấp nhận,Vai: province; dòng hàng Còn lại = 5,"1. Nhập SL xử lý = 5;
+2. Bấm nút chính",,"Xử lý thành công; ""Còn lại"" của dòng đó về 0",,,,,,
+14_2_040_012,SL xử lý âm không nhập được,Vai: province; phiếu Chưa trả hàng,"1. Gõ ""-1"" vào ô ""SL xử lý""",,Ô giữ giá trị 0 (InputNumber min = 0),,,,,,
+14_2_040_013,Hàng serial phải khai đủ serial bằng SL xử lý,Vai: province; dòng hàng quản lý serial,"1. Nhập SL xử lý = 3;
+2. Chỉ chọn 2 serial;
+3. Bấm nút chính",,"Cảnh báo dạng: Sản phẩm ""<tên>"" quản lý serial: số serial phải bằng số lượng (3)",,,,,,
+14_2_040_014,Gọi API lệch số serial bị chặn ở backend,Vai: province; dòng hàng quản lý serial,1. Gọi POST.../dispose với quantity = 3 và 2 serial,,"Hệ thống trả lỗi dạng ""Số serial (2) phải bằng số lượng xử lý (3)""",,,,,,
+14_2_040_015,Dòng không có serial hiện dấu gạch ngang,Vai: province; phiếu có dòng hàng không quản lý serial,"1. Mở màn xử lý;
+2. Đọc cột ""Serial"" của dòng đó",,"Cột Serial hiện ""--"", không có ô nhập",,,,,,
+14_2_040_016,Xử lý một phần chuyển phiếu sang trạng thái tương ứng,Vai: province; phiếu Chưa trả hàng còn 10 đơn vị,"1. Trả NCC 4;
+2. Đọc thẻ trạng thái phiếu",,"Phiếu đổi sang thẻ ""Xử lý một phần""; ""Còn lại"" = 6",,,,,,
+14_2_040_017,Xử lý hết số lượng chuyển phiếu sang Đã xử lý xong,Vai: province; phiếu còn 6 đơn vị,"1. Trả NCC đủ 6;
+2. Đọc thẻ trạng thái phiếu",,"Phiếu đổi sang thẻ ""Đã xử lý xong""; menu ""Xử lý"" không còn ba việc xử lý hàng",,,,,,
+14_2_040_018,Xử lý phiếu con chưa gắn nhà cung cấp bị chặn,Vai: province; phiếu con chưa có supplierId,1. Gọi POST.../return-to-supplier,,"Hệ thống trả lỗi nguyên văn ""Phiếu con chưa gắn nhà cung cấp""",,,,,,
+14_2_040_019,Xử lý phiếu chưa ở trạng thái cho phép bị chặn,Vai: province; phiếu Đã duyệt chưa tách,1. Gọi POST.../return-to-supplier,,"Hệ thống trả lỗi nguyên văn ""Phiếu con chưa ở trạng thái xử lý được""",,,,,,
+14_2_040_020,Gửi danh sách item rỗng bị chặn,Vai: province; phiếu Chưa trả hàng,1. Gọi POST.../restock với items = [],,"Hệ thống trả lỗi nguyên văn ""Thiếu danh sách item xử lý""",,,,,,
+14_2_040_021,Gửi itemId không thuộc phiếu bị chặn,Vai: province; phiếu Chưa trả hàng,1. Gọi POST.../dispose với itemId của phiếu khác,,"Hệ thống trả lỗi nguyên văn ""Item không thuộc phiếu""",,,,,,
+14_2_040_022,Gửi item thiếu số lượng bị chặn,Vai: province; phiếu Chưa trả hàng,1. Gọi POST.../restock với item không có quantity,,"Hệ thống trả lỗi nguyên văn ""Item xử lý không hợp lệ""",,,,,,
+14_2_040_023,Vai điểm bán không xử lý hàng chờ trả được,Vai: shop; phiếu Chưa trả hàng của điểm bán mình,"1. Mở menu ""Xử lý""",,"Menu không có ba mục ""Trả hàng NCC"", ""Nhập lại kho"", ""Huỷ vỡ hỏng""",,,,,,
+14_2_040_024,Đóng màn xử lý giữa chừng không ghi gì,Vai: province; phiếu Chưa trả hàng,"1. Mở ""Trả hàng NCC"";
+2. Nhập SL xử lý;
+3. Đóng bằng dấu X;
+4. Mở lại chi tiết phiếu",,"Cột ""Đã trả"" và ""Còn lại"" không đổi; không sinh đợt trả nào",,,,,,
+14_2_040_025,Ma trận trạng thái phiếu và ba việc xử lý,Vai: province; có phiếu ở đủ các trạng thái,"1. Với từng trạng thái Đã duyệt, Đã tách phiếu, Chưa trả hàng, Chưa gửi TCT, Xử lý một phần, Đã xử lý xong, Đã gom phiếu, Từ chối: mở menu ""Xử lý""",,"Ba việc xử lý hàng CHỈ hiện ở ""Chưa trả hàng"" và ""Xử lý một phần""; các trạng thái còn lại không có",,,,,,
+,050 — Gửi phiếu hàng Tổng công ty lên Tổng công ty,,,,,,,,,,
+14_2_050_001,Gửi phiếu hàng Tổng công ty lên TCT,Vai: province; phiếu mang thẻ Chưa gửi TCT,"1. Bấm ""Xử lý"" › ""Gửi lên TCT"";
+2. Bấm OK trong hộp ""Gửi phiếu lên Tổng công ty?""",,"Báo ""Đã gửi lên TCT""; phiếu đổi sang thẻ ""Đã gửi TCT""; trên dải vòng đời mốc ""Gửi lên Tổng công ty"" chuyển sang dấu tích xanh",,,,,,
+14_2_050_002,Phiếu đã gửi TCT không gửi lại được,Vai: province; phiếu mang thẻ Đã gửi TCT,"1. Mở menu ""Xử lý"";
+2. Gọi thẳng POST.../send-to-tct",,"Menu không còn mục ""Gửi lên TCT""; gọi API trả lỗi nguyên văn ""Chỉ gửi TCT được phiếu con hàng TCT (Chưa gửi TCT)""",,,,,,
+14_2_050_003,Phiếu hàng tự doanh không có mục Gửi lên TCT,Vai: province; phiếu mang thẻ Chưa trả hàng,"1. Mở menu ""Xử lý""",,"Menu có ba việc xử lý hàng nhưng KHÔNG có ""Gửi lên TCT""",,,,,,
+14_2_050_004,Tỉnh hết quyền thao tác sau khi gửi lên TCT,Vai: province; phiếu vừa gửi lên TCT,"1. Xem cột ""Hành động"" của dòng phiếu đó",,"Chỉ còn nút ""Chi tiết"", không còn menu ""Xử lý""",,,,,,
+14_2_050_005,Gửi lên TCT không làm hàng di chuyển,"Vai: province; phiếu Chưa gửi TCT, hàng chưa nhập kho tỉnh","1. Ghi lại tồn kho tỉnh;
+2. Gửi phiếu lên TCT;
+3. Đọc lại tồn kho tỉnh",,Tồn kho tỉnh KHÔNG đổi khi hàng chưa nhập về kho tỉnh — đây chỉ là chuyển quyền xử lý chứng từ,,,,,,
+14_2_050_006,Hàng đang nằm kho tỉnh thì gửi TCT phải xuất khỏi kho tỉnh,Vai: province; phiếu Chưa gửi TCT và ĐÃ nhập về kho tỉnh,"1. Ghi lại tồn kho tỉnh;
+2. Gửi phiếu lên TCT;
+3. Đọc lại tồn kho tỉnh",,"Tồn kho tỉnh GIẢM đúng phần còn lại của phiếu (Hệ thống sinh phiếu xuất bàn giao, tránh tồn ảo).",,,,,,
+14_2_050_007,Không xác định được đơn vị nhập hàng thì chặn gửi TCT,Vai: province; phiếu có dòng hàng mất truy xuất nguồn gốc hoặc thuộc nhiều đơn vị nhập,1. Gọi POST.../send-to-tct,,"Hệ thống trả lỗi nguyên văn ""Không xác định được đơn vị đã nhập lô hàng từ nhà cung cấp (truy xuất nguồn gốc thất bại hoặc các dòng hàng thuộc nhiều đơn vị nhập khác nhau)"" (ERROR_RETURN_ORIGIN_SHOP_NOT_FOUND)",,,,,,
+14_2_050_008,Phiếu không còn hàng thì chặn gửi TCT,Vai: province; phiếu Chưa gửi TCT đã xử lý hết số lượng,1. Gọi POST.../send-to-tct,,"Hệ thống trả lỗi nguyên văn ""Phiếu không còn hàng để gửi lên Tổng công ty"" (ERROR_RETURN_NOTHING_TO_SEND)",,,,,,
+14_2_050_009,Không xác định được kho tỉnh đang giữ hàng thì chặn,Vai: province; phiếu đã nhập kho tỉnh nhưng mất tham chiếu kho giữ,1. Gọi POST.../send-to-tct,,"Hệ thống trả lỗi nguyên văn ""Không xác định được kho tỉnh đang giữ hàng của phiếu"" (ERROR_RETURN_HOLDER_NOT_FOUND)",,,,,,
+14_2_050_010,Đóng hộp xác nhận gửi TCT không gửi gì,Vai: province; phiếu Chưa gửi TCT,"1. Bấm ""Xử lý"" › ""Gửi lên TCT"";
+2. Bấm Huỷ",,"Không phát sinh POST send-to-tct; phiếu vẫn ở ""Chưa gửi TCT""",,,,,,
+14_2_050_011,Gửi TCT thất bại hiện thông báo backend,Vai: province; phiếu Chưa gửi TCT thiếu điều kiện,"1. Bấm ""Xử lý"" › ""Gửi lên TCT"";
+2. Bấm OK",,"Hiện thông báo lỗi của Hệ thống; khi Hệ thống không trả chuỗi thì hiện ""Không gửi được""",,,,,,
+,060 — Theo dõi đợt trả và xử lý khi nhà cung cấp từ chối,,,,,,,,,,
+14_2_060_001,Khối Các đợt trả nhà cung cấp hiện đủ thông tin mỗi đợt,Vai: province; phiếu đã phát sinh ≥ 1 đợt trả,"1. Mở Chi tiết phiếu;
+2. Cuộn xuống khối ""Các đợt trả nhà cung cấp""",,"Mỗi đợt là một khung riêng ghi ""Đợt #<id>"", thẻ trạng thái, dòng ""Giá trị"" và dòng ""Ngày tạo"" định dạng DD/MM/YYYY HH:mm",,,,,,
+14_2_060_002,Phiếu chưa có đợt trả hiện trạng thái rỗng,Vai: province; phiếu chưa bấm Trả hàng NCC lần nào,"1. Mở Chi tiết phiếu;
+2. Đọc khối đợt trả",,"Hiện khối rỗng với dòng ""Chưa có đợt trả""",,,,,,
+14_2_060_003,Ghi nhận nhà cung cấp đã nhận hàng,Vai: province; có đợt trả mang thẻ Chờ NCC xác nhận,"1. Bấm ""NCC xác nhận"" trên đợt đó;
+2. Bấm OK trong hộp ""Xác nhận NCC đã nhận hàng đợt này?""",,"Báo ""Đã xác nhận đợt trả""; đợt đổi sang thẻ ""Chờ đối soát hoá đơn"" màu cam",,,,,,
+14_2_060_004,Công nợ NCC chưa đổi khi đợt còn Chờ NCC xác nhận,"Vai: province; vừa bấm Trả hàng NCC, đợt ở Chờ NCC xác nhận","1. Ghi lại công nợ NCC;
+2. Mở khối đợt trả xác nhận đợt vẫn ở ""Chờ NCC xác nhận"";
+3. Đọc lại công nợ NCC",,"Công nợ NCC KHÔNG đổi. Công nợ chỉ ghi giảm khi bấm ""NCC xác nhận"", không phải lúc bấm ""Trả hàng""",,,,,,
+14_2_060_005,Nhãn Chờ đối soát hoá đơn nghĩa là công nợ chưa ghi giảm,Vai: province; đợt trả đã được NCC xác nhận,"1. Đọc thẻ của đợt;
+2. Đọc công nợ NCC",,"Thẻ là ""Chờ đối soát hoá đơn"" màu cam và công nợ NCC CHƯA được ghi giảm (chờ hoá đơn điều chỉnh chốt). Chỉ khi đợt sang ""Đã xử lý xong"" công nợ mới giảm",,,,,,
+14_2_060_006,Ghi nhận nhà cung cấp từ chối đợt trả,Vai: province; đợt trả ở Chờ NCC xác nhận,"1. Bấm ""NCC từ chối"";
+2. Gõ lý do;
+3. Bấm OK",,"Báo ""Đã ghi nhận NCC từ chối — chờ quyết định xử lý""; đợt đổi sang thẻ ""NCC từ chối — chờ xử lý"" màu cam; lý do hiện trong khung đợt dạng ""Lý do từ chối: <nội dung>""",,,,,,
+14_2_060_007,Lý do từ chối đợt trả là TUỲ CHỌN,Vai: province; đợt trả ở Chờ NCC xác nhận,"1. Bấm ""NCC từ chối"";
+2. Để trống ô lý do;
+3. Bấm OK",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+14_2_060_008,Cụm nút quyết định ở cấp tỉnh có ba lựa chọn,"Vai: province; đợt trả bị NCC từ chối, rejectStage = BUU_DIEN_TINH, hàng CHƯA nhập kho tỉnh","1. Mở khối đợt trả;
+2. Đọc cụm nút ở góc dưới bên phải khung đợt",,"Đủ 3 nút: ""Huỷ hàng"" (đỏ), ""Nhập kho tỉnh"", ""Hoàn về điểm bán"" (nút chính)",,,,,,
+14_2_060_009,Cụm nút quyết định ở cấp TCT khác cấp tỉnh,"Vai: tct; đợt trả bị từ chối, rejectStage = TONG_CONG_TY","1. Mở khối đợt trả;
+2. Đọc cụm nút",,"Đủ 3 nút: ""Huỷ hàng"" (đỏ), ""Nhập kho TCT"", ""Hoàn về tỉnh"" (nút chính) — không có ""Hoàn về điểm bán""",,,,,,
+14_2_060_010,Nút Hoàn về điểm bán biến mất khi hàng đã nhập kho tỉnh,"Vai: province; đợt trả bị từ chối, phiếu ĐÃ nhập về kho tỉnh","1. Mở khối đợt trả;
+2. Đọc cụm nút",,"Chỉ còn 2 nút ""Huỷ hàng"" và ""Nhập kho tỉnh""; nút ""Hoàn về điểm bán"" bị ẩn",,,,,,
+14_2_060_011,Gọi API Hoàn về điểm bán khi hàng đã ở kho tỉnh bị chặn,"Vai: province; đợt bị từ chối, phiếu đã nhập kho tỉnh",1. Gọi POST.../supplier-batches/<batchId>/resolve-rejection với decision = RETURN_TO_SHOP,,"Hệ thống trả lỗi nguyên văn ""Hàng đã nhập về kho tỉnh nên không hoàn về điểm bán được — chọn Nhập lại kho hoặc Huỷ vỡ hỏng"" (ERROR_RETURN_ALREADY_IN_PROVINCE)",,,,,,
+14_2_060_012,Mỗi quyết định có hộp xác nhận riêng,"Vai: province; đợt bị từ chối, cấp tỉnh giữ hàng","1. Bấm lần lượt ""Huỷ hàng"", ""Nhập kho tỉnh"", ""Hoàn về điểm bán"" và đọc tiêu đề hộp xác nhận",,"Lần lượt là ""Huỷ hàng bị NCC từ chối (không phát sinh công nợ)?"" · ""Nhập lại số hàng này vào kho của cấp bạn?"" · ""Hoàn số hàng này về kho điểm bán gốc?""",,,,,,
+14_2_060_013,Quyết định Hoàn về điểm bán trả hàng ngược về kho điểm bán,"Vai: province; đợt bị từ chối 5 đơn vị, hàng chưa nhập kho tỉnh","1. Ghi tồn điểm bán;
+2. Bấm ""Hoàn về điểm bán"";
+3. Bấm OK;
+4. Đọc lại tồn điểm bán",,"Báo ""Đã xử lý""; tồn kho ĐIỂM BÁN tăng đúng 5; cột ""Đã trả"" giảm 5 và ""Đã nhập lại"" tăng 5; đợt đổi sang thẻ ""NCC từ chối — đã hoàn về điểm bán""",,,,,,
+14_2_060_014,Quyết định Huỷ hàng không phát sinh công nợ,Vai: province; đợt bị từ chối,"1. Ghi công nợ NCC;
+2. Bấm ""Huỷ hàng"";
+3. Bấm OK;
+4. Đọc lại công nợ NCC",,"Đợt đổi sang thẻ ""NCC từ chối — đã huỷ hàng""; công nợ NCC KHÔNG đổi; không kho nào tăng tồn",,,,,,
+14_2_060_015,Quyết định Nhập kho tỉnh đưa hàng vào kho của cấp xử lý,Vai: province; đợt bị từ chối 5 đơn vị,"1. Ghi tồn kho tỉnh;
+2. Bấm ""Nhập kho tỉnh"";
+3. Bấm OK;
+4. Đọc lại tồn kho tỉnh",,"Đợt đổi sang thẻ ""NCC từ chối — đã nhập lại kho""; tồn kho TỈNH tăng đúng 5; tồn điểm bán không đổi",,,,,,
+14_2_060_016,Chỉ đúng cấp đang giữ hàng mới thấy cụm nút quyết định,Vai: tct; đợt bị từ chối với rejectStage = BUU_DIEN_TINH,"1. Mở Chi tiết phiếu bằng tài khoản TCT;
+2. Đọc khung đợt bị từ chối",,"Chỉ thấy thẻ ""NCC từ chối — chờ xử lý"", KHÔNG có nút quyết định nào",,,,,,
+14_2_060_017,Gọi API quyết định sai cấp bị chặn,Vai: tct; đợt bị từ chối với rejectStage = BUU_DIEN_TINH,1. Gọi POST.../supplier-batches/<batchId>/resolve-rejection bằng tài khoản TCT,,"Hệ thống trả lỗi nguyên văn ""Không đúng cấp xử lý hàng bị từ chối""",,,,,,
+14_2_060_018,Quyết định trên đợt không ở trạng thái chờ xử lý bị chặn,Vai: province; đợt đã ở Chờ đối soát hoá đơn,1. Gọi POST.../supplier-batches/<batchId>/resolve-rejection,,"Hệ thống trả lỗi nguyên văn ""Đợt trả không ở trạng thái chờ xử lý""",,,,,,
+14_2_060_019,Gửi quyết định không hợp lệ bị chặn,Vai: province; đợt bị từ chối,1. Gọi POST.../resolve-rejection với decision = 'XYZ',,"Hệ thống trả lỗi nguyên văn ""Quyết định không hợp lệ""",,,,,,
+14_2_060_020,Xác nhận lại đợt đã xử lý bị chặn,Vai: province; đợt đã được NCC xác nhận,1. Gọi POST.../supplier-batches/<batchId>/confirm lần thứ hai,,"Hệ thống trả lỗi nguyên văn ""Đợt trả đã được xử lý (xác nhận/từ chối)""",,,,,,
+14_2_060_021,Thao tác trên đợt trả không tồn tại bị chặn,Vai: province,1. Gọi POST.../supplier-batches/999999999/confirm,,"Hệ thống trả lỗi nguyên văn ""Không tìm thấy đợt trả""",,,,,,
+14_2_060_022,Khối hoá đơn điều chỉnh chỉ hiện với đợt còn hiệu lực,Vai: province; có đợt ở Chờ NCC xác nhận và đợt ở NCC từ chối — đã huỷ hàng,1. Đọc hai khung đợt đó,,"Đợt ở ""Chờ NCC xác nhận"" / ""Chờ đối soát hoá đơn"" / ""Đã xử lý xong"" CÓ khối hoá đơn điều chỉnh; đợt bị từ chối rồi huỷ hoặc nhập lại kho KHÔNG có",,,,,,
+14_2_060_023,Đóng hộp xác nhận quyết định không xử lý gì,Vai: province; đợt bị từ chối,"1. Bấm ""Huỷ hàng"";
+2. Bấm Huỷ trong hộp xác nhận",,"Đợt vẫn ở thẻ ""NCC từ chối — chờ xử lý""; không phát sinh POST resolve-rejection",,,,,,
+14_2_060_024,Tám trạng thái đợt trả hiển thị đúng nhãn,Vai: province; có đợt ở nhiều trạng thái khác nhau,1. Đọc thẻ của từng đợt,,"Nhãn đúng bộ 8: ""Chờ NCC xác nhận"" · ""Chờ đối soát hoá đơn"" · ""Đã xử lý xong"" · ""NCC từ chối — chờ xử lý"" · ""NCC từ chối — đã huỷ hàng"" · ""NCC từ chối — đã nhập lại kho"" · ""NCC từ chối — đã hoàn về điểm bán""; trạng thái lạ hiện nguyên mã",,,,,,
+14_2_060_025,Phiếu Đã xử lý xong mà đợt còn chờ NCC thì việc trả chưa khép,"Vai: province; phiếu RETURNED, đợt WAIT_CONFIRM","1. Đọc thẻ phiếu;
+2. Đọc dải vòng đời;
+3. Đọc thẻ đợt trả",,"Thẻ phiếu là ""Đã xử lý xong"" nhưng dải vòng đời dừng ở mốc ""Trả hàng / Xử lý"" và đợt vẫn ""Chờ NCC xác nhận""",,,,,,

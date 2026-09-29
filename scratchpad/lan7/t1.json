@@ -1,0 +1,359 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 133,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:19:12.210Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 93,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:19:12.443Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tich-diem.gdv.spec.js",
+      "file": "tich-diem.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "20 · Tích điểm khi bán (vai gdv, SỬA TẠM cấu hình chuỗi)",
+          "file": "tich-diem.gdv.spec.js",
+          "line": 126,
+          "column": 6,
+          "specs": [
+            {
+              "title": "20_050_003 — Đơn lớn hơn giá trị đơn hàng tối thiểu thì tích điểm",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":94000,\"orderAmountPerPoint\":1000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":95000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "252"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 95"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lxExjY\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"YhUIfL\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 142945,
+                      "error": {
+                        "message": "Error: Khách không được cộng đúng 95 điểm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m95\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                        "stack": "Error: Khách không được cộng đúng 95 điểm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m95\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at kiem (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:123:116)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:152:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                          "column": 116,
+                          "line": 123
+                        },
+                        "snippet": "  121 | \tconst d = await choDiem(page, r.kh.id, { ms: soDiem > 0 ? 90_000 : 45_000 });\n  122 | \tghiChu('điểm', `${JSON.stringify(d)} · kỳ vọng ${soDiem}`);\n> 123 | \texpect(d.diem, soDiem > 0 ? `Khách không được cộng đúng ${soDiem} điểm` : 'Khách KHÔNG được tích mà vẫn có điểm').toBe(soDiem);\n      | \t                                                                                                                  ^\n  124 | }\n  125 |\n  126 | test.describe('20 · Tích điểm khi bán (vai gdv, SỬA TẠM cấu hình chuỗi)', () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                            "column": 116,
+                            "line": 123
+                          },
+                          "message": "Error: Khách không được cộng đúng 95 điểm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m95\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  121 | \tconst d = await choDiem(page, r.kh.id, { ms: soDiem > 0 ? 90_000 : 45_000 });\n  122 | \tghiChu('điểm', `${JSON.stringify(d)} · kỳ vọng ${soDiem}`);\n> 123 | \texpect(d.diem, soDiem > 0 ? `Khách không được cộng đúng ${soDiem} điểm` : 'Khách KHÔNG được tích mà vẫn có điểm').toBe(soDiem);\n      | \t                                                                                                                  ^\n  124 | }\n  125 |\n  126 | test.describe('20 · Tích điểm khi bán (vai gdv, SỬA TẠM cấu hình chuỗi)', () => {\n    at kiem (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:123:116)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:152:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:19:12.827Z",
+                      "annotations": [
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":94000,\"orderAmountPerPoint\":1000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":95000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "252"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 95"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lxExjY\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"YhUIfL\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-db3e9-àng-tối-thiểu-thì-tích-điểm-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-db3e9-àng-tối-thiểu-thì-tích-điểm-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-db3e9-àng-tối-thiểu-thì-tích-điểm-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-db3e9-àng-tối-thiểu-thì-tích-điểm-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-db3e9-àng-tối-thiểu-thì-tích-điểm-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                        "column": 116,
+                        "line": 123
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-ce0eed8c03665c0124f7",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 147,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T10:19:11.862Z",
+    "duration": 144746.634,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

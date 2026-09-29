@@ -1,0 +1,26 @@
+﻿,Chức năng,,GỘP TÁCH PHIẾU VÀ ĐIỀU PHỐI NGUỒN HÀNG,,,,,,,,
+,Mã Testcase,,13_2_gop_tach_va_dieu_phoi,,,,,,,,
+,Tổng các tình huống kiểm thử,,3,,,,,,,,
+,Chưa thực hiện,,3,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,GỘP TÁCH PHIẾU VÀ ĐIỀU PHỐI NGUỒN HÀNG,,,,,,,,,,
+,020 — Gộp nhiều phiếu đề xuất thành một phiếu,,,,,,,,,,
+13_2_020_001,Kiểm tra điều kiện gộp phiếu,"Đã đăng nhập vai có quyền gộp, tách phiếu đề xuất; đang ở màn danh sách phiếu đề xuất","1. Trên danh sách phiếu đề xuất, bấm biểu tượng dấu cộng ở cột Hành động của một phiếu Chờ duyệt
+2. Bấm dấu cộng ở một phiếu nháp và một phiếu đã huỷ
+3. Bấm Gộp phiếu ở góc trên bên phải",,"Chỉ phiếu ở trạng thái Chờ duyệt hoặc Đã duyệt mới thêm được vào danh sách gộp, biểu tượng đổi màu khi phiếu đã được chọn; phiếu nháp, đã huỷ hoặc đã tách không gộp được. Nút Gộp phiếu hiện số phiếu đang chọn trong ngoặc và chỉ mở được màn Gộp phiếu đề xuất nhập hàng khi đã chọn ít nhất 2 phiếu hợp lệ.",,,,,,
+,030 — Tách phiếu đề xuất thành nhiều phiếu con,,,,,,,,,,
+13_2_030_001,Kiểm tra hiển thị màn hình,"Vai `province` đăng nhập, đang ở màn lịch sử gộp/tách phiếu; đã có ít nhất một lượt gộp và một lượt tách","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn Xem xác phiếu đã gộp/ tách",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: -Thời gian, các phiếu con, phiếu nguồn, phiếu kết quả, trạng thái phiếu",,,,,,
+13_2_030_002,Kiểm tra Lịch sử gộp/ tách phiếu,"Vai `province` đăng nhập, đang ở màn lịch sử gộp/tách phiếu; đã có ít nhất một lượt gộp và một lượt tách","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn Xem xác phiếu đã gộp/ tách",,"Hiển thị nguồn gốc, trạng thái của từng phiếu nguồn (khi gộp) và các phiếu kết quả (khi tách)",,,,,,

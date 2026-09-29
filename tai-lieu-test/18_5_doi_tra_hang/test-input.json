@@ -1,0 +1,398 @@
+{
+  "_note": "Phân hệ 18_5 Đổi trả hàng. 🔴 Tạo đơn hoàn trả = nhập lại kho + hoàn tiền + sửa đơn gốc, KHÔNG sửa lại được.",
+  "cases": {
+    "18_5_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_5_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_020_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — qua-tang.gdv"
+    },
+    "18_5_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — qua-tang.gdv"
+    },
+    "18_5_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — qua-tang.gdv"
+    },
+    "18_5_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "18_5_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "18_5_060_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_5_070_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_5_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_080_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_5_080_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_5_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_5_010_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_5_090_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Cần đơn gốc ghi nợ toàn bộ của khách thật; chốt phiếu trả là ghi sổ công nợ + kho"
+    },
+    "18_5_090_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — no-mot-phan.gdv"
+    },
+    "18_5_090_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_5_090_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Cần đơn đã huỷ của khách thật; sinh phiếu chi là chi tiền thật",
+      "_goBoi": "26/09/2026: huỷ qua API FE (nút ẩn)"
+    },
+    "18_5_090_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Huỷ đơn thật: sinh phiếu chi + nhập lại kho, không gỡ lại được",
+      "_goBoi": "26/09/2026: huỷ qua API FE (nút ẩn)"
+    },
+    "18_5_100_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — vat.gdv (bật VAT điểm bán tạm, khôi phục afterAll)"
+    },
+    "18_5_100_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — vat.gdv (bật VAT điểm bán tạm, khôi phục afterAll)"
+    },
+    "18_5_110_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — combo.gdv (seed 15 combo FIFO+BT)"
+    },
+    "18_5_110_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — combo.gdv (seed 15 combo FIFO+BT)"
+    },
+    "18_5_110_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — combo.gdv (seed 15 combo FIFO+BT)"
+    },
+    "18_5_110_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — combo.gdv (seed 15 combo FIFO+BT)"
+    },
+    "18_5_120_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Thu hồi điểm là ghi sổ điểm thật của khách; không gỡ lại được"
+    },
+    "18_5_120_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Hoàn điểm là ghi sổ điểm thật của khách"
+    },
+    "18_5_130_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — danh-sach-hoan-tra.shop (ngưỡng bật bằng nguong-bat-thuong.gdv, tài khoản gốc)"
+    },
+    "18_5_130_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "Chốt phiếu trả là ghi sổ tiền + kho"
+    },
+    "18_5_140_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — ca-cht.shop (CHT mở ca trong spec, chốt afterAll)"
+    },
+    "18_5_140_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_note": "28/09 tests/lo-thieu.gdv.spec.js — đơn bán vắt qua tồn âm (lô truy được < số bán), tìm bằng SELECT; BE không chặn thì tạo đơn hoàn thật"
+    },
+    "18_5_140_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — serial.gdv"
+    },
+    "18_5_140_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — serial.gdv"
+    },
+    "18_5_140_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — serial.gdv"
+    },
+    "18_5_140_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần sản phẩm có nhiều biến thể trên đơn gốc thật",
+      "allowMutation": true
+    },
+    "18_5_140_007": {
+      "enabled": false,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn gốc THIẾU thời gian tạo — dữ liệu hỏng, không tự tạo được"
+    },
+    "18_5_140_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — qua-han.gdv (đơn quá hạn + đổi mode request)"
+    },
+    "18_5_140_009": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần biết mã một đơn hoàn của điểm bán KHÁC — vượt phạm vi dữ liệu của tài khoản test",
+      "allowMutation": true
+    },
+    "18_5_140_010": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn hoàn đã duyệt xong",
+      "allowMutation": true
+    },
+    "18_5_150_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn gốc đã thanh toán của khách thật",
+      "data": {
+        "phiTraHang": -10000
+      }
+    },
+    "18_5_150_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn gốc đã thanh toán của khách thật"
+    },
+    "18_5_150_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "blockedReason": "Cần đơn gốc có hàng của khách thật",
+      "data": {
+        "soLuongTra": 0
+      }
+    },
+    "18_5_160_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "18_5_160_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "18_5_160_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "18_5_160_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "18_5_PQ_002": {
+      "enabled": true,
+      "role": "ward",
+      "mutates": false,
+      "blockedReason": "Cần tài khoản vai ward — chưa xác nhận đã khai trong .env.accounts",
+      "missingRoleReason": "Vai ward chưa khai trong .env.accounts — skip có lý do, KHÔNG tự pass",
+      "allowMutation": true
+    }
+  }
+}

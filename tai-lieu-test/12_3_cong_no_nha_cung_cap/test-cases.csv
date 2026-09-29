@@ -1,0 +1,203 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong,Ma goc,Nguon,Trang thai chay,Ngay chay,Ghi chu chay
+12_3_010_001,Mở Công nợ NCC khi có dữ liệu,User có quyền quản lý công nợ NCC,1. User truy cập vào hệ thống 2. Chọn kho hàng 3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier 4. Chọn NCC văn phòng phẩm 5. Chọn công nợ,"Hiển thị đầy đủ Tổng còn nợ, tab Lịch sử ghi nợ, Lịch sử thanh toán, Lịch sử trả hàng NCC - Bảng dữ liệu, nút Thanh toán, Gạch nợ, Ghi nợ, Xuất excel.",NCC_76,Sheet QC,Đạt,24/09/2026,
+12_3_020_002,Thanh toán công nợ thành công,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. User truy cập vào hệ thống 2. Chọn kho hàng 3. Chọn nhà cung cấp https://vnpost.sfin.vn/inventory/warehouse-supplier 4. Chọn NCC văn phòng phẩm 5. Chọn công nợ 6. Chọn Thanh toán 7. Nhập số tiền 10000 8. Xác nhận,"Giảm công nợ NCC đúng số tiền thanh toán
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_77,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: expect(received).toContain(expected) // indexOf Expected substring: ""Thêm thành công"" Received string: ""Mã cửa hàng hoặc mã chuỗi trong yêu cầu không khớp với đơn vị đang đăng nhập"""
+12_3_020_003,Thanh toán sinh phiếu thu,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Chọn Tài chính 2. Chọn phiếu chi,"Sinh ra 1 phiếu chi tương ứng giao dịch thanh toán
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_78,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: expect(received).toContain(expected) // indexOf Expected substring: ""Thêm thành công"" Received string: ""Mã cửa hàng hoặc mã chuỗi trong yêu cầu không khớp với đơn vị đang đăng nhập | Số tiền phải lớn hơn 0"""
+12_3_020_004,Thanh toán lớn hơn số nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Nhập thanh toán 12 triệu,"Hiển thị thành số tiền hiện tại đang còn nợ
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_79,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 ""Nợ hiện tại"" của form Thanh toán ≠ Còn nợ ở danh sách expect(received).toBe(expected) // Object.is equality Expected: 1000000 Received: 0"
+12_3_020_005,Thanh toán bằng đúng số nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Nhập thanh toán 10 triệu,"Công nợ về 0 và sinh phiếu chi
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_80,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Không sinh phiếu chi expect(received).toBe(expected) // Object.is equality Expected: 1 Received: 0
+12_3_020_006,Thanh toán nhiều lần cho 1 PO,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp","1. Thanh toán lần 1, lần 2, lần 3","Công nợ giảm đúng sau mỗi lần thanh toán
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_81,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 1000000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -1000000 Received: 0
+12_3_020_007,Lưu lịch sử từng lần thanh toán,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Vào Nhà cung cấp 2. Chọn NCC 3. Công nợ 4. Chọn xem chi tiết 1 phiếu PO,"Hiển thị đầy đủ từng giao dịch thanh toán riêng biệt
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_82,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 500000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -500000 Received: 0
+12_3_020_008,Kiểm tra tổng công nợ sau nhiều lần thanh toán,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Vào Nhà cung cấp 2. Chọn NCC 3. Công nợ 4. Chọn xem chi tiết 1 phiếu PO 5. Đối chiếu số dư công nợ,"Tổng nợ = Nợ gốc - Tổng đã thanh toán
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_83,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 1000000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -1000000 Received: 0
+12_3_020_009,Gạch nợ thành công,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Chọn Gạch nợ 2. Nhập số tiền 3. Xác nhận,"Giảm công nợ NCC đúng số tiền gạch nợ
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_84,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_020_010,Gạch nợ không sinh phiếu thu,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Chọn Tài chính 2. Chọn phiếu chi,"Không phát sinh phiếu thu
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_85,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_020_011,Gạch nợ vượt số nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",Nhập gạch nợ 6 triệu,"Hiển thị về là số tiền hiện tại đang nợ
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_86,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_020_012,Lưu lịch sử gạch nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Vào Nhà cung cấp 2. Chọn NCC 3. Công nợ 4. Xem lịch sử giao dịch,"Hiển thị giao dịch gạch nợ trong lịch sử
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_87,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_020_013,Ghi nợ thành công,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Chọn Ghi nợ 2. Nhập số tiền 3. Xác nhận,"Công nợ NCC tăng đúng số tiền ghi nợ
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_88,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_020_014,Ghi nợ không sinh phiếu chi,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Chọn Tài chính 2. Chọn phiếu thu,"Không phát sinh phiếu chi
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_89,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_020_015,Ghi nợ số tiền âm,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Nhập số tiền âm,"Hiển thị mặc định là số 0
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_90,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_020_016,Ghi nợ số tiền bằng 0,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Nhập số tiền bằng 0,"Báo lỗi số tiền phải lớn hơn 0
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_91,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 Không còn nút ""Ghi nợ"" trên chi tiết công nợ (chỉ có Thanh toán) — ModalCreateDebt vẫn có luồng DEBT nhưng không có lối vào expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_020_017,Lưu lịch sử ghi nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Hiển thị giao dịch ghi nợ vừa tạo
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_92,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_020_018,Kiểm tra tab Lịch sử thanh toán,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử thanh toán,"Hiển thị đầy đủ các lần thanh toán
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_93,Sheet QC (chuyển thể nguyên văn),Đạt,24/09/2026,
+12_3_020_019,Kiểm tra tab Lịch sử ghi nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Hiển thị đầy đủ các lần ghi nợ
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_94,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 Khoản điều chỉnh tăng nợ 1.000.000 đã duyệt không hiện trong ""Lịch sử ghi nợ"" expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_020_020,Kiểm tra tab Lịch sử trả hàng NCC,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử trả hàng NCC,"Hiển thị đầy đủ các giao dịch trả hàng
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_95,Sheet QC (chuyển thể nguyên văn),Đạt,24/09/2026,
+12_3_020_021,Đối chiếu tổng còn nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Tính lại số dư công nợ: Tổng còn nợ,"Tổng còn nợ = Tổng ghi nợ - Tổng thanh toán - Tổng gạch nợ
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_96,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 ""Tổng còn nợ"" ở chi tiết ≠ ""Còn nợ"" ở danh sách (khoản điều chỉnh không vào chi tiết) expect(received).toBe(expected) // Object.is equality Expected: 1000000 Received: 0"
+12_3_020_022,Thanh toán một phần PO,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Thanh toán 30 triệu,"Còn lại công nợ PO là 70 triệu
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_97,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: expect(received).toContain(expected) // indexOf Expected substring: ""Thêm thành công"" Received string: ""Mã cửa hàng hoặc mã chuỗi trong yêu cầu không khớp với đơn vị đang đăng nhập | Số tiền phải lớn hơn 0"""
+12_3_020_023,Thanh toán nhiều lần đến hết nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Thanh toán 30 triệu 2. 20 triệu 3. 50 triệu,"Sau lần cuối công nợ PO bằng 0
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_98,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 3000000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -3000000 Received: 0
+12_3_020_024,Kiểm tra lịch sử khi thanh toán nhiều lần,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử thanh toán,"Hiển thị 3 giao dịch thanh toán riêng biệt
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_99,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 300000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -300000 Received: 0
+12_3_020_025,Gạch nợ một phần công nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Gạch nợ 10 triệu,"Công nợ còn lại 40 triệu
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_100,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_020_026,Ghi nợ bổ sung sau khi đã thanh toán,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Ghi nợ thêm 20 triệu,"Công nợ tăng thêm 20 triệu
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_101,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_020_027,Xuất Excel lịch sử công nợ,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Nhấn Xuất excel,"Tải file thành công và dữ liệu chính xác
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_102,Sheet QC (chuyển thể nguyên văn),Không đạt,24/09/2026,"Error: 🔴 Nút ""Xuất excel"" lịch sử công nợ đã bị comment-out (ModalDebt.jsx) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_020_028,Kiểm tra ghi nhận công nợ khi TCT đặt hàng thẳng về tỉnh,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Ghi nhận công nợ giữ TCT và NCC
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_103,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: 🔴 Phiếu nhập theo PO chưa sinh công nợ NCC (chờ hạch toán PO — chưa có luồng hạch toán trên môi trường test) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+12_3_020_029,Kiểm tra trừ nợ khi xuất trả hàng NCC,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc - Tổng đã trả hàng
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_104,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Chưa có dòng trả hàng NCC để đối chiếu (chạy 14_2) expect(received).toBeLessThan(expected) Expected: < 0 Received: 0
+12_3_020_030,Kiểm tra ghi nhận công nợ NCC của tỉnh,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Ghi nhận công nợ giữ Tỉnh và NCC
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_105,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Chưa có phiếu nhập thuộc PO để đối chiếu (chạy 13_3) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+12_3_020_031,Kiểm tra ghi nhận công nợ NCC khi nhận giao 1 phần,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc + Số tiền giao 1 phần chưa thanh toán
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_106,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: 🔴 Phiếu nhập theo PO chưa sinh công nợ NCC (chờ hạch toán PO — chưa có luồng hạch toán trên môi trường test) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+12_3_020_032,Kiểm tra ghi nhận công nợ NCC với sản phẩm có VAT,"Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc + Số tiền đơn hàng bao gồm cả VAT sản phẩm
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_107,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_3_020_033,"Kiểm tra ghi nhận công nợ NCC với sản phẩm có khuyến mãi, quà tặng","Vai `tct` đăng nhập, đang ở màn Công nợ nhà cung cấp",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc + Số tiền đơn hàng đã giảm giá và số tiền hàng tặng là 0 đ
+
+🔴 Đây là case TIỀN: thanh toán / gạch nợ / ghi nợ đều ghi vào sổ công nợ NCC. 🚫 Dòng cũ không được sửa hay xoá — mọi điều chỉnh phải là DÒNG MỚI. Phân biệt rõ: thanh toán SINH phiếu thu-chi, gạch nợ và ghi nợ thì KHÔNG.",NCC_108,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_3_030_001,Kiểm tra giao diện,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn Công nợ NCC,"Hiển thị title"" Công nợ NCC"" Ô tìm kiếm tên NCC Danh sách công nợ nhà cung cấp( số nhà cung cấp phát sinh công nợ) với các cột: #, Cửa hàng / kho, Nhà cung cấp, Cần thanh toán. Đã thanh toán, Hoàn trả đơn hàng, Còn nợ, Thao tác
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_40,Sheet QC (chuyển thể nguyên văn),Đạt,24/09/2026,
+12_3_030_002,Kiểm tra tìm kiếm tên NCC,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn Công nợ NCC 3. Nhập tên NCC,"Hiển thị thông tin NCC tương ứng
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_41,Sheet QC (chuyển thể nguyên văn),Đạt,24/09/2026,
+12_3_030_003,Kiểm tra phân trang,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn Công nợ NCC 3. Nhập tên NCC,"Hiển thị thông tin NCC tương ứng
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_42,Sheet QC (chuyển thể nguyên văn),Đạt,24/09/2026,
+12_3_030_004,Thanh toán công nợ thành công,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Thanh toán 2. Nhập số tiền 3. Xác nhận,"Giảm công nợ NCC đúng số tiền thanh toán
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_43,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: expect(received).toContain(expected) // indexOf Expected substring: ""Thêm thành công"" Received string: ""Mã cửa hàng hoặc mã chuỗi trong yêu cầu không khớp với đơn vị đang đăng nhập | Số tiền phải lớn hơn 0"""
+12_3_030_005,Thanh toán sinh phiếu thu,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn phiếu chi,"Sinh ra 1 phiếu chi tương ứng giao dịch thanh toán
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_44,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: expect(received).toContain(expected) // indexOf Expected substring: ""Thêm thành công"" Received string: ""Mã cửa hàng hoặc mã chuỗi trong yêu cầu không khớp với đơn vị đang đăng nhập | Số tiền phải lớn hơn 0"""
+12_3_030_006,Thanh toán lớn hơn số nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Nhập thanh toán 12 triệu,"Hiển thị thành số tiền hiện tại đang còn nợ
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_45,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_3_030_007,Thanh toán bằng đúng số nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Nhập thanh toán 10 triệu,"Công nợ về 0 và sinh phiếu chi
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_46,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Không sinh phiếu chi expect(received).toBe(expected) // Object.is equality Expected: 1 Received: 0
+12_3_030_008,Thanh toán nhiều lần cho 1 PO,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)","1. Thanh toán lần 1, lần 2, lần 3","Công nợ giảm đúng sau mỗi lần thanh toán
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_47,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 1000000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -1000000 Received: 0
+12_3_030_009,Lưu lịch sử từng lần thanh toán,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn Công nợ NCC 3. Chọn nhà cung cấp 4. Chọn xem chi tiết 1 phiếu PO,"Hiển thị đầy đủ từng giao dịch thanh toán riêng biệt
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_48,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 500000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -500000 Received: 0
+12_3_030_010,Kiểm tra tổng công nợ sau nhiều lần thanh toán,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn Công nợ NCC 3. Chọn nhà cung cấp 4. Chọn xem chi tiết 1 phiếu PO 5. Đối chiếu số dư công nợ,"Tổng nợ = Nợ gốc - Tổng đã thanh toán
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_49,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 1000000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -1000000 Received: 0
+12_3_030_011,Gạch nợ thành công,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Gạch nợ 2. Nhập số tiền 3. Xác nhận,"Giảm công nợ NCC đúng số tiền gạch nợ
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_50,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_012,Gạch nợ không sinh phiếu thu,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn phiếu chi,"Không phát sinh phiếu thu
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_51,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_013,Gạch nợ vượt số nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",Nhập gạch nợ 6 triệu,"Hiển thị về là số tiền hiện tại đang nợ
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_52,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_014,Lưu lịch sử gạch nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn Công nợ NCC 3. Chọn nhà cung cấp 4. Xem lịch sử giao dịch,"Hiển thị giao dịch gạch nợ trong lịch sử
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_53,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_015,Ghi nợ thành công,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Ghi nợ 2. Nhập số tiền 3. Xác nhận,"Công nợ NCC tăng đúng số tiền ghi nợ
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_54,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_016,Ghi nợ không sinh phiếu chi,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Chọn Tài chính 2. Chọn phiếu thu,"Không phát sinh phiếu chi
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_55,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_017,Ghi nợ số tiền âm,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Nhập số tiền âm,"Hiển thị mặc định là số 0
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_56,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_018,Ghi nợ số tiền bằng 0,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Nhập số tiền bằng 0,"Báo lỗi số tiền phải lớn hơn 0
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_57,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_019,Lưu lịch sử ghi nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Hiển thị giao dịch ghi nợ vừa tạo
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_58,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_020,Kiểm tra tab Lịch sử thanh toán,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử thanh toán,"Hiển thị đầy đủ các lần thanh toán
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_59,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: Tab ""Lịch sử thanh toán"" không hiện giao dịch vừa phát sinh expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_030_021,Kiểm tra tab Lịch sử ghi nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Hiển thị đầy đủ các lần ghi nợ
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_60,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: Tab ""Lịch sử ghi nợ"" không hiện giao dịch vừa phát sinh expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_030_022,Kiểm tra tab Lịch sử trả hàng NCC,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử trả hàng NCC,"Hiển thị đầy đủ các giao dịch trả hàng
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_61,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_3_030_023,Đối chiếu tổng còn nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Tính lại số dư công nợ: Tổng còn nợ,"Tổng còn nợ = Tổng ghi nợ - Tổng thanh toán - Tổng gạch nợ
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_62,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Tổng còn nợ ≠ ghi nợ − thanh toán − gạch/khác expect(received).toBe(expected) // Object.is equality Expected: 190200000 Received: 0
+12_3_030_024,Thanh toán một phần PO,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Thanh toán 30 triệu,"Còn lại công nợ PO là 70 triệu
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_63,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: expect(received).toContain(expected) // indexOf Expected substring: ""Thêm thành công"" Received string: ""Mã cửa hàng hoặc mã chuỗi trong yêu cầu không khớp với đơn vị đang đăng nhập | Số tiền phải lớn hơn 0"""
+12_3_030_025,Thanh toán nhiều lần đến hết nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Thanh toán 30 triệu 2. 20 triệu 3. 50 triệu,"Sau lần cuối công nợ PO bằng 0
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_64,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 3000000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -3000000 Received: 0
+12_3_030_026,Kiểm tra lịch sử khi thanh toán nhiều lần,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử thanh toán,"Hiển thị 3 giao dịch thanh toán riêng biệt
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_65,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Sau khi trả 300000 công nợ lệch expect(received).toBe(expected) // Object.is equality Expected: -300000 Received: 0
+12_3_030_027,Gạch nợ một phần công nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Gạch nợ 10 triệu,"Công nợ còn lại 40 triệu
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_66,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Gạch nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng WRITE_OFF nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_028,Ghi nợ bổ sung sau khi đã thanh toán,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Ghi nợ thêm 20 triệu,"Công nợ tăng thêm 20 triệu
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_67,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Không có nút ""Ghi nợ"" trên chi tiết công nợ NCC (ModalCreateDebt còn luồng DEBT nhưng không có lối vào) expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+12_3_030_029,Xuất Excel lịch sử công nợ,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Nhấn Xuất excel,"Tải file thành công và dữ liệu chính xác
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_68,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Nút ""Xuất excel"" lịch sử công nợ đã bị comment-out (ModalDebt.jsx) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+12_3_030_030,Kiểm tra ghi nhận công nợ khi TCT đặt hàng thẳng về tỉnh,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Ghi nhận công nợ giữ TCT và NCC
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_69,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: 🔴 Phiếu nhập theo PO chưa sinh công nợ NCC (chờ hạch toán PO — chưa có luồng hạch toán trên môi trường test) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+12_3_030_031,Kiểm tra trừ nợ khi xuất trả hàng NCC,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc - Tổng đã trả hàng
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_70,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Chưa có dòng trả hàng NCC để đối chiếu (chạy 14_2) expect(received).toBeLessThan(expected) Expected: < 0 Received: 0
+12_3_030_032,Kiểm tra ghi nhận công nợ NCC của tỉnh,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Ghi nhận công nợ giữ Tỉnh và NCC
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_71,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Chưa có phiếu nhập thuộc PO để đối chiếu (chạy 13_3) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+12_3_030_033,Kiểm tra ghi nhận công nợ NCC khi nhận giao 1 phần,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc + Số tiền giao 1 phần chưa thanh toán
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_72,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: 🔴 Phiếu nhập theo PO chưa sinh công nợ NCC (chờ hạch toán PO — chưa có luồng hạch toán trên môi trường test) expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+12_3_030_034,Kiểm tra ghi nhận công nợ NCC với sản phẩm có VAT,"Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc + Số tiền đơn hàng bao gồm cả VAT sản phẩm
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_73,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_3_030_035,"Kiểm tra ghi nhận công nợ NCC với sản phẩm có khuyến mãi, quà tặng","Vai kế toán đăng nhập, đang ở màn Công nợ NCC (nhóm Đối soát công nợ)",1. Mở tab Lịch sử ghi nợ,"Tổng nợ = Nợ gốc + Số tiền đơn hàng đã giảm giá và số tiền hàng tặng là 0 đ
+
+🔴 Nhóm này trùng chủ đề với nhóm `020` nhưng đến từ sheet TÀI CHÍNH — đối chiếu hai nhóm phải khớp số, xem nhận xét tay.",TaiChinh_74,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,

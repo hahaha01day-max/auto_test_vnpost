@@ -1,0 +1,54 @@
+﻿,Chức năng,,CẤU HÌNH ĐƠN HÀNG VÀ THANH TOÁN,,,,,,,,
+,Mã Testcase,,07_3_don_hang_va_thanh_toan,,,,,,,,
+,Tổng các tình huống kiểm thử,,18,,,,,,,,
+,Chưa thực hiện,,18,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,CẤU HÌNH ĐƠN HÀNG VÀ THANH TOÁN,,,,,,,,,,
+,010 — Khai báo chính sách đổi trả và ngưỡng hoàn trả bất thường,,,,,,,,,,
+07_3_010_001,Nhóm Đơn hàng hiện hai khối cấu hình có công tắc riêng,Vai: tct,1. Mở /settings?setting=order,,"Màn hiện 2 khối xếp dọc: ""Cấu hình đơn đổi trả"" và ""Cấu hình ngưỡng hoàn trả bất thường"", mỗi khối có công tắc riêng và nút Lưu riêng",,,,,,
+07_3_010_002,Ô Giới hạn thời gian trả hàng chỉ hiện khi công tắc đổi trả bật,Vai: tct. Công tắc Cấu hình đơn đổi trả đang tắt,"1. Quan sát khối Cấu hình đơn đổi trả;
+2. Bật công tắc",,"Khi tắt: ô ""Giới hạn thời gian trả hàng"" KHÔNG hiển thị. Khi bật: ô hiện ra với giá trị mặc định 7 và đơn vị Ngày",,,,,,
+07_3_010_003,Giới hạn thời gian trả hàng chỉ nhận số nguyên không âm,Vai: tct. Công tắc đổi trả đang bật,"1. Nhập -1 vào ô Giới hạn thời gian trả hàng;
+2. Bấm Lưu",,Hệ thống chặn giá trị âm; giá trị đang lưu không đổi,,,,,,
+07_3_010_004,Giới hạn thời gian trả hàng tại biên 0 và số rất lớn,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); nhóm ""Đơn hàng"", công tắc đổi trả đang bật","1. Nhập 0 → lưu, ghi kết quả
+2. Nhập 1 → lưu
+3. Nhập 9999 → lưu, ghi kết quả
+4. Nhập -1 → ghi kết quả
+5. Nhập 1.5 → ghi kết quả",,0 lưu được và nghĩa là **không cho đổi trả**; số âm bị chặn; số thập phân bị chặn hoặc làm tròn.,,,,,,
+07_3_010_005,Tắt công tắc đổi trả thì ô giới hạn thời gian biến mất,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); nhóm ""Đơn hàng""","1. Bật công tắc đổi trả, nhập giới hạn thời gian, lưu
+2. Tắt công tắc đổi trả
+3. Quan sát ô giới hạn
+4. Bật lại công tắc",,"Ô giới hạn ẩn khi tắt công tắc; bật lại thì hiện lại **với giá trị đã lưu trước đó**, không về rỗng. Đây là đối ứng của `07_3_010_002`.",,,,,,
+,020 — Khai báo nội dung in trên hoá đơn bán hàng,,,,,,,,,,
+07_3_020_001,Nhóm In hoá đơn bán hàng mở được,Vai: shop. Điểm bán đã được gán vào một đơn vị tổ chức,1. Mở /settings?setting=printer,,"Màn hiện 2 ô nhập ""Tiêu đề hoá đơn"" và ""Nội dung cuối hoá đơn"", mỗi ô có nút Lưu riêng, bên dưới là danh sách các mục thông tin in",,,,,,
+07_3_020_002,Nút Lưu mờ khi nội dung chưa đổi,Vai: shop. Đang ở /settings?setting=printer,"1. Không sửa gì ở ô Tiêu đề hoá đơn;
+2. Quan sát nút Lưu của ô đó",,Nút Lưu ở trạng thái vô hiệu hoá (mờ). Sau khi gõ thêm ký tự thì nút mới bật,,,,,,
+07_3_020_003,Chặn tải logo sai định dạng hoặc quá 5 MB,Vai: shop. Đang ở /settings?setting=printer,1. Tải lên tệp logo định dạng khác JPG/PNG/WEBP hoặc lớn hơn 5 MB,,Hệ thống từ chối tệp và báo lỗi; logo hiện tại không đổi,,,,,,
+07_3_020_004,Tải logo đúng định dạng và dưới 5 MB,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); nhóm ""In hoá đơn bán hàng""","1. Tải một ảnh.png khoảng 1 MB
+2. Lưu và mở lại cấu hình
+3. Tải ảnh đúng 5 MB → ghi kết quả",,"Ảnh 1 MB được nhận và hiện trên bản xem trước hoá đơn; ảnh đúng 5 MB là biên **hợp lệ** (đối ứng của `07_3_020_003` vốn kiểm biên vượt). Sau khi lưu và mở lại, logo vẫn còn.",,,,,,
+,030 — Liên kết và quản lý tài khoản thanh toán,,,,,,,,,,
+07_3_030_001,Danh sách tài khoản thanh toán hiện đủ thông tin và trạng thái kết nối,Vai: tct. Đã có ít nhất 1 tài khoản liên kết,1. Mở /settings?setting=payment,,"Mỗi thẻ tài khoản hiện tên ngân hàng, số tài khoản, tên chủ tài khoản, đơn vị áp dụng và nhãn Trạng thái kết nối nhận một trong ba giá trị ""Đang kết nối"", ""Chưa xác thực"", ""Đã hủy kết nối""",,,,,,
+07_3_030_002,Chưa có tài khoản nào thì hiện lời mời liên kết,Vai: tct. Chưa liên kết tài khoản nào,1. Mở /settings?setting=payment,,"Hệ thống hiển thị lời mời liên kết kèm nút ""Liên kết tài khoản mới""",,,,,,
+07_3_030_003,Hai hình thức liên kết được phân biệt rõ,Vai: tct. Đang ở /settings?setting=payment,1. Đọc hai lựa chọn hình thức liên kết,,"Có đúng 2 lựa chọn: ""Liên kết tài khoản thủ công"" (chỉ hiển thị QR, nhân viên tự xác nhận, mọi ngân hàng) và ""Liên kết thanh toán tích hợp"" (tự nhận thông báo khi tiền về, chỉ một số ngân hàng)",,,,,,
+,040 — Bật tắt các phương thức thanh toán được phép dùng,,,,,,,,,,
+07_3_040_001,Khối Phương thức thanh toán hỗ trợ liệt kê đủ phương thức,Vai: tct,1. Mở /settings?setting=paymentMethodConfig,,"Khối ""Phương thức thanh toán hỗ trợ"" liệt kê Tiền mặt, Chuyển khoản, PostPay, Thẻ VISA — mỗi dòng có công tắc bật tắt",,,,,,
+07_3_040_002,Tắt một phương thức thì quầy không chọn được phương thức đó,Vai: tct. Phương thức Thẻ VISA đang bật,"1. Tắt công tắc Thẻ VISA;
+2. Đăng nhập vai gdv và mở màn thanh toán bán hàng",,Danh sách phương thức thanh toán ở quầy KHÔNG còn Thẻ VISA,,,,,,
+07_3_040_003,Tắt phương thức thanh toán đang được dùng dở,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); nhóm ""Cấu hình phương thức thanh toán""","1. Ghi lại các phương thức đang bật
+2. Tắt một phương thức
+3. Mở màn bán hàng ở quầy và thử chọn phương thức đó
+4. Bật lại",,Phương thức bị tắt KHÔNG còn chọn được ở quầy. Đây là case ghi cấu hình áp cho cả đơn vị.,,,,,,
+07_3_040_004,Tắt HẾT phương thức thanh toán,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); nhóm ""Cấu hình phương thức thanh toán""","1. Tắt lần lượt toàn bộ phương thức
+2. Lưu
+3. Mở màn bán hàng ở quầy",,Không tự kết luận trước khi đo.,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+07_3_PQ_001,Vai Bưu điện Tỉnh không vào được nhóm Đơn hàng,Vai: province,1. Mở /settings?setting=order,,Bị chặn hoặc không sửa được — task 10 chỉ khai vai_tro TONG_CONG_TY,,,,,,
+07_3_PQ_002,Vai điểm bán vào được nhóm In hoá đơn bán hàng,Vai: shop,1. Mở /settings?setting=printer,,Mở được — task 20 khai vai_tro gồm cả DIEM_BAN,,,,,,

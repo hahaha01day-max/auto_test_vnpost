@@ -1,0 +1,133 @@
+{'startTime': '2026-09-25T08:51:01.549Z', 'duration': 1319134.655, 'expected': 42, 'skipped': 14, 'unexpected': 20, 'flaky': 0}
+
+ failed | 19_020_006 — Huỷ thao tác thêm khách hàng giữa chừng
+   ! Error: Vai điểm bán KHÔNG thấy nút "Thêm khách hàng". Nút đang có: Xuất Excel · · ·  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ skipped | 19_030_003 — Huỷ chỉnh sửa khách hàng giữa chừng
+   @ skip : Vai gdv không thấy nút chỉnh sửa ở chi tiết khách "A8KHPXK8W Khach test".
+
+ failed | 19_050_005 — Vai điểm bán không ngừng hoạt động khách được
+   @ nút trên chi tiết khách (gdv) : · · Ngừng hoạt động
+   ! Error: Vai điểm bán thấy 1 nút "Ngừng hoạt động" trên chi tiết khách "A8KHPXK8W Khach test"  expect(received).toBe(expected) // Object.is equality  Expected: 0 Received: 1
+
+ skipped | 19_130_001 — Tạo nhóm đối tượng khách hàng theo điều kiện
+   @ skip : Tạo nhóm đối tượng là ghi dữ liệu thật và ảnh hưởng CTKM đang chạy
+
+ skipped | 19_130_002 — Thêm CTKM theo nhóm đối tượng cập nhật realtime trên đơn
+   @ skip : Cần nhóm đối tượng + CTKM gắn nhóm đó; đồng thời lập đơn thật
+
+ skipped | 19_130_003 — Nâng hạng realtime khi thanh toán hết bằng tiền mặt
+   @ skip : Cần khách SẮP đủ điều kiện nâng hạng và một đơn thật đủ giá trị — nâng hạng không hạ lại được
+
+ skipped | 19_130_004 — Nâng hạng realtime khi thanh toán sau rồi trả nợ
+   @ skip : Như 130_003, thêm bước ghi nợ rồi trả nợ thật
+
+ skipped | 19_130_005 — Không nâng hạng khi đơn còn ở trạng thái nháp
+   @ skip : Cần khách sắp đủ điều kiện nâng hạng; lập đơn nháp thật
+
+ skipped | 19_130_006 — Nâng hạng realtime khi thanh toán trả góp
+   @ skip : Như 130_003, thêm thanh toán trả góp thật
+
+ skipped | 19_130_007 — Nâng hạng realtime khi thanh toán hết bằng chuyển khoản
+   @ skip : Như 130_003, thanh toán chuyển khoản thật
+
+ skipped | 19_130_008 — Nâng hạng realtime khi thanh toán bằng QR
+   @ skip : Như 130_003, cần giao dịch QR thật
+
+ failed | 19_120_002 — Tìm khách bằng ký tự đặc biệt
+   ! Error: Tìm bằng ký tự đại diện SQL "%_" trả về đúng tổng ban đầu (10266) ⇒ wildcard lọt xuống backend mà không được escape.  expect(received).toBeLessThan(expected)  Expected: < 10266 Received:   10266
+
+ skipped | 19_120_003 — Tìm khách không dấu ra khách có dấu
+   @ skip : Khách ở dòng đầu ("A8KHPXK8W Khach test") vốn đã không dấu ⇒ không kiểm được.
+
+ failed | 19_080_001 — Tab Sản phẩm đã mua hiện đủ cột
+   ! Error: Tab Sản phẩm đã mua thiếu cột "Đơn hàng"  expect(received).toContain(expected) // indexOf  Expected substring: "Đơn hàng" Received string:    "# · Ngày mua · Mã đơn hàng · Tên sản phẩm · Đơn vị · Số lượng · Thành tiền"
+
+ skipped | 19_070_002 — Điểm còn lại đọc ở dòng gần nhất không phải cộng gộp
+   @ skip : Khách A7KH195591058 chưa có biến động điểm nào (tích điểm chưa cấu hình cho làn?) — không có dòng để đối chiếu.
+
+ failed | 19_080_002 — Cột Loại chỉ có Sản phẩm hoặc Combo
+   @ cột : # · Ngày mua · Mã đơn hàng · Tên sản phẩm · Đơn vị · Số lượng · Thành tiền
+   ! Error: Tab Sản phẩm đã mua không có cột "Loại". Cột: # · Ngày mua · Mã đơn hàng · Tên sản phẩm · Đơn vị · Số lượng · Thành tiền  expect(received).toBeGreaterThanOrEqual(expected)  Expected: >= 0 Received:    -1
+
+ failed | 19_090_005 — Ghi nợ với số tiền bằng 0 hoặc âm
+   ! Error: Tab Công nợ KHÔNG có nút "Ghi nợ" — FE đã comment nút này (pages/customer/customerDebt/CustomerDebt.jsx:325-339). Nút đang có: · · Thanh toán · ·  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 19_090_003 — Ghi nợ thủ công cho khách hàng
+   ! Error: Tab Công nợ KHÔNG có nút "Ghi nợ" — FE đã comment nút này (pages/customer/customerDebt/CustomerDebt.jsx:325-339). Nút đang có: · · Thanh toán · ·  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 19_090_002 — Gạch nợ không tạo phiếu thu hồi nợ
+   ! Error: Tab Công nợ KHÔNG có nút "Gạch nợ" — FE đã comment nút này (pages/customer/customerDebt/CustomerDebt.jsx:325-339). Nút đang có: · · Thanh toán · ·  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 19_090_006 — Thanh toán công nợ với số tiền bằng 0
+   @ nguyên văn : Số tiền phải lớn hơn 0
+   ! Error: expect(received).toContain(expected) // indexOf  Expected substring: "Vui lòng nhập số tiền thanh toán lớn hơn 0" Received string:    "Số tiền phải lớn hơn 0"
+
+ failed | 19_090_001 — Thu hồi công nợ khách tạo phiếu thu thật
+   @ còn nợ trước : 195000
+   @ payload : {"type":"PAYMENT","totalAmount":50000,"catName":"Thu hồi nợ","orders":[]}
+   @ BE : {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}
+   ! Error: {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ skipped | 19_060_002 — Đơn trả một phần vẫn hiện Chưa thanh toán
+   @ skip : Đơn tiền đề chưa được trả một phần (19_090_001 chưa chạy / đỏ).
+
+ failed | 19_050_003 — Chặn xoá khách còn công nợ
+   @ BE : {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"dgqzWw"}
+   @ nguyên văn : Xoá khách hàng thành công
+   ! Error: Khách CÒN NỢ đã bị xoá  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-404"
+
+ failed | 19_020_003 — Chặn thêm khách trùng số điện thoại tại điểm bán
+   @ nguyên văn : Thêm khách hàng thành công
+   @ BE : {"status":{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"PEzaAm"},"label":null}
+   @ dọn khách : 551526393247747 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"EoEsrP"}
+   @ dọn khách : 141066077372728 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"vzxznH"}
+   ! Error: Trùng SĐT mà không báo lỗi  expect(received).toMatch(expected)  Expected pattern: /đã tồn tại/ Received string:  "Thêm khách hàng thành công"
+
+ failed | 19_020_012 — Tên khách hàng có khoảng trắng đầu cuối
+   @ tên lưu ở BE : "   A7KH197041034 AUTO TEST KHONG DUNG 020_012   "
+   @ dọn khách : 394989914782548 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"UORVjX"}
+   ! Error: Tên KHÔNG được cắt khoảng trắng đầu/cuối  expect(received).toBe(expected) // Object.is equality  Expected: "A7KH197041034 AUTO TEST KHONG DUNG 020_012" Received: "   A7KH197041034 AUTO TEST KHONG DUNG 020_012   "
+
+ failed | 19_030_002 — Đổi sang số điện thoại đã có khách khác dùng bị chặn
+   @ nguyên văn : Cập nhật thành công
+   @ BE : {"status":{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"aTAaGd"},"label":null}
+   @ dọn khách : 951775037351298 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"acqIOL"}
+   @ dọn khách : 200597062131650 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"jcNFlY"}
+   ! Error: Đổi sang SĐT trùng mà không báo lỗi  expect(received).toMatch(expected)  Expected pattern: /đã tồn tại|trùng/ Received string:  "Cập nhật thành công"
+
+ failed | 19_120_006 — tải anh-1mb.png vào ô ảnh đại diện
+   @ kích thước tệp : 1080823 byte
+   @ nguyên văn : (không có thông báo)
+   @ hộp cắt ảnh mở : true
+   ! Error: expect(received).toContain(expected) // indexOf  Expected substring: "Ảnh up không được vượt quá giới hạn 800Kb!" Received string:    ""
+
+ failed | 19_120_007 — tải khong-phai-anh.txt vào ô ảnh đại diện
+   @ kích thước tệp : 33 byte
+   @ nguyên văn : (không có thông báo)
+   @ hộp cắt ảnh mở : true
+   ! Error: expect(received).toContain(expected) // indexOf  Expected substring: "Bạn chỉ có thể tải lên file có định dạng image!" Received string:    ""
+
+ skipped | 19_010_001 — Tìm khách tự lọc khi ngừng gõ và quay về trang đầu
+   @ skip : Vai tỉnh đang thấy 0 khách hàng ⇒ 🚫 không phân biệt được "đã lọc" với "vốn rỗng". Xem mục lệch phạm vi trong test-cases.md.
+
+ failed | 19_010_003 — Tuỳ chỉnh cột hiển thị bật được cột đang tắt
+   ! Error: Màn KHÔNG có nút "Tùy chỉnh cột hiển thị" — kịch bản đòi bật cột "Nợ cần thu hiện tại" qua nút này. Nút đang có: Xuất Excel · Nhập Excel · Thêm khách hàng ·  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 19_120_005 — Tổ hợp nhiều bộ lọc khách hàng
+   ! Error: Vai tỉnh chỉ thấy 0 ô lọc; kịch bản đòi bốn ô lọc cấp trên điểm bán. Chữ trên màn: Quản lý khách hàng Xuất Excel Nhập Excel Thêm khách hàng Danh sách khách hàng # Mã khách hàng Tên khách hàng Số điện thoại Giới tính Ngày sinh Địa chỉ # Mã khách hàng Tên khách hàng Số điện thoại Giới tính Ngày sinh Địa chỉ Trống  expect(received).toBeGreaterThan(expe
+
+ failed | 19_050_004 — Xoá khách hàng không hoàn tác được
+   @ dọn khách : 970812014183190 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"uDROkt"}
+   ! Error: Vai tỉnh KHÔNG có nút "Xóa" ở chi tiết khách (thiếu quyền delete_customer; API xoá trả SSHOP-401). Nút đang có: · · Sửa thông tin · Ngừng hoạt động  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 19_100_001 — Nhập khách hàng từ Excel chạy nền và báo kết quả
+   @ gửi tệp : 200 {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"BcxXSz"} jobId=b6c3391b-4086-43ea-b72d-ce14e2747d04
+   @ job : {"status":"SUCCESS","total":3,"ok":3,"loi":1}
+   @ màn kết quả : (drawer đã đóng) · 
+   @ dọn khách : A7KH197554870 108872222275434 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"BHoBFx"}
+   @ dọn khách : A7KH19B7554870 530192798797564 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"FCgDMq"}
+   @ dọn khách : A7KH19L7554870 611277232060018 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"yAFVRp"}
+   ! Error: Tổng số dòng  expect(received).toBe(expected) // Object.is equality  Expected: 4 Received: 3
+
+ skipped | 19_100_002 — Tải được file lỗi của lần nhập có dòng sai

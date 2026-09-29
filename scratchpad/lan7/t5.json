@@ -1,0 +1,761 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 148,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:02:27.107Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:02:27.374Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tich-diem.gdv.spec.js",
+      "file": "tich-diem.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "20 · Tích điểm khi bán (vai gdv, SỬA TẠM cấu hình chuỗi)",
+          "file": "tich-diem.gdv.spec.js",
+          "line": 220,
+          "column": 6,
+          "specs": [
+            {
+              "title": "20_050_005 — Sản phẩm giảm giá bị loại khỏi tiền tính điểm",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM rác",
+                      "description": "693 A7KH19_KM_20_050_005_755356"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":0}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":190000,\"vat\":0,\"sauVat\":190000,\"canThanhToan\":190000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "370"
+                    },
+                    {
+                      "type": "giảm dòng SP_FIFO",
+                      "description": "0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"gOqsrC\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"anryVr\"}]"
+                    },
+                    {
+                      "type": "dừng CTKM rác",
+                      "description": "693 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 63007,
+                      "error": {
+                        "message": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:387:59",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                          "column": 59,
+                          "line": 387
+                        },
+                        "snippet": "  385 | \t\t\t\tconst giam = (r.t.sauVat ?? r.t.truocVat) - r.tong;\n  386 | \t\t\t\tghiChu('giảm dòng SP_FIFO', giam);\n> 387 | \t\t\t\texpect(giam, 'CTKM SP rác không áp lên dòng SP_FIFO').toBeGreaterThan(0);\n      | \t\t\t\t                                                      ^\n  388 | \t\t\t\tawait kiem(page, r, mong(coSo));\n  389 | \t\t\t} finally { await xong(r); }\n  390 | \t\t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                            "column": 59,
+                            "line": 387
+                          },
+                          "message": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  385 | \t\t\t\tconst giam = (r.t.sauVat ?? r.t.truocVat) - r.tong;\n  386 | \t\t\t\tghiChu('giảm dòng SP_FIFO', giam);\n> 387 | \t\t\t\texpect(giam, 'CTKM SP rác không áp lên dòng SP_FIFO').toBeGreaterThan(0);\n      | \t\t\t\t                                                      ^\n  388 | \t\t\t\tawait kiem(page, r, mong(coSo));\n  389 | \t\t\t} finally { await xong(r); }\n  390 | \t\t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:387:59"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:02:27.710Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM rác",
+                          "description": "693 A7KH19_KM_20_050_005_755356"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":0}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":190000,\"vat\":0,\"sauVat\":190000,\"canThanhToan\":190000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "370"
+                        },
+                        {
+                          "type": "giảm dòng SP_FIFO",
+                          "description": "0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"gOqsrC\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"anryVr\"}]"
+                        },
+                        {
+                          "type": "dừng CTKM rác",
+                          "description": "693 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-69d39-bị-loại-khỏi-tiền-tính-điểm-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-69d39-bị-loại-khỏi-tiền-tính-điểm-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-69d39-bị-loại-khỏi-tiền-tính-điểm-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-69d39-bị-loại-khỏi-tiền-tính-điểm-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-69d39-bị-loại-khỏi-tiền-tính-điểm-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                        "column": 59,
+                        "line": 387
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-e64825f1bd8d6e1f574f",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 371,
+              "column": 3
+            },
+            {
+              "title": "20_050_013 — Đạt mức tối thiểu nhưng có sản phẩm giảm giá",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM rác",
+                      "description": "694 A7KH19_KM_20_050_013_819659"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":101000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":190000,\"vat\":0,\"sauVat\":190000,\"canThanhToan\":190000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "372"
+                    },
+                    {
+                      "type": "giảm dòng SP_FIFO",
+                      "description": "0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"uFTYND\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"EScsSM\"}]"
+                    },
+                    {
+                      "type": "dừng CTKM rác",
+                      "description": "694 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 62959,
+                      "error": {
+                        "message": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:387:59",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                          "column": 59,
+                          "line": 387
+                        },
+                        "snippet": "  385 | \t\t\t\tconst giam = (r.t.sauVat ?? r.t.truocVat) - r.tong;\n  386 | \t\t\t\tghiChu('giảm dòng SP_FIFO', giam);\n> 387 | \t\t\t\texpect(giam, 'CTKM SP rác không áp lên dòng SP_FIFO').toBeGreaterThan(0);\n      | \t\t\t\t                                                      ^\n  388 | \t\t\t\tawait kiem(page, r, mong(coSo));\n  389 | \t\t\t} finally { await xong(r); }\n  390 | \t\t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                            "column": 59,
+                            "line": 387
+                          },
+                          "message": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  385 | \t\t\t\tconst giam = (r.t.sauVat ?? r.t.truocVat) - r.tong;\n  386 | \t\t\t\tghiChu('giảm dòng SP_FIFO', giam);\n> 387 | \t\t\t\texpect(giam, 'CTKM SP rác không áp lên dòng SP_FIFO').toBeGreaterThan(0);\n      | \t\t\t\t                                                      ^\n  388 | \t\t\t\tawait kiem(page, r, mong(coSo));\n  389 | \t\t\t} finally { await xong(r); }\n  390 | \t\t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:387:59"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:03:31.807Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM rác",
+                          "description": "694 A7KH19_KM_20_050_013_819659"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":101000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":190000,\"vat\":0,\"sauVat\":190000,\"canThanhToan\":190000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "372"
+                        },
+                        {
+                          "type": "giảm dòng SP_FIFO",
+                          "description": "0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"uFTYND\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"EScsSM\"}]"
+                        },
+                        {
+                          "type": "dừng CTKM rác",
+                          "description": "694 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-eb3d3--nhưng-có-sản-phẩm-giảm-giá-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-eb3d3--nhưng-có-sản-phẩm-giảm-giá-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-eb3d3--nhưng-có-sản-phẩm-giảm-giá-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-eb3d3--nhưng-có-sản-phẩm-giảm-giá-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-eb3d3--nhưng-có-sản-phẩm-giảm-giá-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                        "column": 59,
+                        "line": 387
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-8734d6236b1419898443",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 371,
+              "column": 3
+            },
+            {
+              "title": "20_050_014 — Không đạt mức tối thiểu và có sản phẩm giảm giá",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM rác",
+                      "description": "695 A7KH19_KM_20_050_014_883546"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":191000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":190000,\"vat\":0,\"sauVat\":190000,\"canThanhToan\":190000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "373"
+                    },
+                    {
+                      "type": "giảm dòng SP_FIFO",
+                      "description": "0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"xFXrzI\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"YwZTFf\"}]"
+                    },
+                    {
+                      "type": "dừng CTKM rác",
+                      "description": "695 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 63001,
+                      "error": {
+                        "message": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:387:59",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                          "column": 59,
+                          "line": 387
+                        },
+                        "snippet": "  385 | \t\t\t\tconst giam = (r.t.sauVat ?? r.t.truocVat) - r.tong;\n  386 | \t\t\t\tghiChu('giảm dòng SP_FIFO', giam);\n> 387 | \t\t\t\texpect(giam, 'CTKM SP rác không áp lên dòng SP_FIFO').toBeGreaterThan(0);\n      | \t\t\t\t                                                      ^\n  388 | \t\t\t\tawait kiem(page, r, mong(coSo));\n  389 | \t\t\t} finally { await xong(r); }\n  390 | \t\t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                            "column": 59,
+                            "line": 387
+                          },
+                          "message": "Error: CTKM SP rác không áp lên dòng SP_FIFO\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  385 | \t\t\t\tconst giam = (r.t.sauVat ?? r.t.truocVat) - r.tong;\n  386 | \t\t\t\tghiChu('giảm dòng SP_FIFO', giam);\n> 387 | \t\t\t\texpect(giam, 'CTKM SP rác không áp lên dòng SP_FIFO').toBeGreaterThan(0);\n      | \t\t\t\t                                                      ^\n  388 | \t\t\t\tawait kiem(page, r, mong(coSo));\n  389 | \t\t\t} finally { await xong(r); }\n  390 | \t\t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:387:59"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:04:35.833Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM rác",
+                          "description": "695 A7KH19_KM_20_050_014_883546"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":191000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":190000,\"vat\":0,\"sauVat\":190000,\"canThanhToan\":190000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "373"
+                        },
+                        {
+                          "type": "giảm dòng SP_FIFO",
+                          "description": "0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"xFXrzI\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"YwZTFf\"}]"
+                        },
+                        {
+                          "type": "dừng CTKM rác",
+                          "description": "695 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-717f1-iểu-và-có-sản-phẩm-giảm-giá-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-717f1-iểu-và-có-sản-phẩm-giảm-giá-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-717f1-iểu-và-có-sản-phẩm-giảm-giá-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-717f1-iểu-và-có-sản-phẩm-giảm-giá-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-717f1-iểu-và-có-sản-phẩm-giảm-giá-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                        "column": 59,
+                        "line": 387
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-5600e8580e1104c64a9d",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 371,
+              "column": 3
+            },
+            {
+              "title": "20_050_006 — Sản phẩm sửa giá tăng lên vẫn tích điểm",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "ô trên dòng hàng",
+                      "description": "1"
+                    },
+                    {
+                      "type": "khôi phục (lỗi)",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ppKlci\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"rHeqNB\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 43751,
+                      "error": {
+                        "message": "Error: POS không cho sửa đơn giá trên dòng hàng (ô giá khoá / không có) — không dựng được \"SP sửa giá tăng\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m-1\u001b[39m",
+                        "stack": "Error: POS không cho sửa đơn giá trên dòng hàng (ô giá khoá / không có) — không dựng được \"SP sửa giá tăng\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m-1\u001b[39m\n    at sua (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:409:122)\n    at ban (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:178:12)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:397:8",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                          "column": 122,
+                          "line": 409
+                        },
+                        "snippet": "  407 | \t\t\t\t\t}\n  408 | \t\t\t\t\tghiChu('ô trên dòng hàng', ds.join(' · ') || '(không có ô)');\n> 409 | \t\t\t\t\texpect(sua, 'POS không cho sửa đơn giá trên dòng hàng (ô giá khoá / không có) — không dựng được \"SP sửa giá tăng\"').toBeGreaterThanOrEqual(0);\n      | \t\t\t\t\t                                                                                                                    ^\n  410 | \t\t\t\t\tawait oGia.nth(sua).fill('120000');\n  411 | \t\t\t\t\tawait oGia.nth(sua).press('Tab');\n  412 | \t\t\t\t\tawait pg.waitForTimeout(1_500);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                            "column": 122,
+                            "line": 409
+                          },
+                          "message": "Error: POS không cho sửa đơn giá trên dòng hàng (ô giá khoá / không có) — không dựng được \"SP sửa giá tăng\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m-1\u001b[39m\n\n  407 | \t\t\t\t\t}\n  408 | \t\t\t\t\tghiChu('ô trên dòng hàng', ds.join(' · ') || '(không có ô)');\n> 409 | \t\t\t\t\texpect(sua, 'POS không cho sửa đơn giá trên dòng hàng (ô giá khoá / không có) — không dựng được \"SP sửa giá tăng\"').toBeGreaterThanOrEqual(0);\n      | \t\t\t\t\t                                                                                                                    ^\n  410 | \t\t\t\t\tawait oGia.nth(sua).fill('120000');\n  411 | \t\t\t\t\tawait oGia.nth(sua).press('Tab');\n  412 | \t\t\t\t\tawait pg.waitForTimeout(1_500);\n    at sua (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:409:122)\n    at ban (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:178:12)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js:397:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:05:39.958Z",
+                      "annotations": [
+                        {
+                          "type": "ô trên dòng hàng",
+                          "description": "1"
+                        },
+                        {
+                          "type": "khôi phục (lỗi)",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ppKlci\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"rHeqNB\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-5db84--giá-tăng-lên-vẫn-tích-điểm-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-5db84--giá-tăng-lên-vẫn-tích-điểm-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-5db84--giá-tăng-lên-vẫn-tích-điểm-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-5db84--giá-tăng-lên-vẫn-tích-điểm-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-5db84--giá-tăng-lên-vẫn-tích-điểm-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tich-diem.gdv.spec.js",
+                        "column": 122,
+                        "line": 409
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-07c520a5a89774d95876",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 393,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T12:02:26.852Z",
+    "duration": 237368.98799999998,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

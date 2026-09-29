@@ -1,0 +1,727 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 315,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:18:37.233Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 86,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:18:37.748Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tu-sinh.gdv.spec.js",
+      "file": "tu-sinh.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "26 · Phiếu thu tự sinh (vai gdv)",
+          "file": "tu-sinh.gdv.spec.js",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "26_060_001 — Bán hàng thanh toán sinh phiếu thu tự động",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 25917,
+                      "error": {
+                        "message": "Error: view_all_receipts lỗi: 404 undefined",
+                        "stack": "Error: view_all_receipts lỗi: 404 undefined\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:44:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                          "column": 9,
+                          "line": 192
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mreceipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                            "column": 9,
+                            "line": 192
+                          },
+                          "message": "Error: view_all_receipts lỗi: 404 undefined\n\n   at receipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:44:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:18:38.062Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-9cb66-toán-sinh-phiếu-thu-tự-động-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-9cb66-toán-sinh-phiếu-thu-tự-động-gdv/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-9cb66-toán-sinh-phiếu-thu-tự-động-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-9cb66-toán-sinh-phiếu-thu-tự-động-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                        "column": 9,
+                        "line": 192
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-80b0a7c6fc9835af5cf3",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 41,
+              "column": 2
+            },
+            {
+              "title": "26_060_002 — Đơn nháp hoặc chưa thanh toán không sinh phiếu thu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 25448,
+                      "error": {
+                        "message": "Error: view_all_receipts lỗi: 404 undefined",
+                        "stack": "Error: view_all_receipts lỗi: 404 undefined\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:66:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                          "column": 9,
+                          "line": 192
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mreceipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                            "column": 9,
+                            "line": 192
+                          },
+                          "message": "Error: view_all_receipts lỗi: 404 undefined\n\n   at receipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:66:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:19:04.511Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-5e19e-h-toán-không-sinh-phiếu-thu-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-5e19e-h-toán-không-sinh-phiếu-thu-gdv/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-5e19e-h-toán-không-sinh-phiếu-thu-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-5e19e-h-toán-không-sinh-phiếu-thu-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                        "column": 9,
+                        "line": 192
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-72f546b134613d777411",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 63,
+              "column": 2
+            },
+            {
+              "title": "26_040_004 — Phiếu thu tiền bán hàng có thông báo riêng khi xoá",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 25901,
+                      "error": {
+                        "message": "Error: view_all_receipts lỗi: 404 undefined",
+                        "stack": "Error: view_all_receipts lỗi: 404 undefined\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:83:18",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                          "column": 9,
+                          "line": 192
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mreceipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                            "column": 9,
+                            "line": 192
+                          },
+                          "message": "Error: view_all_receipts lỗi: 404 undefined\n\n   at receipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:83:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:19:30.501Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f33ec--có-thông-báo-riêng-khi-xoá-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f33ec--có-thông-báo-riêng-khi-xoá-gdv/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f33ec--có-thông-báo-riêng-khi-xoá-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f33ec--có-thông-báo-riêng-khi-xoá-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                        "column": 9,
+                        "line": 192
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-12e8d337ba4919add4a2",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 80,
+              "column": 2
+            },
+            {
+              "title": "26_040_003 — Phiếu do hệ thống tự sinh không xoá được",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7613,
+                      "error": {
+                        "message": "Error: view_all_receipts lỗi: 200 undefined",
+                        "stack": "Error: view_all_receipts lỗi: 200 undefined\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:101:19",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                          "column": 9,
+                          "line": 192
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mreceipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                            "column": 9,
+                            "line": 192
+                          },
+                          "message": "Error: view_all_receipts lỗi: 200 undefined\n\n   at receipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:101:19"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:19:56.941Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-acbab-hống-tự-sinh-không-xoá-được-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-acbab-hống-tự-sinh-không-xoá-được-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-acbab-hống-tự-sinh-không-xoá-được-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-acbab-hống-tự-sinh-không-xoá-được-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-acbab-hống-tự-sinh-không-xoá-được-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                        "column": 9,
+                        "line": 192
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-fd0c1871df5f6bc657cd",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 92,
+              "column": 2
+            },
+            {
+              "title": "26_060_005 — Thu hồi nợ nhân viên từ kho sinh phiếu thu tự động",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7256,
+                      "error": {
+                        "message": "Error: view_all_receipts lỗi: 404 undefined",
+                        "stack": "Error: view_all_receipts lỗi: 404 undefined\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:129:19",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                          "column": 9,
+                          "line": 192
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mreceipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                            "column": 9,
+                            "line": 192
+                          },
+                          "message": "Error: view_all_receipts lỗi: 404 undefined\n\n   at receipt-page.js:192\n\n  190 | \t});\n  191 | \tif (String(r.body?.status?.code) !== '200') {\n> 192 | \t\tthrow new Error(`view_all_receipts lỗi: ${r.status} ${JSON.stringify(r.body?.status)}`);\n      | \t\t      ^\n  193 | \t}\n  194 | \treturn r.body;\n  195 | }\n    at Object.phieuHomNay (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js:192:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:129:19"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:20:05.008Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-88a95--kho-sinh-phiếu-thu-tự-động-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-88a95--kho-sinh-phiếu-thu-tự-động-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-88a95--kho-sinh-phiếu-thu-tự-động-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-88a95--kho-sinh-phiếu-thu-tự-động-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-88a95--kho-sinh-phiếu-thu-tự-động-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/receipt-page.js",
+                        "column": 9,
+                        "line": 192
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-36347034a1f2583ee746",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 120,
+              "column": 2
+            },
+            {
+              "title": "26_070_002 — Cấp dưới không xem được phiếu của cấp trên",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "0 phiếu · lạ []"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 12872,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:152:40",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js",
+                          "column": 40,
+                          "line": 152
+                        },
+                        "snippet": "  150 | \t\tconst la = tat.filter((x) => x.shopId != null && Number(x.shopId) !== shopId);\n  151 | \t\tghiChu('đo', `${tat.length} phiếu · lạ ${JSON.stringify(la.slice(0, 5).map((x) => ({ ...tomTat(x), shopId: x.shopId })))}`);\n> 152 | \t\texpect(String(b.body?.status?.code)).toBe('200');\n      | \t\t                                     ^\n  153 | \t\texpect(la, 'GDV thấy phiếu của đơn vị khác (cấp trên)').toEqual([]);\n  154 | \t\t// Thử xin phiếu của cấp trên bằng shopId của tỉnh ⇒ không được trả dữ liệu.\n  155 | \t\tconst tinh = await r26.goiApi(page, kho, 'GET', r26.API, { params: { shopId: 0, pageNum: 1, pageSize: 20, start_date: d.getTime(), end_date: Date.now() } });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js",
+                            "column": 40,
+                            "line": 152
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m\n\n  150 | \t\tconst la = tat.filter((x) => x.shopId != null && Number(x.shopId) !== shopId);\n  151 | \t\tghiChu('đo', `${tat.length} phiếu · lạ ${JSON.stringify(la.slice(0, 5).map((x) => ({ ...tomTat(x), shopId: x.shopId })))}`);\n> 152 | \t\texpect(String(b.body?.status?.code)).toBe('200');\n      | \t\t                                     ^\n  153 | \t\texpect(la, 'GDV thấy phiếu của đơn vị khác (cấp trên)').toEqual([]);\n  154 | \t\t// Thử xin phiếu của cấp trên bằng shopId của tỉnh ⇒ không được trả dữ liệu.\n  155 | \t\tconst tinh = await r26.goiApi(page, kho, 'GET', r26.API, { params: { shopId: 0, pageNum: 1, pageSize: 20, start_date: d.getTime(), end_date: Date.now() } });\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:152:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:20:12.697Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "0 phiếu · lạ []"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-c5036-xem-được-phiếu-của-cấp-trên-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-c5036-xem-được-phiếu-của-cấp-trên-gdv/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-c5036-xem-được-phiếu-của-cấp-trên-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-c5036-xem-được-phiếu-của-cấp-trên-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js",
+                        "column": 40,
+                        "line": 152
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-8615c523438e3cb3c6dd",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 141,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T13:18:36.958Z",
+    "duration": 108840.33499999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,107 @@
+﻿,Chức năng,,KHAI BÁO TỒN KHO ĐẦU KỲ,,,,,,,,
+,Mã Testcase,,04_2_ton_kho_dau_ky,,,,,,,,
+,Tổng các tình huống kiểm thử,,36,,,,,,,,
+,Chưa thực hiện,,36,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,KHAI BÁO TỒN KHO ĐẦU KỲ,,,,,,,,,,
+,010 — Tải tệp mẫu và chuẩn bị dữ liệu tồn đầu kỳ,,,,,,,,,,
+04_2_010_001,Màn Nhập tồn kho đầu kỳ mở được và hiện danh sách lượt khai báo,Vai: shop,1. Mở /inventory/opening-balance,,"Thẻ ""Danh sách lượt khai báo tồn kho đầu kỳ"" hiện sẵn khi vào màn, kèm ô Lọc theo Kho / Điểm bán và ô tìm theo mã preview / tên file / ghi chú",,,,,,
+04_2_010_002,Tải được tệp mẫu Excel khai báo tồn đầu kỳ,Vai: shop. Đang ở /inventory/opening-balance,"1. Bấm ""Khai báo tồn đầu kỳ"";
+2. Ở mục ""
+1. Tải file mẫu"" bấm ""Tải mẫu excel""",,"Tệp.xlsx tải về thành công; tệp có đủ các cột Mã điểm bán / kho, SKU, Tên SP, Tên biến thể, Đơn vị, Mã lô, Serial, Số lượng, Giá vốn, Ghi chú",,,,,,
+04_2_010_003,Trạng thái đã khai báo tồn đầu kỳ — phơi hành vi thật,"Vai `shop` đăng nhập, đang ở Kho > Tồn đầu kỳ (`/inventory/opening-balance`); điểm bán ĐÃ khai báo tồn đầu kỳ trước đó","1. Quan sát nút ""Tải mẫu excel"" và nút khai báo tồn kho đầu kỳ
+2. Tìm dòng chữ thông báo đã khai báo",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+,020 — Khai báo tồn đầu kỳ từ tệp Excel,,,,,,,,,,
+04_2_020_001,Đọc tệp Excel hợp lệ và hiện năm ô tổng hợp,Vai: shop. Có tệp Excel đã điền đúng khuôn,"1. Bấm ""Khai báo tồn đầu kỳ"";
+2. Kéo tệp vào vùng ""Kéo thả file Excel hoặc bấm để chọn"";
+3. Chờ xử lý xong",,"Trong lúc chạy hiện ""Đang xử lý file Excel…"" kèm số dòng đã xử lý. Xong hiện ""Đã xử lý xong file. Vui lòng kiểm tra danh sách."" và năm ô: Tổng dòng, Hợp lệ, Lỗi, Tổng SL, Tổng giá trị",,,,,,
+04_2_020_002,Bảng xem trước hiện đủ cột và trạng thái từng dòng,Vai: shop. Vừa upload xong tệp Excel,1. Đọc bảng Xem trước dữ liệu khai báo tồn kho đầu kỳ,,"Bảng có các cột Dòng, Điểm bán / kho, Tên sản phẩm, Đơn vị, Mã lô, Hạn sử dụng, Serial, Số lượng, Giá vốn, Thành tiền, Trạng thái, Ghi chú. Cột Trạng thái nhận đúng một trong ba giá trị Hợp lệ / Cảnh báo / Lỗi",,,,,,
+04_2_020_003,Dòng thiếu SKU bị đánh Lỗi kèm lý do,Vai: shop. Có tệp Excel cố ý để trống cột SKU ở 1 dòng,"1. Upload tệp;
+2. Tìm dòng tương ứng trong bảng xem trước",,"Dòng đó có Trạng thái = ""Lỗi"" và cột Ghi chú nêu lý do; ô tổng hợp Lỗi tăng đúng 1",,,,,,
+04_2_020_004,Dòng có số lượng bằng 0 bị chặn,Vai: shop. Có tệp Excel với 1 dòng Số lượng = 0,"1. Upload tệp;
+2. Tìm dòng đó",,"Dòng có Trạng thái = ""Lỗi"" (số lượng phải lớn hơn 0) và không được tính vào ô Hợp lệ",,,,,,
+04_2_020_005,Dòng giá vốn âm bị chặn,Vai: shop. Có tệp Excel với 1 dòng Giá vốn âm,"1. Upload tệp;
+2. Tìm dòng đó",,"Dòng có Trạng thái = ""Lỗi"" (giá vốn không âm)",,,,,,
+04_2_020_006,Bỏ trống mã điểm bán thì ghi vào điểm bán đang chọn,Vai: shop. Có tệp Excel để trống cột Mã điểm bán / kho,"1. Upload tệp;
+2. Đọc cột Điểm bán / kho trong bảng xem trước",,"Cột Điểm bán / kho hiện ""Mặc định"" cho các dòng bỏ trống",,,,,,
+04_2_020_007,Số serial phải bằng số lượng quy về đơn vị chính,Vai: shop. Có tệp Excel với hàng đích danh yêu cầu serial khai thiếu serial,"1. Upload tệp;
+2. Tìm dòng đó",,"Dòng có Trạng thái = ""Lỗi"" và Ghi chú nêu số serial không khớp số lượng",,,,,,
+04_2_020_008,Ghi nhận lượt khai báo đưa hàng vào tồn kho,Vai: shop. Đã upload tệp hợp lệ và đang xem bảng xem trước,"1. Bấm ghi nhận lượt khai báo;
+2. Mở thẻ Danh sách sản phẩm đã khai báo",,"Các sản phẩm trong tệp xuất hiện ở thẻ Danh sách sản phẩm đã khai báo kèm số lượng, giá vốn, tổng giá trị và ngày khai báo đúng như tệp",,,,,,
+04_2_020_009,Chặn khai báo tồn đầu kỳ lần thứ hai cho cùng điểm bán,Vai: shop. Điểm bán ĐÃ khai báo tồn đầu kỳ,"1. Bấm ""Khai báo tồn đầu kỳ"";
+2. Upload tệp hợp lệ;
+3. Ghi nhận",,Hệ thống chặn: mỗi điểm bán chỉ khai được một lần. Không có dòng tồn nào được ghi thêm,,,,,,
+04_2_020_010,Upload SKU không tồn tại,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, sẵn file có 1 dòng mang SKU không tồn tại","1. Upload file đó
+2. Đọc trạng thái và cột Ghi chú của dòng SKU sai",,"Dòng bị đánh trạng thái ""Lỗi"", cột Ghi chú ghi lý do là không tìm thấy sản phẩm/biến thể theo SKU; ô tổng hợp ""Lỗi"" tăng tương ứng; KHÔNG tạo được phiếu khi còn dòng lỗi.",,,,,,
+04_2_020_011,Upload SKU của sản phẩm ĐÃ có tồn kho,Vai `shop` đăng nhập; có sẵn file khai báo SKU mà sản phẩm đó đang có tồn kho,"1. Ghi lại số tồn hiện tại của SKU đó
+2. Upload file và xác nhận tạo phiếu
+3. Đọc lại số tồn",,"Dòng ở trạng thái ""Hợp lệ""; sau khi tạo phiếu, tồn kho = tồn cũ **CỘNG DỒN** số lượng khai báo, không ghi đè.",,,,,,
+04_2_020_012,Xoá dòng lỗi khỏi bản xem trước,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện; có ít nhất 1 dòng Lỗi","1. Bấm xoá ở dòng lỗi
+2. Đọc hộp thoại xác nhận
+3. Xác nhận
+4. Đọc lại bảng và các ô tổng hợp",,"Hộp thoại ""Xóa dòng này khỏi bản xem trước?""; sau khi xác nhận hiện thông báo ""Đã xóa"", dòng biến mất, ô tổng hợp ""Tổng dòng"" và ""Lỗi"" giảm tương ứng.",,,,,,
+04_2_020_013,Mã lô hợp lệ được ghi nhận theo phương pháp tính giá,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện","1. Với sản phẩm FIFO / Đích danh: kiểm dòng có Mã lô đã nhập
+2. Với sản phẩm MAC / Tiêu chuẩn: để trống Mã lô
+3. Sửa Mã lô của một dòng trong bản xem trước rồi lưu",,"FIFO/Đích danh: **bắt buộc** có Mã lô, thiếu là dòng Lỗi. MAC/Tiêu chuẩn: bỏ trống thì **hệ thống tự sinh** mã lô. Sửa Mã lô trong bản xem trước thì hiện ""Đã cập nhật dòng"" và cột Mã lô đổi theo.",,,,,,
+04_2_020_014,Mã lô đã tồn tại,Vai `shop` đăng nhập; có sẵn file khai báo mã lô trùng với lô đã có của cùng sản phẩm,"1. Upload file
+2. Đọc trạng thái và Ghi chú của dòng đó",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_2_020_015,Upload file sai định dạng,"Vai `shop` đăng nhập, drawer khai báo đang mở","1. Kéo thả file.pdf vào vùng upload
+2. Thử lại với.csv
+3. Thử lại với.docx",,"Cả ba bị từ chối, không phát sinh request xử lý file; dòng gợi ý ghi ""Hỗ trợ.xlsx,.xls"".",,,,,,
+04_2_020_016,Upload file Excel rỗng,"Vai `shop` đăng nhập; có file .xlsx chỉ có hàng tiêu đề, không có dòng dữ liệu","1. Upload file đó
+2. Đọc bản xem trước và các ô tổng hợp",,"Bảng xem trước rỗng; ô ""Tổng dòng"" = 0; không có dòng rác; không tạo được phiếu.",,,,,,
+04_2_020_017,"Tìm kiếm trong bản xem trước theo SKU, tên và mã lô","Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện với nhiều dòng","1. Nhập SKU vào ô ""Tìm theo SKU / tên / mã lô""
+2. Nhập một phần tên sản phẩm
+3. Nhập mã lô
+4. Nhập từ khoá không tồn tại",,"Cả ba tiêu chí đều lọc đúng trong phạm vi bản xem trước; từ khoá không tồn tại cho bảng rỗng; các ô tổng hợp KHÔNG đổi theo bộ tìm (tổng hợp tính trên toàn bản xem trước, không trên phần đang lọc)",,,,,,
+04_2_020_018,Bộ lọc trạng thái dòng trong bản xem trước,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện có cả dòng Hợp lệ, Lỗi và Cảnh báo","1. Chọn lọc ""Hợp lệ"" → quan sát
+2. Chọn ""Lỗi"" → quan sát
+3. Chọn ""Cảnh báo"" → quan sát
+4. Chọn ""Tất cả""",,Bốn lựa chọn đúng nhãn: Tất cả · Hợp lệ · Lỗi · Cảnh báo; mỗi lựa chọn chỉ còn dòng đúng trạng thái.,,,,,,
+04_2_020_019,Nút tải lại bản xem trước,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện","1. Ghi lại nội dung một dòng
+2. Bấm nút tải lại
+3. Quan sát",,"Bản xem trước được nạp lại từ server, giữ đúng dữ liệu của file đã upload; các sửa đã lưu vẫn còn, các sửa chưa lưu bị bỏ.",,,,,,
+04_2_020_020,Tải lên file Excel mới khi đang có bản xem trước,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện","1. Upload một file Excel KHÁC
+2. Đọc hộp thoại xác nhận
+3. Xác nhận
+4. Quan sát bản xem trước",,"Hộp thoại ""Tải lên file excel mới?""; xác nhận thì hiện ""Đã hủy bản xem trước hiện tại"", bảng thay bằng dữ liệu file mới và các ô tổng hợp tính lại.",,,,,,
+04_2_020_021,Phân trang bản xem trước,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện có hơn một trang dòng","1. Đọc số dòng trang 1
+2. Sang trang 2
+3. Đổi số dòng mỗi trang
+4. Về trang cuối",,"Phân trang hoạt động đúng, không lặp dòng; đổi được số dòng mỗi trang; các ô tổng hợp giữ nguyên khi đổi trang.",,,,,,
+04_2_020_022,Khai báo tồn đầu kỳ cho sản phẩm chưa từng khai,Vai `shop` đăng nhập; có file khai báo SKU của sản phẩm chưa có tồn kho ở điểm bán này,"1. Upload file và xác nhận tạo phiếu
+2. Đọc thông báo
+3. Mở thẻ ""Danh sách sản phẩm đã khai báo"" và tìm sản phẩm đó
+4. Kiểm tồn kho của sản phẩm",,"Hiện ""Đã tạo phiếu nhập tồn đầu kỳ thành công""; sản phẩm xuất hiện ở danh sách đã khai báo với đúng Số lượng, Giá vốn, Tổng giá trị và Ngày khai báo; tồn kho tăng đúng số lượng khai.",,,,,,
+04_2_020_023,Upload file lớn,Vai `shop` đăng nhập; có file Excel khai báo từ 1.000 dòng trở lên,"1. Upload file
+2. Chờ xử lý xong
+3. Đối chiếu ""Tổng dòng"" với số dòng trong file
+4. Xác nhận tạo phiếu rồi đối chiếu tổng số lượng đã ghi",,"Hiện ""Đã xử lý xong file. Vui lòng kiểm tra danh sách.""; ""Tổng dòng"" khớp số dòng thật của file, không bị cắt; sau khi tạo phiếu, tổng số lượng ghi vào tồn khớp tổng trong file và **cộng dồn** với tồn cũ.",,,,,,
+04_2_020_024,Còn dòng lỗi thì không tạo được phiếu,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện; còn ít nhất 1 dòng Lỗi","1. Bấm tạo phiếu nhập tồn đầu kỳ
+2. Đọc thông báo",,Hiện cảnh báo theo khuôn `Còn <N> dòng lỗi. Vui lòng xóa hoặc sửa lại file.` với N đúng bằng số dòng lỗi; không gửi request tạo phiếu.,,,,,,
+04_2_020_025,Bản xem trước chưa ở trạng thái chờ xác nhận thì không tạo được phiếu,Vai `shop` đăng nhập; bản xem trước đang ở trạng thái Chờ xử lý hoặc Đang xử lý,"1. Bấm tạo phiếu nhập tồn đầu kỳ
+2. Đọc thông báo",,"Hiện cảnh báo nguyên văn ""Bản xem trước chưa ở trạng thái chờ xác nhận.""; không gửi request tạo phiếu.",,,,,,
+04_2_020_026,Huỷ hộp thoại xác nhận tạo phiếu thì không ghi gì,"Vai `shop` đăng nhập, drawer khai báo tồn đầu kỳ đang mở, đã upload file và bản xem trước đã hiện; không còn dòng lỗi","1. Bấm tạo phiếu
+2. Ở hộp thoại ""Xác nhận tạo phiếu nhập tồn đầu kỳ?"" bấm Huỷ
+3. Kiểm tồn kho và danh sách lượt khai báo",,"Không gửi request; tồn kho không đổi; lượt khai báo vẫn ở trạng thái Chờ xác nhận, chưa thành Đã xác nhận.",,,,,,
+,030 — Tra cứu lượt khai báo và sản phẩm đã khai báo,,,,,,,,,,
+04_2_030_001,Lọc danh sách lượt khai báo theo kho hoặc điểm bán,Vai: province. Có từ 2 điểm bán đã khai báo,"1. Mở /inventory/opening-balance;
+2. Chọn một điểm bán ở ô ""Lọc theo Kho / Điểm bán""",,Danh sách chỉ còn lượt khai báo của điểm bán đã chọn,,,,,,
+04_2_030_002,Tìm lượt khai báo theo mã preview hoặc tên file,Vai: province. Biết trước mã preview của một lượt,"1. Gõ mã preview vào ô ""Tìm theo mã preview / tên file / ghi chú""",,Danh sách trả về đúng lượt khai báo mang mã đó,,,,,,
+04_2_030_003,Lượt Chờ xác nhận là dữ liệu CHƯA vào tồn kho,Vai: province. Có 1 lượt ở trạng thái Chờ xác nhận,"1. Lọc trạng thái ""Chờ xác nhận"";
+2. Ghi lại sản phẩm trong lượt đó;
+3. Mở thẻ ""Danh sách sản phẩm đã khai báo""",,Sản phẩm của lượt Chờ xác nhận KHÔNG xuất hiện ở thẻ Danh sách sản phẩm đã khai báo,,,,,,
+04_2_030_004,Mở lại chi tiết một lượt khai báo,Vai: province. Có ít nhất 1 lượt khai báo,"1. Bấm ""Xem"" ở cột Thao tác của một dòng",,"Màn chi tiết lượt khai báo mở lại đúng lượt đó, hiện lại bảng dòng dữ liệu của lượt",,,,,,
+04_2_030_005,Sáu trạng thái lượt khai báo trong bộ lọc,"Vai `shop` đăng nhập, đang ở Kho > Tồn đầu kỳ (`/inventory/opening-balance`)","1. Mở ô lọc trạng thái, đọc các lựa chọn
+2. Chọn lần lượt từng trạng thái và quan sát cột Trạng thái",,Đủ 6 lựa chọn đúng nhãn: Tất cả trạng thái · Chờ xử lý · Đang xử lý · Chờ xác nhận · Đã xác nhận · Thất bại; mỗi lựa chọn chỉ còn dòng đúng trạng thái đó.,,,,,,
+04_2_030_006,Bảng danh sách lượt khai báo có đủ 11 cột,"Vai `shop` đăng nhập, đang ở Kho > Tồn đầu kỳ (`/inventory/opening-balance`)","1. Đọc hàng tiêu đề bảng ""Danh sách lượt khai báo tồn kho đầu kỳ""",,Đủ 11 cột: Điểm bán / kho · Tỉnh · Xã · Tổng dòng · Hợp lệ · Lỗi · Tổng SL · Tổng giá trị · Trạng thái · Ngày tạo · Thao tác.,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+04_2_PQ_001,Vai Bưu điện Tỉnh xem được lượt khai báo của điểm bán trực thuộc,Vai: province. Điểm bán trực thuộc đã khai báo,"1. Mở /inventory/opening-balance;
+2. Lọc theo điểm bán đó",,"Danh sách hiện lượt khai báo của điểm bán trực thuộc (task 030 khai vai TONG_CONG_TY, BUU_DIEN_TINH, BUU_DIEN_XA, DIEM_BAN đều tra cứu được)",,,,,,

@@ -1,0 +1,304 @@
+﻿,Chức năng,,NHẬP / XUẤT / CHUYỂN KHO,,,,,,,,
+,Mã Testcase,,04_3_nhap_xuat_chuyen_kho,,,,,,,,
+,Tổng các tình huống kiểm thử,,97,,,,,,,,
+,Chưa thực hiện,,97,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,NHẬP / XUẤT / CHUYỂN KHO,,,,,,,,,,
+,010 — Tra cứu danh sách phiếu nhập kho và phiếu xuất kho,,,,,,,,,,
+04_3_010_001,Mở màn Lịch sử xuất nhập kho,Tài khoản đăng nhập là role cửa hàng trưởng,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn xuất nhập kho",,"Với tab Phiếu nhập kho, Phiếu xuất kho - Hiển thị tiêu đề ""Lịch sử xuất nhập kho"" - Hiển thị bộ lọc Điểm bán - Hiển thị ô tìm kiếm mã phiếu - Hiển thị bộ lọc Nguồn nhập/xuất - Hiển thị bộ lọc Phân loại phiếu - Hiển thị bộ lọc Phân loại sản phẩm - Hiển thị khoảng thời gian - Hiển thị button: Tồn kho đầu kỳ, Xuất kho, Nhập kho, Xuất excel, Chi tiết, Hyperlink Mã phiếu Với tab Thẻ kho - Hiển thị tiêu đề ""Lịch sử xuất nhập kho"" - Hiển thị bộ lọc Điểm bán - Hiển thị bộ lọc tìm kiếm sản phẩm theo mã Tên SP, SKU, Barcode - Hiển thị bộ lọc khoảng thời gian",,,,,,
+04_3_010_002,Bộ lọc điểm bán ở màn Lịch sử xuất nhập kho,"Vai `province` đăng nhập, đang ở màn Lịch sử xuất nhập kho; tỉnh có nhiều điểm bán","1. Chọn một điểm bán ở ô lọc điểm bán
+2. Quan sát danh sách phiếu
+3. Xoá lọc",,Chỉ còn phiếu thuộc điểm bán đã chọn; xoá lọc thì trở về toàn bộ phạm vi của vai.,,,,,,
+04_3_010_003,Tìm kiếm theo mã phiếu,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đã biết một mã phiếu đang có","1. Nhập đúng mã phiếu vào ô tìm kiếm
+2. Quan sát
+3. Nhập một phần mã phiếu",,Nhập đủ mã trả về đúng 1 phiếu; nhập một phần trả các phiếu có mã chứa đoạn đó.,,,,,,
+04_3_010_004,Tìm kiếm mã phiếu không tồn tại,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho","1. Nhập ""PN999999999"" vào ô tìm kiếm",,"Bảng về trạng thái rỗng ""Không có dữ liệu""; không lỗi đỏ, layout giữ nguyên.",,,,,,
+04_3_010_005,Xuất Excel ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở thẻ ""Thẻ kho""","1. Đặt bộ lọc khoảng thời gian và sản phẩm
+2. Bấm xuất Excel
+3. Mở file tải về",,"File Excel tải về, số dòng và số liệu khớp đúng phần đang lọc trên màn.",,,,,,
+04_3_010_006,Xuất Excel danh sách phiếu nhập,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở thẻ danh sách phiếu nhập","1. Đặt bộ lọc
+2. Bấm xuất Excel
+3. Mở file",,"File chứa đúng các phiếu nhập đang lọc, đủ cột như trên màn; tổng số dòng khớp tổng bản ghi.",,,,,,
+04_3_010_007,Xuất Excel danh sách phiếu xuất,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở thẻ danh sách phiếu xuất","1. Đặt bộ lọc
+2. Bấm xuất Excel
+3. Mở file",,"File chứa đúng các phiếu xuất đang lọc, đủ cột; tổng số dòng khớp tổng bản ghi.",,,,,,
+04_3_010_008,Bộ lọc Phân loại sản phẩm,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho","1. Chọn một phân loại sản phẩm ở bộ lọc
+2. Quan sát các dòng
+3. Đổi sang phân loại khác",,Chỉ còn dòng của sản phẩm thuộc phân loại đã chọn.,,,,,,
+04_3_010_009,Lọc theo Nguồn nhập / xuất,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho","1. Mở bộ lọc nguồn nhập/xuất, đọc các lựa chọn
+2. Chọn lần lượt và quan sát",,Mỗi lựa chọn chỉ còn phiếu đúng nguồn,,,,,,
+04_3_010_010,Lọc theo Phân loại phiếu NHẬP,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở thẻ danh sách phiếu nhập","1. Mở bộ lọc phân loại phiếu nhập, đọc đủ lựa chọn
+2. Chọn lần lượt từng lựa chọn",,Đủ 7 nhãn đang bật: Nhập kho thường · Nhập lại từ đơn hàng hủy · Nhập kho sản phẩm sản xuất · Nhập chuyển kho · Kiểm kho · Nhập kho trả hàng · Tồn đầu kỳ · Hoàn chuyển kho; mỗi lựa chọn chỉ còn phiếu đúng loại.,,,,,,
+04_3_010_011,Lọc theo Phân loại phiếu XUẤT,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở thẻ danh sách phiếu xuất","1. Mở bộ lọc phân loại phiếu xuất, đọc đủ lựa chọn
+2. Chọn lần lượt từng lựa chọn",,"Đủ 6 nhãn đang bật: Xuất kho thường · Xuất bán hàng · Xuất trả hàng · Xuất chuyển kho · Xuất kho nguyên liệu sản xuất · Điều chỉnh phiếu nhập; mỗi lựa chọn chỉ còn phiếu đúng loại. ""Điều chỉnh phiếu nhập"" là chứng từ bút toán đảo theo Điều 27 Luật Kế toán — không lẫn với xuất kho thường.",,,,,,
+04_3_010_012,Xem chi tiết phiếu nhập kho,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; có ít nhất 1 phiếu nhập","1. Mở chi tiết một phiếu nhập
+2. Đối chiếu từng dòng sản phẩm với danh sách
+3. Đối chiếu tổng tiền",,"Chi tiết hiện đủ thông tin phiếu (mã, ngày, nguồn nhập, kho, người lập) và các dòng sản phẩm với Số lượng · Đơn vị · Giá vốn · Thành tiền; tổng tiền = tổng thành tiền các dòng.",,,,,,
+04_3_010_013,Xem chi tiết phiếu xuất kho,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; có ít nhất 1 phiếu xuất","1. Mở chi tiết một phiếu xuất
+2. Đối chiếu các dòng và giá vốn",,Chi tiết hiện đủ thông tin phiếu và các dòng với Số lượng · Đơn vị · Giá vốn xuất · Thành tiền.,,,,,,
+04_3_010_014,Upload chứng từ đi kèm phiếu,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở chi tiết một phiếu","1. Upload 1 ảnh chứng từ
+2. Quan sát danh sách chứng từ
+3. Tải lại trang và mở lại phiếu",,"Ảnh hiện trong danh sách chứng từ của phiếu; sau khi tải lại trang vẫn còn (đã lưu lên server, không phải chỉ ở client).",,,,,,
+04_3_010_015,Upload vượt giới hạn số ảnh chứng từ,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở chi tiết một phiếu","1. Đọc giới hạn số ảnh ghi trên màn
+2. Upload đúng giới hạn + 1 ảnh
+3. Đọc thông báo",,"Hệ thống chặn ảnh vượt giới hạn và báo rõ giới hạn là bao nhiêu. Nếu màn không ghi giới hạn thì đó là lỗ hổng, báo lại.",,,,,,
+04_3_010_016,Tải xuống ảnh chứng từ,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; phiếu đã có ít nhất 1 ảnh chứng từ","1. Bấm tải ảnh chứng từ
+2. Mở file tải về",,"File tải về mở được, đúng ảnh đã upload, không bị hỏng.",,,,,,
+04_3_010_017,Xoá ảnh chứng từ,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; phiếu đã có ít nhất 2 ảnh chứng từ","1. Xoá một ảnh
+2. Quan sát danh sách
+3. Tải lại trang và mở lại phiếu",,Ảnh bị xoá khỏi danh sách và KHÔNG quay lại sau khi tải lại trang; ảnh còn lại không bị ảnh hưởng.,,,,,,
+04_3_010_018,Upload đúng số lượng ảnh tối đa,"Vai `shop` đăng nhập, đang ở màn Lịch sử xuất nhập kho; đang mở chi tiết một phiếu chưa có chứng từ","1. Upload đúng số ảnh bằng giới hạn
+2. Quan sát",,"Tất cả ảnh được nhận, không có thông báo lỗi; đây là biên trên hợp lệ, đối ứng với `04_3_010_015`.",,,,,,
+04_3_010_019,Giá vốn khi xuất kho sản phẩm BQGQ (MAC),Vai `shop` đăng nhập; sản phẩm tính giá MAC đã có ít nhất 2 lần nhập với giá khác nhau,"1. Ghi lại giá vốn bình quân hiện tại và số tồn
+2. Lập phiếu xuất một phần số lượng
+3. Đọc giá vốn trên dòng phiếu xuất
+4. Đọc lại giá vốn bình quân sau xuất",,Giá vốn trên dòng xuất = giá bình quân gia quyền tại thời điểm xuất; giá bình quân sau xuất KHÔNG đổi (xuất không làm đổi đơn giá bình quân).,,,,,,
+04_3_010_020,Giá vốn khi xuất kho sản phẩm FIFO,"Vai `shop` đăng nhập; sản phẩm FIFO có 2 lô nhập ở hai giá khác nhau, lô cũ còn tồn","1. Ghi lại giá và tồn của từng lô
+2. Lập phiếu xuất số lượng NHỎ HƠN tồn lô cũ
+3. Đọc giá vốn dòng xuất
+4. Lập phiếu xuất số lượng VƯỢT tồn lô cũ",,"Lần 1: giá vốn = giá lô cũ (nhập trước xuất trước). Lần 2: phiếu chia thành hai dòng lô hoặc ghi rõ số lượng lấy từ mỗi lô, giá vốn mỗi phần = giá lô tương ứng; tổng thành tiền = tổng theo từng lô, không dùng một giá bình quân.",,,,,,
+04_3_010_021,Thông tin lô của sản phẩm thực tế đích danh,Vai `shop` đăng nhập; sản phẩm tính giá thực tế đích danh đã nhập theo lô,"1. Mở chi tiết phiếu xuất của sản phẩm đó
+2. Đọc thông tin lô trên dòng",,"Dòng hiện đúng mã lô đã chọn khi xuất, kèm hạn sử dụng và serial nếu có; giá vốn = giá của chính lô đó.",,,,,,
+04_3_010_022,Giá vốn khi xuất kho sản phẩm giá tiêu chuẩn,Vai `shop` đăng nhập; sản phẩm dùng giá tiêu chuẩn đã khai đơn giá chuẩn,"1. Ghi lại đơn giá chuẩn đã khai
+2. Lập phiếu xuất
+3. Đọc giá vốn dòng xuất",,"Giá vốn dòng xuất = đúng đơn giá tiêu chuẩn đã khai, KHÔNG phụ thuộc giá nhập thực tế; phần lệch giữa giá nhập và giá chuẩn phải được ghi nhận riêng (kiểm ở phân hệ kế toán kho).",,,,,,
+,020 — Lập phiếu nhập kho,,,,,,,,,,
+04_3_020_001,Mở Phiếu nhập kho và validate rỗng,"Đã đăng nhập, có quyền tạo phiếu nhập kho; đang ở màn Lịch sử xuất nhập kho","1. Vào Kho hàng > Xuất nhập kho
+2. Bấm Nhập kho ở góc trên bên phải
+3. Để trống toàn bộ khối Thông tin phiếu nhập kho
+4. Bấm Lưu phiếu",,"Màn Phiếu nhập kho mở ra với đủ khối Thông tin phiếu nhập kho và bảng hàng hoá. Khi lưu với form rỗng, hệ thống chặn và báo lỗi ở các trường bắt buộc: Mã hoá đơn/chứng từ, Thời gian tạo phiếu, Nhập từ; vai cấp trên điểm bán báo thêm lỗi ở Điểm bán/kho. Phiếu không được tạo.",,,,,,
+04_3_020_002,Tạo phiếu nhập kho nháp,"Vai `shop` đăng nhập, đang ở form lập Phiếu nhập kho","1. Nhập đủ thông tin phiếu và ít nhất 1 dòng sản phẩm
+2. Lưu ở trạng thái nháp
+3. Mở danh sách phiếu nhập và tìm phiếu vừa lưu
+4. Kiểm tồn kho của sản phẩm",,Phiếu lưu được ở trạng thái nháp; tồn kho **CHƯA đổi** — phiếu nháp không ghi tồn. Phiếu hiện trong danh sách với trạng thái nháp.,,,,,,
+04_3_020_003,Chỉnh sửa phiếu nhập kho nháp,"Vai `shop` đăng nhập, đang ở danh sách phiếu nhập; có phiếu nháp","1. Mở phiếu nháp
+2. Đổi số lượng một dòng và thêm một dòng mới
+3. Lưu
+4. Mở lại phiếu",,"Sửa được mọi dòng, lưu xong mở lại thấy đúng dữ liệu mới; tồn kho vẫn chưa đổi.",,,,,,
+04_3_020_004,Duyệt phiếu nháp thành phiếu nhập chính thức,Vai có quyền duyệt phiếu nhập đăng nhập; có phiếu nhập nháp,"1. Ghi lại tồn kho và giá vốn hiện tại của sản phẩm trong phiếu
+2. Duyệt phiếu nháp
+3. Đọc lại trạng thái phiếu, tồn kho và giá vốn",,"Phiếu chuyển sang trạng thái chính thức; **tồn kho tăng đúng số lượng trên phiếu**; giá vốn được tính lại theo phương pháp của sản phẩm. Đây là mốc ghi tồn — trước duyệt không đổi, sau duyệt mới đổi.",,,,,,
+04_3_020_005,Thông tin tự điền khi mở form tạo phiếu nhập,"Vai `shop` đăng nhập, đang ở form lập Phiếu nhập kho","1. Mở form tạo phiếu nhập kho mới
+2. Đọc các ô đã có giá trị sẵn",,"Các ô tự điền đúng: ngày lập = hôm nay, kho = kho mặc định của điểm bán đang chọn, người lập = người đang đăng nhập, điểm bán = điểm bán đang chọn.",,,,,,
+04_3_020_006,Nhập kho từ nhà cung cấp,"Vai `shop` đăng nhập, đang ở form lập Phiếu nhập kho","1. Chọn nguồn nhập = từ nhà cung cấp, chọn một NCC
+2. Thêm dòng sản phẩm, nhập số lượng và giá
+3. Lưu và duyệt phiếu
+4. Kiểm tồn kho và công nợ NCC",,Phiếu ghi đúng NCC; tồn tăng đúng số lượng; **công nợ phải trả NCC tăng đúng tổng tiền phiếu**.,,,,,,
+04_3_020_007,Nhập kho từ mã phiếu đặt hàng,"Vai `shop` đăng nhập, đang ở form lập Phiếu nhập kho; có phiếu đặt hàng (PO) đã giao","1. Chọn nguồn nhập = từ phiếu đặt hàng, chọn mã PO
+2. Quan sát các dòng sản phẩm được kéo về
+3. Lưu và duyệt",,"Các dòng sản phẩm, số lượng và giá được kéo tự động từ PO; sửa được số lượng nhận thực tế; sau khi duyệt, PO cập nhật số lượng đã nhận.",,,,,,
+04_3_020_008,Nhập kho từ nội bộ cửa hàng,"Vai `shop` đăng nhập, đang ở form lập Phiếu nhập kho","1. Chọn nguồn nhập nội bộ
+2. Thêm dòng sản phẩm
+3. Lưu và duyệt
+4. Kiểm tồn kho và công nợ",,Tồn tăng đúng số lượng; **KHÔNG sinh công nợ NCC** (nguồn nội bộ không có nhà cung cấp).,,,,,,
+04_3_020_009,Sửa phiếu nhập khi sản phẩm CHƯA phát sinh xuất kho,"Vai `shop` đăng nhập; phiếu nhập đã duyệt, sản phẩm trong phiếu chưa bị xuất","1. Ghi lại tồn và giá vốn
+2. Mở sửa phiếu, đổi số lượng và giá
+3. Lưu
+4. Đọc lại tồn và giá vốn",,Sửa được; tồn kho và giá vốn được tính lại theo số mới.,,,,,,
+04_3_020_010,Sửa phiếu nhập khi sản phẩm ĐÃ phát sinh xuất kho,Vai `shop` đăng nhập; phiếu nhập đã duyệt và sản phẩm trong phiếu đã bị xuất một phần,"1. Mở sửa phiếu
+2. Thử giảm số lượng xuống dưới số đã xuất
+3. Thử đổi giá nhập
+4. Ghi lại hệ thống chặn gì và cho gì",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_3_020_011,Thanh toán một phần phiếu nhập kho,"Vai `shop` đăng nhập; phiếu nhập từ NCC đã duyệt, chưa thanh toán","1. Ghi lại công nợ NCC
+2. Thanh toán một phần tổng tiền phiếu
+3. Đọc trạng thái thanh toán của phiếu và công nợ NCC",,"Phiếu ở trạng thái thanh toán một phần, ghi đúng số đã trả và số còn lại; công nợ NCC giảm đúng số đã trả (không giảm hết).",,,,,,
+04_3_020_012,Thanh toán toàn bộ phiếu nhập kho,"Vai `shop` đăng nhập; phiếu nhập từ NCC đã duyệt, chưa thanh toán","1. Ghi lại công nợ NCC
+2. Thanh toán đủ tổng tiền phiếu
+3. Đọc trạng thái phiếu và công nợ",,Phiếu chuyển sang đã thanh toán; công nợ NCC giảm đúng tổng tiền phiếu; không còn số dư của phiếu này.,,,,,,
+04_3_020_013,Giá vốn sau nhập kho sản phẩm MAC,Vai `shop` đăng nhập; sản phẩm MAC đang có tồn với giá bình quân đã biết,"1. Ghi lại tồn (Q0) và giá bình quân (P0)
+2. Nhập thêm số lượng Q1 với giá P1 khác P0, duyệt phiếu
+3. Đọc giá bình quân mới",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_3_020_014,Giá vốn sau nhập kho sản phẩm FIFO,Vai `shop` đăng nhập; sản phẩm FIFO đang có lô cũ còn tồn,"1. Ghi lại lô cũ và giá của nó
+2. Nhập lô mới với giá khác, duyệt phiếu
+3. Đọc danh sách lô và giá từng lô",,Lô cũ giữ nguyên giá và số tồn; lô mới có giá riêng; **không có phép bình quân nào giữa hai lô**.,,,,,,
+04_3_020_015,Giá vốn sau nhập kho sản phẩm thực tế đích danh,Vai `shop` đăng nhập; sản phẩm tính giá thực tế đích danh,"1. Nhập kho một lô với giá xác định, duyệt phiếu
+2. Đọc giá vốn của lô đó",,"Giá vốn của lô = đúng giá đã nhập cho lô đó, gắn với mã lô và serial (nếu có); các lô khác không đổi.",,,,,,
+04_3_020_016,Giá vốn sau nhập kho sản phẩm giá tiêu chuẩn,Vai `shop` đăng nhập; sản phẩm dùng giá tiêu chuẩn,"1. Ghi lại đơn giá tiêu chuẩn đã khai
+2. Nhập kho với giá thực tế KHÁC giá chuẩn, duyệt phiếu
+3. Đọc giá vốn tồn kho",,"Giá vốn tồn kho vẫn = đơn giá tiêu chuẩn, KHÔNG đổi theo giá nhập thực tế; phần lệch được ghi nhận riêng.",,,,,,
+04_3_020_017,Lô hàng khi nhập kho,"Vai `shop` đăng nhập, đang ở form lập Phiếu nhập kho","1. Nhập kho sản phẩm FIFO/đích danh: khai mã lô và hạn sử dụng, duyệt phiếu
+2. Mở danh sách lô của sản phẩm
+3. Nhập kho sản phẩm MAC/tiêu chuẩn mà bỏ trống mã lô",,"Lô mới xuất hiện với đúng mã lô, hạn sử dụng và số lượng. Với MAC/tiêu chuẩn bỏ trống mã lô thì hệ thống tự sinh lô. Sản phẩm MAC VẪN CÓ LÔ.",,,,,,
+,030 — Lập phiếu xuất kho,,,,,,,,,,
+04_3_030_001,Mở Phiếu xuất kho và validate rỗng,"Đã đăng nhập, có quyền tạo phiếu xuất kho; đang ở màn Lịch sử xuất nhập kho","1. Vào Kho hàng > Xuất nhập kho
+2. Bấm Xuất kho ở góc trên bên phải
+3. Để trống toàn bộ khối Thông tin phiếu xuất kho
+4. Bấm Lưu phiếu",,"Màn Phiếu xuất kho mở ra với đủ khối Thông tin phiếu xuất kho và bảng hàng hoá. Khi lưu với form rỗng, hệ thống chặn và báo lỗi ở các trường bắt buộc: Mã hoá đơn/chứng từ, Thời gian tạo phiếu, Xuất cho, Lý do xuất; vai cấp trên điểm bán báo thêm lỗi ở Điểm bán/kho. Phiếu không được tạo.",,,,,,
+04_3_030_002,Tạo phiếu xuất kho nháp,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho","1. Nhập thông tin phiếu và 1 dòng sản phẩm
+2. Lưu nháp
+3. Kiểm tồn kho",,Phiếu lưu ở trạng thái nháp; tồn kho **CHƯA giảm**.,,,,,,
+04_3_030_003,Sửa số lượng trên phiếu xuất,Vai `shop` đăng nhập; có phiếu xuất nháp,"1. Mở phiếu xuất nháp
+2. Đổi số lượng một dòng
+3. Lưu và mở lại",,Số lượng và thành tiền của dòng đổi theo; tổng phiếu tính lại đúng.,,,,,,
+04_3_030_004,Xuất kho từ một lô hàng xác định,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho; sản phẩm có nhiều lô còn tồn","1. Thêm dòng sản phẩm
+2. Chọn đúng một lô
+3. Nhập số lượng nhỏ hơn tồn lô đó
+4. Lưu và duyệt
+5. Đọc tồn từng lô",,Chỉ lô đã chọn giảm đúng số lượng; các lô khác KHÔNG đổi; giá vốn dòng = giá của lô đã chọn.,,,,,,
+04_3_030_005,Xuất kho từ nhiều lô khác nhau,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho; sản phẩm có ít nhất 2 lô còn tồn","1. Thêm dòng sản phẩm, chọn 2 lô với số lượng khác nhau
+2. Lưu và duyệt
+3. Đọc tồn từng lô và giá vốn phiếu",,"Mỗi lô giảm đúng phần đã khai; phiếu ghi rõ số lượng theo từng lô; tổng thành tiền = Σ(số lượng lô × giá lô), không dùng một giá bình quân chung.",,,,,,
+04_3_030_006,Xuất toàn bộ số lượng của một lô,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho; sản phẩm có lô còn tồn đúng N","1. Xuất đúng N của lô đó
+2. Duyệt phiếu
+3. Đọc danh sách lô",,Tồn lô về 0.,,,,,,
+04_3_030_007,Xuất vượt tồn kho của lô,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho; lô có tồn N","1. Nhập số lượng xuất = N + 1 cho lô đó
+2. Bấm lưu / duyệt",,Bị chặn kèm thông báo nêu rõ số tồn khả dụng của lô; KHÔNG tạo được phiếu và tồn không đổi.,,,,,,
+04_3_030_008,Xuất kho khi tồn bằng 0,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho; sản phẩm có tồn = 0","1. Thêm dòng sản phẩm đó và nhập số lượng 1
+2. Bấm lưu / duyệt",,Bị chặn. Kỳ vọng phụ thuộc **cấu hình chính sách tồn âm của điểm bán**,,,,,,
+04_3_030_009,Xuất kho khi tồn đang ÂM,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho; sản phẩm đang có tồn âm","1. Thêm dòng sản phẩm đó, nhập số lượng 1
+2. Bấm lưu / duyệt
+3. Đọc tồn sau khi xuất",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_3_030_010,Xuất kho chọn mã serial,"Vai `shop` đăng nhập, đang ở form lập Phiếu xuất kho; sản phẩm quản lý theo serial, có nhiều serial trong kho","1. Thêm dòng sản phẩm, mở ô chọn serial
+2. Chọn đúng 2 serial
+3. Lưu và duyệt
+4. Kiểm trạng thái từng serial",,"Số serial đã chọn phải **bằng số lượng** xuất; hai serial đã chọn chuyển sang trạng thái đã xuất, các serial khác không đổi. Chọn thiếu / thừa serial so với số lượng thì bị chặn.",,,,,,
+,040 — Sửa phiếu nhập kho đã ghi sổ,,,,,,,,,,
+04_3_040_001,Hộp thoại Huỷ phiếu nhập kho hiển thị đúng,"Vai có quyền huỷ phiếu nhập đăng nhập; có phiếu nhập kho đã duyệt, chưa bị huỷ","1. Mở phiếu nhập, bấm huỷ phiếu
+2. Đọc toàn bộ nội dung hộp thoại",,"Hộp thoại tiêu đề ""Huỷ phiếu nhập kho"", có câu cảnh báo về hệ quả của việc huỷ, và **ô nhập lý do huỷ**; có nút xác nhận và nút huỷ bỏ.",,,,,,
+04_3_040_002,Lập chứng từ huỷ phiếu nhập kho,"Vai có quyền huỷ phiếu nhập đăng nhập; có phiếu nhập kho đã duyệt, chưa bị huỷ","1. Ghi lại tồn kho và giá vốn sản phẩm trong phiếu
+2. Mở hộp thoại huỷ, nhập lý do
+3. Xác nhận huỷ
+4. Đọc thông báo, trạng thái phiếu, tồn kho
+5. Mở danh sách phiếu xuất",,"Hiện thông báo cập nhật thành công; phiếu chuyển sang trạng thái **Đã huỷ**; **tồn kho giảm đúng số lượng đã nhập** (đảo lại bút toán nhập); có thêm một chứng từ ở danh sách phiếu xuất loại **""Điều chỉnh phiếu nhập""**. Đây là bút toán đảo theo Điều 27 Luật Kế toán, không phải xoá phiếu.",,,,,,
+04_3_040_003,Chi tiết phiếu đã huỷ mang nhãn chứng từ đảo,Vai `shop` đăng nhập; có phiếu nhập đã bị huỷ,"1. Mở chi tiết phiếu đã huỷ
+2. Đọc nhãn trạng thái và phần tham chiếu",,"Phiếu mang nhãn nguyên văn **""Đã huỷ (chứng từ đảo)""**; hiện lý do huỷ đã nhập và tham chiếu tới chứng từ đảo tương ứng; các dòng sản phẩm giữ nguyên để tra cứu, không bị xoá.",,,,,,
+04_3_040_004,Không nhập lý do huỷ thì bị chặn,"Vai có quyền huỷ phiếu nhập đăng nhập; có phiếu nhập kho đã duyệt, chưa bị huỷ","1. Mở hộp thoại huỷ phiếu
+2. Để trống ô lý do
+3. Bấm xác nhận",,"Hiện thông báo nguyên văn ""Vui lòng nhập lý do""; không gửi request huỷ; phiếu giữ nguyên trạng thái và tồn kho không đổi.",,,,,,
+04_3_040_005,Công nợ NCC sau khi huỷ phiếu nhập,"Vai `shop` đăng nhập; phiếu nhập từ NCC đã duyệt và đã phát sinh công nợ, chưa thanh toán","1. Ghi lại công nợ NCC và số dòng phát sinh
+2. Huỷ phiếu nhập kèm lý do
+3. Đọc lại sổ công nợ NCC",,Sổ công nợ NCC có **thêm một dòng** để cấn trừ đúng giá trị công nợ đã phát sinh theo phiếu bị huỷ; số dư công nợ trở về mức trước khi có phiếu. Dòng cũ KHÔNG được sửa hay xoá — phải là dòng cấn trừ mới.,,,,,,
+,050 — Huỷ phiếu nhập kho đã ghi sổ,,,,,,,,,,
+04_3_050_001,Nhập thêm lô mới không ảnh hưởng lô cũ,Vai `shop` đăng nhập; sản phẩm đã có lô cũ còn tồn,"1. Ghi lại mã lô, số tồn và giá của lô cũ
+2. Nhập kho một lô MỚI (mã lô khác), duyệt phiếu
+3. Đọc lại lô cũ",,"Lô cũ giữ nguyên mã, tồn, giá, hạn sử dụng; lô mới là dòng riêng.",,,,,,
+04_3_050_002,Nhập kho từ đơn đặt hàng nhà cung cấp,Vai `shop` đăng nhập; có đơn đặt hàng NCC đã giao hàng,"1. Lập phiếu nhập từ đơn đặt hàng đó
+2. Đối chiếu dòng sản phẩm, số lượng, giá với đơn
+3. Duyệt phiếu
+4. Kiểm số lượng đã nhận trên đơn và công nợ NCC",,"Dòng kéo đúng từ đơn; sau duyệt, đơn cập nhật số đã nhận và công nợ NCC tăng đúng tổng tiền nhập.",,,,,,
+04_3_050_003,Nhập lô mới TRÙNG mã lô đã có — chọn gộp lô,Vai `shop` đăng nhập; sản phẩm đã có lô mã L1 còn tồn,"1. Nhập kho khai mã lô = L1
+2. Đọc cảnh báo / hộp thoại của hệ thống
+3. Chọn gộp lô
+4. Duyệt phiếu và đọc danh sách lô",,"Hệ thống phát hiện trùng mã lô và cho chọn gộp; sau khi gộp, **một dòng lô L1** với tồn = tồn cũ + số nhập mới; giá vốn lô được tính lại theo bình quân của phần cũ và phần mới.",,,,,,
+04_3_050_004,Nhập lô mới trùng mã lô — chọn đổi tên lô mới,Vai `shop` đăng nhập; sản phẩm đã có lô mã L1 còn tồn,"1. Nhập kho khai mã lô = L1
+2. Ở cảnh báo trùng, chọn sửa tên lô mới thành L1-A
+3. Duyệt phiếu và đọc danh sách lô",,"Có **hai dòng lô riêng**: L1 giữ nguyên tồn và giá cũ, L1-A mang số lượng và giá mới. Không gộp.",,,,,,
+04_3_050_005,Nhập kho sản phẩm có 1 lô từ đơn hoàn trả,"Vai `shop` đăng nhập; có đơn hàng đã bán bị khách hoàn trả, sản phẩm chỉ có 1 lô","1. Lập phiếu nhập từ đơn hoàn trả
+2. Đọc mã lô và giá vốn được điền
+3. Duyệt phiếu và kiểm tồn lô",,"Hàng trả về đúng lô đã xuất ban đầu, giá vốn = giá vốn lúc xuất (không phải giá bán); tồn lô đó tăng đúng số lượng trả. Trả hàng LUÔN là điều chỉnh giảm về hoá đơn — không sinh hoá đơn huỷ.",,,,,,
+04_3_050_006,Nhập kho sản phẩm có nhiều lô từ đơn hoàn trả,"Vai `shop` đăng nhập; đơn hàng đã bán lấy từ nhiều lô, khách hoàn trả","1. Lập phiếu nhập từ đơn hoàn trả
+2. Đọc phân bổ số lượng theo từng lô
+3. Duyệt và kiểm tồn từng lô",,"Số lượng trả được phân bổ về **đúng các lô đã xuất** theo đúng tỉ lệ đã bán, mỗi phần mang giá vốn của lô đó; không dồn hết về một lô.",,,,,,
+04_3_050_007,Sửa phiếu nhập của lô CHƯA phát sinh xuất,"Vai `shop` đăng nhập; lô vừa nhập, chưa xuất gì","1. Ghi lại tồn và giá lô
+2. Sửa số lượng và giá trên phiếu nhập, lưu
+3. Đọc lại tồn và giá lô",,Tồn và giá lô cập nhật đúng theo số mới; không phát sinh chứng từ lệch nào ngoài chứng từ điều chỉnh của chính phiếu.,,,,,,
+04_3_050_008,Sửa phiếu nhập của lô ĐÃ phát sinh xuất,Vai `shop` đăng nhập; lô đã bị xuất một phần,"1. Mở sửa phiếu nhập của lô đó
+2. Thử giảm số lượng dưới số đã xuất và thử đổi giá
+3. Ghi rõ hệ thống chặn gì",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_3_050_009,Theo dõi lịch sử lô hàng,Vai `shop` đăng nhập; lô đã có cả giao dịch nhập và xuất,"1. Mở lịch sử của lô đó
+2. Đối chiếu từng dòng với các phiếu nhập/xuất đã lập",,"Lịch sử liệt kê đủ và đúng thứ tự thời gian các lần nhập, xuất, chuyển kho của lô, mỗi dòng có mã phiếu, số lượng, tồn sau giao dịch; tồn cuối khớp tồn hiện tại của lô.",,,,,,
+04_3_050_010,Nhập kho khi tồn đang ÂM,Vai `shop` đăng nhập; sản phẩm đang có tồn âm,"1. Ghi lại tồn âm hiện tại và giá vốn
+2. Nhập kho số lượng đủ để tồn về dương, duyệt phiếu
+3. Đọc tồn và giá vốn mới",,"Tồn = tồn âm cũ + số nhập (bù âm trước, phần còn lại thành tồn dương).",,,,,,
+,060 — Lập phiếu chuyển kho,,,,,,,,,,
+04_3_060_001,Tạo phiếu chuyển kho - mở form và validate,"Đã đăng nhập, có quyền tạo phiếu chuyển kho; đơn vị có ít nhất 2 kho","1. Vào Kho hàng > Chuyển kho
+2. Bấm Chuyển kho ở góc trên bên phải
+3. Để trống toàn bộ các trường của phiếu
+4. Bấm Lưu phiếu",,"Màn Phiếu chuyển kho mở ra, trường Thời gian tạo phiếu được điền sẵn thời điểm hiện tại và không sửa được, Người tạo phiếu mặc định là người đang đăng nhập. Khi lưu với form rỗng, hệ thống chặn và báo lỗi ở các trường bắt buộc: Kho chuyển, Kho nhận, Mã hoá đơn/chứng từ. Phiếu không được tạo.",,,,,,
+04_3_060_002,Giao diện màn Chuyển kho,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`)",1. Đọc các cột của bảng và các ô lọc,,"Bảng hiện đủ cột (mã phiếu, nơi chuyển, nơi nhận, trạng thái, ngày, người lập…); trạng thái dùng đúng 3 nhãn: **Chờ xác nhận** · **Đang đi đường** · **Đã nhận**.",,,,,,
+04_3_060_003,Tìm kiếm mã phiếu chuyển kho,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); đã biết một mã phiếu chuyển kho","1. Nhập đúng mã phiếu
+2. Nhập một phần mã
+3. Nhập mã không tồn tại",,Đủ mã trả đúng 1 phiếu; một phần mã trả các phiếu chứa đoạn đó; mã không tồn tại cho bảng rỗng.,,,,,,
+04_3_060_004,Bộ lọc khoảng thời gian ở màn Chuyển kho,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`)","1. Chọn khoảng thời gian bao một phiếu đã biết
+2. Thu khoảng lại để loại phiếu đó
+3. Chọn khoảng chỉ có một ngày",,"Danh sách đúng theo khoảng đã chọn; phiếu ngoài khoảng không hiện. Hệ thống lưu DATETIME naive +7 — chọn đúng ngày biên phải ra đúng phiếu, không lệch một ngày.",,,,,,
+04_3_060_005,Bộ lọc chọn điểm bán / kho ở màn Chuyển kho,"Vai `province` đăng nhập, đang ở màn Chuyển kho","1. Chọn một điểm bán / kho
+2. Quan sát danh sách
+3. Xoá lọc",,Chỉ còn phiếu có nơi chuyển hoặc nơi nhận là đơn vị đã chọn,,,,,,
+04_3_060_006,Chọn thiếu trường bắt buộc khi lập phiếu chuyển kho,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); form lập phiếu chuyển kho đang mở","1. Bỏ trống từng ô bắt buộc một (nơi nhận, kho xuất, sản phẩm, số lượng) rồi bấm lưu, ghi lỗi từng lần
+2. Bỏ trống tất cả rồi bấm lưu",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_3_060_007,Lập phiếu chuyển kho với đầy đủ thông tin,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); form lập phiếu chuyển kho đang mở","1. Nhập đủ mọi ô bắt buộc và 1 dòng sản phẩm
+2. Lưu phiếu
+3. Đọc trạng thái phiếu và tồn hai bên",,Phiếu tạo thành công ở trạng thái **Chờ xác nhận**; tồn bên nhận CHƯA tăng.,,,,,,
+04_3_060_008,Số lượng chuyển nhỏ hơn hoặc bằng tồn kho,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); sản phẩm có tồn N ở kho xuất","1. Lập phiếu chuyển số lượng N-1 → ghi kết quả
+2. Lập phiếu chuyển đúng N → ghi kết quả",,Cả hai đều lập được (biên N là hợp lệ); số lượng ghi trên phiếu đúng như nhập.,,,,,,
+04_3_060_009,Số lượng chuyển LỚN HƠN tồn kho,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); sản phẩm có tồn N ở kho xuất","1. Nhập số lượng chuyển = N+1
+2. Bấm lưu",,Bị chặn kèm thông báo nêu rõ tồn khả dụng; không tạo được phiếu.,,,,,,
+04_3_060_010,Chuyển kho khi tồn bằng 0,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); sản phẩm có tồn = 0 ở kho xuất","1. Thêm sản phẩm đó và nhập số lượng 1
+2. Bấm lưu",,Bị chặn.,,,,,,
+04_3_060_011,Chuyển kho khi tồn ÂM,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); sản phẩm đang có tồn âm ở kho xuất","1. Thêm sản phẩm đó, nhập số lượng 1
+2. Bấm lưu",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_3_060_012,Chuyển kho nhiều lô trong một lần chuyển,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); sản phẩm có ít nhất 2 lô còn tồn","1. Thêm sản phẩm, chọn 2 lô với số lượng khác nhau
+2. Lưu phiếu
+3. Đọc chi tiết phiếu và tồn từng lô",,Phiếu ghi rõ số lượng theo từng lô; mỗi lô giảm đúng phần đã khai; bên nhận nhận đủ hai lô với đúng mã lô và hạn sử dụng.,,,,,,
+04_3_060_013,Chuyển kho theo mã serial,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); sản phẩm quản lý serial","1. Thêm sản phẩm, chọn đúng 2 serial
+2. Lưu phiếu
+3. Kiểm trạng thái serial hai bên sau khi bên nhận xác nhận",,"Số serial chọn phải bằng số lượng chuyển; sau khi bên nhận xác nhận, hai serial đó thuộc kho nhận và không còn ở kho xuất.",,,,,,
+04_3_060_014,Chuyển kho có XUẤT NGAY,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); cấu hình cho xuất ngay khi chuyển kho đang bật","1. Ghi lại tồn và giá vốn kho xuất
+2. Lập phiếu chuyển kho, lưu
+3. Đọc ngay tồn và giá vốn kho xuất (chưa cần bên nhận xác nhận)",,"Tồn kho xuất **giảm ngay khi lập phiếu**, không chờ bên nhận.",,,,,,
+04_3_060_015,Chuyển kho KHÔNG xuất ngay,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); cấu hình xuất ngay đang TẮT","1. Ghi lại tồn kho xuất
+2. Lập phiếu chuyển kho, lưu
+3. Đọc tồn kho xuất
+4. Sau khi bên nhận xác nhận, đọc lại",,Tồn kho xuất **chưa giảm** khi mới lập phiếu; chỉ giảm ở mốc sau (ghi rõ mốc nào: khi chuyển sang Đang đi đường hay khi bên nhận Đã nhận). Giá vốn được chốt ở đúng mốc đó.,,,,,,
+04_3_060_016,Tải ảnh khi tạo phiếu chuyển kho,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); form lập phiếu đang mở","1. Upload ảnh đính kèm
+2. Lưu phiếu
+3. Mở lại chi tiết phiếu",,Ảnh lưu cùng phiếu và còn nguyên khi mở lại,,,,,,
+04_3_060_017,In phiếu lấy hàng,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); có phiếu chuyển kho đã lập","1. Mở phiếu, bấm in phiếu lấy hàng
+2. Đọc nội dung bản in",,"Bản in có đủ: mã phiếu, nơi chuyển, nơi nhận, danh sách sản phẩm với mã lô và số lượng cần lấy",,,,,,
+04_3_060_018,In biên bản bàn giao,"Vai `tct` đăng nhập, đang ở màn Chuyển kho (`/inventory/transfer-warehouse`); có phiếu chuyển kho đã lập","1. Mở phiếu, bấm in biên bản bàn giao
+2. Đọc nội dung bản in",,"Biên bản có đủ hai bên giao – nhận, danh sách hàng với số lượng, và chỗ ký của cả hai bên; số liệu khớp phiếu.",,,,,,
+,070 — Xác nhận nhận hàng chuyển kho,,,,,,,,,,
+04_3_070_001,Lập phiếu chuyển kho TCT xuống Tỉnh,Vai `tct` đăng nhập; kho TCT có tồn sản phẩm,"1. Lập phiếu chuyển kho, nơi nhận là một Bưu điện Tỉnh
+2. Lưu phiếu
+3. Đọc trạng thái phiếu",,"Phiếu tạo thành công ở trạng thái Chờ xác nhận, nơi chuyển = kho TCT, nơi nhận = tỉnh đã chọn.",,,,,,
+04_3_070_002,Tồn kho TCT sau khi lập phiếu chuyển,Vai `tct` đăng nhập; vừa lập phiếu chuyển kho xuống tỉnh,"1. Ghi lại tồn kho TCT trước khi lập phiếu
+2. Sau khi lập phiếu, đọc lại tồn
+3. Đối chiếu với cấu hình xuất ngay",,Tồn TCT giảm đúng số lượng chuyển nếu cấu hình xuất ngay đang bật; nếu tắt thì chưa giảm.,,,,,,
+04_3_070_003,Tỉnh xác nhận nhận hàng từ TCT,Vai `province` đăng nhập; có phiếu chuyển kho từ TCT ở trạng thái Chờ xác nhận / Đang đi đường,"1. Mở phiếu
+2. Xác nhận nhận hàng
+3. Đọc trạng thái phiếu",,Phiếu chuyển sang trạng thái **Đã nhận**; mốc thời gian nhận được ghi lại.,,,,,,
+04_3_070_004,Tồn kho Tỉnh sau khi xác nhận,Vai `province` đăng nhập,"1. Ghi lại tồn kho tỉnh trước khi xác nhận
+2. Xác nhận nhận hàng
+3. Đọc lại tồn và giá vốn",,"Tồn tỉnh tăng đúng số lượng nhận, đúng mã lô và hạn sử dụng; giá vốn = giá vốn ghi trên phiếu chuyển. id kho khác nhau mỗi pod — đối chiếu phải theo mã, không theo id.",,,,,,
+04_3_070_005,Phiếu nhập kho được sinh ở Tỉnh,Vai `province` đăng nhập; đã xác nhận nhận hàng từ TCT,"1. Mở danh sách phiếu nhập của tỉnh
+2. Tìm phiếu nhập tương ứng",,"Có phiếu nhập loại **""Nhập chuyển kho""** với đúng số lượng, mã lô, giá vốn và tham chiếu tới mã phiếu chuyển.",,,,,,
+04_3_070_006,Công nợ giữa Tỉnh và TCT sau chuyển kho,Vai `tct` và `province` đều có tài khoản; đã hoàn tất một lượt chuyển kho TCT→Tỉnh,"1. Ghi lại công nợ Tỉnh–TCT trước khi chuyển
+2. Hoàn tất chuyển kho và xác nhận nhận
+3. Đọc lại công nợ ở cả hai phía",,"Công nợ tăng đúng giá trị hàng đã chuyển, khớp nhau ở hai phía (tỉnh nợ TCT = TCT phải thu tỉnh). Phiếu nộp tiền lọc theo mã đơn vị chụp trên phiếu — đối chiếu phải theo mã đó.",,,,,,
+04_3_070_007,Lập phiếu chuyển kho Tỉnh xuống điểm bán / kho,Vai `province` đăng nhập; kho tỉnh có tồn,"1. Lập phiếu chuyển kho, nơi nhận là một điểm bán / kho trực thuộc
+2. Lưu phiếu",,"Phiếu tạo thành công ở trạng thái Chờ xác nhận, nơi nhận đúng điểm bán đã chọn.",,,,,,
+04_3_070_008,Tồn kho Tỉnh sau khi chuyển xuống điểm bán,Vai `province` đăng nhập,"1. Ghi lại tồn kho tỉnh
+2. Lập phiếu chuyển
+3. Đọc lại tồn theo đúng cấu hình xuất ngay",,Tồn tỉnh giảm đúng số lượng ở đúng mốc theo cấu hình xuất ngay.,,,,,,
+04_3_070_009,Điểm bán xác nhận nhận hàng từ Tỉnh,Vai `shop` đăng nhập; có phiếu chuyển kho từ tỉnh,"1. Mở phiếu
+2. Xác nhận nhận hàng
+3. Đọc trạng thái",,Phiếu chuyển sang **Đã nhận**; mốc nhận được ghi lại.,,,,,,
+04_3_070_010,Tồn kho điểm bán sau khi xác nhận,Vai `shop` đăng nhập,"1. Ghi lại tồn trước khi xác nhận
+2. Xác nhận nhận hàng
+3. Đọc lại tồn, mã lô và giá vốn",,"Tồn điểm bán tăng đúng số lượng, đúng mã lô và hạn sử dụng, giá vốn = giá trên phiếu chuyển.",,,,,,
+04_3_070_011,Phiếu nhập kho được sinh ở điểm bán,Vai `shop` đăng nhập; đã xác nhận nhận hàng từ tỉnh,"1. Mở danh sách phiếu nhập của điểm bán
+2. Tìm phiếu tương ứng",,"Có phiếu nhập loại ""Nhập chuyển kho"" với số lượng, mã lô, giá vốn đúng và tham chiếu mã phiếu chuyển.",,,,,,
+04_3_070_012,Công nợ khi Tỉnh chuyển kho về điểm bán,Có tài khoản `province` và `shop`; đã hoàn tất một lượt chuyển kho Tỉnh→Điểm bán,"1. Ghi lại công nợ điểm bán – tỉnh trước khi chuyển
+2. Hoàn tất chuyển và xác nhận nhận
+3. Đọc lại công nợ hai phía",,Công nợ tăng đúng giá trị hàng chuyển và khớp nhau hai phía.,,,,,,
+04_3_070_013,"Chuyển kho lần 2 cùng lô, cùng điểm nhận — CÓ gộp lô",Vai `province` đăng nhập; đã chuyển lô L1 xuống điểm bán A một lần và A đã nhận,"1. Ghi lại tồn lô L1 ở A
+2. Chuyển tiếp lô L1 xuống A lần hai
+3. A xác nhận và chọn gộp lô
+4. Đọc danh sách lô ở A",,Ở A có **một dòng lô L1** với tồn = lần 1 + lần 2; giá vốn lô tính lại theo bình quân hai lần.,,,,,,
+04_3_070_014,"Chuyển kho lần 2 cùng lô, cùng điểm nhận — KHÔNG gộp lô",Vai `province` đăng nhập; như trên,"1. Chuyển tiếp lô L1 xuống A lần hai
+2. Khi nhận, chọn KHÔNG gộp lô (đổi mã lô)
+3. Đọc danh sách lô ở A",,"Ở A có **hai dòng lô riêng**, mỗi dòng giữ số lượng và giá vốn của lần chuyển tương ứng. Không bình quân giữa hai dòng.",,,,,,
+,080 — Theo dõi trạng thái phiếu chuyển kho,,,,,,,,,,
+04_3_080_001,Mở màn Chuyển kho,"Đã đăng nhập, có quyền xem phiếu chuyển kho","1. Vào Kho hàng > Chuyển kho
+2. Quan sát ba thẻ số tổng hợp
+3. Quan sát bộ lọc và bảng danh sách phiếu",,"Màn Chuyển kho mở ra đầy đủ: bộ lọc gồm ô Tìm kiếm theo mã phiếu, khoảng thời gian, Lọc theo trạng thái và Lọc theo điểm bán/kho; ba thẻ số tổng hợp Số phiếu đang xử lý, Tổng hàng chuyển và thẻ giá trị, tính theo bộ lọc đang áp dụng; bảng danh sách đủ cột Mã HĐ/CT, Chi nhánh chuyển, Ngày chuyển, Chi nhánh nhận, Ngày nhận, Giá trị chuyển. Phiếu chưa được xác nhận hiện Chưa nhận ở cột Ngày nhận.",,,,,,

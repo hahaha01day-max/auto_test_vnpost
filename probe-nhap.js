@@ -1,0 +1,12 @@
+const { chromium } = require("playwright");
+require("./tai-lieu-test/shared/config");
+const { storageStateFor } = require("./tai-lieu-test/shared/auth/accounts");
+const k = require("./tai-lieu-test/04_3_nhap_xuat_chuyen_kho/tests/ghi-kho");
+(async()=>{const b=await chromium.launch();const c=await b.newContext({storageState:storageStateFor("seed_gdv"),viewport:{width:1440,height:1000}});const page=await c.newPage();
+const dr=await k.moFormNhap(page,'seed_gdv'); const {dong}=await k.themSanPham(page,dr,'AUTO8_SP_TC');
+await dong.locator('input[role="spinbutton"]').first().fill(process.argv[2]||'50');
+await k.nhapLo(page,dong,[{ma:'A8BU'+Date.now().toString().slice(-6),nsx:'01/09/2026',hsd:'01/09/2027'}]);
+await dr.locator('#supplierNote').fill('AUTO test bu ton kha dung (lo giu cho bi treo)');
+const cho=page.waitForResponse(r=>r.url().includes('/import-export/confirm'),{timeout:60000});
+await dr.getByRole('button',{name:/^Nhập kho$/}).last().click(); const j=await (await cho).json(); console.log(j.status);
+await b.close()})();

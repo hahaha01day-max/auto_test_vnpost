@@ -1,0 +1,129 @@
+{
+  "spec": {
+    "tests/doi-tra.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order",
+        "/order/created-orders/detail/:orderId/:shopId",
+        "/order/return-orders"
+      ],
+      "fe": [
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/ReturnProductsTable_v2.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/ReturnOrderOverview_v2.jsx"
+      ]
+    },
+    "tests/qua-tang.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order",
+        "/order/created-orders/detail/:id"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/ReturnProductsTable_v2.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/ModalGiftReturn.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/sau-chot.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order",
+        "/order/return-orders",
+        "/order/created-orders/detail/:id",
+        "/order/return-orders/detail/:id"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/OrderNoteField.jsx",
+        "src/components/inputCurrency/InputCurrency.jsx",
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/pages/orderDetail/components/OrderDetailOverview.jsx",
+        "src/features/order/pages/createOrderPage/components/ModalSelectOrderForReturn.jsx",
+        "src/features/shop/services/reasonCatalogApi.js"
+      ],
+      "ghiChu": "26/09: danh sách fe dựng lại từ file spec nhắc tới (bản cũ bị ghi đè nhầm)"
+    },
+    "tests/serial.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order",
+        "/order/created-orders/detail/:id"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/components/AddOrEditProductModal.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/ReturnProductsTable_v2.jsx"
+      ]
+    },
+    "tests/ca-cht.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/lich-ca-nhan/ca-lam-viec",
+        "/order/created-orders/detail/:id"
+      ],
+      "fe": [
+        "src/features/timekeeping/pages/WorkShiftPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/ReturnProductsTable_v2.jsx"
+      ]
+    },
+    "tests/danh-sach-hoan-tra.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/return-orders"
+      ],
+      "fe": [
+        "src/features/order/pages/orderReturnPage/OrderReturnPage.jsx",
+        "src/features/shop/pages/settingPage/settingContents/OrderSetting.jsx",
+        "src/features/order/pages/orderReturnPage/components/OrderReturnTableData.jsx",
+        "src/features/order/services/ordersApi.js",
+        "src/features/chain/services/chainApi.js"
+      ],
+      "ghiChu": "26/09: danh sách fe dựng lại từ import của OrderReturnPage (bản cũ bị ghi đè nhầm)"
+    },
+    "tests/vat.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order",
+        "/order/created-orders/detail/:id"
+      ],
+      "fe": [
+        "src/features/shop/services/shopConfigApi.js",
+        "src/features/shop/hooks/useSaveShopConfig.js",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/ReturnProductsTable_v2.jsx"
+      ]
+    },
+    "tests/combo.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/created-orders/detail/:id",
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/ReturnProductsTable_v2.jsx",
+        "src/pages/product/productCombo/components/AddOrUpdate/DrawerAddOrUpdateComboProduct.jsx"
+      ]
+    },
+    "tests/lo-thieu.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/order/create-order",
+        "/order/created-orders/detail/:orderId/:shopId",
+        "/order/return-orders"
+      ],
+      "fe": [
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/ReturnProductsTable_v2.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/ReturnOrderOverview_v2.jsx"
+      ]
+    }
+  }
+}

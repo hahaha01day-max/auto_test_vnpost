@@ -1,0 +1,46 @@
+<h1>Chạy song song nhiều làn</h1>
+<p class="sub">Một nút: dựng N làn <b>mới</b> (seed dữ liệu từ đầu) → chạy auto test chia theo file spec trên các làn →
+  ghi kết quả vào <span class="mono">test-cases.csv</span> + <span class="mono">_CHECKLIST.md</span>.
+  Mỗi lượt dùng dữ liệu mới để kết quả chính xác — 🚫 không dùng lại dữ liệu lượt trước.</p>
+
+<% if (thongBao) { %><div class="err"><%= thongBao %></div><% } %>
+
+<% const dang = luot.find((l) => l.dangChay); %>
+<div class="card">
+  <% if (dang) { %>
+    <p>Đang có lượt chạy: <a href="/song-song/<%= dang.luot %>"><b><%= dang.luot %></b></a> — <%= dang.pha %>.
+      Chờ xong hoặc dừng lượt đó trước khi chạy lượt mới.</p>
+  <% } else { %>
+    <form method="post" action="/song-song/chay" class="flex" style="margin:0;gap:16px;align-items:flex-end">
+      <label style="margin:0">Số làn
+        <input type="number" name="soLan" value="8" min="1" max="12" style="width:80px">
+      </label>
+      <label class="small" style="margin:0;display:flex;gap:6px;align-items:center;white-space:nowrap"><input type="checkbox" name="chiChuaChay" value="1" style="width:auto;margin:0">
+        Chỉ chạy case chưa có kết quả (bỏ tick = chạy TOÀN BỘ)</label>
+      <button class="primary" style="width:auto">Seed + chạy</button>
+    </form>
+    <p class="small muted" style="margin-bottom:0">
+      8 làn là trần của máy (10 CPU / 24 GB — mỗi làn một Chromium). Seed: bước 1–3 chạy nối tiếp từng làn
+      (dùng TCT chung, ~1 phút/làn), phần còn lại song song 4 làn. Nhóm cấu hình dùng chung của chuỗi
+      (07_*, 31, 32) chạy nối tiếp trên làn đầu. Nhóm POS cần chạy trong 05:00–23:45 (giờ ca seed).
+    </p>
+  <% } %>
+</div>
+
+<div class="card">
+  <table class="small" style="width:100%">
+    <thead><tr><th style="text-align:left">Lượt</th><th style="text-align:left">Làn</th><th style="text-align:left">Giai đoạn</th><th style="text-align:left">Bắt đầu</th><th style="text-align:left">Kết thúc</th></tr></thead>
+    <tbody>
+      <% if (!luot.length) { %><tr><td colspan="5" class="muted">Chưa có lượt nào.</td></tr><% } %>
+      <% luot.forEach((l) => { %>
+        <tr>
+          <td><a href="/song-song/<%= l.luot %>" class="mono"><%= l.luot %></a></td>
+          <td class="mono"><%= (l.lan || []).map((x) => x.so).join(', ') %></td>
+          <td><span class="badge <%= l.dangChay ? 'b-run' : (l.pha === 'Xong' ? 'b-pass' : 'b-no') %>"><%= l.pha %></span></td>
+          <td class="small"><%= l.batDau ? new Date(l.batDau).toLocaleString('vi-VN') : '' %></td>
+          <td class="small"><%= l.ketThuc ? new Date(l.ketThuc).toLocaleString('vi-VN') : '' %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>

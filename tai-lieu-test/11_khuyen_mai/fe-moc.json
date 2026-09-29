@@ -1,0 +1,61 @@
+{
+  "spec": {
+    "tests/km-ghi.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/promotion/campaign",
+        "/promotion/campaign/:mode",
+        "/promotion/condition",
+        "/promotion/customer-group"
+      ],
+      "fe": [
+        "src/pages/promotionCampaign/campaignManagement/views/CampaignManagement.jsx",
+        "src/pages/promotionCampaign/campaignManagement/views/pages/PageAddOrUpdateCampaign.jsx",
+        "src/pages/promotionCampaign/conditionsManagement/views/conponents/TableData.jsx",
+        "src/pages/promotionCampaign/conditionsManagement/views/modals/ModalAddOrUpdateCondition.jsx",
+        "src/pages/promotionCampaign/conditionsManagement/controllers/ConditionManagementControllers.js",
+        "src/pages/promotionCampaign/loyaltyGroup/views/components/TableData.jsx",
+        "src/pages/promotionCampaign/loyaltyGroup/views/components/drawer/DrawerAddGroup.jsx",
+        "src/pages/promotionCampaign/loyaltyGroup/controllers/LoyaltyGroupControllers.js",
+        "src/components/regionSelector/RegionSelectorPromotion.jsx"
+      ]
+    },
+    "tests/km-sp.gdv.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/pos",
+        "/promotion/campaign"
+      ],
+      "fe": [
+        "src/pages/promotionCampaign/campaignManagement/controllers/CampaignManagementControllers.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/campaign/PromotionProgramModal.jsx",
+        "src/features/order/pages/createOrderPage/components/ModalSelectProductsFromCategory.jsx"
+      ]
+    },
+    "tests/km-don.gdv.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/pos",
+        "/promotion/campaign"
+      ],
+      "fe": [
+        "src/pages/promotionCampaign/campaignManagement/controllers/CampaignManagementControllers.jsx",
+        "src/pages/promotionCampaign/conditionsManagement/controllers/ConditionManagementControllers.js"
+      ]
+    },
+    "tests/doi-tuong-dieu-kien.tct.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/promotion/customer-group",
+        "/promotion/condition"
+      ],
+      "fe": [
+        "src/pages/promotionCampaign/conditionsManagement/controllers/ConditionManagementControllers.js"
+      ]
+    }
+  }
+}

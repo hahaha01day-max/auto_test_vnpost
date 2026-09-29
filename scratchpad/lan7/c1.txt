@@ -1,0 +1,11 @@
+{'startTime': '2026-09-25T13:09:09.110Z', 'duration': 149456.875, 'expected': 6, 'skipped': 0, 'unexpected': 3, 'flaky': 0}
+
+ failed | 24_040_003 — Ghi nhận tiền khách trả và cập nhật trạng thái phiếu
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').first() 
+
+ failed | 24_PQ_002 — Cán bộ Bưu điện xã xem công nợ nhân viên
+   ! TimeoutError: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('.ant-drawer-open').last() to be visible 
+
+ failed | 24_PQ_004 — Tài khoản thiếu quyền mở màn Công nợ nhân viên
+   @ đo : {"vai":"shop_nhan_vien","menu":0,"url":"/debt-reconciliation/employee-debt","api":[200,401],"vao":true}
+   ! Error: Thiếu quyền mà gõ URL vẫn vào màn  expect(received).toBe(expected) // Object.is equality  Expected: false Received: true

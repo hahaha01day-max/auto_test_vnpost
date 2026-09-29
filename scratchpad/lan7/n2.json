@@ -1,0 +1,787 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 143,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:31:37.855Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:31:38.100Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 99,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:31:38.194Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "nang-hang.gdv.spec.js",
+      "file": "nang-hang.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "19_130 · Vào nhóm (nâng hạng) realtime theo thanh toán (vai gdv, GHI THẬT)",
+          "file": "nang-hang.gdv.spec.js",
+          "line": 100,
+          "column": 6,
+          "specs": [
+            {
+              "title": "19_130_007 — vào nhóm ngay sau khi thanh toán hết bằng Chuyển khoản",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "195 A7KH19_NHOM_19_130_007_731707 · điều kiện (300000, 400000] & 1 đơn"
+                    },
+                    {
+                      "type": "thanh toán",
+                      "description": "{\"sdk\":\"không có\",\"tb\":\"\",\"modalCon\":true}"
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "1"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "195 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"axsHKi\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 126917,
+                      "error": {
+                        "message": "Error: Thanh toán Chuyển khoản không qua checkout: undefined · \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m",
+                        "stack": "Error: Thanh toán Chuyển khoản không qua checkout: undefined · \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:114:131",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                          "column": 131,
+                          "line": 114
+                        },
+                        "snippet": "  112 | \t\t\t\tconst kq = await thanhToan(page, { pt });\n  113 | \t\t\t\tghiChu('thanh toán', JSON.stringify({ draft: kq.draft?.status, orderId: kq.orderId, sdk: kq.sdk, tb: kq.tb.slice(0, 200), modalCon: kq.cuaSo }));\n> 114 | \t\t\t\texpect(String(kq.draft?.status?.code), `Thanh toán ${pt} không qua checkout: ${JSON.stringify(kq.draft?.status)} · ${kq.tb}`).toBe('200');\n      | \t\t\t\t                                                                                                                              ^\n  115 | \t\t\t\tconst giay = await choVaoNhom(ctx.tct, ctx.groupId, ctx.kh.ma);\n  116 | \t\t\t\tghiChu('vào nhóm sau', giay == null ? `KHÔNG vào sau ${CHO_VAO_NHOM / 1000}s` : `${giay}s`);\n  117 | \t\t\t\texpect(giay, `Thanh toán ${pt} xong mà khách không vào nhóm điều kiện sau ${CHO_VAO_NHOM / 1000}s`).not.toBeNull();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                            "column": 131,
+                            "line": 114
+                          },
+                          "message": "Error: Thanh toán Chuyển khoản không qua checkout: undefined · \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"undefined\"\u001b[39m\n\n  112 | \t\t\t\tconst kq = await thanhToan(page, { pt });\n  113 | \t\t\t\tghiChu('thanh toán', JSON.stringify({ draft: kq.draft?.status, orderId: kq.orderId, sdk: kq.sdk, tb: kq.tb.slice(0, 200), modalCon: kq.cuaSo }));\n> 114 | \t\t\t\texpect(String(kq.draft?.status?.code), `Thanh toán ${pt} không qua checkout: ${JSON.stringify(kq.draft?.status)} · ${kq.tb}`).toBe('200');\n      | \t\t\t\t                                                                                                                              ^\n  115 | \t\t\t\tconst giay = await choVaoNhom(ctx.tct, ctx.groupId, ctx.kh.ma);\n  116 | \t\t\t\tghiChu('vào nhóm sau', giay == null ? `KHÔNG vào sau ${CHO_VAO_NHOM / 1000}s` : `${giay}s`);\n  117 | \t\t\t\texpect(giay, `Thanh toán ${pt} xong mà khách không vào nhóm điều kiện sau ${CHO_VAO_NHOM / 1000}s`).not.toBeNull();\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:114:131"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:31:38.538Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "195 A7KH19_NHOM_19_130_007_731707 · điều kiện (300000, 400000] & 1 đơn"
+                        },
+                        {
+                          "type": "thanh toán",
+                          "description": "{\"sdk\":\"không có\",\"tb\":\"\",\"modalCon\":true}"
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "1"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "195 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"axsHKi\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-8193d--toán-hết-bằng-Chuyển-khoản-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-8193d--toán-hết-bằng-Chuyển-khoản-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-8193d--toán-hết-bằng-Chuyển-khoản-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-8193d--toán-hết-bằng-Chuyển-khoản-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-8193d--toán-hết-bằng-Chuyển-khoản-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                        "column": 131,
+                        "line": 114
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6b2890490e128a876400-4488805ebf90148c9b89",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 106,
+              "column": 3
+            },
+            {
+              "title": "19_130_008 — vào nhóm ngay sau khi thanh toán hết bằng Quét QR",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "196 A7KH19_NHOM_19_130_008_859102 · điều kiện (400000, 500000] & 1 đơn"
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "3"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "196 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lSvvWX\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 87541,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().getByRole('button', { name: 'Xác nhận thanh toán' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().getByRole('button', { name: 'Xác nhận thanh toán' })\u001b[22m\n\n    at thanhToan (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:84:63)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:112:16",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                          "column": 63,
+                          "line": 84
+                        },
+                        "snippet": "  82 | \tawait page.waitForTimeout(1_000);\n  83 | \tconst choDraft = page.waitForResponse((r) => /draft-checkout|spa-checkout/.test(r.url()) && r.request().method() === 'POST', { timeout: 30_000 }).catch(() => null);\n> 84 | \tawait m.getByRole('button', { name: 'Xác nhận thanh toán' }).click();\n     | \t                                                             ^\n  85 | \tconst r = await choDraft;\n  86 | \tconst draft = r ? await r.json().catch(() => null) : null;\n  87 | \tconst orderId = draft?.data?.orderId;"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                            "column": 63,
+                            "line": 84
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().getByRole('button', { name: 'Xác nhận thanh toán' })\u001b[22m\n\n\n  82 | \tawait page.waitForTimeout(1_000);\n  83 | \tconst choDraft = page.waitForResponse((r) => /draft-checkout|spa-checkout/.test(r.url()) && r.request().method() === 'POST', { timeout: 30_000 }).catch(() => null);\n> 84 | \tawait m.getByRole('button', { name: 'Xác nhận thanh toán' }).click();\n     | \t                                                             ^\n  85 | \tconst r = await choDraft;\n  86 | \tconst draft = r ? await r.json().catch(() => null) : null;\n  87 | \tconst orderId = draft?.data?.orderId;\n    at thanhToan (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:84:63)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:112:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:33:46.481Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "196 A7KH19_NHOM_19_130_008_859102 · điều kiện (400000, 500000] & 1 đơn"
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "3"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "196 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lSvvWX\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-601f8-thanh-toán-hết-bằng-Quét-QR-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-601f8-thanh-toán-hết-bằng-Quét-QR-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-601f8-thanh-toán-hết-bằng-Quét-QR-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-601f8-thanh-toán-hết-bằng-Quét-QR-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-601f8-thanh-toán-hết-bằng-Quét-QR-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                        "column": 63,
+                        "line": 84
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6b2890490e128a876400-83ed938b0069c24464a7",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 106,
+              "column": 3
+            },
+            {
+              "title": "19_130_005 — Không nâng hạng khi đơn còn ở trạng thái nháp",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "197 A7KH19_NHOM_19_130_005_948230 · điều kiện (500000, 600000] & 1 đơn"
+                    },
+                    {
+                      "type": "lưu nháp",
+                      "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lVEoLf\"}"
+                    },
+                    {
+                      "type": "vào nhóm",
+                      "description": "không (đúng)"
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "1"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "197 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"OklCek\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 173364,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:35:15.049Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "197 A7KH19_NHOM_19_130_005_948230 · điều kiện (500000, 600000] & 1 đơn"
+                        },
+                        {
+                          "type": "lưu nháp",
+                          "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lVEoLf\"}"
+                        },
+                        {
+                          "type": "vào nhóm",
+                          "description": "không (đúng)"
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "1"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "197 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"OklCek\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-ba956-i-đơn-còn-ở-trạng-thái-nháp-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6b2890490e128a876400-7b1efee3e1d6a05e3cf9",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 124,
+              "column": 2
+            },
+            {
+              "title": "19_130_004 — Nâng hạng realtime khi thanh toán sau rồi trả nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 480000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "198 A7KH19_NHOM_19_130_004_125158 · điều kiện (600000, 700000] & 1 đơn"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 98777,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Tìm kiếm sản phẩm / dịch vụ (F3)')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" role=\"combobox\" class=\"ant-input\" autocomplete=\"off\" id=\"product-search\" value=\"AUTO7_SP_TC\" aria-expanded=\"true\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-owns=\"product-search_list\" aria-controls=\"product-search_list\" aria-activedescendant=\"product-search_list_0\" placeholder=\"Tìm kiếm sản phẩm / dịch vụ (F3)\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Tìm kiếm sản phẩm / dịch vụ (F3)')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" role=\"combobox\" class=\"ant-input\" autocomplete=\"off\" id=\"product-search\" value=\"AUTO7_SP_TC\" aria-expanded=\"true\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-owns=\"product-search_list\" aria-controls=\"product-search_list\" aria-activedescendant=\"product-search_list_0\" placeholder=\"Tìm kiếm sản phẩm / dịch vụ (F3)\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at timSp (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/10_bang_gia_ban_san_pham/tests/pos-10.js:64:10)\n    at Object.them (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/10_bang_gia_ban_san_pham/tests/pos-10.js:76:35)\n    at dung (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:46:42)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:148:10",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/10_bang_gia_ban_san_pham/tests/pos-10.js",
+                          "column": 10,
+                          "line": 64
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../../10_bang_gia_ban_san_pham/tests/pos-10.js:64\n\n  62 | async function timSp(page, ten) {\n  63 | \tconst o = page.getByPlaceholder('Tìm kiếm sản phẩm / dịch vụ (F3)');\n> 64 | \tawait o.click();\n     | \t        ^\n  65 | \tawait o.fill(ten);\n  66 | \tconst muc = page.getByText(ten, { exact: true }).last();\n  67 | \tawait expect(muc, `Ô tìm bán hàng không ra \"${ten}\"`).toBeVisible({ timeout: 20_000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/10_bang_gia_ban_san_pham/tests/pos-10.js",
+                            "column": 10,
+                            "line": 64
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Tìm kiếm sản phẩm / dịch vụ (F3)')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" role=\"combobox\" class=\"ant-input\" autocomplete=\"off\" id=\"product-search\" value=\"AUTO7_SP_TC\" aria-expanded=\"true\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-owns=\"product-search_list\" aria-controls=\"product-search_list\" aria-activedescendant=\"product-search_list_0\" placeholder=\"Tìm kiếm sản phẩm / dịch vụ (F3)\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"ant-modal-wrap\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../../10_bang_gia_ban_san_pham/tests/pos-10.js:64\n\n  62 | async function timSp(page, ten) {\n  63 | \tconst o = page.getByPlaceholder('Tìm kiếm sản phẩm / dịch vụ (F3)');\n> 64 | \tawait o.click();\n     | \t        ^\n  65 | \tawait o.fill(ten);\n  66 | \tconst muc = page.getByText(ten, { exact: true }).last();\n  67 | \tawait expect(muc, `Ô tìm bán hàng không ra \"${ten}\"`).toBeVisible({ timeout: 20_000 });\n    at timSp (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/10_bang_gia_ban_san_pham/tests/pos-10.js:64:10)\n    at Object.them (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/10_bang_gia_ban_san_pham/tests/pos-10.js:76:35)\n    at dung (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:46:42)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:148:10"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:38:08.528Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "198 A7KH19_NHOM_19_130_004_125158 · điều kiện (600000, 700000] & 1 đơn"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/10_bang_gia_ban_san_pham/tests/pos-10.js",
+                        "column": 10,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6b2890490e128a876400-0017c7e6533da23e5390",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 143,
+              "column": 2
+            },
+            {
+              "title": "19_130_006 — Nâng hạng realtime khi thanh toán trả góp",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "199 A7KH19_NHOM_19_130_006_221572 · điều kiện (700000, 800000] & 1 đơn"
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "1"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "199 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"FGZuQu\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 108123,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().locator('input').filter({ hasNot: getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().locator('[type=radio]') }).last()\u001b[22m\n\u001b[2m    - locator resolved to <input step=\"1\" disabled role=\"spinbutton\" value=\"795.000 đ\" autocomplete=\"off\" id=\"money-customize\" class=\"ant-input-number-input\"/>\u001b[22m\n\u001b[2m    - fill(\"400000\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().locator('input').filter({ hasNot: getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().locator('[type=radio]') }).last()\u001b[22m\n\u001b[2m    - locator resolved to <input step=\"1\" disabled role=\"spinbutton\" value=\"795.000 đ\" autocomplete=\"off\" id=\"money-customize\" class=\"ant-input-number-input\"/>\u001b[22m\n\u001b[2m    - fill(\"400000\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at thanhToan (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:79:11)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:188:15",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                          "column": 11,
+                          "line": 79
+                        },
+                        "snippet": "  77 | \tif (traTruoc != null) {\n  78 | \t\tconst o = m.locator('input').filter({ hasNot: m.locator('[type=radio]') }).last();\n> 79 | \t\tawait o.fill(String(traTruoc));\n     | \t\t        ^\n  80 | \t}\n  81 | \tawait m.getByRole('button', { name: new RegExp(pt) }).first().click();\n  82 | \tawait page.waitForTimeout(1_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                            "column": 11,
+                            "line": 79
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().locator('input').filter({ hasNot: getByRole('dialog').filter({ hasText: 'Hình thức thanh toán' }).last().locator('[type=radio]') }).last()\u001b[22m\n\u001b[2m    - locator resolved to <input step=\"1\" disabled role=\"spinbutton\" value=\"795.000 đ\" autocomplete=\"off\" id=\"money-customize\" class=\"ant-input-number-input\"/>\u001b[22m\n\u001b[2m    - fill(\"400000\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    30 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  77 | \tif (traTruoc != null) {\n  78 | \t\tconst o = m.locator('input').filter({ hasNot: m.locator('[type=radio]') }).last();\n> 79 | \t\tawait o.fill(String(traTruoc));\n     | \t\t        ^\n  80 | \t}\n  81 | \tawait m.getByRole('button', { name: new RegExp(pt) }).first().click();\n  82 | \tawait page.waitForTimeout(1_000);\n    at thanhToan (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:79:11)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:188:15"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:39:48.514Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "199 A7KH19_NHOM_19_130_006_221572 · điều kiện (700000, 800000] & 1 đơn"
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "1"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "199 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"FGZuQu\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-a9fb5-time-khi-thanh-toán-trả-góp-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-a9fb5-time-khi-thanh-toán-trả-góp-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-a9fb5-time-khi-thanh-toán-trả-góp-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-a9fb5-time-khi-thanh-toán-trả-góp-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-a9fb5-time-khi-thanh-toán-trả-góp-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                        "column": 11,
+                        "line": 79
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6b2890490e128a876400-7c0c98d289739d3c1158",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 182,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T09:31:37.574Z",
+    "duration": 600005.93,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

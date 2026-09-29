@@ -1,0 +1,235 @@
+﻿,Chức năng,,BÁN HÀNG TẠI QUẦY (POS),,,,,,,,
+,Mã Testcase,,18_1_ban_hang_tai_quay,,,,,,,,
+,Tổng các tình huống kiểm thử,,131,,,,,,,,
+,Chưa thực hiện,,131,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,BÁN HÀNG TẠI QUẦY (POS),,,,,,,,,,
+,010 — Mở màn hình bán hàng và phục vụ nhiều khách cùng lúc,,,,,,,,,,
+18_1_010_001,Từ danh sách đơn hàng mở màn Bán hàng,Vai: gdv; ca làm việc đang mở,"1. Vào Đơn hàng › Đơn hàng đã tạo;
+2. Bấm ""Bán hàng"" ở góc trên bên phải",,"Điều hướng sang /order/create-order; màn bán hàng mở với sẵn một tab đơn tạm tên ""Đơn hàng: 1"" và bảng hàng trống",,,,,,
+18_1_010_002,Màn Bán hàng có đủ control chính,Vai: gdv; ca đang mở,"1. Mở /order/create-order;
+2. Đọc các vùng trên màn",,"Có ô tìm kiếm (placeholder ""Tìm kiếm sản phẩm / dịch vụ (F3)""), khối ""Sản phẩm bán chạy"", bảng hàng đã chọn, khối khách hàng, khối tiền (""Tổng tiền"", ""VAT"", ""Cần thanh toán"") và hai nút ""Thanh toán sau"" / ""Thanh toán""",,,,,,
+18_1_010_003,Chưa mở ca thì chặn vào màn bán hàng,Vai: gdv; tài khoản CHƯA mở ca,1. Mở /order/create-order,,Hệ thống chặn ngay ở bước vào màn hình bán hàng — không cho lập đơn,,,,,,
+18_1_010_004,Thêm tab đơn mới,Vai: gdv; đang ở màn bán hàng,1. Bấm dấu cộng bên phải dãy tab đơn,,Tab đơn tạm mới xuất hiện và màn hình chuyển focus sang tab đó; tab cũ giữ nguyên giỏ hàng,,,,,,
+18_1_010_005,Phím F1 mở tab đơn mới,"Vai: gdv; đang ở màn bán hàng, không mở cửa sổ nào",1. Bấm F1,,"Tab đơn mới mở ra, giống hệt bấm dấu cộng",,,,,,
+18_1_010_006,Đóng tab đơn khi chỉ có duy nhất 1 tab,Vai: gdv; chỉ có 1 tab đơn đang mở,1. Bấm dấu nhân trên tab đó,,Tab rỗng: đóng rồi hệ thống mở lại một tab tạm mới ( không để màn trống). Tab đang có hàng: hỏi xác nhận trước.,,,,,,
+18_1_010_007,Đóng 1 tab khi đang có nhiều hơn 1 tab,Vai: gdv; có ≥ 2 tab đơn,1. Bấm dấu nhân trên một tab,,Tab đó đóng lại; màn chuyển sang tab còn lại; giỏ hàng của tab còn lại KHÔNG đổi,,,,,,
+18_1_010_008,Phím F2 đóng tab đang mở,Vai: gdv; có ≥ 2 tab đơn,1. Bấm F2,,"Tab đang mở đóng lại, giống hệt bấm dấu nhân",,,,,,
+18_1_010_009,Đóng tab ĐANG CÓ HÀNG thì hỏi xác nhận và mất sạch giỏ,Vai: gdv; tab đang mở có ≥ 1 dòng hàng,"1. Bấm dấu nhân trên tab đó;
+2. Đọc hộp cảnh báo;
+3. Đồng ý",,"Hộp cảnh báo dữ liệu không được lưu; đồng ý là mất sạch giỏ hàng của tab đó, không lấy lại được. Muốn giữ thì phải dùng ""Lưu nháp""",,,,,,
+18_1_010_010,Chuyển qua lại giữa các tab không lẫn dữ liệu,"Vai: gdv; có 2 tab, mỗi tab có hàng khác nhau","1. Bấm sang tab 2;
+2. Bấm về tab 1;
+3. So giỏ hàng, khách hàng và ưu đãi của từng tab",,"Mỗi tab giữ riêng danh sách hàng, khách hàng và ưu đãi; chuyển tab KHÔNG làm lẫn dữ liệu",,,,,,
+18_1_010_011,Chọn khách hàng khác nhau cho từng tab,Vai: gdv; có 2 tab đơn,"1. Gắn khách A cho tab 1;
+2. Gắn khách B cho tab 2;
+3. Chuyển qua lại",,Mỗi tab giữ đúng khách của mình; tên tab đổi thành tên khách để nhận ra đơn của ai,,,,,,
+18_1_010_012,Thanh toán một tab thì tab đó reset,"Vai: gdv; có ≥ 2 tab, tab 1 có hàng","1. Thanh toán tab 1;
+2. Đọc lại tab 1 và tab 2",,"Tab vừa thanh toán reset toàn bộ (giỏ hàng, khách hàng, ưu đãi về trống); tab còn lại KHÔNG đổi",,,,,,
+18_1_010_013,Tạo và thanh toán đơn mới khi đang treo đơn cũ,Vai: gdv; tab 1 đang treo đơn có hàng,"1. Mở tab 2;
+2. Thêm hàng;
+3. Thanh toán tab 2;
+4. Quay lại tab 1",,"Thao tác trên tab 2 trót lọt; tab 1 giữ nguyên đơn treo, không bị ảnh hưởng",,,,,,
+18_1_010_014,Quay lại xử lý đơn đang treo,"Vai: gdv; có tab treo với hàng, khách và ưu đãi","1. Chuyển sang tab khác;
+2. Quay lại tab treo",,"Hiển thị lại chính xác trạng thái trước đó: đủ dòng hàng, đúng khách hàng, đúng ưu đãi và đúng tổng tiền",,,,,,
+18_1_010_015,Tải lại trang F5 khi đang có tab treo,Vai: gdv; có ≥ 2 tab treo với hàng,"1. Bấm F5;
+2. Đọc lại dãy tab và giỏ hàng từng tab",,Hệ thống tự khôi phục lại các tab treo kèm dữ liệu.,,,,,,
+18_1_010_016,Mở đồng thời nhiều tab treo cho CÙNG một khách hàng,Vai: gdv; có khách hàng X trong danh sách,"1. Mở tab 1 gắn khách X;
+2. Mở tab 2 cũng gắn khách X;
+3. Thêm hàng khác nhau vào hai tab",,Hệ thống cho phép; hai tab giữ riêng giỏ hàng dù cùng khách. Hai tab cùng tên khách nên cần phân biệt được bằng thứ tự tab,,,,,,
+18_1_010_017,Chọn khách hàng đã có trong danh sách,Vai: gdv; có khách hàng trong danh sách,"1. Bấm F11 hoặc bấm vào ô tìm khách hàng;
+2. Gõ tên khách;
+3. Chọn trong gợi ý",,"Hệ thống ghi nhận khách hàng vào đơn; khối khách hàng hiện tên, số điện thoại và hạng khách",,,,,,
+18_1_010_018,Tìm kiếm khách hàng đã có trong danh sách,Vai: gdv; có khách hàng trong danh sách,1. Gõ một phần tên hoặc số điện thoại vào ô tìm khách,,Hiện danh sách gợi ý khớp từ khoá,,,,,,
+18_1_010_019,Tìm kiếm khách hàng chưa có trong danh sách,Vai: gdv,1. Gõ số điện thoại chưa có trong hệ thống,,Hiện thông báo chưa có khách hàng kèm lối thêm mới.,,,,,,
+18_1_010_020,Thêm khách hàng mới ngay từ màn bán hàng,Vai: gdv,"1. Gõ số điện thoại chưa có;
+2. Chọn thêm khách hàng mới;
+3. Khai thông tin;
+4. Lưu",,"Báo ""Thêm khách hàng thành công""; khách mới tự gắn vào đơn đang mở",,,,,,
+18_1_010_021,Phím F11 đưa con trỏ vào ô tìm khách hàng,Vai: gdv; màn bán hàng đang rảnh,1. Bấm F11,,Con trỏ nhảy vào ô tìm khách hàng,,,,,,
+18_1_010_022,Đóng tab đơn RỖNG không hỏi xác nhận,Vai: gdv; tab đang mở chưa có dòng hàng nào,1. Bấm dấu nhân trên tab đó,,"Tab đóng ngay, KHÔNG hiện hộp xác nhận (chỉ tab có hàng mới hỏi)",,,,,,
+18_1_010_023,Từ chối hộp xác nhận đóng tab thì giữ nguyên giỏ,Vai: gdv; tab có ≥ 1 dòng hàng,"1. Bấm dấu nhân;
+2. Bấm huỷ trong hộp xác nhận",,Tab vẫn mở; giỏ hàng còn nguyên đủ dòng,,,,,,
+,020 — Tìm và thêm sản phẩm vào đơn,,,,,,,,,,
+18_1_020_001,Tạo đơn bằng cách tìm sản phẩm ở ô tìm kiếm,Vai: gdv; đã mở tab đơn,"1. Gõ tên hàng vào ô tìm kiếm;
+2. Chọn dòng trong gợi ý;
+3. Lưu nháp",,Sản phẩm vào bảng hàng với số lượng 1; lưu nháp thành công và thấy mã đơn ở danh sách đơn hàng,,,,,,
+18_1_020_002,Tạo đơn bằng cách chọn trong danh sách sản phẩm,Vai: gdv; đã mở tab đơn,"1. Mở danh sách sản phẩm;
+2. Chọn sản phẩm còn tồn;
+3. Lưu nháp",,Sản phẩm vào giỏ; lưu nháp thành công và thấy mã đơn ở danh sách,,,,,,
+18_1_020_003,Tạo đơn bằng cách lọc sản phẩm theo danh mục,Vai: gdv; đã mở tab đơn,"1. Lọc theo danh mục;
+2. Chọn sản phẩm còn tồn;
+3. Chọn khách hàng;
+4. Thanh toán",,Thanh toán thành công và thấy đơn ở danh sách đơn hàng,,,,,,
+18_1_020_004,Ba tiêu chí tìm kiếm chuyển đổi được,Vai: gdv; đã mở tab đơn,1. Bung ô chọn tiêu chí bên trái ô tìm kiếm,,"Đúng 3 tiêu chí ""Tên"" (mặc định, F3), ""SKU"" (F4), ""Barcode"" (F6)",,,,,,
+18_1_020_005,Đổi tiêu chí tìm thì xoá từ khoá và kết quả cũ,Vai: gdv; đang có từ khoá và danh sách gợi ý,"1. Đổi tiêu chí từ ""Tên"" sang ""SKU""",,Ô tìm kiếm bị xoá trắng và danh sách gợi ý cũ biến mất,,,,,,
+18_1_020_006,Tìm sản phẩm tồn tại trong danh sách,Vai: gdv; có sản phẩm khớp từ khoá,1. Gõ từ khoá đúng tên một sản phẩm,,"Danh sách gợi ý lọc và hiện chính xác sản phẩm đó, mỗi dòng kèm biến thể và đơn vị tính cụ thể",,,,,,
+18_1_020_007,Tìm sản phẩm không tồn tại trong danh sách,Vai: gdv,"1. Gõ ""SANPHAMKHONGCO999""",,Danh sách gợi ý rỗng; không hiện sản phẩm nào; không báo lỗi kỹ thuật,,,,,,
+18_1_020_008,Tìm sản phẩm bằng một phần tên,Vai: gdv; có sản phẩm tên dài,1. Gõ 3 ký tự giữa tên sản phẩm,,Gợi ý hiện mọi sản phẩm có tên chứa chuỗi đó (tìm theo một phần tên),,,,,,
+18_1_020_009,Tìm sản phẩm không dấu,Vai: gdv; sản phẩm có tên tiếng Việt có dấu,1. Gõ tên sản phẩm KHÔNG dấu,,Chưa chốt kỳ vọng — ghi nhận thực tế: gõ từ khoá KHÔNG DẤU có gợi ý ra sản phẩm tên viết có dấu hay không.,,,,,,
+18_1_020_010,Tìm sản phẩm bằng chuỗi toàn khoảng trắng,Vai: gdv,1. Gõ 5 dấu cách vào ô tìm kiếm,,Gợi ý rỗng hoặc trả về danh sách không lọc; không báo lỗi kỹ thuật,,,,,,
+18_1_020_011,Tìm sản phẩm bằng ký tự đặc biệt,Vai: gdv,"1. Gõ ""' OR 1=1 --""",,Gợi ý rỗng; không có response 500; không lộ thông báo kỹ thuật ra màn hình,,,,,,
+18_1_020_012,Thêm sản phẩm thủ công bằng click một lần,Vai: gdv; đã mở tab đơn,1. Bấm vào một dòng sản phẩm trong gợi ý,,Sản phẩm vào bảng hàng với số lượng 1,,,,,,
+18_1_020_013,Click chọn cùng sản phẩm nhiều lần thì cộng dồn số lượng,Vai: gdv; đã mở tab đơn,1. Bấm vào cùng một sản phẩm 3 lần,,"Bảng hàng có một dòng với số lượng 3, KHÔNG tạo 3 dòng riêng",,,,,,
+18_1_020_014,Thêm sản phẩm từ khối Sản phẩm bán chạy,Vai: gdv; khối Sản phẩm bán chạy đang hiện,"1. Bấm thẳng vào thẻ sản phẩm trong khối ""Sản phẩm bán chạy""",,"Sản phẩm vào bảng hàng; mỗi thẻ hiện tên hàng, giá bán và tồn kho theo đơn vị đang bán",,,,,,
+18_1_020_015,Kết hợp quét mã vạch và chọn thủ công trong cùng đơn,Vai: gdv; có máy quét,"1. Quét mã vạch một sản phẩm;
+2. Chọn thủ công một sản phẩm khác từ gợi ý",,Cả hai sản phẩm đều vào giỏ đúng; khối tiền cộng đủ hai dòng,,,,,,
+18_1_020_016,Ẩn hiện khối Sản phẩm bán chạy,Vai: gdv; đang ở màn bán hàng,"1. Bấm nút ""Sản phẩm bán chạy"" ở thanh trên",,Khối ẩn đi và bảng hàng đã chọn dài ra; bấm lần nữa thì hiện lại,,,,,,
+18_1_020_017,Hàng hết tồn chỉ CẢNH BÁO chứ không chặn thêm vào giỏ,Vai: gdv; có sản phẩm tồn = 0,1. Thêm sản phẩm đó vào đơn,,"Chỉ cảnh báo nguyên văn ""Chú ý: Sản phẩm này đã hết hàng"" rồi VẪN cho thêm vào giỏ",,,,,,
+18_1_020_018,Số lượng vượt tồn kho chỉ CẢNH BÁO,Vai: gdv; sản phẩm tồn 5,"1. Thêm sản phẩm;
+2. Sửa số lượng lên 10",,"Chỉ cảnh báo nguyên văn ""Chú ý: Số lượng đang vượt quá số lượng tồn kho"" rồi VẪN cho bán tiếp",,,,,,
+18_1_020_019,🔴 Thanh toán mới thật sự chặn khi không đủ hàng,Vai: gdv; giỏ có hàng vượt tồn,"1. Bấm ""Thanh toán"";
+2. Hoàn tất",,"Hệ thống kiểm tồn LẦN NỮA và chặn hoàn tất kèm bảng liệt kê mặt hàng thiếu. Đây là chỗ chặn thật, không phải lúc thêm hàng",,,,,,
+18_1_020_020,Hàng ngừng kinh doanh KHÔNG thêm được vào đơn,Vai: gdv; có sản phẩm đã ngừng kinh doanh,1. Tìm và chọn sản phẩm đó,,Bị chặn với thông báo dạng: Sản phẩm '<tên>' đã bị ngừng kinh doanh hoặc ngừng bán. Hàng KHÔNG vào giỏ,,,,,,
+18_1_020_021,Hàng không nằm trong bảng giá nào KHÔNG thêm được,Vai: gdv; có sản phẩm không thuộc bảng giá hiệu lực nào,1. Tìm và chọn sản phẩm đó,,"Bị chặn với thông báo nguyên văn ""Sản phẩm không nằm trong bảng giá nào đang có hiệu lực tại điểm bán""; không có cách bán vòng qua",,,,,,
+18_1_020_022,Không bán dịch vụ nhiều buổi cho khách lẻ,Vai: gdv; đơn CHƯA gắn khách hàng,1. Thêm một dịch vụ nhiều buổi vào đơn,,"Bị chặn với thông báo nguyên văn ""Không thể bán dịch vụ nhiều buổi cho khách lẻ""",,,,,,
+18_1_020_023,Không bán combo liệu trình cho khách lẻ,Vai: gdv; đơn CHƯA gắn khách hàng,1. Thêm một combo liệu trình vào đơn,,"Bị chặn với thông báo nguyên văn ""Không thể bán combo liệu trình cho khách lẻ""",,,,,,
+18_1_020_024,Gắn khách rồi thì bán được dịch vụ nhiều buổi,Vai: gdv; đơn ĐÃ gắn khách hàng,1. Thêm dịch vụ nhiều buổi vào đơn,,Thêm được bình thường — không còn cảnh báo khách lẻ,,,,,,
+18_1_020_025,Khối tiền cập nhật ngay theo từng lần thêm hàng,Vai: gdv; đã mở tab đơn,"1. Thêm lần lượt 3 mặt hàng;
+2. Sau mỗi lần đọc khối tiền",,"""Tổng tiền"", ""VAT"" và ""Cần thanh toán"" đổi ngay sau mỗi lần thêm, không cần bấm lưu. Hai nút ""Thanh toán sau"" và ""Thanh toán"" sáng lên khi giỏ có hàng",,,,,,
+18_1_020_026,Phím F3 F4 F6 đưa con trỏ vào ô tìm theo từng tiêu chí,Vai: gdv; màn bán hàng đang rảnh,"1. Bấm lần lượt F3, F4, F6",,"Con trỏ nhảy vào ô tìm kiếm và tiêu chí đổi tương ứng thành ""Tên"", ""SKU"", ""Barcode""",,,,,,
+,030 — Quét mã vạch để thêm hàng vào đơn,,,,,,,,,,
+18_1_030_001,Kết nối máy quét mã vạch,"Vai: gdv; máy quét đã cắm, hoạt động như bàn phím",1. Quét thử một mã vạch ở màn bán hàng,,"Máy phát âm thanh kết nối thành công; hệ thống nhận dãy số ở bất kỳ vị trí nào trên màn hình, không cần đưa con trỏ vào ô tìm kiếm trước",,,,,,
+18_1_030_002,Quét barcode sản phẩm còn tồn,"Vai: gdv; sản phẩm có mã vạch, tồn > 0",1. Quét mã vạch,,Thêm sản phẩm vào đơn thành công với số lượng 1; khối tiền cập nhật theo,,,,,,
+18_1_030_003,Quét barcode sản phẩm HẾT tồn vẫn thêm được,Vai: gdv; sản phẩm tồn = 0,1. Quét mã vạch sản phẩm đó,,"VẪN thêm sản phẩm vào đơn, chỉ kèm cảnh báo ""Chú ý: Sản phẩm này đã hết hàng""",,,,,,
+18_1_030_004,Quét barcode sản phẩm tồn ÂM vẫn thêm được,Vai: gdv; sản phẩm tồn âm,1. Quét mã vạch sản phẩm đó,,VẪN thêm sản phẩm vào đơn,,,,,,
+18_1_030_005,Quét liên tiếp cùng một barcode thì cộng dồn,Vai: gdv; sản phẩm có mã vạch,1. Quét cùng mã vạch 3 lần liên tiếp,,Bảng hàng có một dòng với số lượng 3; hệ thống xếp hàng xử lý lần lượt từng lần quét và tự bỏ con trỏ khỏi ô nhập sau mỗi lần,,,,,,
+18_1_030_006,Quét barcode quá số lượng tồn kho,Vai: gdv; sản phẩm tồn 3,1. Quét cùng mã vạch 5 lần,,"Hệ thống VẪN tăng số lượng lên 5, chỉ cảnh báo ""Chú ý: Số lượng đang vượt quá số lượng tồn kho""",,,,,,
+18_1_030_007,Quét barcode không tồn tại,Vai: gdv,1. Quét một dãy số không có trong hệ thống,,Cảnh báo dạng: Mã vạch/SKU không tồn tại(<mã vừa quét>). Ô tìm kiếm được xoá trắng,,,,,,
+18_1_030_008,Quét barcode sản phẩm đã ngừng kinh doanh,"Vai: gdv; sản phẩm có mã vạch, đã ngừng kinh doanh",1. Quét mã vạch,,Thông báo dạng: Sản phẩm '<tên>' đã bị ngừng kinh doanh hoặc ngừng bán. Hàng KHÔNG vào giỏ,,,,,,
+18_1_030_009,Quét barcode khớp nhiều mặt hàng,Vai: gdv; một mã vạch khai cho ≥ 2 mặt hàng,1. Quét mã vạch đó,,"Cảnh báo nguyên văn ""Mã vạch/SKU trùng lặp. Vui lòng chọn thủ công."" và người dùng tự chọn đúng dòng trong gợi ý",,,,,,
+18_1_030_010,Quét barcode sản phẩm có nhiều đơn vị tính,Vai: gdv; sản phẩm có ≥ 2 ĐVT,1. Quét mã vạch,,Hiển thị đúng đơn vị mặc định của sản phẩm trong dòng hàng,,,,,,
+18_1_030_011,Quét barcode khi mất kết nối máy quét,Vai: gdv; rút máy quét ra,1. Thử quét,,"Không hiển thị sản phẩm nào, không có dòng hàng mới.",,,,,,
+18_1_030_012,Quét kèm số lượng bằng cú pháp N*mã,Vai: gdv; sản phẩm có mã vạch,"1. Gõ ""6*8938505974197"" rồi quét hoặc Enter",,Hệ thống hiểu là quét mã đó với số lượng 6; dòng hàng có số lượng 6,,,,,,
+18_1_030_013,Số lượng trong cú pháp N*mã phải là số nguyên 1–999,Vai: gdv; sản phẩm có mã vạch,"1. Thử lần lượt ""0*<mã>"", ""1*<mã>"", ""999*<mã>"", ""1000*<mã>"", ""1.5*<mã>""",,"Chỉ 1 và 999 được chấp nhận; 0, 1000 và 1.5 bị từ chối (số nguyên từ 1 đến 999)",,,,,,
+18_1_030_014,Quét mã vạch hàng cân tách đúng mã hàng và khối lượng,Vai: gdv; có tem cân in ra,1. Quét mã vạch do cân in,,Hệ thống tách mã hàng và khối lượng trong cùng dãy số; khối lượng ghi vào số lượng của dòng hàng,,,,,,
+18_1_030_015,Mã vạch hàng cân sai checksum bị chặn,Vai: gdv; có tem cân sai ký tự kiểm tra,1. Quét tem đó,,"Cảnh báo nguyên văn ""Barcode hàng cân sai checksum, vui lòng quét lại.""",,,,,,
+18_1_030_016,Mã vạch hàng cân thiếu checksum bị chặn,Vai: gdv; có tem cân thiếu ký tự kiểm tra,1. Quét tem đó,,"Cảnh báo nguyên văn ""Barcode hàng cân thiếu checksum""",,,,,,
+18_1_030_017,Mã vạch hàng cân có trọng lượng bằng 0 bị chặn,Vai: gdv; có tem cân trọng lượng 0,1. Quét tem đó,,"Cảnh báo nguyên văn ""Barcode hàng cân có trọng lượng không hợp lệ""",,,,,,
+18_1_030_018,Tự gõ mã vạch bằng tiêu chí Barcode,Vai: gdv; biết dãy mã vạch,"1. Chọn tiêu chí ""Barcode"";
+2. Gõ mã vào ô tìm kiếm;
+3. Chọn trong gợi ý",,Sản phẩm mang mã vạch đó vào giỏ,,,,,,
+18_1_030_019,🔴 Màn thanh toán đang mở thì NGỪNG nhận mã vạch,Vai: gdv; đã mở màn thanh toán,"1. Trong lúc màn thanh toán mở, quét một mã vạch",,"Hệ thống ngừng nhận dữ liệu mã vạch — không thêm hàng, không báo lỗi. Phải đóng màn thanh toán trước",,,,,,
+18_1_030_020,Quét liên tiếp nhiều mặt hàng khác nhau,Vai: gdv; có ≥ 3 sản phẩm có mã vạch,1. Quét liên tiếp 3 mã vạch khác nhau,,"Bảng hàng có đủ 3 dòng đúng sản phẩm, không lẫn; con trỏ tự rời ô nhập sau mỗi lần quét",,,,,,
+,040 — Chọn lô và số sê-ri cho hàng bán,,,,,,,,,,
+18_1_040_001,Bật Tự động mở chọn lô,Vai: gdv; đang ở màn bán hàng,"1. Tích ô ""Tự động mở chọn lô"" ở cột bên phải",,"Mỗi lần thêm hàng có quản lý lô, màn ""Chọn sản phẩm"" tự mở ra",,,,,,
+18_1_040_002,Màn Chọn sản phẩm có đủ trường,Vai: gdv; thêm mặt hàng có quản lý lô,"1. Mở màn ""Chọn sản phẩm"";
+2. Đọc các trường",,"Có ""Tên sản phẩm"" (chỉ đọc), ""Đơn vị"", ""Tồn kho"" (chỉ đọc), ""Số lượng"", công tắc ""Chọn theo lô"", bảng lô (Mã lô, Tồn kho, SL chọn, Xóa), ""+ Thêm lô"", ""VAT"", ""Giá bán gồm VAT"", ""Giảm giá (%)"", ""Giá bán sau giảm (gồm VAT)"" (chỉ đọc), ""Ghi chú""",,,,,,
+18_1_040_003,Hết lô thì bảng lô hiện Không có lô nào,Vai: gdv; mặt hàng có lô nhưng hết tồn lô,"1. Thêm mặt hàng đó;
+2. Bật ""Chọn theo lô""",,"Bảng lô hiện ""Không có lô nào""; không phân bổ được",,,,,,
+18_1_040_004,Đổi đơn vị thì tồn kho và giá bán tính lại,Vai: gdv; mặt hàng có ≥ 2 ĐVT,"1. Đổi ô ""Đơn vị"" sang đơn vị lớn hơn",,"""Tồn kho"" và giá bán tính lại theo đơn vị mới",,,,,,
+18_1_040_005,Phân bổ đủ số lượng qua nhiều lô,Vai: gdv; mặt hàng có ≥ 2 lô còn tồn,"1. Nhập ""Số lượng"" = 10;
+2. Bật ""Chọn theo lô"";
+3. Bấm ""+ Thêm lô"" 2 lần;
+4. Nhập ""SL chọn"" 6 và 4;
+5. Bấm ""Cập nhật""",,"Dòng ""Đã phân bổ"" hiện 10/10; dòng hàng vào đơn kèm thông tin lô. Sau thanh toán, tồn trừ đúng từng lô",,,,,,
+18_1_040_006,Phân bổ vượt số lượng bán bị chặn,Vai: gdv; mặt hàng có lô,"1. Nhập ""Số lượng"" = 5;
+2. Phân bổ tổng 7 qua các lô;
+3. Bấm ""Cập nhật""",,"Bị chặn với thông báo nguyên văn ""Tổng số lượng lô lớn hơn số lượng sản phẩm. Vui lòng kiểm tra lại""",,,,,,
+18_1_040_007,Phân bổ THIẾU so với số lượng bán bị chặn,Vai: gdv; mặt hàng có lô,"1. Nhập ""Số lượng"" = 5;
+2. Phân bổ tổng 3;
+3. Bấm ""Cập nhật""",,"Bị chặn ở nút ""Cập nhật""; dòng ""Đã phân bổ"" hiện 3/5.",,,,,,
+18_1_040_008,🔴 Bỏ trống Số lượng thì tự phân bổ TOÀN BỘ tồn kho,Vai: gdv; mặt hàng có nhiều lô,"1. Để trống ""Số lượng"";
+2. Bật ""Chọn theo lô""",,"Hệ thống tự phân bổ toàn bộ tồn kho của mặt hàng vào bảng lô và hiện dòng ""Đã chọn tất cả lô"". Phải nhập số lượng TRƯỚC khi phân bổ, nếu không phải xoá bớt từng dòng lô",,,,,,
+18_1_040_009,Số lượng phải lớn hơn 0,Vai: gdv; mặt hàng có lô,"1. Nhập ""Số lượng"" = 0;
+2. Bấm ""Cập nhật""",,"Bị chặn — ""Số lượng"" phải lớn hơn 0",,,,,,
+18_1_040_010,Hàng cân nhận số lượng lẻ,Vai: gdv; mặt hàng cân ký,"1. Nhập ""Số lượng"" = 1,25",,Ô chấp nhận số lẻ (hàng cân nhận cả số lẻ),,,,,,
+18_1_040_011,Giảm giá (%) chỉ nhận 0 đến 100,Vai: gdv; mặt hàng bất kỳ,"1. Thử lần lượt -1, 0, 50, 100, 101 ở ô ""Giảm giá (%)""",,"Chỉ 0, 50, 100 được chấp nhận; -1 và 101 bị chặn. ""Giá bán sau giảm (gồm VAT)"" tự tính lại theo mức giảm",,,,,,
+18_1_040_012,Xoá một lô khỏi bảng phân bổ,Vai: gdv; đã phân bổ 2 lô,"1. Bấm ""Xóa"" trên một dòng lô",,"Dòng lô đó biến mất; dòng ""Đã phân bổ"" giảm tương ứng",,,,,,
+18_1_040_013,Ô + Thêm lô chỉ hiện khi còn lô chưa dùng,"Vai: gdv; mặt hàng có đúng 2 lô, đã thêm cả 2","1. Tìm ô ""+ Thêm lô""",,Ô KHÔNG hiện nữa (chỉ hiện khi còn lô chưa nằm trong bảng),,,,,,
+18_1_040_014,Hàng quản lý serial BẮT BUỘC chọn serial,Vai: gdv; mặt hàng quản lý số sê-ri,"1. Thêm mặt hàng đó;
+2. Bỏ qua bước chọn serial;
+3. Bấm ""Cập nhật""",,"Bị chặn — không bỏ qua được. Màn ""Chọn Serial"" mở thay cho bảng lô",,,,,,
+18_1_040_015,Số lượng bán phải ≥ số serial đã chọn,Vai: gdv; mặt hàng serial,"1. Chọn 5 serial;
+2. Sửa ""Số lượng"" xuống 3;
+3. Bấm ""Cập nhật""",,"Bị chặn với thông báo nguyên văn ""Số lượng sản phẩm phải lớn hơn hoặc bằng số mã serial""",,,,,,
+18_1_040_016,🔴 Không trộn lô xả kho với lô thường trong cùng dòng hàng,Vai: gdv; mặt hàng có cả lô xả kho và lô thường,"1. Phân bổ một lô xả kho và một lô thường vào cùng dòng;
+2. Bấm ""Cập nhật""",,"Hệ thống yêu cầu tách sản phẩm thành hai dòng riêng — một dòng lô xả kho, một dòng lô thường. Cách làm: thêm mặt hàng hai lần rồi phân bổ riêng",,,,,,
+18_1_040_017,Đổi lô được ghi vào nhật ký thao tác,Vai: gdv; đã lập đơn có đổi lô,"1. Đổi lô của một dòng hàng;
+2. Mở Nhật ký thao tác người dùng",,"Có bản ghi nhóm nghiệp vụ ""Thay đổi lô khi bán hàng"" kèm mã đơn hàng",,,,,,
+18_1_040_018,Đóng màn Chọn sản phẩm giữa chừng,Vai: gdv; đang phân bổ lô,"1. Nhập số lượng và phân bổ lô;
+2. Đóng màn bằng dấu X;
+3. Đọc lại dòng hàng",,Dòng hàng giữ nguyên trạng thái trước đó; không ghi phân bổ mới,,,,,,
+,"050 — Điều chỉnh số lượng, giá bán và đơn vị của dòng hàng",,,,,,,,,,
+18_1_050_001,Sửa số lượng ngay trên dòng hàng,Vai: gdv; giỏ có ≥ 1 dòng hàng,"1. Gõ số mới vào ô ""Số lượng"";
+2. Thử cả nút trừ và nút cộng hai bên ô",,"Cột ""Tổng tiền"" của dòng và khối tiền bên phải đổi ngay, không cần bấm lưu",,,,,,
+18_1_050_002,Cột Đơn vị trên bảng hàng chỉ để xem,Vai: gdv; giỏ có ≥ 1 dòng hàng,"1. Thử sửa trực tiếp cột ""Đơn vị"" trên bảng hàng",,"KHÔNG sửa trực tiếp được. Phải bấm vào tên hàng để mở ""Chọn sản phẩm"" rồi đổi ô ""Đơn vị"" ở đó",,,,,,
+18_1_050_003,Sửa giá bán của dòng hàng,Vai: gdv; giỏ có ≥ 1 dòng hàng,"1. Gõ số tiền mới vào ô cột ""Giá bán""",,Tổng tiền dòng và khối tiền đổi theo ngay.,,,,,,
+18_1_050_004,Giá bán âm hoặc bằng 0,Vai: gdv; giỏ có ≥ 1 dòng hàng,"1. Gõ -1000 vào ô ""Giá bán"";
+2. Thử tiếp 0",,"Chưa chốt kỳ vọng — ghi nhận thực tế: ô đơn giá có nhận số âm không, và tổng tiền đơn hàng có thành số âm không.",,,,,,
+18_1_050_005,Số lượng bằng 0 hoặc âm trên dòng hàng,Vai: gdv; giỏ có ≥ 1 dòng hàng,"1. Gõ 0 vào ô ""Số lượng"";
+2. Thử tiếp -1",,"Chưa chốt kỳ vọng — ghi nhận thực tế: giảm số lượng xuống dưới 1 thì dòng hàng bị xoá, giữ nguyên ở 1, hay báo lỗi.",,,,,,
+18_1_050_006,Số lượng rất lớn,Vai: gdv; giỏ có ≥ 1 dòng hàng,"1. Gõ 999999999 vào ô ""Số lượng""",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+18_1_050_007,"Nhập chiết khấu, đổi VNĐ/% và ghi chú đơn",Vai: gdv; giỏ có hàng,"1. Nhập chiết khấu;
+2. Đổi giữa VNĐ và %;
+3. Nhập ghi chú đơn",,"Các trường thao tác được; khối tiền tính lại và ""Cần thanh toán"" vẫn hiển thị đúng",,,,,,
+18_1_050_008,Xoá một dòng hàng khỏi đơn,Vai: gdv; giỏ có ≥ 2 dòng hàng,1. Bấm dấu nhân đỏ ở cuối một dòng,,Dòng đó biến mất; khối tiền trừ đúng phần của dòng đã xoá,,,,,,
+18_1_050_009,Xoá tất cả sản phẩm trong đơn,Vai: gdv; giỏ có ≥ 2 dòng hàng,"1. Bấm ""Xoá tất cả"" ở tiêu đề bảng;
+2. Đọc hộp xác nhận;
+3. Đồng ý",,"Hộp hỏi nguyên văn ""Xác nhận xoá tất cả sản phẩm trong đơn hàng này?""; đồng ý là mất sạch giỏ hàng của tab đó, không lấy lại từng dòng",,,,,,
+18_1_050_010,Từ chối hộp xác nhận Xoá tất cả,Vai: gdv; giỏ có ≥ 2 dòng hàng,"1. Bấm ""Xoá tất cả"";
+2. Bấm huỷ trong hộp xác nhận",,Giỏ hàng còn nguyên đủ dòng,,,,,,
+18_1_050_011,🔴 Dòng quà tặng khuyến mại không sửa được số lượng,Vai: gdv; đơn có áp CTKM sinh quà tặng,"1. Thử sửa ""Số lượng"" của dòng quà tặng",,Ô số lượng của dòng quà tặng KHÔNG sửa được. Muốn đổi thì phải bỏ chương trình khuyến mại ra khỏi đơn,,,,,,
+18_1_050_012,Phím Home và mũi tên điều khiển dòng hàng,Vai: gdv; giỏ có ≥ 3 dòng hàng,"1. Bấm Home;
+2. Bấm mũi tên xuống 2 lần;
+3. Bấm phím cộng 3 lần;
+4. Bấm phím trừ 1 lần",,Home đưa con trỏ vào ô số lượng dòng ĐẦU TIÊN; mũi tên chuyển giữa các dòng; cộng/trừ tăng giảm số lượng của dòng đang chọn (kết quả +2),,,,,,
+,060 — Lấy số cân từ cân điện tử vào đơn,,,,,,,,,,
+18_1_060_001,Kết nối cân điện tử thành công,Vai: gdv; cân đã nối vào cổng máy tính,"1. Bấm biểu tượng bàn phím ở thanh trên;
+2. Bấm ""Kết nối"" ở dòng ""Kết nối cân"";
+3. Chọn cổng cân trong hộp chọn của trình duyệt",,"Báo nguyên văn ""Kết nối cân thành công""",,,,,,
+18_1_060_002,Phím F9 làm cùng việc kết nối cân,Vai: gdv; đang ở màn bán hàng,1. Bấm F9,,"Mở hộp chọn cổng cân, giống hệt bấm nút ""Kết nối""",,,,,,
+18_1_060_003,Đóng hộp chọn cổng mà chưa chọn,Vai: gdv; đang kết nối cân,"1. Bấm F9;
+2. Đóng hộp chọn cổng mà không chọn gì",,"Báo nguyên văn ""Chưa chọn cổng cân""",,,,,,
+18_1_060_004,Kết nối cân thất bại,Vai: gdv; dây cân lỏng hoặc cổng sai,"1. Bấm F9;
+2. Chọn một cổng không phải cân",,"Báo nguyên văn ""Không thể kết nối cân, vui lòng thử lại""",,,,,,
+18_1_060_005,Lần sau tự nối lại cổng đã cấp quyền,Vai: gdv; đã kết nối cân một lần trên máy đó,"1. Tải lại trang;
+2. Đặt hàng lên cân",,"Hệ thống tự nối lại cổng đã được cấp quyền, không phải chọn cổng lại",,,,,,
+18_1_060_006,Cân sản phẩm theo kg ghi đúng số lượng,"Vai: gdv; đã kết nối cân, giỏ có dòng hàng cân ký đang được chọn","1. Đặt hàng lên cân;
+2. Chờ kim cân đứng yên",,"Số lượng của dòng hàng bằng đúng khối lượng cân được, làm tròn tới 2 chữ số thập phân",,,,,,
+18_1_060_007,Cân sản phẩm tồn kho bằng 0 vẫn cho bán,Vai: gdv; hàng cân tồn = 0,"1. Thêm hàng đó vào đơn;
+2. Đặt lên cân",,VẪN cho phép bán; chỉ kèm cảnh báo hết hàng,,,,,,
+18_1_060_008,Cân sản phẩm tồn âm vẫn cho bán,Vai: gdv; hàng cân tồn âm,"1. Thêm hàng đó vào đơn;
+2. Đặt lên cân",,VẪN cho phép bán,,,,,,
+18_1_060_009,Cân nhiều lần liên tiếp chỉ cộng phần chênh,"Vai: gdv; dòng hàng cân đang được chọn, đã cân 1kg","1. Đặt thêm hàng lên cân thành 1,5kg",,"Hệ thống chỉ cộng phần chênh so với lần cân trước nên tổng vẫn đúng = 1,5; KHÔNG cộng dồn thành 2,5",,,,,,
+18_1_060_010,Trọng lượng bằng 0 thì bỏ qua lần cân,Vai: gdv; đã kết nối cân,1. Không đặt gì lên cân (khối lượng = 0),,"Hệ thống bỏ qua lần cân đó — không báo lỗi, không thêm gì vào đơn, số lượng dòng hàng không đổi",,,,,,
+18_1_060_011,🔴 Chưa chọn dòng hàng thì số cân vào DÒNG CUỐI,"Vai: gdv; giỏ có ≥ 2 dòng hàng, chưa bấm chọn dòng nào",1. Đặt hàng lên cân,,"Số cân được ghi vào dòng cuối cùng của bảng — KHÔNG có cảnh báo nào. Đơn nhiều mặt hàng cần cân thì phải bấm chọn đúng dòng trước, nếu không khối lượng vào sai mặt hàng",,,,,,
+18_1_060_012,Đơn chưa có mặt hàng nào thì bỏ qua lần cân,Vai: gdv; giỏ hàng trống,1. Đặt hàng lên cân,,"Hệ thống bỏ qua — không báo lỗi, không thêm gì vào đơn",,,,,,
+18_1_060_013,🔴 Màn thanh toán đang mở thì NGỪNG nhận số cân,Vai: gdv; đã mở màn thanh toán,1. Đặt hàng lên cân trong lúc màn thanh toán mở,,Hệ thống ngừng nhận số cân. Phải cân xong hết hàng rồi mới bấm thanh toán,,,,,,
+18_1_060_014,Dòng quà tặng khuyến mại không nhận số cân,"Vai: gdv; đơn có dòng quà tặng, đang chọn dòng đó",1. Đặt hàng lên cân,,Dòng quà tặng KHÔNG nhận số cân,,,,,,
+18_1_060_015,Tính tiền sản phẩm cân ký,Vai: gdv; hàng cân giá 35.000đ/kg,"1. Cân được 2kg;
+2. Đọc cột ""Tổng tiền"" của dòng",,Thành tiền = 70.000đ (2 × 35.000),,,,,,
+18_1_060_016,Cân trọng lượng lẻ tính đúng và làm tròn,Vai: gdv; hàng cân giá 35.000đ/kg,"1. Cân được 1,237kg;
+2. Đọc số lượng và tổng tiền",,"Số lượng làm tròn tới 2 chữ số thập phân = 1,24; thành tiền tính theo số đã làm tròn",,,,,,
+18_1_060_017,Quét barcode rồi mới cân,Vai: gdv; hàng cân ký có mã vạch,"1. Quét mã vạch sản phẩm;
+2. Đặt lên cân",,Hệ thống nhận đúng sản phẩm vừa quét và ghi khối lượng vào dòng đó,,,,,,
+18_1_060_018,Quét barcode nhưng KHÔNG đặt hàng lên cân,Vai: gdv; hàng cân ký có mã vạch,"1. Quét mã vạch;
+2. Không đặt lên cân;
+3. Đọc số lượng dòng hàng",,"Số lượng giữ giá trị mặc định (1), không tự nhảy về 0",,,,,,
+18_1_060_019,Quét barcode SAI sản phẩm rồi mới cân,Vai: gdv; có ≥ 2 hàng cân ký,"1. Quét nhầm mã vạch sản phẩm khác;
+2. Đặt hàng lên cân",,Khối lượng vào dòng vừa quét (sai sản phẩm).,,,,,,
+18_1_060_020,Quét barcode hàng cân ký khi tồn = 0 hoặc âm,Vai: gdv; hàng cân ký tồn 0 và hàng cân ký tồn âm,1. Quét lần lượt hai mã vạch đó,,Cả hai VẪN cho thêm vào đơn và cho bán,,,,,,
+18_1_060_021,Cân thay đổi liên tục trong lúc quét,Vai: gdv; đang cân,1. Giữ tay rung trên cân trong lúc quét mã vạch,,"Hệ thống chỉ lấy giá trị cân ổn định (giá trị cuối cùng khi kim đứng yên), không lấy giá trị dao động",,,,,,
+18_1_060_022,Mất kết nối cân sau khi quét barcode,"Vai: gdv; đã quét mã vạch, rút dây cân","1. Rút dây cân;
+2. Thử cân",,Hiển thị thông báo lỗi cân.,,,,,,
+18_1_060_023,Nhấc sản phẩm cuối cùng khỏi cân trước khi thanh toán,"Vai: gdv; đã cân xong, đang chuẩn bị thanh toán","1. Nhấc hàng khỏi cân;
+2. Đọc lại số lượng dòng hàng",,Số lượng đã ghi KHÔNG bị xoá về 0 khi nhấc hàng.,,,,,,
+18_1_060_024,Quét liên tiếp nhiều sản phẩm cân ký,Vai: gdv; có ≥ 2 hàng cân ký,"1. Quét sản phẩm A rồi cân;
+2. Quét sản phẩm B rồi cân",,KHÔNG bị nhầm trọng lượng giữa hai dòng; mỗi dòng mang đúng khối lượng của mình,,,,,,
+,070 — Dùng phím tắt để bán nhanh,,,,,,,,,,
+18_1_070_001,Bảng Phím tắt liệt kê đủ 14 phím,Vai: gdv; đang ở màn bán hàng,1. Bấm biểu tượng bàn phím ở thanh trên,,"Bảng ""Phím tắt"" liệt kê đủ: F1, F2, F3, F4, F6, F7, F8, F9, F10, F11, Home, Enter, mũi tên lên/xuống, cộng/trừ",,,,,,
+18_1_070_002,Phím F7 lưu đơn nháp,Vai: gdv; giỏ có hàng,1. Bấm F7,,Đơn được lưu nháp; thấy mã đơn ở danh sách đơn hàng,,,,,,
+18_1_070_003,Phím F8 tạo đơn thanh toán sau,Vai: gdv; giỏ có hàng,1. Bấm F8,,Đơn được tạo theo hình thức thanh toán sau,,,,,,
+18_1_070_004,Phím F10 mở danh sách khuyến mại,Vai: gdv; giỏ có hàng,1. Bấm F10,,Bảng danh sách chương trình khuyến mại mở ra,,,,,,
+18_1_070_005,Phím Enter mở màn thanh toán,"Vai: gdv; giỏ có hàng, con trỏ KHÔNG nằm trong ô nhập","1. Bấm Esc hoặc nhấp ra ngoài ô nhập;
+2. Bấm Enter",,Màn thanh toán mở ra,,,,,,
+18_1_070_006,🔴 Enter KHÔNG mở thanh toán khi con trỏ trong ô nhập,Vai: gdv; con trỏ đang nằm trong ô tìm kiếm,1. Bấm Enter,,Màn thanh toán KHÔNG mở. Phải bấm Esc hoặc nhấp ra ngoài ô trước,,,,,,
+18_1_070_007,🔴 Phím tắt tạm ngưng khi đang mở cửa sổ,"Vai: gdv; đang mở màn ""Chọn sản phẩm""","1. Bấm lần lượt F1, F3, F7, Enter",,"Mọi phím tắt tạm ngưng khi có cửa sổ đang mở (chọn sản phẩm, thanh toán, bảng khuyến mại…). Phải đóng cửa sổ rồi bấm lại",,,,,,
+18_1_070_008,Phím tắt chỉ có tác dụng trên màn bán hàng,Vai: gdv; đang ở màn Quản lý đơn hàng,"1. Bấm F1, F3, F7",,Không phím nào có tác dụng — phím tắt chỉ chạy trên màn bán hàng,,,,,,

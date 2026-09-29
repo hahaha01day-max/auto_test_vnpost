@@ -1,0 +1,639 @@
+,Chức năng,,,,ĐỔI TRẢ HÀNG,,,,,,,,,
+,Mã Testcase,,,,FUNC_DOITRA_,,,,,,,,,
+,Tổng các tình huống kiểm thử,,,,30,,,,,,,,,
+,Chưa thực hiện,,,,1,,,,,,,,,
+,Đạt yêu cầu,,,,26,,,,,,,,,
+,Không đạt yêu cầu,,,,3,,,,,,,,,
+,Thực hiện sau,,,,0,,,,,,,,,
+,Không phải thực hiện,,,,0,,,,,,,,,
+,,,,,,,,,,,,,,
+ID,Tình huống,,Công thức (nếu có),Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện,,Script test
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,,,,
+,Kiểm tra chức năng Trả hàng,,,,,,,,,,,,,
+FUNC_DOITRA__1,Kiểm tra trả hàng toàn bộ,"1. HĐ gốc: HD_0001
+2. SP_A: đơn giá 200,000 đ - số lượng sản phẩm = 1
+3. Số lượng trả: 1
+4. Lý do trả hàng: Hàng bị lỗi/hỏng","Tiền hoàn = Toàn bộ số tiền khách đã thanh toán mua ĐH
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0001 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán"" (tiền mặt) 
+2. Xem chi tiết đơn hàng (HD_0001)
+3. Chọn button ""Đổi trả hàng""
+4. Nhập số lượng + sản phẩm cần trả hàng (SP_A: số lượng trả = 1)
+5. Nhập lý do trả hàng: ""Hàng bị lỗi/hỏng""
+6. Nhấn ""Hoàn trả""
+7. Kiểm tra kết quả trả về",Cao,Màn hình bán hàng / đổi trả hàng,"1. Phiếu trả: TH_202606_001 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Ghi nhận phiếu chi: 200,000 đ
+4. Tồn kho SP_A số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 200,000 đ
+6. Thu hồi điểm tích lũy: 20 điểm (1 điểm ~ 10.000 đ)","1. Phiếu trả: TH_202606_001 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Ghi nhận phiếu chi: 200,000 đ
+4. Tồn kho SP_A số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 200,000 đ
+6. Thu hồi điểm tích lũy: 20 điểm (1 điểm ~ 10.000 đ)",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__2,Kiểm tra trả hàng một phần,"1. HĐ gốc: HD_0002
+2. SP_B: giá bán 50,000 đ - số lượng sản phẩm = 3
+3. Số lượng trả: 1
+4. Lý do trả hàng: Hàng bị lỗi/hỏng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0001 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán"" (tiền mặt) 
+2. Xem chi tiết đơn hàng (HD_0002)
+3. Chọn button ""Đổi trả hàng""
+4. Nhập số lượng + sản phẩm cần trả hàng (SP_B: số lượng trả = 1)
+5. Nhập lý do trả hàng: ""Hàng bị lỗi/hỏng""
+6. Nhấn ""Hoàn trả""
+7. Kiểm tra kết quả trả về",Cao,Màn hình bán hàng / đổi trả hàng,"1. Phiếu trả: TH_202606_002 được tạo
+2. Trạng thái đơn hàng: Đã trả / Trạng thái thanh toán ĐH: Đã thanh toán
+3. Ghi nhận phiếu chi: 50,000 đ
+4. Tồn kho SP_A số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 50,000 đ
+6. Thu hồi điểm tích lũy: 5 điểm (1 điểm ~ 10.000 đ)","1. Phiếu trả: TH_202606_002 được tạo
+2. Trạng thái đơn hàng: Đã trả / Trạng thái thanh toán ĐH: Đã thanh toán
+3. Ghi nhận phiếu chi: 50,000 đ
+4. Tồn kho SP_A số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 50,000 đ
+6. Thu hồi điểm tích lũy: 5 điểm (1 điểm ~ 10.000 đ)",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__3,Kiểm tra cấu hình thời gian đổi trả (chưa quá hạn trả hàng),"1. HĐ gốc: HD_0003 (tạo ngày 05/06/2026)
+2. Cấu hình thời gian đổi trả: 7 ngày
+3. Ngày kiểm thử: 10/06/2026 (< 7 ngày)","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Đơn hàng trong thời hạn trả hàng < 7 ngày
+- Hóa đơn HD_0003 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán""","1. Vào bán hàng > tạo đơn hàng thành công
+2. Xem chi tiết đơn hàng (HD_0003)
+3. Nhấn ""Đổi trả hàng""",Cao,Màn cấu hình (đơn hàng),"1. Hiển thị button ""Đổi trả hàng"" 
+2. Cho phép thao tác đổi trả hàng ","1. Hiển thị button ""Đổi trả hàng"" 
+2. Cho phép thao tác đổi trả hàng ",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__4,Kiểm tra cấu hình thời gian đổi trả hàng (quá hạn trả hàng),"1. HĐ gốc: HD_0003 (tạo ngày 02/06/2026)
+2. Cấu hình thời gian đổi trả: 7 ngày
+3. Ngày kiểm thử: 10/06/2026 (> 7 ngày)",,"- Đăng nhập hệ thống thành công
+- Đơn hàng quá thời hạn > 7 ngày
+- Hóa đơn HD_0003 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán""","1. Vào bán hàng > tạo đơn hàng thành công
+2. Xem chi tiết đơn hàng (HD_0003)
+3. Nhấn ""Đổi trả hàng""",Cao,Màn cấu hình (đơn hàng),"1. Ẩn button ""Đổi trả hàng"" không cho phép đổi trả hàng
+2. Hiển thị thông báo "" Đơn hàng quá 7 ngày (hết hạn 09/06/2026) không được đổi trả""
+3. Nhân viên bán hàng không có quyền cho phép trả hàng quá hạn","1. Ẩn button ""Đổi trả hàng"" không cho phép đổi trả hàng
+2. Hiển thị thông báo "" Đơn hàng quá 7 ngày (hết hạn 09/06/2026) không được đổi trả""",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__5,Kiểm tra duyệt vượt quyền (Admin phê duyệt cho phép đổi trả hàng khi quá hạn) thành công,"1. HĐ gốc: HD_0003 (tạo ngày 02/06/2026)
+2. Cấu hình thời gian đổi trả: 7 ngày
+3. Ngày kiểm thử: 10/06/2026 (> 7 ngày)",,"- Đăng nhập hệ thống thành công
+- Đơn hàng quá thời hạn > 7 ngày
+- Hóa đơn HD_0003 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán""","1. Tìm kiếm hóa đơn HD_0003
+2. Click button ""Đổi trả hàng""
+3. Đơn hàng trở về trạng thái ""Chờ duyệt""
+4. Người được phân quyền phê duyệt thành công
+5. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Hiển thị message thông báo ""Phê duyệt thành công đơn trả hàng quá hạn""
+2. Đơn hàng đã trả chuyển trạng thái ""Hoàn thành""
+3. Cập nhật đúng số tiền + số lượng của đơn trả hàng vào hóa đơn gốc",,Pass,Vũ Phạm,,,x
+FUNC_DOITRA__6,Kiểm tra duyệt vượt quyền (Admin phê duyệt cho phép đổi trả hàng khi quá hạn) thất bại,"1. HĐ gốc: HD_0003 (tạo ngày 02/06/2026)
+2. Cấu hình thời gian đổi trả: 7 ngày
+3. Ngày kiểm thử: 10/06/2026 (> 7 ngày)",,"- Đăng nhập hệ thống thành công
+- Đơn hàng quá thời hạn > 7 ngày
+- Hóa đơn HD_0003 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán""","1. Tìm kiếm hóa đơn HD_0003
+2. Click button ""Đổi trả hàng""
+3. Đơn hàng trở về trạng thái ""Chờ duyệt""
+4. Người được phân quyền phê duyệt ""Từ chối""
+5. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Hiển thị message thông báo ""Từ chối đơn trả hàng quá hạn""
+2. Đơn hàng đã trả chuyển trạng thái ""Từ chối""
+3. Cập nhật đúng số tiền + số lượng của đơn trả hàng vào hóa đơn gốc",,Pass,,,,
+FUNC_DOITRA__7,Kiểm tra hoàn trả khi đơn hàng không tồn trong hệ thống,1. Tìm kiếm mã hóa đơn gốc: HD_1111,,- Đăng nhập hệ thống thành công,"1. Vào trả hàng
+2. Nhập tìm kiếm theo mã hóa đơn gốc: HD_1111
+3. Nhấn enter (tìm kiếm)",TB,Màn đổi trả hàng,"1. Không hiển thị mã đơn hàng tìm kiếm trên danh sách đơn hàng đổi trả
+2. Form vẫn mở, nhân viên có thể nhập lại","1. Không hiển thị mã đơn hàng tìm kiếm trên danh sách đơn hàng đổi trả
+2. Form vẫn mở, nhân viên có thể nhập lại",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__8,Kiểm tra hoàn trả khi đơn hàng có áp dụng giảm giá toàn đơn hàng,"1. HĐ gốc: HD_0005 (áp dụng giảm giá toàn đơn 3%)
+2. Mua sản phẩm Bánh mỳ: đơn giá 20,000 đ - số lượng 3 => Tổng đơn hàng thanh toán: 58,200 đ
+3. Số lượng trả: 1
+4. Lý do trả hàng: Hàng bị lỗi/hỏng","1. Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0005 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Áp dụng giảm giá cho toàn đơn hàng (3%) > Nhấn ""Thanh toán"" (tiền mặt) 
+2. Xem chi tiết đơn hàng (HD_0005)
+3. Chọn button ""Đổi trả hàng""
+4. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 2)
+5. Nhập lý do trả hàng: ""Hàng bị lỗi/hỏng""
+6. Nhấn ""Hoàn trả""
+7. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_005 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Ghi nhận phiếu chi: 19,400 đ (đã phân bổ chiết khấu cho từng sản phẩm)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 19,400 đ
+6. Thu hồi điểm tích lũy: 2 điểm (1 điểm ~ 10.000 đ) (nếu có)","1. Phiếu trả: TH_202606_005 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Ghi nhận phiếu chi: 14,200 đ (đã phân bổ chiết khấu cho từng sản phẩm)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 14,200 đ
+6. Thu hồi điểm tích lũy: 0 điểm ",Fail,Vũ Phạm,6/11/2026,Doing,x
+FUNC_DOITRA__9,Kiểm tra hoàn trả khi đơn hàng có áp dụng giảm giá theo sản phẩm trong đơn hàng,"1. HĐ gốc: HD_0006 (áp dụng giảm giá sản phẩm 5%)
+2. Mua sản phẩm Bánh mỳ: đơn giá 20,000 đ - số lượng 3 => Tổng đơn hàng thanh toán: 57,000 đ
+3. Số lượng trả: 1
+4. Lý do trả hàng: Hàng bị lỗi/hỏng","1. Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0006 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Áp dụng giảm giá cho sản phẩm trong đơn hàng (5%) > Nhấn ""Thanh toán"" (tiền mặt) 
+2. Xem chi tiết đơn hàng (HD_0006)
+3. Chọn button ""Đổi trả hàng""
+4. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 1)
+5. Nhập lý do trả hàng: ""Hàng bị lỗi/hỏng""
+6. Nhấn ""Hoàn trả""
+7. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_006 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Ghi nhận phiếu chi: 19,000 đ (đã phân bổ chiết khấu cho từng sản phẩm)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 19,000 đ
+6. Thu hồi điểm tích lũy: 2 điểm (1 điểm ~ 10.000 đ) (nếu có)","1. Phiếu trả: TH_202606_006 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Ghi nhận phiếu chi: 15,200 đ (đã phân bổ chiết khấu cho từng sản phẩm)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 15,200 đ
+6. Thu hồi điểm tích lũy: 2 điểm",Fail,Vũ Phạm,6/12/2026,Doing,x
+FUNC_DOITRA__10,Kiểm tra hoàn trả khi đơn hàng nợ toàn bộ (thanh toán sau),"1. HĐ gốc: HD_0007 (chọn hình thức: thanh toán sau)
+2. Mua sản phẩm Bánh mỳ: đơn giá 20,000 đ - số lượng 1 => Tổng nợ đơn hàng: 20,000 đ
+3. Công nợ KH: 20,000 đ - trạng thái: còn nợ
+4. Số lượng trả: 1
+5. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0007 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán sau""
+2. Đơn hàng ở trạng thái thanh toán ""Chưa thanh toán"" 
+2. Xem chi tiết đơn hàng (HD_0007)
+3. Chọn button ""Đổi trả hàng""
+4. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 1)
+5. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+6. Nhấn ""Hoàn trả""
+7. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_007 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Không phát sinh phiếu chi (trừ đi số tiền KH thanh toán nợ đơn hàng)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 0 đ
+6. Công nợ khách hàng: 20,000 đ - trạng thái: đã thanh toán","1. Phiếu trả: TH_202606_007 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Ghi nhận phiếu chi: 0 đ (trừ đi số tiền KH thanh toán nợ đơn hàng)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 0 đ
+6. Công nợ khách hàng: 20,000 đ - trạng thái: đã thanh toán",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__11,Kiểm tra hoàn trả khi đơn hàng nợ một phần (trả góp),"1. HĐ gốc: HD_0008 (chọn hình thức: Thanh toán trả góp)
+2. Mua sản phẩm Bánh mỳ: đơn giá 20,000 đ - số lượng 2 => Thanh toán một phần: 10,000 đ => Tổng còn nợ: 30,000 đ
+3. Công nợ KH: 30,000 đ - trạng thái: còn nợ
+4. Số lượng trả: 1
+5. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0008 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán sau""
+2. Đơn hàng ở trạng thái ""Thanh toán một phần""
+3. Xem chi tiết đơn hàng (HD_0008)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 1)
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_008 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Không phát sinh phiếu chi vì khách vẫn còn nợ (10,000 đ)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Công nợ khách hàng: 30,000 đ => trả 20,000 đ => còn nợ 10,000 đ","1. Phiếu trả: TH_202606_008 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Không phát sinh phiếu chi vì khách vẫn còn nợ (10,000 đ)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Công nợ khách hàng: 22,000 đ => trả 12,000 đ => còn nợ 10,000 đ",Pass,Vũ Phạm,6/12/2026,Doing,x
+FUNC_DOITRA__12,Kiểm tra hoàn trả khi đơn hàng ở trạng thái đơn nháp,1. HĐ nháp: HD_009 (Chọn hình thức: Lưu nháp),"Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Lưu nháp""
+2. Đơn hàng ở trạng thái ""Đơn nháp""
+3. Xem chi tiết đơn hàng (HD_0009)
+4. Kiểm tra kết quả",Cao,Màn hình đơn hàng,"1. Đơn nháp không cho phép trả hàng
+2. Không hiển thị button ""Đổi trả hàng""
+","1. Đơn nháp không cho phép trả hàng
+2. Không hiển thị button ""Đổi trả hàng""
+",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__13,Kiểm tra hoàn trả khi đơn hàng ở trạng thái Đơn hủy,"1. HĐ gốc: HD_0010 (Chọn hình thức: Thanh toán tiền mặt"")
+2. Mua sản phẩm A: giá 20k - số lượng 1
+3. Hủy toàn bộ đơn hàng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền Hủy đơn hàng","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0010)
+4. Nhấn ""Hủy đơn hàng""
+5. Kiểm tra kết quả",Cao,Màn hình đơn hàng,"1. Trạng thái đơn hàng: Đã hủy
+2. Sinh phiếu chi: 20.000 đ
+3. Tồn kho sản phẩm A: số lượng tăng 1 (nhập kho)
+4. Giảm doanh thu: 20.000 đ
+5. Thu hồi điểm loyalty: 2 điểm (1 điểm ~ 10.000 đ)
+","1. Trạng thái đơn hàng: Đã hủy
+2. Sinh phiếu chi: 20.000 đ
+3. Tồn kho sản phẩm A: số lượng tăng 1 (nhập kho)
+4. Giảm doanh thu: 20.000 đ
+5. Thu hồi điểm loyalty: 2 điểm (1 điểm ~ 10.000 đ)
+",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__14,Kiểm tra hoàn trả toàn bộ khi đơn hàng có VAT,"1. HĐ gốc: HD_0011 (Chọn hình thức: Thanh toán tiền mặt)
+2. Mua sản phẩm Bánh mỳ: giá 20k - số lượng 3
+3. Có VAT: 10% => tổng giá trị đơn hàng = 66,000 đ
+4. Trả hàng: 3
+5. Lý do trả hàng: Không có nhu cầu sử dụng nữa","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0011 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0011)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 3)
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn hình đổi trả hàng,"1. Phiếu trả: TH_202606_0011 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 66,000 đ
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 3 (nhập kho)
+5. Giảm doanh thu: 66,000 đ
+6. Thu hồi điểm loyalty: 6 điểm (1 điểm ~ 10.000 đ)","1. Phiếu trả: TH_202606_0011 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 66,000 đ
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 3 (nhập kho)
+5. Giảm doanh thu: 66,000 đ
+6. Thu hồi điểm loyalty: 6 điểm (1 điểm ~ 10.000 đ)",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__15,Kiểm tra hoàn trả một phần khi đơn hàng có VAT,"1. HĐ gốc: HD_0012 (Chọn hình thức: Thanh toán tiền mặt)
+2. Mua sản phẩm Bánh mỳ: giá 20k - số lượng 3
+3. Có VAT: 10% => tổng giá trị đơn hàng = 66,000 đ
+4. Trả hàng: 1
+5. Lý do trả hàng: Không có nhu cầu sử dụng nữa","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0012 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0012)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 1)
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn hình đổi trả hàng,"1. Phiếu trả: TH_202606_0012 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 22,000 đ
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 22,000 đ
+6. Thu hồi điểm loyalty: 2 điểm (1 điểm ~ 10.000 đ)","1. Phiếu trả: TH_202606_0012 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 22,000 đ
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 22,000 đ
+6. Thu hồi điểm loyalty: 2 điểm (1 điểm ~ 10.000 đ)",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__16,Kiểm tra hoàn trả hàng combo (Clawback logic) - Khi phá vỡ combo (trả sản phẩm trong combo),"1. HĐ gốc: HD_0013 (chọn hình thức: Thanh toán tiền mặt)
+2. Mua combo ăn sáng giá 30k gồm 2 sản phẩm:
+- Bánh mỳ: 20k - số lượng 1
+- Cà phê đắng: 15k - số lượng 1
+3. Trả sản phẩm Bánh mỳ: 20k (số lượng: 1) trong combo ăn sáng => phá vỡ điều kiện trong CTKM
+4. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Phá vỡ điều kiện combo => công thức tổng quan: 
+tiền hoàn = tổng đơn - (giá bán sản phẩm còn lại + VAT sản phẩm - ck giảm giá<nếu có>)
+- Hóa đơn HD_0013 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0013)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 1)
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn hình đổi trả hàng,"1. Phiếu trả: TH_202606_0013 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 5,000 đ (Tổng đơn trả hàng - giá trị sản phẩm KH giữ lại = 20k - 15k = 5,000 đ)
+4. Tồn kho ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 5,000 đ","1. Phiếu trả: TH_202606_0013 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 20,000 đ 
+4. Tồn kho:
+- ""Bánh mỳ"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 20,000 đ",Pass,Vũ Phạm,6/12/2026,Trả hàng Combo đang làm chức năng mới,x
+FUNC_DOITRA__17,Kiểm tra hoàn trả hàng combo (Clawback logic) - Khi phá vỡ combo (trả sản phẩm còn lại trong combo),"1. Tiếp nối case FUNC_DOITRA_16
+HĐ gốc: HD_0013 (chọn hình thức: Thanh toán tiền mặt)
+2. Mua combo ăn sáng giá 30k gồm 2 sản phẩm:
+- Bánh mỳ: 20k - số lượng 1
+- Cà phê đắng: 15k - số lượng 1
+3. Đã trả 1 sản phẩm trước đó ở case FUNC_DOITRA_16 ( sản phẩm: Bánh mỳ - số lượng: 1)
+4. Trả nốt sản phẩm còn lại: cà phê đắng (15k) - số lượng 1
+5. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Phá vỡ điều kiện combo => công thức tổng quan: tiền hoàn = tổng đơn - (giá bán sản phẩm còn lại + VAT sản phẩm - ck giảm giá<nếu có>)
+- Hóa đơn HD_0013 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0013)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 1)
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn hình đổi trả hàng,"1. Phiếu trả: TH_202606_0014 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 15,000 đ (khi cửa hàng phá vỡ combo lần 1: sản phẩm giữ lại (Cà phê đắng = 15k))
+4. Tồn kho ""Cà phê đắng"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 0 đ","1. Phiếu trả: TH_202606_0014 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 15,000 đ (khi cửa hàng phá vỡ combo lần 1: sản phẩm giữ lại (Cà phê đắng = 15k))
+4. Tồn kho ""Cà phê đắng"" số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 0 đ",Pass,,,,x
+FUNC_DOITRA__18,Kiểm tra hoàn trả combo (Clawback logic) - Mua từ 2 combo trở lên cùng loại,"1. Tiếp nối case FUNC_DOITRA_16
+HĐ gốc: HD_0013 (chọn hình thức: Thanh toán tiền mặt)
+2. Mua 2 combo ăn sáng giá 30k gồm 2 sản phẩm:
+- Bánh mỳ: 20k - số lượng 1
+- Cà phê đắng: 15k - số lượng 1
+=> Tổng đơn hàng thanh toán: 60.000 đ
+3. Hoàn trả sản phẩm bao gồm:
+- Bánh mỳ (combo ăn sáng (1)): 20k - số lượng: 1
+- Cà phê đắng (combo ăn sáng (2)): 15k - số lượng 1
+=> Đã phá vỡ điều kiện ở cả 2 combo ăn sáng
+4. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Phá vỡ điều kiện combo => công thức tổng quan: tiền hoàn = tổng đơn - (giá bán sản phẩm còn lại + VAT sản phẩm - ck giảm giá<nếu có>)
+- Hóa đơn HD_0013 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0013)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng 
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn hình đổi trả hàng,"1. Phiếu trả: TH_202606_0014 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 60 - (20 + 15) = 25k
+4. Tồn kho ""Cà phê đắng"" và ""Bánh mỳ"" mỗi sản phẩm tăng: 1
+5. Giảm doanh thu: 25k",,,,,,
+FUNC_DOITRA__19,Kiểm tra hoàn trả hàng quà tặng - thu hồi quà tặng,"1. HĐ gốc: HD_0014 (chọn hình thức: Thanh toán tiền mặt)
+2. Mua sản phẩm Bánh mỳ: 20k - số lượng: 3
+3. Áp dụng chương trình khuyến mãi mua 3 sản phẩm Bánh mỳ sẽ được tặng 1 cà phê đắng (15k)
+=> tổng đơn hàng thanh toán: 60.000 đ
+3. Trả sản phẩm Bánh mỳ: 60k (số lượng: 3) => phá vỡ điều kiện trong CTKM (thu hồi quà tặng)
+4. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Phá vỡ điều kiện CTKM
+- Hóa đơn HD_0014 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0014)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 3)
+6. Chọn option: ""Thu hồi quà tặng""
+7. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+8. Nhấn ""Hoàn trả""
+9. Kiểm tra kết quả trả về",Cao,Màn hình đổi trả hàng,"1. Phiếu trả: TH_202606_0014 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 60,000 đ
+4. Tồn kho: 
+- Bánh mỳ: số lượng tăng 1 (nhập kho)
+- Cà phê: số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 60,000 đ","1. Phiếu trả: TH_202606_0014 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 60,000 đ
+4. Tồn kho: 
+- Bánh mỳ: số lượng tăng 1 (nhập kho)
+- Cà phê: số lượng tăng 1 (nhập kho)
+5. Giảm doanh thu: 60,000 đ",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__20,Kiểm tra trả hàng quà tặng - khấu trừ giá trị quà tặng,"1. HĐ gốc: HD_0014 (chọn hình thức: Thanh toán tiền mặt)
+2. Mua sản phẩm Bánh mỳ: 20k - số lượng: 3
+3. Áp dụng chương trình khuyến mãi mua 3 sản phẩm Bánh mỳ sẽ được tặng 1 cà phê đắng (15k)
+=> tổng đơn hàng thanh toán: 60.000 đ
+3. Trả sản phẩm Bánh mỳ: 60k (số lượng: 3) => phá vỡ điều kiện trong CTKM (khấu trừ quà tặng)
+4. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0014 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán ĐH: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0014)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (Bánh mỳ: số lượng trả = 3)
+6. Chọn option: ""Khấu trừ giá trị quà tặng""
+7. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+8. Nhấn ""Hoàn trả""
+9. Kiểm tra kết quả trả về",Cao,Màn hình đổi trả hàng,"1. Phiếu trả: TH_202606_0014 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 60,000 đ 
+4. Sinh phiếu thu: 15,000 đ
+5. Tồn kho: 
+- Bánh mỳ: số lượng tăng 1 (nhập kho)
+- Cà phê: số lượng không tăng không giảm
+6. Giảm doanh thu: 45,000 đ (Khấu trừ giá trị sản phẩm cà phê (15k) vào tổng giá trị đơn trả hàng = 60k - 15k = 45k)
+","1. Phiếu trả: TH_202606_0014 được tạo
+2. Trạng thái đơn hàng: Đã trả
+3. Sinh phiếu chi: 33,600 đ 
+4. Sinh phiếu thu: 16,200 đ
+5. Tồn kho: 
+- Bánh mỳ: số lượng tăng 1 (nhập kho)
+- Cà phê: số lượng không tăng không giảm
+6. Giảm doanh thu: 45,000 đ (Khấu trừ giá trị sản phẩm cà phê (15k) vào tổng giá trị đơn trả hàng = 60k - 15k = 45k)
+",Fail,Vũ Phạm,6/12/2026,done dev,x
+FUNC_DOITRA__21,Kiểm tra Hủy đơn hàng ,"1. HĐ gốc: HD_0014 (Chọn hình thức: Thanh toán tiền mặt"")
+2. Mua sản phẩm A: giá 20k - số lượng 1
+3. Hủy toàn bộ đơn hàng","Tiền hoàn = Toàn bộ số tiền khách đã thanh toán mua ĐH
+","- Đăng nhập hệ thống thành công
+- Có quyền Hủy đơn hàng","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0014)
+4. Nhấn ""Hủy đơn hàng""
+5. Kiểm tra kết quả",Cao,Màn hình đơn hàng,"1. Trạng thái đơn hàng: Đã hủy
+2. Sinh phiếu chi: 20.000 đ
+3. Tồn kho sản phẩm A: số lượng tăng 1 (nhập kho)
+4. Giảm doanh thu: 20.000 đ
+5. Thu hồi điểm loyalty: 2 điểm (1 điểm ~ 10.000 đ)
+","1. Trạng thái đơn hàng: Đã hủy
+2. Sinh phiếu chi: 20.000 đ
+3. Tồn kho sản phẩm A: số lượng tăng 1 (nhập kho)
+4. Giảm doanh thu: 20.000 đ
+5. Thu hồi điểm loyalty: 2 điểm (1 điểm ~ 10.000 đ)
+",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__22,Kiểm tra thu hồi điểm khi trả hàng,"1. HĐ gốc 1: HD_0015 đơn hàng 1,000,000 đ (Thanh toán tiền mặt) => tích lũy được 100 điểm  (10,000 đ ~ 1 điểm)
+2. HĐ gốc 2: HD_0016 đơn hàng 1,000,000 đ (Thanh toán bằng điểm) => sử dụng 100 điểm (1 điểm ~ 10,000 đ)
+3. Trả hàng: HD_0015 (HĐ gốc 1)
+4. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0015, HD_0016 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0015)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn hình đơn hàng,"1. Phiếu trả: TH_202606_0015 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 1,000,000 đ 
+5. Tồn kho: tăng số lượng sản phẩm trong kho (nhập kho)
+6. Giảm doanh thu: 1,000,000 đ 
+7. Thu hồi điểm Loyalty: - 100 điểm (Đã sử dụng điểm tích lũy của HD_0015 cho việc thanh toán bằng điểm ở HD_0016)","1. Phiếu trả: TH_202606_0015 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 1,000,000 đ 
+5. Tồn kho: tăng số lượng sản phẩm trong kho (nhập kho)
+6. Giảm doanh thu: 1,000,000 đ 
+7. Thu hồi điểm Loyalty: - 100 điểm (Đã sử dụng điểm tích lũy của HD_0015 cho việc thanh toán bằng điểm ở HD_0016)",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__23,Kiểm tra hoàn điểm sử dụng khi trả hàng,"1. HĐ gốc: HD_0017 (chọn hình thức: Đa phương thức (thanh toán tiền mặt + điểm))
+2. Mua sản phẩm Bánh mỳ: 20k - số lượng: 2 => tổng đơn hàng trị giá: 40.000 đ
+3. Thanh toán:
+- Thanh toán tiền mặt: 30.000 đ => tích lũy được 3 điểm (10.000 đ ~ 1 điểm)
+- Thanh toán tiền mặt: 10.000 đ => tiêu 10 điểm (1 điểm ~ 1.000 đ)
+3. Trả toàn bộ đơn hàng
+4. Lý do trả hàng: Không còn nhu cầu sử dụng","Tiền hoàn trả  =  - [Tổng tiền đơn hàng - (Giá trị sản phẩm KH giữ lại (chưa bao gồm VAT) + VAT sản phẩm - Chiết khấu giảm giá (nếu có)) - Loyalty quy đổi thành tiền (nếu có)] + Phí hoàn trả + Giá trị sản phẩm đổi (nếu có) + Phí giao hàng (nếu có)
+","- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0017 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0017)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Nhập lý do trả hàng: ""Không còn nhu cầu sử dụng""
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",Cao,Màn hình đơn hàng,"1. Phiếu trả: TH_202606_0017 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 30,000 đ 
+5. Tồn kho: tăng số lượng sản phẩm trong kho (nhập kho)
+6. Giảm doanh thu: 30,000 đ 
+7. Thu hồi điểm Loyalty: - 3 điểm (cửa hàng thu hồi điểm của KH)
+8. Hoàn điểm tích lũy: 10 điểm (CH hoàn lại điểm cho khách)","1. Phiếu trả: TH_202606_0017 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Sinh phiếu chi: 30,000 đ 
+5. Tồn kho: tăng số lượng sản phẩm trong kho (nhập kho)
+6. Giảm doanh thu: 30,000 đ 
+7. Thu hồi điểm Loyalty: - 3 điểm (cửa hàng thu hồi điểm của KH)
+8. Hoàn điểm tích lũy: 10 điểm (CH hoàn lại điểm cho khách)",Pass,Vũ Phạm,,,x
+FUNC_DOITRA__24,Kiểm tra cấu hình ngưỡng tiền hoàn trả bất thường (tiền mặt),"1. Danh sách các đơn hàng đã hoàn trả 
+2. Cấu hình ngưỡng trả tiền bất thường: >= 50,000 đ",,"- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Các hóa đơn tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > tạo đơn hàng thành công (thanh toán hình thức: tiền mặt)
+2. Click ""Đổi trả hàng""
+3. Lọc ""Tiền hoàn bất thường"" => Tìm kiếm",TB,Danh sách hoàn trả hàng,"1. Hiển thị các đơn trả hàng đạt và trên ngưỡng cấu hình (>= 50,000 đ)
+2. Hiển thị chính xác thời gian tạo đơn hoàn trả thành công","1. Hiển thị các đơn trả hàng đạt và trên ngưỡng cấu hình (>= 50,000 đ)
+2. Hiển thị chính xác thời gian tạo đơn hoàn trả thành công",Pass,,,done dev,x
+FUNC_DOITRA__25,Kiểm tra lý do trả hàng,"1. HĐ gốc: HD_0018 (chọn hình thức: bất kỳ)
+2. Mua sản phẩm bất kỳ
+3. Trả toàn bộ đơn hàng
+4. Chọn lý do trả hàng gồm:
+- R01: Không còn nhu cầu (đổi ý)
+- R02: Sản phẩm không khớp với mô tả
+- R03: Gửi sản phẩm
+- R04: Kiện hàng hoặc sản phẩm bị lỗi, hư hỏng
+- R05: Chất lượng kém
+- R06: Nghi ngờ hàng giả, hàng nhái
+- R07: Khác",,"- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0018 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0018)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Chọn lý do trả hàng:
+- R01: Không còn nhu cầu (đổi ý)
+- R02: Sản phẩm không khớp với mô tả
+- R03: Gửi sản phẩm
+- R04: Kiện hàng hoặc sản phẩm bị lỗi, hư hỏng
+- R05: Chất lượng kém
+- R06: Nghi ngờ hàng giả, hàng nhái
+- R07: Khác (cho phép nhập các lý do hoàn trả khác)
+7. Nhấn ""Hoàn trả""
+8. Kiểm tra kết quả trả về",TB,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_0018 được tạo
+2. Trạng thái đơn hàng: Đã hủy
+3. Hiển thị lý do trả hàng trong:
+- Bill trả hàng
+- Chi tiết đơn trả hàng
+- Phiếu nhập kho",Chưa có bản testing,Pass,,,done dev,x
+,Kiểm tra chức năng đổi điểm,,,,,,,,,,,,,
+FUNC_DOITRA__26,Kiểm tra đổi hàng - đổi sản phẩm mới giá trị > sản phẩm trả hàng,"1. HĐ gốc: HD_0019 (hình thức thanh toán: tiền mặt)
+2. Mua sản phẩm: Bánh mỳ (22k) - số lượng sản phẩm: 1
+3. Trả toàn bộ đơn hàng
+4. Chọn lý do bất kỳ
+5. Tìm kiếm sản phẩm đổi: Bánh mỳ (22k) - số lượng sản phẩm: 2
+6. Chọn sản phẩm đổi có giá trị > giá trị sản phẩm trả",,"- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0019 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0019)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Chọn sản phẩm đổi (bất kỳ) điều kiện: giá trị sản phẩm đổi > giá trị sản phẩm trả
+7. Nhấn ""Hoàn trả hàng""
+8. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_0019 được tạo
+2. Trạng thái đơn hàng: Đã thanh toán
+3. Hiển thị mã đơn hàng mới (mã đơn đổi hàng) với sản phẩm đổi trong danh sách đơn hàng: Bánh mỳ (22k) - số lượng sản phẩm: 2
+4. Giảm tồn kho: số lượng bánh mỳ: 1 - Giá vốn: 10k
+5. Phiếu thu: 44k
+6. Phiếu chi: 22k
+",,Pass,,,,x
+FUNC_DOITRA__27,Kiểm tra đổi hàng - đổi sản phẩm mới giá trị < sản phẩm trả hàng,"1. HĐ gốc: HD_0020 (hình thức thanh toán: tiền mặt)
+2. Mua sản phẩm: Bánh mỳ (22k) - số lượng sản phẩm: 2
+3. Trả toàn bộ đơn hàng
+4. Chọn lý do bất kỳ
+5. Tìm kiếm sản phẩm đổi: Bánh mỳ (22k) - số lượng sản phẩm: 1
+6. Chọn sản phẩm đổi có giá trị < giá trị sản phẩm trả",,"- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0020 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0020)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Chọn sản phẩm đổi (bất kỳ) điều kiện: giá trị sản phẩm đổi < giá trị sản phẩm trả
+7. Nhấn ""Hoàn trả hàng""
+8. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_0020 được tạo
+2. Trạng thái đơn hàng: Đã thanh toán
+3. Hiển thị mã đơn hàng mới (mã đơn đổi hàng) với sản phẩm đổi trong danh sách đơn hàng: Bánh mỳ (22k) - số lượng sản phẩm: 1
+4. Giảm tồn kho: số lượng bánh mỳ: 1
+5. Phiếu thu: 22k
+6. Phiếu chi: 44k",,Pass,,,,x
+FUNC_DOITRA__28,Kiểm tra đổi hàng - đổi sản phẩm mới giá trị = sản phẩm trả hàng,"1. HĐ gốc: HD_0021 (hình thức thanh toán: tiền mặt)
+2. Mua sản phẩm: Bánh mỳ (22k) - số lượng sản phẩm: 1
+3. Trả toàn bộ đơn hàng
+4. Chọn lý do bất kỳ
+5. Tìm kiếm sản phẩm đổi: Bánh mỳ (22k) - số lượng sản phẩm: 1
+6. Chọn sản phẩm đổi có giá trị = giá trị sản phẩm trả",,"- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0021 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0021)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Chọn sản phẩm đổi (bất kỳ) điều kiện: giá trị sản phẩm đổi = giá trị sản phẩm trả
+7. Nhấn ""Hoàn trả hàng""
+8. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_0021 được tạo
+2. Trạng thái đơn hàng: Đã thanh toán
+3. Hiển thị mã đơn hàng mới (mã đơn đổi hàng) với sản phẩm đổi trong danh sách đơn hàng: Bánh mỳ (22k) - số lượng sản phẩm: 1
+4. Cập nhật tồn kho: 0 
+5. Phiếu thu: 22k
+6. Phiếu chi: 22k",,Pass,,,,x
+FUNC_DOITRA__29,Kiểm tra đổi hàng - sản phẩm trả và sản phẩm đổi cùng 1 loại,"1. HĐ gốc: HD_0022 (hình thức thanh toán: tiền mặt)
+2. Mua sản phẩm: Bánh mỳ (22k) - số lượng sản phẩm: 1
+3. Trả toàn bộ đơn hàng
+4. Chọn lý do bất kỳ
+5. Tìm kiếm sản phẩm đổi: Bánh mỳ (22k) - số lượng sản phẩm: 1
+6. Chọn sản phẩm đổi có giá trị > giá trị sản phẩm trả",,"- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0022 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0022)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Chọn sản phẩm đổi (bất kỳ) điều kiện: sản phẩm cùng loại với sản phẩm trả hàng
+7. Nhấn ""Hoàn trả hàng""
+8. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_0022 được tạo
+2. Trạng thái đơn hàng: Đã thanh toán
+3. Hiển thị mã đơn hàng mới (mã đơn đổi hàng) với sản phẩm đổi trong danh sách đơn hàng: Bánh mỳ (22k) - số lượng sản phẩm: 1
+4. Cập nhật tồn kho: bánh mỳ - số lượng sản phẩm: Tăng/giảm (1)
+5. Phiếu thu: 22k
+6. Phiếu chi: 22k",,Pass,,,,x
+FUNC_DOITRA__30,Kiểm tra đổi hàng - sản phẩm trả và sản phẩm đổi khác loại,"1. HĐ gốc: HD_0023 (hình thức thanh toán: tiền mặt)
+2. Mua sản phẩm: Bánh mỳ (22k) - số lượng sản phẩm: 1
+3. Trả toàn bộ đơn hàng
+4. Chọn lý do bất kỳ
+5. Tìm kiếm sản phẩm đổi: Cà phê đắng (16,5k) - số lượng sản phẩm: 1
+6. Chọn sản phẩm đổi có giá trị > giá trị sản phẩm trả",,"- Đăng nhập hệ thống thành công
+- Có quyền tạo phiếu trả hàng
+- Hóa đơn HD_0023 tồn tại, trạng thái đơn hàng: ""Hoàn thành"", trạng thái thanh toán đơn hàng: ""Đã thanh toán"", trong thời hạn 7 ngày","1. Vào bán hàng > chọn Khách hàng (nếu có) > chọn sản phẩm, số lượng > Nhấn ""Thanh toán""
+2. Đơn hàng ở trạng thái ""Đã thanh toán""
+3. Xem chi tiết đơn hàng (HD_0023)
+4. Chọn button ""Đổi trả hàng""
+5. Nhập số lượng + sản phẩm cần trả hàng (trả toàn bộ đơn hàng)
+6. Chọn sản phẩm đổi (bất kỳ) điều kiện: sản phẩm khác loại với sản phẩm trả hàng
+7. Nhấn ""Hoàn trả hàng""
+8. Kiểm tra kết quả trả về",Cao,Màn đổi trả hàng,"1. Phiếu trả: TH_202606_0023 được tạo
+2. Trạng thái đơn hàng: Đã thanh toán
+3. Hiển thị mã đơn hàng mới (mã đơn đổi hàng) với sản phẩm đổi trong danh sách đơn hàng: Cà phê đắng (16,5k) - số lượng sản phẩm: 1
+4. Giảm tồn kho: số lượng cà phê đắng: 1
+5. Tăng tồn kho: số lượng bánh mỳ: 1",,Pass,,,,

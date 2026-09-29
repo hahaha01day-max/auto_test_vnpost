@@ -1,0 +1,1310 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 133,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:25.463Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 92,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:25.697Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_manager (Quản lý Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 97,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:25.793Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-08f00-ager-Quản-lý-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f8f6b4aac219a09d704d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai ward (Bưu điện Xã)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:25.894Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-ward-Bưu-điện-Xã--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2d044c7a88341d00c4f3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 98,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:25.994Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop (Nhân viên điểm bán seed (AUTO_SHOP))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.096Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-edaa4-ên-điểm-bán-seed-AUTO-SHOP--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-21ce4f527c1091b58dc7",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop2 (Nhân viên điểm bán seed (tồn đầu kỳ))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.194Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2bfc1-n-điểm-bán-seed-tồn-đầu-kỳ--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f0046fb8388f9f34d70f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_gdv (Giao dịch viên điểm bán seed)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 97,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.293Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-f973e-ao-dịch-viên-điểm-bán-seed--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-279e54db4435dd5b2b7f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_cung_ung (Quản lý cung ứng Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 94,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.394Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-a2b0c-n-lý-cung-ứng-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-dc10cbea1b53e3115f7d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_ke_toan (Kế toán Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 82,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.491Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-b0041--toan-Kế-toán-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-810d07ac3b8180d5b8cd",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_marketing (Marketing Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.577Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-1d056-ing-Marketing-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-ad384e1a74119c1d55a2",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_cung_ung (Quản lý cung ứng Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 79,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.660Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-4db67--ung-Quản-lý-cung-ứng-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-3fc0d4a301467ed2a16a",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_ke_toan (Kế toán Tỉnh (vai PROVINCE_ACCOUNTANT))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.743Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2a396-nh-vai-PROVINCE-ACCOUNTANT--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2ad6ba1bf90fea1e4edf",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop_nhan_vien (Nhân viên khác điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.843Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-v-bd39c-en-Nhân-viên-khác-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2720920e7dafcea1da21",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T15:25:26.926Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "vai-tro-ghi.tct.spec.js",
+      "file": "vai-tro-ghi.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "31 · Vai trò — thao tác ghi trên vai trò rác (vai tct)",
+          "file": "vai-tro-ghi.tct.spec.js",
+          "line": 81,
+          "column": 6,
+          "specs": [
+            {
+              "title": "31_010_001 — Mở màn Quản lý vai trò",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13866,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:25:27.264Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-e317e-01-—-Mở-màn-Quản-lý-vai-trò-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-b3c969cc144afd8d15ef",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 461,
+              "column": 2
+            },
+            {
+              "title": "31_010_002 — Kiểm tra control chính trên danh sách vai trò",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "nút: Xuất excel · Thêm vai trò · Thu gọn tất cả · Gán chức năng · Gán nhân viên · ô lọc (select/picker): 0 · thao tác dòng:  · Gán chức năng · Gán nhân viên · "
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 13878,
+                      "error": {
+                        "message": "Error: Dòng thiếu thao tác \"edit\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"edit\"\u001b[39m\nReceived array: \u001b[31m[\"\", \"Gán chức năng\", \"Gán nhân viên\", \"\"]\u001b[39m",
+                        "stack": "Error: Dòng thiếu thao tác \"edit\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"edit\"\u001b[39m\nReceived array: \u001b[31m[\"\", \"Gán chức năng\", \"Gán nhân viên\", \"\"]\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js:481:116",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                          "column": 116,
+                          "line": 481
+                        },
+                        "snippet": "  479 | \t\tawait expect(khung(page).getByRole('button', { name: 'Thêm vai trò' })).toBeVisible();\n  480 | \t\texpect(await dongVaiTro(page).count(), 'Không có bảng danh sách').toBeGreaterThan(0);\n> 481 | \t\tfor (const t of ['edit', 'Gán chức năng', 'Gán nhân viên', 'close']) expect(tacVu, `Dòng thiếu thao tác \"${t}\"`).toContain(t);\n      | \t\t                                                                                                                 ^\n  482 | \t\texpect(boLoc, 'Màn KHÔNG có ô LỌC nào (chỉ có ô tìm kiếm) — kịch bản đòi \"tìm kiếm, lọc\"').toBeGreaterThan(0);\n  483 | \t});\n  484 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                            "column": 116,
+                            "line": 481
+                          },
+                          "message": "Error: Dòng thiếu thao tác \"edit\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"edit\"\u001b[39m\nReceived array: \u001b[31m[\"\", \"Gán chức năng\", \"Gán nhân viên\", \"\"]\u001b[39m\n\n  479 | \t\tawait expect(khung(page).getByRole('button', { name: 'Thêm vai trò' })).toBeVisible();\n  480 | \t\texpect(await dongVaiTro(page).count(), 'Không có bảng danh sách').toBeGreaterThan(0);\n> 481 | \t\tfor (const t of ['edit', 'Gán chức năng', 'Gán nhân viên', 'close']) expect(tacVu, `Dòng thiếu thao tác \"${t}\"`).toContain(t);\n      | \t\t                                                                                                                 ^\n  482 | \t\texpect(boLoc, 'Màn KHÔNG có ô LỌC nào (chỉ có ô tìm kiếm) — kịch bản đòi \"tìm kiếm, lọc\"').toBeGreaterThan(0);\n  483 | \t});\n  484 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js:481:116"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:25:41.212Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "nút: Xuất excel · Thêm vai trò · Thu gọn tất cả · Gán chức năng · Gán nhân viên · ô lọc (select/picker): 0 · thao tác dòng:  · Gán chức năng · Gán nhân viên · "
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-48e6d-hính-trên-danh-sách-vai-trò-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-48e6d-hính-trên-danh-sách-vai-trò-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-48e6d-hính-trên-danh-sách-vai-trò-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-48e6d-hính-trên-danh-sách-vai-trò-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                        "column": 116,
+                        "line": 481
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-7161c4b0883ee5525be3",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 470,
+              "column": 2
+            },
+            {
+              "title": "31_010_003 — Mở form Thêm vai trò và kiểm tra trường bắt buộc",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "nhãn Mã vai trò · Tên vai trò · Phạm vi · Mô tả · bắt buộc Mã vai trò · Tên vai trò · Phạm vi · nút Đóng · Xác nhận"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 13956,
+                      "error": {
+                        "message": "Error: Form KHÔNG có nút \"Huỷ\" (chỉ có dấu X \"Đóng · Xác nhận\")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Form KHÔNG có nút \"Huỷ\" (chỉ có dấu X \"Đóng · Xác nhận\")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js:498:127",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                          "column": 127,
+                          "line": 498
+                        },
+                        "snippet": "  496 | \t\texpect(batBuoc.map(chuan).sort()).toEqual(['Mã vai trò', 'Phạm vi', 'Tên vai trò'].sort());\n  497 | \t\texpect(nut).toContain('Xác nhận');\n> 498 | \t\texpect(nut.some((x) => /^Hu[ỷỷy]$/i.test(x) || x === 'Hủy'), `Form KHÔNG có nút \"Huỷ\" (chỉ có dấu X \"${nut.join(' · ')}\")`).toBe(true);\n      | \t\t                                                                                                                            ^\n  499 | \t});\n  500 |\n  501 | \ttest('31_010_004 — Thêm vai trò - validate form rỗng', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                            "column": 127,
+                            "line": 498
+                          },
+                          "message": "Error: Form KHÔNG có nút \"Huỷ\" (chỉ có dấu X \"Đóng · Xác nhận\")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  496 | \t\texpect(batBuoc.map(chuan).sort()).toEqual(['Mã vai trò', 'Phạm vi', 'Tên vai trò'].sort());\n  497 | \t\texpect(nut).toContain('Xác nhận');\n> 498 | \t\texpect(nut.some((x) => /^Hu[ỷỷy]$/i.test(x) || x === 'Hủy'), `Form KHÔNG có nút \"Huỷ\" (chỉ có dấu X \"${nut.join(' · ')}\")`).toBe(true);\n      | \t\t                                                                                                                            ^\n  499 | \t});\n  500 |\n  501 | \ttest('31_010_004 — Thêm vai trò - validate form rỗng', async ({ page }) => {\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js:498:127"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:25:55.526Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "nhãn Mã vai trò · Tên vai trò · Phạm vi · Mô tả · bắt buộc Mã vai trò · Tên vai trò · Phạm vi · nút Đóng · Xác nhận"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-d7fb3-và-kiểm-tra-trường-bắt-buộc-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-d7fb3-và-kiểm-tra-trường-bắt-buộc-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-d7fb3-và-kiểm-tra-trường-bắt-buộc-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-d7fb3-và-kiểm-tra-trường-bắt-buộc-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                        "column": 127,
+                        "line": 498
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-1a8d033d7d8331d3c4e8",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 485,
+              "column": 2
+            },
+            {
+              "title": "31_010_004 — Thêm vai trò - validate form rỗng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn lỗi",
+                      "description": "Vui lòng nhập mã vai trò | Vui lòng nhập tên vai trò | Vui lòng chọn phạm vi"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15297,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:26:10.026Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn lỗi",
+                          "description": "Vui lòng nhập mã vai trò | Vui lòng nhập tên vai trò | Vui lòng chọn phạm vi"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-74424-ai-trò---validate-form-rỗng-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-45f01cb6ca0a9a25473f",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 501,
+              "column": 2
+            },
+            {
+              "title": "31_010_005 — Thêm vai trò hợp lệ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ijBwkP\"} · tb \"Thêm mới thành công\" · trong danh sách 1"
+                    },
+                    {
+                      "type": "dọn vai trò rác",
+                      "description": "A7PQ31_UI_998983 → 200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 20973,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Điểm Bán\"\u001b[39m\nReceived string:    \u001b[31m\"A7PQ31 Vai trò UI 998983 ĐIỂM BÁN AUTO TEST — rác 31 UI Gán chức năng Gán nhân viên\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Điểm Bán\"\u001b[39m\nReceived string:    \u001b[31m\"A7PQ31 Vai trò UI 998983 ĐIỂM BÁN AUTO TEST — rác 31 UI Gán chức năng Gán nhân viên\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js:543:58",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                          "column": 58,
+                          "line": 543
+                        },
+                        "snippet": "  541 | \t\t\texpect(tb).toContain('Thêm mới thành công');\n  542 | \t\t\texpect(thay).toBe(1);\n> 543 | \t\t\texpect(chuan(await dongCua(page, v.ten).innerText())).toContain('Điểm Bán');\n      | \t\t\t                                                      ^\n  544 | \t\t} finally { await xoaRac(page, v); }\n  545 | \t});\n  546 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                            "column": 58,
+                            "line": 543
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Điểm Bán\"\u001b[39m\nReceived string:    \u001b[31m\"A7PQ31 Vai trò UI 998983 ĐIỂM BÁN AUTO TEST — rác 31 UI Gán chức năng Gán nhân viên\"\u001b[39m\n\n  541 | \t\t\texpect(tb).toContain('Thêm mới thành công');\n  542 | \t\t\texpect(thay).toBe(1);\n> 543 | \t\t\texpect(chuan(await dongCua(page, v.ten).innerText())).toContain('Điểm Bán');\n      | \t\t\t                                                      ^\n  544 | \t\t} finally { await xoaRac(page, v); }\n  545 | \t});\n  546 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js:543:58"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:26:25.396Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ijBwkP\"} · tb \"Thêm mới thành công\" · trong danh sách 1"
+                        },
+                        {
+                          "type": "dọn vai trò rác",
+                          "description": "A7PQ31_UI_998983 → 200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-19f2d-0-005-—-Thêm-vai-trò-hợp-lệ-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-19f2d-0-005-—-Thêm-vai-trò-hợp-lệ-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-19f2d-0-005-—-Thêm-vai-trò-hợp-lệ-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-19f2d-0-005-—-Thêm-vai-trò-hợp-lệ-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/tests/vai-tro-ghi.tct.spec.js",
+                        "column": 58,
+                        "line": 543
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-387ffbe74992548542bf",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 516,
+              "column": 2
+            },
+            {
+              "title": "31_010_006 — Tìm kiếm vai trò theo mã/tên",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "tên → 1 dòng · mã → 1 dòng (A7PQ31 Vai trò rác 31_010_006 020789 ĐIỂM BÁN AUTO TEST — rác 31 Gán chức năng Gán nhân viên)"
+                    },
+                    {
+                      "type": "dọn vai trò rác",
+                      "description": "A7PQ31_010006_020789 → 200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24471,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:26:46.968Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "tên → 1 dòng · mã → 1 dòng (A7PQ31 Vai trò rác 31_010_006 020789 ĐIỂM BÁN AUTO TEST — rác 31 Gán chức năng Gán nhân viên)"
+                        },
+                        {
+                          "type": "dọn vai trò rác",
+                          "description": "A7PQ31_010006_020789 → 200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-829f7-ìm-kiếm-vai-trò-theo-mã-tên-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-c6d1b747a893e4ae3f50",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 547,
+              "column": 2
+            },
+            {
+              "title": "31_010_007 — Cập nhật tên/phạm vi vai trò",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "tb \"Cập nhật thành công\" · BE A7PQ31 Vai trò rác 31_010_007 045296 SỬA/BUU_DIEN_XA · dòng \"A7PQ31 Vai trò rác 31_010_007 045296 SỬA BƯU ĐIỆN XÃ AUTO TEST — rác 31 Gán chức năng Gán nhân viên\""
+                    },
+                    {
+                      "type": "dọn vai trò rác",
+                      "description": "A7PQ31_010007_045296 → 200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30463,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:27:11.519Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "tb \"Cập nhật thành công\" · BE A7PQ31 Vai trò rác 31_010_007 045296 SỬA/BUU_DIEN_XA · dòng \"A7PQ31 Vai trò rác 31_010_007 045296 SỬA BƯU ĐIỆN XÃ AUTO TEST — rác 31 Gán chức năng Gán nhân viên\""
+                        },
+                        {
+                          "type": "dọn vai trò rác",
+                          "description": "A7PQ31_010007_045296 → 200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-184e3-ập-nhật-tên-phạm-vi-vai-trò-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-1d5550c17e64f4faf44e",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 562,
+              "column": 2
+            },
+            {
+              "title": "31_010_008 — Hủy thao tác xóa vai trò",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "dọn vai trò rác",
+                      "description": "A7PQ31_010008_075707 → 200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22573,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:27:41.988Z",
+                      "annotations": [
+                        {
+                          "type": "dọn vai trò rác",
+                          "description": "A7PQ31_010008_075707 → 200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-17bf9--—-Hủy-thao-tác-xóa-vai-trò-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-9851bbe277e4bf8b837e",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 585,
+              "column": 2
+            },
+            {
+              "title": "31_020_001 — Mở màn gán quyền chức năng cho vai trò",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "tổng 413 chức năng · 17 ô tick đang render"
+                    },
+                    {
+                      "type": "dọn vai trò rác",
+                      "description": "A7PQ31_020001_098325 → 200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24937,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:28:04.566Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "tổng 413 chức năng · 17 ô tick đang render"
+                        },
+                        {
+                          "type": "dọn vai trò rác",
+                          "description": "A7PQ31_020001_098325 → 200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/31_quan_ly_phan_quyen/test-output/playwright-results/vai-tro-ghi.tct-31-·-Vai-t-09a7b-quyền-chức-năng-cho-vai-trò-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2cae82f43b7d5b35d651-c3c927fd823d9e61d647",
+              "file": "vai-tro-ghi.tct.spec.js",
+              "line": 604,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T15:25:25.138Z",
+    "duration": 184439.55299999999,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

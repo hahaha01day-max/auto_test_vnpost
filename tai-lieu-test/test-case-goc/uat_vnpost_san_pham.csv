@@ -1,0 +1,677 @@
+,Chức năng,,QUẢN LÝ ĐẶT HÀNG,,,,,,,
+,Mã Testcase,,SANPHAM,,,,,,,
+,Tổng các tình huống kiểm thử,,96,,,,,,,
+,Chưa thực hiện,,84,,,,,,,
+,Đạt yêu cầu,,8,,,,,,,
+,Không đạt yêu cầu,,4,,,,,,,
+,Thực hiện sau,,0,,,,,,,
+,Không phải thực hiện,,0,,,,,,,
+,,,,,,,,,20,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,
+,Kiểm tra giao diện màn Thêm sản phẩm,,,,,,,,,
+,Kiểm tra giao diện tiêu đề và tên các trường,,Đúng tên trường và tên tiêu đề,,,,"1. Sai tiêu đề khối
+2. Tên đơn vị quy đổi chưa hiển thị bắt buộc",Fail,,
+SANPHAM_1,Kiểm tra giao diện trường SKU và Barcode trên phần Thông tin cơ bản khi bỏ trống và thêm biến thể,,"1. Bỏ trống trường SKU và Mã barcode phần Thông tin chung
+2. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: “size”
+   - Giá trị thuộc tính: nhập “S”
+3. Nhấn Enter
+4. Kiểm tra trường SKU và Mã bardcode phần Thông tin cơ bản",,"1. Hiển thị disabled
+2. Nội dung placeholder: Quản lý theo biến thể bên dưới","1. Hiển thị disabled
+2. Nội dung placeholder: Quản lý theo biến thể bên dưới",,Pass,x,
+SANPHAM_2,Kiểm tra giao diện trường SKU và Barcode trên phần Thông tin cơ bản khi nhập và sau đó thêm biến thể,,"1. Nhập thông tin phần Thông tin cơ bản:
+- SKU: a
+- Mã barcode: tự sinh
+2. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: “size”
+   - Giá trị thuộc tính: nhập “S”
+3. Nhấn Enter
+4. Kiểm tra trường SKU và Mã bardcode phần Thông tin cơ bản",,"1. Hiển thị disabled
+2. Clear dữ liệu đã nhập trước đó và nội dung placeholder: Quản lý theo biến thể bên dưới",,"1. Hiển thị disabled
+2. Chưa clear dữ liệu đã nhập trước đó, trường SKU vẫn hiển thị a, trường Mã barcode vẫn hiển thị mã hệ thống tự sinh",Fail,x,
+SANPHAM_3,Kiểm tra giao diện trường SKU và Barcode trên phần Thông tin cơ bản khi thêm biến thể sau đó xóa biến thể,,"1. 2 trường đó hiển thị mặc định
+1. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: “size”
+   - Giá trị thuộc tính: nhập “S”
+3. Nhấn Enter
+=> 2 trường đó hiển thị disabled; nội dung placeholder: Quản lý theo biến thể bên dưới
+4. Xóa hết biến thể
+5. Kiểm tra giao diện 2 trường đó",,Hiển thị mặc định như khi vừa vào màn Thêm sản phẩm,Hiển thị mặc định như khi vừa vào màn Thêm sản phẩm,,Pass,x,
+SANPHAM_4,"Kiểm tra giao diện trường SKU và Barcode trên phần Thông tin cơ bản khi nhập và xóa, sau đó thêm biến thể",,"1. Nhập SKU và Barcode trên phần Thông tin chung:
+- SKU: a
+- Mã barcode: tự sinh
+2. Xóa dữ liệu vừa nhập, hệ thống hiển thị message validate bắt buộc
+2. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: “size”
+   - Giá trị thuộc tính: nhập “S”
+3. Nhấn Enter
+4. Kiểm tra trường SKU và Mã bardcode phần",,"1. Hiển thị disabled
+2. Nội dung placeholder: Quản lý theo biến thể bên dưới
+3. Không hiển thị message validate bắt buộc nữa","1. Hiển thị disabled
+2. Nội dung placeholder: Quản lý theo biến thể bên dưới
+3. Vẫn hiển thị message validate bắt buộc",,Fail,x,
+SANPHAM_5,Kiểm tra giao diện cột/trường SKU và Barcode của bảng Bảng quy đổi đơn vị khi bỏ trống và thêm biến thể,,"1. Đơn vị chính: cái
+2. Click vào button ""Thêm đơn vị quy đổi"": Bỏ trống SKU và Barcode => hiển thị highlight đỏ
+3. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: size
+   - Giá trị thuộc tính: m
+4. Nhấn Enter
+5. Kiểm tra giao diện trường SKU và Barcode của bảng quy đổi đơn vị",,"1. Cột SKU và Barcode ẩn dấu sao bắt buộc
+2. Ô input không hiển thị highlight đỏ nữa và disabled
+3. Nội dung placeholder: Quản lý theo biến thể bên dưới","1. Cột SKU và Barcode ẩn dấu sao bắt buộc
+2. Ô input không hiển thị highlight đỏ nữa nhưng enabled disabled
+3. Nội dung placeholder: Nhập SKU, Nhập barcode",,Fail,x,
+SANPHAM_6,Kiểm tra giao diện cột/trường SKU và Barcode của bảng Bảng quy đổi đơn vị khi nhập sau đó thêm biến thể,,"1. Đơn vị chính: cái
+2. Click vào button ""Thêm đơn vị quy đổi""
+   Barcode tự sinh, SKU: a
+3. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: size
+   - Giá trị thuộc tính: m
+4. Nhấn Enter
+5. Kiểm tra giao diện trường SKU và Barcode của bảng quy đổi đơn vị",,"1. Cột SKU và Barcode ẩn dấu sao bắt buộc
+2. Ô input disabled và clear dữ liệu trước đó, nội dung placeholder: Quản lý theo biến thể bên dưới",,,,x,
+SANPHAM_7,Kiểm tra giao diện cột/trường SKU và Barcode của bảng Bảng quy đổi đơn vị khi thêm biến thể và xóa biến thể,,"1. Đơn vị chính: cái
+2. Click vào button ""Thêm đơn vị quy đổi""
+   Barcode và SKU hiển thị mặc định
+3. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: size
+   - Giá trị thuộc tính: m
+4. Nhấn Enter => 2 trường đó disabled và ko bắt buộc
+5. Xóa hết biến thể
+6. Kiểm tra giao diện trường SKU và Barcode của bảng quy đổi đơn vị",,Hiển thị mặc định như khi vừa vào màn Thêm đơn vị quy đổi,,,,x,
+,Kiểm tra giao diện màn ...,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,
+,Kiểm tra chức năng Thêm sản phẩm,,,,,,,,,
+SANPHAM_8,Kiểm tra thêm sản phẩm khi bỏ trống toàn bộ các trường bắt buộc,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Click ""Xác nhận"" mà không nhập thông tin gì vào các trường bắt buộc (có dấu *)",,,"Hệ thống không cho lưu, hiển thị thông báo ""Vui lòng điền đầy đủ các thông tin được yêu cầu"" đồng thời báo đỏ tại các trường: Tên sản phẩm, Danh mục, SKU, Mã barcode, Mã kế toán, VAT, Đơn vị",,,x,
+SANPHAM_9,"Thêm mới sản phẩm thủ công với đầy đủ các thông tin bắt buộc
+","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. Tại màn hình danh sách, nhấn nút “+ Thêm mới”.
+2. Nhập các trường thông tin cơ bản:
+   - Tên sản phẩm: “Nước ngọt Coca-Cola”
+   - Danh mục: chọn “Nước giải khát”
+   - SKU: “SP-001”
+   - Mã Barcode: Tự sinh
+   - Mã kế toán: “KT-COCA”
+   - VAT: 8%
+   - Loại hàng hóa/vật tư: chọn “Hàng hóa”
+   - Hình thức phân phối: chọn “Mua bán
+2. Nhập đơn vị tính chính: cái
+3. Nhập phần Kho hàng: Mặc định phương pháp tính giá vốn = “Bình quân gia quyền”
+5. Nhấn nút “Xác nhận” ở góc trên bên phải drawer.""
+",Cao,,"1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""","1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""",Pass,x,
+SANPHAM_10,Kiểm tra tính duy nhất của SKU,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Nhập thông tin sản phẩm, trong đó nhập SKU đã tồn tại
+4. Click ""Xác nhận""",,,"Hệ thống hiển thị thông báo ""Mã SKU ... đã được đăng ký cho sản phẩm khác, vui lòng kiểm tra lại""",,,x,
+SANPHAM_11,"Kiểm tra validate các trường cần nhập số (Khối lượng, Thể tích, Kích thước)","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Nhập thông tin sản phẩm, trong đó nhập số âm ở các trường cần nhập số 
+4. Click ""Xác nhận""",,,Hệ thống tự động chuyển số âm ở các trường cần nhập số về 0,,,x,
+SANPHAM_12,Kiểm tra tính năng thêm nhanh danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Click chọn ""+ Thêm mới"" ở trường Danh mục
+4. Nhập Tên danh mục và chọn Danh mục cha (nếu có)
+4. Click ""Xác nhận""",,,"Danh mục mới được tạo thành công và tự động hiển thị tại trường ""Danh mục""",,,x,
+SANPHAM_13,Thêm sản phẩm có cấu hình Đơn vị quy đổi (Không có biến thể) thành công.,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. Nhập các thông tin bắt buộc hợp lệ trong đó:
+- SKU = SP-002
+- Tên = Bia Heineken
+- Đơn vị cơ bản = lon
+2. Click vào button ""Thêm đơn vị quy đổi""
+   - Dòng 1: Tên đơn vị = “lốc”, Số lượng = “6”, Đơn vị quy đổi = “lon”, SKU = ""SP-002-lon"", Barcode tự sinh
+   - Dòng 2: Tên đơn vị = “thùng”, Số lượng = “4”, Đơn vị quy đổi = “lốc”, SKU = ""SP-002-thung"", Barcode tự sinh
+3. Nhấn nút “Xác nhận” để lưu sản phẩm.",Cao,,"1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""
+3. Khi click vào dòng sản phẩm để xem chi tiết:
+   + Bảng “Quy đổi đơn vị” hiển thị đúng hệ số quy về đơn vị cơ bản: lốc = 6 lon, thùng = 24 lon.
+   + Bảng “Cấu hình” hiển thị 3 dòng đơn vị: lon (cơ bản), lốc, thùng kèm đúng mã SKU và Barcode tương ứng đã nhập.
+","1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""
+3. Khi click vào dòng sản phẩm để xem chi tiết:
+   + Bảng “Quy đổi đơn vị” hiển thị đúng hệ số quy về đơn vị cơ bản: lốc = 6 lon, thùng = 24 lon.
+   + Bảng “Cấu hình” hiển thị 3 dòng đơn vị: lon (cơ bản), lốc, thùng kèm đúng mã SKU và Barcode tương ứng đã nhập.
+",Pass,x,
+SANPHAM_14,"Tạo sản phẩm có biến thể nhưng không có đơn vị quy đổi thành công.
+","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. Nhập các thông tin bắt buộc hợp lệ:
+- Tên = “Áo thun VNPost
+- Danh mục: Nước dinh dưỡng
+- Bỏ trống trường SKU và Mã barcode phần Thông tin chung
+- Mã kế toán: 999
+- VAT: 8%
+- Loại hàng hóa / vật tư, Hình thức phân phối, Tích điểm, Phương pháp tính giá vốn: Mặc định
+- Đơn vị: cái
+2. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: “size”
+   - Giá trị thuộc tính: nhập “S”, “M” (dạng thẻ tag).
+3. Tại bảng ma trận Cấu hình được sinh ra bên dưới:
+   - Dòng biến thể “size: S”: Barcode tự sinh, SKU “SP-003-S”
+   - Dòng biến thể “size: M”: Barcode tự sinh, SKU “SP-003-M”.
+4. Nhấn nút “Xác nhận” ở trên cùng.",Cao,,"1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt"". Cột SKU hiển thị SKU của 1 biến thể và ..., khi hover chuột vào ... hiển thị tooltip. Nội dung là SKU của các biến thể còn lại.
+3. Khi xem chi tiết sản phẩm vừa tạo:
+ + Phần phân loại hiển thị tag S và M.
+ + Bảng Cấu hình hiển thị mỗi biến thể là một row có button expand và khi nhấn: dòng size: S hiển thị sub-table gồm cái với SKU/Barcode tương ứng; dòng size: M hiển thị tương tự.","1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt"". Cột SKU hiển thị SKU của 1 biến thể và ..., khi hover chuột vào ... hiển thị tooltip. Nội dung là SKU của các biến thể còn lại.
+3. Khi xem chi tiết sản phẩm vừa tạo:
+ + Phần phân loại hiển thị tag S và M.
+ + Bảng Cấu hình hiển thị mỗi biến thể là một row có button expand và khi nhấn: dòng size: S hiển thị sub-table gồm cái với SKU/Barcode tương ứng; dòng size: M hiển thị tương tự.",Pass,x,
+SANPHAM_15,Tạo sản phẩm có biến thể đồng thời áp dụng đơn vị quy đổi thành công.,"Đăng nhập tài khoản Admin, mở form Thêm sản phẩm.","1. Nhập các thông tin bắt buộc hợp lệ:
+- Tên: Kệ gỗ
+- Danh mục: Đồ gia dụng
+- Bỏ trống trường SKU và Mã barcode phần Thông tin chung
+- Mã kế toán: 999
+- VAT: 8%
+- Loại hàng hóa / vật tư, Hình thức phân phối, Tích điểm, Phương pháp tính giá vốn: Mặc định
+- Đơn vị: cái
+2. Click vào button ""Thêm đơn vị quy đổi""
+   - Dòng 1: Tên đơn vị = “lô”, Số lượng = “3”, Đơn vị quy đổi gốc = “cái”, SKU và Barcode bỏ trống
+   - Dòng 2: Tên đơn vị = “thùng”, Số lượng = “2”, Đơn vị quy đổi gốc = “lô”, SKU và Barcode bỏ trống
+3. Tại phần Phân loại, nhấn “+ Thêm phân loại” và nhập:
+   - Tên thuộc tính: “màu”
+   - Giá trị thuộc tính: nhập “nâu”, “đen” (dạng thẻ tag).
+4. Tại bảng ma trận Cấu hình được sinh ra bên dưới:
+   - Dòng biến thể “Màu: Nâu”: Barcode tự sinh, SKU “SP-004-nau”. Ở bảng con đơn vị quy đổi:
+       + lô: barcode tự sinh, SKU “SP-004-naulo”
+       + thùng: barcode tự sinh, SKU “SP-004-nauthung”
+   - Dòng biến thể “màu: đen”: Barcode tự sinh, SKU “SP-004-đen”. Ở bảng con đơn vị quy đổi:
+       + lô: barcode tự sinh, SKU “SP-004-denlo”
+       + lô: barcode tự sinh, SKU “SP-004-denthung”
+5. Nhấn nút “Xác nhận” ở trên cùng.",Cao,Quản lý sản phẩm,"– Hệ thống ghi nhận và lưu thành công sản phẩm có biến thể.
+– Khi xem chi tiết sản phẩm vừa tạo:
+   + Phần biến thể hiển thị tag S và M.
+   + Bảng cấu hình hiển thị phân nhóm rõ ràng theo 2 biến thể: dòng size: S hiển thị sub-table gồm cái và lô với SKU/Barcode tương ứng; dòng size: M hiển thị tương tự.","1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt"". Cột SKU hiển thị SKU của 1 biến thể và ..., khi hover chuột vào ... hiển thị tooltip. Nội dung là SKU của các biến thể còn lại.
+3. Khi xem chi tiết sản phẩm vừa tạo:
+ - Phần phân loại hiển thị tag nâu và đen.
+ - Bảng Cấu hình hiển thị mỗi biến thể là một row có button expand và khi nhấn: dòng màu: nâu hiển thị sub-table gồm lô, thùng và cái với SKU/Barcode tương ứng; dòng màu: đen hiển thị tương tự.
+ -  Bảng “Quy đổi đơn vị” hiển thị đúng hệ số quy về đơn vị cơ bản: lô = 3 cái, thùng = 6 cái.",Pass,x,
+SANPHAM_16,Kiểm tra thêm mới sản phẩm công khi chọn danh mục cha trong cây danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+2. Nhập thông tin sản phẩm, trong đó trường Danh mục chọn danh mục cha trong cây danh mục",,,"Focus đỏ kèm message ""Vui lòng chỉ chọn danh mục cấp cuối cùng"" tại trường Danh mục và toast message ""Vui lòng chỉ chọn danh mục cấp cuối cùng""",,,x,
+SANPHAM_17,Kiểm tra thêm thuộc tính bổ sung,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Thêm thuộc tính bổ sung và nhập các thông tin sản phẩm khác
+4. Click ""Xác nhận""",,,Thuộc tính lưu trữ thành công cùng sản phẩm,,,x,
+SANPHAM_18,Kiểm tra tải lên hình ảnh minh họa,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Tải lên hình ảnh minh họa và nhập các thông tin sản phẩm khác
+4. Click ""Xác nhận""",,,"Ảnh tải lên thành công, hiển thị hình thu nhỏ rõ nét, không bị méo",,,x,
+SANPHAM_19,Kiểm tra tải lên ảnh sai định dạng hoặc quá dung lượng,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" -> ""+ Thêm mới""
+3. Tải lên hình ảnh minh họa sai định dạng hoặc quá dung lượng và nhập các thông tin sản phẩm khác
+4. Click ""Xác nhận""",,,Hệ thống từ chối file và hiển thị cảnh báo lỗi định dạng/dung lượng tương ứng,,,x,
+SANPHAM_20,Kiểm tra thêm mới sản phẩm thủ công với đầy đủ các thông tin (bao gồm cả thông tin không bắt buộc),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm Sản phẩm",Nhập đầy đủ tất cả thông tin,Cao,,"1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""
+3. Xem chi tiết hiển thị đúng các trường thông tin đã nhập","1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""
+3. Xem chi tiết hiển thị đúng các trường thông tin đã nhập",Pass,x,
+,"Kiểm tra chức năng Xem chi tiết, Sửa, Xóa sản phẩm",,,,,,,,,
+SANPHAM_21,Kiểm tra chức năng xem chi tiết sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem chi tiết Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần xem chi tiết: Click chọn ""Thao tác"" -> ""Xem chi tiết""
+4. Kiểm tra thông tin sản phẩm",,,Hệ thống hiển thị chính xác các thông tin của sản phẩm được chọn,,,x,
+SANPHAM_22,Kiểm tra đóng pop up chi tiết sản phẩm,User đang ở màn chi tiết sản phẩm,"1. Click ""X"" tại pop up xem chi tiết sản phẩm
+2. Quan sát sự thay đổi của màn hình",,,"Pop up xem chi tiết sản phẩm được đóng lại, hiển thị màn hình danh sách sản phẩm",,,x,
+SANPHAM_23,Kiểm tra chỉnh sửa sản phẩm khi xóa các trường bắt buộc,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Xóa thông tin 1 hoặc nhiều trường bắt buộc
+5. Click ""Cập nhật""",,,"Hệ thống không lưu thông tin mới, báo đỏ các trường bắt buộc bị bỏ trống và hiển thị thông báo ""Vui lòng nhập đầy đủ các thông tin được yêu cầu""",,,x,
+SANPHAM_24,Kiểm tra chỉnh sửa sản phẩm khi sửa SKU trùng với SKU đã có trên hệ thống ,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Sửa SKU sản phẩm trùng với SKU đã có trên hệ thống
+5. Click ""Cập nhật""",,,"Hệ thống không lưu thông tin mới đồng thời hiển thị thông báo ""Mã SKU ... đã được đăng ký cho sản phẩm khác, vui lòng kiểm tra lại""",,,x,
+SANPHAM_25,Kiểm tra chỉnh sửa sản phẩm khi sửa Barcode trùng với Barcode đã có trên hệ thống ,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Sửa Barcode sản phẩm trùng với Barcode đã có trên hệ thống
+5. Click ""Cập nhật""",,,"Hệ thống không lưu thông tin mới đồng thời hiển thị thông báo ""Barcode đã tồn tại""",Barcode đã tồn tại,,x,
+SANPHAM_26,Kiểm tra chỉnh sửa sản phẩm khi xóa 1 vài biến thể (các biến thể được xóa chưa phát sinh giao dịch),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Xóa 1 vài biến thể của sản phẩm, hoặc chỉnh sửa biến thể để làm mất biến thể khác
+5. Click ""Cập nhật""",,,"1. Hiển thị toast message ""Cập nhật sản phẩm thành công"", đóng drawer và hệ thống lưu lại thông tin
+2. Tại phần Cấu hình của màn Chi tiết sản phẩm:
+- Các biến thể đã được xóa không còn trong phần Thông tin chung và trong phần Cấu hình
+- Các biến thể khác vẫn giữ nguyên",,,x,
+SANPHAM_27,Kiểm tra chỉnh sửa sản phẩm khi xóa tất cả biến thể (các biến thể được xóa chưa phát sinh giao dịch),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1.. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+3. Xóa tất cả biến thể -> trường SKU và Barcode phần Thông tin cơ bản enabled
+4. Nhập SKU không trùng và barcode tự sinh
+5. Click ""Cập nhật""",,,"1. Hiển thị toast message ""Cập nhật sản phẩm thành công"", đóng drawer và hệ thống lưu lại thông tin
+3. Màn Chi tiết sản phẩm:
+- Tất cả các biến thể đã xóa không còn trong phần Thông tin chung và phần Cấu hình
+- Bảng Cấu hình hiển thị 1 row biến thể mới có button expand:
+ + SKU phân loại: SKU đã khai báo ở phần Thông tin chung
+ + Phân loại: Mặc định
+- Khi nhấn expand hiển thị sub-table gồm SKU/Barcode tương ứng của đơn vị tính chính",,,,
+,Kiểm tra chỉnh sửa sản phẩm khi xóa các biến thể (các biến thể được xóa đã phát sinh giao dịch),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Xóa các biến thể của sản phẩm
+5. Click ""Cập nhật""",,,"Hiển thị toast message ""Không thể xóa biến thể sản phẩm: 'tên biến thể' vì đã phát sinh giao dịch trong hệ thống."" và không cho phép lưu",,,,
+SANPHAM_28,Kiểm tra chỉnh sửa sản phẩm khi xóa 1 vài đơn vị quy đổi (đơn vị quy đổi chưa phát sinh giao dịch),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+3. Xóa 1 vài đơn vị quy đổi của sản phẩm
+4. Click ""Cập nhật""",,,"1. Hiển thị toast message ""Cập nhật sản phẩm thành công"", đóng drawer và hệ thống lưu lại thông tin
+2. Tại màn Chi tiết sản phẩm:
+- Các đơn vị đã được xóa không còn trong phần Quy đổi đơn vị và trong các sub-table của phần Cấu hình
+- Các đơn vị khác vẫn giữ nguyên",,,,
+SANPHAM_29,Kiểm tra chỉnh sửa sản phẩm khi xóa tất cả đơn vị quy đổi (đơn vị quy đổi chưa phát sinh giao dịch),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+3. Xóa tất cả đơn vị quy đổi của sản phẩm
+4. Click ""Cập nhật""",,,"1. Hiển thị toast message ""Cập nhật sản phẩm thành công"", đóng drawer và hệ thống lưu lại thông tin
+2. Tại màn Chi tiết sản phẩm:
+- Toàn bộ phần Quy đổi đơn vị bị xóa, và trong sub-table của phần Cấu hình chỉ còn dơn vị chính",,,,
+,Kiểm tra chỉnh sửa sản phẩm khi xóa các đơn vị quy đổi (đơn vị quy đổi đã phát sinh giao dịch),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+3. Xóa các đơn vị quy đổi của sản phẩm
+4. Click ""Cập nhật""",,,"Hiển thị toast message ""Không thể xóa đơn vị tính: 'tên đơn vị tính' vì đã phát sinh giao dịch trong hệ thống"" và không lưu",,,,
+SANPHAM_30,Kiểm tra chỉnh sửa sản phẩm thành công,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Nhập hợp lệ các thông tin cần chỉnh sửa
+5. Click ""Cập nhật""",,,"Hệ thống lưu thông tin sản phẩm vừa chỉnh sửa đồng thời hiển thị thông báo ""Cập nhật thành công"".
+Màn xem chi tiết cập nhật đúng các thông tin đã sửa",,,x,
+SANPHAM_31,Kiểm tra hủy chỉnh sửa sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+3. Tại dòng sản phẩm cần chỉnh sửa: Click chọn ""Thao tác"" -> ""Xem chi tiết"" -> ""Sửa thông tin""
+4. Nhập các thông tin cần chỉnh sửa
+5. Click ""Hủy""",,,Hệ thống thực hiện đóng màn hình chỉnh sửa sản phẩm và không lưu thông tin đã chỉnh sửa,,,x,
+SANPHAM_32,Kiểm tra xóa sản phẩm thành công với sản phẩm chưa phát sinh giao dịch,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Sản phẩm muốn xóa chưa phát sinh giao dịch","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòngsản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Xóa sản phẩm thành công""
+2. Không hiển thị sản phẩm đó trên danh sách nữa",,,,
+SANPHAM_33,Kiểm tra xóa sản phẩm khi đã phát sinh giao dịch,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Sản phẩm muốn xóa đã phát sinh giao dịch","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa biến thể sản phẩm: '...' vì đã phát sinh giao dịch trong hệ thống.""
+2. Sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+,Kiểm tra xóa sản phẩm khi đang nằm trong đơn nháp và chưa phát sinh phiếu kho,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Sản phẩm muốn xóa chưa phát sinh giao dịch kho, nhưng nằm trong đơn nháp","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa biến thể sản phẩm: '...' vì đã phát sinh giao dịch trong hệ thống.""
+2. Sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+,"Kiểm tra xóa sản phẩm thành công với các sản phẩm khi đang nằm trong đơn nháp và chưa phát sinh phiếu kho, sau đó xóa đơn nháp","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm và Bán hàng
+Sản phẩm muốn xóa chưa phát sinh giao dịch kho, nhưng nằm trong đơn nháp","1. Vào role có quyền bán hàng:
+2. Vào Đơn hàng>Đơn hàng đã tạo
+3. Tìm đơn nháp và xóa
+4. Vào role có quyền xóa sản phẩm
+5. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+6. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+7. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Xóa sản phẩm thành công""
+2. Không hiển thị sản phẩm đó trên danh sách nữa",,,,
+,Kiểm tra xóa sản phẩm khi đang nằm trong CTKM,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Sản phẩm muốn xóa đang nằm trong CTKM","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa biến thể sản phẩm: '...' vì đang nằm trong chương trình khuyến mãi""
+2. Sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+,Kiểm tra xóa sản phẩm khi đang nằm trong combo,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Sản phẩm muốn xóa đang nằm trong combo","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa biến thể sản phẩm vì đang được gán trong combo sản phẩm.""
+2. Sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+,Kiểm tra xóa sản phẩm khi đang nằm trong bảng giá,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Sản phẩm muốn xóa đang nằm trong bảng giá","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm""
+2. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa đơn vị tính: 'tên đơn vị' vì đang được sử dụng trong bảng giá""
+2. Sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+,Kiểm tra chức năng Tìm kiếm/Lọc sản phẩm,,,,,,,,,
+SANPHAM_35,Kiểm tra tìm kiếm theo tên chính xác,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Nhập chính xác tên sản phẩm cần tìm kiếm vào ô tìm kiếm theo tên
+4. Enter",,,Danh sách chỉ hiển thị sản phẩm có tên vừa nhập,,,x,
+SANPHAM_36,Kiểm tra tìm kiếm theo tên tương đối,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Nhập tương đối tên sản phẩm cần tìm kiếm vào ô tìm kiếm theo tên
+4. Enter",,,Danh sách hiển thị tất cả các sản phẩm có chứa 1 phần tên vừa nhập,,,x,
+SANPHAM_37,Kiểm tra tìm kiếm tên không tồn tại,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Nhập tên sản phẩm không tồn tại trên hệ thống vào ô tìm kiếm theo tên
+4. Enter",,,Danh sách không hiển thị sản phẩm nào,,,x,
+SANPHAM_38,Kiểm tra tìm kiếm theo SKU chính xác,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Nhập chính xác SKU cần tìm kiếm vào ô tìm kiếm theo SKU
+4. Enter",,,Danh sách chỉ hiển thị sản phẩm có SKU vừa nhập,,,x,
+SANPHAM_39,Kiểm tra tìm kiếm theo SKU tương đối,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Nhập tương đối SKU cần tìm kiếm vào ô tìm kiếm theo SKU
+4. Enter",,,Danh sách hiển thị tất cả các sản phẩm có chứa 1 phần SKU vừa nhập,,,x,
+SANPHAM_40,Kiểm tra tìm kiếm SKU không tồn tại,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Nhập SKU không tồn tại trên hệ thống vào ô tìm kiếm theo SKU
+4. Enter",,,Danh sách không hiển thị sản phẩm nào,,,x,
+SANPHAM_41,"Kiểm tra lọc theo mã, tên danh mục","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Chọn các danh mục cần lọc sản phẩm ở dropdown tìm kiếm theo mã, danh mục sản phẩm",,,Danh sách chỉ hiển thị các sản phẩm thuộc danh mục được chọn,,,x,
+SANPHAM_42,Kiểm tra lọc theo trạng thái,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Chọn trạng thái sản phẩm cần lọc ở dropdown trạng thái",,,Danh sách sản phẩm hiển thị các sản phẩm có tag trạng thái cần tìm kiếm,,,x,
+SANPHAM_43,Kiểm tra lọc theo hình thức phân phối,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem danh sách Sản phẩm","1. User đăng nhập vào hệ thống
+2. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+3. Chọn hình thức phân phối cần lọc ở dropdown Chọn hình thức phân phối",,,Danh sách sản phẩm hiển thị các sản phẩm có tag hình thức phân phối cần tìm kiếm,,,x,
+SANPHAM_44,Kiểm tra chức năng Kích hoạt/Ngừng kích hoạt sản phẩm,,,,,,,,,
+SANPHAM_45,Kiểm tra chức năng Cấu hình ngừng kích hoạt sản phẩm khi nhập đày đủ thông tin,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Ngừng kích hoạt sản phẩm
+Sản phẩm có trạng thái Kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Cấu hình ngừng kích hoạt""
+3. Chọn 1 trong 3 mode phạm vị áp dụng: Bưu điện tỉnh
+4. Chọn phạm vi áp dụng
+5. Nhập Lý do ngừng bán
+6. Nhấn ""Áp dụng""",,,"1. Hệ thống đóng drawer và hiển thị message ""Cấu hình ngừng kích hoạt thành công""
+2. Cột Trạng thái hiển thị ""Ngừng kích hoạt""
+3. Khi hover chuột vào button Thao tác, mất giá trị ""Cấu hình ngừng kích hoạt. Hiển thị 2 giá trị mới ""Kích hoạt lại"" và ""Cập nhật cấu hình ngừng kích hoạt""
+4. Mở màn ""Cập nhật cấu hình ngừng kinh doanh"", hiển thị đúng Lý do ngừng bán và phạm vi áp dụng
+5. Các điểm bán đã được cấu hình, khi thêm điểm đó vào bill hiển thị toast message ""Sản phẩm '...' đã bị ngừng kinh doanh hoặc ngừng bán.",,,x,
+SANPHAM_46,Kiểm tra chức năng ngừng kích hoạt sản phẩm khi không chọn phạm vi áp dụng nào,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Ngừng kích hoạt sản phẩm
+Sản phẩm có trạng thái Kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Cấu hình ngừng kích hoạt""
+3. Chọn 1 trong 3 mode phạm vị áp dụng: Bưu điện tỉnh
+4. Không chọn phạm vi áp dụng
+5. Nhấn ""Áp dụng""",,,"Hệ thống hiển thị message ""Vui lòng chọn ít nhất một phạm vi khu vực"" và không lưu cấu hình ngừng kích hoạt",,,x,
+SANPHAM_47,Kiểm tra chức năng Cập nhật cấu hình ngừng kích hoạt sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Ngừng kích hoạt sản phẩm
+Sản phẩm có trạng thái Ngừng kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần cập nhật cấu hình ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Cập nhật cấu hình ngừng kích hoạt""
+3. Cập nhật lại Lý do ngừng bán hoặc phạm vi áp dụng
+4. Nhấn ""Áp dụng""",,,"1. Hệ thống đóng drawer và hiển thị message ""Cập nhật cấu hình ngừng kích hoạt thành công""
+2. Cột Trạng thái hiển thị ""Ngừng kích hoạt""
+3. Khi hover chuột vào button Thao tác, vẫn hiển thị 2 giá trị mới ""Kích hoạt lại"" và ""Cập nhật cấu hình ngừng kích hoạt""
+4. Mở lại màn ""Cập nhật cấu hình ngừng kinh doanh"", hiển thị đúng Lý do ngừng bán và phạm vi áp dụng mới
+5. Các điểm bán đã được cấu hình, khi thêm điểm đó vào bill hiển thị toast message ""Sản phẩm '...' đã bị ngừng kinh doanh hoặc ngừng bán.",,,x,
+SANPHAM_48,Kiểm tra chức năng Kích hoạt lại sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Kích hoạt lại sản phẩm
+Sản phẩm có trạng thái Ngừng kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần cập nhật cấu hình ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Kích hoạt lại""
+3. Chọn ""Đồng ý""",,,"1. Hệ thống hiển thị message ""Đã kích hoạt lại sản phẩm""
+2. Cột Trạng thái hiển thị ""Kích hoạt""
+3. Khi hover chuột vào button Thao tác, mất 2 giá trị ""Kích hoạt lại"" và ""Cập nhật cấu hình ngừng kích hoạt"", hiển thị giá trị ""Cấu hình ngừng kích hoạt""
+4. Mở lại màn ""Cập nhật cấu hình ngừng kinh doanh"", clear hết dữ liệu Lý do ngừng bán và phạm vi áp dụng",,,,
+SANPHAM_49,Kiểm tra chức năng Thêm combo,,,,,,,,,
+SANPHAM_50,Kiểm tra thêm combo khi bỏ trống toàn bộ các trường bắt buộc,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Click ""Xác nhận"" mà không nhập thông tin gì vào các trường bắt buộc (có dấu *)",,Quản lý Sản phẩm gộp,"Hệ thống không cho lưu, hiển thị thông báo ""Vui lòng điền đầy đủ các thông tin được yêu cầu"" đồng thời báo đỏ tại các trường: Tên sản phẩm gộp, Danh mục, SKU, Mã barcode, Mã kế toán, Đơn vị",,,,
+SANPHAM_51,Kiểm tra thêm mới combo thủ công với đầy đủ các thông tin bắt buộc,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Nhập phần Thông tin cơ bản:
+   - Tên sản phẩm gộp: “Combo ăn sáng”
+   - Danh mục: chọn “Sản phẩm combo”
+   - SKU: “CB-001”
+   - Mã Barcode: Tự sinh
+   - Mã kế toán: “999”
+   - Loại hàng hóa/vật tư: chọn “Hàng hóa”
+   - Hình thức phân phối: chọn “Mua bán
+3. Nhập phần Sản phẩm:
+- Đơn vị: Combo
+- Thêm sản phẩm vào sản phẩm gộp:
++ Bánh mỳ - SL: 1
++ Cà phê: - SL: 2
+4. Nhấn nút “Xác nhận” ở góc trên bên phải drawer",Cao,,"1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""","1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""",,,
+SANPHAM_52,Kiểm tra thêm mới combo thủ công khi chọn danh mục cha trong cây danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Nhập thông tin sản phẩm, trong đó trường Danh mục chọn danh mục cha trong cây danh mục",,,"Focus đỏ kèm message ""Vui lòng chỉ chọn danh mục cấp cuối cùng"" tại trường Danh mục và toast message ""Vui lòng chỉ chọn danh mục cấp cuối cùng""",,,,
+SANPHAM_53,Kiểm tra bỏ trống sản phẩm trong danh sách,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Nhập đầy đủ các trường bắt buộc
+3. Không thêm sản phẩm nào vào trong phần ""Thêm sản phẩm vào sản phẩm gộp""
+4. Tiếp tục tìm kiếm lại sản phẩm Bánh mỳ, click chọn và nhấn ""Thêm sản phẩm""",,,"Hiển thị toast message ""Thêm ít nhất 1 sản phẩm/dịch vụ vào sản phẩm combo"" và không cho phép lưu",,,,
+SANPHAM_54,Kiểm tra thêm sản phẩm mặc định trùng với sản phẩm đã có trong bảng,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Tại phần Thêm sản phẩm vào sản phẩm gộp: tìm kiếm sản phẩm Bánh mỳ.
+3. Click vào sản phẩm và nhấn ""Thêm sản phẩm""
+4. Tiếp tục tìm kiếm lại sản phẩm Bánh mỳ, click chọn và nhấn ""Thêm sản phẩm""",,,"Hiển thị message ""Sản phẩm ""Bánh mỳ (Mac dinh)"" đã có trong danh sách"" và không thêm dòng Bánh mỳ mới vào bảng",,,,
+SANPHAM_55,Kiểm tra thêm sản phẩm có biến thể,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo
+Tồn tại sản phẩm có biến thể trong hệ thống","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Tại phần Thêm sản phẩm vào sản phẩm gộp: tìm kiếm sản phẩm có biến thể: Bánh bao 356365g
+3. Click vào sản phẩm",,,"Sau khi click vào sản phẩm, hiển thị bên cạnh dropdown list danh sách biến thể",,,,
+SANPHAM_56,,,"1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Tại phần Thêm sản phẩm vào sản phẩm gộp: tìm kiếm sản phẩm có biến thể: Bánh bao 356365g
+3. Click vào sản phẩm
+4. Chọn nhiều biến thể trong dropdown list danh sách biến thể và nhấn ""Thêm sản phẩm""",,,"Thêm đồng thời các biến thể đã được chọn vào trong bảng, mỗi biến thể là 1 dòng",,,,
+SANPHAM_57,Kiểm tra thêm trùng biến thể trùng với sản phẩm đã có trong bảng,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo
+Tồn tại sản phẩm có biến thể trong hệ thống","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Tại phần Thêm sản phẩm vào sản phẩm gộp: tìm kiếm sản phẩm có biến thể: Bánh bao 356365g
+3. Click vào sản phẩm
+4. Chọn biến thể trong dropdown list danh sách biến thể: size: s và nhấn ""Thêm sản phẩm""
+5. Lặp lại thao tác từ bước 2 đến 4",,,"Hiển thị message ""Sản phẩm ""Bánh bao 356365g (size: s)"" đã có trong danh sách"" đã có trong danh sách"" và không thêm dòng mới vào bảng",,,,
+SANPHAM_58,Kiểm tra tính duy nhất của SKU,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Nhập thông tin sản phẩm, trong đó nhập SKU đã tồn tại
+3. Click ""Xác nhận""",,,"Hệ thống hiển thị thông báo ""Mã SKU ... đã được đăng ký cho sản phẩm khác, vui lòng kiểm tra lại""",,,,
+SANPHAM_59,"Kiểm tra validate các trường cần nhập số (Khối lượng, Thể tích, Kích thước)","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Nhập số âm ở các trường cần nhập số ",,,Hệ thống tự động chuyển số âm ở các trường cần nhập số về 0,,,,
+SANPHAM_60,Kiểm tra tính năng thêm nhanh danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Click chọn ""+ Thêm mới"" ở trường Danh mục
+3. Chọn Danh mục cha (nếu có) và nhập tên danh mục không trùng với tên danh mục cùng thuộc cấp cha
+4. Click ""Xác nhận""",,,"Danh mục mới được tạo thành công và tự động hiển thị tại trường ""Danh mục""",,,,
+SANPHAM_61,Kiểm tra thêm thuộc tính bổ sung,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Thêm thuộc tính bổ sung và nhập các thông tin sản phẩm khác
+3. Click ""Xác nhận""",,,Thuộc tính lưu trữ thành công cùng sản phẩm,,,,
+SANPHAM_62,Kiểm tra tải lên hình ảnh minh họa,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Tải lên hình ảnh minh họa và nhập các thông tin sản phẩm khác
+3. Click ""Xác nhận""",,,"Ảnh tải lên thành công, hiển thị hình thu nhỏ rõ nét, không bị méo",,,,
+SANPHAM_63,Kiểm tra tải lên ảnh sai định dạng hoặc quá dung lượng,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Tải lên hình ảnh minh họa sai định dạng hoặc quá dung lượng và nhập các thông tin sản phẩm khác
+3. Click ""Xác nhận""",,,Hệ thống từ chối file và hiển thị cảnh báo lỗi định dạng/dung lượng tương ứng,,,,
+SANPHAM_64,Kiểm tra thêm mới sản phẩm thủ công với đầy đủ các thông tin (bao gồm cả thông tin không bắt buộc),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Thêm combo","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" -> ""+ Thêm mới""
+2. Nhập đầy đủ tất cả thông tin hợp lệ
+3. Click ""Xác nhận""",Cao,,"1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""
+3. Xem chi tiết hiển thị đúng các trường thông tin đã nhập","1. Hiển thị message ""Thêm thành công""
+2. Ghi nhận 1 bản ghi ngoài danh sách với dữ liệu đúng như đã khai báo. Cột Trạng thái mặc định là ""Kích hoạt""
+3. Xem chi tiết hiển thị đúng các trường thông tin đã nhập",Pass,,
+SANPHAM_65,"Kiểm tra chức năng Xem chi tiết, Sửa, Xóa Combo sản phẩm",,,,,,,,,
+SANPHAM_66,Kiểm tra chức năng xem chi tiết sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Xem chi tiết combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xem chi tiết: Hover chuột vào ""Thao tác"" -> ""Xem chi tiết""
+3. Kiểm tra thông tin sản phẩm",,,"Hệ thống mở ra drawer ""Chi tiết sản phẩm gộp"" hiển thị chính xác các thông tin của sản phẩm được chọn",,,,
+SANPHAM_67,"Kiểm tra đóng drawer ""Chi tiết sản phẩm gộp""","User đang ở màn ""Chi tiết sản phẩm gộp""","1. Click ""X"" tại drawer ""Chi tiết sản phẩm gộp""
+2. Quan sát sự thay đổi của màn hình",,,"Drawer được đóng lại, hiển thị màn hình danh sách sản phẩm",,,,
+SANPHAM_68,Kiểm tra chỉnh sửa combo sản phẩm khi xóa các trường bắt buộc,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng sửa Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xem chi tiết: Hover chuột vào ""Thao tác"" -> ""Xem chi tiết"" -> ""Chỉnh sửa""
+3. Xóa thông tin 1 hoặc nhiều trường bắt buộc
+4. Click ""Cập nhật""",,,"1. Ngay khi xóa ở bước 3, báo đỏ các trường bắt buộc bị bỏ trống
+2. Ở bước 4, hệ thống hiển thị thông báo ""Vui lòng nhập đầy đủ các thông tin được yêu cầu"" và không lưu thông tin",,,,
+SANPHAM_69,Kiểm tra chỉnh sửa sản phẩm khi sửa SKU trùng với SKU đã có trên hệ thống ,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng sửa Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xem chi tiết: Hover chuột vào ""Thao tác"" -> ""Xem chi tiết"" -> ""Chỉnh sửa""
+3. Sửa SKU sản phẩm trùng với SKU đã có trên hệ thống
+4. Click ""Cập nhật""",,,"Hệ thống không lưu thông tin mới đồng thời hiển thị thông báo ""Mã SKU ... đã được đăng ký cho sản phẩm khác, vui lòng kiểm tra lại""",,,,
+SANPHAM_70,Kiểm tra chỉnh sửa sản phẩm khi sửa Barcode trùng với Barcode đã có trên hệ thống ,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng sửa Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xem chi tiết: Hover chuột vào ""Thao tác"" -> ""Xem chi tiết"" -> ""Chỉnh sửa""
+3. Sửa Barcode sản phẩm trùng với Barcode đã có trên hệ thống
+4. Click ""Cập nhật""",,,"Hệ thống không lưu thông tin mới đồng thời hiển thị thông báo ""Barcode đã tồn tại""",,,,
+SANPHAM_71,Kiểm tra chỉnh sửa combo sản phẩm khi xóa hết các sản phẩm trong bảng danh sách,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng sửa Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xem chi tiết: Hover chuột vào ""Thao tác"" -> ""Xem chi tiết"" -> ""Chỉnh sửa""
+3. Xóa hết các sản phẩm trong bảng sản phẩm
+4. Click ""Cập nhật""",,,"Hiển thị toast message ""Thêm ít nhất 1 sản phẩm/dịch vụ vào sản phẩm combo"" và không cho phép lưu",,,,
+SANPHAM_72,Kiểm tra chỉnh sửa sản phẩm thành công,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng sửa Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xem chi tiết: Hover chuột vào ""Thao tác"" -> ""Xem chi tiết"" -> ""Chỉnh sửa""
+3. Nhập hợp lệ các thông tin cần chỉnh sửa
+4. Click ""Cập nhật""",,,"Hệ thống lưu thông tin sản phẩm vừa chỉnh sửa đồng thời hiển thị thông báo ""Cập nhật thành công"".
+Màn xem chi tiết cập nhật đúng các thông tin đã sửa",,,,
+SANPHAM_73,Kiểm tra hủy chỉnh sửa sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng sửa Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xem chi tiết: Hover chuột vào ""Thao tác"" -> ""Xem chi tiết"" -> ""Chỉnh sửa""
+3. Nhập các thông tin cần chỉnh sửa
+4. Click ""Hủy""",,,"1. Đóng drawer ""Cập nhật sản phẩm gộp
+"" và quay lại màn ""Chi tiết sản phẩm gộp""
+2. Vẫn giữ nguyên các thông tin trước đó",,,,
+SANPHAM_74,Kiểm tra xóa combo sản phẩm chưa phát sinh giao dịch,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa Combo sản phẩm
+Combo muốn xóa chưa phát sinh giao dịch","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Xóa sản phẩm thành công""
+2. Không hiển thị sản phẩm đó trên danh sách nữa",,,,
+SANPHAM_75,Kiểm tra xóa sản phẩm thành công với các combo sản phẩm khi đã phát sinh giao dịch,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa Combo sản phẩm
+Combo muốn xóa đã phát sinh giao dịch","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa biến thể sản phẩm: '...' vì đã phát sinh giao dịch trong hệ thống.""
+2. Sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+SANPHAM_76,Kiểm tra xóa sản phẩm thành công với các combo sản phẩm khi đang nằm trong đơn nháp và chưa phát sinh phiếu kho,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa Combo sản phẩm
+Combo muốn xóa chưa phát sinh giao dịch kho, nhưng nằm trong đơn nháp","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng combo sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa biến thể sản phẩm: '...' vì đã phát sinh giao dịch trong hệ thống.""
+2. Sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+SANPHAM_77,"Kiểm tra xóa sản phẩm thành công với các combo sản phẩm khi đang nằm trong đơn nháp và chưa phát sinh phiếu kho, sau đó xóa đơn nháp","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa Combo sản phẩm và Bán hàng
+Combo muốn xóa chưa phát sinh giao dịch kho, nhưng nằm trong đơn nháp","1. Vào role có quyền bán hàng:
+2. Vào Đơn hàng>Đơn hàng đã tạo
+3. Tìm đơn nháp và xóa
+4. Vào role có quyền xóa combo sản phẩm
+5. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+6. Tại dòng combo sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+7. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Xóa sản phẩm thành công""
+2. Không hiển thị sản phẩm đó trên danh sách nữa",,,,
+,Kiểm tra xóa combo sản phẩm khi đang nằm trong CTKM,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Combo sản phẩm muốn xóa đang nằm trong CTKM","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa combo vì đang nằm trong CTKM""
+2. Combo sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+,Kiểm tra xóa combo sản phẩm khi đang nằm trong bảng giá,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xóa sản phẩm
+Combo sản phẩm muốn xóa đang nằm trong bảng giá","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Tại dòng sản phẩm cần xóa: Hover chuột vào ""Thao tác"" -> ""Xóa""
+3. Nhấn ""Đồng ý""",,,"1. Hiển thị toast message ""Không thể xóa combo vì đang được sử dụng trong bảng giá""
+2. Combo sản phẩm vẫn hiển thị trên bảng danh sách",,,,
+SANPHAM_78,Kiểm tra chức năng Tìm kiếm/Lọc combo sản phẩm,,,,,,,,,
+SANPHAM_79,Kiểm tra tìm kiếm theo tên chính xác,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Nhập chính xác tên sản phẩm cần tìm kiếm vào ô tìm kiếm theo tên
+3. Enter",,,Danh sách chỉ hiển thị sản phẩm có tên vừa nhập,,,,
+SANPHAM_80,Kiểm tra tìm kiếm theo tên tương đối,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Nhập tương đối tên sản phẩm cần tìm kiếm vào ô tìm kiếm theo tên
+3. Enter",,,Danh sách hiển thị tất cả các sản phẩm có chứa 1 phần tên vừa nhập,,,,
+SANPHAM_81,Kiểm tra tìm kiếm tên không tồn tại,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Nhập tên sản phẩm không tồn tại trên hệ thống vào ô tìm kiếm theo tên
+3. Enter",,,Danh sách không hiển thị sản phẩm nào,,,,
+SANPHAM_82,Kiểm tra tìm kiếm theo SKU chính xác,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Nhập chính xác SKU cần tìm kiếm vào ô tìm kiếm theo SKU
+3. Enter",,,Danh sách chỉ hiển thị sản phẩm có SKU vừa nhập,,,,
+SANPHAM_83,Kiểm tra tìm kiếm theo SKU tương đối,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Nhập tương đối SKU cần tìm kiếm vào ô tìm kiếm theo SKU
+3. Enter",,,Danh sách hiển thị tất cả các sản phẩm có chứa 1 phần SKU vừa nhập,,,,
+SANPHAM_84,Kiểm tra tìm kiếm SKU không tồn tại,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Nhập SKU không tồn tại trên hệ thống vào ô tìm kiếm theo SKU
+3. Enter",,,Danh sách không hiển thị sản phẩm nào,,,,
+SANPHAM_85,"Kiểm tra lọc theo mã, tên danh mục","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Chọn các danh mục cần lọc sản phẩm ở dropdown tìm kiếm theo mã, danh mục sản phẩm",,,Danh sách chỉ hiển thị các sản phẩm thuộc danh mục được chọn,,,,
+SANPHAM_86,Kiểm tra lọc theo trạng thái,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Chọn trạng thái sản phẩm cần lọc ở dropdown trạng thái",,,Danh sách sản phẩm hiển thị các sản phẩm có tag trạng thái cần tìm kiếm,,,,
+SANPHAM_87,Kiểm tra lọc theo hình thức phân phối,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng xem danh sách Combo sản phẩm","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm""
+2. Chọn hình thức phân phối cần lọc ở dropdown Chọn hình thức phân phối",,,Danh sách sản phẩm hiển thị các sản phẩm có tag hình thức phân phối cần tìm kiếm,,,,
+SANPHAM_88,Kiểm tra chức năng Kích hoạt/Ngừng kích hoạt Combo sản phẩm,,,,,,,,,
+SANPHAM_89,Kiểm tra chức năng Cấu hình ngừng kích hoạt sản phẩm khi nhập đày đủ thông tin,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Ngừng kích hoạt sản phẩm
+Sản phẩm có trạng thái Kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Cấu hình ngừng kích hoạt""
+3. Chọn 1 trong 3 mode phạm vị áp dụng: Bưu điện tỉnh
+4. Chọn phạm vi áp dụng
+5. Nhập Lý do ngừng bán
+6. Nhấn ""Áp dụng""",,,"1. Hệ thống đóng drawer và hiển thị message ""Cấu hình ngừng kích hoạt thành công""
+2. Cột Trạng thái hiển thị ""Ngừng kích hoạt""
+3. Khi hover chuột vào button Thao tác, mất giá trị ""Cấu hình ngừng kích hoạt. Hiển thị 2 giá trị mới ""Kích hoạt lại"" và ""Cập nhật cấu hình ngừng kích hoạt""
+4. Mở màn ""Cập nhật cấu hình ngừng kinh doanh"", hiển thị đúng Lý do ngừng bán và phạm vi áp dụng
+5. Các điểm bán đã được cấu hình, khi thêm điểm đó vào bill hiển thị toast message ""Sản phẩm '...' đã bị ngừng kinh doanh hoặc ngừng bán.",,,,
+SANPHAM_90,Kiểm tra chức năng ngừng kích hoạt sản phẩm khi không chọn phạm vi áp dụng nào,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Ngừng kích hoạt sản phẩm
+Sản phẩm có trạng thái Kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Cấu hình ngừng kích hoạt""
+3. Chọn 1 trong 3 mode phạm vị áp dụng: Bưu điện tỉnh
+4. Không chọn phạm vi áp dụng
+5. Nhấn ""Áp dụng""",,,"Hệ thống hiển thị message ""Vui lòng chọn ít nhất một phạm vi khu vực"" và không lưu cấu hình ngừng kích hoạt",,,,
+SANPHAM_91,Kiểm tra chức năng Cập nhật cấu hình ngừng kích hoạt sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Ngừng kích hoạt sản phẩm
+Sản phẩm có trạng thái Ngừng kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần cập nhật cấu hình ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Cập nhật cấu hình ngừng kích hoạt""
+3. Cập nhật lại Lý do ngừng bán hoặc phạm vi áp dụng
+4. Nhấn ""Áp dụng""",,,"1. Hệ thống đóng drawer và hiển thị message ""Cập nhật cấu hình ngừng kích hoạt thành công""
+2. Cột Trạng thái hiển thị ""Ngừng kích hoạt""
+3. Khi hover chuột vào button Thao tác, vẫn hiển thị 2 giá trị mới ""Kích hoạt lại"" và ""Cập nhật cấu hình ngừng kích hoạt""
+4. Mở lại màn ""Cập nhật cấu hình ngừng kinh doanh"", hiển thị đúng Lý do ngừng bán và phạm vi áp dụng mới
+5. Các điểm bán đã được cấu hình, khi thêm điểm đó vào bill hiển thị toast message ""Sản phẩm '...' đã bị ngừng kinh doanh hoặc ngừng bán.",,,,
+SANPHAM_92,Kiểm tra chức năng Kích hoạt lại sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Kích hoạt lại sản phẩm
+Sản phẩm có trạng thái Ngừng kích hoạt","1. Click chọn ""Sản phẩm"" -> ""Combo sản phẩm"" 
+2. Tại dòng chứa sản phẩm cần cập nhật cấu hình ngừng kích hoạt, hover chuột vào button ""Thao tác"" -> chọn ""Kích hoạt lại""
+3. Chọn ""Đồng ý""",,,"1. Hệ thống hiển thị message ""Đã kích hoạt lại sản phẩm""
+2. Cột Trạng thái hiển thị ""Kích hoạt""
+3. Khi hover chuột vào button Thao tác, mất 2 giá trị ""Kích hoạt lại"" và ""Cập nhật cấu hình ngừng kích hoạt"", hiển thị giá trị ""Cấu hình ngừng kích hoạt""
+4. Mở lại màn ""Cập nhật cấu hình ngừng kinh doanh"", clear hết dữ liệu Lý do ngừng bán và phạm vi áp dụng",,,,
+SANPHAM_93,,,,,,,,,,
+SANPHAM_94,,,,,,,,,,
+SANPHAM_95,,,,,,,,,,
+SANPHAM_96,,,,,,,,,,

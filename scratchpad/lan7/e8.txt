@@ -1,0 +1,8 @@
+{'startTime': '2026-09-25T13:39:08.611Z', 'duration': 129513.883, 'expected': 2, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 26_060_003 — Đổi hàng thu chênh lệch sinh phiếu thu tự động
+   @ khối tiền : Trả hàng Tổng tiền hàng gốc 95.000 đ Chiết khấu khuyến mãi (1) Tổng tiền hàng trả lại 95.000 đ Phí trả hàng Lý do trả hàng Chọn lý do trả hàng Đổi hàng Tổng tiền hàng mua 200.000 đ Ghi chú đơn hàng Xuất hóa đơn điều chỉnh In hóa đơn hoàn trả Tổng tiền đổi (mua hàng) 200.000 đ Tổng tiền trả 95.000 đ 
+   @ hoàn trả : "" · undefined
+   @ modal thanh toán đổi hàng : Tổng tiền cần thanh toán 200.000 đ
+   @ phiếu mới : [{"id":438,"code":null,"cat":"Thanh toán đơn hàng","nguon":"ANONYMOUS","tien":200000,"orderType":0,"he":true}] · kỳ vọng 105000
+   ! Error: Không sinh phiếu thu 105000đ cho đổi hàng thu chênh lệch sinh phiếu thu tự động  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false

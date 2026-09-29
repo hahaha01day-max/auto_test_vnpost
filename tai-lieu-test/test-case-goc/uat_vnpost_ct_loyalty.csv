@@ -1,0 +1,595 @@
+,Chức năng,,,ĐỔI TRẢ HÀNG,,,,,,,
+,Mã Testcase,,,FUNC_LOYALTY_,,,,,,,
+,Tổng các tình huống kiểm thử,,,39,,,,,,,
+,Chưa thực hiện,,,39,,,,,,,
+,Đạt yêu cầu,,,0,,,,,,,
+,Không đạt yêu cầu,,,0,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng Tích điểm,,,,,,,,,,
+FUNC_LOYALTY__1,Kiểm tra Thêm chương trình tích điểm áp dụng theo đơn hàng thành công,"- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: số tiền chi tiêu (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu 10,000 đ
+4. Phạm vi áp dụng: Toàn bộ khách hàng","- Admin đã đăng nhập
+ - Có quyền 'Thêm chương trình tích điểm'
+ - Chưa có chương trình tích điểm nào đang hoạt động","1. Vào Menu > Chiến dịch Loyalty
+ 2. Click 'Thêm mới chương trình tích điểm'
+ 3. Bật toggle 'Chương trình tích điểm'
+ 4. Chọn 'Đơn hàng'
+ 5. Nhập tỷ lệ tích điểm
+ 6. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+ 7. Phạm vi: Toàn bộ khách hàng
+ 8. Click 'Xác nhận'",Cao,Màn chương trình tích điểm,"- Chương trình tạo thành công
+ - Trạng thái: 'Đang hoạt động'
+ - Hiển thị cấu hình chương trình tích điểm loyalty theo đơn hàng
+ - Thông báo tạo thành công",,,,
+FUNC_LOYALTY__2,Kiểm tra thêm chương trình tích điểm áp dụng theo sản phẩm thành công,"- Cấu hình chương trình tích điểm theo sản phẩm:
+1.  Nhập tỷ lệ tích điểm: Giá bán sau thuế (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu 10,000 đ
+4. Phạm vi áp dụng: Toàn bộ khách hàng","- Admin đã đăng nhập
+ - Có quyền 'Thêm chương trình tích điểm'
+ - Chưa có chương trình tích điểm nào đang hoạt động","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm'
+4. Chọn 'Sản phẩm'
+5. Nhập tỷ lệ tích điểm
+6. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'",Cao,Màn chương trình tích điểm,"- Chương trình tạo thành công với phạm vi 'Sản phẩm'
+ - Trạng thái: 'Đang hoạt động' ngay lập tức
+ - Hiển thị đúng cấu hình chương trình tích điểm loyalty theo sản phẩm
+ - Thông báo tạo thành công",,,,
+FUNC_LOYALTY__3,Kiểm tra chương trình tự động 'Đang hoạt động' khi thời gian bắt đầu = hiện tại,"- Thời gian bắt đầu = thời điểm hiện tại (25/06/2026)
+ - Thời gian kết thúc: có hoặc không"," - Admin đã đăng nhập
+ - Có quyền 'Thêm chương trình tích điểm'
+ -  Thời gian bắt đầu = thời điểm hiện tại (hôm nay)
+ - Thời gian kết thúc: có hoặc không","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm'
+2. Tạo chương trình tích điểm, chọn tích điểm theo đơn hàng
+3. Chọn thời gian bắt đầu = ngày hôm nay
+4. Click 'Xác nhận'
+5.  Kiểm tra trạng thái sau khi tạo",Cao,Màn chương trình tích điểm,"- Trạng thái ngay lập tức: 'Đang hoạt động'
+ - Chương trình bắt đầu thời gian hiện tại (25/06/2026) được áp dụng cho đơn hàng mới",,,,
+FUNC_LOYALTY__4,Kiểm tra hương trình ở trạng thái 'Ngừng hoạt động' khi thời gian bắt đầu là tương lai,- Thời gian bắt đầu = ngày mai hoặc xa hơn (26/06/2026)," - Admin đã đăng nhập
+ - Có quyền 'Thêm chương trình tích điểm'
+ - Thời gian bắt đầu = ngày mai hoặc xa hơn","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+2. Tạo chương trình tích điểm
+3. Chọn thời gian bắt đầu = ngày mai
+4. Click 'Xác nhận'
+5.  Kiểm tra trạng thái sau khi tạo",Cao,Màn chương trình tích điểm," - Trạng thái ngay sau tạo: 'Ngừng hoạt động'
+ - Khi đến ngày mai (26/06/2026): hệ thống tự chuyển sang 'Đang hoạt động'",,,,
+FUNC_LOYALTY__5,Kiểm tra chương trình tích điểm theo đơn hàng khi áp dụng điều kiện giá trị đơn hàng tối thiểu ,"- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Số tiền chi tiêu (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu 10,000 đ
+ - Tạo đơn hàng HD001: 5.000đ → kiểm tra điểm
+ - Tạo đơn hàng HD002: 10.000đ → kiểm tra điểm
+ - Tạo đơn hàng HD003: 15.000đ → kiểm tra điểm
+4. Phạm vi áp dụng: Toàn bộ khách hàng"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+- Tạo đơn hàng thành công với các giá trị lần lượt:
++  Tạo đơn hàng HD001: 5.000đ → kiểm tra điểm
++  Tạo đơn hàng HD002: 10.000đ → kiểm tra điểm
++  Tạo đơn hàng HD003: 15.000đ → kiểm tra điểm","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn & nhập điều kiện Giá trị đơn hàng tối thiểu
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * HD001 (5.000đ): không tích điểm
+      * HD002 (10.000đ): tích điểm bình thường theo tỷ lệ
+      * HD003 (15.000đ): tích điểm bình thường theo tỷ lệ",,,,
+FUNC_LOYALTY__6,Kiểm tra chương trình tích điểm theo sản phẩm khi áp dụng điều kiện giá trị đơn hàng tối thiểu ,"- Cấu hình chương trình tích điểm theo sản phẩm:
+1.  Nhập tỷ lệ tích điểm: Giá bán sau thuế (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu 10,000 đ
+ - Tạo đơn hàng HD001: sản phẩm A: 5.000đ → kiểm tra điểm
+ - Tạo đơn hàng HD002: sản phẩm B: 10.000đ → kiểm tra điểm
+ - Tạo đơn hàng HD003: sản phẩm C: 15.000đ → kiểm tra điểm
+4. Phạm vi áp dụng: Toàn bộ khách hàng"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+- Tạo đơn hàng thành công với các giá trị lần lượt:
++  Tạo đơn hàng HD001: 5.000đ → kiểm tra điểm
++  Tạo đơn hàng HD002: 10.000đ → kiểm tra điểm
++  Tạo đơn hàng HD003: 15.000đ → kiểm tra điểm","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo sản phẩm
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn & nhập điều kiện Giá trị đơn hàng tối thiểu
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * Sản phẩm A (5.000đ): không tích điểm
+      * Sản phẩm B (10.000đ): tích điểm bình thường theo tỷ lệ
+      * Sản phẩm C (15.000đ): tích điểm bình thường theo tỷ lệ",,,,
+FUNC_LOYALTY__7,"Kiểm tra chương trình tích điểm theo đơn hàng khi áp dụng điều kiện ""Không tích điểm cho sản phẩm giảm giá"" (khi tick chọn) ","- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Số tiền chi tiêu (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: ""Không tích điểm cho sản phẩm giảm giá""
+- Tạo đơn hàng HD004: chọn sản phẩm: Bánh mỳ: 22,000 đ (không giảm giá) - số lượng: 1
+- Tạo đơn hàng HD005: chọn sản phẩm: Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1
+- Tạo đơn hàng HD006: chọn sản phẩm: 
+   + Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1 
+   + Cà phê đắng: 16,500 đ (Không giảm giá)
+4. Phạm vi áp dụng: Toàn bộ khách hàng"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+ - Tạo đơn hàng thành công với các giá trị lần lượt:
+  + Tạo đơn hàng HD004: chọn sản phẩm: Bánh mỳ: 22,000 đ (không giảm giá) - số lượng: 1
+  + Tạo đơn hàng HD005: chọn sản phẩm: Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1
+  + Tạo đơn hàng HD006: chọn sản phẩm: 
+     * Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1 
+     * Cà phê đắng: 16,500 đ (Không giảm giá)","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn ""Không tích điểm cho sản phẩm giảm giá""
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",TB,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * HD004 22.000đ: tích điểm theo tỷ lệ CT
+      * HD005 19,800đ: không được tích điểm
+      * HD006 36,300đ: sản phẩm Bánh mỳ ko được tích điểm, sản phẩm Cà phê đắng được tích điểm theo cấu hình (tỷ lệ = 36,300 - 19,800 = 16,500 đ => tổng giá trị đơn hàng còn lại được tích điểm)",,,,
+FUNC_LOYALTY__8,"Kiểm tra chương trình tích điểm theo sản phẩm khi áp dụng điều kiện ""Không tích điểm cho sản phẩm giảm giá"" (khi tick chọn) ","- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Giá bán sau thuế (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: ""Không tích điểm cho sản phẩm giảm giá""
+- Tạo đơn hàng HD004: chọn sản phẩm: Bánh mỳ: 22,000 đ (không giảm giá) - số lượng: 1
+- Tạo đơn hàng HD005: chọn sản phẩm: Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1
+- Tạo đơn hàng HD006: chọn sản phẩm: 
+   + Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1 
+   + Cà phê đắng: 16,500 đ (Không giảm giá)
+4. Phạm vi áp dụng: Toàn bộ khách hàng"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+ - Tạo đơn hàng thành công với các giá trị lần lượt:
+  + Tạo đơn hàng HD004: chọn sản phẩm: Bánh mỳ: 22,000 đ (không giảm giá) - số lượng: 1
+  + Tạo đơn hàng HD005: chọn sản phẩm: Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1
+  + Tạo đơn hàng HD006: chọn sản phẩm: 
+     * Bánh mỳ: 22,000 đ (giảm giá 10%) = 19,800 đ - số lượng: 1 
+     * Cà phê đắng: 16,500 đ (Không giảm giá)","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo sản phẩm
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn ""Không tích điểm cho sản phẩm giảm giá""
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",TB,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * Bánh mỳ (22.000đ): tích điểm theo tỷ lệ CT
+      * Bánh mỳ (19,800đ): không được tích điểm
+      * Bánh mỳ (19,800 đ) ko được tích điểm, sản phẩm Cà phê đắng (16,5K) được tích điểm theo cấu hình (tỷ lệ = 36,300 - 19,800 = 16,500 đ => tổng giá trị đơn hàng còn lại được tích điểm)",,,,
+FUNC_LOYALTY__9,"Kiểm tra chương trình tích điểm theo đơn hàng khi áp dụng điều kiện ""Không tích điểm cho hóa đơn giảm giá"" (khi tick chọn) ","- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Số tiền chi tiêu (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: ""Không tích điểm cho hóa đơn giảm giá""
+- Tạo đơn hàng HD007: 50.000 đ (giảm giá 10%) => tổng đơn: 45.000 đ
+- Tạo đơn hàng HD008: 60.000 đ (không giảm giá)
+4. Phạm vi áp dụng: Toàn bộ khách hàng"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+ - Tạo đơn hàng thành công với các giá trị lần lượt:
+  + Tạo đơn hàng HD007: 50.000 đ (giảm giá 10%) => tổng đơn: 45.000 đ
+  + Tạo đơn hàng HD008: 60.000 đ (không giảm giá)","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn ""Không tích điểm cho sản phẩm giảm giá""
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * HD007: 45,000 đ => không được tích điểm
+      * HD008: 60,000 đ => được tích điểm theo CT",,,,
+FUNC_LOYALTY__10,"Kiểm tra chương trình tích điểm theo sản phẩm khi áp dụng điều kiện ""Không tích điểm cho hóa đơn giảm giá"" (khi tick chọn) ","- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Giá bán sau thuế (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: ""Không tích điểm cho hóa đơn giảm giá""
+- Tạo đơn hàng HD007: 50.000 đ (giảm giá 10%) => tổng đơn: 45.000 đ
+- Tạo đơn hàng HD008: 60.000 đ (không giảm giá)
+4. Phạm vi áp dụng: Toàn bộ khách hàng"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+ - Tạo đơn hàng thành công với các giá trị lần lượt:
+  + Tạo đơn hàng HD007: 50.000 đ (giảm giá 10%) => tổng đơn: 45.000 đ
+  + Tạo đơn hàng HD008: 60.000 đ (không giảm giá)","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo sản phẩm
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn ""Không tích điểm cho sản phẩm giảm giá""
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * HD007: 45,000 đ => tất cả sản phẩm trong đơn không được tích điểm
+      * HD008: 60,000 đ => được tích điểm theo CT",,,,
+FUNC_LOYALTY__11,Kiểm tra chương trình tích điểm theo đơn hàng không tích điểm cho hóa đơn thanh toán bằng điểm thưởng (khi tick chọn),"- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Số tiền chi tiêu (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: ""Không tích điểm cho hóa đơn giảm giá""
+- Tạo đơn hàng HD007: 50.000 đ thanh toán bằng điểm (50 điểm ~ 50.000 đ) theo cấu hình chương trình đổi điểm 1 điểm = 10,000 đ
+- Tạo đơn hàng HD008: 60.000 đ (trả bằng tiền mặt: 60.000 đ)
+4. Phạm vi áp dụng: Toàn bộ khách hàng
+"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+ - Chương trình tick 'Không tích điểm cho hóa đơn thanh toán bằng điểm'
+ - KH có đủ điểm để sử dụng hình thức thanh toán bằng điểm
+ - Tạo đơn hàng thành công với các giá trị lần lượt:
+  + Tạo đơn hàng HD007: 50.000 đ thanh toán bằng điểm (50 điểm ~ 50.000 đ) theo cấu hình chương trình đổi điểm 1 điểm = 10,000 đ
+  + Tạo đơn hàng HD008: 60.000 đ (trả bằng tiền mặt: 60.000 đ)","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn ""Không tích điểm cho sản phẩm giảm giá""
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * HD007: 50,000 đ => không được tích điểm 
+      * HD008: 60,000 đ => được tích điểm theo cấu hình CT",,,,
+FUNC_LOYALTY__12,Kiểm tra chương trình tích điểm theo sản phẩm không tích điểm cho hóa đơn thanh toán bằng điểm thưởng (khi tick chọn),"- Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Giá bán sau thuế (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: ""Không tích điểm cho hóa đơn giảm giá""
+- Tạo đơn hàng HD007: 50.000 đ thanh toán bằng điểm (50 điểm ~ 50.000 đ) theo cấu hình chương trình đổi điểm 1 điểm = 10,000 đ
+- Tạo đơn hàng HD008: 60.000 đ (trả bằng tiền mặt: 60.000 đ)
+4. Phạm vi áp dụng: Toàn bộ khách hàng
+"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+ - Chương trình tick 'Không tích điểm cho hóa đơn thanh toán bằng điểm'
+ - KH có đủ điểm để sử dụng hình thức thanh toán bằng điểm
+ - Tạo đơn hàng thành công với các giá trị lần lượt:
+  + Tạo đơn hàng HD007: 50.000 đ thanh toán bằng điểm (50 điểm ~ 50.000 đ) theo cấu hình chương trình đổi điểm 1 điểm = 10,000 đ
+  + Tạo đơn hàng HD008: 60.000 đ (trả bằng tiền mặt: 60.000 đ)","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo sản phẩm
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn ""Không tích điểm cho sản phẩm giảm giá""
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- Cấu hình loyalty:
+  + Hệ thống thông báo tạo chương trình tích điểm thành công
+  + Trạng thái: 'Đang hoạt động' ngay lập tức
+- Bán hàng trên POS:
+  + Hệ thống hiển thị thông báo tạo đơn hàng thành công 
+      * HD007: 50,000 đ => tất cả sản phẩm trong đơn không được tích điểm
+      * HD008: 60,000 đ => được tích điểm theo giá niêm yết của từng sản phẩm",,,,
+FUNC_LOYALTY__13,Kiểm tra giới hạn phạm vi áp dụng theo nhóm khách hàng cụ thể," - Cấu hình chương trình tích điểm theo đơn hàng:
+1.  Nhập tỷ lệ tích điểm: Số tiền chi tiêu (10,000 đ) = 1 điểm thành viên
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu: 10,000 đ
+4. Phạm vi áp dụng: Nhóm khách hàng (chọn: nhóm ""HẠNG KIM CƯƠNG"")
+5. Tạo đơn hàng, trong đó:
+ + KH ""Châu Trần"" thuộc nhóm khách hàng HẠNG KIM CƯƠNG
+ + KH ""Hay Trần"" thuộc nhóm khách hàng thường"," - Admin đã đăng nhập
+ - Chương trình tích điểm đang hoạt động
+ - Chương trình tick ""Giá trị đơn hàng tối thiểu""
+- Chương trình chỉ áp dụng cho nhóm khách hàng HẠNG KIM CƯƠNG
+ Trong đó:
+ + KH ""Châu Trần"" thuộc nhóm khách hàng HẠNG KIM CƯƠNG
+ + KH ""Hay Trần"" thuộc nhóm khách hàng thường","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn ""Không tích điểm cho sản phẩm giảm giá""
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình tích điểm/ Màn tạo đơn hàng (POS),"- KH A (VIP): tích điểm theo chương trình
+ - KH B (Thường): không tích điểm",,,,
+FUNC_LOYALTY__14,Kiểm tra Bật/Tắt toggle chương trình tích điểm,- Chương trình tích điểm đang ở trạng thái 'Đang hoạt động',"- Admin đã đăng nhập
+- Chương trình tích điểm đang ở trạng thái 'Đang hoạt động'","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""chi tiết chương trình tích điểm""
+ 2. Tắt toggle 'Chương trình tích điểm'
+ 3. Lưu thay đổi
+ 4. Kiểm tra trạng thái",Cao,Màn chương trình tích điểm,"- Trạng thái chuyển sang 'Ngừng hoạt động'
+ - Các đơn hàng mới không còn tích điểm
+ - Bật lại: chương trình hoạt động trở lại",,,,
+FUNC_LOYALTY__15,[NEG] Kiểm tra tạo chương trình tích điểm không nhập thời gian bắt đầu,- Tất cả thông tin hợp lệ nhưng bỏ trống 'Thời gian bắt đầu',"- Admin đã đăng nhập
+- Chương trình tích điểm đang ở trạng thái 'Đang hoạt động
+- Tất cả thông tin hợp lệ nhưng bỏ trống 'Thời gian bắt đầu'","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Điền đầy đủ thông tin, để trống Thời gian bắt đầu
+6. Click 'Xác nhận'",Cao,Màn chương trình tích điểm,"- Hệ thống không cho lưu
+ - Hiển thị lỗi validation: 'Thời gian bắt đầu là bắt buộc'
+ - Ô thời gian bắt đầu được highlight đỏ",,,,
+FUNC_LOYALTY__16,[NEG] Kiểm tra nhập thời gian bắt đầu là ngày trong quá khứ,- Thời gian bắt đầu = ngày hôm qua,"- Admin đã đăng nhập
+- Chương trình tích điểm đang ở trạng thái 'Đang hoạt động
+- Thời gian bắt đầu = ngày hôm qua","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hôm qua
+6. Click 'Xác nhận'",Cao,Màn chương trình tích điểm,"- Hệ thống không cho lưu
+ - Hiển thị lỗi: 'Thời gian bắt đầu phải từ hiện tại trở đi'
+ - Không tạo được chương trình",,,,
+FUNC_LOYALTY__17,[NEG] Kiểm tra nhập thời gian kết thúc trước thời gian bắt đầu,"- Bắt đầu: 10/06/2026, Kết thúc: 01/06/2026","- Admin đã đăng nhập
+- Chương trình tích điểm đang ở trạng thái 'Đang hoạt động
+- Bắt đầu: 10/06/2026, Kết thúc: 01/06/2026","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập bắt đầu: 10/06/2026, kết thúc: 01/06/2026
+ 6. Click 'Xác nhận'",Cao,Màn chương trình tích điểm,"- Hệ thống từ chối lưu
+ - Thông báo lỗi: 'Thời gian kết thúc phải sau thời gian bắt đầu'",,,,
+FUNC_LOYALTY__18,[NEG] Kiểm tra nhập tỷ lệ tích điểm = 0 hoặc số âm,- Tỷ lệ tích điểm nhập: 0 hoặc -1,"- Admin đã đăng nhập
+- Chương trình tích điểm đang ở trạng thái 'Đang hoạt động
+- Tỷ lệ tích điểm nhập: 0 hoặc -1","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ = 0 hoặc -1
+5. Nhập bắt đầu: 10/06/2026, không nhập ngày kết thúc
+ 6. Click 'Xác nhận'",Cao,Màn chương trình tích điểm,"- Hệ thống không cho lưu
+ - Thông báo: 'Tỷ lệ tích điểm phải lớn hơn 0'",,,,
+FUNC_LOYALTY__19,[NEG] Kiểm tra bỏ trống tỷ lệ tích điểm,- Không nhập giá trị tỷ lệ tích điểm,"- Admin đã đăng nhập
+- Chương trình tích điểm đang ở trạng thái 'Đang hoạt động
+- Không nhập giá trị tỷ lệ tích điểm","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình tích điểm""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Để trống trường 'Tỷ lệ tích điểm'
+5. Nhập bắt đầu: 10/06/2026, không nhập ngày kết thúc
+ 6. Click 'Xác nhận'",Cao,Màn chương trình tích điểm,"- Hệ thống từ chối lưu
+ - Thông báo: 'Vui lòng nhập tỷ lệ tích điểm'",,,,
+,Kiểm tra chức năng Đổi điểm,,,,,,,,,,
+FUNC_LOYALTY__20,Kiểm thêm chương trình đổi điểm thành công (happy path),"- Cấu hình chương trình đổi điểm:
+1.  Nhập tỷ lệ đổi điểm: 1 điểm thành viên = 10,000 đ số tiền chi tiêu
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu 10,000 đ","- Admin đã đăng nhập, có quyền thao tác
+ - Chưa có chương trình đổi điểm nào đang hoạt động","1. Vào Menu > Chiến dịch Loyalty
+ 2. Click 'Thêm mới chương trình đổi điểm'
+ 3. Bật toggle 'Chương trình đổi điểm'
+ 4. Nhập tỷ lệ đổi điểm: 1 điểm = 1.000đ
+ 5. Nhập thời gian bắt đầu = ngày hiện tại
+ 6. Click 'Xác nhận'",Cao,Màn chương trình đổi điểm,"- Chương trình tạo thành công
+ - Trạng thái: 'Đang hoạt động'
+ - Hiển thị trong danh sách với đúng thông tin",,,,
+FUNC_LOYALTY__21,Kiểm tra chương trình đổi điểm tự động kích hoạt khi đến thời gian bắt đầu tương lai,"- Cấu hình chương trình đổi điểm:
+1.  Nhập tỷ lệ đổi điểm: 1 điểm thành viên = 10,000 đ số tiền chi tiêu
+2. Thời gian bắt đầu = ngày mai (26/06/2026)
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu 10,000 đ
+","- Admin đã đăng nhập, có quyền thao tác
+ - Chưa có chương trình đổi điểm nào đang hoạt động
+- Thời gian bắt đầu = ngày mai (26/06/2026)","1. Vào Menu > Chiến dịch Loyalty
+ 2. Click 'Thêm mới chương trình đổi điểm'
+ 3. Bật toggle 'Chương trình đổi điểm'
+ 4. Nhập tỷ lệ đổi điểm: 1 điểm = 1.000đ
+ 5. Tạo chương trình đổi điểm với thời gian bắt đầu = ngày mai
+ 6. Click ""Xác nhận""
+ 7. Kiểm tra trạng thái lúc tạo
+ 8. Chờ đến thời điểm bắt đầu và kiểm tra lại",Cao,Màn chương trình đổi điểm,"- Lúc tạo: trạng thái 'Ngừng hoạt động'
+ - Sau khi đến thời gian bắt đầu: tự chuyển 'Đang hoạt động'",,,,
+FUNC_LOYALTY__22,Kiểm tra điều kiện giá trị đơn hàng tối thiểu để được đổi điểm,"- Cấu hình chương trình đổi điểm:
+1.  Nhập tỷ lệ đổi điểm: 1 điểm thành viên = 10,000 đ số tiền chi tiêu
+2. Thời gian áp dụng: cài đặt thời gian áp dụng: 25/06/2026 - không cài đặt thời gian kết thúc
+3. Tích chọn điều kiện: Giá trị đơn hàng tối thiểu 10,000 đ
+ - Tạo đơn hàng HD001: 5.000đ (thanh toán bằng điểm) → kiểm tra điểm
+ - Tạo đơn hàng HD002: 10.000đ  (thanh toán bằng điểm)  → kiểm tra điểm
+ - Tạo đơn hàng HD003: 15.000đ  (thanh toán bằng điểm)  → kiểm tra điểm
+","- Admin đã đăng nhập
+- Chương trình đổi điểm đang hoạt động
+- Tạo đơn hàng thành công với các giá trị lần lượt:
++  Tạo đơn hàng HD001: 5.000đ → kiểm tra điểm
++  Tạo đơn hàng HD002: 10.000đ → kiểm tra điểm
++  Tạo đơn hàng HD003: 15.000đ → kiểm tra điểm""
+","1. Vào Menu > Chiến dịch Loyalty
+2. Click """"Thêm mới chương trình tích điểm""""
+3. Bật toggle 'Chương trình tích điểm', chọn tích điểm theo đơn hàng
+4. Nhập tỷ lệ tích điểm
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn & nhập điều kiện Giá trị đơn hàng tối thiểu
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'
+9. Tạo đơn hàng trên POS (bán hàng)
+10. Nhập số lượng tương ứng với giá tiền của từng đơn hàng
+11. Click thanh toán
+12. Kiểm tra kết quả trả về",Cao,Màn chương trình đổi điểm,"- Đơn 200.000đ: không cho phép đổi điểm
+ - Đơn 400.000đ: cho phép đổi điểm, tính tiền giảm đúng tỷ lệ",,,,
+FUNC_LOYALTY__23,Kiểm tra tắt chương trình đổi điểm bằng toggle,- Chương trình đổi điểm đang 'Đang hoạt động',"- Admin đã đăng nhập
+- Chương trình đổi điểm đang 'Đang hoạt động'","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""chi tiết chương trình Đổi điểm""
+3. Tắt toggle 'Chương trình đổi điểm'
+4. Lưu thay đổi
+5. Kiểm tra trạng thái
+6. Thao tác bán hàng sử dụng điểm quy đổi khi thanh toán",Cao,Màn chương trình đổi điểm,"- Trạng thái chuyển 'Ngừng hoạt động'
+ - Màn bán hàng: không hiển thị/không cho phép đổi điểm",,,,
+FUNC_LOYALTY__24,Kiểm tra xem chi tiết chương trình đổi điểm hiển thị đúng thông tin,- Đã có chương trình đổi điểm được tạo,"- Admin đã đăng nhập
+- Chương trình đổi điểm đang 'Đang hoạt động'","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""chi tiết chương trình Đổi điểm""
+ 3. Quan sát màn chi tiết",Cao,Màn chương trình đổi điểm,"- Hiển thị đầy đủ: tỷ lệ đổi điểm, thời gian áp dụng, điều kiện, trạng thái
+ - Thông tin khớp với lúc tạo",,,,
+FUNC_LOYALTY__25,[NEG] Kiểm tra tạo chương trình đổi điểm không nhập thời gian bắt đầu,- Bỏ trống trường 'Thời gian bắt đầu',"- Admin đã đăng nhập
+- Chương trình đổi điểm đang 'Đang hoạt động'","1. Vào màn Thêm mới chương trình đổi điểm
+ 2. Điền tỷ lệ, điều kiện nhưng bỏ trống thời gian bắt đầu
+ 3. Click 'Xác nhận'",TB,Màn chương trình đổi điểm,"- Hệ thống không cho lưu
+ - Thông báo lỗi: 'Thời gian bắt đầu là bắt buộc'",,,,
+FUNC_LOYALTY__26,[NEG] Nhập thời gian bắt đầu là ngày quá khứ,- Thời gian bắt đầu = hôm qua,"- Admin đã đăng nhập
+- Chương trình đổi điểm đang 'Đang hoạt động'","1. Nhập thời gian bắt đầu = ngày hôm qua
+ 2. Click 'Xác nhận'",Cao,Màn chương trình đổi điểm,"- Hệ thống từ chối
+ - Thông báo: 'Thời gian bắt đầu phải từ hiện tại trở đi'",,,,
+FUNC_LOYALTY__27,[NEG] Nhập tỷ lệ đổi điểm = 0 hoặc số âm,- Nhập tỷ lệ đổi điểm là 0 hoặc -5,"- Admin đã đăng nhập
+- Chương trình đổi điểm đang 'Đang hoạt động'","1. Vào Menu > Chiến dịch Loyalty
+2. Click ""Thêm mới chương trình đổi điểm""
+3. Bật toggle 'Chương trình đổi điểm'
+4. Nhập tỷ lệ đổi điểm = 0 sau đó lặp lại các bước với tỷ lệ đổi điểm = - 5
+5. Nhập thời gian bắt đầu = ngày hiện tại, để trống kết thúc
+6. Click chọn & nhập điều kiện Giá trị đơn hàng tối thiểu
+7. Phạm vi áp dụng: Toàn bộ khách hàng 
+8. Click 'Xác nhận'",Cao,Màn chương trình đổi điểm,"- Hệ thống không cho lưu
+ - Thông báo: 'Tỷ lệ đổi điểm phải lớn hơn 0'",,,,
+FUNC_LOYALTY__28,[NEG] Khách hàng không đủ điểm để đổi vẫn cố gắng đổi điểm,"- KH có 50 điểm, đơn hàng cần 100 điểm để đổi","- Điểm bán và vai trò có quyền truy cập thành công để thực hiện bán hàng
+- Chương trình đổi điểm đang 'Đang hoạt động'","1. Vào màn bán hàng
+ 2. Chọn Khách hàng có 50 điểm
+ 3. Thêm sản phẩm tổng 100.000đ (cần 100 điểm)
+ 4. Tick 'Đổi điểm'
+ 5. Nhấn Thanh toán",Cao,Màn chương trình đổi điểm,"- Hệ thống không cho thanh toán bằng điểm
+ - Thông báo: 'Số điểm không đủ (cần 100, hiện có 50)'
+ - KH phải chọn phương thức thanh toán khác",,,,
+FUNC_LOYALTY__29,[NEG] Thêm mới khi không có quyền,- Người dùng không có quyền 'Thêm chương trình đổi điểm',"- Admin đã đăng nhập
+- Chương trình đổi điểm đang 'Đang hoạt động'","1. Đăng nhập tài khoản thiếu quyền
+ 2. Truy cập Chiến dịch Loyalty
+ 3. Quan sát nút 'Thêm mới chương trình đổi điểm'",Cao,Màn chương trình đổi điểm,"- Nút 'Thêm mới' bị ẩn hoặc vô hiệu hóa
+ - Không thể tạo chương trình",,,,
+,Kiểm tra chức năng Thanh toán,,,,,,,,,,
+FUNC_LOYALTY__30,Thanh toán đơn hàng bằng điểm thưởng thành công (happy path),"- Chương trình đổi điểm đang 'Đang hoạt động'
+- KH đã chọn có đủ điểm để đổi
+- Đơn hàng đạt giá trị tối thiểu","- Chương trình đổi điểm đang 'Đang hoạt động'
+- KH đã chọn có đủ điểm để đổi
+- Đơn hàng đạt giá trị tối thiểu","1. Menu > Quản lý đơn hàng > Bán hàng
+2. Chọn khách hàng
+3. Thêm sản phẩm vào đơn
+4. Xem điểm tích lũy của KH
+5. Nhấn ""Thanh toán bằng điểm"" => nhập số điểm thanh toán đơn hàng
+6. Xem tổng tiền cần thanh toán sau đổi điểm
+7. Click ""Xác nhận thanh toán|""
+8. Kiểm tra kết quả trả về",Cao,Màn hình bán hàng / đổi trả hàng,"- Đơn hàng tạo thành công
+- Điểm KH trừ đúng số điểm đã dùng
+- Tổng tiền giảm đúng theo tỷ lệ đổi điểm
+- Hóa đơn thể hiện phần thanh toán bằng điểm",,,,
+FUNC_LOYALTY__31,Hiển thị đúng điểm tích lũy của khách hàng trên màn bán hàng,"- KH A có 500 điểm tích lũy
+- Chương trình đổi điểm đang hoạt động","- KH A có 500 điểm tích lũy
+- Chương trình đổi điểm đang hoạt động","1. Vào màn Bán hàng
+2. Chọn KH A
+3. Quan sát phần điểm tích lũy",Cao,Màn hình bán hàng / đổi trả hàng,"- Hiển thị đúng 500 điểm của KH A
+- Hiển thị giá trị tiền quy đổi tương đương (VD: 500 điểm = 500.000đ)",,,,
+FUNC_LOYALTY__32,Đổi điểm làm giảm đúng tổng tiền phải thanh toán,"- Tỷ lệ: 1 điểm = 1.000đ
+- KH có 200 điểm
+- Đơn hàng: 500.000đ
+- KH tick đổi toàn bộ 200 điểm","- Tỷ lệ: 1 điểm = 1.000đ
+- KH có 200 điểm
+- Đơn hàng: 500.000đ
+- KH tick đổi toàn bộ 200 điểm","1. Tạo đơn 500.000đ
+2. Chọn KH có 200 điểm
+3. Tick 'Đổi điểm'
+4. Quan sát tổng tiền",Cao,Màn cấu hình (đơn hàng),"- Tổng tiền hiển thị: 500.000 - 200.000 = 300.000đ
+- Sau thanh toán: điểm KH = 0",,,,
+FUNC_LOYALTY__33,Đơn hàng không tick đổi điểm vẫn tích lũy điểm bình thường,"- Chương trình tích điểm đang hoạt động
+- KH không tick 'Đổi điểm'","- Chương trình tích điểm đang hoạt động
+- KH không tick 'Đổi điểm'","1. Tạo đơn hàng 300.000đ
+2. Chọn KH, KHÔNG tick 'Đổi điểm'
+3. Thanh toán bình thường
+4. Kiểm tra điểm KH sau đơn",Cao,Màn cấu hình (đơn hàng),"- Đơn thanh toán thành công
+- KH được cộng thêm điểm theo tỷ lệ tích điểm
+- Không trừ điểm nào",,,,
+FUNC_LOYALTY__34,Đổi điểm kết hợp với thanh toán tiền mặt phần còn lại,"- KH có 100 điểm (= 100.000đ)
+- Đơn hàng: 300.000đ","- KH có 100 điểm (= 100.000đ)
+- Đơn hàng: 300.000đ","1. Tạo đơn 300.000đ
+2. Chọn KH, tick 'Đổi điểm'
+3. Quan sát tổng tiền còn lại
+4. Chọn thanh toán tiền mặt 200.000đ còn lại
+5. Xác nhận thanh toán",Cao,Màn đổi trả hàng,"- Thanh toán thành công
+- 100.000đ từ điểm + 200.000đ tiền mặt = 300.000đ
+- Điểm KH = 0
+- Hóa đơn thể hiện cả 2 phương thức",,,,
+FUNC_LOYALTY__35,Không hiển thị tùy chọn đổi điểm khi không chọn khách hàng,- Không chọn KH trước khi tick đổi điểm,- Không chọn KH trước khi tick đổi điểm,"1. Vào màn Bán hàng
+2. Thêm sản phẩm vào đơn
+3. KHÔNG chọn KH
+4. Quan sát checkbox 'Đổi điểm'",TB,Màn đổi trả hàng,"- Checkbox 'Đổi điểm' bị ẩn hoặc vô hiệu hóa
+- Không cho phép đổi điểm khi chưa xác định KH",,,,
+FUNC_LOYALTY__36,[NEG] Đổi điểm khi không có chương trình đổi điểm nào đang hoạt động,- Không có chương trình đổi điểm 'Đang hoạt động',- Không có chương trình đổi điểm 'Đang hoạt động',"1. Đảm bảo tất cả CT đổi điểm đang 'Ngừng hoạt động'
+2. Vào màn Bán hàng
+3. Chọn KH có điểm
+4. Thêm sản phẩm
+5. Tìm checkbox 'Đổi điểm'",Cao,Màn đổi trả hàng,"- Checkbox 'Đổi điểm' không hiển thị hoặc bị vô hiệu
+- Không cho phép đổi điểm",,,,
+FUNC_LOYALTY__37,[NEG] KH không đủ điểm để đổi cho đơn hàng,"- CT đổi điểm: 1 điểm = 1.000đ, tối thiểu 200.000đ
+- KH chỉ có 50 điểm
+- Đơn hàng: 300.000đ (cần ít nhất 200 điểm để đổi phần tối thiểu)","- CT đổi điểm: 1 điểm = 1.000đ, tối thiểu 200.000đ
+- KH chỉ có 50 điểm
+- Đơn hàng: 300.000đ (cần ít nhất 200 điểm để đổi phần tối thiểu)","1. Chọn KH có 50 điểm
+2. Tạo đơn 300.000đ
+3. Tick 'Đổi điểm'
+4. Nhấn Thanh toán",Cao,Màn đổi trả hàng,"- Hệ thống cảnh báo: 'Số điểm không đủ'
+- Hiển thị điểm hiện có (50) và điểm cần (tối thiểu)
+- Không hoàn tất thanh toán bằng điểm",,,,
+FUNC_LOYALTY__38,[NEG] Giá trị đơn hàng không đạt tối thiểu để đổi điểm,"- CT đổi điểm: tối thiểu đơn 300.000đ
+- Đơn hàng chỉ có 200.000đ
+- KH có đủ điểm","- CT đổi điểm: tối thiểu đơn 300.000đ
+- Đơn hàng chỉ có 200.000đ
+- KH có đủ điểm","1. Tạo đơn 200.000đ
+2. Chọn KH có nhiều điểm
+3. Tick 'Đổi điểm'
+4. Nhấn Thanh toán",Cao,Màn đổi trả hàng,"- Hệ thống không cho đổi điểm
+- Thông báo: 'Đơn hàng chưa đạt giá trị tối thiểu để đổi điểm (300.000đ)'",,,,
+FUNC_LOYALTY__39,[NEG] Chọn KH không có điểm tích lũy và cố đổi điểm,"- KH mới, điểm = 0
+- CT đổi điểm đang hoạt động","- KH mới, điểm = 0
+- CT đổi điểm đang hoạt động","1. Chọn KH mới (điểm = 0)
+2. Thêm sản phẩm
+3. Tick 'Đổi điểm'
+4. Nhấn Thanh toán",Cao,Màn đổi trả hàng,"- Hệ thống thông báo: 'Khách hàng không có điểm tích lũy'
+- Không cho thanh toán bằng điểm
+- Hoặc checkbox 'Đổi điểm' tự động vô hiệu khi điểm = 0",,,,

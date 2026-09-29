@@ -1,0 +1,42 @@
+{'startTime': '2026-09-25T15:33:13.453Z', 'duration': 464934.226, 'expected': 18, 'skipped': 1, 'unexpected': 8, 'flaky': 0}
+
+ failed | 33_010_001 — Màn Lịch sử người dùng mở được và xếp mới nhất trước
+   @ vai province : API SSHOP-401 · - bản ghi · bảng 0 dòng
+   @ đo : 20 dòng · dòng đầu "1 Quản lý vai trò & phân quyền Xóa A7LS33_403375 AUTO7_TCT AUTO7_TCT Admin Tong cong ty Buu dien Viet Nam 42.114.78.51 25/09/2026 22:33:24"
+   ! Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 33_020_001 — Đổi bộ lọc luôn quay về trang đầu
+   @ vai province : API SSHOP-401 · - bản ghi · bảng 0 dòng
+   @ đo : trang 2: {"page":"1","size":"20"} · đổi lọc: {"page":"0","size":"20","action":"CREATE"} · trang đang chọn "1"
+   ! Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 33_020_002 — Nhiều điều kiện lọc cùng lúc là AND
+   @ vai province : API SSHOP-401 · - bản ghi · bảng 0 dòng
+   @ đo : chỉ A 715 · A+B 52 · dòng sai 0 · CREATE rác ở A: true, ở A+B: false
+   ! Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 33_030_001 — Chi tiết thao tác hiện thuộc tính đã đổi kèm trước và sau
+   @ vai province : API SSHOP-401 · - bản ghi · bảng 0 dòng
+   @ bảng so sánh : Tên vai trò roleName A7LS33 rác A7LS33_519676 A7LS33 rác A7LS33_519676 SỬA | Ghi chú note rác 33 trước rác 33 sau
+   ! Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 33_040_001 — Đối chiếu toàn văn dữ liệu trước và sau
+   @ vai province : API SSHOP-401 · - bản ghi · bảng 0 dòng
+   @ JSON : Trước thay đổi: { "role": { "roleId": 111, "roleCode": "A7LS33_557168", "roleName": "A7LS33 rác A7LS33_557168", "chainId": 626, "allowedLevel": "DIEM_BAN", "note": "rác 33 trước", "active": true, "functions": [] }, "functions": [] } Sau thay đổi: { "role": { "roleId": 111, "roleCode": "A7LS33_557168
+   ! Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 33_050_001 — Trang chủ hiện mười thao tác mới nhất
+   @ vai province : API SSHOP-401 · - bản ghi · bảng 0 dòng
+   ! Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 33_050_002 — Mở chi tiết ngay từ Trang chủ
+   @ vai province : API SSHOP-401 · - bản ghi · bảng 0 dòng
+   ! Error: Vai tỉnh KHÔNG đọc được lịch sử thao tác (SSHOP-401 Không có quyền truy cập)  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ skipped | 33_010_004 — Hiển thị dấu ba gạch khi không tra được tên
+   @ skip : 8 trang đầu không có bản ghi nào thiếu tên người thao tác / vai trò / đơn vị.
+
+ failed | 33_060_001 — Danh sách lịch sử rỗng khi kỳ không có thao tác
+   @ đo : null · undefined · undefined
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "undefined"
+{'startTime': '2026-09-25T15:40:59.060Z', 'duration': 15073.640000000001, 'expected': 16, 'skipped': 0, 'unexpected': 0, 'flaky': 0}

@@ -1,0 +1,288 @@
+,Chức năng,,QUẢN LÝ ĐẶT HÀNG,,,,,,,,,,
+,Mã Testcase,,TaiChinh,,,,,,,,,,
+,Tổng các tình huống kiểm thử,,97,,,,,,,,,,
+,Chưa thực hiện,,30,,,,,,,,,,
+,Đạt yêu cầu,,62,,,,,,,,,,
+,Không đạt yêu cầu,,5,,,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,,,
+,,,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,SCRIPT,
+,,,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,,,
+,Tổng quan,,,,,,,,,,,,
+TaiChinh_1,Kiểm tra Giao diện,,"1. Chọn Tài chính
+2. Chọn tổng quan",TB,Tổng quan thu chi,"- Hiển thị title 'Tổng quan thu chi'
+- Hiển thị bảng báo cáo phiếu thu với 7 tháng gần nhất
+- Hiển thị bảng báo cáo phiếu chi với 7 tháng gần nhất
+- Bộ lọc thời gian chọn theo tháng/năm",,Pass,,,,,
+TaiChinh_2,Kiểm tra phân loại phiếu thu,,"1. Chọn Tài chính
+2. Chọn tổng quan",TB,Tổng quan thu chi,- Hiển thị danh sách các loại phiếu thu phát sinh trong của hàng ở báo cáo phiếu thu,,,,,,,
+TaiChinh_3,Kiểm tra phân loại phiếu chi,,"1. Chọn Tài chính
+2. Chọn tổng quan",TB,Tổng quan thu chi,- Hiển thị danh sách các loại phiếu thu phát sinh trong của hàng ở báo cáo phiếu chi,,,,,,,
+TaiChinh_4,Kiểm tra bộ lọc thời gian,,"1. Chọn Tài chính
+2. Chọn tổng quan
+3. Chon lọc thời gian",TB,Tổng quan thu chi,"- Hiển thị danh sách các loại phiếu , số tiền tương ứng với thời gian","- Hiển thị danh sách các loại phiếu , số tiền tương ứng với thời gian",,,,,,
+,Quản lý quỹ,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,Phiếu chi,,,,,,,,,,,,
+TaiChinh_5,Hiển thị giao diện ,,"1. Vào Tài chính 
+2. Phiếu chi",Cao,Quản lý phiếu chi,"Hiển thị title ""Quản lý phiếu chi"" 
+Hiển thị ô tìm kiếm theo mã, bộ lọc đối tượng nhận, bộ lọc khoản thời gian.
+Hiển thị button: Danh mục phiếu chi, Thêm phiếu chi, Xuất excel
+Tab : Tất cả, Tiền mặt, Chuyển khoản, Thẻ VISA","Hiển thị title ""Quản lý phiếu chi"" 
+Hiển thị ô tìm kiếm theo mã, bộ lọc đối tượng nhận, bộ lọc khoản thời gian.
+Hiển thị button: Danh mục phiếu chi, Thêm phiếu chi, Xuất excel
+Tab : Tất cả, Tiền mặt, Chuyển khoản, Thẻ VISA",Pass,,,,,Phiếu chi
+TaiChinh_6,Hiển thị mặc định,Có dữ liệu phiếu chi,1. Vào Tài chính -> Phiếu chi,Cao,Quản lý phiếu chi,"Hiển thị đúng danh sách phiếu chi trong ngày, tổng tiền chi.",,,,,,,Phiếu chi
+TaiChinh_7,Lọc & Tìm kiếm,Có nhiều phiếu chi khác nhau,"1. Sử dụng bộ lọc thời gian, nhập mã phiếu chi, click các tab phương thức thanh toán",Cao,Quản lý phiếu chi,Danh sách và tổng tiền chi thay đổi chính xác theo từng điều kiện lọc.,,,,,,,Phiếu chi
+TaiChinh_8,Thêm danh mục phiếu chi,Tài khoản có quyền,"1. Chọn ""Danh mục phiếu chi""
+
+2. Thêm mới (VD: Chi phí điện)
+
+3. Chọn icon và Lưu",Cao,Danh mục phiếu chi,"Thêm thành công, hiển thị trong danh sách danh mục chi. Cảnh báo lỗi nếu để trống tên.",,,,,,,Phiếu chi
+TaiChinh_9,Thêm phiếu chi thủ công,Tài khoản có quyền,"1. Bấm ""Thêm phiếu chi""
+
+2. Nhập đủ thông tin bắt buộc (Cửa hàng, Danh mục, Số tiền, Phương thức)
+
+3. Lưu",Cao,Thêm phiếu chi,Tạo thành công. Tổng tiền chi trên màn quản lý tăng lên tương ứng. Danh mục ghi nhận đúng là danh mục đã chọn,,,,,,,Phiếu chi
+TaiChinh_10,Thêm phiếu chi bỏ trống các trường bắt buộc,Tài khoản có quyền,"1. Bấm ""Thêm phiếu chi""
+
+2. Bỏ trống thông tin bắt buộc (Cửa hàng, Danh mục, Số tiền, Phương thức)
+
+3. Lưu",Cao,Thêm phiếu chi,"Hiển thị cảnh báo, không tạo được phiếu chi",,,,,,,Phiếu chi
+TaiChinh_11,Đổi trả: Hoàn tiền cho khách,Đơn hàng đã thanh toán,"1. Đổi trả -> Xác nhận trả hàng và hoàn tiền
+
+2. Kiểm tra Phiếu chi",Cao,Đổi trả & Tài chính,Sinh phiếu chi tự động. Danh mục: Chi tiền đơn hoàn trả.,,,,,,,Phiếu chi
+TaiChinh_12,Chi Hoàn tiền đơn hàng huỷ,Đơn hàng đã thanh toán,"1. Huỷ Đơn hàng
+
+2. Kiểm tra Phiếu chi",Cao,Đổi trả & Tài chính,Sinh phiếu chi tự động. Danh mục: Hoàn tiền đơn hàng hủy,,,,,,,Phiếu chi
+TaiChinh_13,Kho: Thanh toán phiếu nhập kho,Có phiếu nhập chưa thanh toán,"1. Kho -> Thanh toán phiếu nhập kho
+
+2. Kiểm tra Phiếu chi",Cao,Kho & Tài chính,Sinh phiếu chi tự động để thanh toán tiền nhập kho.,,,,,,,Phiếu chi
+TaiChinh_14,Kho: Thanh toán NCC,Có công nợ NCC,"1. Kho -> Thanh toán đơn hàng cho NCC
+
+2. Kiểm tra Phiếu chi",Cao,Kho & Tài chính,Sinh phiếu chi tự động. Danh mục: Trả nhà cung cấp.,,,,,,,Phiếu chi
+TaiChinh_15,Kho: Trả tiền ĐV Vận tải,Cần thanh toán cước phí,"1. Kho/Vận chuyển -> Thanh toán tiền giao hàng cho ĐVVT
+
+2. Kiểm tra Phiếu chi",TB,Vận chuyển & Tài chính,Sinh phiếu chi tự động. Danh mục: Giao hàng. Chi cho: Đơn vị vận tải.,,,,,,,Phiếu chi
+TaiChinh_16,Cấp cao xem phiếu cấp dưới,Có phiếu ở cấp Điểm bán,"1. Đăng nhập TK cấp Tỉnh (hoặc Xã, TCT)
+
+2. Vào Phiếu thu / Phiếu chi",Cao,Quản lý thu/chi,Nhìn thấy toàn bộ phiếu thu/chi của chính mình VÀ của các cấp dưới trực thuộc.,,,,,,,Phiếu chi
+TaiChinh_17,Cấp dưới xem phiếu cấp cao,Có phiếu ở cấp Tỉnh,"1. Đăng nhập TK cấp Xã (hoặc Điểm bán)
+
+2. Vào Phiếu thu / Phiếu chi",Cao,Quản lý thu/chi,Không nhìn thấy phiếu của cấp trên. Chỉ hiển thị phiếu do chính cấp mình tạo.,,,,,,,Phiếu chi
+TaiChinh_18,Ngang hàng xem phiếu nhau,Có phiếu ở Điểm bán A,"1. Đăng nhập TK Điểm bán B
+
+2. Tìm mã phiếu của Điểm bán A",Cao,Quản lý thu/chi,Không nhìn thấy phiếu của đơn vị ngang hàng.,,,,,,,Phiếu chi
+,Phiếu thu,,,,,,,,,,,,
+TaiChinh_19,Hiển thị giao diện ,,"1. Vào Tài chính 
+2. Phiếu thu",Cao,Quản lý phiếu chi,"Hiển thị title ""Quản lý phiếu thu"" 
+Hiển thị ô tìm kiếm theo mã, bộ lọc đối tượng nhận, bộ lọc khoản thời gian.
+Hiển thị button: Danh mục phiếu chi, Thêm phiếu chi, Xuất excel
+Tab : Tất cả, Tiền mặt, Chuyển khoản, Thẻ VISA","Hiển thị title ""Quản lý phiếu thu"" 
+Hiển thị ô tìm kiếm theo mã, bộ lọc đối tượng nhận, bộ lọc khoản thời gian.
+Hiển thị button: Danh mục phiếu chi, Thêm phiếu chi, Xuất excel
+Tab : Tất cả, Tiền mặt, Chuyển khoản, Thẻ VISA",Pass,,,,,Phiếu thu
+TaiChinh_20,Hiển thị mặc định,Có dữ liệu phiếu thu,"1. Vào Tài chính
+2. Phiếu thu",Cao,Quản lý phiếu thu,"Hiển thị đúng danh sách phiếu thu trong ngày, tổng tiền thu.",,,,,,,Phiếu thu
+TaiChinh_21,Lọc & Tìm kiếm,Có nhiều phiếu thu khác nhau,"1. Sử dụng bộ lọc thời gian, nhập mã phiếu thu, click các tab phương thức thanh toán",Cao,Quản lý phiếu thu,Danh sách và tổng tiền thu thay đổi chính xác theo từng điều kiện lọc.,,,,,,,Phiếu thu
+TaiChinh_22,Thêm danh mục phiếu thu,Tài khoản có quyền,"1. Chọn ""Danh mục phiếu thu""
+
+2. Thêm mới (VD: Bổ sung vốn)
+
+3. Chọn icon và Lưu",Cao,Danh mục phiếu thu,"Thêm thành công, hiển thị trong danh sách danh mục thu. Cảnh báo lỗi nếu để trống tên.",,,,,,,Phiếu thu
+TaiChinh_23,Thêm phiếu thu thủ công,Tài khoản có quyền,"1. Bấm ""Thêm phiếu thu""
+
+2. Nhập đủ thông tin bắt buộc (Cửa hàng, Danh mục, Số tiền, Phương thức)
+
+3. Lưu",Cao,Thêm phiếu thu,Tạo thành công. Tổng tiền thu trên màn quản lý tăng lên tương ứng. Cảnh báo lỗi nếu thiếu trường bắt buộc.,,,,,,,Phiếu thu
+TaiChinh_24,Bán hàng: Khách thanh toán đơn,Có đơn hàng mới,"1. Bán hàng -> Tạo và thanh toán đơn
+
+2. Kiểm tra Phiếu thu",Cao,Bán hàng & Tài chính,Sinh phiếu thu tự động. Danh mục: Thanh toán đơn hàng. Nguồn thu: Khách hàng.,,,,,,,Phiếu thu
+TaiChinh_25,Bán hàng: Đơn nháp/Chưa thanh toán,Tạo đơn nháp,"1. Bán hàng -> Tạo đơn nháp
+
+2. Kiểm tra Phiếu thu",Cao,Bán hàng & Tài chính,KHÔNG phát sinh phiếu thu.,,,,,,,Phiếu thu
+TaiChinh_26,Đổi trả: Thu chênh lệch đổi hàng,Khách đổi SP giá cao hơn,"1. Đổi trả -> Xác nhận thu bù tiền
+
+2. Kiểm tra Phiếu thu",Cao,Đổi trả & Tài chính,Sinh phiếu thu tự động cho khoản tiền phụ phí chênh lệch.,,,,,,,Phiếu thu
+TaiChinh_27,Đổi trả: Thu chi phí trả hàng,Khách đổi SP giá cao hơn,"1. Đổi trả -> Xác nhận thu bù tiền
+
+2. Kiểm tra Phiếu thu",Cao,Đổi trả & Tài chính,Sinh phiếu thu tự động cho khoản tiền phụ phí chênh lệch.,,,,,,,Phiếu thu
+TaiChinh_28,Kho: Thu hồi nợ nhân viên (hỏng/thiếu),NV làm hỏng/thiếu hàng,"1. Kho -> Ghi nhận lỗi và tạo thu hồi công nợ NV
+
+2. Kiểm tra Phiếu thu",Cao,Kho & Tài chính,Sinh phiếu thu tự động. Danh mục: Thu hồi nợ. Đối tượng: Nhân viên.,,,,,,,Phiếu thu
+TaiChinh_29,Kho: Thu hồi nợ ĐV Vận tải,ĐVVT làm hỏng hàng,"1. Kho -> Ghi nhận lỗi và tạo thu hồi công nợ ĐVVT
+
+2. Kiểm tra Phiếu thu",TB,Kho & Tài chính,Sinh phiếu thu tự động. Danh mục: Thu hồi nợ. Đối tượng: Đơn vị vận tải.,,,,,,,Phiếu thu
+TaiChinh_30,TCT: Nhận thanh toán từ Tỉnh,Tỉnh thanh toán nợ nhận kho,"1. Tỉnh chuyển tiền thanh toán
+
+2. TCT kiểm tra Phiếu thu",Cao,Kho & Tài chính (TCT),"Tại tài khoản TCT, sinh phiếu thu tự động ghi nhận khoản thanh toán từ cấp Tỉnh.",,,,,,,Phiếu thu
+TaiChinh_31,Cấp cao xem phiếu cấp dưới,Có phiếu ở cấp Điểm bán,"1. Đăng nhập TK cấp Tỉnh (hoặc Xã, TCT)
+
+2. Vào Phiếu thu / Phiếu chi",Cao,Quản lý thu/chi,Nhìn thấy toàn bộ phiếu thu/chi của chính mình VÀ của các cấp dưới trực thuộc.,,,,,,,Phiếu thu
+TaiChinh_32,Cấp dưới xem phiếu cấp cao,Có phiếu ở cấp Tỉnh,"1. Đăng nhập TK cấp Xã (hoặc Điểm bán)
+
+2. Vào Phiếu thu / Phiếu chi",Cao,Quản lý thu/chi,Không nhìn thấy phiếu của cấp trên. Chỉ hiển thị phiếu do chính cấp mình tạo.,,,,,,,Phiếu thu
+TaiChinh_33,Ngang hàng xem phiếu nhau,Có phiếu ở Điểm bán A,"1. Đăng nhập TK Điểm bán B
+
+2. Tìm mã phiếu của Điểm bán A",Cao,Quản lý thu/chi,Không nhìn thấy phiếu của đơn vị ngang hàng.,,,,,,,Phiếu thu
+,Công nợ khách hàng,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,Công nợ nhân viên,,,,,,,,,,,,
+TaiChinh_34,Kiểm tra giao diện,,"1. Chọn Tài chính
+2. Chọn Công nợ nhân viên",TB,Công nợ nhân viên,"- Hiển thị title ""Công nợ nhân viên""
+- Ô tìm kiếm tên/ SĐT nhân viên
+- Lọc chọn điểm bán/kho
+- Bộ lọc chọn trạng thái thanh toán
+- Danh sách công nợ với các cột: STT, Nhân viên, Tổng nợ, Đã trả, Còn lại, Khoản chưa thanh toán, Hành động
+- Phân trang 
+- Button làm mới, cài đặt hiển thị, phóng to/thu nhỏ","- Hiển thị title ""Công nợ nhân viên""
+- Ô tìm kiếm tên/ SĐT nhân viên
+- Lọc chọn điểm bán/kho
+- Bộ lọc chọn trạng thái thanh toán
+- Danh sách công nợ với các cột: STT, Nhân viên, Tổng nợ, Đã trả, Còn lại, Khoản chưa thanh toán, Hành động
+- Phân trang 
+- Button làm mới, cài đặt hiển thị, phóng to/thu nhỏ",Pass,,,,,Công nợ nhân viên
+TaiChinh_35,Kiểm tra tìm kiếm tên nhân viên,,"1. Chọn Tài chính
+2. Chọn Công nợ nhân viên
+3. Nhập tên nhân viên",,Công nợ nhân viên,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với tên đã nhập,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với tên đã nhập,Pass,,,,,Công nợ nhân viên
+TaiChinh_36,Kiểm tra tìm kiếm bằng số điện thoại nhân viên,,"1. Chọn Tài chính
+2. Chọn Công nợ nhân viên
+3. Nhập SĐT nhân viên",,Công nợ nhân viên,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với SĐT đã nhập,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với SĐT đã nhập,Pass,,,,,Công nợ nhân viên
+TaiChinh_37,Kiểm tra bộ lọc chọn điểm bán/kho,,"1. Chọn Tài chính
+2. Chọn Công nợ nhân viên
+3. Chọn điểm bán",,Công nợ nhân viên,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với điểm bán/kho đã chọn,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với điểm bán/kho đã chọn,Pass,,,,,Công nợ nhân viên
+TaiChinh_38,Kiểm tra bộ lọc trạng thái thanh toán,,"1. Chọn Tài chính
+2. Chọn Công nợ nhân viên
+3. Chọn trạng thái thanh toán",,Công nợ nhân viên,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với trạng thái thanh toán đã chọn,- Hiển thị lịch sử ghi nợ cho nhân viên tương ứng với trạng thái thanh toán đã chọn,Pass,,,,,Công nợ nhân viên
+TaiChinh_39,Kiểm tra khi nợ bồi thường khi kiểm kho thiếu,,"1. Chọn kiểm kho
+2. Tạo kiểm kho thiếu
+3. Chọn ghi nợ bồi thường cho nhân viên
+4. Truy cập công nợ nhân viên",,Công nợ nhân viên,"- Hiển thị lịch sử ghi nợ cho nhân viên , loại phiếu là phiếu kiểm kho","- Hiển thị lịch sử ghi nợ cho nhân viên , loại phiếu là phiếu kiểm kho",Pass,,,,,Công nợ nhân viên
+,,,,,,,,,,,,,
+,Công nợ cửa hàng,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,Công nợ NCC,,,,,,,,,,,,
+TaiChinh_40,Kiểm tra giao diện,,"1. Chọn Tài chính
+2. Chọn Công nợ NCC",Cao,Công nợ NCC,"Hiển thị title"" Công nợ NCC""
+Ô tìm kiếm tên NCC
+Danh sách công nợ nhà cung cấp( số nhà cung cấp phát sinh công nợ) với các cột: #, Cửa hàng / kho, Nhà cung cấp, Cần thanh toán. Đã thanh toán, Hoàn trả đơn hàng, Còn nợ, Thao tác","Hiển thị title"" Công nợ NCC""
+Ô tìm kiếm tên NCC
+Danh sách công nợ nhà cung cấp( số nhà cung cấp phát sinh công nợ) với các cột: #, Cửa hàng / kho, Nhà cung cấp, Cần thanh toán. Đã thanh toán, Hoàn trả đơn hàng, Còn nợ, Thao tác",Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_41,Kiểm tra tìm kiếm tên NCC,,"1. Chọn Tài chính
+2. Chọn Công nợ NCC
+3. Nhập tên NCC",Cao,Công nợ NCC,Hiển thị thông tin NCC tương ứng,Hiển thị thông tin NCC tương ứng,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_42,Kiểm tra phân trang,,"1. Chọn Tài chính
+2. Chọn Công nợ NCC
+3. Nhập tên NCC",Cao,Công nợ NCC,Hiển thị thông tin NCC tương ứng,Hiển thị thông tin NCC tương ứng,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_43,Thanh toán công nợ thành công,NCC đang còn nợ,"1. Chọn Thanh toán
+2. Nhập số tiền 
+3. Xác nhận",Cao,Lịch sử công nợ NCC,Giảm công nợ NCC đúng số tiền thanh toán,Thanh toán báo Thực thể không tồn tại,Fail,,,,,Công nợ nhà cung cấp
+TaiChinh_44,Thanh toán sinh phiếu thu,Thanh toán thành công,"1. Chọn Tài chính
+2. Chọn phiếu chi",Cao,Quản lý phiếu chi,Sinh ra 1 phiếu chi  tương ứng giao dịch thanh toán,Không sinh phiếu chi,Fail,,,,,Công nợ nhà cung cấp
+TaiChinh_45,Thanh toán lớn hơn số nợ,Nợ NCC = 10 triệu,1. Nhập thanh toán 12 triệu,Cao,Lịch sử công nợ NCC,Hiển thị thành số tiền hiện tại đang còn nợ,Hiển thị thành số tiền hiện tại đang còn nợ,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_46,Thanh toán bằng đúng số nợ,Nợ NCC = 10 triệu,1. Nhập thanh toán 10 triệu,Cao,Lịch sử công nợ NCC,Công nợ về 0 và sinh phiếu chi,Không sinh phiếu chi,Fail,,,,,Công nợ nhà cung cấp
+TaiChinh_47,Thanh toán nhiều lần cho 1 PO,PO còn công nợ,"1. Thanh toán lần 1, lần 2, lần 3",Cao,Lịch sử công nợ NCC,Công nợ giảm đúng sau mỗi lần thanh toán,Công nợ giảm đúng sau mỗi lần thanh toán,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_48,Lưu lịch sử từng lần thanh toán,Đã thanh toán nhiều lần,"1. Chọn Tài chính
+2. Chọn Công nợ NCC
+3. Chọn nhà cung cấp
+4. Chọn xem chi tiết 1 phiếu PO",Cao,Lịch sử thanh toán,Hiển thị đầy đủ từng giao dịch thanh toán riêng biệt,Hiển thị đầy đủ từng giao dịch thanh toán riêng biệt,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_49,Kiểm tra tổng công nợ sau nhiều lần thanh toán,Đã thanh toán nhiều lần,"1. Chọn Tài chính
+2. Chọn Công nợ NCC
+3. Chọn nhà cung cấp
+4. Chọn xem chi tiết 1 phiếu PO
+5. Đối chiếu số dư công nợ",Cao,Lịch sử công nợ NCC,Tổng nợ = Nợ gốc - Tổng đã thanh toán,Tổng nợ = Nợ gốc - Tổng đã thanh toán,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_50,Gạch nợ thành công,NCC còn nợ,"1. Chọn Gạch nợ
+2. Nhập số tiền
+3. Xác nhận",Cao,Lịch sử công nợ NCC,Giảm công nợ NCC đúng số tiền gạch nợ,Giảm công nợ NCC đúng số tiền gạch nợ,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_51,Gạch nợ không sinh phiếu thu,Gạch nợ thành công,"1. Chọn Tài chính
+2. Chọn phiếu chi",Cao,Quản lý phiếu chi,Không phát sinh phiếu thu,Không phát sinh phiếu thu,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_52,Gạch nợ vượt số nợ,Nợ NCC = 5 triệu,Nhập gạch nợ 6 triệu,Cao,Lịch sử công nợ NCC,Hiển thị về là số tiền hiện tại đang nợ,Hiển thị về là số tiền hiện tại đang nợ,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_53,Lưu lịch sử gạch nợ,Đã gạch nợ,"1. Chọn Tài chính
+2. Chọn Công nợ NCC
+3. Chọn nhà cung cấp
+4. Xem lịch sử giao dịch",Cao,Lịch sử công nợ,Hiển thị giao dịch gạch nợ trong lịch sử,Hiển thị giao dịch gạch nợ trong lịch sử,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_54,Ghi nợ thành công,User có quyền ghi nợ,"1. Chọn Ghi nợ
+2. Nhập số tiền
+3. Xác nhận",Cao,Lịch sử công nợ NCC,Công nợ NCC tăng đúng số tiền ghi nợ,Công nợ NCC tăng đúng số tiền ghi nợ,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_55,Ghi nợ không sinh phiếu chi,Ghi nợ thành công,"1. Chọn Tài chính
+2. Chọn phiếu thu",Cao,Quản lý phiếu thu,Không phát sinh phiếu chi,Không phát sinh phiếu chi,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_56,Ghi nợ số tiền âm,Đang mở popup ghi nợ,1. Nhập số tiền âm,Cao,Lịch sử công nợ NCC,Hiển thị mặc định là số 0,Hiển thị mặc định là số 1,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_57,Ghi nợ số tiền bằng 0,Đang mở popup ghi nợ,1. Nhập số tiền bằng 0,Cao,Lịch sử công nợ NCC,Báo lỗi số tiền phải lớn hơn 0,Báo lỗi số tiền phải lớn hơn 1,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_58,Lưu lịch sử ghi nợ,Đã ghi nợ,1. Mở tab Lịch sử ghi nợ,Cao,Lịch sử ghi nợ,Hiển thị giao dịch ghi nợ vừa tạo,Hiển thị giao dịch ghi nợ vừa tạo,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_59,Kiểm tra tab Lịch sử thanh toán,Có giao dịch thanh toán,1. Mở tab Lịch sử thanh toán,TB,Lịch sử công nợ,Hiển thị đầy đủ các lần thanh toán,Hiển thị đầy đủ các lần thanh toán,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_60,Kiểm tra tab Lịch sử ghi nợ,Có giao dịch ghi nợ,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Hiển thị đầy đủ các lần ghi nợ,Hiển thị đầy đủ các lần ghi nợ,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_61,Kiểm tra tab Lịch sử trả hàng NCC,Có giao dịch trả hàng,1. Mở tab Lịch sử trả hàng NCC,TB,Lịch sử công nợ,Hiển thị đầy đủ các giao dịch trả hàng,Hiển thị đầy đủ các giao dịch trả hàng,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_62,Đối chiếu tổng còn nợ,"Có giao dịch ghi nợ, thanh toán, gạch nợ",1. Tính lại số dư công nợ: Tổng còn nợ,Cao,Lịch sử công nợ NCC,Tổng còn nợ = Tổng ghi nợ - Tổng thanh toán - Tổng gạch nợ,Tổng còn nợ = Tổng ghi nợ - Tổng thanh toán - Tổng gạch nợ,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_63,Thanh toán một phần PO,PO có giá trị 100 triệu,1. Thanh toán 30 triệu,Cao,Lịch sử công nợ NCC,Còn lại công nợ PO là 70 triệu,Còn lại công nợ PO là 70 triệu,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_64,Thanh toán nhiều lần đến hết nợ,PO có giá trị 100 triệu,"1. Thanh toán 30 triệu
+2. 20 triệu
+3. 50 triệu",Cao,Lịch sử công nợ NCC,Sau lần cuối công nợ PO bằng 0,Sau lần cuối công nợ PO bằng 1,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_65,Kiểm tra lịch sử khi thanh toán nhiều lần,PO được thanh toán nhiều lần,1. Mở tab Lịch sử thanh toán,Cao,Lịch sử thanh toán,Hiển thị 3 giao dịch thanh toán riêng biệt,Hiển thị 3 giao dịch thanh toán riêng biệt,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_66,Gạch nợ một phần công nợ,NCC còn nợ 50 triệu,1. Gạch nợ 10 triệu,Cao,Lịch sử công nợ NCC,Công nợ còn lại 40 triệu,Công nợ còn lại 40 triệu,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_67,Ghi nợ bổ sung sau khi đã thanh toán,PO đã thanh toán một phần,1. Ghi nợ thêm 20 triệu,Cao,Lịch sử công nợ NCC,Công nợ tăng thêm 20 triệu,Công nợ tăng thêm 20 triệu,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_68,Xuất Excel lịch sử công nợ,Có dữ liệu công nợ,1. Nhấn Xuất excel,TB,Lịch sử công nợ,Tải file thành công và dữ liệu chính xác,Không tải được file,Fail,,,,,Công nợ nhà cung cấp
+TaiChinh_69,Kiểm tra ghi nhận công nợ khi TCT đặt hàng thẳng về tỉnh,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Ghi nhận công nợ giữ TCT và NCC,Ghi nhận công nợ giữ TCT và NCC,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_70,Kiểm tra trừ nợ khi xuất trả hàng NCC,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc - Tổng đã trả hàng,Tổng nợ = Nợ gốc - Tổng đã trả hàng,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_71,Kiểm tra ghi nhận công nợ NCC của tỉnh,Tỉnh đặt hàng NCC của tỉnh,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Ghi nhận công nợ giữ Tỉnh và NCC,Ghi nhận công nợ giữ Tỉnh và NCC,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_72,Kiểm tra ghi nhận công nợ NCC khi nhận giao 1 phần,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc + Số tiền giao 1 phần chưa thanh toán,Tổng nợ = Nợ gốc + Số tiền giao 1 phần chưa thanh toán,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_73,Kiểm tra ghi nhận công nợ NCC với sản phẩm có VAT,,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc + Số tiền đơn hàng bao gồm cả VAT sản phẩm,Tổng nợ = Nợ gốc + Số tiền đơn hàng bao gồm cả VAT sản phẩm,Pass,,,,,Công nợ nhà cung cấp
+TaiChinh_74,"Kiểm tra ghi nhận công nợ NCC với sản phẩm có khuyến mãi, quà tặng",,1. Mở tab Lịch sử ghi nợ,TB,Lịch sử công nợ,Tổng nợ = Nợ gốc + Số tiền đơn hàng đã giảm giá và số tiền hàng tặng là 0 đ,Tổng nợ = Nợ gốc + Số tiền đơn hàng đã giảm giá và số tiền hàng tặng là 0 đ,Pass,,,,,Công nợ nhà cung cấp
+,Công nợ Tỉnh - TCT,,,,,,,,,,,,
+TaiChinh_75,Kiểm tra giao diện màn hình Công nợ nội bộ TCT,User có quyền truy cập màn hình Công nợ Tỉnh - TCT,1. Đăng nhập hệ thống.2. Vào Tài chính → Công nợ Tỉnh - TCT.3. Quan sát giao diện màn hình.,Cao,Công nợ nội bộ - Tổng công ty,"Hiển thị đầy đủ các thành phần: bộ lọc tỉnh, số tỉnh đang nợ, tổng công nợ còn lại, danh sách công nợ, cột STT, Bưu điện tỉnh, Tổng giá trị nhận, Đã thanh toán, Đã trả hàng, Còn nợ, Thao tác.","Hiển thị đầy đủ các thành phần: bộ lọc tỉnh, số tỉnh đang nợ, tổng công nợ còn lại, danh sách công nợ, cột STT, Bưu điện tỉnh, Tổng giá trị nhận, Đã thanh toán, Đã trả hàng, Còn nợ, Thao tác.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_76,Kiểm tra giao diện tab Phiếu nợ,Có ít nhất 1 tỉnh phát sinh công nợ,1. Mở màn hình Công nợ nội bộ TCT.2. Chọn xem chi tiết công nợ của 1 tỉnh.3. Chọn tab Phiếu nợ.,Cao,Popup chi tiết công nợ - Tab Phiếu nợ,"Hiển thị đầy đủ các cột: Mã phiếu, Nguồn, Ngày, Tổng, Đã trả, Còn nợ, Trạng thái. Dữ liệu căn chỉnh đúng định dạng tiền tệ.","Hiển thị đầy đủ các cột: Mã phiếu, Nguồn, Ngày, Tổng, Đã trả, Còn nợ, Trạng thái. Dữ liệu căn chỉnh đúng định dạng tiền tệ.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_77,Kiểm tra giao diện tab Phiếu thanh toán,Có dữ liệu thanh toán công nợ,1. Mở chi tiết công nợ tỉnh.2. Chọn tab Phiếu thanh toán.,Cao,Popup chi tiết công nợ - Tab Phiếu thanh toán,"Hiển thị đầy đủ các cột: Thời gian khai báo, Số tiền, Trạng thái, Ghi chú, Thao tác. Trạng thái hiển thị màu sắc đúng theo quy định.","Hiển thị đầy đủ các cột: Thời gian khai báo, Số tiền, Trạng thái, Ghi chú, Thao tác. Trạng thái hiển thị màu sắc đúng theo quy định.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_78,Kiểm tra giao diện tab Lịch sử,Có phát sinh công nợ hoặc thanh toán,1. Mở chi tiết công nợ tỉnh.2. Chọn tab Lịch sử.,TB,Popup chi tiết công nợ - Tab Lịch sử,"Hiển thị đầy đủ các cột: Thời gian, Loại, Nguồn, Số tiền, Còn lại sau. Dữ liệu được sắp xếp theo thời gian mới nhất trước.","Hiển thị đầy đủ các cột: Thời gian, Loại, Nguồn, Số tiền, Còn lại sau. Dữ liệu được sắp xếp theo thời gian mới nhất trước.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_79,Kiểm tra giao diện popup Khai báo thanh toán,Có công nợ chưa thanh toán,"1. Mở chi tiết công nợ tỉnh.2. Chọn ""Khai báo thanh toán"".",Cao,Popup Khai báo phiếu thanh toán công nợ nội bộ,"Hiển thị đầy đủ thông tin: Còn nợ, Đang phân bổ, ô nhập số tiền thanh toán, nút Xóa phân bổ, danh sách phiếu nợ và cột Số tiền trả. Các trường hiển thị đúng định dạng.","Hiển thị đầy đủ thông tin: Còn nợ, Đang phân bổ, ô nhập số tiền thanh toán, nút Xóa phân bổ, danh sách phiếu nợ và cột Số tiền trả. Các trường hiển thị đúng định dạng.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_80,Phát sinh phiếu công nợ khi TCT đặt hàng NCC chuyển thẳng về tỉnh,,1. Tỉnh xác nhận đơn chuyển thẳng,Cao,,"Hệ thống phát sinh 01 phiếu công nợ nội bộ từ giao dịch chuyển hàng từ TCT tới tỉnh,  Giá trị công nợ bằng giá trị hàng nhập.","Hệ thống phát sinh 01 phiếu công nợ nội bộ từ giao dịch chuyển hàng từ TCT tới tỉnh,  Giá trị công nợ bằng giá trị hàng nhập.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_81,Phát sinh phiếu công nợ khi TCT chuyển kho cho tỉnh,Có hàng tồn tại kho TCT,"1. TCT tạo phiếu chuyển kho về tỉnh.
+2. Tỉnh nhận hàng thành công.",Cao,,Hệ thống phát sinh 01 phiếu công nợ cho tỉnh nhận hàng. Giá trị công nợ bằng giá trị hàng chuyển.,Hệ thống phát sinh 01 phiếu công nợ cho tỉnh nhận hàng. Giá trị công nợ bằng giá trị hàng chuyển.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_82,Tỉnh khai báo thanh toán và TCT xác nhận,Có công nợ chưa thanh toán,"1. Tỉnh tạo phiếu thanh toán.
+2. Kiểm tra trạng thái phiếu.
+3. TCT xác nhận phiếu.",Cao,Phiếu thanh toán công nợ,"Trước khi xác nhận, phiếu ở trạng thái ""Chờ xác nhận"", công nợ không giảm. Sau khi TCT xác nhận, công nợ được trừ tương ứng số tiền thanh toán.","Trước khi xác nhận, phiếu ở trạng thái ""Chờ xác nhận"", công nợ không giảm. Sau khi TCT xác nhận, công nợ được trừ tương ứng số tiền thanh toán.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_83,Tỉnh khai báo thanh toán và TCT từ chối,Có công nợ chưa thanh toán,"1. Tỉnh tạo phiếu thanh toán.
+2. TCT chọn từ chối và nhập lý do.",Cao,Phiếu thanh toán công nợ,"Phiếu chuyển trạng thái ""Từ chối"", lưu lý do từ chối, công nợ không thay đổi.","Phiếu chuyển trạng thái ""Từ chối"", lưu lý do từ chối, công nợ không thay đổi.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_84,TCT khai báo thanh toán và Tỉnh xác nhận,Có công nợ chưa thanh toán,"1. TCT tạo phiếu thanh toán.
+2. Tỉnh xác nhận phiếu.",Cao,Phiếu thanh toán công nợ,Trước xác nhận công nợ không thay đổi. Sau xác nhận công nợ giảm tương ứng số tiền thanh toán.,Trước xác nhận công nợ không thay đổi. Sau xác nhận công nợ giảm tương ứng số tiền thanh toán.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_85,Khai báo thanh toán bằng phân bổ thủ công,Có ít nhất 2 phiếu nợ chưa thanh toán,"1. Mở popup khai báo thanh toán.
+2. Nhập tổng số tiền thanh toán.
+3. Phân bổ tiền cho từng phiếu nợ.
+4. Lưu phiếu.",Cao,Popup Khai báo thanh toán,Hệ thống cho phép phân bổ tiền theo từng phiếu nợ. Tổng tiền phân bổ không vượt quá số tiền thanh toán.,Hệ thống cho phép phân bổ tiền theo từng phiếu nợ. Tổng tiền phân bổ không vượt quá số tiền thanh toán.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_86,Khai báo thanh toán bằng phân bổ tự động,Có nhiều phiếu nợ chưa thanh toán,"1. Nhập số tiền thanh toán.
+2. Chọn phân bổ tự động.",Cao,Popup Khai báo thanh toán,Hệ thống tự động phân bổ tiền vào các phiếu nợ theo thứ tự quy định. Tổng tiền phân bổ bằng số tiền thanh toán.,"HIển thị số tiền phân bổ lẻ 979,999.7,000,000,002",Fail,,,,,Công nợ Tỉnh - TCT
+TaiChinh_87,Tổng số tiền phân bổ lớn hơn số tiền thanh toán,Có màn hình khai báo thanh toán,"1. Nhập số tiền thanh toán.
+2. Phân bổ vượt quá số tiền đã nhập.",Cao,Popup Khai báo thanh toán,Hệ thống hiển thị cảnh báo và không cho lưu phiếu.,Hệ thống hiển thị cảnh báo và không cho lưu phiếu.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_88,Tổng số tiền phân bổ nhỏ hơn số tiền thanh toán,Có màn hình khai báo thanh toán,"1. Nhập số tiền thanh toán.
+2. Chỉ phân bổ một phần số tiền.",TB,Popup Khai báo thanh toán,Hệ thống hiển thị số tiền chưa phân bổ hoặc không cho phép lưu ,Hệ thống hiển thị số tiền chưa phân bổ hoặc không cho phép lưu ,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_89,Chuyển kho thành công nhưng tỉnh chưa xác nhận nhận hàng,TCT đã tạo phiếu chuyển kho sang tỉnh,"1. TCT tạo phiếu chuyển kho.
+2. Chưa thực hiện xác nhận nhận hàng tại tỉnh.
+3. Kiểm tra màn hình công nợ.",Cao,Công nợ nội bộ TCT,Chưa phát sinh công nợ cho tỉnh. Không xuất hiện phiếu nợ liên quan đến phiếu chuyển kho.,Chưa phát sinh công nợ cho tỉnh. Không xuất hiện phiếu nợ liên quan đến phiếu chuyển kho.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_90,Tỉnh xác nhận nhận hàng từ phiếu chuyển kho,Có phiếu chuyển kho ở trạng thái chờ nhận,"1. Tỉnh xác nhận nhận hàng.
+2. Kiểm tra công nợ phát sinh.",Cao,Công nợ nội bộ TCT,Hệ thống phát sinh phiếu nợ tương ứng với giá trị hàng hóa đã nhận.,Hệ thống phát sinh phiếu nợ tương ứng với giá trị hàng hóa đã nhận.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_91,Kiểm tra công nợ khi sản phẩm có nhiều mức VAT,"Có các sản phẩm VAT 0%, 5%, 10%","1. Tạo phiếu nhập/chuyển kho gồm nhiều sản phẩm.
+2. Kiểm tra công nợ phát sinh.",Cao,Phiếu nợ,Giá trị công nợ được tính bằng tổng tiền sau VAT của từng sản phẩm.,Giá trị công nợ được tính bằng tổng tiền sau VAT của từng sản phẩm.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_92,Kiểm tra tổng giá trị nhận tại màn hình công nợ,Có nhiều phiếu nợ phát sinh,"1. Phát sinh nhiều phiếu nợ.
+2. Kiểm tra cột ""Tổng giá trị nhận"".",Cao,Công nợ nội bộ TCT,Tổng giá trị nhận = Tổng giá trị các phiếu nợ đã phát sinh (đã bao gồm VAT).,Tổng giá trị nhận = Tổng giá trị các phiếu nợ đã phát sinh (đã bao gồm VAT).,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_93,Kiểm tra công nợ khi nhận một phần hàng chuyển kho,Hệ thống hỗ trợ nhận một phần,"1. TCT chuyển 100 sản phẩm.
+2. Tỉnh chỉ nhận 80 sản phẩm.
+3. Kiểm tra công nợ.",TB,Công nợ nội bộ TCT,"Công nợ chỉ phát sinh trên số lượng thực tế đã nhận, giá trị đã bao gồm VAT.","Công nợ chỉ phát sinh trên số lượng thực tế đã nhận, giá trị đã bao gồm VAT.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_94,Kiểm tra công nợ sau khi thanh toán được xác nhận,Có phiếu thanh toán chờ xác nhận,"1. Tạo phiếu thanh toán.
+2. Đơn vị đối ứng xác nhận.
+3. Kiểm tra công nợ.",Cao,Công nợ nội bộ TCT,Công nợ còn lại = Công nợ phát sinh - Đã thanh toán - Đã trả hàng.,Công nợ còn lại = Công nợ phát sinh - Đã thanh toán - Đã trả hàng.,Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_95,Kiểm tra công nợ khi phiếu thanh toán bị từ chối,Có phiếu thanh toán chờ xác nhận,"1. Tạo phiếu thanh toán.
+2. Đơn vị đối ứng từ chối.",Cao,Công nợ nội bộ TCT,"Giá trị công nợ không thay đổi. Phiếu thanh toán chuyển trạng thái ""Từ chối"".","Giá trị công nợ không thay đổi. Phiếu thanh toán chuyển trạng thái ""Từ chối"".",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_96,Kiểm tra lịch sử công nợ sau khi phát sinh phiếu nợ,Có phiếu nợ mới phát sinh,"1. Phát sinh công nợ.
+2. Mở tab Lịch sử.",TB,Tab Lịch sử,"Hiển thị bản ghi loại ""Ghi nợ"", nguồn ""Chuyển kho"" hoặc ""Nhập hàng NCC"", số tiền đã bao gồm VAT.","Hiển thị bản ghi loại ""Ghi nợ"", nguồn ""Chuyển kho"" hoặc ""Nhập hàng NCC"", số tiền đã bao gồm VAT.",Pass,,,,,Công nợ Tỉnh - TCT
+TaiChinh_97,Kiểm tra lịch sử công nợ sau khi thanh toán,Có phiếu thanh toán đã xác nhận,"1. Xác nhận thanh toán.
+2. Mở tab Lịch sử.",TB,Tab Lịch sử,"Hiển thị bản ghi loại ""Thanh toán"", số tiền thanh toán và số dư công nợ còn lại sau giao dịch.","Hiển thị bản ghi loại ""Thanh toán"", số tiền thanh toán và số dư công nợ còn lại sau giao dịch.",Pass,,,,,Công nợ Tỉnh - TCT

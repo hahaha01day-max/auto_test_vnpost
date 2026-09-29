@@ -1,0 +1,424 @@
+{
+  "_note": "Phân hệ 17 Quản lý quầy thu ngân. 🔴 Cấp quỹ và chuyển quỹ là TIỀN MẶT THẬT. Nhóm case từ mục 3.4 (quét kỹ thuật) phần lớn vẫn phải mở màn ghi dữ liệu nên để enabled=false.",
+  "cases": {
+    "17_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "17_010_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "17_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "17_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "17_010_017": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_018": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_021": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_010_022": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_020_015": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_030_008": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "data": {},
+      "_blocked": "Không dựng được quầy thiếu quỹ tiền mặt qua UI/API"
+    },
+    "17_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "17_050_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    }
+  }
+}

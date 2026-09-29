@@ -1,0 +1,65 @@
+{
+  "_doc": "Tên nhóm điền tay cho các mã nhóm mà HDSD và README của phân hệ không khai (phần lớn là nhóm dựng từ code, ngoài phạm vi HDSD). Ưu tiên cao nhất khi chạy tool/bin/to-qc-csv.js. Tên suy từ nội dung các case trong nhóm — sửa thoải mái rồi chạy lại script.",
+
+  "13-cong-no-diem-ban-tinh": {
+    "CNDB-ND": "Khai nợ đầu kỳ điểm bán",
+    "CNDB-KY": "Mở và chốt kỳ đối soát công nợ bán hàng",
+    "CNDB-CD": "Bưu điện Tỉnh nhận tiền và kiểm đếm túi",
+    "CNDB-LPB": "Nợ đơn vị vận chuyển",
+    "CNDB-PQ": "Kiểm tra permission"
+  },
+  "18_3_thanh_toan_va_bien_lai": {
+    "100": "Phạm vi theo vai khi thanh toán"
+  },
+  "18_4_quan_ly_don_hang": {
+    "080": "Phê duyệt và từ chối đơn hàng tạm nộp",
+    "100": "Phạm vi xem đơn theo vai"
+  },
+  "18_5_doi_tra_hang": {
+    "090": "Hoàn trả đơn thanh toán sau và đơn nợ",
+    "100": "Hoàn trả đơn có VAT",
+    "110": "Trả hàng thuộc combo",
+    "120": "Điểm thưởng khi trả hàng",
+    "130": "Ngưỡng tiền bất thường và lý do trả hàng",
+    "140": "Ràng buộc chặn hoàn trả",
+    "150": "Giá trị biên của phí và số lượng trả",
+    "160": "Danh sách, bộ lọc và tìm kiếm đơn hoàn trả"
+  },
+  "19_quan_ly_khach_hang": {
+    "120": "Phân trang và tìm kiếm danh sách khách hàng",
+    "130": "Nhóm đối tượng, khuyến mại và nâng hạng realtime"
+  },
+  "26_phieu_thu": {
+    "070": "Phạm vi xem phiếu theo cấp đơn vị",
+    "080": "Ràng buộc dữ liệu khi lập phiếu thu",
+    "090": "Danh sách, bộ lọc và tìm kiếm phiếu thu"
+  },
+  "27_doi_soat_hoa_don": {
+    "071": "Bộ lọc, tìm kiếm và tải tệp sai định dạng"
+  },
+  "30_bao_cao_ctkm": {
+    "050": "Danh sách rỗng, phân trang và bộ lọc báo cáo",
+    "060": "Phạm vi số liệu theo vai"
+  },
+  "32_mo_hinh_to_chuc": {
+    "100": "Thêm đơn vị theo từng cấp",
+    "110": "Thêm nhanh đơn vị con từ cây phân cấp",
+    "120": "Hiển thị và tìm kiếm trên cây phân cấp",
+    "130": "Chỉnh sửa đơn vị",
+    "140": "Xoá đơn vị và các cấp trực thuộc",
+    "150": "Nhập đơn vị hàng loạt từ Excel",
+    "160": "Tạo và phân loại điểm bán",
+    "170": "Gán nhân viên và vai trò cho đơn vị"
+  },
+  "33_lich_su_thao_tac_nguoi_dung": {
+    "060": "Danh sách rỗng, phân trang và sắp xếp",
+    "070": "Phạm vi truy cập theo vai"
+  },
+  "34_cong_no_khach_hang": {
+    "060": "Danh sách, phân trang và đối chiếu tổng công nợ"
+  },
+  "35-gia-von-mac-dinh": {
+    "GVMD": "Giá vốn mặc định",
+    "BC": "Bổ sung theo phản hồi"
+  }
+}

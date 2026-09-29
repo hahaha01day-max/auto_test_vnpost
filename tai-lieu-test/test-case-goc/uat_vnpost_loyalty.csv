@@ -1,0 +1,188 @@
+,Chức năng,,,LOYALTY,,,,,,,
+,Mã Testcase,,,,,,,,,,
+,Tổng các tình huống kiểm thử,,,18,,,,,,,
+,Chưa thực hiện,,,8,,,,,,,
+,Đạt yêu cầu,,,10,,,,,,,
+,Không đạt yêu cầu,,,0,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng tích điểm,,,,,,,,,,
+,Kiểm tra tích điểm khi cấu hình tích điểm chỉ áp dụng điều kiện giá trị đơn hàng tối thiểu,Giá trị đơn hàng < giá trị đơn hàng tối thiểu đã cấu hình,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng < giá trị đơn hàng tối thiểu đã cấu hình
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Không tích điểm cho sản phẩm/đơn hàng mới tạo và không hiển thị trong lịch sử tích điểm,,Pass,,
+,,Giá trị đơn hàng = giá trị đơn hàng tối thiểu đã cấu hình,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng = giá trị đơn hàng tối thiểu đã cấu hình
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Tích điểm cho sản phẩm/đơn hàng mới tạo và hiển thị trong lịch sử tích điểm,,Pass,,
+,,Giá trị đơn hàng > giá trị đơn hàng tối thiểu đã cấu hình,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng > giá trị đơn hàng tối thiểu đã cấu hình
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,,,Pass,,
+,Kiểm tra tích điểm khi cấu hình tích điểm chỉ áp dụng điều kiện không tích điểm cho sản phẩm giảm giá,Sản phẩm không giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ và không chỉnh sửa giá sản phẩm
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Tích điểm cho sản phẩm/đơn hàng mới tạo và hiển thị trong lịch sử tích điểm,,Pass,,
+,,Sản phẩm giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ và chỉnh sửa giá sản phẩm < giá trước chỉnh sửa
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Không tích điểm cho sản phẩm/đơn hàng mới tạo và không hiển thị trong lịch sử tích điểm,,Pass,,
+,,Sản phẩm có chỉnh sửa giá nhưng giá sau chỉnh sửa > trước chỉnh sửa,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ và chỉnh sửa giá sản phẩm > giá trước chỉnh sửa
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,,,Pass,,
+,Kiểm tra tích điểm khi cấu hình tích điểm chỉ áp dụng điều kiện không tích điểm cho hóa đơn giảm giá,Đơn hàng có giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ 
+3. Chọn khách hàng
+4. Chọn phương thức giảm giá đơn hàng (chương trình khuyến mãi/mã coupon/chiết khấu trực tiếp)
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Không tích điểm cho sản phẩm/đơn hàng mới tạo và không hiển thị trong lịch sử tích điểm,,Pass,,
+,,Đơn hàng không giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ 
+3. Chọn khách hàng
+4. Không chọn phương thức giảm giá đơn hàng 
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Tích điểm cho sản phẩm/đơn hàng mới tạo và hiển thị trong lịch sử tích điểm,,Pass,,
+,Kiểm tra tích điểm khi cấu hình tích điểm chỉ áp dụng điều kiện không tích điểm cho hóa đơn thanh toán bằng điểm thưởng,Đơn thanh toán bằng điểm thưởng,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ 
+3. Chọn khách hàng
+4. Tích chọn Đổi điểm và nhập số điểm cần đổi
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Không tích điểm cho sản phẩm/đơn hàng mới tạo và không hiển thị trong lịch sử tích điểm,,Pass,,
+,,Đơn không thanh toán bằng điểm thưởng,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ 
+3. Chọn khách hàng
+4. Không tích chọn Đổi điểm
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Tích điểm cho sản phẩm/đơn hàng mới tạo và hiển thị trong lịch sử tích điểm,,Pass,,
+,Kiểm tra tích điểm khi cấu hình tích điểm áp dụng điều kiện Giá trị đơn hàng tối thiểu và Không tích điểm cho sản phẩm giảm giá,Đơn đạt giá trị đơn hàng tối thiểu và không có sản phẩm giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình và không có sản phẩm giảm giá
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Tích điểm cho sản phẩm/đơn hàng mới tạo và hiển thị trong lịch sử tích điểm,,,,
+,,Đơn không có sản phẩm giảm giá nhưng không đạt giá trị đơn hàng tối thiểu,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng không thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình và không có sản phẩm giảm giá
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Không tích điểm cho sản phẩm/đơn hàng mới tạo và không hiển thị trong lịch sử tích điểm,,,,
+,,Đơn đạt giá trị đơn hàng tối thiểu nhưng có sản phẩm giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình và có sản phẩm giảm giá
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,,,,,
+,,Đơn không đạt giá trị đơn hàng tối thiểu và có sản phẩm giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng không thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình và có sản phẩm giảm giá
+3. Chọn khách hàng
+4. Click Thanh toán
+5. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,,,,,
+,"Kiểm tra tích điểm khi cấu hình tích điểm áp dụng điều kiện Giá trị đơn hàng tối thiểu và Không tích điểm cho hóa đơn giảm giá
+",Đơn đạt giá trị đơn hàng tối thiểu và không giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình
+3. Chọn khách hàng
+4. Không chọn phương thức giảm giá đơn hàng 
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Tích điểm cho sản phẩm/đơn hàng mới tạo và hiển thị trong lịch sử tích điểm,,,,
+,,Đơn không giảm giá nhưng không đạt giá trị đơn hàng tối thiểu,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng không thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình
+3. Chọn khách hàng
+4. Không chọn phương thức giảm giá đơn hàng 
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,Không tích điểm cho sản phẩm/đơn hàng mới tạo và không hiển thị trong lịch sử tích điểm,,,,
+,,Đơn đạt giá trị đơn hàng tối thiểu nhưng có giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình
+3. Chọn khách hàng
+4. Chọn phương thức giảm giá đơn hàng (chương trình khuyến mãi/mã coupon/chiết khấu trực tiếp)
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,,,,,
+,,Đơn không đạt giá trị đơn hàng tối thiểu và có giảm giá,,"1. Vào trang Bán hàng
+2. Thêm sản phẩm vào giỏ sao cho giá trị đơn hàng không thỏa mãn giá trị đơn hàng tối thiểu đã cấu hình
+3. Chọn khách hàng
+4. Chọn phương thức giảm giá đơn hàng (chương trình khuyến mãi/mã coupon/chiết khấu trực tiếp)
+5. Click Thanh toán
+6. Kiểm tra lịch sử tích điểm bằng cách vào Khách hàng -> Tìm kiếm khách hàng -> Xem chi tiết khách hàng -> Lịch sử tích điểm",,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra chức năng đổi điểm,,,,,,,,,,

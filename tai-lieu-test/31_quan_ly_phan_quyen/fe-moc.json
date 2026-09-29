@@ -1,0 +1,16 @@
+{
+  "spec": {
+    "tests/vai-tro-ghi.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "ghiBu": true,
+      "man": ["/role-management/function"],
+      "fe": [
+        "src/features/role/role/components/drawer-update-business-role.jsx",
+        "src/features/role/role/components/drawer-assign-role-function.jsx",
+        "src/features/role/role/components/drawer-delete-business-role.jsx",
+        "src/features/role/role/components/drawer-assign-role-employee.jsx"
+      ]
+    }
+  }
+}

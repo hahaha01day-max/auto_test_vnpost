@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "tests/kho-hang-ghi.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/warehouses"
+      ],
+      "fe": [
+        "src/features/inventory/warehouse/ShopInventoryPage.jsx",
+        "src/features/inventory/services/inventoryApi.js"
+      ]
+    },
+    "tests/kho-hub.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/warehouses"
+      ],
+      "fe": [
+        "src/features/inventory/warehouse/ShopInventoryPage.jsx",
+        "src/features/inventory/services/inventoryApi.js"
+      ]
+    }
+  }
+}

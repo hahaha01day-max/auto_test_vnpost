@@ -1,0 +1,15 @@
+const { chromium } = require("playwright");
+require("./tai-lieu-test/shared/config");
+const { storageStateFor } = require("./tai-lieu-test/shared/auth/accounts");
+const kk = require("./tai-lieu-test/04_4_kiem_kho/tests/kiem-kho-ghi");
+const k = require("./tai-lieu-test/04_3_nhap_xuat_chuyen_kho/tests/ghi-kho");
+(async()=>{const b=await chromium.launch();const c=await b.newContext({storageState:storageStateFor("shop"),viewport:{width:1440,height:1000}});const page=await c.newPage();
+const st=k.batHeader(page);
+page.on('framenavigated',f=>{if(f===page.mainFrame())console.log('NAV',f.url().slice(30))});
+page.on('response',async r=>{if(/inventory-check/.test(r.url())&&r.request().method()!=='GET'){console.log('RES',r.request().method(),r.url().slice(40,140),(await r.text().catch(()=>'')).slice(0,150))}});
+const sid=await kk.moPhien(page,'shop'); const tid=await kk.themPhieu(page);
+await kk.themSp(page,'AUTO8_SP_FIFO'); await kk.demLo(page,'AUTO8_SP_FIFO',{'AUTO8_LO_FIFO':99});
+await page.getByRole('button',{name:'Xác nhận đếm'}).click(); await page.waitForTimeout(4000);
+await page.goto(process.env.VNPOST_BASE_URL+`/inventory/inventory-check/session?shopId=68152&stockInOutId=${tid}&sessionId=${sid}&reopen=1`); await page.waitForTimeout(8000);
+console.log('URL',page.url(), await page.locator('.ant-message').allInnerTexts());
+await kk.huyPhien(page,st,68152,sid); await b.close()})();

@@ -1,0 +1,271 @@
+﻿,Chức năng,,KHÁCH HÀNG VÀ ƯU ĐÃI TẠI QUẦY,,,,,,,,
+,Mã Testcase,,18_2_khach_hang_va_uu_dai,,,,,,,,
+,Tổng các tình huống kiểm thử,,115,,,,,,,,
+,Chưa thực hiện,,115,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,KHÁCH HÀNG VÀ ƯU ĐÃI TẠI QUẦY,,,,,,,,,,
+,010 — Chọn khách hàng cho đơn và ghi chú đơn hàng,,,,,,,,,,
+18_2_010_001,Tạo đơn hàng từ tìm kiếm sau đó chọn khách,Vai: gdv; ca đang mở; có khách hàng trong danh sách,"1. Gõ tên hàng vào ô tìm kiếm;
+2. Chọn sản phẩm vào giỏ;
+3. Gắn khách hàng;
+4. Bấm ""Thanh toán"" và hoàn tất",,Thanh toán báo thành công; đơn vừa tạo xuất hiện ở danh sách đơn hàng kèm tên khách đã gắn,,,,,,
+18_2_010_002,"Tạo đơn hàng từ Chọn sản phẩm, chọn khách hàng, nhập giảm giá, thanh toán thành công, ghi nhận ở danh sách đơn hàng",Vai: gdv; ca đang mở; có khách hàng trong danh sách,"1. Mở danh sách sản phẩm, chọn sản phẩm;
+2. Gắn khách hàng;
+3. Nhập giảm giá;
+4. Bấm ""Thanh toán"" và hoàn tất",,"Thanh toán báo thành công; ""Cần thanh toán"" = Tổng tiền − giảm giá đã nhập; đơn ghi nhận ở danh sách đơn hàng",,,,,,
+18_2_010_003,POS hiển thị thông tin điểm sau khi chọn khách,Vai: gdv; ca đang mở; khách hàng có điểm tích luỹ,"1. Gắn khách vào đơn;
+2. Đọc khối khách hàng ở cột bên phải",,"Hiện dòng ""Điểm hiện tại"" với đúng số điểm của khách, cùng ""Tiền phát sinh"" và ""Tiền còn nợ""",,,,,,
+18_2_010_004,Ô tìm khách hàng có placeholder đúng,Vai: gdv; ca đang mở; đang ở màn bán hàng,1. Đọc ô tìm ở đầu cột bên phải,,"Placeholder nguyên văn ""Tìm kiếm khách hàng theo tên hoặc sđt""; phím F11 đưa con trỏ vào ô này",,,,,,
+18_2_010_005,Gợi ý khách hàng hiện kèm số điện thoại để phân biệt trùng tên,Vai: gdv; ca đang mở; đang ở màn bán hàng; có ≥ 2 khách trùng tên,"1. Gõ tên khách bị trùng;
+2. Đọc danh sách gợi ý",,Mỗi dòng gợi ý hiện tên khách KÈM số điện thoại,,,,,,
+18_2_010_006,Thêm khách mới ngay trên đơn bằng dấu cộng vàng,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách chưa có hồ sơ,"1. Bấm dấu cộng màu vàng bên phải ô tìm kiếm;
+2. Khai thông tin;
+3. Lưu",,Khách mới được tạo và **tự gán vào đơn**; không phải rời màn hình bán hàng,,,,,,
+18_2_010_007,Sửa số điện thoại hoặc địa chỉ khách từ gợi ý,Vai: gdv; ca đang mở; đang ở màn bán hàng; có khách trong danh sách,"1. Gõ tên khách;
+2. Bấm biểu tượng bút chì trên dòng khách trong gợi ý;
+3. Sửa và lưu",,Thông tin khách được cập nhật; đơn vẫn giữ đúng khách đó,,,,,,
+18_2_010_008,Khối khách hàng hiện đủ ba số sau khi gắn khách,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có công nợ và có điểm,"1. Gắn khách vào đơn;
+2. Đọc đầu cột bên phải",,"Hiện ""Tiền phát sinh"", ""Tiền còn nợ"" và ""Điểm hiện tại"" (chỉ hiện khi khách có điểm). Tên khách cũng thành tên tab đơn",,,,,,
+18_2_010_009,Tooltip điểm hiện tại xem được chi tiết tích luỹ,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có điểm,"1. Đưa chuột lên con số ở dòng ""Điểm hiện tại""",,Hiện chi tiết điểm tích luỹ mà không phải mở hồ sơ khách hàng,,,,,,
+18_2_010_010,Ghi chú đơn hàng lưu được,Vai: gdv; ca đang mở; đang ở màn bán hàng; giỏ có hàng,"1. Nhập ""Ghi chú đơn hàng"";
+2. Thanh toán;
+3. Mở chi tiết đơn",,Ghi chú hiện đúng nguyên văn trên chi tiết đơn,,,,,,
+18_2_010_011,Để trống khách là bán cho khách vãng lai,"Vai: gdv; ca đang mở; đang ở màn bán hàng; giỏ có hàng, KHÔNG gắn khách","1. Thanh toán;
+2. Mở chi tiết đơn và hồ sơ điểm",,"Đơn ghi khách vãng lai; **KHÔNG tích điểm**, **KHÔNG ghi nợ** được",,,,,,
+18_2_010_012,🔴 Đổi khách SAU khi đã áp CTKM thì tính lại toàn bộ ưu đãi,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn đã áp CTKM dành riêng cho nhóm khách A,"1. Đổi khách sang khách nhóm B;
+2. Đọc lại dòng ""Chương trình khuyến mại"" và khối tiền",,"Hệ thống tính lại toàn bộ ưu đãi theo nhóm khách mới; CTKM dành riêng nhóm cũ **bị bỏ khỏi đơn** và ""Chiết khấu khuyến mãi"" đổi theo",,,,,,
+18_2_010_013,🔴 Gắn khách sau khi đã thu tiền là không sửa được,"Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn đã thanh toán, không gắn khách","1. Mở chi tiết đơn;
+2. Thử gắn khách hàng",,KHÔNG gắn được nữa. Phải gắn khách TRƯỚC khi bấm thanh toán,,,,,,
+18_2_010_014,Đơn giao qua đơn vị vận chuyển bắt buộc có khách,"Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn chọn giao hàng, chưa gắn khách","1. Chọn hình thức giao qua đơn vị vận chuyển;
+2. Thanh toán",,"Bị chặn với thông báo nguyên văn ""Không thể giao hàng cho Khách vãng lai, vui lòng chọn hoặc tạo khách hàng""",,,,,,
+18_2_010_015,Tìm khách bằng chuỗi toàn khoảng trắng,Vai: gdv; ca đang mở; đang ở màn bán hàng,1. Gõ 5 dấu cách vào ô tìm khách,,Gợi ý rỗng hoặc trả danh sách không lọc; không báo lỗi kỹ thuật,,,,,,
+18_2_010_016,Tìm khách bằng số điện thoại một phần,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có SĐT 0912345678,"1. Gõ ""2345""",,Gợi ý hiện khách có SĐT chứa chuỗi đó; nếu rỗng thì ghi nhận hệ thống chỉ khớp từ đầu,,,,,,
+18_2_010_017,Tìm khách không dấu,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách tên có dấu tiếng Việt,1. Gõ tên khách KHÔNG dấu,,Chưa chốt kỳ vọng — ghi nhận thực tế: gõ từ khoá KHÔNG DẤU có gợi ý ra khách hàng tên viết có dấu hay không.,,,,,,
+18_2_010_018,Bỏ khách đã gắn khỏi đơn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn đã gắn khách,"1. Bỏ khách khỏi đơn;
+2. Đọc khối khách hàng và CTKM",,"Đơn trở về khách vãng lai; CTKM dành riêng nhóm khách bị bỏ; tên tab đơn trở lại ""Đơn hàng: N""",,,,,,
+,020 — Áp dụng chương trình khuyến mại cho đơn,,,,,,,,,,
+18_2_020_001,Mở chương trình khuyến mãi,,"1. Mở ""Chương trình khuyến mãi"" bằng F10 hoặc bấm dòng ""Chương trình khuyến mại"" ở cột bên phải;
+2. Đọc ba thẻ ""Theo đơn hàng"", ""Theo sản phẩm"", ""Theo danh mục""",,"Cửa sổ ""Chương trình khuyến mãi"" mở với 3 thẻ phạm vi và bảng 8 cột: ô chọn, ""Chương trình khuyến mãi"", ""Hình thức khuyến mãi"", ""Quà khuyến mại"", ""Điều kiện áp dụng"", ""Đối tượng áp dụng"", ""Độ ưu tiên"", ""Áp dụng chung""",,,,,,
+18_2_020_002,Giảm 10% giá trị đơn,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM1 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = làm tròn(Tổng tiền * 0.1) · Cần thanh toán = Tổng tiền - Chiết khấu khuyến mãi. Khối tiền hiện đúng: ô ""Tổng tiền"" = Tổng tiền · ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi · ô ""Cần thanh toán"" = Cần thanh toán. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_003,Giảm 50k giá trị đơn,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM2 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = nhỏ hơn giữa(Tổng tiền, 50000) · Cần thanh toán = Tổng tiền - Chiết khấu khuyến mãi. Khối tiền hiện đúng: ô ""Tổng tiền"" = Tổng tiền · ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi · ô ""Cần thanh toán"" = Cần thanh toán. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_004,Giảm 50k trên đơn hàng 50k,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_2 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM2 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = nhỏ hơn giữa(Tổng tiền, 50000) · Cần thanh toán = Tổng tiền - Chiết khấu khuyến mãi. Khối tiền hiện đúng: ô ""Tổng tiền"" = Tổng tiền · ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi · ô ""Cần thanh toán"" = Cần thanh toán. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_005,Giảm 50k trên đơn hàng bánh mỳ 40k,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_3 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM2 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = nhỏ hơn giữa(Tổng tiền, 50000) · Cần thanh toán = Tổng tiền - Chiết khấu khuyến mãi. Khối tiền hiện đúng: ô ""Tổng tiền"" = Tổng tiền · ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi · ô ""Cần thanh toán"" = Cần thanh toán. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_006,Giảm 5% sau CT khác,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM2, CTKM KM3 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = discount1 + discount2 · Cần thanh toán = Tổng tiền - Chiết khấu khuyến mãi. Khối tiền hiện đúng: ô ""Tổng tiền"" = Tổng tiền · ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi · ô ""Cần thanh toán"" = Cần thanh toán. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_007,Giảm 1% tặng SP (Tồn kho hợp lệ),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x1 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM4 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = làm tròn(Tổng tiền * 0.01) · Cần thanh toán = Tổng tiền - Chiết khấu khuyến mãi. Khối tiền hiện đúng: ô ""Tổng tiền"" = Tổng tiền · ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi · ô ""Cần thanh toán"" = Cần thanh toán. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_008,Giảm giá bán PROMOTE_1 theo tiền cố định (qty=2),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM PRO_1_FIXED], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_009,Giảm giá bán PROMOTE_1 theo % (qty=3),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x3 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM PRO_1_PERCENT], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_010,Giảm giá Combo B theo tiền cố định (qty=3),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm COMBO_B x3 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CB_COMBO], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_011,Giảm giá Combo D theo % (qty=3),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm COMBO_D x3 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CB_COMBO_C], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_012,Áp dụng đúng tier khi tăng qty (PROMOTE_7),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_7 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM PRO_7], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_013,Tặng kèm SP cùng loại (mua 2 PROMOTE_1 tặng 1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM PRO_3_SP_B], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_014,Tặng SP từ danh mục dM_B_1 (qty=5 PROMOTE_1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_015,Mua 4 PROMOTE_1 được giảm 60k cho PROMOTE_6,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x4 vào giỏ;
+2. Thêm PROMOTE_6 x1 vào giỏ;
+3. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM PRO_4], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+4. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_016,Giảm 10k cho SP nước giải khát (9 PROMOTE_1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x9 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_017,Tặng SP dM_A_1 và kiểm tra xóa khi giảm qty PROMOTE_4,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_4 x2 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_018,Tự động tặng Vở Hồng Hà 80 trang (qty=2 PROMOTE_3),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_3 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM PRO_3_SP_B_X], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_019,Giảm 30k cho SP nước giải khát (5 PROMOTE_3),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_3 x5 vào giỏ;
+2. Thêm 'Bánh kem ốc quế Pororo vị dâu 54g' x1 vào giỏ;
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_020,Giảm 80k cho Vở Hồng Hà (7 PROMOTE_6),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_6 x7 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM PRO_4_X], 'Theo sản phẩm' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_021,Giảm giá bán theo số tiền cho mỗi SP dM_A_1 (qty=2),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_01], 'Theo danh mục' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_022,Giảm giá theo % cho mỗi SP dM_A_1 (qty=3),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x3 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_02], 'Theo danh mục' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = làm tròn. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_023,Mua SP danh mục A giảm giá SP danh mục B (5 dM_A_1 -> giảm 2k dM_B_1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x5 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_024,Mua SP danh mục A giảm giá SP danh mục B theo số lượng (6 dM_A_1 -> giảm 4k dM_B_1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x6 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_025,Giảm giá SP dM_B_1 nhân theo số lần đạt điều kiện (12 dM_A_1 -> giảm 40k x 2 dM_B_1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x12 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_026,Mua SP danh mục A tặng SP danh mục B (10 dM_A_1 -> tặng 3 dM_B_1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x10 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_027,Mua SP danh mục A tặng SP chỉ định (7 dM_A_1 -> tặng 2 Vở Hồng Hà),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x7 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_02_GIFT], 'Theo danh mục' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_028,Giảm giá cho mỗi combo cùng danh mục (2 Combo A -> giảm 4k/sp),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_04_COMBO], 'Theo danh mục' rồi bấm ""Áp dụng"";
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_029,Mua danh mục combo A giảm giá danh mục combo B (4 Combo A -> giảm 20k Combo B),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_030,Mua danh mục A tặng quà danh mục B nhân theo số lượng (4 PROMOTE_1 -> tặng 2 dM_A_1),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x4 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_031,Mua danh mục A tặng quà chỉ định nhân theo số lượng (8 PROMOTE_1 -> tặng 2 Bim bim),Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x8 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_02_GIFT_QTY], 'Theo danh mục' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_032,Áp dụng cùng lúc nhiều CTKM giảm %,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM ORDER_3_PERCENT, CTKM ORDER_10_PERCENT_FESTIVAL rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: expected3Percent = làm tròn · expected10PercentFestival = 50 · Chiết khấu khuyến mãi = expected3Percent + expected10PercentFestival. Khối tiền hiện đúng: ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_033,Áp dụng cùng lúc nhiều CTKM giảm theo số tiền cố định,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM2, CTKM ORDER_GIFT rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: Chiết khấu khuyến mãi = 50000 + 1200. Khối tiền hiện đúng: ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_034,Áp dụng cùng lúc nhiều CTKM giảm theo số tiền cố định và theo %,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Công thức: expected3Percent = làm tròn · Chiết khấu khuyến mãi = 50 + expected3Percent + 50000 + 1200. Khối tiền hiện đúng: ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_035,Áp dụng cùng lúc CT giảm toàn đơn và CT giảm sau CT khác,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Ô ""Chiết khấu khuyến mãi"" = chiết khấu của chương trình giảm toàn đơn + chiết khấu của chương trình giảm sau. Thanh toán hoàn tất, không có lỗi. Khối tiền hiện đúng: ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_036,Áp dụng cùng lúc nhiều CT giảm sau CT khác,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM3, CTKM ORDER_AFTER_2 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Ô ""Chiết khấu khuyến mãi"" = làm tròn(tổng tiền ban đầu × 5%) + làm tròn(tổng tiền ban đầu × 2%). Thanh toán hoàn tất, không có lỗi. Công thức: Chiết khấu khuyến mãi = làm tròn + làm tròn. Khối tiền hiện đúng: ô ""Chiết khấu khuyến mãi"" = Chiết khấu khuyến mãi. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_037,Áp dụng song song KM Sản phẩm và KM Đơn hàng độc lập,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM ORDER_5_PERCENT rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Ô ""Chiết khấu khuyến mãi"" = 20.000 + làm tròn((tổng tiền ban đầu − 20.000) × 5%). Thanh toán hoàn tất, không có lỗi. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_038,KM Sản phẩm làm giảm tổng tiền đơn hàng xuống dưới ngưỡng tối thiểu,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM2 rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_039,Áp dụng song song KM Danh mục và KM Đơn hàng độc lập,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_01, CTKM ORDER_3_PERCENT], 'Theo danh mục' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Ô ""Chiết khấu khuyến mãi"" = 4.000 + làm tròn((tổng tiền ban đầu − 4.000) × 3%). Thanh toán hoàn tất, không có lỗi. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_040,KM Danh mục làm giảm tổng tiền đơn hàng xuống dưới ngưỡng tối thiểu,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm SP_A1 x2 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_01, CTKM KM2], 'Theo danh mục' rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_041,Áp dụng đồng thời cả 3 loại KM trên cùng một đơn,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x2 vào giỏ;
+2. Thêm SP_A1 x2 vào giỏ;
+3. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM CAT_01, CTKM ORDER_3_PERCENT], 'Theo danh mục' rồi bấm ""Áp dụng"";
+4. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_042,Đồng thời nhận nhiều quà tặng từ các loại KM,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x4 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM ORDER_GIFT rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_043,Mua sản phẩm A giảm giá sản phẩm B kết hợp mua danh mục C giảm giá danh mục D,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_044,Chỉ áp dụng KM Đơn hàng tốt nhất trong 2 chương trình,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Mở ""Chương trình khuyến mãi"" (F10), tích CTKM KM2, CTKM ORDER_5_PERCENT rồi bấm ""Áp dụng"";
+3. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Khối tiền hiện đúng: ô ""Chiết khấu khuyến mãi"" = 50000. Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_045,Khách hàng thuộc nhóm VIP được hưởng KM VIP,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x2 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+18_2_020_046,KM Đơn hàng có quà tặng kết hợp bản thân sản phẩm có KM sản phẩm,Vai: gdv; ca đang mở; đang ở màn bán hàng /order/create-order; CTKM trong bước đang hiệu lực tại điểm bán,"1. Thêm PROMOTE_1 x5 vào giỏ;
+2. Bấm ""Thanh toán"" và hoàn tất thu tiền",,"Thanh toán hoàn tất, không có lỗi API.",,,,,,
+,030 — Áp mã coupon vào đơn,,,,,,,,,,
+18_2_030_001,Ô Mã coupon có placeholder đúng,Vai: gdv; ca đang mở; đang ở màn bán hàng,"1. Đọc ô ""Mã coupon"" ở cột bên phải",,"Placeholder nguyên văn ""Quét mã vạch hoặc nhập mã giảm giá...""; bên phải có nút ""Áp dụng""",,,,,,
+18_2_030_002,Áp mã coupon hợp lệ,Vai: gdv; ca đang mở; đang ở màn bán hàng; giỏ đủ điều kiện của đợt phát hành; có mã còn hiệu lực chưa dùng,"1. Gõ mã vào ô ""Mã coupon"";
+2. Bấm ""Áp dụng""",,"Khối tiền bổ sung dòng ""Mã coupon (<mã>)"" kèm số tiền giảm; ""Cần thanh toán"" giảm đúng bằng số đó. Gọi POST /coupon/validate",,,,,,
+18_2_030_003,🔴 Coupon tính ĐỘC LẬP với chiết khấu khuyến mãi,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn đã áp CTKM và có coupon hợp lệ,"1. Áp CTKM;
+2. Ghi lại ""Chiết khấu khuyến mãi"";
+3. Áp coupon;
+4. Đọc lại hai dòng",,"Hai dòng ""Chiết khấu khuyến mãi"" và ""Mã coupon"" **không trừ lẫn nhau**; ""Cần thanh toán"" = Tổng tiền − chiết khấu CTKM − giảm coupon",,,,,,
+18_2_030_004,Quét mã vạch coupon thay vì gõ tay,Vai: gdv; ca đang mở; đang ở màn bán hàng; mã coupon in kèm mã vạch,1. Quét thẳng mã vạch coupon,,"Mã vào ô ""Mã coupon"" và áp được như gõ tay",,,,,,
+18_2_030_005,Bỏ mã coupon đã áp,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn đang áp coupon,1. Bấm dấu nhân trong ô nhập để xoá mã,,"Dòng ""Mã coupon"" biến mất; ""Cần thanh toán"" tính lại **ngay**",,,,,,
+18_2_030_006,Mã coupon không tồn tại bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng,"1. Gõ ""MAKHONGCO999"";
+2. Bấm ""Áp dụng""",,"Báo lỗi và **KHÔNG** ghi mã vào đơn; ""Cần thanh toán"" không đổi.",,,,,,
+18_2_030_007,Mã coupon hết hiệu lực bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; có mã đã quá hạn,1. Áp mã đó,,Báo lỗi và không ghi mã vào đơn,,,,,,
+18_2_030_008,Mã coupon đã dùng rồi bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; có mã đã dùng ở đơn khác,1. Áp mã đó,,Báo lỗi và không ghi mã vào đơn,,,,,,
+18_2_030_009,Đơn chưa đạt điều kiện của đợt phát hành bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; mã yêu cầu đơn tối thiểu 200.000đ; giỏ chỉ 50.000đ,1. Áp mã đó,,Báo lỗi nêu đơn chưa đủ điều kiện; không ghi mã vào đơn,,,,,,
+18_2_030_010,🔴 CTKM không dùng chung với coupon,Vai: gdv; ca đang mở; đang ở màn bán hàng; đang áp một CTKM khai không dùng chung với coupon,"1. Nhập coupon;
+2. Bấm ""Áp dụng""",,Hệ thống yêu cầu **bỏ chương trình trước**; không áp được cả hai. Phải chọn phương án lợi hơn cho khách,,,,,,
+18_2_030_011,Áp mã coupon rỗng,Vai: gdv; ca đang mở; đang ở màn bán hàng,"1. Để trống ô ""Mã coupon"";
+2. Bấm ""Áp dụng""",,Bị chặn hoặc không phát sinh POST /coupon/validate,,,,,,
+18_2_030_012,Mã coupon toàn khoảng trắng,Vai: gdv; ca đang mở; đang ở màn bán hàng,"1. Gõ 5 dấu cách;
+2. Bấm ""Áp dụng""",,Bị coi là rỗng (trim) — không gọi API hoặc báo lỗi mã không tồn tại,,,,,,
+18_2_030_013,Mã coupon khác hoa thường,Vai: gdv; ca đang mở; đang ở màn bán hàng; mã thật là ABC123,"1. Gõ ""abc123"";
+2. Bấm ""Áp dụng""",,Chưa chốt kỳ vọng — ghi nhận thực tế: nhập mã ưu đãi sai hoa/thường so với mã gốc thì hệ thống chấp nhận hay từ chối.,,,,,,
+18_2_030_014,Áp hai mã coupon liên tiếp,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn đang áp coupon A,"1. Gõ mã B;
+2. Bấm ""Áp dụng""",,"Chưa chốt kỳ vọng — ghi nhận thực tế: áp mã coupon thứ hai thì mã B thay mã A, cộng dồn cả hai, hay bị chặn.",,,,,,
+18_2_030_015,🔴 Coupon ghi nhận đã dùng khi đơn thanh toán thành công,"Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn có coupon, chưa thanh toán","1. Ghi lại tình trạng mã;
+2. Thanh toán đơn;
+3. Kiểm lại tình trạng mã",,"Mã chuyển sang đã dùng **sau khi thanh toán thành công**, không phải lúc bấm ""Áp dụng""",,,,,,
+18_2_030_016,🔴 Huỷ đơn sau khi đã dùng coupon,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn có coupon đã thanh toán,"1. Huỷ đơn;
+2. Kiểm lại tình trạng mã",,Chưa chốt kỳ vọng — ghi nhận thực tế: huỷ đơn rồi thì mã ưu đãi đã dùng có được hoàn lại để dùng tiếp hay không.,,,,,,
+18_2_030_017,Coupon in riêng một dòng trên biên lai,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn có coupon vừa thanh toán,1. Đọc biên lai in ra,,"Có dòng riêng cho số tiền giảm của coupon KÈM mã, để khách đối chiếu ngay tại quầy",,,,,,
+,040 — Bật xuất hoá đơn điện tử và nhập thông tin xuất hoá đơn,,,,,,,,,,
+18_2_040_001,Tích ô Xuất hoá đơn điện tử hiện liên kết Thông tin xuất HĐ,Vai: gdv; ca đang mở; đang ở màn bán hàng; điểm bán đã bật chức năng HĐĐT,"1. Tích ô ""Xuất hoá đơn điện tử"" ở cột bên phải",,"Liên kết ""Thông tin xuất HĐ"" hiện ra bên phải ô chọn",,,,,,
+18_2_040_002,Màn Thông tin xuất hoá đơn mở đủ trường,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã tích ô xuất HĐĐT,"1. Bấm liên kết ""Thông tin xuất HĐ""",,"Màn ""Thông tin xuất hoá đơn"" mở với ô ""Đối tượng mua hàng"" và cụm nút ""Huỷ"", ""Xoá thông tin"", ""Xác nhận"" ở chân màn",,,,,,
+18_2_040_003,Chọn Cá nhân thì hiện đúng bộ trường,Vai: gdv; ca đang mở; đang ở màn bán hàng; đang ở màn Thông tin xuất hoá đơn,"1. Chọn ""Đối tượng mua hàng"" = ""Cá nhân""",,"Hiện ""Họ và tên người mua"" (bắt buộc), ""CMND/CCCD"", ""Số điện thoại"", ""Email nhận hoá đơn"" (bắt buộc), ""Địa chỉ"" (KHÔNG bắt buộc). KHÔNG có ""Tên đơn vị"" và ""Mã số thuế""",,,,,,
+18_2_040_004,Chọn Doanh nghiệp / Tổ chức thì đổi bộ trường,Vai: gdv; ca đang mở; đang ở màn bán hàng; đang ở màn Thông tin xuất hoá đơn,"1. Chọn ""Đối tượng mua hàng"" = ""Doanh nghiệp / Tổ chức""",,"Hiện ""Tên đơn vị"" (bắt buộc), ""Mã số thuế"" (bắt buộc), ""Người mua hàng"" (đổi tên từ ""Họ và tên người mua"", KHÔNG bắt buộc), ""Địa chỉ đơn vị"" (bắt buộc). KHÔNG có ""CMND/CCCD""",,,,,,
+18_2_040_005,Đổi đối tượng giữa chừng làm mất ô đang nhập,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã nhập dở với Cá nhân,"1. Nhập CMND/CCCD;
+2. Đổi sang ""Doanh nghiệp / Tổ chức""",,Một số ô **biến mất** kèm dữ liệu đã nhập.,,,,,,
+18_2_040_006,Hệ thống điền sẵn thông tin khách đã gắn vào đơn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn đã gắn khách có đủ hồ sơ,1. Mở màn Thông tin xuất hoá đơn,,Các trường được điền sẵn theo hồ sơ khách hàng,,,,,,
+18_2_040_007,Bỏ trống Tên đơn vị với khách doanh nghiệp bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã chọn Doanh nghiệp / Tổ chức,"1. Để trống ""Tên đơn vị"";
+2. Bấm ""Xác nhận""",,"Bị chặn — ""Tên đơn vị"" bắt buộc với đơn vị",,,,,,
+18_2_040_008,Bỏ trống Mã số thuế với khách doanh nghiệp bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã chọn Doanh nghiệp / Tổ chức,"1. Để trống ""Mã số thuế"";
+2. Bấm ""Xác nhận""",,"Bị chặn — ""Mã số thuế"" bắt buộc với đơn vị",,,,,,
+18_2_040_009,Bỏ trống Địa chỉ đơn vị bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã chọn Doanh nghiệp / Tổ chức,"1. Để trống ""Địa chỉ đơn vị"";
+2. Bấm ""Xác nhận""",,Bị chặn — bắt buộc với đơn vị,,,,,,
+18_2_040_010,Bỏ trống Họ và tên người mua với khách cá nhân bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã chọn Cá nhân,"1. Để trống ""Họ và tên người mua"";
+2. Bấm ""Xác nhận""",,Bị chặn — bắt buộc với cá nhân,,,,,,
+18_2_040_011,Bỏ trống Email nhận hoá đơn bị chặn ở CẢ HAI đối tượng,Vai: gdv; ca đang mở; đang ở màn bán hàng,"1. Với Cá nhân để trống Email rồi bấm ""Xác nhận"";
+2. Lặp lại với Doanh nghiệp / Tổ chức",,"Cả hai đều bị chặn — ""Email nhận hoá đơn"" là **trường bắt buộc chung**",,,,,,
+18_2_040_012,Địa chỉ KHÔNG bắt buộc với khách cá nhân,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã chọn Cá nhân,"1. Để trống ""Địa chỉ"";
+2. Nhập đủ các ô bắt buộc;
+3. Bấm ""Xác nhận""",,"Xác nhận thành công — với cá nhân, ""Địa chỉ"" không bắt buộc",,,,,,
+18_2_040_013,Mã số thuế phải đủ 10 chữ số,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã chọn Doanh nghiệp / Tổ chức,"1. Thử lần lượt ""010068620"" (9 số), ""0100686209"" (10 số), ""01006862099"" (11 số), ""abcdefghij""",,Chỉ chuỗi 10 chữ số được chấp nhận; các trường hợp còn lại bị chặn,,,,,,
+18_2_040_014,CMND/CCCD chỉ nhận 9 hoặc 12 chữ số,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã chọn Cá nhân,"1. Thử lần lượt 8, 9, 10, 12, 13 chữ số",,Chỉ 9 và 12 chữ số được chấp nhận,,,,,,
+18_2_040_015,Email sai định dạng bị chặn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đang nhập thông tin xuất HĐ,"1. Thử lần lượt ""abc"", ""abc@"", ""abc@def"", ""a b@c.vn"", ""abc@def.vn""",,"Chỉ ""abc@def.vn"" được chấp nhận; các chuỗi còn lại bị chặn vì sai định dạng thư điện tử",,,,,,
+18_2_040_016,Các ô bắt buộc toàn khoảng trắng bị coi là rỗng,Vai: gdv; ca đang mở; đang ở màn bán hàng; đang nhập thông tin xuất HĐ,"1. Gõ 5 dấu cách vào từng ô bắt buộc;
+2. Bấm ""Xác nhận""",,Bị chặn như khi để trống.,,,,,,
+18_2_040_017,Nút Xoá thông tin làm trắng form,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã nhập đủ thông tin,"1. Bấm ""Xoá thông tin""",,Mọi ô trở về trắng; không ghi gì vào đơn,,,,,,
+18_2_040_018,Xác nhận ghi thông tin vào đơn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã nhập đủ ô bắt buộc,"1. Bấm ""Xác nhận""",,"Màn đóng lại; ô ""Xuất hoá đơn điện tử"" ở trạng thái đã tích và thông tin người mua được lưu vào đơn",,,,,,
+18_2_040_019,Bấm Huỷ không ghi gì vào đơn,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã nhập dở thông tin,"1. Bấm ""Huỷ"";
+2. Mở lại màn Thông tin xuất HĐ",,Thông tin vừa nhập KHÔNG được lưu,,,,,,
+18_2_040_020,🔴 Tích ô xuất HĐĐT mà không nhập thông tin thì biên lai in kèm mã QR,"Vai: gdv; ca đang mở; đang ở màn bán hàng; đã tích ô, chưa nhập thông tin","1. Thanh toán;
+2. Đọc biên lai in ra",,Biên lai có **mã QR** để khách tự điền thông tin sau. Đây là cách xử lý bình thường,,,,,,
+18_2_040_021,Đơn xuất HĐĐT được đánh dấu chờ phát hành sau thanh toán,Vai: gdv; ca đang mở; đang ở màn bán hàng; đã tích ô và nhập đủ thông tin,"1. Thanh toán;
+2. Mở Quản lý đơn hàng tìm đơn vừa tạo",,"Đơn được đánh dấu **chờ phát hành hoá đơn**; việc phát hành làm ở màn ""Quản lý đơn hàng"" (phân hệ 18_4)",,,,,,
+18_2_040_022,Điểm bán chưa bật HĐĐT thì không có ô này,Vai: gdv; ca đang mở; đang ở màn bán hàng; điểm bán CHƯA bật chức năng hoá đơn điện tử,"1. Tìm ô ""Xuất hoá đơn điện tử"" ở cột bên phải",,Ô KHÔNG hiện,,,,,,
+,050 — *(từ sheet QC)* đổi điểm thưởng khi thanh toán,,,,,,,,,,
+18_2_050_001,Thanh toán đơn hàng bằng điểm thưởng,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có đủ điểm; có chương trình đổi điểm đang hiệu lực,"1. Gắn khách;
+2. Thêm hàng;
+3. Mở màn thanh toán;
+4. Tích tuỳ chọn đổi điểm;
+5. Hoàn tất",,Thanh toán thành công; số điểm của khách giảm đúng số đã đổi; đơn ghi nhận phần thanh toán bằng điểm,,,,,,
+18_2_050_002,POS hiển thị thông tin điểm sau khi chọn khách,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có điểm tích luỹ,"1. Gắn khách vào đơn;
+2. Đọc khối khách hàng",,"Hiện dòng ""Điểm hiện tại"" với đúng số điểm của khách",,,,,,
+18_2_050_003,Đổi điểm làm giảm đúng tổng tiền phải thanh toán,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có điểm; chương trình đổi điểm đang hiệu lực,"1. Ghi lại ""Cần thanh toán"" trước khi đổi điểm;
+2. Tích đổi điểm;
+3. Đọc lại ""Cần thanh toán""",,"""Cần thanh toán"" giảm **đúng bằng** giá trị quy đổi của số điểm đã dùng, theo tỷ lệ quy đổi của chương trình",,,,,,
+18_2_050_004,Đơn không tick đổi điểm vẫn tích luỹ điểm bình thường,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có hồ sơ,"1. Gắn khách;
+2. KHÔNG tích đổi điểm;
+3. Thanh toán;
+4. Đọc lại điểm của khách",,Điểm của khách **TĂNG** theo quy tắc tích điểm của đơn; không bị trừ,,,,,,
+18_2_050_005,Đổi điểm kết hợp thanh toán tiền mặt phần còn lại,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có điểm nhưng không đủ trả toàn bộ đơn,"1. Tích đổi điểm;
+2. Chọn tiền mặt cho phần còn lại;
+3. Hoàn tất",,Thanh toán thành công; tổng = giá trị điểm đã đổi + tiền mặt đã thu; hai khoản ghi riêng trên đơn và biên lai,,,,,,
+18_2_050_006,Không chọn khách hàng thì KHÔNG hiện tuỳ chọn đổi điểm,Vai: gdv; ca đang mở; đang ở màn bán hàng; đơn CHƯA gắn khách,"1. Mở màn thanh toán;
+2. Tìm tuỳ chọn đổi điểm",,Tuỳ chọn đổi điểm KHÔNG hiện,,,,,,
+18_2_050_007,Không có chương trình đổi điểm nào đang hiệu lực,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có điểm; 🚫 không chương trình đổi điểm nào chạy,"1. Gắn khách;
+2. Mở màn thanh toán;
+3. Tìm tuỳ chọn đổi điểm",,Tuỳ chọn đổi điểm không dùng được; hệ thống nêu rõ không có chương trình đổi điểm.,,,,,,
+18_2_050_008,Khách không đủ điểm để đổi cho đơn hàng,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có 100 điểm; đơn cần 500 điểm,1. Tích đổi điểm với số điểm vượt số khách có,,Hệ thống chặn và nêu số điểm khách đang có.,,,,,,
+18_2_050_009,Giá trị đơn hàng không đạt tối thiểu để đổi điểm,Vai: gdv; ca đang mở; đang ở màn bán hàng; chương trình yêu cầu đơn tối thiểu 200.000đ; giỏ chỉ 50.000đ,1. Tích đổi điểm,,Hệ thống chặn và nêu ngưỡng tối thiểu.,,,,,,
+18_2_050_010,Chọn khách KHÔNG có điểm tích luỹ và cố đổi điểm,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có 0 điểm,"1. Gắn khách;
+2. Tích đổi điểm",,"Hệ thống chặn; dòng ""Điểm hiện tại"" hiện 0 hoặc không hiện.",,,,,,
+18_2_050_011,Đổi số điểm bằng 0 hoặc âm,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có điểm,"1. Nhập số điểm đổi = 0;
+2. Thử tiếp -10",,Cả hai bị chặn.,,,,,,
+18_2_050_012,Đổi đúng số điểm khách đang có,Vai: gdv; ca đang mở; đang ở màn bán hàng; khách có đúng 500 điểm,1. Đổi đúng 500 điểm,,Được chấp nhận (biên trên); điểm còn lại của khách = 0 sau khi thanh toán,,,,,,

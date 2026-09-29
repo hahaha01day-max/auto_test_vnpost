@@ -1,0 +1,6 @@
+{'startTime': '2026-09-25T13:04:06.357Z', 'duration': 257439.038, 'expected': 8, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 24_070_004 — Nhập số tiền bằng 0 hoặc số âm khi nộp tiền
+   @ ô tổng (gõ 0) : khi gõ "0" · sau Tab "0"
+   @ ô sau khi gõ -100000 : -100000
+   ! Error: Ô số nhận giá trị âm  expect(received).not.toMatch(expected)  Expected pattern: not /^-/ Received string:      "-100000"

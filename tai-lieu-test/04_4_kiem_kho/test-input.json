@@ -1,0 +1,442 @@
+{
+  "cases": {
+    "04_4_010_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "_blocked": "Cần mở được form lập phiếu kiểm kho — bị chặn nếu đang có phiếu nháp (xem 04_4_040_003).",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "_blocked": "Cùng lý do 04_4_020_001.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "_blocked": "Cần fixture Excel khai theo SKU và khai theo TÊN — chưa có.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_020_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "_blocked": "Cần fixture Excel có SKU/tên không tồn tại — chưa có.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_020_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "_blocked": "Cần fixture Excel khai sản phẩm FIFO bỏ trống mã lô — chưa có.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_030_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Kỳ vọng gốc KHÔNG PHẢI kỳ vọng: sheet ghi \"Check lại phần tồn kho âm\" — đó là ghi chú của người viết. Cần user chốt hành vi khi nhập số thực tế âm. Case còn GHI thật.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Kỳ vọng chưa chốt: sheet đòi \"Số lượng mới = 0\" khi nhập chữ; ô số của antd bỏ qua ký tự chữ nên có thể thành RỖNG — mà rỗng nghĩa là CHƯA ĐẾM, khác hẳn đếm 0.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Câu hỏi nghiêm trọng nhất của màn: bỏ trống số thực tế có bị coi là 0 không. Nếu có thì mọi sản phẩm chưa kiểm sẽ bị xoá sạch tồn. Cần kho dựng riêng mới dám đo.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_040_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      }
+    },
+    "04_4_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "required": [
+        "maPhieu"
+      ]
+    },
+    "04_4_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "required": [
+        "maPhieu"
+      ]
+    },
+    "04_4_050_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "_blocked": "Chưa lấy được danh sách trạng thái thật của phiếu kiểm kho từ code — phải trace trước khi assert.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_050_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      }
+    },
+    "04_4_050_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      }
+    },
+    "04_4_060_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI TỒN KHO thật qua phiếu kiểm kho (điều chỉnh tồn không hoàn tác được bằng UI). Cần kho dựng riêng + sản phẩm có lô.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_060_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_blocked": "Cần chốt giá vốn của phần hàng thừa lấy từ đâu — đặc tả không nói. Case còn GHI thật.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "04_4_060_003": {
+      "enabled": false,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": false,
+      "_blocked": "Cần SP có lô tồn 0 hiện trong drawer \"Kiểm kho theo lô\" — lô về 0 bị ẩn khỏi danh sách lô (đo 04_3_030_006), nên không khai giảm được cho lô tồn 0. Đo 24/09/2026 làn 8.",
+      "required": [
+        "maLo"
+      ],
+      "_doLuc": "2026-09-24 làn 8"
+    },
+    "04_4_060_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-24 làn 8",
+      "_note": "28/09 tests/ton-am.shop.spec.js — bật bán âm riêng điểm bán làn (shared/ban-am.js), SP TC; bán qua phiên phụ gdv"
+    },
+    "04_4_060_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-24 làn 8",
+      "_note": "28/09 tests/ton-am.shop.spec.js — bật bán âm riêng điểm bán làn (shared/ban-am.js), SP TC; bán qua phiên phụ gdv"
+    },
+    "04_4_070_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-24 làn 8",
+      "_note": "28/09 tests/ky-ke-toan.shop.spec.js — đóng kỳ = chốt tồn tháng 08/2026 riêng điểm bán làn (KHÔNG hoàn tác); user chốt 28/09 chạy bằng CHT (vai kế toán bị 401)"
+    },
+    "04_4_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-24 làn 8",
+      "_note": "28/09 tests/ton-am.shop.spec.js — bật bán âm riêng điểm bán làn (shared/ban-am.js), SP TC; bán qua phiên phụ gdv"
+    },
+    "04_4_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-24 làn 8",
+      "_note": "28/09 tests/ton-am.shop.spec.js — bật bán âm riêng điểm bán làn (shared/ban-am.js), SP TC; bán qua phiên phụ gdv"
+    },
+    "04_4_070_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-24 làn 8",
+      "_note": "28/09 A9 — ban-am-serial.shop.spec.js, SP DD làn 5 tồn 0"
+    },
+    "04_4_070_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maPhieu": "",
+        "maLo": ""
+      },
+      "allowMutation": true,
+      "_doLuc": "2026-09-24 làn 8",
+      "_note": "28/09 tests/ton-am.shop.spec.js — bật bán âm riêng điểm bán làn (shared/ban-am.js), SP TC; bán qua phiên phụ gdv"
+    }
+  },
+  "_note": "Phân hệ 04_4 Kiểm kho. 🔴 Áp dụng phiếu kiểm kho GHI THẲNG tồn kho theo số đã đếm — không hoàn tác được bằng UI, chỉ sửa được bằng phiếu kiểm kho mới. Câu hỏi nguy hiểm nhất: dòng BỎ TRỐNG số thực tế có bị coi là đếm 0 hay không (04_4_030_006). Tất cả case ghi `allowMutation:false`."
+}

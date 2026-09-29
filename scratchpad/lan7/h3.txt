@@ -1,0 +1,50 @@
+{'startTime': '2026-09-25T14:50:13.184Z', 'duration': 511402.7, 'expected': 19, 'skipped': 0, 'unexpected': 10, 'flaky': 0}
+
+ failed | 30_030_005 — Tổng tiền giảm của các đơn bằng tiền giảm giá của chương trình
+   @ đo : bảng: {"n":0,"giam":0} · 1 đơn cộng giảm 10000 · DB ["26092568151Q7FYQ","10000","10000"]
+   ! Error: Số hoá đơn áp dụng: báo cáo 0, DB có 1 đơn 26092568151Q7FYQ  expect(received).toBe(expected) // Object.is equality  Expected: 1 Received: 0
+
+ failed | 30_010_001 — Báo cáo hiệu quả CTKM mở được và hiện thẻ tổng hợp
+   @ đo : 200/200 effectiveness/customer-groups · 200/200 effectiveness · 200/200 effectiveness/summary · thẻ {"Số chương trình":"0","Số hoá đơn áp dụng":"0","Doanh thu (gồm VAT)":"-","Doanh thu thuần (gồm VAT)":"-","Tiền giảm giá":"-","Lợi nhuận gộp":"-"} · 0 dòng
+   ! Error: Vai tỉnh: bảng RỖNG trong kỳ dù điểm bán trực thuộc có CTKM "A7KH19_KM_30 Giảm giá hè 823175" phát sinh đơn 26092568151Q7FYQ  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 30_010_002 — Nhận ra chương trình đang tiêu gần hết ngân sách
+   @ đo : ngân sách 20000 · dòng API undefined · dòng màn ""
+   ! Error: Vai tỉnh không thấy CTKM rác của điểm bán trực thuộc  expect(received).toBeTruthy()  Received: undefined
+
+ failed | 30_020_001 — Lọc theo tiêu chí thu hẹp bảng và cập nhật thẻ tổng hợp
+   @ đo : 0 dòng · tiêu đề "" · thẻ {"Số chương trình":"0","Số hoá đơn áp dụng":"0","Doanh thu (gồm VAT)":"-","Doanh thu thuần (gồm VAT)":"-","Tiền giảm giá":"-","Lợi nhuận gộp":"-"} · summary {"campaignCount":0,"orderCount":null,"revenue":null,"refundAmount":null,"netRevenue":null,"discountAmount":null,"cost
+   ! Error: Lọc theo tên CTKM rác (điểm bán trực thuộc) mà vai tỉnh không ra dòng nào  expect(received).toBe(expected) // Object.is equality  Expected: 1 Received: 0
+
+ failed | 30_020_002 — Nhiều tiêu chí cùng lúc là điều kiện AND
+   @ đo : chỉ A (tên): không · A+B (tên + Đã kết thúc): 0 · q {"page":"0","size":"10","keyword":"A7KH19_KM_30 Giảm giá hè 823175","campaignStatus":"RAN","startDate":"1788195600000","endDate":"1790355599999"}
+   ! Error: Vai tỉnh lọc theo tên (chỉ A) không ra CTKM rác — không kiểm được AND  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false
+
+ failed | 30_030_001 — Chi tiết chương trình hiện mười chỉ số hiệu quả
+   ! Error: Vai tỉnh không thấy CTKM rác  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 30_030_002 — Truy được từ chỉ số xuống hoá đơn tạo ra nó
+   ! Error: Vai tỉnh không thấy CTKM rác  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 30_040_001 — Xuất báo cáo hiệu quả ra Excel giữ nguyên thứ tự cột
+   @ xuất : 200 · tệp bao_cao_hieu_qua_ctkm_20260925_215757.xlsx · 
+   @ cột màn vs tệp : STT · Tên chương trình · Trạng thái · Số hoá đơn áp dụng · Doanh thu (gồm VAT) · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Doanh số tăng thêm · Lợi nhuận gộp · Ngân sách đã dùng  ||  STT · Mã chương trình · Tên chương trình · Trạng thái · Từ ngày · Đến ngày · Phạm vi ưu đãi · Số hoá đơn · Doanh th
+   ! Error: Thứ tự/tên cột tệp khác màn hình  expect(received).toEqual(expected) // deep equality  - Expected  -  2 + Received  + 11    Array [     "STT", +   "Mã chương trình",     "Tên chương trình",     "Trạng thái", -   "Số hoá đơn áp dụng", +   "Từ ngày", [
+
+ failed | 30_060_001 — Vai tỉnh thấy số liệu CTKM của các điểm bán trực thuộc
+   @ đo : CTKM rác: KHÔNG thấy · đơn tỉnh ["AUTO7_T"] (200) · tổng CTKM thấy được 0
+   ! Error: Vai tỉnh AUTO7_T KHÔNG thấy CTKM của điểm bán trực thuộc (đơn 26092568151Q7FYQ)  expect(received).toBeTruthy()  Received: undefined
+
+ failed | 30_PQ_001 — Vai điểm bán chỉ thấy số liệu CTKM trong phạm vi
+   @ API báo cáo CTKM (http/code) : 401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness · 401/SSHOP-401 effectiveness/customer-groups
+   ! Error: Vai điểm bán mở màn báo cáo CTKM: API trả lỗi (401/SSHOP-401 effectiveness/summary · 401/SSHOP-401 effectiveness · 401/SSHOP-401 effectiveness/customer-groups) ⇒ màn hiện nhưng KHÔNG đọc được số liệu nào.  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false
+{'startTime': '2026-09-25T14:58:45.154Z', 'duration': 182552.22300000003, 'expected': 20, 'skipped': 0, 'unexpected': 2, 'flaky': 0}
+
+ failed | 30_050_003 — Xoá bộ lọc trở về mặc định
+   @ đo : {"macDinh":{"the":{"Số chương trình":"14","Số hoá đơn áp dụng":"0","Doanh thu (gồm VAT)":"0","Doanh thu thuần (gồm VAT)":"0","Tiền giảm giá":"0","Lợi nhuận gộp":"-"},"n":10},"giua":{"the":{"Số chương trình":"0","Số hoá đơn áp dụng":"0","Doanh thu (gồm VAT)":"-","Doanh thu thuần (gồm VAT)":"-","Tiền 
+   @ nút xoá lọc : 🚫 KHÔNG có nút xoá/đặt lại bộ lọc — phải xoá tay từng ô
+   ! TypeError: expect(received).not.toMatch(expected)  Matcher error: received value must be a string  Received has value: undefined
+
+ failed | 30_050_005 — Tìm chương trình bằng ký tự đặc biệt
+   @ hành vi thật : tổng không lọc undefined · {"%":{"code":"200","n":14,"ten":["A7KH19_KM_30 Giảm giá hè 823175","A7KH19_KM_30 Giảm giá hè 618245","A7KH19_KM_30 Giảm giá hè 436106"]},"_":{"code":"200","n":14,"ten":["A7KH19_KM_30 Giảm giá hè 823175","A7KH19_KM_30 Giảm giá hè 618245","A7KH19_KM_30 Giảm giá hè 436106"]},
+   ! Error: Từ khoá "%" trả về TOÀN BỘ 14/undefined chương trình (ký tự đại diện LIKE không được escape)  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false

@@ -1,0 +1,8 @@
+{'startTime': '2026-09-25T13:42:03.892Z', 'duration': 46824.259, 'expected': 2, 'skipped': 1, 'unexpected': 1, 'flaky': 0}
+
+ failed | 26_060_006 — Thu hồi nợ đơn vị vận tải sinh phiếu thu tự động
+   ! Error: Không thấy đơn vị "AUTO7_SHOP" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP  expect(locator).toBeVisible() failed  Locator: getByText('AUTO7_SHOP', { exact: true }).first() Expected: visible Timeout: 30000ms Error: element(s) not found  Call log:   - Không thấy đơn vị "AUTO7_SHOP" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LAB
+
+ skipped | 26_060_007 — TCT nhận thanh toán từ Tỉnh sinh phiếu thu tự động
+   @ đo : TCT shopId 11287: 0 phiếu 90 ngày · tự sinh từ Tỉnh: 0 · mẫu []
+   @ skip : TCT chưa có phiếu thu tự sinh nào từ khoản Tỉnh thanh toán trong 90 ngày (tiền đề: luồng nộp tiền Tỉnh → TCT phân hệ 13) — chưa dựng được.

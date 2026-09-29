@@ -1,0 +1,120 @@
+{
+  "_note": "Phân hệ 30 Báo cáo khuyến mại. Chỉ đọc, không có case ghi. 🔴 API phải có prefix /report/**.",
+  "cases": {
+    "30_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "30_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "30_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "30_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "30_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "30_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "30_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "30_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "30_010_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_010_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_030_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_030_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_030_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_050_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_050_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "data": {
+        "pageMacDinh": 0,
+        "sizeMacDinh": 20
+      }
+    },
+    "30_050_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_050_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_050_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "30_050_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "30_060_001": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    }
+  }
+}

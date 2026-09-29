@@ -1,0 +1,70 @@
+{
+  "cases": {
+    "13_2_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "maPhieuTong": "",
+        "maPhieuCon": ""
+      }
+    },
+    "13_2_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuTong": "",
+        "maPhieuCon": ""
+      },
+      "allowMutation": true,
+      "required": []
+    },
+    "13_2_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuTong": "",
+        "maPhieuCon": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 — tiền đề gộp/tách dựng trong case"
+    },
+    "13_2_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "soLuong": 2
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Bổ sung 28/09/2026 — tiền đề dựng trong spec qua chuỗi đề xuất → TCT giao thẳng HUB (dieu-phoi-ghi.js)"
+    },
+    "13_2_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "soLuong": 2
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Bổ sung 28/09/2026 — tiền đề dựng trong spec qua chuỗi đề xuất → TCT giao thẳng HUB (dieu-phoi-ghi.js)"
+    },
+    "13_2_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "soLuong": 2
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Bổ sung 28/09/2026 — tiền đề dựng trong spec qua chuỗi đề xuất → TCT giao thẳng HUB (dieu-phoi-ghi.js)"
+    }
+  },
+  "_note": "Phân hệ 13_2 Gộp / tách và điều phối. 🔴 Lịch sử gộp/tách là dấu vết truy nguyên: tra ngược từ phiếu tổng ra đủ phiếu con và ngược lại, tổng số lượng hai chiều phải khớp."
+}

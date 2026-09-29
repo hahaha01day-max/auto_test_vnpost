@@ -1,0 +1,11 @@
+const { chromium } = require("playwright");
+require("./tai-lieu-test/shared/config");
+const { storageStateFor } = require("./tai-lieu-test/shared/auth/accounts");
+const kk = require("./tai-lieu-test/04_4_kiem_kho/tests/kiem-kho-ghi");
+const k = require("./tai-lieu-test/04_3_nhap_xuat_chuyen_kho/tests/ghi-kho");
+(async()=>{const b=await chromium.launch();const c=await b.newContext({storageState:storageStateFor("shop"),viewport:{width:1440,height:1000}});const page=await c.newPage();
+const st=k.batHeader(page);
+const sid=await kk.moPhien(page,'shop'); const tid=await kk.themPhieu(page);
+await page.getByPlaceholder(/Tìm sản phẩm/).first().fill('AUTO8_SP_BT'); await page.waitForTimeout(2500);
+console.log(await page.evaluate(()=>[...document.querySelectorAll('*')].filter(e=>e.children.length<3&&/AUTO8_SP_BT/.test(e.textContent)&&e.textContent.length<200).map(e=>e.tagName+'.'+e.className.slice(0,40)+' :: '+e.textContent).slice(0,15).join('\n')));
+await kk.huyPhien(page,st,68152,sid); await b.close()})();

@@ -1,0 +1,19 @@
+<h1>Chọn &amp; chạy</h1>
+<p class="sub">Chọn module để xem danh sách case.</p>
+
+<% if (profiles.length === 0) { %>
+  <div class="warn">Chưa có hồ sơ môi trường nào — <a href="/">tạo một hồ sơ</a> trước khi chạy.</div>
+<% } %>
+
+<table>
+  <tr><th>Module</th><th>Tài liệu</th><th>Input</th><th>Cấu hình</th><th></th></tr>
+  <% modules.forEach((m) => { %>
+  <tr>
+    <td><a href="/modules/<%= m.id %>"><%= m.name %></a><div class="mono small muted"><%= m.id %></div></td>
+    <td class="small"><%= m.hasCsv ? 'có test-cases.csv' : '— chưa có CSV' %></td>
+    <td class="small"><% if (m.hasInputTemplate) { %><a href="/modules/<%= m.id %>/inputs">khai input</a><% } else { %><span class="muted">— chưa có khuôn</span><% } %></td>
+    <td class="small muted"><%= m.hasConfig ? m.configs[0] : 'config động' %></td>
+    <td><a href="/modules/<%= m.id %>">Mở</a></td>
+  </tr>
+  <% }) %>
+</table>

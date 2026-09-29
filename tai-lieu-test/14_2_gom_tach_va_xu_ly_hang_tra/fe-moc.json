@@ -1,0 +1,144 @@
+{
+  "spec": {
+    "tests/gom-phieu.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js"
+      ],
+      "ghiBu": true
+    },
+    "tests/gom-ghi.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js",
+        "src/features/returnToSupplier/components/returnRequest/statusConfig.js"
+      ]
+    },
+    "tests/pham-vi.shop.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js"
+      ]
+    },
+    "tests/pham-vi.ward.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js"
+      ]
+    },
+    "tests/pham-vi-khac.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js"
+      ]
+    },
+    "tests/tach-ghi.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js",
+        "src/features/returnToSupplier/components/returnRequest/SplitResultDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/statusConfig.js"
+      ]
+    },
+    "tests/xu-ly-ghi.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js",
+        "src/features/returnToSupplier/components/returnRequest/ReceiveToProvinceModal.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ProcessActionDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/statusConfig.js",
+        "src/features/inventory/services/inventoryApi.js"
+      ]
+    },
+    "tests/serial.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js",
+        "src/features/returnToSupplier/components/returnRequest/ProcessActionDrawer.jsx"
+      ]
+    },
+    "tests/tct-dot-tra.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js",
+        "src/features/returnToSupplier/components/returnRequest/SupplierBatchSection.jsx",
+        "src/features/returnToSupplier/components/returnRequest/CreditNoteBatchBlock.jsx",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/statusConfig.js",
+        "src/features/supplierDebt/services/shopDebtSupplierApi.js"
+      ]
+    },
+    "tests/tct-ghi.tct.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/stock-return-request"
+      ],
+      "fe": [
+        "src/features/returnToSupplier/pages/StockReturnRequestListPage.jsx",
+        "src/features/returnToSupplier/services/stockReturnRequestApi.js",
+        "src/features/returnToSupplier/components/returnRequest/ReturnRequestDetailDrawer.jsx",
+        "src/features/returnToSupplier/components/returnRequest/SupplierBatchSection.jsx"
+      ]
+    },
+    "tests/tien-de.province.spec.js": {
+      "commit": "d7db6594722fe7f44a50948361e71485fc7fb2a9",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/purchase-order/create",
+        "/inventory/transfer-warehouse"
+      ],
+      "fe": [
+        "src/pages/warehouse/transfer/DrawerAddTransfer.jsx",
+        "src/pages/warehouse/transfer/DrawerConfirmTransfer.jsx",
+        "src/features/inventory/warehouse/ShopInventoryPage.jsx"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{'startTime': '2026-09-25T14:19:46.303Z', 'duration': 264949.76900000003, 'expected': 9, 'skipped': 0, 'unexpected': 7, 'flaky': 0}
+
+ failed | 29_030_003 — Làm mới số liệu lãi lỗ báo đúng thông điệp
+   @ nguyên văn thông báo : (không có)
+   ! Error: Bấm "Làm mới" mà không có thông báo nào. Kỳ vọng nguyên văn: "Đã tải lại số liệu Lãi/Lỗ."  expect(received).toContain(expected) // indexOf  Expected substring: "Lãi/Lỗ" Received string:    ""
+
+ failed | 29_050_001 — Mỗi dòng trị giá tồn kho tự kiểm chứng được
+   @ cột : SKU · TÊN SẢN PHẨM · ĐVT · SL ON-HAND (THỰC TẾ) · ĐƠN GIÁ VỐN BQGQ (VNĐ) · TỔNG GIÁ TRỊ KHO (VNĐ) · lệch: 2
+   ! Error: SL × Đơn giá vốn BQGQ ≠ Tổng giá trị kho  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 4  - Array [] + Array [ +   "1111111 | Bim bim ngô | gói | -2 | 0 | 6.864.000", +   "1111116 | Bánh mỳ | chiếc | 112.501,83 | 3.682 | 414.202.136", [31
+
+ failed | 29_050_002 — Đối soát trị giá tồn kho với sổ cái
+   @ đo : tổng 119991193022698 · TK156 119991193022698 · chênh lệch 0
+   ! Error: Số dư TK 156 chính là tổng hệ thống (không đọc sổ cái) ⇒ chênh lệch luôn 0  expect(received).toBe(expected) // Object.is equality  Expected: false Received: true
+
+ failed | 29_040_001 — Chốt trị giá tồn kho theo tháng đổi trạng thái đơn vị
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-page-container, main').first().getByRole('button', { name: /Chốt tồn kho/ }).first() 
+
+ failed | 29_060_002 — Xuất NXT đặt tên tệp đúng quy ước
+   @ đo : 200 {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"UaOFRk"} · {"jobName":"inventory-nxt","jobId":450,"filename":"nhap_xuat_ton_20260925212326","status":"STARTING"} · "Đã tạo yêu cầu xuất Excel, file sẽ sẵn sàng trong giây lát"
+   ! Error: Tên tệp xuất NXT không theo quy ước "bao-cao-nhap-xuat-ton…"  expect(received).toMatch(expected)  Expected pattern: /bao-cao-nhap-xuat-ton/ Received string:  "{\"jobName\":\"inventory-nxt\",\"jobId\":450,\"filename\":\"nhap_xuat_ton_20260925212326\",\"status\":\"STARTING\"}"
+
+ failed | 29_080_001 — Vòng quay và số ngày tồn kho tính theo đúng kỳ đã lọc
+   @ đo : ?page=0&size=10&chainId=626&fromMonth=2026-08-01&toMonth=2026-08-01&avgMethod=ENDPOINTS · 10 dòng · {"podId":"pod1","shopId":67840,"shopName":"POS mini 03","chainId":626,"provinceCode":"94","wardCode":"94941","productId":1170905,"variantId":1261647,"sku":"bia333","productName":"Bia 333","variantName
+   ! Error: Dòng thiếu trường cần kiểm (Vòng quay và số ngày tồn kho tính theo đúng kỳ đã lọc)  expect(received).toBeTruthy()  Received: undefined
+
+ failed | 29_090_001 — Lọc theo nhãn hàng bán chạy chậm luân chuyển hàng chết
+   @ đo : ?chainId=626&fromMonth=2026-08-01&toMonth=2026-08-01&avgMethod=ENDPOINTS&topPercent=20&slowDioDays=90 · 4 dòng · {"movementClass":"SLOW","itemCount":2,"inventoryValue":1388500,"inventoryQty":19.5,"netSoldVal":203000}
+   ! Error: Dòng thiếu trường cần kiểm (Lọc theo nhãn hàng bán chạy chậm luân chuyển hàng chết)  expect(received).toBeTruthy()  Received: undefined

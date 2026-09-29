@@ -1,0 +1,1159 @@
+{
+  "_note": "Phân hệ 10 Bảng giá bán sản phẩm. 🔴 Bảng giá quyết định GIÁ BÁN ở quầy: không có bảng giá hiệu lực thì KHÔNG bán được sản phẩm (10_130_003). Sửa/xoá/phê duyệt bảng giá là đổi giá bán thật. Nhóm 130 kiểm giá trên POS — cần ca bán hàng đang mở nên là case ghi kép (bảng giá + đơn bán).",
+  "cases": {
+    "10_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "required": [
+        "tenBangGia"
+      ],
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "required": [
+        "maDonVi"
+      ],
+      "data": {
+        "maDonVi": "",
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_010_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "Phải mở màn lập bảng giá thật và bấm lưu",
+      "required": [],
+      "data": {
+        "tenBangGiaDaCo": "AUTO_BANGGIA_62391304",
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "data": {
+        "tenBangGiaMoi": "AUTO TEST KHONG DUNG",
+        "sku": "AUTOSKU62391304",
+        "donGia": 0,
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "tenDanhMuc": ""
+      },
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_020_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_020_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_020_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "required": [],
+      "data": {
+        "tenBangGiaDonViKhac": "",
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_030_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "sku"
+      ],
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "_blocked": "Cần bảng giá đã từng bị sửa để có lịch sử",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "_blocked": "Cần bảng giá đã từng bị sửa",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_040_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "10_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "data": {
+        "thongBao": "Xác nhận phê duyệt bảng giá?",
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_060_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "data": {
+        "thongBao": "Xác nhận xóa bảng giá?",
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_060_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "data": {
+        "thongBao": "Xóa bảng giá thành công",
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_060_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_060_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "Cần bảng giá đang kích hoạt và đã phê duyệt — không nên thử xoá trên bảng giá thật.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_070_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_070_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_070_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_070_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_080_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "",
+      "_goBoi": "27/09/2026: bấm thẳng thẻ Sản phẩm (không validate)"
+    },
+    "10_080_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "",
+      "_goBoi": "27/09/2026: bấm thẳng thẻ Sản phẩm (không validate)"
+    },
+    "10_080_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "Cần bảng giá hình thức Ký gửi — phải lập mới (GHI).",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_080_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "",
+      "_goBoi": "27/09/2026: bấm thẳng thẻ Sản phẩm (không validate)"
+    },
+    "10_080_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "",
+      "_goBoi": "27/09/2026: bấm thẳng thẻ Sản phẩm (không validate)"
+    },
+    "10_080_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "",
+      "_goBoi": "27/09/2026: bấm thẳng thẻ Sản phẩm (không validate)"
+    },
+    "10_080_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "",
+      "_goBoi": "27/09/2026: bấm thẳng thẻ Sản phẩm (không validate)"
+    },
+    "10_080_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Chưa có đặc tả: đổi phương thức VAT khi bảng đã có combo thì combo bị xoá, giữ giá, hay tính lại giá. Ba cách cho ba con số. Case còn GHI.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "Cần sản phẩm ký gửi để thử nhập vào bảng giá mua bán — chưa có dữ liệu nền.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "Cần combo ký gửi — chưa có dữ liệu nền.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Chưa rõ hệ thống nhận phần hợp lệ hay từ chối cả file khi Excel lẫn SKU ký gửi; và cần fixture Excel.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_090_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_100_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_100_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_100_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_100_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_100_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_100_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_110_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_110_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_110_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "Cần sản phẩm mua bán để thử nhập vào bảng giá ký gửi.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_110_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_110_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_110_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_110_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_120_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_120_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập/sửa/phê duyệt/xoá bảng giá hoặc đổi giá sản phẩm. Bảng giá quyết định GIÁ BÁN ở quầy — sai là bán sai giá cho khách. Cần đơn vị dựng riêng cho test.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_130_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "Cần sản phẩm thuộc bảng giá chưa gồm VAT đang hiệu lực + ca bán hàng đang mở (GHI đơn bán).",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_130_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "Cần bảng giá đã gồm VAT đang hiệu lực + ca đang mở (GHI đơn bán).",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_130_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "Cần sản phẩm KHÔNG thuộc bảng giá nào — khó dựng trên dữ liệu thật.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_130_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "Cần bảng giá chưa tới ngày hiệu lực — phải lập bảng giá (GHI).",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_130_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "🔴 Quy tắc chọn bảng giá khi nhiều bảng cùng hiệu lực (ngày bắt đầu muộn nhất thắng) CHƯA được xác nhận từ hệ thống. Cần dữ liệu nền nhiều bảng giá.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_130_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_note": "28/09 A13 — ban-hang-gia.seed_gdv.spec.js, 3 bảng giá tạm khung giờ, xoá ở finally"
+    },
+    "10_130_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "Cần bảng giá áp cho điểm bán khác — phải lập bảng giá (GHI).",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_130_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "Cần combo thuộc bảng giá đang hiệu lực + ca đang mở (GHI đơn bán).",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "10_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenBangGia": "AUTO TEST KHONG DUNG - Bang gia kiem thu",
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    }
+  }
+}

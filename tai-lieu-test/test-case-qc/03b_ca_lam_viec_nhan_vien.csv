@@ -1,0 +1,130 @@
+﻿,Chức năng,,CA LÀM VIỆC CỦA NHÂN VIÊN,,,,,,,,
+,Mã Testcase,,03b_ca_lam_viec_nhan_vien,,,,,,,,
+,Tổng các tình huống kiểm thử,,48,,,,,,,,
+,Chưa thực hiện,,48,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,CA LÀM VIỆC CỦA NHÂN VIÊN,,,,,,,,,,
+,010 — Xem ca làm việc của mình trong ngày,,,,,,,,,,
+03b_010_001,Màn Ca làm việc hiện thẻ ca của chính mình trong ngày,Vai: gdv. Quản lý đã xếp lịch cho tài khoản này hôm nay,1. Mở /lich-ca-nhan/ca-lam-viec,,"Mỗi thẻ ca hiện đủ: tên ca kèm khung giờ, giờ đến, giờ về, trạng thái chấm công, trạng thái mở/chốt của ca",,,,,,
+03b_010_002,Nút trên thẻ ca đổi theo trạng thái ca,Vai: gdv. Có 1 ca chưa mở và đang trong giờ cho phép,"1. Mở /lich-ca-nhan/ca-lam-viec;
+2. Đọc nhãn nút trên thẻ ca",,"Ca chưa mở và trong giờ cho phép hiện nút ""Mở ca""; ca đang mở hiện ""Chốt ca""; ca tạm chốt hiện nhãn ""Phiên đang tạm chốt"" kèm nút ""Tiếp tục chốt""; ca đã chốt hiện ""In chốt ca""",,,,,,
+03b_010_003,Đang có ca mở thì ẩn nút Mở ca của mọi ca còn lại,Vai: gdv. Hôm nay có từ 2 ca trở lên và 1 ca đang mở,"1. Mở /lich-ca-nhan/ca-lam-viec;
+2. Duyệt toàn bộ thẻ ca",,"Không thẻ ca nào khác còn nút ""Mở ca"". Chỉ ca đang mở có nút ""Chốt ca""",,,,,,
+03b_010_004,Ngày không có ca thì báo đúng thông điệp,Vai: gdv. Hôm nay không có lịch làm việc,1. Mở /lich-ca-nhan/ca-lam-viec,,"Màn hình hiện ""Chưa có ca làm việc hôm nay"", KHÔNG hiện thẻ ca nào",,,,,,
+03b_010_005,Thẻ ca hiện đủ bốn ô thông tin,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca","1. Quan sát một thẻ ca
+2. Đọc từng ô",,"Thẻ có chấm màu trạng thái và đúng 4 ô: Tên ca · Thời gian ca (dạng ""HH:mm - HH:mm"") · Giờ đến · Giờ về. Ô Giờ đến / Giờ về trống khi chưa chấm công.",,,,,,
+03b_010_006,Ba nhãn trạng thái của ca và màu tương ứng,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; trong ngày có ca chưa chấm công, ca đang làm và ca đã về",1. Đọc Tag trạng thái của từng thẻ ca,,"Đúng ba nhãn: ""Chưa bắt đầu"" (xám) · ""Đang làm"" (xanh lá) · ""Đã về"" (xanh dương). Chấm màu bên trái khớp nhãn: xanh lá cho đang làm, xanh dương cho đã về, xám cho chưa bắt đầu.",,,,,,
+03b_010_007,"Nhãn ""Phiên đang tạm chốt"" khi ca mới tạm chốt","Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; có một ca đã tạm chốt nhưng chưa chốt hẳn",1. Quan sát vùng Tag của thẻ ca đó,,"Ngoài Tag trạng thái còn có Tag màu cam nguyên văn ""Phiên đang tạm chốt""; nút chính của thẻ đổi thành ""Tiếp tục chốt"".",,,,,,
+03b_010_008,Nút chính đổi theo trạng thái phiên bán hàng,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; có ca chưa mở, ca đang mở, ca đã chốt",1. Đọc nhãn nút chính trên từng thẻ ca,,"Bảng trạng thái × nút: ca chưa mở + không có ca nào đang mở ⇒ ""Mở ca""; ca đang mở ⇒ ""Chốt ca""; ca tạm chốt ⇒ ""Tiếp tục chốt""; ca đã chốt ⇒ ""In chốt ca"" (có icon máy in).",,,,,,
+03b_010_009,Ca thiếu cấu hình giờ chấm công thì KHÔNG bị chặn,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; có một ca mà `beginTime` hoặc `endTime` rỗng","1. Quan sát thẻ ca đó ngoài khoảng giờ làm việc
+2. Kiểm nút Chấm công đến và Mở ca có hiện không",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+,020 — Chấm công đến và chấm công về,,,,,,,,,,
+03b_020_001,Chấm công đến ghi nhận giờ lên thẻ ca,Vai: gdv. Có lịch hôm nay và đang trong khoảng giờ cho phép chấm công,"1. Mở /lich-ca-nhan/ca-lam-viec;
+2. Bấm ""Chấm công đến""",,Giờ đến hiện trên thẻ ca; trạng thái chấm công của ca đổi tương ứng,,,,,,
+03b_020_002,Chặn chấm công về khi chưa chấm công đến,Vai: gdv. Có lịch hôm nay và chưa chấm công đến,"1. Tìm nút ""Chấm công về"" trên thẻ ca",,Không chấm công về được: nút không khả dụng hoặc hệ thống báo lỗi khi bấm. Giờ về vẫn trống,,,,,,
+03b_020_003,Chặn chấm công đến lần thứ hai trong cùng một ca,Vai: gdv. Đã chấm công đến cho ca hôm nay,"1. Bấm lại ""Chấm công đến""",,Hệ thống báo lỗi không được chấm lại; giờ đến giữ nguyên giá trị lần đầu,,,,,,
+03b_020_004,Ngoài khoảng giờ cho phép thì không thấy nút chấm công,Vai: gdv. Có lịch hôm nay nhưng hiện tại nằm ngoài khoảng cho phép chấm công của ca,"1. Mở /lich-ca-nhan/ca-lam-viec;
+2. Quan sát thẻ ca",,Thẻ ca KHÔNG hiện nút chấm công và không hiện nút Mở ca,,,,,,
+03b_020_005,Giờ về trên thẻ ca cập nhật theo giờ đã chấm công,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đang ở trạng thái Đang làm (đã chấm công đến)","1. Ghi lại giờ hệ thống
+2. Bấm ""Chấm công về""
+3. Đọc ô Giờ về trên thẻ ca",,"Hiện thông báo nguyên văn ""Đã chấm công về""; ô Giờ về hiển thị đúng giờ vừa chấm (khớp giờ hệ thống, định dạng HH:mm); Tag trạng thái đổi sang ""Đã về"" và chấm màu sang xanh dương.",,,,,,
+03b_020_006,"Sau khi chấm công đến, nút và trạng thái đổi đúng","Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca ở trạng thái Chưa bắt đầu, đang trong khoảng giờ cho phép","1. Bấm ""Chấm công đến""
+2. Quan sát nút và Tag trạng thái",,"Hiện ""Đã chấm công đến""; ô Giờ đến điền giờ vừa chấm; Tag đổi sang ""Đang làm""; nút ""Chấm công đến"" biến mất, thay bằng ""Chấm công về"". Hai nút KHÔNG bao giờ hiện cùng lúc (điều kiện `status === ""pending""` / `""working""` loại trừ nhau).",,,,,,
+03b_020_007,Khoảng cho phép chấm công tính theo cấu hình của ca,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca 08:00–17:00 với cấu hình cho chấm công trước 30 phút, sau 30 phút","1. Trước 07:30 — quan sát nút chấm công
+2. Trong 07:30–17:30 — quan sát
+3. Sau 17:30 — quan sát",,"Nút chấm công chỉ hiện trong khoảng [08:00 − 30 phút, 17:00 + 30 phút] = 07:30–17:30; ngoài khoảng đó KHÔNG hiện nút (ẩn hẳn, không phải disabled).",,,,,,
+,030 — Mở ca bán hàng,,,,,,,,,,
+03b_030_001,Mở ca với khai tiền mặt theo mệnh giá,Vai: gdv. Có lịch hôm nay trong giờ cho phép mở ca và chưa có ca nào đang mở,"1. Bấm ""Mở ca"" trên thẻ ca;
+2. Chọn Quầy thu ngân;
+3. Nhập số tờ từng mệnh giá;
+4. Bấm ""Mở ca""",,"Ca chuyển sang đang mở; nút trên thẻ đổi thành ""Chốt ca"". Tiền đầu ca ghi nhận đúng bằng Tổng tiền mặt thực tế đã khai",,,,,,
+03b_030_002,Tổng tiền mặt thực tế tự cộng theo số tờ,Vai: gdv. Đang mở màn Mở ca làm việc,"1. Nhập 2 tờ 500.000đ;
+2. Nhập 3 tờ 100.000đ;
+3. Đọc ô Tổng tiền mặt thực tế",,"Tổng tiền mặt thực tế = 1.300.000đ và cập nhật ngay khi đổi số tờ, không cần bấm nút nào",,,,,,
+03b_030_003,Chặn mở ca khi còn ca chưa chốt,Vai: gdv. Bản thân hoặc quầy hoặc điểm bán đang có ca chưa chốt,"1. Bấm ""Mở ca"" trên một thẻ ca khác",,Hệ thống chặn và báo lỗi còn ca chưa chốt; không có ca mới nào được mở,,,,,,
+03b_030_004,Bỏ trống Quầy thu ngân khi mở ca,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; drawer Mở ca đang mở","1. Để trống ô ""Quầy thu ngân""
+2. Bấm xác nhận mở ca",,"Hiện lỗi nguyên văn ""Vui lòng chọn quầy thu ngân""; không gửi request mở ca.",,,,,,
+03b_030_005,Ô số lượng tờ theo mệnh giá: bỏ trống và giá trị không hợp lệ,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; drawer Mở ca đang mở","1. Xoá trắng một ô số lượng tờ → bấm xác nhận, ghi lỗi
+2. Nhập chữ ""ba"" vào ô đó → ghi lỗi
+3. Nhập số âm -2 → ghi lỗi
+4. Nhập 0 → ghi kết quả",,"Bỏ trống hiện ""Nhập số lượng""; giá trị không phải số nguyên không âm hiện ""Số lượng không hợp lệ""; 0 là hợp lệ (mệnh giá không có tờ nào). Mỗi lần lỗi đều không gửi request.",,,,,,
+03b_030_006,Quầy đang có ca chưa chốt của người khác thì không mở được,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; quầy A đang có ca chưa chốt của nhân viên KHÁC","1. Mở ca, chọn Quầy thu ngân = A
+2. Bấm xác nhận",,"Hiện hộp thoại tiêu đề ""Quầy đang có ca chưa chốt"", nội dung là bảng ghi rõ Nhân viên · Ca làm việc · Quầy thu ngân đang chiếm quầy; chỉ có một nút ""Đã hiểu""; KHÔNG mở được ca.",,,,,,
+03b_030_007,Chính mình còn ca chưa chốt thì hệ thống tự chốt ca cũ rồi mở ca mới,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; chính nhân viên đang đăng nhập còn một ca chưa chốt","1. Bấm ""Mở ca"" ở một ca khác
+2. Đọc vùng cảnh báo trong drawer
+3. Hoàn tất luồng chốt ca cũ
+4. Quan sát",,"Drawer hiện Alert vàng nguyên văn ""Bạn đang có ca chưa chốt, vui lòng chốt ca trước khi mở ca mới"" kèm mô tả ""Chốt xong hệ thống sẽ tự mở lại màn hình mở ca, giữ nguyên thông tin bạn đã nhập.""; sau khi chốt xong hiện thông báo ""Đã chốt ca cũ — tiếp tục mở ca mới"" và drawer mở ca hiện lại với dữ liệu đã nhập còn nguyên.",,,,,,
+03b_030_008,Đóng drawer Mở ca giữa chừng thì không mở ca,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; drawer Mở ca đang mở","1. Chọn quầy và khai số tờ vài mệnh giá
+2. Đóng drawer mà không xác nhận
+3. Quan sát thẻ ca và mở lại drawer",,"Không có request mở ca; thẻ ca vẫn còn nút ""Mở ca"" (chưa mở); mở lại drawer thì các ô số lượng về mặc định.",,,,,,
+,040 — Chốt ca và xử lý lệch quỹ tiền mặt,,,,,,,,,,
+03b_040_001,Tạm chốt hiện đủ ba số đối soát,Vai: gdv. Đang có ca mở,"1. Bấm ""Chốt ca"";
+2. Nhập số tờ từng mệnh giá;
+3. Bấm ""Tạm chốt""",,"Màn hiện Tiền dự kiến, Tiền thực tế và Chênh lệch. Chênh lệch = Tiền thực tế - Tiền dự kiến. Các ô nhập số tờ bị ẩn đi sau khi tạm chốt",,,,,,
+03b_040_002,Chênh lệch bằng 0 hiển thị màu xanh,Vai: gdv. Đang có ca mở và tiền thực tế khớp tiền dự kiến,"1. Chốt ca;
+2. Khai số tờ đúng bằng tiền dự kiến;
+3. Tạm chốt",,Ô Chênh lệch = 0 và hiển thị màu xanh,,,,,,
+03b_040_003,Bắt buộc nhập Lý do chênh lệch khi lệch khác 0,Vai: gdv. Đang có ca mở,"1. Chốt ca;
+2. Khai số tờ lệch so với tiền dự kiến;
+3. Tạm chốt;
+4. Để trống ô Lý do chênh lệch;
+5. Bấm hoàn tất chốt ca",,"Ô đổi tên từ ""Ghi chú"" thành ""Lý do chênh lệch"" và bắt buộc; hệ thống chặn hoàn tất chốt ca khi ô này trống",,,,,,
+03b_040_004,Chốt ca mù: trước khi tạm chốt KHÔNG hiện tiền dự kiến,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đang mở, chưa tạm chốt","1. Bấm ""Chốt ca""
+2. Đọc toàn bộ nội dung drawer TRƯỚC khi bấm tạm chốt",,"Drawer chỉ hiện Nhân viên · Ca làm việc · Quầy thu ngân · Thời gian mở · Tiền mở ca, cộng khối ""Số lượng tờ theo từng mệnh giá"" để nhân viên tự đếm. Đúng nghiệp vụ chốt ca mù.",,,,,,
+03b_040_005,Sau khi tạm chốt mới hiện ba số đối soát,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đang mở, đã khai số tờ tiền mặt","1. Bấm tạm chốt
+2. Đọc thông báo
+3. Đọc các dòng mới xuất hiện trong drawer",,"Hiện thông báo nguyên văn ""Đã tạm chốt ca — vui lòng kiểm tra đối soát tiền mặt""; drawer thêm đúng ba dòng: ""Tiền dự kiến"" · ""Tiền thực tế"" · ""Chênh lệch"".",,,,,,
+03b_040_006,Nhãn ô ghi chú đổi theo tình trạng lệch quỹ,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đã tạm chốt","1. Trường hợp chênh lệch = 0: đọc nhãn, placeholder và phần mô tả của ô ghi chú
+2. Trường hợp chênh lệch ≠ 0: đọc lại",,"Lệch = 0 ⇒ nhãn ""Ghi chú"", placeholder ""Nhập ghi chú nếu có"", không bắt buộc. Lệch ≠ 0 ⇒ nhãn ""Giải trình chênh lệch"", placeholder ""Bắt buộc khi lệch quỹ"", có dấu bắt buộc, và có dòng mô tả nguyên văn ""Chốt ca xong, nội dung này thành phiếu chênh lệch gửi quản lý điểm bán duyệt. Ca vẫn kết được ngay, không phải chờ duyệt.""",,,,,,
+03b_040_007,Dòng Xử lý chênh lệch xuất hiện khi lệch quỹ,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đã tạm chốt và có chênh lệch khác 0",1. Đọc bảng thông tin trong drawer,,"Có thêm dòng ""Xử lý chênh lệch"" với giá trị nguyên văn ""Chuyển quản lý điểm bán duyệt sau khi chốt ca"" (màu cam).",,,,,,
+03b_040_008,Chênh lệch khác 0 hiển thị màu đỏ,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đã tạm chốt với số tiền thực tế khác số dự kiến",1. Đọc màu chữ của giá trị ở dòng Chênh lệch,,"Giá trị Chênh lệch hiển thị màu đỏ, in đậm (`text-red-500`).",,,,,,
+03b_040_009,Chốt ca TRƯỚC giờ hết ca — phơi hành vi thật,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đang mở và hiện tại CHƯA đến giờ kết thúc ca","1. Bấm ""Chốt ca"" khi còn trong giờ ca
+2. Đi hết luồng tạm chốt và chốt hẳn
+3. Ghi lại có chặn ở bước nào không",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+03b_040_010,"Biên bản in chốt ca hiện đủ số thực tế, lý thuyết và chênh lệch","Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đã chốt hẳn","1. Bấm ""In chốt ca""
+2. Đọc nội dung phiếu",,"Phiếu có đủ: Nhân viên · Mã NV · Ca · Quầy · Thời gian bắt đầu · Thời gian kết thúc · Tổng đơn hàng · Tổng doanh thu · Tiền khách nợ · Hoàn trả · Lượt hoàn tiền, và **hai khối chênh lệch TÁCH RIÊNG**: ""Đầu ca"" / ""Đầu ca thực tế"" / ""Chênh lệch đầu ca (nhận bàn giao so với sổ quỹ)"" và ""Cuối ca"" / ""Cuối ca thực tế"" / ""Chênh lệch cuối ca (thuộc trách nhiệm ca này)"". Số âm phải in đúng dấu âm.",,,,,,
+03b_040_011,Mở lại ca đã chốt,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đã chốt hẳn và người dùng có quyền mở lại","1. Thực hiện mở lại ca
+2. Đọc thông báo và trạng thái thẻ ca",,"Hiện thông báo nguyên văn ""Đã mở lại ca""; thẻ ca trở về trạng thái đang mở, nút đổi lại thành ""Chốt ca"". Mở lại ca là GHI — số liệu ca đã khoá được mở ra, ảnh hưởng báo cáo chốt ca của quản lý.",,,,,,
+03b_040_012,Bấm chốt ca hai lần liên tiếp không tạo hai lần chốt,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; ca đã tạm chốt, đã nhập giải trình nếu cần","1. Bấm nút chốt ca
+2. Trong lúc đang xử lý, bấm lại lần nữa (hoặc bấm nhanh hai lần)
+3. Đọc thông báo và kiểm số ca đã chốt",,"Chỉ hiện một thông báo ""Đã chốt ca""; báo cáo chốt ca của quản lý có đúng một dòng cho ca này.",,,,,,
+,050 — Xem báo cáo ca vừa chốt,,,,,,,,,,
+03b_050_001,Báo cáo ca hiện dưới thẻ ca,Vai: gdv. Ca hôm nay đã chốt,"1. Mở /lich-ca-nhan/ca-lam-viec;
+2. Cuộn xuống dưới thẻ ca",,Báo cáo hiện các chỉ số tổng hợp của ca và phần doanh thu theo từng hình thức thanh toán,,,,,,
+03b_050_002,Ca chưa chốt không có phần doanh thu theo hình thức thanh toán,Vai: gdv. Có 1 ca đang mở chưa chốt,"1. Mở /lich-ca-nhan/ca-lam-viec;
+2. Đọc báo cáo bên dưới",,Báo cáo vẫn hiện các chỉ số tổng hợp nhưng KHÔNG có phần doanh thu theo hình thức thanh toán,,,,,,
+03b_050_003,Nhiều ca trong ngày thì đổi báo cáo theo ca được chọn,Vai: gdv. Hôm nay có từ 2 ca trở lên,"1. Bấm ""Xem báo cáo"" trên thẻ ca thứ nhất, ghi lại số liệu;
+2. Bấm ""Xem báo cáo"" trên thẻ ca thứ hai",,"Nội dung báo cáo bên dưới đổi theo đúng ca vừa chọn, số liệu hai ca khác nhau",,,,,,
+03b_050_004,Ngày chỉ có một ca thì không hiện nút Xem báo cáo,Vai: gdv. Hôm nay chỉ có đúng 1 ca,"1. Mở /lich-ca-nhan/ca-lam-viec;
+2. Quan sát thẻ ca",,"Thẻ ca KHÔNG có nút ""Xem báo cáo""; báo cáo bên dưới vẫn bám theo ca duy nhất đó",,,,,,
+03b_050_005,Báo cáo ca chỉ hiện số liệu của tài khoản đang đăng nhập,"Vai `gdv` (nhân viên điểm bán) đăng nhập, đang ở Lịch cá nhân > Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); hôm nay đã được xếp ít nhất 1 ca; cùng điểm bán còn nhân viên khác cũng có ca trong ngày","1. Đăng nhập bằng nhân viên A, mở màn Ca làm việc, ghi lại số liệu báo cáo ca
+2. Đăng xuất, đăng nhập bằng nhân viên B ở cùng điểm bán
+3. Mở lại màn Ca làm việc và đọc báo cáo",,Mỗi lần chỉ thấy ca và báo cáo của chính tài khoản đang đăng nhập; số liệu của A không xuất hiện ở phiên của B và ngược lại.,,,,,,
+,060 — Chặn bán hàng khi chưa đủ điều kiện ca,,,,,,,,,,
+03b_060_001,Chưa được xếp lịch làm việc thì không vào được màn tạo đơn,Vai `gdv` cấp điểm bán đăng nhập; hôm nay KHÔNG được xếp ca nào; số điện thoại tài khoản KHÔNG nằm trong danh sách bỏ qua (xem `test-cases.md` mục 4),"1. Mở trực tiếp đường dẫn tạo đơn `/order/create-order`
+2. Đọc hộp thoại
+3. Bấm ""Đã hiểu""
+4. Quan sát địa chỉ trang",,"Hộp thoại cảnh báo tiêu đề ""Yêu cầu mở ca trước khi bán hàng"", nội dung ""Bạn cần mở ca làm việc trước khi thực hiện thao tác bán hàng."", một nút ""Đã hiểu""; bấm xong tự điều hướng về màn Ca làm việc (`/lich-ca-nhan/ca-lam-viec`); không vào được màn tạo đơn.",,,,,,
+03b_060_002,Đã xếp lịch nhưng chưa mở ca thì không vào được màn tạo đơn,Vai `gdv` cấp điểm bán đăng nhập; hôm nay ĐÃ được xếp ca nhưng chưa mở ca nào; SĐT không nằm trong danh sách bỏ qua,"1. Mở trực tiếp `/order/create-order`
+2. Đọc hộp thoại và bấm ""Đã hiểu""
+3. Quan sát địa chỉ trang",,"Hai tình huống khác nhau nhưng thông báo GIỐNG NHAU: người dùng chưa được xếp lịch sẽ được bảo ""hãy mở ca"", mà họ không có ca nào để mở.",,,,,,
+03b_060_003,🔴 Tài khoản trong danh sách bỏ qua KHÔNG bị chặn,Vai cấp điểm bán mà số điện thoại nằm trong danh sách bỏ qua hardcode ở `routes/helpers.js`,"1. Đăng nhập bằng tài khoản đó khi chưa mở ca
+2. Mở `/order/create-order`",,"Vào được màn tạo đơn, KHÔNG có hộp thoại nào. Case này đồng thời là phiếu báo: cơ chế bỏ qua bằng SĐT hardcode nên chuyển thành cấu hình.",,,,,,
+03b_060_004,Vai không thuộc cấp điểm bán không bị chặn ca,Đăng nhập vai `province` hoặc `tct` (không phải cấp điểm bán),1. Mở `/order/create-order`,,"Vào được bình thường, không có hộp thoại yêu cầu mở ca — phép chặn chỉ áp cho cấp điểm bán, các cấp khác `return true` ngay.",,,,,,
+,070 — Chế độ offline và tự đồng bộ,,,,,,,,,,
+03b_070_001,Chế độ offline chỉ cho thanh toán tiền mặt,Điểm bán mất kết nối mạng trong lúc đang bán hàng,"1. Ngắt mạng của máy bán hàng
+2. Tạo đơn và mở màn thanh toán
+3. Quan sát các hình thức thanh toán còn dùng được
+4. Hoàn tất đơn",,"Hệ thống chuyển sang chế độ Offline; chỉ còn hình thức ""Tiền mặt"", các hình thức khác bị vô hiệu; đơn được lưu tạm tại máy.",,,,,,
+03b_070_002,Dữ liệu bán offline tự đồng bộ khi có mạng trở lại,Đã có đơn bán ở chế độ offline chưa đồng bộ,"1. Nối lại mạng
+2. Chờ đồng bộ
+3. Đọc lại doanh thu và số đơn của ca ở màn Ca làm việc và ở Báo cáo chốt ca",,"Toàn bộ đơn offline được đẩy lên server; doanh thu và số đơn trong ca cập nhật đúng. Liên quan trực tiếp tới `03a_060_006` (báo cáo chốt ca cảnh báo ""đơn offline chưa về đủ (<n>/<N>)"") — đó là chỗ NHÌN THẤY hệ quả của nghiệp vụ này trên web.",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+03b_PQ_001,Nhân viên chỉ thấy ca của chính mình,Vai: gdv. Điểm bán có nhiều nhân viên cùng có lịch hôm nay,1. Mở /lich-ca-nhan/ca-lam-viec,,Chỉ hiện thẻ ca của tài khoản đang đăng nhập; không có thẻ ca của nhân viên khác,,,,,,

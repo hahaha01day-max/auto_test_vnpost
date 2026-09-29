@@ -1,0 +1,337 @@
+{
+  "_ghi_chu": "Khoá là mã case trong test-cases.csv. Mọi case mutates để allowMutation=false — môi trường trỏ DỮ LIỆU THẬT (.env.domain). 🚫 Không đặt tài khoản/mật khẩu vào file này.",
+  "cases": {
+    "18_3_010_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_010_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_010_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_010_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_010_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_010_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_020_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "18_3_020_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "18_3_020_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_020_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_020_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tienKhachDua": 0
+      }
+    },
+    "18_3_020_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tienKhachDua": -1000
+      }
+    },
+    "18_3_020_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tienKhachDua": "abc"
+      }
+    },
+    "18_3_020_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_030_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "18_3_030_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "18_3_040_001": {
+      "enabled": false,
+      "role": "gdv",
+      "blockedReason": "Cần tài khoản nhận QR thật đã khai ở điểm bán test và một giao dịch quét mã thật — môi trường trỏ dữ liệu thật, không tự tạo được tiền vào",
+      "mutates": true,
+      "allowMutation": false
+    },
+    "18_3_040_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_040_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_040_004": {
+      "enabled": false,
+      "role": "gdv",
+      "blockedReason": "Cần giao dịch QR thật đang treo để bấm Kiểm tra giao dịch",
+      "mutates": false
+    },
+    "18_3_040_005": {
+      "enabled": false,
+      "role": "gdv",
+      "blockedReason": "Cần giao dịch QR thật chưa ghi nhận để đọc trạng thái nút Hoàn tất giao dịch",
+      "mutates": false
+    },
+    "18_3_040_006": {
+      "enabled": false,
+      "role": "gdv",
+      "blockedReason": "Cần đã sinh được mã QR thật mới có nút Quay lại",
+      "mutates": false
+    },
+    "18_3_050_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "_blocked_cu": "Cần mã OTP thật gửi về số điện thoại khách — auto test không đọc được SMS",
+      "_note": "28/09: OTP dev mặc định 888888 (user chốt 25/09) — cùng luồng 20_050_009; khách mang SĐT CHT của làn."
+    },
+    "18_3_050_002": {
+      "enabled": true,
+      "role": "gdv",
+      "blockedReason": "Cần luồng OTP thật để nhập sai — auto test không đọc được SMS",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_3_050_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_3_050_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — doi-diem-tat.gdv (sửa tạm chương trình đổi điểm, khôi phục finally)"
+    },
+    "18_3_050_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — doi-diem-tat.gdv (sửa tạm chương trình đổi điểm, khôi phục finally)"
+    },
+    "18_3_050_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_3_050_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "diemVuot": "diemKhaDung + 1"
+      },
+      "allowMutation": true
+    },
+    "18_3_050_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "diem": "= diemKhaDung"
+      },
+      "allowMutation": true
+    },
+    "18_3_050_009": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "diem": 0
+      },
+      "allowMutation": true
+    },
+    "18_3_050_010": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_3_050_011": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_3_060_001": {
+      "enabled": false,
+      "role": "gdv",
+      "blockedReason": "Phải mở lần lượt các màn SDK VNPD (tiền mặt/thẻ/QR) — SDK bên thứ ba, Playwright không điều khiển được",
+      "mutates": true,
+      "allowMutation": false
+    },
+    "18_3_060_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_060_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_060_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_060_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_060_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true
+    },
+    "18_3_060_007": {
+      "enabled": false,
+      "role": "gdv",
+      "blockedReason": "Phải bỏ qua một màn SDK VNPD để bắt cảnh báo — SDK bên thứ ba",
+      "mutates": false
+    },
+    "18_3_070_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "18_3_070_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_070_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_070_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tienTraGop": "= tongPhaiThu"
+      }
+    },
+    "18_3_070_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_080_001": {
+      "enabled": true,
+      "role": "gdv",
+      "blockedReason": "Phụ thuộc cấu hình điểm bán bật lưu nháp + chuỗi bật chính sách Nhận đặt hàng trước; chưa xác nhận điểm bán test có",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "18_3_080_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — CTKM nhóm khách dựng trong spec (ctkm-nhom.js), dọn finally"
+    },
+    "18_3_080_003": {
+      "enabled": false,
+      "role": "gdv",
+      "blockedReason": "KHÔNG DỰNG ĐƯỢC QUA FE (đo 28/09/2026, vnpost-web f9c5c858): đơn online chỉ vào POS qua ModalOrderOnlineDetail của màn CustomerOrderOnline, mà route màn này đang bị COMMENT ở routes/configs/orderRoutes.js và routes/configs/dashboard/orderRoutes.js ⇒ không có đường FE mở tab \"Đơn online\". Đơn online do kênh ngoài (app khách) tạo. Cần user quyết: bỏ case / bật lại màn / test tay.",
+      "mutates": false,
+      "_blocked": "KHÔNG DỰNG ĐƯỢC QUA FE (đo 28/09/2026, vnpost-web f9c5c858): đơn online chỉ vào POS qua ModalOrderOnlineDetail của màn CustomerOrderOnline, mà route màn này đang bị COMMENT ở routes/configs/orderRoutes.js và routes/configs/dashboard/orderRoutes.js ⇒ không có đường FE mở tab \"Đơn online\". Đơn online do kênh ngoài (app khách) tạo. Cần user quyết: bỏ case / bật lại màn / test tay."
+    },
+    "18_3_090_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "18_3_090_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_090_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_090_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "18_3_100_001": {
+      "enabled": true,
+      "role": "ward",
+      "blockedReason": "Cần tài khoản vai ward — chưa xác nhận đã khai trong .env.accounts",
+      "mutates": false,
+      "missingRoleReason": "Vai ward chưa khai trong .env.accounts — skip có lý do, KHÔNG tự pass"
+    },
+    "18_3_100_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — ca-cht.shop (CHT mở ca trong spec, chốt afterAll)"
+    }
+  }
+}

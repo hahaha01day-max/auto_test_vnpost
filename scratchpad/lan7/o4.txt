@@ -1,0 +1,13 @@
+{'startTime': '2026-09-25T11:42:51.966Z', 'duration': 343728.17, 'expected': 4, 'skipped': 0, 'unexpected': 2, 'flaky': 0}
+
+ failed | 20_060_001 — Đơn dưới điều kiện tối thiểu không được dùng điểm
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 1 × 100k · đổi điểm {"orderAmountConditional":300000}
+   @ đo : {"coNut":true,"nutKhoa":false,"tb":"","coOtp":true,"oDiem":"10","modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Thanh toán bằng điểm Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 90.000 đ Thanh
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"aotYSi"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"UtYEdB"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""
+
+ failed | 20_060_003 — Khách không đủ điểm vẫn cố dùng điểm
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 4 × 100k · đổi điểm {}
+   @ đo : {"coNut":true,"nutKhoa":false,"tb":"","coOtp":true,"oDiem":"300","modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Thanh toán bằng điểm Đa phương thức Tổng tiền đơn hàng 400.000 đ Tổng tiền cần thanh toán 100.000 đ Tha
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"WUHRZZ"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"XqhTNt"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""

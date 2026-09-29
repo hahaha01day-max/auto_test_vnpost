@@ -1,0 +1,6 @@
+{'startTime': '2026-09-25T13:03:22.947Z', 'duration': 31916.549, 'expected': 1, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 24_070_001 — Hệ thống tự chia tiền ưu tiên khoản ghi nợ sớm nhất
+   @ ô tổng (gõ 31000) : khi gõ "31,0000" · sau Tab "50,000"
+   @ phân bổ : [{"dong":"20.000 20.000 Chưa thanh toán 25/09/2026 20:03","tra":20000},{"dong":"30.000 30.000 Chưa thanh toán 25/09/2026 20:03","tra":30000}]
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: 31000 Received: 50000

@@ -1,0 +1,77 @@
+﻿,Chức năng,,SẢN XUẤT SẢN PHẨM,,,,,,,,
+,Mã Testcase,,09_san_pham_san_xuat,,,,,,,,
+,Tổng các tình huống kiểm thử,,23,,,,,,,,
+,Chưa thực hiện,,23,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,SẢN XUẤT SẢN PHẨM,,,,,,,,,,
+,010 — Tạo phiếu sản xuất,,,,,,,,,,
+09_010_001,Màn Sản xuất sản phẩm mở được và hiện danh sách phiếu,Vai: shop,1. Mở /inventory/production,,Danh sách phiếu sản xuất hiện kèm ô Trạng thái và cột Thao tác,,,,,,
+09_010_002,Chặn lập phiếu cho sản phẩm chưa khai công thức nguyên liệu,Vai: shop. Có sản phẩm đánh dấu chế biến nhưng CHƯA khai công thức,"1. Bấm ""Tạo phiếu sản xuất"";
+2. Chọn sản phẩm chưa có công thức;
+3. Nhập số lượng;
+4. Lưu",,Hệ thống không tính được tiêu hao và KHÔNG lưu được phiếu,,,,,,
+09_010_003,Lập phiếu sản xuất ở trạng thái Nháp,Vai: shop. Có sản phẩm chế biến đã khai công thức và nguyên liệu còn đủ tồn,"1. Bấm ""Tạo phiếu sản xuất"";
+2. Chọn thành phẩm;
+3. Nhập số lượng;
+4. Lưu",,"Phiếu mới xuất hiện trong danh sách với trạng thái ""Nháp"" và có nút Xác nhận ở cột Thao tác",,,,,,
+09_010_004,Bỏ trống từng ô bắt buộc khi lập phiếu sản xuất,"Vai `shop` đăng nhập, đang ở form lập phiếu sản xuất","1. Bỏ trống thành phẩm cần sản xuất → lưu, ghi lỗi
+2. Bỏ trống số lượng sản xuất → lưu, ghi lỗi
+3. Bỏ trống kho nhập thành phẩm → lưu, ghi lỗi
+4. Bỏ trống tất cả → lưu",,Mỗi ô bắt buộc cho một thông báo RIÊNG; mỗi lần đều không tạo được phiếu.,,,,,,
+09_010_005,"Số lượng sản xuất: biên 0, số âm, số thập phân","Vai `shop` đăng nhập, đang ở form lập phiếu sản xuất","1. Nhập số lượng = 0 → lưu, ghi kết quả
+2. Nhập số âm → ghi kết quả
+3. Nhập số thập phân → ghi kết quả
+4. Nhập số rất lớn (vượt tồn nguyên liệu nhiều lần) → ghi kết quả",,0 và số âm bị chặn (sản xuất 0 sản phẩm là vô nghĩa),,,,,,
+09_010_006,Nguyên liệu tự điền theo công thức khi chọn thành phẩm,"Vai `shop` đăng nhập, đang ở form lập phiếu sản xuất","1. Chọn thành phẩm đã khai công thức nguyên liệu
+2. Đọc bảng nguyên liệu tự điền
+3. Đổi số lượng sản xuất và đọc lại bảng",,Bảng nguyên liệu tự điền đúng theo công thức; đổi số lượng sản xuất thì lượng nguyên liệu **nhân theo tỉ lệ**.,,,,,,
+09_010_007,Sửa tay lượng nguyên liệu khác công thức,"Vai `shop` đăng nhập, đang ở form lập phiếu sản xuất","1. Chọn thành phẩm, để hệ thống tự điền nguyên liệu
+2. Sửa tay lượng một nguyên liệu
+3. Lưu phiếu nháp rồi mở lại",,"Nếu cho sửa thì giá vốn thành phẩm (`09_030_005`) tính theo lượng **đã sửa**, không theo công thức — phải nói rõ trong kỳ vọng.",,,,,,
+,"020 — Ghi mã lô, serial và phân bổ lô nguyên liệu",,,,,,,,,,
+09_020_001,Nút Lô serial có ở hai chỗ với hai nhiệm vụ khác nhau,Vai: shop. Đang mở màn Tạo phiếu sản xuất đã chọn 1 sản phẩm chế biến,"1. Quan sát thanh xám của thẻ sản phẩm;
+2. Quan sát cuối mỗi dòng nguyên liệu",,Nút trên thanh xám ghi lô/serial cho THÀNH PHẨM; nút cuối dòng nguyên liệu chọn lô tồn bị trừ của NGUYÊN LIỆU,,,,,,
+09_020_002,Màu chữ nút Lô serial phản ánh tình trạng nhập,Vai: shop. Đang mở màn Tạo phiếu sản xuất,"1. Chưa nhập lô gì, đọc màu nút;
+2. Nhập thiếu, đọc lại;
+3. Nhập đủ, đọc lại",,Đỏ = chưa nhập gì; cam = nhập chưa đủ; xanh = đã đủ,,,,,,
+09_020_003,Bỏ trống lô / serial khi thành phẩm yêu cầu,"Vai `shop` đăng nhập, đang ở form lập phiếu sản xuất; thành phẩm quản lý theo lô hoặc serial","1. Không nhập lô / serial
+2. Bấm xác nhận sản xuất
+3. Đọc thông báo",,"Bị chặn, thông báo nêu rõ phải nhập lô/serial.",,,,,,
+,030 — Xác nhận sản xuất,,,,,,,,,,
+09_030_001,Nút Xác nhận chỉ hiện với phiếu Nháp,Vai: shop. Có 1 phiếu Nháp và 1 phiếu Hoàn thành,1. Đọc cột Thao tác của cả hai dòng,,"Dòng phiếu Nháp có nút ""Xác nhận""; dòng phiếu Hoàn thành KHÔNG có",,,,,,
+09_030_002,Hộp xác nhận sản xuất hỏi đúng nguyên văn,Vai: shop. Có 1 phiếu Nháp,"1. Bấm ""Xác nhận"" ở dòng phiếu Nháp",,"Hệ thống hỏi nguyên văn ""Xác nhận sản xuất? Hệ thống sẽ xuất nguyên liệu và nhập thành phẩm."" với hai nút Xác nhận và Hủy",,,,,,
+09_030_003,Huỷ ở hộp xác nhận thì phiếu giữ nguyên trạng thái Nháp,Vai: shop. Có 1 phiếu Nháp,"1. Bấm ""Xác nhận"";
+2. Bấm ""Hủy""",,Phiếu vẫn ở trạng thái Nháp; không có request xác nhận nào được gửi,,,,,,
+09_030_004,Xác nhận sản xuất trừ nguyên liệu và nhập thành phẩm,Vai: shop. Có 1 phiếu Nháp và nguyên liệu còn đủ tồn,"1. Ghi lại tồn nguyên liệu trước;
+2. Bấm Xác nhận rồi Xác nhận lại;
+3. Đọc lại tồn nguyên liệu và tồn thành phẩm",,"Hệ thống báo ""Xác nhận sản xuất thành công"". Tồn nguyên liệu giảm đúng lô/serial đã chọn; thành phẩm được nhập kho. Phiếu chuyển sang ""Hoàn thành"", nút Xác nhận biến mất",,,,,,
+09_030_005,Giá vốn thành phẩm bằng tổng chi phí nguyên liệu chia số lượng,Vai: shop. Vừa xác nhận 1 phiếu sản xuất,"1. Mở chi tiết phiếu vừa hoàn thành;
+2. Đọc tổng chi phí nguyên liệu và số lượng thành phẩm;
+3. Đọc giá vốn thành phẩm",,Giá vốn thành phẩm = tổng chi phí nguyên liệu / số lượng làm ra,,,,,,
+09_030_006,Chặn xác nhận khi nguyên liệu không còn đủ tồn tại thời điểm xác nhận,Vai: shop. Có phiếu Nháp mà nguyên liệu đã bị bán hoặc chuyển đi sau khi lập phiếu,1. Bấm Xác nhận rồi Xác nhận lại,,Hệ thống chặn vì nguyên liệu không đủ tồn; phiếu vẫn ở trạng thái Nháp,,,,,,
+,040 — Tra cứu và xem chi tiết phiếu sản xuất,,,,,,,,,,
+09_040_001,Lọc phiếu theo trạng thái,Vai: shop. Có phiếu ở nhiều trạng thái,"1. Mở /inventory/production;
+2. Chọn ô Trạng thái = ""Nháp"";
+3. Bỏ chọn",,"Khi lọc Nháp: danh sách chỉ còn phiếu Nháp. Ô Trạng thái có đúng 3 lựa chọn Nháp, Hoàn thành, Đã hủy. Bỏ chọn thì hiện lại toàn bộ",,,,,,
+09_040_002,Cấp trên điểm bán phải chọn điểm bán trước mới thấy phiếu,Vai: province,"1. Mở /inventory/production khi chưa chọn điểm bán;
+2. Chọn 1 điểm bán ở ô ""Chọn điểm bán""",,Trước khi chọn: danh sách trống. Sau khi chọn: hiện phiếu của điểm bán đó. Chọn tới cấp kho thì chỉ hiện phiếu của kho đó,,,,,,
+09_040_003,Chi tiết phiếu sản xuất mở được,Vai: shop. Có ít nhất 1 phiếu,"1. Bấm ""Xem"" ở cột Thao tác",,"Màn ""Chi tiết phiếu sản xuất"" mở, hiện thành phẩm, nguyên liệu đã dùng và giá vốn",,,,,,
+09_040_004,Huỷ form lập phiếu giữa chừng thì không lưu gì,"Vai `shop` đăng nhập, đang ở form lập phiếu sản xuất","1. Khai đủ thông tin phiếu
+2. Đóng form mà không lưu
+3. Kiểm danh sách phiếu và tồn nguyên liệu
+4. Mở lại form",,Không có request tạo phiếu; danh sách không có phiếu mới; tồn nguyên liệu không đổi; form mở lại trắng.,,,,,,
+09_040_005,Phân trang và trạng thái rỗng của danh sách phiếu,"Vai `shop` đăng nhập, đang ở màn Sản xuất sản phẩm","1. Đọc số dòng trang 1 và sang trang 2
+2. Đặt bộ lọc cho ra 0 kết quả
+3. Xoá lọc",,Phân trang không lặp và không thiếu dòng; bộ lọc không ra kết quả thì hiện trạng thái rỗng; xoá lọc trở về đầy đủ.,,,,,,
+09_040_006,"Sau khi xác nhận sản xuất, số liệu liên quan đổi đúng","Vai `shop` đăng nhập, đang ở màn Sản xuất sản phẩm; có phiếu nháp đã khai đủ","1. Ghi lại tồn từng nguyên liệu và tồn thành phẩm
+2. Xác nhận sản xuất
+3. Đọc lại tồn nguyên liệu, tồn thành phẩm, và danh sách phiếu nhập / phiếu xuất kho",,"Tồn nguyên liệu giảm đúng lượng theo phiếu; tồn thành phẩm tăng đúng số lượng; sinh **một phiếu xuất loại ""Xuất kho nguyên liệu sản xuất""** và **một phiếu nhập loại ""Nhập kho sản phẩm sản xuất""**.",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+09_PQ_001,Vai giao dịch viên không tạo được phiếu sản xuất,Vai: gdv,1. Mở /inventory/production,,"Không có nút ""Tạo phiếu sản xuất"" hoặc API trả lỗi phân quyền (cần quyền create_import_stock)",,,,,,

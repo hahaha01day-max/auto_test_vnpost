@@ -1,0 +1,5 @@
+{'startTime': '2026-09-25T13:44:09.831Z', 'duration': 8555.275000000001, 'expected': 1, 'skipped': 1, 'unexpected': 0, 'flaky': 0}
+
+ skipped | 26_060_006 — Thu hồi nợ đơn vị vận tải sinh phiếu thu tự động
+   @ đo : 52 phiếu 90 ngày · "Thu hồi nợ" + vận tải: 0
+   @ skip : Điểm bán làn chưa có lần thu hồi nợ đơn vị vận tải nào trong 90 ngày (tiền đề: ghi nợ vận chuyển 12_070 + thu hồi) — chưa dựng được.

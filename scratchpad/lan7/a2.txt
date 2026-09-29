@@ -1,0 +1,12 @@
+{'startTime': '2026-09-25T12:23:39.903Z', 'duration': 165290.047, 'expected': 2, 'skipped': 0, 'unexpected': 3, 'flaky': 0}
+
+ failed | 24_010_010 — Tìm với chữ hoa chữ thường và không dấu
+   ! TimeoutError: page.waitForResponse: Timeout 60000ms exceeded while waiting for event "response"
+
+ failed | 24_030_001 — Chi tiết công nợ nhân viên bung được lịch sử trả tiền
+   @ thẻ mở sẵn : Thông tin cá nhân (URL ?tab=debt)
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-tabs-tabpane-active').first().locator('.ant-table-tbody tr.ant-table-row').first().locator('.ant-table-row-expand-icon') 
+
+ failed | 24_030_003 — Lọc theo trạng thái Còn nợ hoặc Đã thanh toán
+   @ thẻ mở sẵn : Thông tin cá nhân (URL ?tab=debt)
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-tabs-tabpane-active').first().locator('.ant-select').filter({ hasText: 'Trạng thái' }).first() 

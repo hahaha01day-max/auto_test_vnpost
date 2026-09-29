@@ -1,0 +1,415 @@
+{
+  "_note": "Phân hệ Cấu hình giá vốn mặc định. ⚠️ core-service local đang trỏ DB PROD (all.env) nên mọi case GHI để allowMutation=false; bật thủ công khi user xác nhận môi trường được phép ghi.",
+  "cases": {
+    "GVMD-001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "tct",
+      "data": {
+        "stockType": "FIFO"
+      }
+    },
+    "GVMD-011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "tct",
+      "data": {
+        "stockType": "FIFO"
+      }
+    },
+    "GVMD-012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "stockType": "FIFO"
+      }
+    },
+    "GVMD-017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "stockType": "FIFO"
+      }
+    },
+    "GVMD-018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "GVMD-019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "GVMD-021": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "BC-01": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "BC-02": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "BC-03": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "GVMD-100": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-101": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-102": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "blockedReason": "Cần PO và bảng giá NCC dựng sẵn cho đúng phương pháp giá vốn"
+    },
+    "GVMD-103": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-110": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-111": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-112": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "blockedReason": "Cần PO và bảng giá NCC dựng sẵn cho đúng phương pháp giá vốn"
+    },
+    "GVMD-113": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "blockedReason": "Cần PO và bảng giá NCC dựng sẵn cho đúng phương pháp giá vốn"
+    },
+    "GVMD-114": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-115": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-116": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-117": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-118": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-119": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-120": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-121": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-122": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-123": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-124": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-125": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-126": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-127": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-128": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-129": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-130": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-131": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-132": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-133": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-140": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-141": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-142": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-143": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-144": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-150": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-151": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-152": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-153": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    },
+    "GVMD-154": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true,
+      "blockedReason": "🔴 Ghi thẳng vào TỒN KHO và GIÁ VỐN thật. Giá vốn sai thuộc nhóm SAI IM LẶNG: compile xanh, báo cáo vẫn ra số, chỉ là số sai. Cần bộ sản phẩm rác chuyên dùng cho test ở cả 4 phương pháp (đích danh / tiêu chuẩn / MAC / FIFO)."
+    }
+  },
+  "_ghi_chu": "Khoá là mã case trong test-cases.csv. 🔴 Phân hệ GIÁ VỐN: mọi case mutates chạm tồn kho và giá vốn THẬT — allowMutation=false tuyệt đối. Giá vốn sai thuộc nhóm SAI IM LẶNG. 🚫 Không đặt tài khoản/mật khẩu vào file này."
+}

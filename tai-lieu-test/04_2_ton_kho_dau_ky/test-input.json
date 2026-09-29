@@ -1,0 +1,448 @@
+{
+  "_note": "Phân hệ 04_2 Tồn kho đầu kỳ. 🔴 Khai báo tồn đầu kỳ GHI THẲNG VÀO TỒN KHO và CỘNG DỒN với tồn cũ — chạy nhầm là thổi số tồn, không hoàn tác được bằng UI. Mỗi điểm bán chỉ khai báo được một lần. Tất cả case ghi để `allowMutation:false`.",
+  "cases": {
+    "04_2_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "04_2_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "04_2_010_003": {
+      "enabled": false,
+      "mutates": false,
+      "role": "shop",
+      "data": {},
+      "_blocked": "🔴 Kỳ vọng chưa chốt: sheet QC đòi vô hiệu nút + hiện chữ \"Đã khai báo tồn kho đầu kỳ\"; grep code không thấy chuỗi đó. Cần user quyết."
+    },
+    "04_2_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "fileExcel"
+      ],
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Chưa có tệp Excel mẫu trong repo (fixtures/)",
+      "_batBoi": "tệp Excel dựng từ chính tệp mẫu của sản phẩm (excel-fixture.js) + điểm bán seed CHƯA khai tồn đầu kỳ (vai seed_shop2)"
+    },
+    "04_2_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "fileExcel"
+      ],
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Chưa có tệp Excel mẫu trong repo",
+      "_batBoi": "tệp Excel dựng từ chính tệp mẫu của sản phẩm (excel-fixture.js) + điểm bán seed CHƯA khai tồn đầu kỳ (vai seed_shop2)"
+    },
+    "04_2_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "fileExcel"
+      ],
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Chưa có tệp Excel dựng sẵn thiếu SKU",
+      "_batBoi": "tệp Excel dựng từ chính tệp mẫu của sản phẩm (excel-fixture.js) + điểm bán seed CHƯA khai tồn đầu kỳ (vai seed_shop2)"
+    },
+    "04_2_020_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "fileExcel"
+      ],
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Chưa có tệp Excel dựng sẵn số lượng 0",
+      "_batBoi": "tệp Excel dựng từ chính tệp mẫu của sản phẩm (excel-fixture.js) + điểm bán seed CHƯA khai tồn đầu kỳ (vai seed_shop2)"
+    },
+    "04_2_020_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "fileExcel"
+      ],
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Chưa có tệp Excel dựng sẵn giá vốn âm",
+      "_batBoi": "tệp Excel dựng từ chính tệp mẫu của sản phẩm (excel-fixture.js) + điểm bán seed CHƯA khai tồn đầu kỳ (vai seed_shop2)"
+    },
+    "04_2_020_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "fileExcel"
+      ],
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Chưa có tệp Excel dựng sẵn bỏ trống mã điểm bán",
+      "_batBoi": "tệp Excel dựng từ chính tệp mẫu của sản phẩm (excel-fixture.js) + điểm bán seed CHƯA khai tồn đầu kỳ (vai seed_shop2)"
+    },
+    "04_2_020_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "fileExcel"
+      ],
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Chưa có tệp Excel dựng sẵn serial lệch số lượng",
+      "_batBoi": "tệp Excel dựng từ chính tệp mẫu của sản phẩm (excel-fixture.js) + điểm bán seed CHƯA khai tồn đầu kỳ (vai seed_shop2)"
+    },
+    "04_2_020_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop2",
+      "data": {
+        "fileExcel": "",
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "GHI TỒN KHO THẬT và mỗi điểm bán chỉ khai được một lần",
+      "_goBoi": "26/09/2026: khai nhiều lần/điểm bán (memory), SP tạm"
+    },
+    "04_2_020_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked_cu": "Cần SKU ĐÃ khai tồn đầu kỳ ở điểm bán (bộ seed bước 8 đã khai SP chính); thao tác vẫn là một lượt upload thật",
+      "_goBoi": "26/09/2026: khai nhiều lần/điểm bán (memory), SP tạm"
+    },
+    "04_2_020_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "required": [
+        "tenFileExcel"
+      ],
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: nạp tệp (POST /opening-balance/uploads) TẠO MỘT LƯỢT KHAI BÁO THẬT trên điểm bán (hiện ở danh sách, trạng thái Chờ xác nhận) dù chưa chạm tồn kho. Vì vậy case này là case GHI — trước đây phân loại nhầm là đọc."
+    },
+    "04_2_020_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "GHI tồn kho thật và phải đo cộng dồn — cần điểm bán dựng riêng vì mỗi điểm bán chỉ khai được một lần.",
+      "_goBoi": "26/09/2026: khai nhiều lần/điểm bán (memory), SP tạm"
+    },
+    "04_2_020_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ thao tác trên BẢN XEM TRƯỚC do case tự nạp; confirm (ghi tồn) bị chanGhiTon chặn"
+    },
+    "04_2_020_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần sản phẩm ở cả 4 phương pháp tính giá (FIFO/Đích danh/MAC/Tiêu chuẩn) trong cùng file — chưa có fixture.",
+      "_goBoi": "26/09/2026: khai nhiều lần/điểm bán (memory), SP tạm"
+    },
+    "04_2_020_014": {
+      "enabled": false,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": false,
+      "_blocked": "26/09/2026: nhánh \"Mã lô đã tồn tại\" không tới được — lô đã có của CÙNG SP nghĩa là SP đã có tồn/phiếu nhập ở kho ⇒ BE chặn cả dòng trước (\"Sản phẩm/biến thể này đã có tồn đầu kỳ hoặc lịch sử nhập kho tại kho\", đo ở 04_2_020_009/011) nên không xét tới mã lô",
+      "required": [
+        "tenFileExcel"
+      ]
+    },
+    "04_2_020_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: nạp tệp (POST /opening-balance/uploads) TẠO MỘT LƯỢT KHAI BÁO THẬT trên điểm bán (hiện ở danh sách, trạng thái Chờ xác nhận) dù chưa chạm tồn kho. Vì vậy case này là case GHI — trước đây phân loại nhầm là đọc."
+    },
+    "04_2_020_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "required": [
+        "tenFileExcel"
+      ],
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: nạp tệp (POST /opening-balance/uploads) TẠO MỘT LƯỢT KHAI BÁO THẬT trên điểm bán (hiện ở danh sách, trạng thái Chờ xác nhận) dù chưa chạm tồn kho. Vì vậy case này là case GHI — trước đây phân loại nhầm là đọc."
+    },
+    "04_2_020_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ thao tác trên BẢN XEM TRƯỚC do case tự nạp; confirm (ghi tồn) bị chanGhiTon chặn"
+    },
+    "04_2_020_018": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần bản xem trước có đồng thời dòng Hợp lệ, Lỗi và Cảnh báo; và trạng thái \"Cảnh báo\" chưa có đặc tả nói nó là gì.",
+      "_goBoi": "26/09/2026: khai nhiều lần/điểm bán (memory), SP tạm"
+    },
+    "04_2_020_019": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ thao tác trên BẢN XEM TRƯỚC do case tự nạp; confirm (ghi tồn) bị chanGhiTon chặn"
+    },
+    "04_2_020_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ thao tác trên BẢN XEM TRƯỚC do case tự nạp; confirm (ghi tồn) bị chanGhiTon chặn"
+    },
+    "04_2_020_021": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ thao tác trên BẢN XEM TRƯỚC do case tự nạp; confirm (ghi tồn) bị chanGhiTon chặn"
+    },
+    "04_2_020_022": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "GHI tồn kho thật; cần điểm bán CHƯA khai báo tồn đầu kỳ lần nào.",
+      "_goBoi": "26/09/2026: khai nhiều lần/điểm bán (memory), SP tạm"
+    },
+    "04_2_020_023": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần file Excel ≥1.000 dòng chưa có fixture; và GHI tồn kho thật.",
+      "_goBoi": "26/09/2026: khai nhiều lần/điểm bán (memory), SP tạm"
+    },
+    "04_2_020_024": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: nạp tệp (POST /opening-balance/uploads) TẠO MỘT LƯỢT KHAI BÁO THẬT trên điểm bán (hiện ở danh sách, trạng thái Chờ xác nhận) dù chưa chạm tồn kho. Vì vậy case này là case GHI — trước đây phân loại nhầm là đọc."
+    },
+    "04_2_020_025": {
+      "enabled": false,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "_blocked": "26/09/2026: file 1.000 dòng xử lý xong trong ~7s và nút \"Tạo phiếu\" chỉ hiện sau bước xử lý (DrawerOpeningBalance STEP PROCESSING) ⇒ không có cửa sổ bấm tạo phiếu khi Chờ/Đang xử lý qua giao diện; giả trạng thái bằng chặn mạng là tự dựng kết quả"
+    },
+    "04_2_020_026": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop2",
+      "data": {
+        "sku": "",
+        "maLo": "",
+        "tenFileExcel": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ thao tác trên BẢN XEM TRƯỚC do case tự nạp; confirm (ghi tồn) bị chanGhiTon chặn"
+    },
+    "04_2_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [
+        "maDiemBan"
+      ],
+      "data": {
+        "maDiemBan": "S5187236801A5376"
+      },
+      "_ghiChuDiemBan": "🔴 Phân hệ này chạy vai seed_shop2 trên điểm bán AUTO_SHOP_52295376 (CHƯA khai tồn đầu kỳ) — 🚫 KHÔNG phải điểm bán trong sổ seed. seed-fill-input.js rót mã sổ seed vào đây là SAI."
+    },
+    "04_2_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [
+        "maPreview"
+      ],
+      "data": {
+        "maPreview": ""
+      }
+    },
+    "04_2_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Cần một lượt đang ở trạng thái Chờ xác nhận",
+      "_goBoi": "26/09/2026"
+    },
+    "04_2_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "04_2_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "04_2_030_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "04_2_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [
+        "maDiemBan"
+      ],
+      "data": {
+        "maDiemBan": "S5187236801A5376"
+      },
+      "_ghiChuDiemBan": "🔴 Phân hệ này chạy vai seed_shop2 trên điểm bán AUTO_SHOP_52295376 (CHƯA khai tồn đầu kỳ) — 🚫 KHÔNG phải điểm bán trong sổ seed. seed-fill-input.js rót mã sổ seed vào đây là SAI."
+    }
+  }
+}

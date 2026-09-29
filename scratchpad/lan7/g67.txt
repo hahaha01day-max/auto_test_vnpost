@@ -1,0 +1,47 @@
+{'startTime': '2026-09-25T14:28:23.714Z', 'duration': 180825.985, 'expected': 5, 'skipped': 3, 'unexpected': 3, 'flaky': 0}
+
+ skipped | 29_220_004 — Tổng nợ phải trả nhà cung cấp
+   @ đo : thẻ 7279815486 · cộng 20 NCC trang này 7520595486 · phân trang "1-20 trên 21 mặt hàng 1 2"
+   @ skip : Danh sách NCC nhiều trang — cộng tay trang 1 không đủ.
+
+ failed | 29_220_009 — Giao diện popup Đối soát hoá đơn mua hàng
+   @ nguyên văn tiêu đề : Đối soát hóa đơn mua hàng — Phan Hà - Quản lý tỉnh
+   ! Error: Tiêu đề thật: "Đối soát hóa đơn mua hàng — Phan Hà - Quản lý tỉnh" (chữ "hóa" / Drawer kèm tên NCC)  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false
+
+ failed | 29_220_010 — Nội dung chi tiết đối soát khớp với lúc thực hiện
+   @ báo cáo vs phân hệ 27 : {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"} {} · 27: {"purchaseOrder":{"id":1000,"code":"PO2609238817","shopId":56392,"createdShopId":null,"supplierId":122,"supplierName":"Nhà cung cấp BAOKE","supplierCode":"NCC0006","supplierAddress":"Phường Ba Đình, Thành 
+   ! Error: Báo cáo không mở được PO đã đối soát ở phân hệ 27  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 29_220_012 — Bộ lọc trạng thái thanh toán
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-drawer-open').filter({ hasText: /Đối soát h[oó]a đơn mua hàng/ }).last().locator('.ant-select').filter({ hasText: 'Tất cả thanh toán' }).first() 
+
+ skipped | 29_220_013 — Giao diện drawer Chi tiết đối soát PO
+   @ skip : NCC đầu tiên không có PO nào trong tháng.
+
+ skipped | 29_220_014 — Nội dung Chi tiết đối soát PO
+   @ skip : NCC đầu tiên không có PO nào trong tháng.
+{'startTime': '2026-09-25T14:31:25.286Z', 'duration': 163307.10199999998, 'expected': 7, 'skipped': 6, 'unexpected': 0, 'flaky': 0}
+
+ skipped | 29_210_015 — Chốt kho hai lần trong cùng một tháng
+   @ thử chốt 08 : Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc tháng chốt nhỏ hơn tháng có phiếu tồn đầu kỳ. Vui lòng kiểm tra và thử lại. Đã hiểu
+   @ skip : Điểm bán làn không chốt được kỳ nào (tồn đầu kỳ 09/2026, tháng 09 đang mở bị khoá) — cần chờ 10/2026 để chốt 09/2026 rồi chạy lại.
+
+ skipped | 29_210_003 — Phiếu xuất kho nháp không được tính vào chốt tồn
+   @ thử chốt 08 : Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc tháng chốt nhỏ hơn tháng có phiếu tồn đầu kỳ. Vui lòng kiểm tra và thử lại. Đã hiểu
+   @ skip : Điểm bán làn không chốt được kỳ nào (tồn đầu kỳ 09/2026, tháng 09 đang mở bị khoá) — cần chờ 10/2026 để chốt 09/2026 rồi chạy lại.
+
+ skipped | 29_210_004 — Phiếu nhập kho nháp không được tính vào chốt tồn
+   @ thử chốt 08 : Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc tháng chốt nhỏ hơn tháng có phiếu tồn đầu kỳ. Vui lòng kiểm tra và thử lại. Đã hiểu
+   @ skip : Điểm bán làn không chốt được kỳ nào (tồn đầu kỳ 09/2026, tháng 09 đang mở bị khoá) — cần chờ 10/2026 để chốt 09/2026 rồi chạy lại.
+
+ skipped | 29_210_005 — Đơn bán hàng nháp không được tính vào chốt tồn
+   @ thử chốt 08 : Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc tháng chốt nhỏ hơn tháng có phiếu tồn đầu kỳ. Vui lòng kiểm tra và thử lại. Đã hiểu
+   @ skip : Điểm bán làn không chốt được kỳ nào (tồn đầu kỳ 09/2026, tháng 09 đang mở bị khoá) — cần chờ 10/2026 để chốt 09/2026 rồi chạy lại.
+
+ skipped | 29_210_010 — Sửa phiếu xuất kho nháp sau khi đã chốt kho
+   @ thử chốt 08 : Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc tháng chốt nhỏ hơn tháng có phiếu tồn đầu kỳ. Vui lòng kiểm tra và thử lại. Đã hiểu
+   @ skip : Điểm bán làn không chốt được kỳ nào (tồn đầu kỳ 09/2026, tháng 09 đang mở bị khoá) — cần chờ 10/2026 để chốt 09/2026 rồi chạy lại.
+
+ skipped | 29_210_011 — Sửa phiếu nhập kho nháp sau khi đã chốt kho
+   @ thử chốt 08 : Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc tháng chốt nhỏ hơn tháng có phiếu tồn đầu kỳ. Vui lòng kiểm tra và thử lại. Đã hiểu
+   @ skip : Điểm bán làn không chốt được kỳ nào (tồn đầu kỳ 09/2026, tháng 09 đang mở bị khoá) — cần chờ 10/2026 để chốt 09/2026 rồi chạy lại.

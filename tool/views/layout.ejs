@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title><%= title %> — Công cụ auto test VNPost</title>
+<link rel="stylesheet" href="/static/app.css">
+<script src="/static/htmx.min.js"></script>
+<script src="/static/htmx-sse.js"></script>
+</head>
+<body>
+<header>
+  <span class="brand">Auto test VNPost</span>
+  <a href="/">Hồ sơ môi trường</a>
+  <a href="/modules">Chọn &amp; chạy</a>
+  <a href="/seed">Sinh dữ liệu</a>
+  <a href="/song-song">Chạy song song</a>
+  <a href="/runs">Lịch sử</a>
+  <span class="spacer"></span>
+  <span class="small"><%= user.username %><%= user.role === 'admin' ? ' (quản trị)' : '' %></span>
+  <form method="post" action="/logout" style="margin:0"><button class="small">Thoát</button></form>
+</header>
+<main><%- body %></main>
+</body>
+</html>

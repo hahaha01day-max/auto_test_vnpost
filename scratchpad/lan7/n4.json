@@ -1,0 +1,263 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:49:05.693Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "nhom-doi-tuong.shop.spec.js",
+      "file": "nhom-doi-tuong.shop.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "19_130_001 — Tạo nhóm đối tượng khách hàng theo điều kiện",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "shop",
+              "projectName": "shop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 36860,
+                  "error": {
+                    "message": "Error: Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Thêm nhóm đối tượng/ })\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign) with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Thêm nhóm đối tượng/ })\u001b[22m\n",
+                    "stack": "Error: Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Thêm nhóm đối tượng/ })\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign) with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Thêm nhóm đối tượng/ })\u001b[22m\n\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nhom-doi-tuong.shop.spec.js:31:99",
+                    "location": {
+                      "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nhom-doi-tuong.shop.spec.js",
+                      "column": 99,
+                      "line": 31
+                    },
+                    "snippet": "  29 | \ttry {\n  30 | \t\tconst nut = page.getByRole('button', { name: /Thêm nhóm đối tượng/ });\n> 31 | \t\tawait expect(nut, 'Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign)').toBeVisible({ timeout: 30_000 });\n     | \t\t                                                                                                ^\n  32 | \t\tawait nut.click();\n  33 | \t\tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Thêm nhóm đối tượng khách hàng áp dụng' }).last();\n  34 | \t\tawait expect(dr).toBeVisible({ timeout: 15_000 });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nhom-doi-tuong.shop.spec.js",
+                        "column": 99,
+                        "line": 31
+                      },
+                      "message": "Error: Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Thêm nhóm đối tượng/ })\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign) with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Thêm nhóm đối tượng/ })\u001b[22m\n\n\n  29 | \ttry {\n  30 | \t\tconst nut = page.getByRole('button', { name: /Thêm nhóm đối tượng/ });\n> 31 | \t\tawait expect(nut, 'Vai shop không có nút \"Thêm nhóm đối tượng\" (quyền create_object_campaign)').toBeVisible({ timeout: 30_000 });\n     | \t\t                                                                                                ^\n  32 | \t\tawait nut.click();\n  33 | \t\tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Thêm nhóm đối tượng khách hàng áp dụng' }).last();\n  34 | \t\tawait expect(dr).toBeVisible({ timeout: 15_000 });\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nhom-doi-tuong.shop.spec.js:31:99"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:49:06.125Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nhom-doi-tuong.shop-19-130-f6529-g-khách-hàng-theo-điều-kiện-shop/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nhom-doi-tuong.shop-19-130-f6529-g-khách-hàng-theo-điều-kiện-shop/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nhom-doi-tuong.shop-19-130-f6529-g-khách-hàng-theo-điều-kiện-shop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nhom-doi-tuong.shop-19-130-f6529-g-khách-hàng-theo-điều-kiện-shop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nhom-doi-tuong.shop.spec.js",
+                    "column": 99,
+                    "line": 31
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ecf265e7819e34b158cb-5b7171ac6f852d01ceff",
+          "file": "nhom-doi-tuong.shop.spec.js",
+          "line": 20,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T09:49:05.431Z",
+    "duration": 37805.972,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

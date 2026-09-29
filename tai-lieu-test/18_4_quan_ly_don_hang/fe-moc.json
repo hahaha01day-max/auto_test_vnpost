@@ -1,0 +1,115 @@
+{
+  "spec": {
+    "tests/don-hang.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/created-orders",
+        "/order/created-orders/detail/:orderId/:shopId"
+      ],
+      "fe": [
+        "src/features/order/pages/orderListPage/OrderListPage.jsx",
+        "src/features/order/pages/orderListPage/filter/OrderFilters.jsx",
+        "src/features/order/pages/orderListPage/tableData/OrderTableData.jsx",
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/services/ordersApi.js"
+      ]
+    },
+    "tests/don-hang-2.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/created-orders",
+        "/order/created-orders/detail/:orderId/:shopId"
+      ],
+      "fe": [
+        "src/features/order/pages/orderListPage/OrderListPage.jsx",
+        "src/features/order/pages/orderListPage/filter/OrderFilters.jsx",
+        "src/features/order/pages/orderListPage/tableData/OrderTableData.jsx",
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/services/ordersApi.js"
+      ]
+    },
+    "tests/don-hang-3.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/created-orders",
+        "/order/created-orders/detail/:orderId/:shopId"
+      ],
+      "fe": [
+        "src/features/order/pages/orderListPage/OrderListPage.jsx",
+        "src/features/order/pages/orderListPage/filter/OrderFilters.jsx",
+        "src/features/order/pages/orderListPage/tableData/OrderTableData.jsx",
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/services/ordersApi.js"
+      ]
+    },
+    "tests/pham-vi.ward.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/created-orders",
+        "/order/created-orders/detail/:orderId/:shopId"
+      ],
+      "fe": [
+        "src/features/order/pages/orderListPage/OrderListPage.jsx",
+        "src/features/order/pages/orderListPage/filter/OrderFilters.jsx",
+        "src/features/order/pages/orderListPage/tableData/OrderTableData.jsx",
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/services/ordersApi.js"
+      ]
+    },
+    "tests/danh-sach-don.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/created-orders",
+        "/order/created-orders/detail/:orderId/:shopId"
+      ],
+      "fe": [
+        "src/features/order/pages/orderListPage/OrderListPage.jsx",
+        "src/features/order/pages/orderListPage/filter/OrderFilters.jsx",
+        "src/features/order/pages/orderListPage/tableData/OrderTableData.jsx",
+        "src/features/order/pages/orderDetail/OrderDetail.jsx",
+        "src/features/order/services/ordersApi.js"
+      ]
+    },
+    "tests/tat-hddt.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/created-orders"
+      ],
+      "fe": [
+        "src/features/order/pages/orderListPage/tableData/OrderTableData.jsx",
+        "src/features/order/pages/orderListPage/filter/OrderFilters.jsx",
+        "src/features/shop/services/shopConfigApi.js",
+        "src/features/shop/hooks/useSaveShopConfig.js"
+      ]
+    },
+    "tests/phan-loai-sp.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/created-orders/detail/:id"
+      ],
+      "fe": [
+        "src/features/order/pages/orderDetail/components/TableOrderProduct.jsx",
+        "src/features/order/ultils/orderHelper.js"
+      ]
+    },
+    "tests/xuat-excel.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/order/created-orders"
+      ],
+      "fe": [
+        "src/features/exportExcel/exportExcelDrawer.jsx",
+        "src/features/exportExcel/filterOrder.jsx",
+        "src/features/exportExcel/action.js"
+      ]
+    }
+  }
+}

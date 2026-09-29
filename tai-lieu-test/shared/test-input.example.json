@@ -1,0 +1,28 @@
+{
+  "_note": "Mẫu input theo từng case ID. Copy thành test-input.json trong thư mục phân hệ, thay case ID và field bằng dữ liệu thật. Không đặt account/password ở đây — secret nằm trong .env.",
+  "cases": {
+    "NCC-C1-002": {
+      "enabled": true,
+      "mutates": false,
+      "data": {}
+    },
+    "NCC-C1-005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "required": ["groupNamePrefix"],
+      "data": {
+        "groupNamePrefix": "AUTO-NCC",
+        "note": "Tạo bởi auto test"
+      }
+    },
+    "NCC-C1-010": {
+      "enabled": true,
+      "mutates": false,
+      "required": ["existingGroupName"],
+      "data": {
+        "existingGroupName": ""
+      }
+    }
+  }
+}

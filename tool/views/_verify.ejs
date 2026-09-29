@@ -1,0 +1,24 @@
+<div class="<%= result.ping.ok ? 'card' : 'err' %>" style="margin-bottom:12px">
+  <b>Web:</b> <span class="mono"><%= result.profile.baseUrl %></span> —
+  <% if (result.ping.ok) { %>trả lời HTTP <%= result.ping.status %> sau <%= result.ping.ms %>ms ✅
+  <% } else { %>KHÔNG trả lời ❌ <span class="small"><%= result.ping.error || ('HTTP ' + result.ping.status) %></span><% } %>
+</div>
+<% if (result.skippedLogin) { %>
+  <div class="warn"><%= result.note %></div>
+<% } else if (result.roles.length === 0) { %>
+  <div class="err">Không đọc được kết quả thử đăng nhập.<% if (result.error) { %>
+    <pre class="mono small" style="white-space:pre-wrap"><%= result.error %></pre><% } %></div>
+<% } else { %>
+  <table>
+    <tr><th>Vai</th><th>Kết quả</th><th>Lý do</th></tr>
+    <% result.roles.forEach((r) => { %>
+    <tr>
+      <td><%= r.title %></td>
+      <td><% if (r.status === 'passed') { %><span class="badge b-pass">đăng nhập được</span>
+          <% } else if (r.status === 'skipped') { %><span class="badge b-no">chưa khai</span>
+          <% } else { %><span class="badge b-fail">thất bại</span><% } %></td>
+      <td class="small muted"><%= r.error %></td>
+    </tr>
+    <% }) %>
+  </table>
+<% } %>

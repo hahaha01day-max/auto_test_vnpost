@@ -1,0 +1,126 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong,Ma goc,Nguon,Trang thai chay,Ngay chay,Ghi chu chay
+04_5_010_001,Mở màn Tổng quan kho,Tài khoản đăng nhập là role admin,1. User truy cập vào hệ thống 2. Chọn kho hàng 3. Chọn Tổng quan,"Tiêu đề 'Tổng quan kho' Button chức năng: Xuất kho, Nhập kho, Tồn kho đầu kỳ, Chốt tồn kho Khối thống kê tổng quan hiển thị các card: Tổng số sản phẩm, Số lượng trong kho, Giá trị tồn kho Ô tìm kiếm hiển thị placeholder ' Tìm kiếm SKU' Dropdown Phân loại sản phẩm: danh sách gồm các danh mục sản phẩm Bảng dữ liệu hiển thị đủ các cột: Sản phẩm, Mã, Đơn vị, PP tính giá vốn, Giá vốn/ Đơn vị, Số lượng tồn kho, Giá trị tồn kho",FUNC_1_5,Sheet QC,Đạt,24/09/2026,
+04_5_010_002,Tìm kiếm theo mã SKU và tên sản phẩm ở Tổng quan kho,"Vai `shop` đăng nhập, đang ở màn Tổng quan kho","1. Ghi lại ba ô tổng hợp (Tổng số sản phẩm, Số lượng…, giá trị)
+ 2. Nhập SKU đầy đủ → quan sát
+ 3. Nhập một phần tên sản phẩm → quan sát
+ 4. Đọc lại ba ô tổng hợp","Trả về đúng sản phẩm tìm. 🔴 Ba ô tổng hợp phải **tính lại theo phần đang lọc** (sheet QC nói rõ các tab tổng hợp đổi theo) — nếu chúng giữ số của toàn kho thì là lỗi, ghi phiếu.",FUNC_1_6,Sheet QC,Đạt,24/09/2026,
+04_5_010_003,Lọc theo danh mục sản phẩm ở Tổng quan kho,"Vai `shop` đăng nhập, đang ở màn Tổng quan kho","1. Ghi lại ba ô tổng hợp
+ 2. Chọn một danh mục sản phẩm
+ 3. Đọc danh sách và ba ô tổng hợp
+ 4. Xoá lọc","Chỉ còn sản phẩm thuộc danh mục đã chọn; ba ô tổng hợp tính lại theo danh mục đó. 🔴 Danh mục phải đọc từ `CHAIN_PRODUCTS`, 🚫 cấm `SHOP_PRODUCTS`.",FUNC_1_7,Sheet QC,Chưa chạy,29/09/2026,"Ô ""Chọn danh mục"" mở ra RỖNG ở điểm bán này — chưa có danh mục sản phẩm nào để lọc. 🔴 Ghi nhận để user chốt: thiếu dữ liệu nền, hay danh mục đang đọc sai nguồn (quy tắc 1: phải đọc `CHAIN_PRODUCTS`, 🚫 cấm `SHOP_PRODUCTS`)."
+04_5_010_004,Chọn điểm bán ở Tổng quan kho theo vai,"Vai `province` đăng nhập, đang ở màn Tổng quan kho","1. Mở ô chọn điểm bán, đọc danh sách
+ 2. Đăng nhập lại bằng `shop` và đọc lại","Vai `province` thấy danh sách điểm bán thuộc tỉnh mình; vai `shop` chỉ thấy điểm bán của mình (hoặc ô bị khoá). 🔴 Danh sách phải khớp phạm vi của vai — thiếu filter phạm vi thì backend trả TOÀN BỘ pod, không phải rỗng.",FUNC_1_8,Sheet QC,Đạt,24/09/2026,
+04_5_010_005,Danh sách sản phẩm ở Tổng quan kho có đủ cột,"Vai `shop` đăng nhập, đang ở màn Tổng quan kho","1. Đọc hàng tiêu đề bảng
+ 2. Đối chiếu một dòng với tồn kho thật của sản phẩm",Bảng có đủ các cột Sản phẩm · Mã · Đơn vị · (các cột còn lại lấy đúng từ code); số liệu dòng khớp tồn kho thật. 🔴 Cột đơn vị: nhãn đơn vị có thể lệch số tồn nếu biến thể thiếu `convert_to_main_unit = 1` — đối chiếu phải biết bẫy này.,FUNC_1_9,Sheet QC,Không đạt,24/09/2026,"Error: Bảng thiếu cột ""Số lượng tồn kho""; đang có: # · Sản phẩm · Mã · Đơn vị · PP tính giá vốn · Giá vốn trung bình · Tồn khả dụng · Tồn tạm giữ · Hàng đi đường · Giá trị tồn kho · Lô / Serial · Thao tác expect(received).toContain(expected) // indexOf Expected value: ""Số lượng tồn kho"" Received arr"
+04_5_010_006,Phân trang ở Tổng quan kho,"Vai `shop` đăng nhập, đang ở màn Tổng quan kho; có nhiều hơn một trang sản phẩm","1. Đọc số dòng trang 1
+ 2. Sang trang 2
+ 3. Đổi số dòng mỗi trang
+ 4. Về trang cuối","Phân trang đúng, không lặp và không thiếu dòng; ba ô tổng hợp KHÔNG đổi khi chuyển trang (tổng tính trên toàn bộ phần đang lọc).",FUNC_1_11,Sheet QC,Đạt,29/09/2026,
+04_5_010_007,Xuất Excel danh sách sản phẩm tồn kho,"Vai `shop` đăng nhập, đang ở màn Tổng quan kho","1. Đặt bộ lọc
+ 2. Bấm xuất Excel
+ 3. Đọc thông báo / tiêu đề chức năng
+ 4. Mở file tải về","Có chức năng ""Xuất excel sản phẩm tồn kho""; file tải về chứa đúng danh sách đang lọc, số dòng khớp tổng bản ghi. 🔴 Xuất Excel NXT chạy nền ở `export-service` và SQL sinh tự động từ mapper — nếu số lệch thì kiểm mapper, 🚫 đừng sửa query tay.",FUNC_1_12,Sheet QC,Đạt,24/09/2026,
+04_5_020_001,Giao diện màn Quản lý kho hàng,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng","1. Đọc tiêu đề màn, placeholder ô tìm kiếm và các cột bảng","Tiêu đề ""Quản lý kho hàng""; ô tìm kiếm có placeholder bắt đầu bằng ""Tìm ..."" (lấy nguyên văn từ code); bảng có đủ cột gồm tên kho, trạng thái, kho mặc định, thao tác.",FUNC_1_211,Sheet QC,Đạt,24/09/2026,
+04_5_020_002,Thêm mới kho hàng,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng","1. Bấm thêm kho, nhập tên kho
+ 2. Lưu
+ 3. Tìm kho vừa tạo trong danh sách","Thêm thành công, kho hiện trong danh sách với đúng tên. 🔴 Case GHI — kho tạo ra không xoá được nếu đã phát sinh giao dịch.",FUNC_1_212,Sheet QC,Đạt,24/09/2026,
+04_5_020_003,Thêm mới kho và chọn làm kho mặc định,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; đã có một kho mặc định khác","1. Ghi lại kho nào đang là mặc định
+ 2. Thêm kho mới và bật ""kho mặc định""
+ 3. Lưu
+ 4. Đọc lại danh sách",Kho mới thành kho mặc định; **kho mặc định cũ bị bỏ cờ** (chỉ một kho mặc định tại một thời điểm). Danh sách hiện đúng dấu mặc định ở kho mới.,FUNC_1_213,Sheet QC,Đạt,24/09/2026,
+04_5_020_004,Thêm kho với đầy đủ thông tin,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng","1. Nhập đủ mọi ô của form thêm kho
+ 2. Lưu
+ 3. Mở lại kho vừa tạo","Thêm thành công; mở lại thấy đủ mọi thông tin đã nhập, không mất ô nào.",FUNC_1_214,Sheet QC,Đạt,24/09/2026,
+04_5_020_005,Bỏ trống trường bắt buộc khi thêm kho,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; form thêm kho đang mở","1. Để trống ô tên kho
+ 2. Bấm lưu
+ 3. Lần lượt bỏ trống từng ô bắt buộc khác (nếu có) rồi lưu","Hiện lỗi nguyên văn ""Vui lòng nhập tên kho""; không gửi request. Mỗi ô bắt buộc khác cho một thông báo riêng — lấy nguyên văn từ code, 🚫 không gộp thành một case.",FUNC_1_215,Sheet QC,Đạt,24/09/2026,
+04_5_020_006,Chuyển đổi kho mặc định,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có ít nhất 2 kho, một kho đang là mặc định","1. Ghi lại kho mặc định hiện tại
+ 2. Đặt kho khác làm mặc định
+ 3. Đọc lại danh sách",Chuyển thành công; chỉ một kho mang dấu mặc định; kho cũ mất dấu. 🔴 Đổi kho mặc định ảnh hưởng mọi form lập phiếu sau đó (ô kho tự điền theo kho mặc định).,FUNC_1_216,Sheet QC,Đạt,24/09/2026,
+04_5_020_007,Bật / tắt kho,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có kho đang bật","1. Tắt một kho
+ 2. Đọc trạng thái trong danh sách
+ 3. Bật lại",Trạng thái đổi thành công cả hai chiều; danh sách hiện đúng trạng thái.,FUNC_1_217,Sheet QC,Đạt,24/09/2026,
+04_5_020_008,Dùng kho đã bị tắt trong nghiệp vụ,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có kho đang ở trạng thái tắt","1. Mở form lập phiếu nhập kho
+ 2. Mở ô chọn kho và tìm kho đã tắt
+ 3. Nếu chọn được thì chọn và lưu","🔴 Sheet QC chỉ ghi ""Báo hiển thị trạng thái kho đã off"" — phải đo và ghi rõ: kho tắt bị **ẩn khỏi** ô chọn, hay vẫn hiện kèm nhãn tắt, hay chọn được rồi mới báo lỗi. Ba cách xử lý khác nhau hoàn toàn.",FUNC_1_218,Sheet QC (kỳ vọng cần user chốt),Chưa chạy,29/09/2026,"Case 04_5_020_008 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_020_008_ENABLED. — Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, ""Kho nhận"" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), ""Mở phiên kiểm kho"" tự"
+04_5_020_009,Chỉnh sửa thông tin kho,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có kho đã tạo","1. Mở sửa một kho, đổi tên và các thông tin khác
+ 2. Lưu
+ 3. Mở lại",Cập nhật thành công; mở lại thấy đúng thông tin mới; các phiếu đã phát sinh vẫn tham chiếu đúng kho đó.,FUNC_1_219,Sheet QC,Đạt,24/09/2026,
+04_5_020_010,Xoá kho vật lý,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có kho vật lý chưa phát sinh giao dịch, và một kho khác ĐÃ có tồn","1. Xoá kho chưa phát sinh giao dịch → ghi kết quả
+ 2. Thử xoá kho ĐANG CÓ TỒN → ghi kết quả","🔴 Sheet QC để ngỏ: *""Xoá kho thành công - Số lượng còn lại trong kho ?""* — chính người viết cũng không biết. Phải đo và ghi rõ: kho đang có tồn thì bị chặn, hay xoá được và **tồn đi đâu**. 🚫 Không đoán — đây là câu hỏi mất hàng.",FUNC_1_220,Sheet QC (kỳ vọng cần user chốt),Đạt,24/09/2026,
+04_5_020_011,Chuyển kho với kho vật lý,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; tỉnh đã có HUB trực thuộc","1. Tạo một kho vật lý mới
+ 2. Thực hiện chuyển kho tới kho đó
+ 3. Đọc kết quả và vị trí kho trong cây tổ chức","Kho mới nhận được hàng chuyển tới. 🔴 Sheet QC ghi kỳ vọng là *""Thêm kho mới thành 1 HUB trực thuộc""* — đó là kỳ vọng của `FUNC_1_226` (thêm kho khi tỉnh chưa có HUB), **chép nhầm**. Viết lại theo nghiệp vụ đúng: case này kiểm chuyển kho tới kho vật lý.",FUNC_1_221,Sheet QC (kỳ vọng sheet chép nhầm),Chưa chạy,29/09/2026,"Case 04_5_020_011 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_020_011_ENABLED. — Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, ""Kho nhận"" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), ""Mở phiên kiểm kho"" tự"
+04_5_020_012,Kiểm kho với kho vật lý,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có kho vật lý đang có tồn","1. Lập phiếu kiểm kho cho kho vật lý đó
+ 2. Khai số thực tế và áp dụng
+ 3. Đọc tồn của kho đó","🔴 Sheet QC ghi kỳ vọng là *""Check lại""* — **không phải kỳ vọng**, là ghi chú của người viết. Viết theo nghiệp vụ: kiểm kho áp được cho kho vật lý và tồn của đúng kho đó đổi theo số đã đếm, các kho khác không đổi. Cần user xác nhận.",FUNC_1_222,Sheet QC (kỳ vọng cần user chốt),Chưa chạy,29/09/2026,"Case 04_5_020_012 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_020_012_ENABLED. — Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, ""Kho nhận"" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), ""Mở phiên kiểm kho"" tự"
+04_5_020_013,Xuất kho với kho vật lý,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có kho vật lý đang có tồn","1. Lập phiếu xuất kho từ kho vật lý đó
+ 2. Duyệt phiếu
+ 3. Đọc tồn từng kho","🔴 Kỳ vọng gốc là *""Check lại""*. Viết theo nghiệp vụ: tồn của đúng kho vật lý đó giảm, kho khác không đổi; giá vốn lấy theo lô của chính kho đó. Cần user xác nhận.",FUNC_1_223,Sheet QC (kỳ vọng cần user chốt),Chưa chạy,29/09/2026,"Case 04_5_020_013 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_020_013_ENABLED. — Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, ""Kho nhận"" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), ""Mở phiên kiểm kho"" tự"
+04_5_020_014,Nhập kho với kho vật lý,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; có kho vật lý","1. Lập phiếu nhập kho vào kho vật lý đó
+ 2. Duyệt phiếu
+ 3. Đọc tồn từng kho","🔴 Kỳ vọng gốc là *""Check lại""*. Viết theo nghiệp vụ: tồn của đúng kho đó tăng; kho khác không đổi. Cần user xác nhận.",FUNC_1_224,Sheet QC (kỳ vọng cần user chốt),Chưa chạy,29/09/2026,"Case 04_5_020_014 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_020_014_ENABLED. — Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, ""Kho nhận"" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), ""Mở phiên kiểm kho"" tự"
+04_5_020_015,Chuyển kho giữa các kho trong CÙNG một đơn vị,"Vai `shop` đăng nhập, đang ở màn Quản lý kho hàng; đơn vị có ít nhất 2 kho, kho A có tồn","1. Ghi lại tồn kho A và kho B
+ 2. Lập phiếu chuyển từ A sang B trong cùng đơn vị
+ 3. Đọc lại tồn hai kho và công nợ","🔴 Kỳ vọng gốc là *""Check lại""*. Viết theo nghiệp vụ: tồn A giảm, tồn B tăng đúng số lượng; **KHÔNG phát sinh công nợ** (cùng một đơn vị, không phải giao dịch giữa hai pháp nhân). Cần user xác nhận phần công nợ.",FUNC_1_225,Sheet QC (kỳ vọng cần user chốt),Chưa chạy,29/09/2026,"Case 04_5_020_015 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_020_015_ENABLED. — Ở cấp điểm bán mọi form nghiệp vụ (nhập/xuất/chuyển/kiểm kho) đều KHÔNG có ô chọn kho: nhập/xuất tự lấy kho mặc định, ""Kho nhận"" chuyển kho chỉ liệt kê điểm bán (tự lấy kho mặc định), ""Mở phiên kiểm kho"" tự"
+04_5_020_016,Thêm kho cho tỉnh CHƯA có HUB trực thuộc,Vai `province` của một tỉnh chưa có HUB nào,"1. Thêm kho mới
+ 2. Đọc kết quả và cây mô hình tổ chức",Kho mới được tạo **thành một HUB trực thuộc** tỉnh đó và xuất hiện trong cây mô hình tổ chức. 🔴 Đây là kỳ vọng thật của `FUNC_1_226`; `FUNC_1_221` đã chép nhầm kỳ vọng này (xem `04_5_020_011`).,FUNC_1_226,Sheet QC,Đạt,29/09/2026,
+04_5_030_001,Xem Thẻ kho khi có dữ liệu,"Đã đăng nhập, có quyền xem thông tin nhập kho; biết trước sản phẩm và kho cần xem, sản phẩm đã có phát sinh nhập xuất trong kỳ","1. Vào Kho hàng > Xuất nhập kho, chọn thẻ Thẻ kho
+2. Chọn kho ở ô Chọn kho
+3. Chọn sản phẩm ở ô Tìm sản phẩm
+4. Chọn khoảng thời gian cần xem
+5. Đọc bốn chỉ tiêu tổng và bảng phát sinh","Thẻ kho hiện bốn chỉ tiêu tổng Tồn đầu kỳ, Tổng nhập, Tổng xuất, Tồn cuối kỳ; mặc định khoảng thời gian là 30 ngày gần nhất và không cho chọn quá 186 ngày. Bảng phát sinh có đủ cột Sản phẩm, Loại, Mã phiếu, Thời gian, Nhập, Xuất, Tồn sau, Ghi chú; cột Nhập chỉ hiện với phát sinh nhập, cột Xuất chỉ hiện với phát sinh xuất.",,HDSD 030,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_002,Giao diện màn Thẻ kho có đủ thành phần,"Vai `shop` đăng nhập, đang ở màn Thẻ kho",1. Đọc các bộ lọc và các ô số liệu trên màn,"Có đủ: bộ lọc **Kho / Điểm bán**, bộ lọc **khoảng thời gian**, ô **tìm kiếm**, bốn ô số liệu **Tồn đầu kỳ · Tổng nhập · Tổng xuất · Tồn cuối kỳ**, và bảng giao dịch. Lấy đúng danh sách thành phần từ code.",FUNC_1_81,Sheet QC,Không đạt,24/09/2026,"Error: 🔴 Thẻ ""Thẻ kho"" mở ra RỖNG HOÀN TOÀN: không ô lọc, không bảng, không chữ nào, và không request nào được gửi. Người dùng bấm vào thẻ và không thấy gì. expect(received).not.toBe(expected) // Object.is equality Expected: not """""
+04_5_030_003,Bộ lọc Điểm bán / Kho ở Thẻ kho,"Vai `province` đăng nhập, đang ở màn Thẻ kho","1. Chọn một Kho / Điểm bán
+ 2. Đọc bảng giao dịch và bốn ô số liệu
+ 3. Đổi sang kho khác","Chỉ còn giao dịch thuộc kho đã chọn; **bốn ô số liệu tính lại theo kho đó**. 🔴 id kho khác nhau mỗi pod — đối chiếu theo mã kho, 🚫 không theo id.",FUNC_1_82,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn — xem `04_5_030_002`. 🚫 Không kiểm được bộ lọc."
+04_5_030_004,Tìm kiếm theo Tên sản phẩm ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho","1. Nhập một phần tên sản phẩm
+ 2. Đọc bảng giao dịch","Chỉ còn giao dịch của các sản phẩm có tên khớp từ khoá. 🔴 Backend tìm theo TỪ, không theo chuỗi con — 🚫 đừng assert ""mọi dòng chứa nguyên văn từ khoá"".",FUNC_1_83,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_005,Tìm kiếm theo SKU ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho","1. Nhập SKU đầy đủ
+ 2. Đọc bảng giao dịch","Hiện đúng lịch sử giao dịch của SKU đó, không lẫn SKU khác.",FUNC_1_84,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_006,Tìm kiếm theo Barcode ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; đã biết barcode của một sản phẩm","1. Nhập barcode
+ 2. Đọc bảng giao dịch",Hiện đúng lịch sử giao dịch của sản phẩm có barcode đó. 🔴 Nếu ô tìm không nhận barcode thì đối chiếu với `FUNC_1_202` của phân hệ `04_1` (cùng vấn đề barcode) rồi báo chung một mục.,FUNC_1_85,Sheet QC,Không đạt,29/09/2026,Error: Thẻ kho lẫn giao dịch SP khác expect(received).toBe(expected) // Object.is equality Expected: true Received: false
+04_5_030_007,Chọn khoảng thời gian ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho","1. Chọn khoảng bao một giao dịch đã biết
+ 2. Thu khoảng để loại giao dịch đó
+ 3. Chọn đúng một ngày có giao dịch",Chỉ hiện giao dịch phát sinh trong khoảng đã chọn; bốn ô số liệu tính lại theo khoảng. 🔴 DATETIME naive +7 — ngày biên phải ra đúng giao dịch.,FUNC_1_86,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_008,Số liệu Tồn đầu kỳ ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; đã chọn một sản phẩm và một khoảng thời gian","1. Ghi lại tồn của sản phẩm tại thời điểm ngay TRƯỚC ngày đầu khoảng
+ 2. Đọc ô ""Tồn đầu kỳ""
+ 3. Đối chiếu",Tồn đầu kỳ = tồn tại thời điểm ngay trước ngày đầu khoảng. 🔴 Bẫy đã gặp thật: **tồn đầu kỳ bị đếm hai lần** ở DW. Nếu số gấp đôi thì không phải lỗi test — ghi phiếu ngay.,FUNC_1_87,Sheet QC,Đạt,29/09/2026,
+04_5_030_009,Số liệu Tổng nhập ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; đã chọn sản phẩm và khoảng thời gian","1. Liệt kê các giao dịch nhập trong khoảng từ bảng
+ 2. Cộng tay số lượng
+ 3. Đối chiếu với ô ""Tổng nhập""","Tổng nhập = tổng số lượng các giao dịch nhập trong khoảng. 🔴 Số NXT ở DW phải đo bằng **post − pre**, 🚫 không lấy `quantity`; và phiếu con của phiên kiểm kho bị đếm đôi vào thẻ kho — nếu lệch thì kiểm hai chỗ này trước.",FUNC_1_88,Sheet QC,Đạt,29/09/2026,
+04_5_030_010,Số liệu Tổng xuất ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; đã chọn sản phẩm và khoảng thời gian","1. Liệt kê các giao dịch xuất trong khoảng
+ 2. Cộng tay số lượng
+ 3. Đối chiếu với ô ""Tổng xuất""","Tổng xuất = tổng số lượng các giao dịch xuất trong khoảng, cùng lưu ý về post − pre và phiếu con kiểm kho như `04_5_030_009`.",FUNC_1_89,Sheet QC,Đạt,29/09/2026,
+04_5_030_011,Số liệu Tồn cuối kỳ ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; đã chọn sản phẩm và khoảng thời gian","1. Đọc bốn ô số liệu
+ 2. Tính tay: Tồn đầu kỳ + Tổng nhập − Tổng xuất
+ 3. Đối chiếu với ô ""Tồn cuối kỳ""
+ 4. Đối chiếu tiếp với tồn kho hiện tại của sản phẩm (nếu khoảng kết thúc là hôm nay)","Tồn cuối kỳ = Tồn đầu kỳ + Tổng nhập − Tổng xuất, và khớp tồn thật. 🔴 Đây là **đẳng thức chốt chặn của cả màn** — lệch là một trong ba bẫy DW đã biết: thiếu `FINAL` (đếm đôi), tồn đầu kỳ đếm hai lần, hoặc phiếu con kiểm kho vào thẻ kho.",FUNC_1_90,Sheet QC,Không đạt,29/09/2026,"Error: 🔴 Tồn cuối kỳ (DW) ≠ tồn thật hiện tại expect(received).toBeCloseTo(expected, precision) Expected: 155 Received: 147 Expected precision: 4 Expected difference: < 0.00005 Received difference: 8"
+04_5_030_012,Phân trang ở Thẻ kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; có nhiều hơn một trang giao dịch","1. Đọc trang 1, ghi mã giao dịch đầu và cuối
+ 2. Sang trang 2
+ 3. Về trang cuối",Không trùng lặp và không thiếu bản ghi giữa các trang; bốn ô số liệu không đổi khi chuyển trang.,FUNC_1_91,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_013,Thẻ kho hiển thị giao dịch Nhập từ Nhà cung cấp,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; có phát sinh nhập kho từ NCC trong khoảng","1. Tìm dòng giao dịch đó
+ 2. Đọc cột Loại (cả hai dòng chữ)","Cột Loại: dòng trên là **""Nhập kho""** màu xanh, dòng dưới là nguồn nhập cụ thể (""Nhập kho thường"" / tên NCC — lấy đúng nguyên văn từ hệ thống). Số lượng mang dấu dương.",FUNC_1_92,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_014,Thẻ kho hiển thị giao dịch Nhập từ Chuyển kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; có phát sinh nhập chuyển kho trong khoảng","1. Tìm dòng giao dịch đó
+ 2. Đọc cột Loại","Dòng trên **""Nhập kho""** màu xanh; dòng dưới ghi **""Nhập chuyển kho""** kèm đơn vị chuyển đến (lấy nguyên văn).",FUNC_1_93,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_015,Thẻ kho hiển thị giao dịch Nhập do Kiểm kho (thừa),"Vai `shop` đăng nhập, đang ở màn Thẻ kho; có phiếu kiểm kho làm tồn tăng trong khoảng","1. Tìm dòng giao dịch đó
+ 2. Đọc cột Loại và số lượng","Dòng trên **""Nhập kho""** màu xanh; dòng dưới ghi **""Kiểm kho""**; số lượng = đúng phần chênh lệch tăng. 🔴 Từ 07/09 chênh lệch kiểm kê **tách cột riêng** — 🚫 không cộng lẫn vào Tổng nhập của nhập/xuất thường nếu màn đã tách.",FUNC_1_94,Sheet QC,Không đạt,29/09/2026,"Error: Dòng không mang nhãn ""Nhập kho"" expect(received).toContain(expected) // indexOf Expected substring: ""Nhập kho"" Received string: ""3 AUTO8_SP_FIFO Mặc định Kiểm kho 2609240MC84J16H8-MERGED 24/09/2026 00:40 - - 100 -"""
+04_5_030_016,Thẻ kho hiển thị giao dịch Xuất thường,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; có phát sinh xuất kho thường trong khoảng","1. Tìm dòng giao dịch đó
+ 2. Đọc cột Loại","Dòng trên **""Xuất kho""** màu đỏ/cam; dòng dưới ghi loại xuất cụ thể (""Xuất kho thường""). Số lượng mang dấu âm hoặc nằm ở cột xuất.",FUNC_1_95,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_017,Thẻ kho hiển thị giao dịch Xuất chuyển kho,"Vai `shop` đăng nhập, đang ở màn Thẻ kho; có phát sinh xuất chuyển kho trong khoảng","1. Tìm dòng giao dịch đó
+ 2. Đọc cột Loại","Dòng trên **""Xuất kho""** màu đỏ/cam; dòng dưới ghi **""Xuất chuyển kho""** kèm đơn vị nhận.",FUNC_1_96,Sheet QC,Chưa chạy,29/09/2026,"🔴 Thẻ ""Thẻ kho"" mở ra rỗng hoàn toàn (không ô lọc, không bảng, không request). Xem `04_5_030_002` — chốt chặn của nhóm này. 🚫 Không kiểm tiếp được gì."
+04_5_030_018,Thẻ kho hiển thị giao dịch Xuất do Kiểm kho (thiếu),"Vai `shop` đăng nhập, đang ở màn Thẻ kho; có phiếu kiểm kho làm tồn giảm trong khoảng","1. Tìm dòng giao dịch đó
+ 2. Đọc cột Loại và số lượng","Dòng trên **""Xuất kho""** màu đỏ/cam; dòng dưới ghi **""Kiểm kho""**; số lượng = đúng phần chênh lệch giảm.",FUNC_1_97,Sheet QC,Không đạt,29/09/2026,"Error: 🔴 Cột Xuất của dòng kiểm kho không hiện số chênh lệch (API 1) expect(received).toMatch(expected) Expected pattern: /\b1\b.*\b\d+\b/ Received string: ""41 AUTO8_SP_TC Mặc định Kiểm kho 260924RKJHKUMYST-MERGED 24/09/2026 00:40 - - 207 -"""
+04_5_040_001,Xem tab Báo cáo nhập và Báo cáo xuất,Tài khoản đăng nhập là role admin,1. User truy cập vào hệ thống 2. Chọn kho hàng 3. Chọn Tổng quan 4. Chọn điểm bán,- Hiển thị kết quả ở tab báo cáo đùng bằng tổng của danh sách sản phẩm,FUNC_1_10,Sheet QC,Đạt,24/09/2026,
+04_5_050_001,Vai admin cấp Tổng công ty đăng nhập và vào được màn ca làm việc,Có tài khoản vai admin cấp Tổng công ty,"1. Đăng nhập bằng tài khoản `tct`
+ 2. Mở màn Ca làm việc (`/lich-ca-nhan/ca-lam-viec`)
+ 3. Đọc phạm vi dữ liệu thấy được","Đăng nhập thành công, vào được màn; phạm vi dữ liệu là toàn Tổng công ty. 🔴 Bốn case `FUNC_1_1`–`4` nằm ở đầu sheet `quan_ly_kho` nhưng **không thuộc nhóm nào** — thực chất là case đăng nhập/phân quyền, trùng nghiệp vụ với phân hệ `31_quan_ly_phan_quyen`. Giữ ở đây để không bỏ lọt, xem nhận xét tay.",FUNC_1_1,Sheet QC,Chưa chạy,29/09/2026,"Case 04_5_050_001 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_050_001_ENABLED. — Case đăng nhập/phân quyền, trùng nghiệp vụ phân hệ 31 — cần user chốt giữ ở đâu (xem nhận xét tay)."
+04_5_050_002,Vai quản lý tỉnh đăng nhập,Có tài khoản vai quản lý cấp tỉnh,"1. Đăng nhập bằng `province`
+ 2. Mở màn Ca làm việc
+ 3. Đọc phạm vi dữ liệu","Đăng nhập thành công; chỉ thấy dữ liệu thuộc tỉnh của mình, không thấy tỉnh khác.",FUNC_1_2,Sheet QC,Chưa chạy,29/09/2026,Case 04_5_050_002 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_050_002_ENABLED. — Cùng lý do 04_5_050_001.
+04_5_050_003,Vai giám đốc xã đăng nhập,Có tài khoản vai giám đốc cấp xã,"1. Đăng nhập bằng `ward`
+ 2. Mở màn Ca làm việc
+ 3. Đọc phạm vi dữ liệu",Đăng nhập thành công; chỉ thấy dữ liệu thuộc xã của mình.,FUNC_1_3,Sheet QC,Chưa chạy,29/09/2026,Case 04_5_050_003 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_050_003_ENABLED. — Cùng lý do 04_5_050_001; và chưa có tài khoản vai `ward` xác nhận trong .env.accounts.
+04_5_050_004,Vai cửa hàng trưởng cấp điểm bán / kho đăng nhập,Có tài khoản vai cửa hàng trưởng,"1. Đăng nhập bằng `shop`
+ 2. Mở màn Ca làm việc
+ 3. Đọc phạm vi dữ liệu",Đăng nhập thành công; chỉ thấy dữ liệu của điểm bán mình phụ trách.,FUNC_1_4,Sheet QC,Chưa chạy,29/09/2026,Case 04_5_050_004 đang tắt — trong test-input.json hoặc ở VNPOST_CASE_04_5_050_004_ENABLED. — Cùng lý do 04_5_050_001.

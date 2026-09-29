@@ -1,0 +1,10 @@
+{
+  "spec": {
+    "tests/gop-tach.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": ["/inventory/purchase-request", "/inventory/purchase-request/merge", "/inventory/purchase-request/split/:id", "/inventory/purchase-request/detail/:id"],
+      "fe": ["src/features/purchaseOrder/pages/StockRequestListPage.jsx", "src/features/purchaseOrder/pages/StockRequestMergePage.jsx", "src/features/purchaseOrder/pages/StockRequestSplitPage.jsx", "src/features/purchaseOrder/pages/StockRequestDetailPage.jsx", "src/features/purchaseOrder/pages/StockRequestHistoryDrawer.jsx"]
+    }
+  }
+}

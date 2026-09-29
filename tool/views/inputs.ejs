@@ -1,0 +1,171 @@
+<div class="flex">
+  <h1>Dữ liệu đầu vào — <%= mod.name %></h1>
+  <a class="right small" href="/modules/<%= mod.id %>">← Chọn &amp; chạy module này</a>
+</div>
+<p class="sub mono small"><%= mod.id %></p>
+
+<% if (notice) { %><div class="warn"><%= notice %></div><% } %>
+
+<% if (!described.template.exists) { %>
+<div class="err">
+  Module này <b>chưa có <span class="mono">test-input.json</span></b> nên không có khuôn để khai input.
+  <div class="small" style="margin-top:6px">
+    Tạo file <span class="mono"><%= mod.relDir %>/test-input.json</span>
+    (mẫu: <span class="mono">tai-lieu-test/shared/test-input.example.json</span>), hoặc dựng bằng skill
+    <span class="mono">test-scenario</span>. Chạy module vẫn được — chỉ là dùng nguyên dữ liệu hard-code trong spec.
+  </div>
+</div>
+<% } else if (described.template.error) { %>
+<div class="err"><%= described.template.error %></div>
+<% } %>
+
+<div class="card">
+  <form method="get" action="/modules/<%= mod.id %>/inputs" class="row">
+    <div>
+      <label>Hồ sơ môi trường — input lưu RIÊNG theo từng hồ sơ</label>
+      <select name="profileId" onchange="this.form.submit()">
+        <% profiles.forEach((p) => { %>
+          <option value="<%= p.id %>" <%= p.id === profileId ? 'selected' : '' %>><%= p.name %> — <%= p.baseUrl %><%= p.isProd ? '  [PROD]' : '' %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div style="flex:0 0 auto;display:flex;align-items:flex-end;gap:10px">
+      <a class="btn" href="/modules/<%= mod.id %>/inputs/template.xlsx?profileId=<%= profileId %>">Tải khuôn Excel</a>
+      <label class="btn" style="margin:0">Nạp Excel<input type="file" id="xlsx" accept=".xlsx" hidden></label>
+    </div>
+  </form>
+
+  <% if (profile && profile.isProd) { %>
+  <div class="warn" style="margin:12px 0 0">
+    🔴 Hồ sơ <b>MÔI TRƯỜNG THẬT</b>. Bật <span class="mono">allowMutation</span> ở đây là case ghi dữ liệu
+    <b>ghi thật</b> và không hoàn tác được.
+  </div>
+  <% } %>
+
+  <div class="small muted" style="margin-top:10px">
+    <%= described.stats.total %> case có khuôn input — <%= described.stats.withOverride %> case đang bị đè,
+    <%= described.stats.blocked %> case sẽ bị bỏ qua, <%= described.stats.mutates %> case ghi dữ liệu.
+    Ô để trống = dùng giá trị trong <span class="mono">test-input.json</span>.
+  </div>
+</div>
+
+<% if (described.stale.length > 0) { %>
+<div class="warn">
+  <b><%= described.stale.length %> case có giá trị đè nhưng khuôn không còn khai</b> — biến vẫn được bơm
+  nhưng không spec nào đọc:
+  <span class="mono small"><%= described.stale.map((s) => s.caseId).join(', ') %></span>.
+  Bấm <i>Xoá toàn bộ giá trị đè</i> hoặc sửa <span class="mono">test-input.json</span>.
+</div>
+<% } %>
+
+<% if (preview) { %>
+<h2>Đối chiếu file Excel vừa nạp — chưa ghi gì</h2>
+<form method="post" action="/modules/<%= mod.id %>/inputs/import/apply">
+  <input type="hidden" name="profileId" value="<%= profileId %>">
+  <div class="card">
+    <b><%= preview.counts.set %></b> ô sẽ đè · <b><%= preview.counts.clear %></b> ô về mặc định ·
+    <%= preview.counts.same %> ô không đổi ·
+    <span class="<%= preview.counts.unknown > 0 ? 'b-fail badge' : 'muted' %>"><%= preview.counts.unknown %> dòng không khớp khuôn (bỏ qua)</span>
+    <div style="margin-top:12px"><button class="primary" <%= preview.counts.set + preview.counts.clear === 0 ? 'disabled' : '' %>>Xác nhận nạp</button></div>
+  </div>
+  <table>
+    <tr><th>Dòng</th><th>Case</th><th>Field</th><th>Đang là</th><th>Sẽ thành</th><th>Việc</th></tr>
+    <% preview.rows.forEach((r) => { %>
+    <tr>
+      <td class="small muted"><%= r.rowNumber %></td>
+      <td class="mono small"><%= r.caseId %></td>
+      <td class="mono small"><%= r.field %></td>
+      <td class="small"><%= r.current === undefined ? '—' : r.current %></td>
+      <td class="small"><%= r.action === 'clear' ? '(mặc định)' : r.value %></td>
+      <td class="small">
+        <% if (r.action === 'set') { %><span class="badge b-run">đè</span>
+        <% } else if (r.action === 'clear') { %><span class="badge b-no">về mặc định</span>
+        <% } else if (r.action === 'same') { %><span class="muted">không đổi</span>
+        <% } else { %><span class="badge b-fail">bỏ qua</span> <span class="muted"><%= r.note %></span><% } %>
+      </td>
+    </tr>
+    <% if (r.action === 'set' || r.action === 'clear') { %>
+      <input type="hidden" name="row" value="<%= JSON.stringify({ action: r.action, caseId: r.caseId, field: r.field, value: r.value }) %>">
+    <% } %>
+    <% }) %>
+  </table>
+</form>
+<% } %>
+
+<% if (described.items.length > 0) { %>
+<form method="post" action="/modules/<%= mod.id %>/inputs">
+<input type="hidden" name="profileId" value="<%= profileId %>">
+
+<div class="card flex">
+  <button class="primary">Lưu input</button>
+  <span class="small muted">Chỉ lưu cho hồ sơ đang chọn.</span>
+  <span class="right"></span>
+</div>
+
+<% described.items.forEach((item) => { %>
+  <div class="case-card">
+    <div class="case-head">
+      <div class="case-title">
+        <span class="mono case-id"><%= item.caseId %></span>
+        <span><%= item.name %></span>
+        <% if (item.role) { %><span class="badge b-no">vai: <%= item.role %></span><% } %>
+        <% if (item.mutates) { %><span class="badge b-write">ghi dữ liệu</span><% } %>
+      </div>
+      <% if (item.blocked) { %><div class="case-note small" style="color:var(--amber)"><%= item.blocked %></div><% } %>
+      <% if (item.blockingReason) { %><div class="case-note small" style="color:var(--red)">Sẽ bỏ qua: <%= item.blockingReason %></div><% } %>
+    </div>
+    <table class="case-fields">
+      <tr><th style="width:190px">Field</th><th style="width:300px">Giá trị</th><th style="width:170px">Mặc định</th><th>Trạng thái</th></tr>
+      <% item.fields.forEach((f) => { %>
+      <tr>
+        <td class="mono small"><%= f.key %><%= f.required ? ' *' : '' %></td>
+        <td><input name="f[<%= item.caseId %>][<%= f.key %>]" value="<%= f.overridden ? f.value : '' %>" placeholder="<%= f.defaultText %>"></td>
+        <td class="small muted mono"><%= f.defaultText === '' ? '(trống)' : f.defaultText %></td>
+        <td class="small">
+          <% if (f.overridden) { %><span class="badge b-run">đang đè</span><% } %>
+          <% if (f.required && String(f.value).trim() === '') { %><span class="badge b-fail">thiếu</span><% } %>
+          <% if (f.kind !== 'text') { %><span class="badge b-no"><%= f.kind %></span><% } %>
+          <div class="mono muted" style="font-size:10px;margin-top:3px"><%= f.envKey %></div>
+        </td>
+      </tr>
+      <% }) %>
+      <% item.flags.forEach((f) => { %>
+      <tr>
+        <td class="mono small"><%= f.key %></td>
+        <td>
+          <input type="hidden" name="flagKeys" value="<%= item.caseId %>::<%= f.key %>">
+          <label style="margin:0"><input type="checkbox" name="flags[<%= item.caseId %>::<%= f.key %>]" style="width:auto" <%= f.value ? 'checked' : '' %>>
+            <%= f.key === 'enabled' ? 'cho phép chạy' : 'cho phép ghi dữ liệu' %></label>
+        </td>
+        <td class="small muted mono"><%= String(f.defaultValue) %></td>
+        <td class="small"><% if (f.overridden) { %><span class="badge b-run">đang đè</span><% } %>
+          <div class="mono muted" style="font-size:10px;margin-top:3px"><%= f.envKey %></div>
+        </td>
+      </tr>
+      <% }) %>
+    </table>
+  </div>
+<% }) %>
+
+<div class="card flex" style="margin-top:16px"><button class="primary">Lưu input</button></div>
+</form>
+
+<form method="post" action="/modules/<%= mod.id %>/inputs/reset" onsubmit="return confirm('Xoá toàn bộ giá trị đè của module này trên hồ sơ đang chọn?')">
+  <input type="hidden" name="profileId" value="<%= profileId %>">
+  <button class="danger">Xoá toàn bộ giá trị đè</button>
+</form>
+<% } %>
+
+<script>
+// Nạp Excel: POST thẳng nhị phân để không phải thêm thư viện parse multipart vào server.
+document.getElementById('xlsx').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const res = await fetch('/modules/<%= mod.id %>/inputs/import?profileId=<%= profileId %>', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/octet-stream' },
+    body: await file.arrayBuffer(),
+  });
+  document.open(); document.write(await res.text()); document.close();
+});
+</script>

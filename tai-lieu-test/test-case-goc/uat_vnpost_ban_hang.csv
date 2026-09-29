@@ -1,0 +1,1185 @@
+                                                                                                                                                                                           ,Chức năng,,,,,,,,,,
+,Mã Testcase,,BANHANG,,,,,,,,
+,Tổng các tình huống kiểm thử,,163,,,,,,,,
+,Chưa thực hiện,,88,,,,,,,,
+,Đạt yêu cầu,,56,,,,,,,,
+,Không đạt yêu cầu,,17,,,,,,,,
+,Thực hiện sau,,2,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện,
+,KIỂM TRA PERMISSION,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng quản lý ca,,,,,,,,,,
+,Kiểm tra hiển thị thông tin ca làm việc hôm nay,Tài khoản đã tạo ca làm việc và đã xếp lịch làm việc cho nhân viên,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""",,Ca làm việc,"Hiển thị đúng ngày hiện tại (10/06/2026) và danh sách các ca làm việc được phân công trong ngày với các thông tin tên ca, thời gian ca, giờ đến, giờ về, trạng thái ca và các button liên quan đến trạng thái ca, báo cáo ca (Tổng đơn hàng, Tổng doanh thu, Tiền khách nợ, Tiền hoàn trả",,,,,Ca
+,Kiểm tra trạng thái ca làm việc,,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Quan sát trạng thái ca làm việc",,Ca làm việc,"Ca chưa mở: hiển thị tag màu trắng ""Chưa bắt đầu""
+Ca đã kết thúc: hiển thị tag màu xanh dương ""Đã về""
+Ca đang hoạt động: hiển thị tag màu xanh lá ""Đang làm""",,,,,Ca
+,Kiểm tra trạng thái hiển thị của các nút chức năng theo trạng thái ca,,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Quan sát các nút chức năng tương ứng trạng thái ca làm việc",,Ca làm việc,"Ca chưa mở: hiển thị các button ""Chấm công đến"", ""Mở ca""
+Ca đã kết thúc: hiển thị các button ""In chốt ca"", ""Xem báo cáo""
+Ca đang hoạt động: hiển thị các button ""Chấm công về"", ""Chốt ca"", ""Xem báo cáo""",,,,,Ca
+,Kiểm tra chặn bán hàng khi tài khoản chưa được gán ca làm việc,Tài khoản chưa tạo ca làm việc hoặc chưa xếp lịch làm việc,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""",,Ca làm việc,"Hệ thống hiển thị thông báo chặn: ""Tài khoản chưa được xếp lịch làm việc"" và không cho phép thao tác tạo đơn","Vẫn bán hàng được
+TK: 0321000000",Fail,,,Ca
+,Kiểm tra chặn bán hàng khi chưa thực hiện nghiệp vụ mở ca,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng"" mà không thực hiện mở ca",,Ca làm việc,Hệ thống hiển thị cảnh báo yêu cầu mở ca và tự động điều hướng người dùng về trang khai báo mở ca,"Vẫn bán hàng được
+TK: 0800000000",Fail,,,Ca
+,Kiểm tra nghiệp vụ Mở ca và Khai báo Tiền đầu ca khi không nhập tiền lẻ đầu ca,,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click ""Mở ca"" -> ""Mở ca""",,Ca làm việc,"Hệ thống hiển thị thông báo: ""Vui lòng nhập tiền mặt thực tế tại két""",,,,,Ca
+,Kiểm tra nghiệp vụ Mở ca và Khai báo Tiền đầu ca khi nhập tiền lẻ đầu ca,,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click ""Mở ca"" -> Nhập tiền lẻ đầu ca -> Click ""Mở ca""",,Ca làm việc,"Hệ thống hiển thị thông báo ""Đã mở ca"", người dùng có thể thực hiện thao tác bán hàng cũng như các thao tác liên quan",,,,,Ca
+,Kiểm tra cập nhật giờ đến,,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click ""Chấm công đến"" ",,,Hệ thống tự động cập nhật giờ đến theo giờ đã chấm công,,,,,Ca
+,Kiểm tra chặn mở ca mới khi đang có ca chưa chốt,,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click ""Mở ca"" khi trước đó có ca chưa chốt",,Ca làm việc,Hệ thống không hiển thị button Mở ca khi có ca chưa kết thúc,,,,,Ca
+,Kiểm tra báo cáo Tổng đơn hàng trong ca,Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Bán 1 đơn hàng
+3. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+4. Kiểm tra báo cáo Tổng đơn hàng",,Ca làm việc,Báo cáo tổng đơn hàng tăng thêm 1,,,,,Ca
+,Kiểm tra báo cáo Tổng doanh thu trong ca,Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Bán 1 đơn hàng
+3. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+4. Kiểm tra báo cáo Tổng doanh thu",,Ca làm việc,"Báo cáo Tổng doanh thu tăng lên bằng đúng giá trị đơn hàng vừa bán
+Tổng doanh thu = Số tiền thực nhận + Tiền khách nợ",Tổng doanh thu đang là Số tiền thực nhận,Fail,,,Ca
+,Kiểm tra báo cáo Tiền khách nợ trong ca,Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Bán 1 đơn hàng thanh toán sau hoặc thanh toán 1 phần
+3. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+4. Kiểm tra báo cáo Tiền khách nợ",,Ca làm việc,Báo cáo Tiền khách nợ tăng lên bằng đúng số tiền khách nợ,Đơn nháp đang tính vào tiền khách nợ,Fail,,,Ca
+,Kiểm tra báo cáo Tiền hoàn trả trong ca,Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Hoàn trả 1 đơn hàng
+3. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+4. Kiểm tra báo cáo Tiền hoàn trả",,Ca làm việc,"Báo cáo Tiền hoàn trả tăng lên đúng bằng số tiền hoàn trả
+Tổng doanh thu bị trừ đi bằng đúng số tiền hoàn trả",,,,,Ca
+,Kiểm tra chặn kết ca khi chưa đến giờ hết ca quy định,Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click chọn ""Chốt ca"" khi chưa đến giờ hết ca",,Ca làm việc,Hệ thống hiển thị cảnh báo và không cho chốt ca,Vẫn chốt ca được,Fail,,,Ca
+,Kiểm tra nghiệp vụ chốt ca khi không nhập số tiền lẻ cuối ca,Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click chọn ""Chốt ca"" -> ""Chốt ca""",,Ca làm việc,"Hệ thống hiển thị thông báo ""Vui lòng nhập tiền mặt thực tế tại két""",,,,,Ca
+,Kiểm tra nghiệp vụ chốt ca khi nhập số tiền lẻ cuối ca,Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click chọn ""Chốt ca"" -> Nhập số tiền lẻ cuối ca -> Click ""Chốt ca""",,Ca làm việc,Hệ thống hiển thị màn in chốt ca,,,,,Ca
+,"Kiểm tra nghiệp vụ ""Chốt ca mù""",Ca bán hàng đã mở,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click chọn ""Chốt ca"" ",,Ca làm việc,"Hệ thống hiển thị ô cho NVBH tự đếm và gõ số tiền mặt thực tế vào két, tuyệt đối không hiển thị số tiền lý thuyết của hệ thống",,,,,Ca
+,Kiểm tra cập nhật giờ về,,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click chọn ""Chấm công về"" ",,Ca làm việc,Hệ thống tự động cập nhật về đến theo giờ đã chấm công,,,,,Ca
+,Kiểm tra nghiệp vụ in chốt ca,Ca bán hàng đã chốt,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click chọn ""In chốt ca"" ",,Ca làm việc,"Biên bản chênh lệch hiển thị chính xác số tiền thực tế, số lý thuyết và mức chênh lệch (âm hoặc dương)",Chênh lệch hiển thị sai,Fail,,,Ca
+,Kiểm tra xem báo cáo của các ca khác nhau trong ngày,Có ít nhất 2 ca bán hàng trong ngày ,"1. User truy cập vào hệ thống
+2. Click chọn ""Lịch cá nhân"" -> ""Ca làm việc""
+3. Click chọn ""Xem báo cáo"" ở các ca cần xem ",,Ca làm việc,"Hệ thống hiển thị chính xác thông tin báo cáo của ca được chọn, không nhầm lẫn dữ liệu báo cáo với các ca khác",,Pass,,,Ca
+,Kiểm tra đồng bộ báo cáo ca khi chuyển đổi tài khoản/nhân viên,,"1. Đăng nhập bằng tài khoản của nhân viên thuộc ca khác
+2. Kiểm tra khối dữ liệu Báo cáo ca",,Ca làm việc,"Hệ thống chỉ hiển thị thông số báo cáo thuộc ca của tài khoản đang đăng nhập, không xem được dữ liệu ca của người khác
+Role cửa hàng trưởng chỉ được xem báo cáo ca của  cửa hàng mình quản lý",,Pending,,,Ca
+,Kiểm tra chế độ Offline Mode khi cửa hàng mất kết nối mạng,Nhân viên đang trong ca bán hàng,"1. Ngắt kết nối mạng
+2. Thao tác bán hàng tại màn hình POS",,Ca làm việc,"Hệ thống tự động chuyển sang chế độ Offline, chỉ cho phép thanh toán bằng phương thức ""Tiền mặt"" và lưu trữ tạm đơn hàng tại máy local",,,,,Ca
+,Kiểm tra tự động đồng bộ dữ liệu sau khi có mạng trở lại,Nhân viên đang bán hàng ở chế độ Offline ,"1. Thao tác bán hàng ở chế độ Offline
+2. Kết nối mạng trở lại",,Ca làm việc,"Toàn bộ dữ liệu đơn hàng bán offline tự động được đẩy lên server; các thông số doanh thu, số lượng đơn trong ca được cập nhật cộng dồn chính xác",Không đồng bộ được đơn hàng,Fail,,,Ca
+,Kiểm tra chức năng quản lý quầy thu ngân,,,,,,,,,,
+,Kiểm tra chức năng thêm mới quầy thu ngân,,,,,,,,,,
+,Kiểm tra thêm mới quầy thu ngân khi bỏ trống tất cả các trường,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Để trống tất cả các trường
+5. Click ""Đồng ý""",,,"Hệ thống không thêm mới quầy thu ngân, hiển thị thông báo lỗi đỏ tương ứng phía dưới các trường",,,,,Thu ngân
+,Kiểm tra thêm mới quầy thu ngân khi nhập toàn space vào các trường,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Nhập toàn space vào tất cả các trường
+5. Click ""Đồng ý""",,,"Hệ thống không thêm mới quầy thu ngân, hiển thị thông báo lỗi không được bỏ trống các trường",,,,,Thu ngân
+,"Kiểm tra thêm mới quầy thu ngân khi chỉ bỏ trống trường ""Tên quầy""",,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Bỏ trống trường ""Tên quầy"", nhập dữ liệu hợp lệ vào trường ""Mã quầy""
+5. Click ""Đồng ý""",,,"Hệ thống không thêm mới quầy thu ngân, hiển thị thông báo lỗi đỏ ""Vui lòng nhập tên quầy"" phía dưới trường ""Tên quầy""",,,,,Thu ngân
+,"Kiểm tra thêm mới quầy thu ngân khi chỉ bỏ trống trường ""Mã quầy""",,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Bỏ trống trường ""Mã quầy"", nhập dữ liệu hợp lệ vào trường ""Tên quầy""
+5. Click ""Đồng ý""",,,"Hệ thống không thêm mới quầy thu ngân, hiển thị thông báo lỗi đỏ ""Vui lòng nhập mã quầy"" phía dưới trường ""Mã quầy""",,,,,Thu ngân
+,Kiểm tra thêm mới quầy thu ngân khi nhập trùng tên quầy đã tồn tại,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Nhập trùng tên quầy đã tồn tại, nhập mã quầy hợp lệ
+5. Click ""Đồng ý""",,,"Hệ thống không thêm mới quầy thu ngân, hiển thị thông báo lỗi ""Tên quầy thu ngân đã tồn tại""",,,,,Thu ngân
+,Kiểm tra thêm mới quầy thu ngân khi nhập trùng mã quầy đã tồn tại,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Nhập trùng mã quầy đã tồn tại, nhập tên quầy hợp lệ
+5. Click ""Đồng ý""",,,"Hệ thống không thêm mới quầy thu ngân, hiển thị thông báo lỗi ""Mã quầy thu ngân đã tồn tại""",,,,,Thu ngân
+,Kiểm tra thêm quầy thu ngân thành công,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Nhập tên quầy và mã quầy hợp lệ
+5. Click ""Đồng ý""",,,"Hệ thống hiển thị thông báo ""Tạo quầy thu ngân thành công"" và hiển thị quầy thu ngân mới thêm vào danh sách",,,,,Thu ngân
+,Kiểm tra hủy thao tác thêm quầy thu ngân,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Thêm quầy""
+4. Nhập dữ liệu hoặc để trống các trường
+5. Click ""Hủy"" hoặc X để hủy thao tác thêm quầy thu ngân",,,Hệ thống đóng pop up thêm quầy thu ngân và không thêm mới quầy thu ngân,,,,,Thu ngân
+,Kiểm tra tìm kiếm quầy thu ngân,,,,,,,,,,
+,Kiểm tra tìm kiếm khi nhập toàn space,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Nhập toàn space vào ô tìm kiếm
+4. Enter",,,Hệ thống tự động bỏ space và hiển thị toàn bộ danh sách quầy thu ngân ,,,,,Thu ngân
+,Kiểm tra tìm kiếm khi nhập chính xác tên quầy thu ngân,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Nhập chính xác tên quầy thu ngân cần tìm kiếm
+4. Enter",,,Hệ thống hiển thị chính xác thông tin quầy thu ngân cần tìm kiếm,,,,,Thu ngân
+,Kiểm tra tìm kiếm khi nhập chính xác 1 phần tên quầy thu ngân,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Nhập chính xác 1 phần tên quầy thu ngân cần tìm kiếm
+4. Enter",,,Hệ thống hiển thị chính xác thông tin các quầy thu ngân có 1 phần tên giống dữ liệu tìm kiếm,,,,,Thu ngân
+,Kiểm tra tìm kiếm khi nhập tên quầy thu ngân không tồn tại,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Nhập tên quầy thu ngân không tồn tại vào ô tìm kiếm
+4. Enter",,,Hệ thống hiển thị danh sách quầy thu ngân rỗng,,,,,Thu ngân
+,Kiểm tra tìm kiếm khi nhập chính xác mã quầy thu ngân,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Nhập chính xác mã quầy thu ngân cần tìm kiếm
+4. Enter",,,Hệ thống hiển thị chính xác thông tin quầy thu ngân cần tìm kiếm,,,,,Thu ngân
+,Kiểm tra tìm kiếm khi nhập chính xác 1 phần mã quầy thu ngân,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Nhập chính xác 1 phần mã quầy thu ngân cần tìm kiếm
+4. Enter",,,Hệ thống hiển thị chính xác thông tin các quầy thu ngân có 1 phần mã quầy giống dữ liệu tìm kiếm,,,,,Thu ngân
+,Kiểm tra tìm kiếm khi nhập mã quầy thu ngân không tồn tại,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Nhập mã quầy thu ngân không tồn tại vào ô tìm kiếm
+4. Enter",,,Hệ thống hiển thị danh sách quầy thu ngân rỗng,,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân,,,,,,,,,,
+,Kiểm tra hiển thị dữ liệu khi chọn sửa quầy thu ngân,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Kiểm tra thông tin",,,Hệ thống hiển thị đầy đủ và chính xác thông tin của quầy thu ngân vừa chọn,,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân khi xóa hết cả 2 trường,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Xóa hết dữ liệu ở cả 2 trường thông tin
+5. Click ""Đồng ý""",,,"Hệ thống không cập nhật thông tin quầy thu ngân, hiển thị thông báo lỗi đỏ tương ứng phía dưới các trường",,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân khi chỉnh sửa tên quầy trùng với tên quầy đã tồn tại,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Sửa tên quầy đã tồn tại trên hệ thống
+5. Click ""Đồng ý""",,,"Hệ thống không cập nhật thông tin quầy thu ngân, hiển thị thông báo lỗi ""Tên quầy thu ngân đã tồn tại""",,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân khi chỉnh sửa mã quầy trùng với mã quầy đã tồn tại,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Sửa mã quầy đã tồn tại trên hệ thống
+5. Click ""Đồng ý""",,,"Hệ thống không cập nhật thông tin quầy thu ngân, hiển thị thông báo lỗi ""Mã quầy thu ngân đã tồn tại""",,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân khi không sửa đổi gì,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Không sửa đổi thông tin gì
+5. Click ""Đồng ý""",,,"Hệ thống đóng pop up cập nhật quầy thu ngân, hiển thị thông báo ""Cập nhật quầy thu ngân thành công và giữ nguyên thông tin quầy",,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân thành công khi chỉ sửa tên quầy,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Sửa tên quầy thu ngân hợp lệ 
+5. Click ""Đồng ý""",,,"Hệ thống đóng pop up cập nhật quầy thu ngân, hiển thị thông báo ""Cập nhật quầy thu ngân thành công và cập nhật thông tin quầy vào danh sách",,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân thành công khi chỉ sửa mã quầy,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Sửa mã quầy thu ngân hợp lệ 
+5. Click ""Đồng ý""",,,"Hệ thống đóng pop up cập nhật quầy thu ngân, hiển thị thông báo ""Cập nhật quầy thu ngân thành công và cập nhật thông tin quầy vào danh sách",,,,,Thu ngân
+,Kiểm tra sửa quầy thu ngân thành công khi sửa cả tên quầy và mã quầy,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Sửa tên quầy và mã quầy thu ngân hợp lệ 
+5. Click ""Đồng ý""",,,"Hệ thống đóng pop up cập nhật quầy thu ngân, hiển thị thông báo ""Cập nhật quầy thu ngân thành công và cập nhật thông tin quầy vào danh sách",,,,,Thu ngân
+,Kiểm tra hủy thao tác sửa quầy thu ngân,,"1. User đăng nhập vào hệ thống với role cửa hàng trưởng
+2. Click ""Tài chính"" -> ""Quầy thu ngân""
+3. Click ""Sửa"" ở quầy thu ngân cần sửa thông tin
+4. Chỉnh sửa thông tin quầy hoặc không
+5. Click ""Hủy"" hoặc X",,,Hệ thống đóng pop up cập nhật quầy thu ngân và giữ nguyên thông tin quầy,,,,,Thu ngân
+,,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra đơn bán lẻ,,,,,,,,,,
+,Kiểm tra khi vào màn bán hàng,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""",,Bán hàng,"Hệ thống mở trang bán hàng, mặc định có sẵn 1 tab bán hàng gồm các thành phần:
+- Thanh tìm kiếm sản phẩm
+- Dropdown lọc sản phẩm theo danh mục
+- Icon ẩn/hiện sản phẩm bán chạy
+- Danh sách sản phẩm
+- Dropdown chọn khách hàng, icon thêm mới khách hàng
+- Label chiết khấu, ghi chú đơn hàng
+- Button Lưu nháp, Thanh toán, Thanh toán sau",,,,,Tạo đơn
+,Kiểm tra khi thêm mới tab đơn hàng,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Click chọn dấu ""+"" để thêm tab bán hàng mới",,Bán hàng,"Tab bán hàng mới xuất hiện, màn hình focus vào đơn hàng mới",,,,,Tạo đơn
+,Kiểm tra khi đóng tab đơn hàng khi có duy nhất 1 tab,Có duy nhất 1 tab bán hàng,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Click X để đóng tab bán hàng hiện có",,Bán hàng,"- Nếu tab bán hàng đó hiện đang không có sản phẩm: giao diện không có gì thay đổi
+- Nếu tab bán hàng đó hiện đang có sản phẩm: Hiển thị pop up xác nhận đóng tab -> Click ""Đóng tab"" để đóng tab hiện có",,,,,Tạo đơn
+,Kiểm tra khi đóng 1 tab đơn hàng khi có >1 tab,Có >1 tab bán hàng,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Click X để đóng 1 tab bán hàng ",,Bán hàng,"- Nếu tab bán hàng cần đóng hiện đang không có sản phẩm: giao diện không có gì thay đổi
+- Nếu tab bán hàng cần đóng hiện đang có sản phẩm: Hiển thị pop up xác nhận đóng tab -> Click ""Đóng tab"" để đóng tab",,,,,Tạo đơn
+,Kiểm tra khi nhập dữ liệu sản phẩm khác nhau trên các tab,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Tạo ít nhất 2 tab và nhập thông tin đơn hàng",,Bán hàng,"Dữ liệu giỏ hàng ở các tab hiển thị độc lập, không bị ghi đè hoặc hiển thị sang tab khác",,,,,Tạo đơn
+,Kiểm tra khi chọn khách hàng khác nhau cho từng tab,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Tạo ít nhất 2 tab và nhập thông tin khách hàng",,Bán hàng,"Thông tin khách hàng được lưu chính xác theo từng tab đơn hàng tương ứng, đồng thời tên khách hàng được hiển thị trên tên đơn hàng của từng tab.",,,,,Tạo đơn
+,Kiểm tra khi thực hiện thanh toán một tab bất kỳ,Có ít nhất 1 tab có dữ liệu bán hàng,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thanh toán 1 tab bất kỳ",,Bán hàng,"Tab vừa thanh toán sẽ reset toàn bộ dữ liệu, sẵn sàng cho việc tạo đơn hàng mới",,,,,Tạo đơn
+,Kiểm tra khi đóng tab đang có dữ liệu,Có ít nhất 1 tab có dữ liệu bán hàng,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Click X để đóng 1 tab đang có dữ liệu",,Bán hàng,"Hệ thống hiển thị pop up cảnh báo ""Đơn hàng đang có sản phẩm, dữ liệu sẽ không được lưu lại. Bạn có chắc chắn muốn đóng?""
+Người dùng có thể click ""Đóng tab"" để đóng tab hiện tại hoặc click ""Hủy"" để hủy bỏ thao tác",,,,,Tạo đơn
+,Kiểm tra khi chuyển đổi qua lại giữa các tab,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Click vào các tab để chuyển đổi qua lại giữa các tab đó",,Bán hàng,"Toàn bộ dữ liệu bán hàng phải được giữ nguyên, không bị load lại, không nhầm lẫn dữ liệu giữa các tab",,,,,Tạo đơn
+,Kiểm tra chọn khách hàng đã có trong danh sách khách hàng,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Click chọn 1 khách hàng đã có trong danh sách khách hàng",,Bán hàng,"Hệ thống ghi nhận khách hàng được chọn và hiển thị đầy đủ thông tin (tên, SĐT, tiền phát sinh, tiền còn nợ, điểm hiện tại, hạng thành viên) trên đơn hàng
+Hệ thống tự động rà soát và áp dụng các chính sách ưu đãi/khuyến mãi riêng cho phân hạng khách hàng đó (nếu có)",,,,,Tạo đơn
+,Kiểm tra tìm kiếm khách hàng đã có trong danh sách,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Click ô tìm kiếm khách hàng, nhập tên hoặc SĐT của khách hàng đã có trong danh sách để tìm kiếm",,Bán hàng,Hệ thống hiển thị danh sách gợi ý (dropdown) chính xác các khách hàng có thông tin trùng khớp với từ khóa tìm kiếm (SĐT hoặc Tên),,,,,Tạo đơn
+,Kiểm tra tìm kiếm khách hàng chưa có trong danh sách,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Click ô tìm kiếm khách hàng, nhập tên hoặc SĐT khách hàng chưa có trong danh sách để tìm kiếm",,Bán hàng,"Hệ thống hiển thị thông báo ""Chưa có thông tin khách hàng, vui lòng thêm mới""",,,,,Tạo đơn
+,Kiểm tra thêm khách hàng mới ,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Click vào button + bên cạnh ô tìm kiếm khách hàng để thêm mới khách
+4. Nhập thông tin khách hàng -> Click ""Hoàn thành""",,Bán hàng,"Hệ thống thông báo ""Thêm khách hàng thành công""
+Thông tin khách hàng mới vừa tạo được tự động điền và chọn luôn vào đơn hàng đang thao tác mà không làm tải lại (reload) trang hay mất dữ liệu giỏ hàng",,,,,Tạo đơn
+,Kiểm tra thêm sản phẩm vào giỏ hàng bằng cách quét mã vạch sản phẩm chưa tồn tại trên hệ thống,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Quét mã vạch sản phẩm chưa tồn tại trên hệ thống",,,"Hệ thống hiển thị thông báo ""Không tìm thấy thông tin sản phẩm",Không hiển thị thông báo gì,Fail,,,Tạo đơn
+,Kiểm tra thêm sản phẩm vào giỏ hàng bằng cách quét mã vạch lần đầu,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Quét mã vạch sản phẩm để thêm vào giỏ hàng",,Bán hàng,"Sản phẩm được thêm thành công thành 1 dòng mới trong giỏ hàng với đầy đủ thông tin (STT, tên, ĐVT, giá, thành tiền) và số lượng mặc định bằng 1",,,,,Tạo đơn
+,Kiểm tra số lượng sản phẩm trong giỏ hàng khi quét mã vạch nhiều lần,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Quét mã vạch của sản phẩm liên tiếp nhiều lần",,Bán hàng,"Hệ thống không tạo dòng mới mà tự động tăng số lượng của sản phẩm đó trong giỏ hàng lên 1 đơn vị sau mỗi lần quét
+Thành tiền của dòng sản phẩm và Tổng tiền đơn hàng tự động tính toán lại ngay lập tức",,,,,Tạo đơn
+,Kiểm tra khi quét mã vạch quá số lượng tồn kho,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.Quét mã vạch của sản phẩm vượt quá số lượng tồn kho",,Bán hàng,"Hệ thống vẫn tăng số lượng sản phẩm thêm 1 và hiển thị cảnh báo ""Chú ý: Số lượng đang vượt quá số lượng tồn kho""",,,,,Tạo đơn
+,Kiểm tra tìm kiếm sản phẩm tồn tại trong danh sách,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập tên, SKU hoặc quét barcode sản phẩm đã tồn tại trên hệ thống",,Bán hàng,"Hệ thống lọc và hiển thị chính xác các sản phẩm có Tên, barcode hoặc SKU trùng khớp/gần đúng với từ khóa được nhập vào ô tìm kiếm",,,,,Tạo đơn
+,Kiểm tra tìm kiếm sản phẩm không tồn tại trong danh sách,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập tên, SKU hoặc quét barcode sản phẩm không tồn tại trên hệ thống",,Bán hàng,"Hệ thống không hiển thị sản phẩm nào và đưa ra thông báo rõ ràng: ""Không tìm thấy kết quả nào phù hợp"".",,,,,Tạo đơn
+,Kiểm tra khi thêm sản phẩm vào giỏ hàng thủ công bằng cách click chọn sản phẩm 1 lần trong danh sách sản phẩm hoặc danh sách tìm kiếm,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Click 1 lần vào sản phẩm trong danh sách sản phẩm hoặc danh sách tìm kiếm",,Bán hàng,"Sản phẩm được click sẽ hiển thị ngay vào bảng giỏ hàng với số lượng mặc định bằng 1
+Tổng tiền đơn hàng tự động cập nhật tăng tương ứng với giá bán của sản phẩm",,,,,Tạo đơn
+,Kiểm tra khi thêm sản phẩm vào giỏ hàng thủ công bằng cách click chọn sản phẩm nhiều lần trong danh sách sản phẩm hoặc danh sách tìm kiếm,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Click liên tiếp nhiều lần vào cùng một sản phẩm trong danh sách sản phẩm hoặc danh sách tìm kiếm",,Bán hàng,"Hệ thống tự động cộng dồn số lượng tại dòng sản phẩm đó tương ứng với số lần click chọn, tổng tiền đơn hàng tự động được cập nhật
+Không xảy ra hiện tượng nhân đôi dòng sản phẩm trùng lặp trong cùng một tab đơn hàng",,,,,Tạo đơn
+,Kiểm tra khi thêm sản phẩm vào giỏ hàng thủ công bằng cách click chọn sản phẩm trong danh sách sản phẩm hoặc danh sách tìm kiếm quá số lượng tồn kho,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Tìm kiếm hoặc chọn một sản phẩm (Ví dụ: sản phẩm có số lượng tồn kho hiển thị là 2)
+4. Click chọn sản phẩm đó liên tiếp nhiều lần vượt quá số lượng tồn kho (Ví dụ: click chọn 3 lần)",,Bán hàng,"Hệ thống vẫn tăng số lượng sản phẩm thêm 1 và hiển thị cảnh báo ""Chú ý: Số lượng đang vượt quá số lượng tồn kho""",,,,,Tạo đơn
+,Kiểm tra khi thêm sản phẩm vào giỏ hàng bằng cách kết hợp phương thức quét mã vạch và chọn thủ công,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Click chọn 1 sản phẩm từ danh sách sản phẩm hoặc danh sách tìm kiếm để thêm vào giỏ hàng (Số lượng mặc định = 1)
+4. Đặt con trỏ chuột vào ô quét mã vạch, tiến hành quét mã vạch (Barcode) của chính sản phẩm đó thêm 1 lần nữa
+5. Đảo ngược thứ tự: Tiến hành quét mã vạch của một sản phẩm khác, sau đó click chọn thủ công sản phẩm đó từ danh sách hiển thị",,Bán hàng,"Giỏ hàng tự động đồng bộ dữ liệu: số lượng sản phẩm tự động cộng dồn chính xác vào cùng một dòng bất kể thứ tự thao tác (quét trước - chọn thủ công sau hoặc ngược lại).
+Thành tiền và tổng hóa đơn cập nhật liên tục",,,,,Tạo đơn
+,Kiểm tra tạo và thanh toán đơn mới khi đang treo đơn cũ,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm khách hàng/sản phẩm vào Tab đơn hàng hiện tại (Đơn 1) để tạo một đơn hàng dở dang
+4. Click chọn biểu tượng dấu ""+"" trên thanh tab đơn hàng để mở một Tab đơn hàng mới (Đơn 2)
+5. Thêm sản phẩm, chọn khách hàng và click chọn ""Thanh toán"" -> ""Xác nhận thanh toán"" tại Tab đơn 2",,Bán hàng,Hệ thống cho phép thao tác bán hàng và thanh toán thành công ở Tab mới mà không làm ảnh hưởng hay thay đổi dữ liệu của Tab đang treo,,,,,Tạo đơn
+,Kiểm tra khi quay lại xử lý đơn hàng đang treo,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm khách hàng/sản phẩm vào Tab đơn hàng hiện tại (Đơn 1)
+4. Click chọn biểu tượng dấu ""+"" trên thanh tab để mở Tab mới (Đơn 2) và thao tác bán hàng cho khách hàng tiếp theo
+5. Click quay trở lại Tab đơn hàng ban đầu (Đơn 1) để tiếp tục xử lý",,Bán hàng,"Hệ thống hiển thị lại chính xác trạng thái dở dang và đầy đủ thông tin đã nhập trước đó (Sản phẩm, số lượng, chiết khấu, thông tin khách) khi GDV click quay lại tab cũ",,,,,Tạo đơn
+,Kiểm tra khi tải lại trang (F5) khi đang có các tab treo,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Mở nhiều Tab đơn hàng đồng thời và nhập dữ liệu sản phẩm, thông tin khách hàng dở dang trên các tab đó
+4. Nhấn phím F5 (hoặc click biểu tượng Refresh của trình duyệt) để tải lại trang màn hình bán hàng",,Bán hàng,Hệ thống tự động khôi phục lại đầy đủ số lượng tab và dữ liệu của tất cả các đơn hàng đang treo từ bộ nhớ đệm,,,,,Tạo đơn
+,Kiểm tra mở đồng thời nhiều tab treo cho cùng một khách hàng,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Tại Tab 1: Chọn sản phẩm A (Sản phẩm chỉ còn tồn kho = 1) vào giỏ hàng nhưng chưa thanh toán (đang treo đơn)
+4. Click chọn biểu tượng dấu ""+"" trên thanh tab để mở Tab mới (Đơn 2)
+5. Tại Tab 2: Tìm kiếm sản phẩm A và kiểm tra số lượng tồn kho hiển thị, hoặc thao tác quét mã/click thêm sản phẩm A vào giỏ hàng",,Bán hàng,Hệ thống tự động khôi phục lại đầy đủ số lượng tab và dữ liệu của tất cả các đơn hàng đang treo từ bộ nhớ đệm,,,,,Tạo đơn
+,Kiểm tra cập nhật đơn nháp,,,,,,,,,,
+,Kiểm tra bán lại đơn,,,,,,,,,,
+,Kiểm tra hủy đơn,,,,,,,,,,
+,"Kiểm tra khuyến mại, chiết khấu",,,,,,,,,,
+,CTKM Theo đơn hàng,,,,,,,,,,
+,Kiểm tra mua sản phẩm áp dụng CT Giảm theo % ,"Đăng nhập hệ thống role CHT, GDV
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM có thông tin tương tự như dưới đây:
+- SP 1: ĐH 1 giá 100k
+- SP 2: ĐH 2 giá 25k
+- SP 3: Bánh mỳ giá 20k
+- Combo 1: Combo B giá 120k
+- CTKM 1:
++ Tên: Giảm 10% giá trị đơn
++ Phân loại: Theo đơn hàng 
++ Điều kiện: Giảm 10%
++ Không tích checkbox ""Tính trên giá trị đơn hàng sau khuyến mại khác”
+- CTKM 2:
++ Tên: Giảm 50k giá trị đơn
++ Phân loại: Theo đơn hàng 
++ Điều kiện: Giảm 50k
++ Không tích checkbox ""Tính trên giá trị đơn hàng sau khuyến mại khác”
+- CTKM 3:
++ Tên: Giảm 5% sau CT khác
++ Phân loại: Theo đơn hàng 
++ Điều kiện: Giảm 5%
++ Có tích checkbox ""Tính trên giá trị đơn hàng sau khuyến mại khác”
+- CTKM 4:
++ Tên: Giảm 1% tặng SP
++ Phân loại: Theo đơn hàng 
++ Điều kiện: Giảm 1%
++ Không tích checkbox ""Tính trên giá trị đơn hàng sau khuyến mại khác”
++ Tặng: 1 SP A còn tồn kho
+- CTKM 3:
++ Tên: Giảm 1k tặng SP hết hàng
++ Phân loại: Theo đơn hàng 
++ Điều kiện: Giảm 1k
++ Không tích checkbox ""Tính trên giá trị đơn hàng sau khuyến mại khác”
++ Tặng 1 SP B hết hàng","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng CTKM ""Giảm 10% giá trị đơn""
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 450,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 450,000 đ
+2. Thanh toán thành công",Pass,1,,CTKM
+,Kiểm tra mua combo áp dụng CT Giảm theo % ,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm combo Combo B giá 120k, số lượng 2 => Tổng tiền đơn = 240k
+4. Áp dụng CTKM ""Giảm 10% giá trị đơn""
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 240,000 đ
+- Chiết khấu khuyến mãi: 24,000 đ
+- Cần thanh toán: 216,000 đ
+2. Thanh toán thành công",,Pass,2,,
+,Kiểm tra mua sản phẩm áp dụng CT Giảm theo tiền cố định,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng CTKM ""Giảm 50k giá trị đơn""
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 450,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 450,000 đ
+2. Thanh toán thành công",Pass,2,,CTKM
+,Kiểm tra mua combo áp dụng CT Giảm theo tiền cố định,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3.  Thêm combo Combo B giá 120k, số lượng 2 => Tổng tiền đơn = 240k
+4. Áp dụng CTKM ""Giảm 50k giá trị đơn""
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 240,000 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 190,000 đ
+2. Thanh toán thành công",,Pass,2,,
+,Kiểm tra Áp dụng CT Giảm theo tiền cố định đúng bằng giá trị đơn,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 2 giá 25k, số lượng 2 => Tổng tiền đơn = 50k
+4. Áp dụng CTKM ""Giảm 50k giá trị đơn""
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 50,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 0 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 450,000 đ
+2. Thanh toán thành công",Pass,2,,CTKM
+,Kiểm tra Áp dụng CT Giảm theo tiền cố định lớn hơn giá trị đơn,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm Bánh mỳ giá 20k, số lượng 2 => Tổng tiền đơn = 40k
+4. Áp dụng CTKM ""Giảm 50k giá trị đơn""
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 40,000 đ
+- Chiết khấu khuyến mãi: 40,000 đ
+- Cần thanh toán: 0 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 450,000 đ
+2. Thanh toán thành công",Pass,2,,CTKM
+,,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng CTKM ""Giảm 5% sau CT khác""
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 25,000 đ (=500K*5%)
+- Cần thanh toán: 475,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 50,000 đ
+- Cần thanh toán: 450,000 đ
+2. Thanh toán thành công",Pass,2,,CTKM
+,Kiểm tra Áp dụng CT giảm giá kèm quà tặng,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 1 => Tổng tiền đơn = 100k
+4. Áp dụng CTKM ""Giảm 1% tặng SP""
+5. Nhấn thanh toán",,,"1. Hiển thị phần Quà tặng đơn hàng dưới cùng của bill. Trong đó có SP A, số lượng 1, ko có giá, kèm tag ""Quà tặng"", phía trên có tên CT ""Giảm 1% tặng SP""
+2. Hệ thống tính toán
+- Tổng tiền: 100,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 1,000 đ (=100K*1%)
+- Cần thanh toán: 99,000 đ
+3. Thanh toán thành công",App + web,Fail,,,CTKM
+,Kiểm tra Áp dụng CT giảm giá kèm quà tặng hết hàng,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 1 => Tổng tiền đơn = 100k
+4. Áp dụng CTKM ""Giảm 1k tặng SP hết hàng""
+5. Nhấn thanh toán",,,"1. Hiển thị phần Quà tặng đơn hàng dưới cùng của bill. Trong đó có SP B, số lượng 1, ko có giá, kèm tag ""Quà tặng"", phía trên có tên CT ""Giảm 1k tặng SP hết hàng""
+2. Sau khi nhấn thanh toán hiển thị message ""Số lượng trong kho không đủ"" kèm popup ""Số lượng trong kho không đủ"" và liệt kê danh sách gồm tên snar phẩm, số lượng tồn, số lượng vượt
+3. Không lưu đơn hàng",đang mặc định ko nằm trong bảng giá,,,,CTKM
+,CTKM Theo sản phẩm,,,,,,,,,,
+,Giảm giá bán,,,,,,,,,,
+,Kiểm tra tự động áp dụng CTKM Giảm giá bán sản phẩm theo số tiền cố định	,"Đăng nhập hệ thống role CHT, GDV
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM có thông tin tương tự như dưới đây:
+- SP 1: PROMOTE_1 giá 100k
+- SP 2: ĐH 2 giá 25k
+- SP 3: Bánh mỳ giá 20k
+- CTKM 1:
++ Tên: PRO_1 mua sản A được giảm giá cho chính nó theo tiền
++ Phân loại: Theo sản phẩm
++ Điều kiện:
+Mua từ: 2
+Sản phẩm:  PROMOTE_1
+Được giảm giá cho mỗi sản phẩm đó
++ Không tích checkbox ""Tính trên giá trị đơn hàng sau khuyến mại khác""","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm sản phẩm PROMOTE_1 vào đơn, tăng số lượng lên thành 2.
+4. Kiểm tra việc tự động áp dụng CTKM PRO_1 trên dòng sản phẩm.
+5. Nhấn thanh toán.",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_1:
+- Đơn giá hiển thị cho sản phẩm PROMOTE_1 là: 98,000 đ (đã giảm 2,000 đ so với gốc 100,000 đ).
+- Tổng tiền hàng hiển thị: 196,000 đ (98,000 đ x 2).
+- Chiết khấu khuyến mãi hiển thị: 4,000 đ (2,000 đ x 2).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công và tạo đơn hàng thành công.",,Pass,,,
+,Kiểm tra tự động áp dụng CTKM Giảm giá bán sản phẩm theo %        ,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_1 giá 100,000 đ.
+- CTKM 2 (PRO_1 mua sản A được giảm giá cho chính nó theo %):
++ Phân loại: Theo sản phẩm
++ Điều kiện: Mua từ 3 sản phẩm PROMOTE_1
++ Quyền lợi: Giảm giá 10% cho mỗi sản phẩm đó.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm sản phẩm PROMOTE_1 vào đơn, tăng số lượng lên thành 3
+4. Kiểm tra việc tự động áp dụng CTKM PRO_1 trên dòng sản phẩm.
+5. Nhấn thanh toán",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_1:
+- Đơn giá hiển thị cho sản phẩm PROMOTE_1 là: 90,000 đ (đã giảm 10% so với gốc 100,000 đ).
+- Tổng tiền hàng hiển thị: 270,000 đ (90,000 đ x 3).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công và tạo đơn hàng thành công.",,Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Giảm giá bán combo theo số tiền cố định,"Đăng nhập hệ thống role CHT, GDV
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM có thông tin tương tự như dưới đây:
+- CB 1: Combo B giá 110k
+- CB 2: Comnob D giá 129,6k
+- CTKM:
++ Tên: CB Giảm giá combo B + D
++ Phân loại: Theo sản phẩm
++ Điều kiện 1:
+Mua từ: 3
+Combo sản phẩm: Combo B
+Được giảm giá 10k cho mỗi sản phẩm đó
++ Điều kiện 2:
+Mua từ: 3
+Combo sản phẩm: Combo D
+Được giảm giá 5% cho mỗi sản phẩm đó","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm sản phẩm Combo B vào đơn, tăng số lượng lên thành 3.
+4. Kiểm tra việc tự động áp dụng CTKM trên dòng sản phẩm.
+5. Nhấn thanh toán",,,"1. Hệ thống tự động tính toán áp dụng CTKM:
+- Hiển thị 2 đơn giá sản phẩm Combo B là: 100k (Sau CK) và 110k (trước CK)
+- Tổng tiền hàng hiển thị: 300,000 đ (100,000 đ x 3).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công và tạo đơn hàng thành công.",Vẫn đang giữ nguyên giá gốc,Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Giảm giá bán combo theo %,,"1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm sản phẩm Combo D vào đơn, tăng số lượng lên thành 3.
+4. Kiểm tra việc tự động áp dụng CTKM trên dòng sản phẩm.
+5. Nhấn thanh toán",,,"1. Hệ thống tự động tính toán áp dụng CTKM:
+- Hiển thị 2 đơn giá sản phẩm Combo D là: k (Sau CK) và 129,6k (trước CK)
+- Tổng tiền hàng hiển thị:  đ ( đ x 3).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công và tạo đơn hàng thành công.",Vẫn đang giữ nguyên giá gốc,,,,CTKM
+,Kiểm tra tự động áp dụng mức điều kiện số lượng lớn hơn trong cùng 1 sản phẩm của 1 CTKM,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_7 giá 165,000 đ.
+- CTKM 2 (PRO_7 Thêm dòng điều kiện bậc thang):
++ Phân loại: Theo sản phẩm
++ Điều kiện 1: Mua từ 5 sản phẩm PROMOTE_7
++ Quyền lợi 1: Giảm giá 10k cho mỗi sản phẩm đó
++ Điều kiện 2: Mua từ 10 sản phẩm PROMOTE_7
++ Quyền lợi 2: Giảm giá 25k cho mỗi sản phẩm đó","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm sản phẩm PROMOTE_7 vào đơn, tăng số lượng lên thành 5.
+4. Kiểm tra việc tự động áp dụng CTKM PRO_7 trên dòng sản phẩm.
+5. Tăng số lượng lên thành 10
+6. Kiểm tra việc tự động áp dụng mức điều kiện cao hơn của CTKM PRO_7 trên dòng sản phẩm.
+5. Nhấn thanh toán",Cao,,"1. Khi số lượng từ 5 - 9, hệ thống tự động tính toán áp dụng mức điều kiện ""Mua từ 5 sản phẩm PROMOTE_7"" của CTKM PRO_7:
+- Đơn giá hiển thị cho sản phẩm PROMOTE_1 là: 155,000 đ (đã giảm 10k so với gốc 165,000 đ).
+- Tổng tiền hàng hiển thị: 775,000 đ (155,000 đ x 5).
+2. Khi số lượng từ 10 trở lên, hệ thống tự động tính toán áp dụng mức điều kiện ""Mua từ 10 sản phẩm PROMOTE_7"" của CTKM PRO_7:
+- Đơn giá hiển thị cho sản phẩm PROMOTE_1 là: 140,000 đ (đã giảm 25k so với gốc 165,000 đ).
+- Tổng tiền hàng hiển thị: 1,400,000 đ (140,000 đ x 10).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công và tạo đơn hàng thành công.","Tăng số lượng lên thành 10, hệ thống vẫn đang áp dụng mức điều kiện hiện tại
+Tính sai giá bán sau giảm do VAT.",Fail,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Tặng kèm sản phẩm khác (Mua A tặng A)        ,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_1 giá 100,000 đ.
+- CTKM 3 (PRO_3 mua sản A được tặng sản phẩm B):
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 2 sản phẩm PROMOTE_1
++ Quyền lợi: Tặng 1 sản phẩm PROMOTE_1.        ","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm sản phẩm PROMOTE_1 vào đơn, tăng số lượng lên thành 2.
+4. Kiểm tra hiển thị quà tặng kèm theo dòng sản phẩm.
+5. Nhấn thanh toán.        ",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_3:
+- Đơn giá hiển thị của 2 sản phẩm PROMOTE_1 đã mua: 100,000 đ.
+- Hiển thị thêm 1 dòng quà tặng sản phẩm PROMOTE_1 có đơn giá: 0 đ.
+- Tổng tiền hàng hiển thị: 200,000 đ (2 x 100k + 1 x 0k).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công.","Lỗi với sản phẩm PROMOTE_1
+",Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Tặng kèm sản phẩm trong danh mục khác theo số lượng,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và danh mục:
+- SP 1: PROMOTE_1 giá 100,000 đ.
+- Danh mục dM_B_1 có chứa sản phẩm làm quà tặng.
+- CTKM 4 (PRO_3 mua sản A được tặng sản phẩm trong danh mục B X theo số lượng):
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 5 sản phẩm PROMOTE_1
++ Quyền lợi: Tặng 1 sản phẩm trong danh mục dM_B_1.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm sản phẩm PROMOTE_1 vào đơn, tăng số lượng lên thành 5.
+4. Thực hiện chọn hoặc để hệ thống tự động chọn 1 sản phẩm từ danh mục dM_B_1 làm quà tặng.
+5. Nhấn thanh toán.",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_3:
+- Nhận diện đủ số lượng 5 sản phẩm PROMOTE_1.
+- Cho phép chọn 1 sản phẩm từ danh mục dM_B_1 làm quà tặng với giá 0 đ.
+- Tổng tiền đơn hiển thị: 500,000 đ + 0 đ (quà tặng).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Mua sản phẩm A được giảm giá cho sản phẩm B,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_1 giá 100,000 đ.
+- SP 2: PROMOTE_6.
+- CTKM 5 (PRO_4 mua sản A được giảm giá cho sản phẩm B):
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 4 sản phẩm PROMOTE_1
++ Quyền lợi: Giảm giá 60,000 đ cho sản phẩm PROMOTE_6.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"" ở đầu trang.
+3. Tìm kiếm và thêm 4 sản phẩm PROMOTE_1 và 1 sản phẩm PROMOTE_6 vào đơn.
+4. Kiểm tra việc giảm giá hiển thị trên dòng sản phẩm PROMOTE_6.
+5. Nhấn thanh toán.",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_4:
+- Sản phẩm PROMOTE_6 được giảm trừ 60,000 đ trên giá bán trực tiếp.
+- Tổng tiền đơn hiển thị = (4 x 100,000 đ) + (Giá gốc PROMOTE_6 - 60,000 đ).
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công","
+app: Tiền trước Vat, sai tổng",Fail,Mạnh LĐ,,CTKM
+,Kiểm tra tự động áp dụng CTKM Giảm giá sản phẩm trong danh mục khác theo số lần đạt điều kiện        ,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_1 giá 100,000 đ.
+- Danh mục ""nước giải khát"" chứa sản phẩm được giảm giá.
+- CTKM 6 (PRO_5 mua sản A được giảm giá sản phẩm trong danh mục khác X theo số lượng):
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 9 sản phẩm PROMOTE_1
++ Quyền lợi: Giảm giá 10,000 đ cho sản phẩm trong danh mục nước giải khát theo số lần đạt điều kiện.        ","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 9 sản phẩm PROMOTE_1 và 1 sản phẩm thuộc danh mục ""nước giải khát"" vào đơn.
+4. Kiểm tra giảm giá trên sản phẩm nước giải khát.
+5. Nhấn thanh toán.        ",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_5:
+- Sản phẩm thuộc danh mục ""nước giải khát"" được giảm 10,000 đ (áp dụng 1 lần vì số lượng mua đạt 1 lần ngưỡng 9).
+- Tổng tiền hàng giảm trừ tương ứng.
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công.","Nội dung tooltip hiển thị sai.
+Chọn 2 sản phẩm khác nhau của cùng 1 CT Mua sản phẩm A được mua sản phẩm trong danh mục giá thấp, 1 sản phẩm hiển thị giá, 1 sản phẩm ko hiển thị giá
+app chưa có",Fail,Mạnh LĐ,,CTKM
+,Kiểm tra tự động áp dụng CTKM Tặng kèm sản phẩm danh mục khác (PROMOTE_4)        ,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_4.
+- Danh mục dM_A_1 chứa sản phẩm làm quà tặng.
+- CTKM 7 (PRO_3 mua sản A được tặng sản phẩm trong danh mục B):
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 2 sản phẩm PROMOTE_4
++ Quyền lợi: Tặng 1 sản phẩm trong danh mục dM_A_1.        ","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 2 sản phẩm PROMOTE_4 vào đơn hàng.
+4. Lựa chọn 1 sản phẩm từ danh mục quà tặng dM_A_1 hiển thị trên đơn.
+5. Nhấn thanh toán.        ",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_3:
+- Cho phép chọn 1 quà tặng từ danh mục dM_A_1 với giá 0 đ.
+- Tổng tiền hàng hiển thị = 2 x Giá bán PROMOTE_4.
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công.","Giảm số lượng dưới mức điều kiện, các SP KM được thêm vào ko mất đi",Fail,Mạnh LĐ,,CTKM
+,Kiểm tra tự động áp dụng CTKM Tặng kèm sản phẩm chỉ định theo số lượng (PROMOTE_3),"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_3.
+- Sản phẩm quà tặng: ""Vở Hồng Hà 80 trang"".
+- CTKM 8 (PRO_3 mua sản A được tặng sản phẩm B X theo số lượng):
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 2 sản phẩm PROMOTE_3
++ Quyền lợi: Tặng 1 cái Vở Hồng Hà 80 trang.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 2 sản phẩm PROMOTE_3 vào đơn hàng.
+4. Kiểm tra việc tự động thêm quà tặng ""Vở Hồng Hà 80 trang"" vào dòng sản phẩm.
+5. Nhấn thanh toán.",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_3:
+- Tự động thêm sản phẩm ""Vở Hồng Hà 80 trang"" có số lượng 1, đơn giá 0 đ vào đơn.
+- Tổng tiền hàng hiển thị = 2 x Giá bán PROMOTE_3.
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Giảm giá sản phẩm thuộc danh mục khác (PROMOTE_3)        ,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_3.
+- Danh mục ""nước giải khát"" chứa sản phẩm được giảm giá.
+- CTKM 9 (PRO_5 mua sản A được giảm giá sản phẩm trong danh mục khác):
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 5 sản phẩm PROMOTE_3
++ Quyền lợi: Giảm giá 30,000 đ cho 1 sản phẩm thuộc danh mục nước giải khát.        ","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 5 sản phẩm PROMOTE_3 và 1 sản phẩm thuộc danh mục ""nước giải khát"" vào đơn.
+4. Kiểm tra áp dụng giảm giá trên sản phẩm nước giải khát.
+5. Nhấn thanh toán.        ",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_5:
+- Sản phẩm nước giải khát được giảm trực tiếp 30,000 đ trên dòng sản phẩm.
+- Tổng tiền hàng hiển thị giảm trừ tương ứng.
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Giảm giá cho sản phẩm khác chỉ định theo số lượng (PROMOTE_6)        ,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- SP 1: PROMOTE_6.
+- Sản phẩm giảm giá: ""Vở Hồng Hà 80 trang"".
+- CTKM 10 (PRO_4 mua sản A được giảm giá cho sản phẩm khác X theo số lượng):
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 7 sản phẩm PROMOTE_6
++ Quyền lợi: Giảm giá 80,000 đ cho sản phẩm Vở Hồng Hà 80 trang.        ","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 7 sản phẩm PROMOTE_6 và 1 sản phẩm ""Vở Hồng Hà 80 trang"" vào đơn.
+4. Kiểm tra áp dụng giảm giá trên dòng sản phẩm ""Vở Hồng Hà 80 trang"".
+5. Nhấn thanh toán.        ",Cao,,"1. Hệ thống tự động tính toán áp dụng CTKM PRO_4:
+- Sản phẩm ""Vở Hồng Hà 80 trang"" được giảm trừ trực tiếp 80,000 đ.
+- Tổng tiền đơn hiển thị giảm trừ tương ứng.
+2. Sau khi nhấn thanh toán, hệ thống hiển thị thông báo thanh toán thành công.",App: Chưa nhân theo số lần đạt điều kiện,Fail,,,CTKM
+,CTKM Theo danh mục,,,,,,,,,,
+,Kiểm tra tự động áp dụng CTKM Giảm giá bán sản phẩm theo số tiền cho mỗi sản phẩm trong danh mục dM_A_1        ,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm và CTKM:
+- Sản phẩm thuộc danh mục dM_A_1.
+- CTKM ""CAT-01 mua sản phẩm trong danh mục được giảm giá cho mỗi sản phẩm"":
++ Phân loại: Giảm giá bán
++ Điều kiện: Mua từ 2 sản phẩm trong danh mục dM_A_1
++ Quyền lợi: Giảm giá 2,000 đ cho mỗi sản phẩm.        ","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 2 sản phẩm bất kỳ thuộc danh mục dM_A_1 vào đơn.
+4. Kiểm tra việc hiển thị giá bán và thông tin CTKM trên dòng sản phẩm.
+5. Nhấn thanh toán.        ",,,"1. Hệ thống tự động tính toán áp dụng CTKM:
+- Mỗi sản phẩm thuộc dM_A_1 được giảm trực tiếp 2,000 đ trên đơn giá.
+- Tổng chiết khấu khuyến mãi: 4,000 đ (2,000 đ x 2).
+2. Thanh toán đơn hàng thành công.",,Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Giảm giá theo % (hoặc theo cấu hình trên UI) cho mỗi sản phẩm trong danh mục dM_A_1,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn:
+- Sản phẩm thuộc danh mục dM_A_1.
+- CTKM ""CAT-02 danh mục giảm giá % cho mỗi sản phẩm"":
++ Phân loại: Giảm giá bán
++ Điều kiện: Mua từ 3 sản phẩm trong danh mục dM_A_1
++ Quyền lợi: Giảm giá 10 đ (hoặc 10%) cho mỗi sản phẩm.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 3 sản phẩm thuộc danh mục dM_A_1 vào đơn.
+4. Kiểm tra hiển thị giá bán và chiết khấu trên dòng sản phẩm.
+5. Nhấn thanh toán.",,,"1. Hệ thống tự động tính toán áp dụng CTKM:
+- Đơn giá mỗi sản phẩm được giảm trừ đúng 10 đ (hoặc 10% tùy theo cấu hình thực tế).
+- Tổng tiền hàng hiển thị chính xác sau khi giảm.
+2. Thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra tự động áp dụng CTKM Mua sản phẩm danh mục A giảm giá sản phẩm trong danh mục B,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn:
+- Các sản phẩm thuộc danh mục dM_A_1 và danh mục dM_B_1.
+- CTKM ""CAT-06 mua sản phẩm trong danh mục A giảm giá sản phẩm trong danh mục B"":
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 5 sản phẩm trong danh mục dM_A_1
++ Quyền lợi: Giảm giá 2,000 đ cho 1 sản phẩm trong danh mục dM_B_1.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 5 sản phẩm thuộc danh mục dM_A_1 vào đơn.
+4. Thêm 1 sản phẩm thuộc danh mục dM_B_1 vào đơn.
+5. Kiểm tra việc giảm giá hiển thị trên dòng sản phẩm thuộc dM_B_1.
+6. Nhấn thanh toán.",,,"1. Hệ thống tự động áp dụng CTKM:
+- Sản phẩm thuộc danh mục dM_B_1 được giảm trực tiếp 2,000 đ.
+- Tổng tiền hàng hiển thị chính xác sau giảm.
+2. Thanh toán thành công.","Bổ sung: Giảm sản phẩm được khuyến mại mua kèm về 0, cần mất row sản phẩm đó",Fail,Mạnh LĐ,,CTKM
+,Kiểm tra tự động áp dụng CTKM Mua sản phẩm danh mục A giảm giá sản phẩm trong danh mục B theo số lượng,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo đã chuẩn bị sẵn các sản phẩm thuộc dM_A_1 và dM_B_1.
+- CTKM ""CAT_7 x theo số lượng"":
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 6 sản phẩm trong danh mục dM_A_1
++ Quyền lợi: Giảm giá 4,000 đ cho 1 sản phẩm trong danh mục dM_B_1.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 6 sản phẩm thuộc danh mục dM_A_1 vào đơn.
+4. Thêm 1 sản phẩm thuộc danh mục dM_B_1.
+5. Kiểm tra giảm giá trên dòng sản phẩm dM_B_1.
+6. Nhấn thanh toán.",,,"1. Hệ thống áp dụng CTKM:
+- Giảm 4,000 đ cho sản phẩm thuộc danh mục dM_B_1.
+- Tổng tiền hàng hiển thị chính xác sau giảm.
+2. Thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra áp dụng CTKM danh mục A giảm giá sản phẩm danh mục B nhân theo số lần đạt điều kiện,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo chuẩn bị sản phẩm thuộc dM_A_1 và dM_B_1.
+- CTKM ""CAT-06 mua sản phẩm trong danh mục A giảm giá sản phẩm trong danh mục B được X theo số lượng"":
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 6 sản phẩm trong danh mục dM_A_1
++ Quyền lợi: Giảm giá 40,000 đ cho sản phẩm trong danh mục dM_B_1 theo số lần đạt điều kiện","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 12 sản phẩm thuộc danh mục dM_A_1 (đạt 2 lần điều kiện).
+4. Thêm 2 sản phẩm thuộc danh mục dM_B_1.
+5. Kiểm tra việc giảm giá được nhân theo số lần đạt điều kiện (áp dụng giảm giá 2 lần).
+6. Nhấn thanh toán.",,,"1. Hệ thống tự động áp dụng CTKM:
+- Giảm giá 40,000 đ cho mỗi sản phẩm thuộc danh mục dM_B_1 (tổng giảm 80,000 đ cho cả 2 sản phẩm).
+- Tổng tiền hàng hiển thị chính xác sau khi giảm.
+2. Thanh toán thành công.        ","khi tăng số lần đạt điều kiện, sản phẩm được mua kèm chưa tự động tăng số lượng",Fail,Mạnh LĐ,,CTKM
+,Kiểm tra áp dụng CTKM Mua sản phẩm danh mục A được tặng sản phẩm danh mục B,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo chuẩn bị sản phẩm thuộc dM_A_1 và dM_B_1.
+- CTKM ""CAT_1 mua sản phẩm trong danh mục A được tặng sản phẩm trong danh mục B"":
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 10 sản phẩm trong danh mục dM_A_1
++ Quyền lợi: Tặng 3 sản phẩm trong danh mục dM_B_1.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 10 sản phẩm thuộc danh mục dM_A_1 vào đơn.
+4. Lựa chọn 3 sản phẩm từ danh mục quà tặng dM_B_1.
+5. Nhấn thanh toán.",,,"1. Hệ thống tự động áp dụng CTKM:
+- Cho phép chọn 3 sản phẩm trong danh mục dM_B_1 làm quà tặng với giá 0 đ.
+- Tổng tiền đơn hàng chỉ tính giá trị của các sản phẩm thuộc danh mục dM_A_1.
+2. Thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra áp dụng CTKM Mua sản phẩm danh mục A tặng sản phẩm chỉ định,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo chuẩn bị sản phẩm thuộc dM_A_1 và sản phẩm quà tặng ""Vở Hồng Hà 80 trang"".
+- CTKM ""CAT_2 mua sản phẩm trong danh mục A được tặng sản phẩm B"":
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 7 sản phẩm trong danh mục dM_A_1
++ Quyền lợi: Tặng 2 cái Vở Hồng Hà 80 trang.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 7 sản phẩm thuộc danh mục dM_A_1 vào đơn.
+4. Kiểm tra việc tự động thêm 2 sản phẩm ""Vở Hồng Hà 80 trang"" vào đơn hàng.
+5. Nhấn thanh toán.",,,"1. Hệ thống tự động áp dụng CTKM:
+- Tự động thêm 2 sản phẩm ""Vở Hồng Hà 80 trang"" có giá 0 đ.
+- Tổng tiền hàng chỉ tính giá trị của 7 sản phẩm thuộc dM_A_1.
+2. Thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra áp dụng CTKM Giảm giá cho mỗi combo cùng danh mục,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo chuẩn bị sản phẩm thuộc dM_COMBO_A.
+- CTKM ""CAT-04 danh mục combo giảm giá cho mỗi combo cùng danh mục"":
++ Phân loại: Giảm giá bán
++ Điều kiện: Mua từ 2 sản phẩm trong danh mục dM_COMBO_A
++ Quyền lợi: Giảm giá 4,000 đ cho mỗi sản phẩm.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 2 sản phẩm thuộc danh mục dM_COMBO_A vào đơn.
+4. Kiểm tra giảm giá hiển thị trên từng dòng sản phẩm.
+5. Nhấn thanh toán.",,,"1. Hệ thống tự động tính toán áp dụng CTKM:
+- Mỗi sản phẩm thuộc dM_COMBO_A được giảm giá 4,000 đ trực tiếp trên đơn giá.
+- Tổng chiết khấu khuyến mãi: 8,000 đ (4,000 đ x 2).
+2. Thanh toán thành công.",,Pass,,,CTKM
+,Kiểm tra áp dụng CTKM Mua danh mục combo A được giảm giá danh mục combo B,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo chuẩn bị sản phẩm thuộc dM_COMBO_A và dM_COMBO_B.
+- CTKM ""CAT-08 Danh mục combo A được giảm giảm giá danh mục comboB"":
++ Phân loại: Được mua sản phẩm khác giá thấp
++ Điều kiện: Mua từ 4 sản phẩm trong danh mục dM_COMBO_A
++ Quyền lợi: Giảm giá 20,000 đ cho 1 sản phẩm trong danh mục dM_COMBO_B.","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 4 sản phẩm thuộc danh mục dM_COMBO_A và 1 sản phẩm thuộc dM_COMBO_B vào đơn.
+4. Kiểm tra giảm giá hiển thị trên sản phẩm thuộc dM_COMBO_B.
+5. Nhấn thanh toán.",,,"1. Hệ thống tự động áp dụng CTKM:
+- Sản phẩm thuộc danh mục dM_COMBO_B được giảm trừ 20,000 đ trên giá bán.
+- Tổng tiền hàng hiển thị chính xác sau khi giảm trừ.
+2. Thanh toán thành công.",,,,,CTKM
+,Kiểm tra áp dụng CTKM Mua danh mục A tặng quà danh mục B nhân theo số lượng,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo chuẩn bị sản phẩm thuộc dM_KHAC và dM_A_1.
+- CTKM ""CAT_1 mua sản phẩm trong danh mục A được tặng sản phẩm trong danh mục B x theo số lượng"":
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 2 sản phẩm trong danh mục dM_KHAC
++ Quyền lợi: Tặng 1 sản phẩm trong danh mục dM_A_1 (nhân theo số lần đạt điều kiện).","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 4 sản phẩm thuộc danh mục dM_KHAC (đạt 2 lần điều kiện).
+4. Lựa chọn 2 sản phẩm quà tặng từ danh mục dM_A_1.
+5. Nhấn thanh toán.",,,"1. Hệ thống tự động áp dụng CTKM:
+- Cho phép chọn 2 sản phẩm từ danh mục dM_A_1 làm quà tặng với giá 0 đ.
+- Tổng tiền đơn hàng chỉ tính giá trị của 4 sản phẩm thuộc dM_KHAC.
+2. Thanh toán thành công.",,,,,CTKM
+,Kiểm tra áp dụng CTKM Mua danh mục A tặng quà chỉ định nhân theo số lượng,"Đăng nhập hệ thống role CHT, GDV.
+Đảm bảo chuẩn bị sản phẩm thuộc dM_KHAC và sản phẩm quà tặng ""Bim bim"".
+- CTKM ""CAT_2 mua sản phẩm trong danh mục A được tặng sản phẩm B X theo số lượng"":
++ Phân loại: Tặng kèm sản phẩm khác
++ Điều kiện: Mua từ 4 sản phẩm trong danh mục dM_KHAC
++ Quyền lợi: Tặng 1 gói Bim bim (nhân theo số lần đạt điều kiện).","1. User truy cập vào hệ thống.
+2. Click chọn ""Bán hàng"".
+3. Thêm 8 sản phẩm thuộc danh mục dM_KHAC (đạt 2 lần điều kiện) vào đơn.
+4. Kiểm tra việc tự động thêm 2 gói Bim bim vào đơn hàng.
+5. Nhấn thanh toán.",,,"1. Hệ thống tự động áp dụng CTKM:
+- Tự động thêm 2 sản phẩm ""Bim bim"" có giá 0 đ.
+- Tổng tiền hàng chỉ tính giá trị của 8 sản phẩm thuộc dM_KHAC.
+2. Thanh toán thành công.",,,,,CTKM
+,CTKM kết hợp,,,,,,,,,,
+,Kiểm tra Áp dụng cùng lúc nhiều CTKM giảm %,"Áp dụng đồng thời 2 CTKM giảm theo %
+- CT 1: Giảm 10% giá trị đơn
+- CT 2: 3% toàn đơn","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng 2 CTKM Giảm 10% giá trị đơn và 3% toàn đơn
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=500*(10%+3%))
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=500*(10%+3%))
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công",Pass,,,CTKM
+,Kiểm tra Áp dụng cùng lúc nhiều CTKM giảm theo số tiền cố định,"Áp dụng đồng thời 2 CTKM giảm theo %
+- CT 1: Giảm 50k giá trị đơn
+- CT 2: Giảm 15k giá trị đơn","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng 2 CTKM Giảm 50k giá trị đơn và Giảm 15k giá trị đơn
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=50k+15K)
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=50k+15K)
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công",Pass,,,CTKM
+,Kiểm tra Áp dụng cùng lúc nhiều CTKM giảm theo số tiền cố định và theo %,"Áp dụng đồng thời 2 CTKM giảm theo %
+- CT 1: Giảm 10% giá trị đơn
+- CT 2: 3% toàn đơn
+- CT 3: Giảm 50k giá trị đơn
+- CT 4: Giảm 15k giá trị đơn","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng 4 CTKM Giảm 10% giá trị đơn, 3% toàn đơn, Giảm 50k giá trị đơn, Giảm 15k giá trị đơn
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 130,000 đ (=500K*(10%+3%) + 50k +15k)
+- Cần thanh toán: 370,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=50k+15K)
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công",Pass,,,CTKM
+,Kiểm tra Áp dụng cùng lúc CT giảm toàn đơn và CT giảm sau CT khác,"Áp dụng đồng thời 2 CTKM giảm theo %
+- CT 1: Giảm 10% giá trị đơn
+- CT 2: 3% toàn đơn
+- CT 3: Giảm 50k giá trị đơn
+- CT 4: Giảm 15k giá trị đơn
+- CT 5: Giảm 5% sau CT khác
+- CT 6: Giảm 2% sau CT khác","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng 6 CTKM
+- CT 1: Giảm 10% giá trị đơn
+- CT 2: 3% toàn đơn
+- CT 3: Giảm 50k giá trị đơn
+- CT 4: Giảm 15k giá trị đơn
+- CT 5: Giảm 5% sau CT khác
+- CT 6: Giảm 2% sau CT khác
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán.
+Tiền CK của các CTKM khuyến mại giảm toàn đơn = 500*(10%+3%) + 50k + 15k = 130k
+-> Giá trị còn lại của đơn = 370k
+Tiếp tục tính toán tiền CK của các CTKM khuyến mại giảm sau CT khác = 370k*(5%+2%)=25,9k
+=> Thông tin đơn hiển thị như sau:
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 155,900 đ
+- Cần thanh toán: 344,100 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=50k+15K)
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công",Pass,,,CTKM
+,Kiểm tra Áp dụng cùng lúc nhiều CT giảm sau CT khác,"Chỉ áp dụng duy nhất 1 CTKM giảm sau CT khác
+- CT 1: Giảm 5% sau CT khác
+- CT 2: Giảm 2% sau CT khác","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng 2 CTKM
+- CT 1: Giảm 5% sau CT khác
+- CT 2: Giảm 2% sau CT khác
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 35,000 đ (=500K*(5%+2%))
+- Cần thanh toán: 465,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=50k+15K)
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công",Pass,,,CTKM
+,Kiểm tra áp dụng song song KM Sản phẩm và KM Đơn hàng độc lập        ,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm: PROMOTE_1 giá 100,000 đ.
+Chuẩn bị 2 CTKM:
+1. KM Sản phẩm (PRO_1 mua sản A được giảm giá cho chính nó theo tiền): Mua từ 2 PROMOTE_1 giảm 10,000 đ/sản phẩm.
+2. KM Đơn hàng (Giảm giá toàn đơn): Đơn hàng >= 150,000 đ giảm 5% toàn đơn.        ","1. User vào màn hình Bán hàng.
+2. Thêm 2 sản phẩm PROMOTE_1 vào đơn (Tổng tiền gốc 200,000 đ).
+3. Kiểm tra việc hiển thị tiền giảm giá sản phẩm và tiền chiết khấu đơn hàng.
+4. Nhấn thanh toán.        ",,,"1. Hệ thống áp dụng song song cả 2 KM:
+- Giảm giá sản phẩm hiển thị: 20,000 đ (đơn giá dòng SP hiển thị 90,000 đ/sản phẩm).
+- Tổng tiền hàng sau khi giảm giá sản phẩm là 180,000 đ.
+- Áp dụng tiếp KM Đơn hàng 5% trên giá trị 180,000 đ còn lại: Chiết khấu đơn hàng hiển thị 9,000 đ (5% của 180k).
+- Khách cần trả hiển thị: 171,000 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,Kiểm tra KM Sản phẩm làm giảm tổng tiền đơn hàng xuống dưới ngưỡng tối thiểu của KM Đơn hàng,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm: PROMOTE_1 giá 100,000 đ.
+Chuẩn bị 2 CTKM:
+1. KM Sản phẩm (PRO_1): Mua từ 2 PROMOTE_1 giảm 30,000 đ/sản phẩm.
+2. KM Đơn hàng: Đơn hàng >= 150,000 đ giảm 10% đơn hàng","Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm: PROMOTE_1 giá 100,000 đ.
+Chuẩn bị 2 CTKM:
+1. KM Sản phẩm (PRO_1): Mua từ 2 PROMOTE_1 giảm 30,000 đ/sản phẩm.
+2. KM Đơn hàng: Đơn hàng >= 150,000 đ giảm 10% đơn hàng",,,"1. Hệ thống tính toán tuần tự:
+- Giảm giá sản phẩm: 60,000 đ (30k x 2). Tổng tiền hàng còn lại là 140,000 đ.
+- Vì 140,000 đ < ngưỡng tối thiểu 150,000 đ của KM Đơn hàng, hệ thống KHÔNG áp dụng chiết khấu đơn hàng 10%.
+- Khách cần trả hiển thị: 140,000 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,Kiểm tra áp dụng song song KM Danh mục và KM Đơn hàng độc lập        ,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm thuộc danh mục dM_A_1 (ví dụ giá bán 60,000 đ/sản phẩm).
+Chuẩn bị 2 CTKM:
+1. KM Danh mục (CAT-01): Mua từ 2 sản phẩm thuộc dM_A_1 giảm 5,000 đ/sản phẩm.
+2. KM Đơn hàng: Đơn hàng >= 100,000 đ giảm 10,000 đ toàn đơn.        ","1. User vào màn hình Bán hàng.
+2. Thêm 2 sản phẩm thuộc danh mục dM_A_1 vào đơn (Tổng gốc 120,000 đ).
+3. Kiểm tra áp dụng KM danh mục và KM đơn hàng.
+4. Nhấn thanh toán.",,,"1. Hệ thống áp dụng cả 2 KM:
+- Giảm giá danh mục: 10,000 đ (5k x 2). Giá trị hàng sau giảm: 110,000 đ.
+- Vì 110,000 đ >= 100,000 đ, hệ thống áp dụng chiết khấu đơn hàng: 10,000 đ.
+- Khách cần trả hiển thị: 100,000 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,Kiểm tra KM Danh mục làm giảm tổng tiền đơn hàng xuống dưới ngưỡng tối thiểu của KM Đơn hàng,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm thuộc danh mục dM_A_1 (ví dụ giá bán 60,000 đ/sản phẩm).
+Chuẩn bị 2 CTKM:
+1. KM Danh mục (CAT-01): Mua từ 2 sản phẩm thuộc dM_A_1 giảm 15,000 đ/sản phẩm.
+2. KM Đơn hàng: Đơn hàng >= 100,000 đ giảm 10,000 đ toàn đơn.","1. User vào màn hình Bán hàng.
+2. Thêm 2 sản phẩm thuộc danh mục dM_A_1 vào đơn (Tổng gốc 120,000 đ).
+3. Kiểm tra việc không áp dụng KM đơn hàng sau khi giảm danh mục.
+4. Nhấn thanh toán.",,,"1. Hệ thống tính toán:
+- Giảm giá danh mục: 30,000 đ (15k x 2). Giá trị hàng còn lại: 90,000 đ.
+- Vì 90,000 đ < 100,000 đ, hệ thống không áp dụng chiết khấu đơn hàng 10k.
+- Khách cần trả hiển thị: 90,000 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,"Kiểm tra áp dụng đồng thời cả 3 loại: KM Sản phẩm, KM Danh mục và KM Đơn hàng trên cùng một đơn","Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm A (PROMOTE_1 giá 100,000 đ) và sản phẩm B (thuộc danh mục dM_A_1 giá 80,000 đ).
+Chuẩn bị 3 CTKM:
+1. KM Sản phẩm: Mua từ 2 sản phẩm A giảm 10,000 đ/sản phẩm.
+2. KM Danh mục: Mua từ 2 sản phẩm thuộc dM_A_1 giảm 5,000 đ/sản phẩm.
+3. KM Đơn hàng: Đơn >= 300,000 đ giảm 10% đơn.","1. User vào màn hình Bán hàng.
+2. Thêm 2 sản phẩm A và 2 sản phẩm B vào đơn (Tổng tiền gốc 360,000 đ).
+3. Kiểm tra tính toán chiết khấu sản phẩm, danh mục và đơn hàng hiển thị.
+4. Nhấn thanh toán.",,,"1. Hệ thống tính toán tuần tự theo độ ưu tiên từ dòng sản phẩm đến đơn hàng:
+- Áp dụng KM Sản phẩm A: giảm 20,000 đ.
+- Áp dụng KM Danh mục B: giảm 10,000 đ.
+- Tổng tiền hàng sau các khuyến mại dòng sản phẩm: 330,000 đ.
+- Vì 330,000 đ >= 300,000 đ, áp dụng KM Đơn hàng 10% trên 330,000 đ: giảm tiếp 33,000 đ.
+- Khách cần trả hiển thị: 297,000 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,"Kiểm tra đồng thời nhận nhiều quà tặng từ KM Sản phẩm, KM Danh mục và KM Đơn hàng","Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm điều kiện và các cấu hình KM dạng tặng quà:
+1. KM Sản phẩm: Mua 2 SP A tặng 1 SP A.
+2. KM Danh mục: Mua 2 SP danh mục C tặng 1 quà tặng D.
+3. KM Đơn hàng: Đơn >= 200,000 đ tặng quà E.","1. User vào màn hình Bán hàng.
+2. Thêm 2 SP A (giá 100k) và 2 SP danh mục C (giá 50k) vào đơn (Tổng đơn hàng 300,000 đ).
+3. Kiểm tra hiển thị quà tặng tự động của cả 3 chương trình.
+4. Nhấn thanh toán.",,,"1. Hệ thống tự động thêm đầy đủ 3 phần quà tặng vào đơn:
+- 1 SP A làm quà tặng (đơn giá 0 đ).
+- 1 quà tặng D từ danh mục (đơn giá 0 đ).
+- 1 quà tặng E của đơn hàng (đơn giá 0 đ).
+- Tổng tiền hàng khách cần trả: 300,000 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,Kiểm tra mua sản phẩm A giảm giá sản phẩm B kết hợp mua danh mục C giảm giá danh mục D,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm A, sản phẩm B, sản phẩm thuộc danh mục C, sản phẩm thuộc danh mục D.
+Chuẩn bị 2 CTKM:
+1. Mua SP A giảm giá SP B.
+2. Mua SP thuộc danh mục C giảm giá SP thuộc danh mục D","1. User vào màn hình Bán hàng.
+2. Thêm sản phẩm A, sản phẩm B, sản phẩm danh mục C, sản phẩm danh mục D vào đơn.
+3. Kiểm tra việc áp dụng giảm giá chéo trên sản phẩm B và sản phẩm danh mục D.
+4. Nhấn thanh toán.",,,"1. Hệ thống áp dụng đúng giảm giá:
+- Sản phẩm B hiển thị đúng giá đã giảm theo CTKM 1.
+- Sản phẩm thuộc danh mục D hiển thị đúng giá đã giảm theo CTKM 2.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,Kiểm tra giới hạn áp dụng: Đơn hàng thỏa mãn đồng thời 2 CTKM Đơn hàng nhưng chỉ áp dụng CTKM tốt nhất,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị 2 CTKM Đơn hàng không cộng dồn:
+1. CTKM Đơn 1: Đơn >= 200,000 đ giảm 10,000 đ.
+2. CTKM Đơn 2: Đơn >= 200,000 đ giảm 20,000 đ.","1. User vào màn hình Bán hàng.
+2. Thêm sản phẩm vào đơn sao cho tổng giá trị là 250,000 đ.
+3. Kiểm tra xem hệ thống tự động chọn áp dụng CTKM Đơn 2 (giảm 20k) thay vì cộng dồn cả hai.
+4. Nhấn thanh toán.",,,"1. Hệ thống tự động chọn khuyến mãi có lợi nhất cho khách hàng:
+- Chiết khấu đơn hàng áp dụng là 20,000 đ (của CTKM 2).
+- Khách cần trả hiển thị: 230,000 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,Kiểm tra khách hàng thuộc nhóm VIP được hưởng KM VIP + mua sản phẩm đang có KM Sản phẩm cho mọi đối tượng,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị khách hàng thuộc Hạng Kim Cương.
+Chuẩn bị 2 CTKM:
+1. KM Sản phẩm: Mua sản phẩm A giảm 10% (áp dụng tất cả khách hàng).
+2. KM Đơn hàng: Đơn hàng Hạng Kim Cương giảm 5% toàn đơn.","1. User vào màn hình Bán hàng.
+2. Chọn khách hàng Hạng Kim Cương.
+3. Thêm sản phẩm A (giá 100,000 đ) vào đơn hàng.
+4. Kiểm tra việc áp dụng song song cả 2 KM.
+5. Nhấn thanh toán.",,,"1. Hệ thống tính toán và hiển thị:
+- Sản phẩm A được giảm 10,000 đ. Đơn giá dòng SP hiển thị 90,000 đ.
+- Chiết khấu đơn hàng hiển thị giảm thêm 4,500 đ (5% của 90k).
+- Khách cần trả hiển thị: 85,500 đ.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,Kiểm tra KM Đơn hàng có điều kiện quà tặng (mua sản phẩm X) kết hợp bản thân sản phẩm X đang tham gia KM Sản phẩm,"Đăng nhập hệ thống role CHT, GDV.
+Chuẩn bị sản phẩm X.
+Chuẩn bị 2 CTKM:
+1. KM Sản phẩm: Mua sản phẩm X được giảm giá 5,000 đ.
+2. KM Đơn hàng: Mua sản phẩm X được tặng sản phẩm Y.","1. User vào màn hình Bán hàng.
+2. Thêm sản phẩm X vào đơn hàng.
+3. Kiểm tra sản phẩm X vừa được giảm 5,000 đ vừa tự động nhận thêm quà tặng sản phẩm Y.
+4. Nhấn thanh toán.",,,"1. Hệ thống tính toán và hiển thị:
+- Dòng sản phẩm X được giảm 5,000 đ trên đơn giá.
+- Tự động thêm dòng quà tặng sản phẩm Y với đơn giá 0 đ.
+- Tổng tiền đơn hàng hiển thị chính xác sau giảm.
+2. Thanh toán đơn hàng thành công.",,,,,CTKM
+,CTKM loại trừ,,,,,,,,,,
+,Kiểm tra CTKM giảm giá theo DM sản phẩm loại trừ CTKM theo đơn hàng,"Áp dụng đồng thời 2 CTKM giảm theo %
+- CT 1: Giảm 10% giá trị đơn
+- CT 2: 3% toàn đơn","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng 2 CTKM Giảm 10% giá trị đơn và 3% toàn đơn
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=500*(10%+3%))
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=500*(10%+3%))
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công",Pass,,,
+,Kiểm tra Áp dụng cùng lúc nhiều CTKM giảm %,"Áp dụng đồng thời 2 CTKM giảm theo %
+- CT 1: Giảm 10% giá trị đơn
+- CT 2: 3% toàn đơn","1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Thêm sản phẩm ĐH 1 giá 100k, số lượng 5 => Tổng tiền đơn = 500k
+4. Áp dụng 2 CTKM Giảm 10% giá trị đơn và 3% toàn đơn
+5. Nhấn thanh toán",,,"1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=500*(10%+3%))
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công","1. Hệ thống tính toán
+- Tổng tiền: 500,000 đ
+- Chiết khấu đơn hàng: 0 đ
+- Chiết khấu khuyến mãi: 65,000 đ (=500*(10%+3%))
+- Cần thanh toán: 435,000 đ
+2. Thanh toán thành công",Pass,,,
+,Kiểm tra chức năng thanh toán,,,,,,,,,,
+,Kiểm tra thanh toán bằng phương thức Tiền mặt,Tài khoản có ca bán hàng đang mở,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Tiền mặt
+4. Nhập số tiền khách đưa
+5. Click ""Xác nhận""",,,"Hệ thống tính chính xác tiền thừa (nếu có), đóng đơn hàng và chuyển trạng thái thành ""Đã thanh toán""",,Pending,,,TT
+,Kiểm tra thanh toán bằng phương thức Quẹt thẻ,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Thẻ visa
+4. Click ""Xác nhận thanh toán""",,,"Hệ thống đóng đơn hàng và chuyển trạng thái thành ""Đã thanh toán""",,,,,TT
+,Kiểm tra thanh toán bằng phương thức Chuyển khoản,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Chuyển khoản
+4. Chọn TK nhận -> Click ""Xác nhận thanh toán""",,,"Hệ thống đóng đơn hàng và chuyển trạng thái thành ""Đã thanh toán""",,,,,TT
+,Kiểm tra thanh toán bằng mã QR động thành công,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Quét QR
+4. Chọn TK nhận -> Click ""Hoàn tất giao dịch""",,,"Hệ thống đóng đơn hàng và chuyển trạng thái thành ""Đã thanh toán""",,,,,TT
+,Kiểm tra chức năng Tra soát khi gặp lỗi mạng/Timeout giao dịch QR,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Quét QR
+4. Chọn TK nhận -> Click ""Kiểm tra giao dịch""",,,Hệ thống trả về trạng thái của giao dịch để GDV nắm được,,,,,TT
+,Kiểm tra thanh toán bằng điểm Loyalty và xác thực OTP thành công,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Chọn khách hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Thanh toán bằng điểm
+4. Click ""Xác nhận thanh toán"" -> Nhập đúng mã otp -> Click ""Xác nhận""",,,"Hệ thống đóng đơn hàng và chuyển trạng thái thành ""Đã thanh toán""",,,,,TT
+,Kiểm tra chặn thanh toán bằng điểm khi nhập sai mã OTP,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Chọn khách hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Thanh toán bằng điểm
+4. Click ""Xác nhận thanh toán"" -> Nhập sai mã otp -> Click ""Xác nhận""",,,"Hệ thống hiển thị thông báo ""Sai mã OTP, vui lòng thử lại"", đơn ở trạng thái treo",,,,,TT
+,Kiểm tra thanh toán đa phương thức,,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng -> Chọn khách hàng -> Click ""Thanh toán"" -> Chọn phương thức thanh toán Thanh toán đa phương thức
+4. Nhập số tiền thanh toán của mỗi phương thức -> Click ""Thanh toán""",,,"Hệ thống thực hiện thanh toán lần lượt các phương thức Tiền mặt, Thẻ, Thanh toán điểm, Quét QR
+Sau khi thanh toán thành công, hệ thống đóng đơn hàng và cập nhật trạng thái Đã thanh toán
+Hệ thống ghi nhận 3 dòng tiền riêng biệt trên hóa đơn",,,,,TT
+,"Kiểm tra chặn hình thức ""Thanh toán sau"" đối với Khách lẻ",,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng (Không chọn khách hàng) ->  Click ""Thanh toán sau""",,,"Hệ thống hiển thị thông báo ""Thanh toán sau hoặc một phần không thể áp dụng cho khách vãng lai""",,,,,TT
+"
+
+
+","Kiểm tra chặn ""Thanh toán 1 phần"" đối với Khách lẻ",,"1. User truy cập vào hệ thống
+2. Click chọn ""Bán hàng"" ở đầu trang hoặc chọn ""Đơn hàng"" -> ""Đơn hàng đã tạo"" -> ""Bán hàng""
+3. Nhập thông tin đơn hàng (Không chọn khách hàng) ->  Click ""Thanh toán"" -> Click ""Trả góp"" và nhập số tiền < số tiền cần thanh toán -> Click ""Xác nhận thanh toán""",,,"Hệ thống hiển thị thông báo ""Thanh toán sau hoặc một phần không thể áp dụng cho khách vãng lai""",,,,,TT
+,"Kiểm tra hình thức ""Thanh toán sau"" đối với khách đã có trên hệ thống",,,,,,,,,,
+,"Kiểm tra hình thức ""Thanh toán 1 phần"" đối với khách đã có trên hệ thống",,,,,,,,,,
+,Kiểm tra chức năng Cập nhật thanh toán trên đơn hàng còn nợ,,,,,,,,,,
+,"Kiểm tra ẩn nút ""Cập nhật thanh toán"" trên đơn hàng đã thu đủ tiền",,,,,,,,,,
+,Kiểm tra hủy giao dịch QR động khi đang chờ khách quét mã,,,,,,,,,,
+,Kiểm tra chức năng xuất hóa đơn,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra chức năng quét barcode và cân,,,,,,,,,,
+BANHANG_135,Kiểm tra kết nối cân,,1. Thực hiện kết nối cân = Alt + Shift + C,Cao,Bán hàng,Hiển thị kết nối thành công,Hiển thị kết nối thành công,Pass,,,Cân
+BANHANG_136,Kiểm tra kết nối máy barcode,,1. Cắm máy quét barcode,Cao,Bán hàng,- Máy hiển thị âm thanh kết nối thành công,- Máy hiển thị âm thanh kết nối thành công,Pass,,,Cân
+BANHANG_137,Quét barcode sản phẩm còn tồn,SP tồn kho > 0,1. Quét barcode,Cao,Bán hàng,Thêm sản phẩm vào đơn thành công,Thêm sản phẩm vào đơn thành công,Pass,,,Cân
+BANHANG_138,Quét barcode sản phẩm hết tồn,SP tồn kho = 0,1. Quét barcode,Cao,Bán hàng,Vẫn thêm sản phẩm vào đơn,Vẫn thêm sản phẩm vào đơn,Pass,,,Cân
+BANHANG_139,Quét barcode sản phẩm tồn âm,SP tồn kho = -5,1. Quét barcode,Cao,Bán hàng,Vẫn thêm sản phẩm vào đơn,Vẫn thêm sản phẩm vào đơn,Pass,,,Cân
+BANHANG_140,Quét liên tiếp cùng barcode,Có sản phẩm hợp lệ,1. Quét cùng barcode nhiều lần,Cao,Bán hàng,Tăng số lượng tương ứng,Tăng số lượng tương ứng,Pass,,,Cân
+BANHANG_141,Quét barcode không tồn tại,Barcode không có trong hệ thống,1. Quét barcode,Cao,Bán hàng,Hiển thị thông báo không tìm thấy sản phẩm,- Không hiển thị thông báo,Fail,,,Cân
+BANHANG_142,Quét barcode đã ngừng kinh doanh,SP trạng thái ngừng KD,1. Quét barcode,TB,Bán hàng,Hiển thị sản phẩm đã ngừng kinh doanh hoặc ngừng bán,Hiển thị sản phẩm đã ngừng kinh doanh hoặc ngừng bán,Pass,,,Cân
+BANHANG_143,Quét barcode có nhiều đơn vị tính,SP có nhiều đơn vị quy đổi,1. Quét barcode,TB,Bán hàng,Hiển thị đúng đơn vị mặc định,Hiển thị đúng đơn vị mặc định,Pass,,,Cân
+BANHANG_144,Quét barcode khi mất kết nối máy quét,Ngắt kết nối scanner,1. Quét barcode,Thấp,Bán hàng,- Không hiển thị sản phẩm vừa quét,- Không hiển thị sản phẩm vừa quét,Pass,,,Cân
+BANHANG_145,Cân sản phẩm theo kg,Kết nối cân điện tử,1. Đặt hàng lên cân,Cao,Bán hàng,Nhận đúng trọng lượng,Nhận đúng trọng lượng,Pass,,,Cân
+BANHANG_146,Cân sản phẩm tồn kho = 0,SP tồn = 0,1. Cân sản phẩm,Cao,Bán hàng,Vẫn cho phép bán,Vẫn cho phép bán,Pass,,,Cân
+BANHANG_147,Cân sản phẩm tồn âm,SP tồn = -5,1. Cân sản phẩm,Cao,Bán hàng,Vẫn cho phép bán,Vẫn cho phép bán,Pass,,,Cân
+BANHANG_148,Cân trọng lượng lẻ,Cân 0.125kg,1. Thực hiện cân,Cao,Bán hàng,Giá trị được tính chính xác và làm tròn là 0.13,Giá trị được tính chính xác và làm tròn là 0.13,Pass,,,Cân
+BANHANG_149,Cân nhiều lần liên tiếp,Có sản phẩm cân,1. Thực hiện cân liên tục,TB,Bán hàng,"Không bị trùng dữ liệu, cập nhật số lượng sản phẩm là lần cân cuối cùng","Không bị trùng dữ liệu, cập nhật số lượng sản phẩm là lần cân cuối cùng",Pass,,,Cân
+BANHANG_150,Mất kết nối cân điện tử,Ngắt kết nối cân,1. Thực hiện cân,Cao,Bán hàng,Hiển thị cảnh báo chưa kết nối cân,Hiển thị cảnh báo chưa kết nối cân,Pass,,,Cân
+BANHANG_151,Trọng lượng bằng 0,Cân không có hàng,1. Đọc dữ liệu cân,TB,Bán hàng,Không thay đổi số lượng sản phẩm mặc định ban đầu là 1 sản phẩm,Không thay đổi số lượng sản phẩm mặc định ban đầu là 1 sản phẩm,Pass,,,Cân
+BANHANG_152,Tính tiền sản phẩm cân ký,"Giá 200.000đ/kg, cân 0.35kg",1. Cân hàng,Cao,Bán hàng,Thành tiền = 70.000đ,Thành tiền = 70.000đ,Pass,,,Cân
+BANHANG_153,Quét barcode sau đó cân thành công,Kết nối scanner và cân,"1. Quét barcode sản phẩm cân ký 
+2. Đặt hàng lên cân",Cao,Bán hàng,Hệ thống nhận đúng sản phẩm và trọng lượng,Hệ thống nhận đúng sản phẩm và trọng lượng,Pass,,,Cân
+BANHANG_154,Quét barcode sản phẩm cân ký khi tồn kho = 0,Tồn kho = 0,"1. Quét barcode 
+2. Cân sản phẩm",Cao,Bán hàng,Vẫn cho phép thêm vào đơn và ghi nhận tồn âm,Vẫn cho phép thêm vào đơn và ghi nhận tồn âm,Pass,,,Cân
+BANHANG_155,Quét barcode sản phẩm cân ký khi tồn kho âm,Tồn kho âm,"1. Quét barcode 
+2. Cân sản phẩm",Cao,Bán hàng,Vẫn cho phép bán hàng,Vẫn cho phép bán hàng,Pass,,,Cân
+BANHANG_156,Quét barcode nhưng không đặt hàng lên cân,Có sản phẩm cân ký,"1. Quét barcode 
+2. Không đặt hàng lên cân",Cao,Bán hàng,Hiển thị số lượng mặc định là 1 ,Hiển thị số lượng mặc định là 1,Pass,,,Cân
+BANHANG_157,Đặt hàng lên cân trước rồi mới quét barcode,Có cân điện tử,"1. Đặt hàng lên cân 
+2. Quét barcode",TB,Bán hàng,Hiển thị số lượng là số hiển thị trên cân,Hiển thị số lượng là số hiển thị trên cân,Pass,,,Cân
+BANHANG_158,Quét liên tiếp nhiều sản phẩm cân ký,Có nhiều sản phẩm,1. Quét và cân nhiều sản phẩm liên tiếp,Cao,Bán hàng,Không bị nhầm trọng lượng giữa các sản phẩm,Không bị nhầm trọng lượng giữa các sản phẩm,Pass,,,Cân
+BANHANG_159,Quét barcode sai sản phẩm sau đó cân,Có nhiều mã hàng,"1. Quét SP A 
+2. Đặt SP B lên cân",Cao,Bán hàng,Hiển thị số lượng là số hiển thị trên cân,Hiển thị số lượng là số hiển thị trên cân,Pass,,,Cân
+BANHANG_160,Cân thay đổi liên tục trong lúc quét,Có kết nối cân,1. Quét barcode khi cân đang dao động,TB,Bán hàng,Chỉ lấy giá trị cân ổn định cuối cùng,Chỉ lấy giá trị cân ổn định cuối cùng,Pass,,,Cân
+BANHANG_161,Mất kết nối cân sau khi quét barcode,Ngắt kết nối cân,"1. Quét barcode 
+2. Thực hiện cân",Cao,Bán hàng,Hiển thị thông báo lỗi cân,Hiển thị thông báo lỗi cân,Pass,,,Cân
+BANHANG_162,Quét barcode và cân trọng lượng lẻ,Có sản phẩm cân ký,1. Quét và cân 0.123kg,Cao,Bán hàng,Tính đúng số lượng và thành tiền,Tính đúng số lượng và thành tiền,Pass,,,Cân
+BANHANG_163,Nhấc sản phẩm cuối cùng khỏi cân trước khi thanh toán,Có sản phẩm cân ký,"1. Quét barcode sản phẩm 
+2. Đặt lên cân (ví dụ 0.5kg) 
+3. Hệ thống ghi nhận vào giỏ hàng 
+4. Nhấc sản phẩm khỏi cân (cân về 0) 
+5. Tiến hành thanh toán",Cao,Bán hàng,"Sản phẩm trong giỏ vẫn giữ trọng lượng 0.5kg đã chốt, không bị cập nhật thành 0kg, không mất dòng hàng, thanh toán thành công","Sản phẩm trong giỏ vẫn giữ trọng lượng 0.5kg đã chốt, không bị cập nhật thành 0kg, không mất dòng hàng, thanh toán thành công",Pass,,,Cân

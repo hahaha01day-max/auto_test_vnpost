@@ -1,0 +1,1134 @@
+{
+  "_note": "Phân hệ 01 Quản lý điểm bán. 🔴 Mọi case GHI (tạo/sửa/tạm ngừng/gắn nhân viên/nhập Excel/wizard thiết lập) đều `allowMutation:false` — .env.domain trỏ DỮ LIỆU THẬT, chạy nhầm là để lại điểm bán rác và phân công rác. Case `enabled:false` là BLOCKED, xem `_blocked`.",
+  "cases": {
+    "01_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_note": "Script đã có và tự skip khi môi trường không có chain rỗng — giữ enabled, 🚫 không coi là BLOCKED."
+    },
+    "01_010_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "01_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "01_010_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "Kỳ vọng chưa chốt: FE không trim keyword, hành vi backend với chuỗi toàn khoảng trắng chưa đo. 🚫 Không hạ kỳ vọng xuống \"không báo lỗi\".",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_010_020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_021": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_022": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "Kỳ vọng chưa chốt: chưa biết backend có chuẩn hoá dấu khi tìm kiếm hay không — phải đo trước rồi mới viết assert.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_010_023": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_024": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_025": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_026": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_027": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_010_028": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "01_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "orgProvinceName": "Bưu điện Tỉnh Vĩnh Phúc",
+        "orgWardName": "Bưu điện Huyện Yên Lạc"
+      },
+      "required": [
+        "orgProvinceName",
+        "orgWardName"
+      ]
+    },
+    "01_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "orgProvinceName": "Bưu điện Tỉnh Vĩnh Phúc",
+        "orgWardName": "Bưu điện Huyện Yên Lạc"
+      },
+      "required": [
+        "orgProvinceName",
+        "orgWardName"
+      ]
+    },
+    "01_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "orgProvinceName": "Bưu điện Tỉnh Vĩnh Phúc",
+        "orgWardName": "Bưu điện Huyện Yên Lạc"
+      },
+      "required": [
+        "orgProvinceName",
+        "orgWardName"
+      ]
+    },
+    "01_020_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "orgProvinceName": "Bưu điện Tỉnh Vĩnh Phúc",
+        "orgWardName": "Bưu điện Huyện Yên Lạc"
+      },
+      "required": [
+        "orgProvinceName",
+        "orgWardName"
+      ]
+    },
+    "01_020_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_021": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_022": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_023": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      },
+      "_blocked_cu": "Kỳ vọng chưa chốt: rule chỉ `required` nên FE cho qua; chưa biết backend có chặn tên toàn khoảng trắng. Case này còn GHI dữ liệu thật.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_020_024": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      },
+      "_blocked_cu": "Kỳ vọng chưa chốt như 01_020_023, và mã điểm bán là khoá nghiệp vụ — chạy nhầm là để lại bản ghi rác.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_020_025": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "orgProvinceName": "Bưu điện Tỉnh Vĩnh Phúc",
+        "orgWardName": "Bưu điện Huyện Yên Lạc"
+      },
+      "required": [
+        "orgProvinceName",
+        "orgWardName"
+      ]
+    },
+    "01_020_026": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_027": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_028": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_029": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_030": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_031": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_032": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "shopCodeTonTai": "dbtest01"
+      },
+      "_blocked_cu": "Kỳ vọng chưa chốt: chưa biết backend so mã có phân biệt hoa/thường hay không.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_020_033": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "shopNameTonTai": "Pos mini Test 01"
+      },
+      "_blocked_cu": "Mâu thuẫn đặc tả chưa được user quyết: HDSD nói tên không được trùng, code FE không ràng buộc.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_020_034": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_035": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_036": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_020_037": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "orgProvinceName": "Bưu điện Tỉnh Vĩnh Phúc",
+        "orgWardName": "Bưu điện Huyện Yên Lạc"
+      },
+      "required": [
+        "orgProvinceName",
+        "orgWardName"
+      ]
+    },
+    "01_020_038": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test",
+        "orgProvinceName": "Bưu điện Tỉnh Vĩnh Phúc",
+        "orgWardName": "Bưu điện Huyện Yên Lạc"
+      },
+      "required": [
+        "orgProvinceName",
+        "orgWardName"
+      ]
+    },
+    "01_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_030_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCodePrefix": "DBAUTO",
+        "shopNamePrefix": "Điểm bán auto test"
+      }
+    },
+    "01_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_040_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "Bảng trạng thái × hành động chưa có đặc tả: chưa biết thao tác nào phải bị chặn trên điểm bán Ngừng hoạt động.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_040_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_050_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_060_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_060_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_060_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_060_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_070_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_080_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_080_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_080_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_080_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_080_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "01_080_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "Kỳ vọng chưa chốt: chưa biết hệ thống chặn hay vẫn sinh file rỗng khi danh sách 0 bản ghi.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_090_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ]
+    },
+    "01_090_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ],
+      "_blocked_cu": "Cần điểm bán chưa khai ca làm việc / chưa có quầy thu ngân — chưa có mã điểm bán nền cho tình huống này trong test-input.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_090_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ]
+    },
+    "01_090_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ],
+      "_blocked_cu": "Cần file Excel tồn đầu kỳ 10 dòng có 3 dòng sai mã sản phẩm; chưa có fixture. Case còn GHI TỒN KHO thật.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_090_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ]
+    },
+    "01_090_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ],
+      "_blocked_cu": "Cần điểm bán mà toàn bộ nhân viên đều Đã nghỉ — chưa có mã điểm bán nền.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_090_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ],
+      "_blocked_cu": "Cần điểm bán có nhân viên đang làm nhưng chưa khai ca nào — chưa có mã điểm bán nền.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_090_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ],
+      "_blocked_cu": "Cần điểm bán mà mọi nhân viên đang làm đều đã xếp lịch — chưa có mã điểm bán nền.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_090_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ]
+    },
+    "01_090_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ]
+    },
+    "01_090_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ],
+      "_blocked_cu": "Cần điểm bán có cả nhân viên đã xếp lịch và chưa xếp lịch — chưa có mã điểm bán nền.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    },
+    "01_090_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ]
+    },
+    "01_090_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "shopCode": "S6239130401A1304"
+      },
+      "required": [
+        "shopCode"
+      ],
+      "_blocked_cu": "Đi hết wizard là GHI tồn kho + phân công + lịch làm việc thật; chỉ chạy khi user bật cờ và trên môi trường riêng.",
+      "_batBoi": "user chốt 22/09: môi trường test, được phép thêm/sửa"
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "cases": {
+    "09_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [
+        "thanhPham"
+      ]
+    },
+    "09_010_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "_blocked": "Phải mở màn lập phiếu thật; cần sản phẩm chế biến CHƯA khai công thức",
+      "required": [],
+      "data": {
+        "skuChuaCoCongThuc": "",
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_010_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "_blocked": "Lập phiếu sản xuất thật (bản ghi mới dù ở trạng thái Nháp)",
+      "required": [],
+      "data": {
+        "skuThanhPham": "",
+        "soLuong": 0,
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304"
+      },
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [
+        "thanhPham"
+      ]
+    },
+    "09_010_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "allowMutation": true,
+      "_blocked": "Cần biết min/max/precision thật của ô số lượng sản xuất — chưa trace. Case còn GHI phiếu.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_010_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "allowMutation": true,
+      "_blocked": "Cần thành phẩm đã khai công thức nguyên liệu — chưa có dữ liệu nền; và GHI phiếu nháp.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_010_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Chưa có đặc tả: hệ thống cho sửa tay lượng nguyên liệu khác công thức hay khoá theo công thức. Nếu cho sửa thì giá vốn thành phẩm tính theo lượng đã sửa. Case còn GHI phiếu.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_gdv",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [
+        "thanhPham"
+      ]
+    },
+    "09_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "_blocked": "Cần đang dở một phiếu với lô nhập thiếu",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "allowMutation": true,
+      "_blocked": "Cần thành phẩm quản lý theo lô/serial — chưa có dữ liệu nền.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [
+        "thanhPham"
+      ]
+    },
+    "09_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "_blocked": "Cần có sẵn 1 phiếu Nháp",
+      "data": {
+        "thongBao": "Xác nhận sản xuất? Hệ thống sẽ xuất nguyên liệu và nhập thành phẩm.",
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "_blocked": "Cần có sẵn 1 phiếu Nháp; thao tác chạm nút xác nhận thật",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_030_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "_blocked": "XÁC NHẬN SẢN XUẤT THẬT — trừ nguyên liệu, nhập thành phẩm, ghi giá vốn",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "_blocked": "Cần một phiếu vừa hoàn thành để đối chiếu công thức giá vốn",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "_blocked": "Dựng tình huống phải bán/chuyển kho thật để rút nguyên liệu",
+      "data": {
+        "sku": "",
+        "thanhPham": "AUTO_SP_62391304",
+        "soLuong": 0
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "",
+        "soLuong": 0
+      }
+    },
+    "09_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [
+        "maDiemBan"
+      ],
+      "data": {
+        "maDiemBan": "S6239130401A1304",
+        "sku": "",
+        "thanhPham": "",
+        "soLuong": 0
+      }
+    },
+    "09_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "",
+        "soLuong": 0
+      }
+    },
+    "09_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "",
+        "soLuong": 0
+      }
+    },
+    "09_040_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "",
+        "soLuong": 0
+      }
+    },
+    "09_040_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "thanhPham": "",
+        "soLuong": 0
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI kép: trừ tồn nguyên liệu và nhập tồn thành phẩm, sinh cả phiếu xuất và phiếu nhập. Nhập thành phẩm sản xuất từng bị bóc VAT sai — cần đối chiếu giá vốn.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "09_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "sku": "",
+        "thanhPham": "",
+        "soLuong": 0
+      }
+    }
+  }
+}

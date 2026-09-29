@@ -1,0 +1,33 @@
+{
+  "spec": {
+    "tests/san-xuat-lap.seed_gdv.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/production"
+      ],
+      "fe": [
+        "src/features/production/pages/ProductionListPage.jsx",
+        "src/features/production/components/ProductionCreateDrawer.jsx",
+        "src/features/production/components/BatchLotAllocate.jsx",
+        "src/features/production/components/ProductionDetailDrawer.jsx",
+        "src/features/production/services/productionApi.js"
+      ]
+    },
+    "tests/san-xuat-xac-nhan.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/production"
+      ],
+      "fe": [
+        "src/features/production/pages/ProductionListPage.jsx",
+        "src/features/production/components/ProductionCreateDrawer.jsx",
+        "src/features/production/components/BatchLotAllocate.jsx",
+        "src/features/production/components/ProductionDetailDrawer.jsx",
+        "src/features/production/services/productionApi.js",
+        "src/components/selectShopMultiple/SelectShopMultiple.jsx"
+      ]
+    }
+  }
+}

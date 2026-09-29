@@ -1,0 +1,791 @@
+{
+  "_note": "Phân hệ 14_2 Gom tách và xử lý hàng trả. 🔴 Phân hệ NGUY HIỂM NHẤT: gom/tách đổi cấu trúc chứng từ không hoàn tác được; nhập lại kho và hoàn về điểm bán TĂNG TỒN THẬT; huỷ vỡ hỏng XOÁ HÀNG khỏi sổ; xác nhận đợt trả GHI GIẢM CÔNG NỢ NCC. Mọi case mutates để enabled=false.",
+  "cases": {
+    "14_2_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_010_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "ward",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_010_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_010_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_020_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_020_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_015": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_020_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_020_017": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_030_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_030_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "14_2_030_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_040_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_040_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_040_016": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_017": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_018": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_019": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_020": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_021": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_022": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_040_023": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "14_2_040_024": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_040_025": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_050_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_050_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_050_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_050_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_050_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_050_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_050_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "14_2_060_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_015": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "14_2_060_017": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_018": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_019": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_020": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_021": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "14_2_060_022": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_023": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_024": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "14_2_060_025": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    }
+  }
+}

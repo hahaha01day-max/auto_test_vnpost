@@ -1,0 +1,137 @@
+﻿,Chức năng,,"QUẢN LÝ PHÂN QUYỀN, CHỨC NĂNG, VAI TRÒ",,,,,,,,
+,Mã Testcase,,31_quan_ly_phan_quyen,,,,,,,,
+,Tổng các tình huống kiểm thử,,45,,,,,,,,
+,Chưa thực hiện,,45,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,"QUẢN LÝ PHÂN QUYỀN, CHỨC NĂNG, VAI TRÒ",,,,,,,,,,
+,"010 — Tạo, sửa và xoá vai trò",,,,,,,,,,
+31_010_001,Mở màn Quản lý vai trò,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Vào Quản lý vai trò > Vai trò
+2. Quan sát danh sách vai trò và các control trên màn hình",,"Admin mở được màn Quản lý vai trò, thấy danh sách vai trò và các control chính",,,,,,
+31_010_002,Kiểm tra control chính trên danh sách vai trò,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Vào Quản lý vai trò > Vai trò
+2. Quan sát ô tìm kiếm, bộ lọc, nút Thêm vai trò
+3. Quan sát bảng danh sách và cột Thao tác của từng dòng",,"Có tìm kiếm, lọc, nút thêm mới, bảng danh sách và thao tác theo dòng",,,,,,
+31_010_003,Mở form Thêm vai trò và kiểm tra trường bắt buộc,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Vào Quản lý vai trò > Vai trò
+2. Bấm Thêm vai trò ở góc trên bên phải
+3. Quan sát các trường trên màn Thêm mới vai trò",,"Form có Mã vai trò, Tên vai trò, Phạm vi, Mô tả và nút Xác nhận, Huỷ",,,,,,
+31_010_004,Thêm vai trò - validate form rỗng,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Bấm Thêm vai trò ở góc trên bên phải
+2. Để trống Mã vai trò, Tên vai trò, Phạm vi
+3. Bấm Xác nhận",,Bấm Xác nhận khi chưa nhập trường bắt buộc thì phải hiển thị lỗi validation,,,,,,
+31_010_005,Thêm vai trò hợp lệ,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Bấm Thêm vai trò ở góc trên bên phải
+2. Nhập Mã vai trò gồm chữ không dấu, chữ số, gạch dưới hoặc gạch ngang
+3. Nhập Tên vai trò
+4. Chọn Phạm vi trong năm giá trị: Tổng Công Ty, Bưu Điện Tỉnh, Bưu Điện Xã, Pos Plus, Điểm Bán
+5. Nhập Mô tả
+6. Bấm Xác nhận",,"Nhập Mã vai trò, Tên vai trò, Phạm vi, Mô tả thì lưu thành công và thấy vai trò trong danh sách",,,,,,
+31_010_006,Tìm kiếm vai trò theo mã/tên,Đã đăng nhập vai Admin; đã có vai trò vừa tạo ở bước trước,"1. Vào Quản lý vai trò > Vai trò
+2. Nhập mã hoặc tên vai trò vừa tạo vào ô tìm kiếm
+3. Quan sát danh sách",,Nhập từ khoá vai trò vừa tạo thì danh sách hiển thị đúng vai trò đó,,,,,,
+31_010_007,Cập nhật tên/phạm vi vai trò,Đã đăng nhập vai Admin có quyền Tạo vai trò; đã có vai trò cần sửa,"1. Tìm dòng vai trò cần sửa trên danh sách
+2. Bấm thao tác chỉnh sửa ở cột Thao tác
+3. Sửa Tên vai trò và đổi Phạm vi
+4. Bấm Xác nhận",,"Mở form chỉnh sửa, sửa tên và phạm vi thì lưu thành công và danh sách cập nhật",,,,,,
+31_010_008,Hủy thao tác xóa vai trò,Đã đăng nhập vai Admin có quyền Xoá vai trò; đã có vai trò cần xoá,"1. Tìm dòng vai trò cần xoá trên danh sách
+2. Bấm Xoá ở cột Thao tác
+3. Ở popup xác nhận, bấm Huỷ",,Bấm Xoá thì popup xác nhận hiển thị; bấm Huỷ thì vai trò vẫn còn,,,,,,
+31_010_009,Xóa vai trò vừa tạo,Đã đăng nhập vai Admin có quyền Xoá vai trò; đã có vai trò vừa tạo để xoá,"1. Tìm dòng vai trò vừa tạo trên danh sách
+2. Bấm Xoá ở cột Thao tác
+3. Ở popup xác nhận, bấm Đồng ý",,Bấm Xoá rồi bấm Đồng ý thì hệ thống xoá thành công và vai trò không còn trong danh sách,,,,,,
+,020 — Gán chức năng cho vai trò,,,,,,,,,,
+31_020_001,Mở màn gán quyền chức năng cho vai trò,Đã đăng nhập vai Admin có quyền Tạo chức năng; vai trò đã tồn tại và danh mục chức năng đã khai báo xong,"1. Vào Quản lý vai trò > Vai trò
+2. Tìm dòng vai trò cần cấu hình
+3. Bấm Gán chức năng ở cột Thao tác",,"Từ dòng vai trò mở được màn Phân quyền chức năng, thấy danh sách quyền để tích chọn",,,,,,
+31_020_002,Tick quyền chức năng và hủy,Đang mở màn Gán chức năng của một vai trò,"1. Mở màn Gán chức năng của vai trò
+2. Mở một nhóm chức năng, tích ô chọn ở đầu vài dòng chức năng
+3. Bỏ tích một chức năng đang được tích sẵn
+4. Bấm Huỷ",,"Tích và bỏ tích được quyền, bấm Huỷ thì thu hồi thao tác",,,,,,
+31_020_003,Tick quyền chức năng và xác nhận,Đang mở màn Gán chức năng của một vai trò,"1. Mở màn Gán chức năng của vai trò
+2. Mở một nhóm chức năng, tích ô chọn ở đầu dòng chức năng cần cấp
+3. Bấm Xác nhận ở cuối màn hình",,Tích quyền chức năng rồi bấm Xác nhận thì hệ thống lưu thành công hoặc trả lỗi rõ ràng,,,,,,
+,030 — Gán nhân viên vào vai trò,,,,,,,,,,
+31_030_001,Bảng danh sách vai trò hiển thị đủ dữ liệu,Vai: tct,"1. Mở /role-management/assign;
+2. Đọc các dòng trong bảng",,"Mỗi dòng hiện đủ mã vai trò, tên vai trò và phạm vi; không có dòng trống hay ô rỗng bất thường",,,,,,
+31_030_002,Ô tìm kiếm vai trò hiển thị đầy đủ,Vai: tct,"1. Mở màn;
+2. Đọc ô tìm kiếm",,Ô tìm kiếm hiện rõ kèm placeholder gợi ý tìm theo mã hoặc tên.,,,,,,
+31_030_003,Nút Thêm vai trò hiển thị đúng,Vai: tct,"1. Mở màn;
+2. Tìm nút Thêm vai trò",,"Nút hiện ở thanh công cụ, bấm được.",,,,,,
+31_030_004,Nút thu gọn tất cả hoạt động đúng,Vai: tct. Danh sách vai trò có nhóm mở rộng,"1. Mở màn;
+2. Bấm nút thu gọn tất cả",,Mọi nhóm đang mở đều thu lại; bấm lần nữa hoặc mở lại thì bung ra,,,,,,
+31_030_005,Mỗi dòng vai trò có nút Chỉnh sửa,Vai: tct,"1. Mở màn;
+2. Đọc cột thao tác của từng dòng",,Mỗi dòng đều có nút Chỉnh sửa và bấm được,,,,,,
+31_030_006,Mỗi dòng vai trò có nút Xóa,Vai: tct,"1. Mở màn;
+2. Đọc cột thao tác của từng dòng",,Mỗi dòng đều có nút Xóa và bấm được,,,,,,
+31_030_007,Mỗi dòng vai trò có nút Phân quyền chức năng,Vai: tct,"1. Mở màn;
+2. Đọc cột thao tác của từng dòng",,Mỗi dòng đều có nút Phân quyền chức năng và bấm được,,,,,,
+31_030_008,Giao diện co giãn khi thu nhỏ màn hình,Vai: tct,"1. Mở màn;
+2. Thu nhỏ cửa sổ trình duyệt xuống bề ngang hẹp",,"Giao diện không vỡ, không tràn ngang; bảng chuyển sang cuộn ngang hoặc xếp lại",,,,,,
+,040 — Xuất Excel ma trận phân quyền,,,,,,,,,,
+31_040_001,Tìm vai trò với từ khoá không tồn tại,Vai: tct,"1. Gõ một chuỗi chắc chắn không khớp vai trò nào;
+2. Enter",,"Bảng về trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+31_040_002,Tìm vai trò với ký tự đặc biệt,Vai: tct,"1. Gõ chuỗi chứa % và _ vào ô tìm kiếm;
+2. Enter",,Không lỗi 500; không trả về toàn bộ vai trò.,,,,,,
+31_040_003,Tìm vai trò với từ khoá có khoảng trắng đầu cuối,Vai: tct. Biết một tên vai trò có thật,"1. Gõ tên vai trò kèm dấu cách ở đầu và cuối;
+2. Enter",,Vẫn tìm ra vai trò đó (khoảng trắng được cắt),,,,,,
+31_040_004,Tìm vai trò không phân biệt hoa thường,Vai: tct. Biết một tên vai trò có thật,"1. Gõ tên vai trò bằng chữ thường;
+2. Enter;
+3. Gõ lại bằng chữ hoa;
+4. Enter",,Hai lần cho cùng kết quả,,,,,,
+31_040_005,Tìm vai trò khi để trống ô tìm kiếm,Vai: tct,"1. Xoá trắng ô tìm kiếm;
+2. Enter",,Trả về toàn bộ danh sách vai trò như ban đầu,,,,,,
+31_040_006,Tìm vai trò với nhiều khoảng trắng liên tiếp,Vai: tct,"1. Gõ nhiều dấu cách liên tiếp vào ô tìm kiếm;
+2. Enter",,"Coi như không lọc, trả về toàn bộ danh sách.",,,,,,
+,050 — Quản lý nhóm chức năng và chức năng,,,,,,,,,,
+31_050_001,Thêm vai trò bị trùng tên,Vai: tct. Biết một tên vai trò đã tồn tại,"1. Mở form Thêm vai trò;
+2. Nhập đúng tên vai trò đã có;
+3. Lưu",,"Bị chặn, không tạo vai trò mới.",,,,,,
+,060 — Gán quyền cho chức năng,,,,,,,,,,
+31_060_001,Mở màn chỉnh sửa vai trò nạp sẵn thông tin,Vai: tct. Có vai trò đang tồn tại,1. Bấm Chỉnh sửa ở một dòng vai trò,,"Màn chỉnh sửa mở, các ô nạp sẵn đúng thông tin hiện tại của vai trò đó",,,,,,
+31_060_002,Chỉnh sửa bỏ trống trường bắt buộc,Vai: tct. Có vai trò đang tồn tại,"1. Mở màn chỉnh sửa;
+2. Xoá trắng ô Tên vai trò;
+3. Lưu",,"Bị chặn, không lưu.",,,,,,
+31_060_003,Huỷ thao tác chỉnh sửa vai trò,Vai: tct. Có vai trò đang tồn tại,"1. Mở màn chỉnh sửa;
+2. Sửa tên vai trò;
+3. Đóng bằng Huỷ hoặc X;
+4. Đọc lại danh sách",,Màn đóng; thông tin vai trò giữ nguyên như trước khi sửa,,,,,,
+,070 — Gán vai trò cho chức năng,,,,,,,,,,
+31_070_001,Nội dung popup xác nhận xoá vai trò,Vai: tct. Có vai trò đang tồn tại,"1. Bấm Xóa ở một dòng vai trò;
+2. Đọc nội dung popup",,"Popup hiện đúng nội dung cảnh báo. Hành động này không thể hoàn tác.""",,,,,,
+,080 — Quản lý nhóm quyền và quyền,,,,,,,,,,
+31_080_001,Tìm chức năng với từ khoá hợp lệ ở màn phân quyền,Vai: tct. Đang ở màn phân quyền chức năng,"1. Mở màn phân quyền của một vai trò;
+2. Gõ tên một chức năng có thật;
+3. Enter",,Chỉ hiện các chức năng khớp từ khoá,,,,,,
+31_080_002,Tìm chức năng với ký tự đặc biệt,Vai: tct. Đang ở màn phân quyền chức năng,"1. Gõ chuỗi chứa % và _ vào ô tìm chức năng;
+2. Enter",,Không lỗi 500; không trả về toàn bộ chức năng.,,,,,,
+31_080_003,Tìm chức năng với từ khoá có khoảng trắng,Vai: tct. Đang ở màn phân quyền chức năng,"1. Gõ tên chức năng kèm dấu cách đầu cuối;
+2. Enter",,Vẫn tìm ra chức năng đó,,,,,,
+31_080_004,Tìm chức năng không phân biệt hoa thường,Vai: tct. Đang ở màn phân quyền chức năng,1. Gõ tên chức năng chữ thường rồi chữ hoa,,Hai lần cho cùng kết quả,,,,,,
+31_080_005,Tìm chức năng khi để trống ô tìm kiếm,Vai: tct. Đang ở màn phân quyền chức năng,"1. Xoá trắng ô tìm chức năng;
+2. Enter",,Trả về toàn bộ cây chức năng như ban đầu,,,,,,
+31_080_006,Chọn tất cả chức năng cho vai trò,Vai: tct. Đang ở màn phân quyền chức năng,"1. Bấm chọn tất cả;
+2. Đọc trạng thái các ô tick",,Mọi chức năng trong cây đều được tick; bộ đếm đã chọn bằng tổng số chức năng,,,,,,
+31_080_007,Chỉ hiển thị mục đã chọn,Vai: tct. Đã tick một số chức năng,"1. Tick vài chức năng;
+2. Bật ""chỉ hiển thị mục đã chọn""",,Cây chỉ còn các chức năng đang được tick,,,,,,
+31_080_008,Làm mới các chức năng đã chọn,Vai: tct. Đã tick một số chức năng nhưng chưa lưu,"1. Tick vài chức năng;
+2. Bấm làm mới",,"Các lựa chọn chưa lưu bị bỏ, cây trở về trạng thái đang lưu trong hệ thống",,,,,,
+31_080_009,Gán chức năng thành công cho vai trò,Vai: tct. Có vai trò đang tồn tại,"1. Mở màn phân quyền;
+2. Tick thêm một chức năng;
+3. Xác nhận",,"Hiện thông báo nguyên văn ""Gán chức năng thành công""; mở lại màn thì chức năng đó vẫn được tick",,,,,,
+31_080_010,Xoá vai trò thành công,Vai: tct. Có vai trò vừa tạo để xoá,"1. Bấm Xóa;
+2. Xác nhận ở popup",,"Hiện thông báo nguyên văn ""Xóa vai trò thành công""; vai trò biến mất khỏi danh sách",,,,,,
+31_080_011,Gán nhân viên khi chưa chọn ai,Vai: tct. Đang ở màn gán nhân viên cho vai trò,"1. Mở màn gán nhân viên;
+2. Không chọn nhân viên nào;
+3. Xác nhận",,"Hiện thông báo nguyên văn ""Vui lòng thêm ít nhất một nhân viên""",,,,,,
+,090 — Gán chức năng cho quyền,,,,,,,,,,
+31_090_001,Vai điểm bán không vào được màn quản lý vai trò,Vai: gdv,"1. Đăng nhập vai gdv;
+2. Mở /role-management/assign",,Bị chặn hoặc không thấy mục menu.,,,,,,
+31_090_002,Phân trang danh sách vai trò,Vai: tct. Danh sách có nhiều hơn một trang,"1. Sang trang 2;
+2. Đổi số dòng mỗi trang;
+3. Về trang cuối",,Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi,,,,,,
+,030 — Gán nhân viên vào vai trò,,,,,,,,,,
+31_030_009,Font chữ và khoảng cách dòng đúng thiết kế,Vai: tct,"1. Mở /role-management/assign;
+2. So sánh font chữ và khoảng cách dòng với bản thiết kế",,Font chữ và khoảng cách dòng khớp bản thiết kế.,,,,,,

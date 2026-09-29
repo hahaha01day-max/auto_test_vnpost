@@ -1,0 +1,261 @@
+,Chức năng,,,ĐỔI TRẢ HÀNG,,,,,,,
+,Mã Testcase,,,FUNC_THUMUC_,,,,,,,
+,Tổng các tình huống kiểm thử,,,67,,,,,,,
+,Chưa thực hiện,,,67,,,,,,,
+,Đạt yêu cầu,,,0,,,,,,,
+,Không đạt yêu cầu,,,0,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng thêm mới đơn vị (Cách 1 - từ menu),,,,,,,,,,
+FUNC_THUMUC__1,Thêm mới đơn vị Tổng công ty với mã hợp lệ '00',Đăng nhập với quyền Admin cấp Tổng công ty; chưa có đơn vị TCT nào trong hệ thống,Đăng nhập với quyền Admin cấp Tổng công ty; chưa có đơn vị TCT nào trong hệ thống,"1. Vào Menu > Quản lý chuỗi > Mô hình tổ chức
+ 2. Click 'Thêm mới đơn vị'
+ 3. Nhập Mã đơn vị: 00
+ 4. Nhập Tên đơn vị: 'Tổng công ty Bưu điện Việt Nam'
+ 5. Không chọn Đơn vị cha (cấp cao nhất)
+ 6. Click 'Xác nhận'",Cao,Màn mô hình tổ chức,"Đơn vị Tổng công ty được tạo thành công với mã '00', hiển thị ở cấp cao nhất trên cây phân cấp bên trái màn hình",,,,
+FUNC_THUMUC__2,Thêm mới đơn vị Bưu điện Tỉnh với mã hợp lệ trong khoảng 11-97,Đã tồn tại đơn vị Tổng công ty (mã 00); Admin có quyền thêm đơn vị cấp Tỉnh,Đã tồn tại đơn vị Tổng công ty (mã 00); Admin có quyền thêm đơn vị cấp Tỉnh,"1. Vào màn Mô hình tổ chức
+ 2. Click 'Thêm mới đơn vị'
+ 3. Nhập Mã đơn vị: 24
+ 4. Nhập Tên đơn vị: 'Bưu điện Hà Nội'
+ 5. Chọn Đơn vị cha: 'Tổng công ty Bưu điện Việt Nam'
+ 6. Click 'Xác nhận'",Cao,Màn mô hình tổ chức,"Đơn vị Bưu điện Hà Nội (mã 24) được tạo thành công, hiển thị là đơn vị con của Tổng công ty trên cây phân cấp",,,,
+FUNC_THUMUC__3,Thêm mới đơn vị Bưu điện Xã với mã 4 số hợp lệ,Đã tồn tại đơn vị Bưu điện Hà Nội (cấp Tỉnh); Admin có quyền thêm đơn vị cấp Xã,Đã tồn tại đơn vị Bưu điện Hà Nội (cấp Tỉnh); Admin có quyền thêm đơn vị cấp Xã,"1. Vào màn Mô hình tổ chức
+ 2. Click 'Thêm mới đơn vị'
+ 3. Nhập Mã đơn vị: 2401
+ 4. Nhập Tên đơn vị: 'Bưu điện Hoàn Kiếm'
+ 5. Chọn Đơn vị cha: 'Bưu điện Hà Nội'
+ 6. Click 'Xác nhận'",Cao,Màn mô hình tổ chức,"Đơn vị Bưu điện Hoàn Kiếm (mã 2401) được tạo thành công, hiển thị là đơn vị con của Bưu điện Hà Nội",,,,
+FUNC_THUMUC__4,Thêm mới đơn vị Điểm bán với mã 6 số hợp lệ,Đã tồn tại đơn vị Bưu điện Hoàn Kiếm (cấp Xã); Admin có quyền thêm Điểm bán,Đã tồn tại đơn vị Bưu điện Hoàn Kiếm (cấp Xã); Admin có quyền thêm Điểm bán,"1. Vào màn Mô hình tổ chức
+ 2. Click 'Thêm mới đơn vị'
+ 3. Nhập Mã đơn vị: 240101
+ 4. Nhập Tên đơn vị: 'Điểm bán Hàng Bài'
+ 5. Nhập các thông tin required
+ 5. Chọn Đơn vị cha: 'Bưu điện Hoàn Kiếm'
+ 6. Click 'Xác nhận'",Cao,Màn mô hình tổ chức,"Điểm bán Hàng Bài (mã 240101) được tạo thành công, hiển thị là đơn vị con của Bưu điện Hoàn Kiếm ở cấp thấp nhất",,,,
+FUNC_THUMUC__5,Bỏ trống Mã đơn vị (bắt buộc) khi thêm mới,Admin đang ở màn Thêm đơn vị tổ chức,Admin đang ở màn Thêm đơn vị tổ chức,"1. Mở form Thêm đơn vị
+ 2. Để trống Mã đơn vị
+ 3. Nhập Tên đơn vị: 'Bưu điện Test'
+ 4. Chọn Đơn vị cha
+ 5. Click 'Xác nhận'",Cao,Màn mô hình tổ chức,Hệ thống hiển thị thông báo lỗi yêu cầu nhập Mã đơn vị (bắt buộc); không tạo được đơn vị mới,,,,
+FUNC_THUMUC__6,Bỏ trống Tên đơn vị (bắt buộc) khi thêm mới,Admin đang ở màn Thêm đơn vị tổ chức,Admin đang ở màn Thêm đơn vị tổ chức,"1. Mở form Thêm đơn vị
+ 2. Nhập Mã đơn vị: 25
+ 3. Để trống Tên đơn vị
+ 4. Chọn Đơn vị cha
+ 5. Click 'Xác nhận'",Cao,Màn mô hình tổ chức,Hệ thống hiển thị thông báo lỗi yêu cầu nhập Tên đơn vị (bắt buộc); không tạo được đơn vị mới,,,,
+FUNC_THUMUC__7,Nhập mã cấp Tỉnh ngoài khoảng quy định (11-97),"Admin đang ở màn Thêm đơn vị tổ chức, tạo đơn vị con của Tổng công ty","Admin đang ở màn Thêm đơn vị tổ chức, tạo đơn vị con của Tổng công ty","1. Mở form Thêm đơn vị
+ 2. Nhập Mã đơn vị: 99 (ngoài khoảng 11-97)
+ 3. Nhập Tên đơn vị: 'Bưu điện Test'
+ 4. Chọn Đơn vị cha: Tổng công ty
+ 5. Click 'Xác nhận'",TB,Màn mô hình tổ chức,Hệ thống hiển thị thông báo lỗi mã đơn vị không hợp lệ với cấp Tỉnh (phải trong khoảng 11-97); không tạo được đơn vị,,,,
+FUNC_THUMUC__8,Nhập mã đơn vị bị trùng với mã đã tồn tại,Đơn vị mã '24' (Bưu điện Hà Nội) đã tồn tại trong hệ thống,Đơn vị mã '24' (Bưu điện Hà Nội) đã tồn tại trong hệ thống,"1. Mở form Thêm đơn vị
+ 2. Nhập Mã đơn vị: 24 (đã tồn tại)
+ 3. Nhập Tên đơn vị: 'Bưu điện Hà Nội 2'
+ 4. Chọn Đơn vị cha: Tổng công ty
+ 5. Click 'Xác nhận'",Cao,Màn mô hình tổ chức,"Hệ thống hiển thị thông báo lỗi 'Mã đơn vị đã tồn tại'; không tạo được đơn vị mới, không cho phép trùng mã",,,,
+FUNC_THUMUC__9,Bỏ trống Đơn vị cha (bắt buộc) khi tạo đơn vị con,"Admin đang ở màn Thêm đơn vị tổ chức, tạo đơn vị cấp 2 trở xuống","Admin đang ở màn Thêm đơn vị tổ chức, tạo đơn vị cấp 2 trở xuống","1. Mở form Thêm đơn vị
+ 2. Nhập Mã đơn vị: 26
+ 3. Nhập Tên đơn vị: 'Bưu điện Test'
+ 4. Để trống Đơn vị cha
+ 5. Click 'Xác nhận'",TB,Màn mô hình tổ chức,"Hệ thống hiển thị thông báo lỗi yêu cầu chọn Đơn vị cha (bắt buộc, trừ cấp Tổng công ty); không tạo được đơn vị",,,,
+FUNC_THUMUC__10,Hủy thao tác thêm đơn vị giữa chừng,"Admin đang mở form Thêm đơn vị, đã nhập một số thông tin","Admin đang mở form Thêm đơn vị, đã nhập một số thông tin","1. Mở form Thêm đơn vị
+ 2. Nhập Mã đơn vị: 27, Tên đơn vị: 'Test Hủy'
+ 3. Click 'Hủy'",Thấp,Màn mô hình tổ chức,"Form đóng lại, không có đơn vị mới nào được tạo, dữ liệu vừa nhập bị hủy bỏ",,,,
+,"Kiểm tra chức năng thêm mới đơn vị (cách 2 - từ cây phân cấp, tự fill đơn vị cha)",,,,,,,,,,
+FUNC_THUMUC__11,Thêm đơn vị con qua icon hover trên cây phân cấp - tự động fill Đơn vị cha,Đơn vị Bưu điện Hà Nội (cấp Tỉnh) đã tồn tại trên cây phân cấp; Admin có quyền thêm đơn vị,Đơn vị Bưu điện Hà Nội (cấp Tỉnh) đã tồn tại trên cây phân cấp; Admin có quyền thêm đơn vị,"1. Tại màn Mô hình tổ chức, hover chuột vào 'Bưu điện Hà Nội' trên cây phân cấp
+ 2. Click icon button thêm mới hiển thị khi hover
+ 3. Quan sát form 'Thêm mới đơn vị' hiển ra",Cao,Màn Mô hình tổ chức,"Form Thêm mới đơn vị hiển thị, trường 'Đơn vị cha' tự động điền sẵn = 'Bưu điện Hà Nội', không cho phép chỉnh sửa hoặc hiển thị read-only",,,,
+FUNC_THUMUC__12,Tạo nhanh đơn vị cấp Xã với 2 trường thông tin (Mã + Tên),Đã mở form Thêm đơn vị qua icon hover từ 'Bưu điện Hà Nội' (Đơn vị cha đã tự fill),Đã mở form Thêm đơn vị qua icon hover từ 'Bưu điện Hà Nội' (Đơn vị cha đã tự fill),"1. Tại form đã hiển thị sẵn Đơn vị cha = 'Bưu điện Hà Nội'
+ 2. Nhập Mã đơn vị: 2402
+ 3. Nhập Tên đơn vị: 'Bưu điện Đống Đa'
+ 4. Click 'Xác nhận'",Cao,Màn Mô hình tổ chức,"Đơn vị 'Bưu điện Đống Đa' (mã 2402) được tạo thành công là đơn vị con của 'Bưu điện Hà Nội', hiển thị đúng vị trí trên cây phân cấp",,,,
+,Bỏ trống Mã đơn vị khi thêm nhanh từ cây phân cấp (Cách 2),"Đã mở form Thêm đơn vị qua icon hover, Đơn vị cha đã tự fill sẵn","Đã mở form Thêm đơn vị qua icon hover, Đơn vị cha đã tự fill sẵn","1. Để trống Mã đơn vị
+ 2. Nhập Tên đơn vị: 'Bưu điện Test 2'
+ 3. Click 'Xác nhận'",Cao,Màn Mô hình tổ chức,Hệ thống hiển thị thông báo lỗi yêu cầu nhập Mã đơn vị (bắt buộc); không tạo được đơn vị mới,,,,
+FUNC_THUMUC__14,Bỏ trống Tên đơn vị khi thêm nhanh từ cây phân cấp (Cách 2),"Đã mở form Thêm đơn vị qua icon hover, Đơn vị cha đã tự fill sẵn","Đã mở form Thêm đơn vị qua icon hover, Đơn vị cha đã tự fill sẵn","1. Nhập Mã đơn vị: 2403
+ 2. Để trống Tên đơn vị
+ 3. Click 'Xác nhận'",Cao,Màn Mô hình tổ chức,Hệ thống hiển thị thông báo lỗi yêu cầu nhập Tên đơn vị (bắt buộc); không tạo được đơn vị mới,,,,
+FUNC_THUMUC__15,Nhập mã cấp Xã trùng với mã đã tồn tại trong cùng đơn vị cha,Đơn vị 'Bưu điện Hoàn Kiếm' mã '2401' đã tồn tại dưới 'Bưu điện Hà Nội',Đơn vị 'Bưu điện Hoàn Kiếm' mã '2401' đã tồn tại dưới 'Bưu điện Hà Nội',"1. Hover vào 'Bưu điện Hà Nội', click icon thêm mới
+ 2. Nhập Mã đơn vị: 2401 (đã tồn tại)
+ 3. Nhập Tên đơn vị: 'Bưu điện Hoàn Kiếm 2'
+ 4. Click 'Xác nhận'",TB,Màn Mô hình tổ chức,Hệ thống hiển thị thông báo lỗi 'Mã đơn vị đã tồn tại trong đơn vị cha này'; không tạo được đơn vị mới,,,,
+FUNC_THUMUC__16,Icon thêm mới không hiển thị khi không hover vào đơn vị,Cây phân cấp đã có ít nhất 1 đơn vị; chuột không đặt trên bất kỳ đơn vị nào,Cây phân cấp đã có ít nhất 1 đơn vị; chuột không đặt trên bất kỳ đơn vị nào,"1. Tại màn Mô hình tổ chức, di chuột ra ngoài vùng cây phân cấp
+ 2. Quan sát các đơn vị trên cây",Thấp,Màn Mô hình tổ chức,Icon button thêm mới không hiển thị trên bất kỳ đơn vị nào khi không có thao tác hover,,,,
+,Kiểm tra xem danh sách đơn vị phân cấp (cây thư mục),,,,,,,,,,
+FUNC_THUMUC__17,Xem cây phân cấp hiển thị đầy đủ 4 cấp sau khi thêm mới thành công,Đã tạo đầy đủ 4 cấp: TCT (00) > Tỉnh (24) > Xã (2401) > Điểm bán (240101),Đã tạo đầy đủ 4 cấp: TCT (00) > Tỉnh (24) > Xã (2401) > Điểm bán (240101),"1. Vào màn Mô hình tổ chức
+ 2. Quan sát menu cây phân cấp bên trái màn hình",Cao,Màn mô hình tổ chức (cây phân cấp),"Cây phân cấp hiển thị đúng 4 cấp theo thứ tự: Tổng công ty > Bưu điện Tỉnh > Bưu điện Xã > Điểm bán, đúng quan hệ cha-con đã tạo",,,,
+FUNC_THUMUC__18,Mở rộng (expand) và thu gọn (collapse) một nhánh cây phân cấp,Đơn vị 'Bưu điện Hà Nội' có ít nhất 1 đơn vị con cấp Xã,Đơn vị 'Bưu điện Hà Nội' có ít nhất 1 đơn vị con cấp Xã,"1. Click icon expand cạnh 'Bưu điện Hà Nội'
+ 2. Quan sát các đơn vị con hiển thị
+ 3. Click icon collapse để thu gọn lại",TB,Màn mô hình tổ chức (cây phân cấp),"Bước 1-2: Các đơn vị con (Bưu điện Hoàn Kiếm, Đống Đa...) hiển thị thụt lề dưới Bưu điện Hà Nội
+ Bước 3: Các đơn vị con ẩn đi, chỉ còn hiển thị Bưu điện Hà Nội",,,,
+,Cây phân cấp hiển thị trạng thái rỗng khi chưa có đơn vị nào,Hệ thống chưa có đơn vị tổ chức nào được tạo (môi trường mới),Hệ thống chưa có đơn vị tổ chức nào được tạo (môi trường mới),"1. Vào màn Mô hình tổ chức
+ 2. Quan sát khu vực cây phân cấp",TB,Màn mô hình tổ chức (cây phân cấp),"Hiển thị thông báo/trạng thái rỗng phù hợp (VD: 'Chưa có đơn vị nào, vui lòng thêm mới'); không hiển thị lỗi giao diện",,,,
+FUNC_THUMUC__20,Tìm kiếm đơn vị trên cây phân cấp theo tên,"Cây phân cấp có nhiều đơn vị, trong đó có 'Bưu điện Đống Đa'","Cây phân cấp có nhiều đơn vị, trong đó có 'Bưu điện Đống Đa'","1. Vào màn Mô hình tổ chức
+ 2. Nhập 'Đống Đa' vào ô tìm kiếm trên cây phân cấp (nếu có)
+ 3. Nhấn Enter",Thấp,Màn mô hình tổ chức (cây phân cấp),Cây phân cấp lọc/highlight đúng đơn vị 'Bưu điện Đống Đa' và hiển thị đường dẫn cha của nó (Bưu điện Hà Nội > Bưu điện Đống Đa),,,,
+FUNC_THUMUC__21,Tìm kiếm đơn vị với từ khóa không tồn tại,Cây phân cấp đã có dữ liệu,Cây phân cấp đã có dữ liệu,"1. Nhập từ khóa không tồn tại: 'XYZ123' vào ô tìm kiếm
+ 2. Nhấn Enter",Thấp,Màn mô hình tổ chức (cây phân cấp),Hệ thống hiển thị thông báo 'Không tìm thấy đơn vị phù hợp'; cây phân cấp không hiển thị kết quả nào,,,,
+,"Kiểm tra xem chi tiết, chỉnh sửa, xóa đơn vị",,,,,,,,,,
+FUNC_THUMUC__22,Xem chi tiết đơn vị hiển thị đầy đủ thông tin đã tạo,Đơn vị 'Bưu điện Hà Nội' (mã 24) đã tồn tại với Đơn vị cha = Tổng công ty,Đơn vị 'Bưu điện Hà Nội' (mã 24) đã tồn tại với Đơn vị cha = Tổng công ty,"1. Vào màn Mô hình tổ chức
+ 2. Click vào 'Bưu điện Hà Nội' trên cây phân cấp
+ 3. Quan sát màn 'Xem chi tiết đơn vị'",Cao,Màn xem chi tiết đơn vị,"Màn chi tiết hiển thị đầy đủ và chính xác: Mã đơn vị = 24, Tên đơn vị = 'Bưu điện Hà Nội', Đơn vị cha = Tổng công ty; có nút 'Cập nhật' và icon 'Xóa'",,,,
+FUNC_THUMUC__23,Chỉnh sửa Tên đơn vị thành công,Đang ở màn Xem chi tiết đơn vị 'Bưu điện Hà Nội',Đang ở màn Xem chi tiết đơn vị 'Bưu điện Hà Nội',"1. Click 'Cập nhật'
+ 2. Sửa Tên đơn vị thành 'Bưu điện TP Hà Nội'
+ 3. Click 'Xác nhận'",Cao,Màn chỉnh sửa đơn vị tổ chức,"Tên đơn vị được cập nhật thành 'Bưu điện TP Hà Nội', hiển thị tên mới trên cây phân cấp và màn chi tiết",,,,
+,Chỉnh sửa Đơn vị cha - chuyển đơn vị sang nhánh khác,Đơn vị 'Bưu điện Đống Đa' (mã 2402) hiện là con của 'Bưu điện Hà Nội'; có đơn vị 'Bưu điện Hồ Chí Minh' (cấp Tỉnh) khác,Đơn vị 'Bưu điện Đống Đa' (mã 2402) hiện là con của 'Bưu điện Hà Nội'; có đơn vị 'Bưu điện Hồ Chí Minh' (cấp Tỉnh) khác,"1. Mở chi tiết 'Bưu điện Đống Đa', click 'Cập nhật'
+ 2. Đổi Đơn vị cha sang 'Bưu điện Hồ Chí Minh'
+ 3. Click 'Xác nhận'",TB,Màn chỉnh sửa đơn vị tổ chức,Đơn vị 'Bưu điện Đống Đa' được chuyển thành đơn vị con của 'Bưu điện Hồ Chí Minh' trên cây phân cấp; không còn nằm dưới 'Bưu điện Hà Nội',,,,
+FUNC_THUMUC__25,Chỉnh sửa - bỏ trống Mã đơn vị (bắt buộc),Đang ở form Chỉnh sửa đơn vị 'Bưu điện Đống Đa',Đang ở form Chỉnh sửa đơn vị 'Bưu điện Đống Đa',"1. Click 'Cập nhật'
+ 2. Xóa trống Mã đơn vị
+ 3. Click 'Xác nhận'",Cao,Màn chỉnh sửa đơn vị tổ chức,"Hệ thống hiển thị lỗi yêu cầu nhập Mã đơn vị (bắt buộc); không lưu được thay đổi, dữ liệu cũ không bị mất",,,,
+FUNC_THUMUC__26,Chỉnh sửa - đổi Mã đơn vị thành mã đã tồn tại của đơn vị khác,Đơn vị A có mã '2402'; đơn vị B có mã '2403' đang được chỉnh sửa,Đơn vị A có mã '2402'; đơn vị B có mã '2403' đang được chỉnh sửa,"1. Mở chi tiết đơn vị B (mã 2403), click 'Cập nhật'
+ 2. Đổi Mã đơn vị thành 2402 (trùng với đơn vị A)
+ 3. Click 'Xác nhận'",Cao,Màn chỉnh sửa đơn vị tổ chức,"Hệ thống hiển thị lỗi 'Mã đơn vị đã tồn tại'; không lưu được thay đổi, mã của đơn vị B vẫn giữ nguyên 2404",,,,
+FUNC_THUMUC__27,Hủy chỉnh sửa - dữ liệu không bị thay đổi,"Đang ở form Chỉnh sửa đơn vị, đã sửa một số trường","Đang ở form Chỉnh sửa đơn vị, đã sửa một số trường","1. Click 'Cập nhật'
+ 2. Sửa Tên đơn vị thành 'Test Hủy Sửa'
+ 3. Click 'Hủy' (thay vì Xác nhận)",Thấp,Màn chỉnh sửa đơn vị tổ chức,"Form đóng lại, Tên đơn vị vẫn giữ nguyên giá trị trước khi chỉnh sửa, không có thay đổi nào được lưu",,,,
+FUNC_THUMUC__28,Xóa Điểm bán (cấp 4) - chỉ xóa đúng điểm bán được chỉ định,"Điểm bán 'Điểm bán Hàng Bài' (mã 240101) tồn tại dưới 'Bưu điện Hoàn Kiếm', không có đơn vị con","Điểm bán 'Điểm bán Hàng Bài' (mã 240101) tồn tại dưới 'Bưu điện Hoàn Kiếm', không có đơn vị con","1. Mở chi tiết 'Điểm bán Hàng Bài'
+ 2. Click icon 'Xóa'
+ 3. Popup confirm hiển thị: 'Hành động này sẽ không thể hoàn tác, bạn có chắc chắn muốn xóa?'
+ 4. Click 'Đồng ý'",Cao,Màn xóa đơn vị tổ chức (popup confirm),Điểm bán 'Điểm bán Hàng Bài' bị xóa khỏi cây phân cấp; 'Bưu điện Hoàn Kiếm' và các đơn vị khác không bị ảnh hưởng,,,,
+FUNC_THUMUC__29,Xóa cấp Xã - toàn bộ Điểm bán thuộc cấp Xã đó bị xóa theo,"Bưu điện Hoàn Kiếm' (cấp Xã, mã 2401) có 2 điểm bán con: 'Điểm bán A', 'Điểm bán B'","Bưu điện Hoàn Kiếm' (cấp Xã, mã 2401) có 2 điểm bán con: 'Điểm bán A', 'Điểm bán B'","1. Mở chi tiết 'Bưu điện Hoàn Kiếm'
+ 2. Click icon 'Xóa'
+ 3. Popup confirm hiển thị
+ 4. Click 'Đồng ý'",Cao,Màn xóa đơn vị tổ chức (popup confirm),"Bưu điện Hoàn Kiếm' và toàn bộ 2 điểm bán con (Điểm bán A, Điểm bán B) đều bị xóa khỏi cây phân cấp; các nhánh khác không bị ảnh hưởng",,,,
+FUNC_THUMUC__30,Xóa cấp Tỉnh - toàn bộ Xã/Điểm bán thuộc Tỉnh đó bị xóa theo,"Bưu điện Hà Nội' (cấp Tỉnh, mã 24) có cấp Xã 'Bưu điện Hoàn Kiếm' và các điểm bán A, B, C, E, F như mô tả trong SRS","Bưu điện Hà Nội' (cấp Tỉnh, mã 24) có cấp Xã 'Bưu điện Hoàn Kiếm' và các điểm bán A, B, C, E, F như mô tả trong SRS","1. Mở chi tiết 'Bưu điện Hà Nội'
+ 2. Click icon 'Xóa'
+ 3. Popup confirm hiển thị
+ 4. Click 'Đồng ý'",Cao,Màn xóa đơn vị tổ chức (popup confirm),"Bưu điện Hà Nội' cùng toàn bộ cấp Xã 'Bưu điện Hoàn Kiếm' và 5 điểm bán (A,B,C,E,F) bị xóa hoàn toàn khỏi cây phân cấp",,,,
+FUNC_THUMUC__31,Xóa cấp Tổng công ty - toàn bộ cây phân cấp bị xóa theo,Cấp Tổng công ty (mã 00) là gốc của toàn bộ cây phân cấp đang có dữ liệu ở cả 4 cấp,Cấp Tổng công ty (mã 00) là gốc của toàn bộ cây phân cấp đang có dữ liệu ở cả 4 cấp,"1. Mở chi tiết Tổng công ty (mã 00)
+ 2. Click icon 'Xóa'
+ 3. Popup confirm hiển thị
+ 4. Click 'Đồng ý'",Cao,Màn xóa đơn vị tổ chức (popup confirm),"Toàn bộ cây phân cấp (Tổng công ty, các Tỉnh, Xã, Điểm bán) bị xóa hoàn toàn khỏi hệ thống; cây phân cấp trở về trạng thái rỗng",,,,
+FUNC_THUMUC__32,Hủy xóa đơn vị tại popup confirm,Popup confirm xóa đơn vị 'Bưu điện Đống Đa' đang hiển thị,Popup confirm xóa đơn vị 'Bưu điện Đống Đa' đang hiển thị,"1. Mở chi tiết 'Bưu điện Đống Đa', click icon 'Xóa'
+ 2. Popup confirm hiển thị
+ 3. Click 'Hủy'",TB,Màn xóa đơn vị tổ chức (popup confirm),"Đơn vị 'Bưu điện Đống Đa' không bị xóa, vẫn hiển thị nguyên vẹn trên cây phân cấp; popup đóng lại",,,,
+FUNC_THUMUC__33,Nội dung popup confirm xóa hiển thị đúng văn bản theo SRS,Đang ở màn Xem chi tiết một đơn vị bất kỳ,Đang ở màn Xem chi tiết một đơn vị bất kỳ,"1. Click icon 'Xóa'
+ 2. Quan sát nội dung popup hiển thị",Thấp,Màn xóa đơn vị tổ chức (popup confirm),"Popup hiển thị đúng nội dung: 'Hành động này sẽ không thể hoàn tác, bạn có chắc chắn muốn xóa?' với 2 nút 'Đồng ý' và 'Hủy'",,,,
+,"Kiểm tra chức năng nhập từ Excel, xuất excel",,,,,,,,,,
+FUNC_THUMUC__34,Tải về file mẫu nhập đơn vị tổ chức thành công,"Admin đăng nhập, đang ở màn Mô hình tổ chức","Admin đăng nhập, đang ở màn Mô hình tổ chức","1. Click nút 'Nhập từ excel'
+ 2. Click 'Tải về file mẫu'",TB,Màn Nhập từ excel,"File mẫu Excel được tải về máy thành công, đúng định dạng với các cột: Mã đơn vị, Tên đơn vị, Đơn vị cha, Cấp đơn vị",,,,
+FUNC_THUMUC__35,Upload file Excel hợp lệ - tạo hàng loạt đơn vị thành công,"Có file Excel theo đúng mẫu, chứa dữ liệu hợp lệ cho nhiều đơn vị các cấp","Có file Excel theo đúng mẫu, chứa dữ liệu hợp lệ cho nhiều đơn vị các cấp","1. Click 'Nhập từ excel'
+ 2. Click 'Tải file excel lên', chọn file hợp lệ
+ 3. Xác nhận nhập dữ liệu",Cao,Màn Nhập từ excel,"Tất cả đơn vị trong file được tạo thành công, hiển thị đúng trên cây phân cấp theo đúng quan hệ cha-con đã khai báo trong file",,,,
+,Upload file sai định dạng (không phải .xlsx/.xls),Admin đang ở màn Nhập từ excel,Admin đang ở màn Nhập từ excel,"1. Click 'Tải file excel lên'
+ 2. Chọn file định dạng .pdf hoặc .docx
+ 3. Xác nhận",Cao,Màn Nhập từ excel,"Hệ thống hiển thị thông báo lỗi 'Định dạng file không hợp lệ, vui lòng tải file Excel (.xlsx)'; không thực hiện import",,,,
+FUNC_THUMUC__37,Upload file Excel có dòng dữ liệu mã đơn vị bị trùng,File Excel có 2 dòng cùng Mã đơn vị '2405',File Excel có 2 dòng cùng Mã đơn vị '2405',"1. Click 'Nhập từ excel'
+ 2. Tải lên file có mã đơn vị trùng
+ 3. Xác nhận nhập",Cao,Màn Nhập từ excel,"Hệ thống từ chối dòng dữ liệu bị trùng mã, hiển thị thông báo lỗi chỉ rõ dòng và mã bị trùng; các dòng hợp lệ khác vẫn được nhập (hoặc toàn bộ bị từ chối tùy cấu hình)",,,,
+FUNC_THUMUC__38,Upload file Excel với Đơn vị cha không tồn tại trong hệ thống/file,File Excel có dòng khai báo Đơn vị cha = 'Bưu điện Đà Nẵng' nhưng đơn vị này chưa tồn tại,File Excel có dòng khai báo Đơn vị cha = 'Bưu điện Đà Nẵng' nhưng đơn vị này chưa tồn tại,"1. Click 'Nhập từ excel'
+ 2. Tải lên file có Đơn vị cha không tồn tại
+ 3. Xác nhận nhập",Cao,Màn Nhập từ excel,Hệ thống hiển thị lỗi rõ ràng cho dòng dữ liệu có Đơn vị cha không hợp lệ; không tạo đơn vị con bị treo (orphan) trên cây phân cấp,,,,
+FUNC_THUMUC__39,"Upload file Excel rỗng (chỉ có header, không có dữ liệu)",File Excel đúng định dạng mẫu nhưng không có dòng dữ liệu nào,File Excel đúng định dạng mẫu nhưng không có dòng dữ liệu nào,"1. Click 'Nhập từ excel'
+ 2. Tải lên file chỉ có header
+ 3. Xác nhận nhập",TB,Màn Nhập từ excel,"Hệ thống hiển thị thông báo 'File không có dữ liệu để nhập'; không tạo đơn vị nào, không báo lỗi hệ thống (crash)",,,,
+FUNC_THUMUC__40,Xuất file Excel danh sách toàn bộ đơn vị tổ chức,Hệ thống đã có dữ liệu ở cả 4 cấp đơn vị,Hệ thống đã có dữ liệu ở cả 4 cấp đơn vị,"1. Tại màn Mô hình tổ chức, click 'Xuất excel'
+ 2. Chờ hệ thống xử lý và tải file",TB,Màn Nhập từ excel,"File Excel được tải về, chứa đầy đủ và chính xác toàn bộ đơn vị hiện có với các cột: Mã đơn vị, Tên đơn vị, Đơn vị cha, Cấp",,,,
+FUNC_THUMUC__41,Xuất Excel khi hệ thống chưa có đơn vị nào,Hệ thống chưa có đơn vị tổ chức nào (môi trường mới/đã xóa hết),Hệ thống chưa có đơn vị tổ chức nào (môi trường mới/đã xóa hết),"1. Tại màn Mô hình tổ chức (cây phân cấp rỗng), click 'Xuất excel'",Thấp,Màn Nhập từ excel,"File Excel được tải về chỉ chứa dòng tiêu đề (header), không có dữ liệu; hoặc hệ thống hiển thị thông báo phù hợp không cho xuất",,,,
+,Kiểm tra chức năng tạo và xem danh sách Điểm bán/Hub,,,,,,,,,,
+FUNC_THUMUC__42,Tạo Điểm bán phân loại 'Pos mini' với đầy đủ trường bắt buộc,"Đang ở màn Xem chi tiết đơn vị 'Bưu điện Hoàn Kiếm' (cấp Xã); danh mục Cửa hàng mẫu, Tỉnh/Xã đã có dữ liệu","Đang ở màn Xem chi tiết đơn vị 'Bưu điện Hoàn Kiếm' (cấp Xã); danh mục Cửa hàng mẫu, Tỉnh/Xã đã có dữ liệu","1. Click 'Tạo điểm bán'
+ 2. Chọn Phân loại: Pos mini
+ 3. Nhập Tên điểm bán: 'Điểm bán Hàng Bài'
+ 4. Chọn Cửa hàng mẫu, Bưu điện tỉnh/thành phố = 'Bưu điện Hà Nội', Bưu điện xã/phường = 'Bưu điện Hoàn Kiếm', Tỉnh/thành phố, Xã/phường
+ 5. Nhập Địa chỉ chi tiết
+ 6. Click 'Xác nhận'",Cao,Màn thêm điểm bán/hub,"Điểm bán 'Điểm bán Hàng Bài' (Pos mini) được tạo thành công, hiển thị trên cây phân cấp dưới 'Bưu điện Hoàn Kiếm' và trong Danh sách điểm bán/hub",,,,
+FUNC_THUMUC__43,Tạo Điểm bán phân loại 'Pos plus' thuộc Tổng công ty,Đang ở màn Xem chi tiết đơn vị Tổng công ty; danh mục liên quan đã có dữ liệu,Đang ở màn Xem chi tiết đơn vị Tổng công ty; danh mục liên quan đã có dữ liệu,"1. Click 'Tạo điểm bán'
+ 2. Chọn Phân loại: Pos plus
+ 3. Điền đầy đủ các trường bắt buộc: Tên điểm bán, Cửa hàng mẫu, Bưu điện tỉnh/thành phố, Bưu điện xã/phường, Tỉnh/thành phố, Xã/phường
+ 4. Click 'Xác nhận'",TB,Màn thêm điểm bán/hub,Điểm bán phân loại 'Pos plus' được tạo thành công và hiển thị đúng trong Danh sách điểm bán/hub với phân loại đã chọn,,,,
+,Tạo điểm bán phân loại 'Hub' và đánh dấu 'Là cửa hàng mẫu',Đang ở màn Xem chi tiết đơn vị cấp phù hợp (TCT/BĐT/BĐX); danh mục liên quan đã có dữ liệu,Đang ở màn Xem chi tiết đơn vị cấp phù hợp (TCT/BĐT/BĐX); danh mục liên quan đã có dữ liệu,"1. Click 'Tạo điểm bán'
+ 2. Chọn Phân loại: Hub
+ 3. Điền đầy đủ các trường bắt buộc
+ 4. Tick chọn 'Là cửa hàng mẫu'
+ 5. Click 'Xác nhận'",TB,Màn thêm điểm bán/hub,Điểm bán phân loại 'Hub' được tạo thành công với cờ 'Là cửa hàng mẫu' = true; xuất hiện trong danh sách Cửa hàng mẫu để các điểm bán khác có thể chọn,,,,
+FUNC_THUMUC__45,Bỏ trống Tên điểm bán (bắt buộc) khi tạo điểm bán,Đang ở form Thêm Điểm bán/hub,Đang ở form Thêm Điểm bán/hub,"1. Chọn Phân loại bất kỳ
+ 2. Để trống Tên điểm bán
+ 3. Điền các trường bắt buộc khác
+ 4. Click 'Xác nhận'",Cao,Màn thêm điểm bán/hub,Hệ thống hiển thị lỗi yêu cầu nhập Tên điểm bán (bắt buộc); không tạo được điểm bán mới,,,,
+FUNC_THUMUC__46,Bỏ trống Bưu điện tỉnh/thành phố hoặc Bưu điện xã/phường (bắt buộc),"Đang ở form Thêm Điểm bán/hub, đã nhập Tên điểm bán và Cửa hàng mẫu","Đang ở form Thêm Điểm bán/hub, đã nhập Tên điểm bán và Cửa hàng mẫu","1. Nhập Tên điểm bán hợp lệ
+ 2. Để trống Bưu điện tỉnh/thành phố
+ 3. Để trống Bưu điện xã/phường
+ 4. Điền các trường còn lại
+ 5. Click 'Xác nhận'",Cao,Màn thêm điểm bán/hub,Hệ thống hiển thị lỗi yêu cầu chọn Bưu điện tỉnh/thành phố và Bưu điện xã/phường (đều bắt buộc); không tạo được điểm bán,,,,
+FUNC_THUMUC__47,"Bỏ trống Tỉnh/thành phố hoặc Xã/phường (địa chỉ hành chính, bắt buộc)","Đang ở form Thêm Điểm bán/hub, đã điền các trường tổ chức (Bưu điện tỉnh/xã)","Đang ở form Thêm Điểm bán/hub, đã điền các trường tổ chức (Bưu điện tỉnh/xã)","1. Điền đầy đủ Tên điểm bán, Cửa hàng mẫu, Bưu điện tỉnh/xã
+ 2. Để trống Tỉnh/thành phố và Xã/phường (địa chỉ)
+ 3. Click 'Xác nhận'",Cao,Màn thêm điểm bán/hub,Hệ thống hiển thị lỗi yêu cầu chọn Tỉnh/thành phố và Xã/phường (bắt buộc); không tạo được điểm bán mới,,,,
+FUNC_THUMUC__48,Tạo điểm bán không nhập Địa chỉ chi tiết (trường không bắt buộc),"Đang ở form Thêm Điểm bán/hub, đã điền đầy đủ các trường bắt buộc","Đang ở form Thêm Điểm bán/hub, đã điền đầy đủ các trường bắt buộc","1. Điền đầy đủ các trường bắt buộc
+ 2. Để trống Địa chỉ chi tiết
+ 3. Click 'Xác nhận'",Thấp,Màn thêm điểm bán/hub,"Điểm bán được tạo thành công dù không có Địa chỉ chi tiết, vì đây là trường tùy chọn (không bắt buộc)",,,,
+FUNC_THUMUC__49,Xem danh sách Điểm bán/hub từ màn chi tiết đơn vị,Đơn vị 'Bưu điện Hoàn Kiếm' đã có ít nhất 2 điểm bán con,Đơn vị 'Bưu điện Hoàn Kiếm' đã có ít nhất 2 điểm bán con,"1. Mở chi tiết 'Bưu điện Hoàn Kiếm'
+ 2. Click link/button 'Xem danh sách' điểm bán
+ 3. Quan sát màn hình chuyển sang module Quản lý điểm bán/hub",Cao,Màn thêm điểm bán/hub,"Màn hình chuyển sang module Quản lý điểm bán/hub, hiển thị đúng danh sách các điểm bán thuộc 'Bưu điện Hoàn Kiếm' với đầy đủ thông tin cơ bản",,,,
+FUNC_THUMUC__50,Xem chi tiết điểm bán và thực hiện chỉnh sửa thông tin,Danh sách điểm bán/hub có ít nhất 1 điểm bán,Danh sách điểm bán/hub có ít nhất 1 điểm bán,"1. Tại màn Danh sách điểm bán/hub, chọn 'Chi tiết' của 1 điểm bán
+ 2. Quan sát thông tin chi tiết
+ 3. Thực hiện chỉnh sửa Tên điểm bán
+ 4. Lưu thay đổi",TB,Màn thêm điểm bán/hub,"Màn chi tiết hiển thị đầy đủ thông tin điểm bán đã tạo; sau khi chỉnh sửa, Tên điểm bán mới được lưu và cập nhật trong danh sách",,,,
+FUNC_THUMUC__51,Xóa điểm bán/hub từ màn chi tiết,Danh sách điểm bán/hub có ít nhất 1 điểm bán không còn giao dịch liên quan,Danh sách điểm bán/hub có ít nhất 1 điểm bán không còn giao dịch liên quan,"1. Tại màn Chi tiết điểm bán, click 'Xóa'
+ 2. Popup confirm hiển thị
+ 3. Click 'Đồng ý'",TB,Màn thêm điểm bán/hub,Điểm bán bị xóa khỏi Danh sách điểm bán/hub và khỏi cây phân cấp Mô hình tổ chức; các điểm bán khác không bị ảnh hưởng,,,,
+FUNC_THUMUC__52,Tạo điểm bán khi danh mục Cửa hàng mẫu đang rỗng (chưa có cửa hàng mẫu nào),Hệ thống chưa có điểm bán nào được đánh dấu 'Là cửa hàng mẫu',Hệ thống chưa có điểm bán nào được đánh dấu 'Là cửa hàng mẫu',"1. Mở form Thêm Điểm bán/hub
+ 2. Mở dropdown 'Cửa hàng mẫu' (bắt buộc)
+ 3. Quan sát danh sách lựa chọn",TB,Màn thêm điểm bán/hub,"Dropdown 'Cửa hàng mẫu' hiển thị rỗng hoặc thông báo 'Chưa có cửa hàng mẫu'; hệ thống không cho xác nhận tạo điểm bán cho đến khi có ít nhất 1 cửa hàng mẫu, hoặc hiển thị hướng dẫn tạo cửa hàng mẫu trước",,,,
+,Kiểm tra chức năng Gán nhân viên vào đơn vị tổ chức,,,,,,,,,,
+FUNC_THUMUC__53,Mở popup 'Gán nhân viên' từ màn chi tiết đơn vị,Đang ở màn Xem chi tiết đơn vị 'Bưu điện xã Hà Tĩnh' (mã 0011); Admin có quyền gán nhân viên,Đang ở màn Xem chi tiết đơn vị 'Bưu điện xã Hà Tĩnh' (mã 0011); Admin có quyền gán nhân viên,"1. Tại màn chi tiết 'Bưu điện xã Hà Tĩnh', click nút 'Gán nhân viên'
+ 2. Quan sát popup hiển thị",Cao,Màn gán nhân viên,"Popup 'Gán nhân viên' mở ra với danh sách nhân viên đã gán hiện có (nếu có), mỗi dòng gồm: Đơn vị, Nhân viên - SĐT, Vai trò, Trạng thái và nút xóa dòng (x); có nút '+ Thêm nhân viên & vai trò'",,,,
+FUNC_THUMUC__54,Gán mới 1 nhân viên với vai trò 'Giám đốc xã' cho đơn vị cấp Xã,"Popup Gán nhân viên đang mở cho 'Bưu điện xã Hà Tĩnh'; nhân viên 'Đặng Bá Trường' tồn tại trong danh mục nhân viên, hiện chưa giữ vai trò Giám đốc xã tại đơn vị này","Popup Gán nhân viên đang mở cho 'Bưu điện xã Hà Tĩnh'; nhân viên 'Đặng Bá Trường' tồn tại trong danh mục nhân viên, hiện chưa giữ vai trò Giám đốc xã tại đơn vị này","1. Click '+ Thêm nhân viên & vai trò'
+ 2. Dòng mới: chọn Đơn vị = 'Bưu điện xã Hà Tĩnh'
+ 3. Chọn Nhân viên = 'Đặng Bá Trường - 84339940200'
+ 4. Chọn Vai trò = 'Giám đốc xã'
+ 5. Chọn Trạng thái = 'Đang làm'
+ 6. Click 'Xác nhận'",Cao,Màn gán nhân viên,Hệ thống lưu thành công; nhân viên 'Đặng Bá Trường' được gán vai trò 'Giám đốc xã' tại 'Bưu điện xã Hà Tĩnh' với trạng thái 'Đang làm'; popup đóng và danh sách gán hiển thị dòng vừa thêm,,,,
+FUNC_THUMUC__55,Gán cùng 1 nhân viên cho nhiều đơn vị/vai trò khác nhau trong cùng 1 lần lưu,Popup Gán nhân viên đang mở; nhân viên 'Đặng Bá Trường' chưa được gán vai trò nào tại 'Điểm bán Hà Tĩnh',Popup Gán nhân viên đang mở; nhân viên 'Đặng Bá Trường' chưa được gán vai trò nào tại 'Điểm bán Hà Tĩnh',"1. Dòng 1: Đơn vị = 'Bưu điện xã Hà Tĩnh', Nhân viên = 'Đặng Bá Trường', Vai trò = 'Giám đốc xã', Trạng thái = 'Đang làm'
+ 2. Click '+ Thêm nhân viên & vai trò' tạo dòng 2
+ 3. Dòng 2: Đơn vị = 'Điểm bán Hà Tĩnh', Nhân viên = 'Đặng Bá Trường - 84339940200', Vai trò = 'Cửa hàng trưởng', Trạng thái = 'Đang làm'
+ 4. Click 'Xác nhận'",Cao,Màn gán nhân viên,Cả 2 bản ghi được lưu thành công: Đặng Bá Trường giữ đồng thời vai trò 'Giám đốc xã' tại Bưu điện xã Hà Tĩnh và 'Cửa hàng trưởng' tại Điểm bán Hà Tĩnh; cả 2 dòng hiển thị trong danh sách gán,,,,
+FUNC_THUMUC__56,Gán nhân viên có trạng thái 'Đã nghỉ' vẫn hiển thị trong danh sách (đọc lịch sử),"Đơn vị 'Điểm bán Hà Tĩnh' đã có bản ghi gán nhân viên 'Trần Vĩnh Khang - 966922571' với vai trò 'Cửa hàng trưởng', trạng thái 'Đã nghỉ'","Đơn vị 'Điểm bán Hà Tĩnh' đã có bản ghi gán nhân viên 'Trần Vĩnh Khang - 966922571' với vai trò 'Cửa hàng trưởng', trạng thái 'Đã nghỉ'","1. Mở popup 'Gán nhân viên' của 'Bưu điện xã Hà Tĩnh'
+ 2. Quan sát dòng chứa 'Trần Vĩnh Khang'",TB,Màn gán nhân viên,Dòng của 'Trần Vĩnh Khang' vẫn hiển thị trong danh sách với trạng thái 'Đã nghỉ' (badge màu đỏ/cam khác với 'Đang làm' màu xanh); không bị ẩn khỏi lịch sử gán,,,,
+FUNC_THUMUC__57,Đổi trạng thái nhân viên từ 'Đang làm' sang 'Đã nghỉ',Nhân viên 'Vi QLCU CHT - 84989973668' đang có trạng thái 'Đang làm' với vai trò 'Giao dịch viên' tại 'Điểm bán Hà Tĩnh',Nhân viên 'Vi QLCU CHT - 84989973668' đang có trạng thái 'Đang làm' với vai trò 'Giao dịch viên' tại 'Điểm bán Hà Tĩnh',"1. Mở popup 'Gán nhân viên'
+ 2. Tại dòng của 'Vi QLCU CHT', đổi dropdown Trạng thái từ 'Đang làm' sang 'Đã nghỉ'
+ 3. Click 'Xác nhận'",Cao,Màn gán nhân viên,Trạng thái của 'Vi QLCU CHT' tại 'Điểm bán Hà Tĩnh' được cập nhật thành 'Đã nghỉ'; thay đổi được lưu và hiển thị đúng khi mở lại popup,,,,
+FUNC_THUMUC__58,Xóa một dòng gán nhân viên bằng nút (x),Popup Gán nhân viên đang hiển thị ít nhất 4 dòng gán hợp lệ,Popup Gán nhân viên đang hiển thị ít nhất 4 dòng gán hợp lệ,"1. Mở popup 'Gán nhân viên'
+ 2. Click icon 'x' ở dòng số 4 (Vi QLCU CHT - Giao dịch viên)
+ 3. Click 'Xác nhận'",Cao,Màn gán nhân viên,"Dòng số 4 bị xóa khỏi danh sách hiển thị ngay sau khi click (x); sau khi Xác nhận, bản ghi gán nhân viên 'Vi QLCU CHT - Giao dịch viên' tại đơn vị tương ứng bị gỡ bỏ khỏi hệ thống",,,,
+FUNC_THUMUC__59,Click '+ Thêm nhân viên & vai trò' nhiều lần liên tiếp,"Popup Gán nhân viên đang mở, có sẵn 4 dòng","Popup Gán nhân viên đang mở, có sẵn 4 dòng","1. Mở popup 'Gán nhân viên'
+ 2. Click '+ Thêm nhân viên & vai trò' 3 lần liên tiếp",Thấp,Màn gán nhân viên,"Mỗi lần click thêm đúng 1 dòng mới trống (Đơn vị, Nhân viên, Vai trò, Trạng thái đều chưa chọn); tổng cộng có 7 dòng, không bị trùng lặp hoặc lỗi giao diện",,,,
+FUNC_THUMUC__60,Click 'Xác nhận' khi dòng mới chưa chọn Nhân viên (bắt buộc),Popup Gán nhân viên đang mở; vừa thêm 1 dòng mới qua '+ Thêm nhân viên & vai trò' nhưng chưa chọn Nhân viên,Popup Gán nhân viên đang mở; vừa thêm 1 dòng mới qua '+ Thêm nhân viên & vai trò' nhưng chưa chọn Nhân viên,"1. Click '+ Thêm nhân viên & vai trò'
+ 2. Chọn Đơn vị cho dòng mới, để trống Nhân viên
+ 3. Click 'Xác nhận'",Cao,Màn gán nhân viên,Hệ thống hiển thị lỗi yêu cầu chọn Nhân viên cho dòng đang trống (highlight đỏ); không lưu thay đổi cho đến khi điền đầy đủ hoặc xóa dòng đó,,,,
+FUNC_THUMUC__61,Click 'Xác nhận' khi dòng mới chưa chọn Vai trò (bắt buộc),Popup Gán nhân viên đang mở; dòng mới đã chọn Đơn vị và Nhân viên nhưng chưa chọn Vai trò,Popup Gán nhân viên đang mở; dòng mới đã chọn Đơn vị và Nhân viên nhưng chưa chọn Vai trò,"1. Thêm dòng mới, chọn Đơn vị và Nhân viên
+ 2. Để trống Vai trò
+ 3. Click 'Xác nhận'",Cao,Màn gán nhân viên,Hệ thống hiển thị lỗi yêu cầu chọn Vai trò (bắt buộc); không lưu được thay đổi cho dòng này,,,,
+FUNC_THUMUC__62,Gán trùng cùng 1 nhân viên với cùng 1 vai trò tại cùng 1 đơn vị (đã tồn tại),Nhân viên 'Đặng Bá Trường' đã được gán vai trò 'Cửa hàng trưởng' tại 'Điểm bán Hà Tĩnh' (dòng 2 trong popup),Nhân viên 'Đặng Bá Trường' đã được gán vai trò 'Cửa hàng trưởng' tại 'Điểm bán Hà Tĩnh' (dòng 2 trong popup),"1. Mở popup 'Gán nhân viên'
+ 2. Click '+ Thêm nhân viên & vai trò'
+ 3. Chọn Đơn vị = 'Điểm bán Hà Tĩnh', Nhân viên = 'Đặng Bá Trường - 84339940200', Vai trò = 'Cửa hàng trưởng' (trùng với dòng 2)
+ 4. Click 'Xác nhận'",TB,Màn gán nhân viên,Hệ thống hiển thị cảnh báo/lỗi 'Nhân viên đã được gán vai trò này tại đơn vị đã chọn'; không tạo bản ghi trùng lặp,,,,
+FUNC_THUMUC__63,Hủy thao tác Gán nhân viên - dữ liệu không bị thay đổi,Popup Gán nhân viên đang mở; người dùng đã thêm 1 dòng mới và đổi trạng thái 1 dòng có sẵn,Popup Gán nhân viên đang mở; người dùng đã thêm 1 dòng mới và đổi trạng thái 1 dòng có sẵn,"1. Thực hiện thêm 1 dòng mới và đổi trạng thái 1 dòng có sẵn từ 'Đang làm' sang 'Đã nghỉ'
+ 2. Click 'Hủy' (thay vì 'Xác nhận')",TB,Màn gán nhân viên,Popup đóng lại; không có thay đổi nào được lưu - mở lại popup vẫn hiển thị đúng danh sách gán nhân viên ban đầu trước khi thao tác,,,,
+FUNC_THUMUC__64,Tìm kiếm/lọc nhân viên trong dropdown 'Nhân viên' theo tên hoặc SĐT,"Danh mục nhân viên có nhiều bản ghi, trong đó có 'Trần Vĩnh Khang - 966922571'","Danh mục nhân viên có nhiều bản ghi, trong đó có 'Trần Vĩnh Khang - 966922571'","1. Mở popup 'Gán nhân viên', thêm dòng mới
+ 2. Click vào dropdown 'Nhân viên'
+ 3. Gõ 'Khang' hoặc '966922571' vào ô tìm kiếm",TB,Màn gán nhân viên,Dropdown lọc và hiển thị đúng kết quả 'Trần Vĩnh Khang - 966922571'; có thể chọn trực tiếp từ kết quả lọc,,,,
+FUNC_THUMUC__65,Đổi Đơn vị của một dòng gán đã tồn tại sang đơn vị khác,Dòng 1 trong popup đang gán 'Đặng Bá Trường' với vai trò 'Giám đốc xã' tại 'Bưu điện xã Hà Tĩnh'; có đơn vị 'Điểm bán Hà Tĩnh' cùng cây phân cấp,Dòng 1 trong popup đang gán 'Đặng Bá Trường' với vai trò 'Giám đốc xã' tại 'Bưu điện xã Hà Tĩnh'; có đơn vị 'Điểm bán Hà Tĩnh' cùng cây phân cấp,"1. Mở popup 'Gán nhân viên'
+ 2. Tại dòng 1, đổi dropdown Đơn vị từ 'Bưu điện xã Hà Tĩnh' sang 'Điểm bán Hà Tĩnh'
+ 3. Quan sát dropdown Vai trò
+ 4. Click 'Xác nhận'",TB,Màn gán nhân viên,"Khi đổi Đơn vị, dropdown Vai trò reset về trống hoặc chỉ hiển thị các vai trò phù hợp với đơn vị mới (VD: 'Cửa hàng trưởng', 'Giao dịch viên' thay vì 'Giám đốc xã'); sau khi chọn lại Vai trò hợp lệ và Xác nhận, bản ghi được cập nhật đúng đơn vị mới",,,,
+FUNC_THUMUC__66,Số lượng nhân viên gán hiển thị đồng bộ trên cây phân cấp sau khi gán mới,Đơn vị 'Bưu điện xã Hà Tĩnh' hiện đang hiển thị badge số '3' trên cây phân cấp (theo ảnh tham chiếu),Đơn vị 'Bưu điện xã Hà Tĩnh' hiện đang hiển thị badge số '3' trên cây phân cấp (theo ảnh tham chiếu),"1. Mở popup 'Gán nhân viên' của 'Bưu điện xã Hà Tĩnh'
+ 2. Thêm mới 1 nhân viên với vai trò hợp lệ, trạng thái 'Đang làm'
+ 3. Click 'Xác nhận'
+ 4. Quan sát badge số trên cây phân cấp cạnh 'Bưu điện xã Hà Tĩnh'",TB,Màn gán nhân viên,"Sau khi gán thành công, badge số trên cây phân cấp tăng từ '3' lên '4', phản ánh đúng tổng số nhân viên đang được gán (hoặc đang làm) tại đơn vị đó",,,,
+FUNC_THUMUC__67,Gán nhân viên cho đơn vị không có quyền (nhân viên thường thao tác),"Tài khoản đăng nhập là nhân viên thường, không có quyền 'Gán nhân viên' trong phân quyền","Tài khoản đăng nhập là nhân viên thường, không có quyền 'Gán nhân viên' trong phân quyền","1. Đăng nhập với tài khoản không có quyền gán nhân viên
+ 2. Vào màn chi tiết một đơn vị bất kỳ
+ 3. Tìm nút 'Gán nhân viên'",Cao,Màn gán nhân viên,Nút 'Gán nhân viên' không hiển thị hoặc bị disabled; nếu cố truy cập trực tiếp (URL/API) thì hệ thống trả về lỗi không có quyền (403 Forbidden),,,,

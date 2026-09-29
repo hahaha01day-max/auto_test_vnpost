@@ -1,0 +1,18 @@
+{'startTime': '2026-09-25T12:50:54.261Z', 'duration': 330596.511, 'expected': 7, 'skipped': 2, 'unexpected': 3, 'flaky': 0}
+
+ skipped | 24_050_001 — Thẻ Công nợ với cửa hàng hiện đủ chỉ tiêu
+   @ skip : None
+
+ failed | 24_050_006 — Lọc trạng thái Tất cả tương đương không lọc
+   ! TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event "response"
+
+ skipped | 24_050_008 — Phân trang thẻ Công nợ với cửa hàng
+   @ trang đầu : {"q":{"page":"0","size":"20","shopId":"68151"},"page":{"total_pages":1,"has_next":false,"has_previous":false,"current_page":0,"total_elements":2}}
+   @ skip : Chỉ 2 nhân viên — không có trang 2 với size 10.
+
+ failed | 24_060_001 — Ba thẻ số liệu là số cộng dồn không giới hạn thời gian
+   @ thẻ vs DB : {"tong":0,"daTra":0,"conLai":0} · DB {"tong":50000,"daTra":0}
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: 50000 Received: 0
+
+ failed | 24_060_002 — Cột Loại phiếu cho biết nguồn khoản nợ
+   ! Error: Thiếu cột "Loại phiếu". Cột:   expect(received).toBeGreaterThanOrEqual(expected)  Expected: >= 0 Received:    -1

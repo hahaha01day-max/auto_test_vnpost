@@ -1,0 +1,8 @@
+{'startTime': '2026-09-25T14:24:36.766Z', 'duration': 147399.166, 'expected': 9, 'skipped': 0, 'unexpected': 2, 'flaky': 0}
+
+ failed | 29_050_001 — Mỗi dòng trị giá tồn kho tự kiểm chứng được
+   @ cột : SKU · TÊN SẢN PHẨM · ĐVT · SL ON-HAND (THỰC TẾ) · ĐƠN GIÁ VỐN BQGQ (VNĐ) · TỔNG GIÁ TRỊ KHO (VNĐ) · lệch: 1
+   ! Error: SL × Đơn giá vốn BQGQ ≠ Tổng giá trị kho  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 3  - Array [] + Array [ +   "1111111 | Bim bim ngô | gói | -2 | 0 | 6.864.000", + ]
+
+ failed | 29_040_001 — Chốt trị giá tồn kho theo tháng đổi trạng thái đơn vị
+   ! Error: Màn "Báo cáo Trị giá Tồn kho" vai tỉnh KHÔNG có nút "Chốt tồn kho" (PermissionButton report_inventory_closing). Nút đang có: Báo cáo hàng ký gửi · AUTO7_TINH · Chọn phạm vi · ·  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0

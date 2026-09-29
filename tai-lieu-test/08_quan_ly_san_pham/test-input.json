@@ -1,0 +1,1293 @@
+{
+  "cases": {
+    "08_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_020_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần đo dữ liệu sinh ra ở tầng DB (parent_id, convert_to_main_unit) — không đọc được từ UI; cần truy vấn SELECT kèm theo."
+    },
+    "08_020_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cùng lý do 08_020_007."
+    },
+    "08_020_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "required": [
+        "sku"
+      ],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_018": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_019": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_020_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_030_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "required": [
+        "sku"
+      ],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "required": [
+        "sku"
+      ],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Case gốc `dong45` KHÔNG có kỳ vọng rõ: xoá biến thể ĐÃ phát sinh giao dịch thì tồn kho và phiếu cũ đi đâu. Câu hỏi mất dữ liệu — cần user chốt."
+    },
+    "08_030_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần biết hệ thống có bảo vệ đơn vị gốc hay không — chưa trace; và GHI thật."
+    },
+    "08_030_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Case gốc `dong48` KHÔNG có kỳ vọng rõ: xoá đơn vị quy đổi ĐÃ dùng thì số lượng trên phiếu cũ đọc thế nào. Cần user chốt."
+    },
+    "08_030_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần sản phẩm ĐÃ phát sinh giao dịch — có sẵn, nhưng thao tác xoá là GHI; giữ tắt."
+    },
+    "08_030_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần sản phẩm đang nằm trong CTKM — chưa có dữ liệu nền."
+    },
+    "08_030_018": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần sản phẩm là thành phần của combo — dựng được nhưng là GHI."
+    },
+    "08_030_019": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần sản phẩm đang nằm trong bảng giá — chưa có dữ liệu nền."
+    },
+    "08_030_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_021": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_030_022": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [
+        "sku"
+      ]
+    },
+    "08_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [
+        "sku"
+      ]
+    },
+    "08_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [
+        "sku"
+      ]
+    },
+    "08_040_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_040_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần sản phẩm ký gửi để kiểm giá theo khu vực và VAT — chưa có dữ liệu nền."
+    },
+    "08_040_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần phạm vi nhiều đơn vị để kiểm nửa \"phạm vi khác vẫn bán được\"; và GHI cấu hình chặn bán."
+    },
+    "08_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cùng lý do 08_050_001."
+    },
+    "08_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_060_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_060_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_060_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "08_060_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Hai case gốc `dong21` `dong24` TRỐNG cột tình huống trong sheet — không biết chúng kiểm gì. Cần user bổ sung."
+    },
+    "08_060_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Sáu case gốc `dong27` `dong30`–`dong34` TRỐNG cột tình huống. Cần user bổ sung."
+    },
+    "08_060_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 Chưa có đặc tả: xoá danh mục cha khi cây con rỗng thì xoá cả cây hay chặn. Case còn GHI thật.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần danh mục đang nằm trong CTKM — chưa có dữ liệu nền."
+    },
+    "08_060_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_018": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_019": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_060_021": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần fixture Excel danh mục hợp lệ — chưa có."
+    },
+    "08_060_022": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần fixture Excel danh mục toàn dòng lỗi — chưa có."
+    },
+    "08_060_023": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Chưa có đặc tả: file import lẫn dòng hợp lệ và lỗi thì nhận một phần hay từ chối cả file. Case còn GHI thật."
+    },
+    "08_060_024": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Phụ thuộc 08_060_021/022 để đối chiếu cột."
+    },
+    "08_060_025": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_060_026": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "08_070_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_070_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_080_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_080_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "08_090_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 Kỳ vọng chưa chốt: thêm sản phẩm trùng vào combo — chặn, gộp số lượng, hay cho hai dòng trùng. Ba cách cho ba giá combo khác nhau."
+    },
+    "08_090_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cùng câu hỏi 08_090_005 ở mức biến thể."
+    },
+    "08_090_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    },
+    "08_090_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "barcode": "",
+        "tenSanPham": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá sản phẩm, combo, danh mục hoặc cấu hình ngừng kích hoạt. Sản phẩm và danh mục dùng chung toàn hệ thống; sản phẩm đã phát sinh giao dịch không xoá được."
+    }
+  }
+}

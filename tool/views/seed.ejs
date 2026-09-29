@@ -1,0 +1,195 @@
+<h1>Sinh dữ liệu nền</h1>
+<p class="sub">
+  Tạo một <b>bộ dữ liệu mới</b> bằng API — gọi đúng chuỗi request FE gửi, 🚫 không SQL. Mỗi bộ có sổ, tiền tố
+  và tài khoản riêng cho <b>mọi vai trò</b> đang có trong DB, 🚫 không đụng bộ khác.
+  Chi tiết: <span class="mono">tai-lieu-test/00_seed/README.md</span> · <span class="mono">tai-lieu-test/LANE.md</span>.
+</p>
+
+<% if (thongBao) { %><div class="card" style="border-left:4px solid #16a34a"><%= thongBao %></div><% } %>
+
+<% if (profiles.length === 0) { %>
+  <div class="warn">Chưa có hồ sơ môi trường nào — <a href="/">tạo một hồ sơ</a> trước khi seed.</div>
+<% } %>
+
+<div class="flex" role="tablist" style="gap:0;border-bottom:1px solid #d1d5db;margin:16px 0">
+  <button type="button" role="tab" class="seed-tab" data-tab="moi">Tạo bộ mới</button>
+  <button type="button" role="tab" class="seed-tab" data-tab="bo">Các bộ đã tạo (<%= bo.length %>)</button>
+</div>
+<style>
+  .seed-tab { background: none; border: 0; border-bottom: 2px solid transparent; border-radius: 0; padding: 8px 16px; cursor: pointer; font-weight: 600; color: #6b7280; }
+  .seed-tab[aria-selected="true"] { color: #1d4ed8; border-bottom-color: #1d4ed8; }
+</style>
+
+<section data-panel="moi">
+<h2>Bộ dữ liệu mới — <%= moi.lane %> <span class="mono small muted">tiền tố <%= moi.prefix %> · runId <%= moi.runId %></span></h2>
+<form method="post" action="/seed/tao">
+  <input type="hidden" name="lane" value="<%= moi.lane %>">
+  <input type="hidden" name="runId" value="<%= moi.runId %>">
+  <div class="card" style="margin-bottom:12px">
+    <label for="o-tien-to">Tiền tố bộ dữ liệu</label>
+    <input id="o-tien-to" name="prefix" value="<%= moi.prefix.replace(/_$/, '') %>" maxlength="8" pattern="[A-Za-z][A-Za-z0-9]{1,7}_?"
+      data-mac-dinh="<%= moi.prefix %>" style="max-width:220px" class="mono">
+    <p class="small muted" style="margin:4px 0 0">Gắn vào đầu tên/mã/SKU/tài khoản của bộ (dấu <span class="mono">_</span> cuối tự thêm).
+      2–8 chữ/số, bắt đầu bằng chữ; 🚫 trùng tiền tố bộ khác, 🚫 <span class="mono">AUTOTEST</span>. Để trống = <span class="mono"><%= moi.prefix %></span>.</p>
+  </div>
+  <p class="small muted">Ô đã điền sẵn giá trị tự sinh — sửa nếu cần; để trống = dùng giá trị tự sinh. Đổi tiền tố là ô chưa sửa tự đổi theo.</p>
+
+  <p class="small">Tích bước cần tạo — bước phụ thuộc được <b>tự tích theo</b> (vd tích 6 là kéo theo 1–3).
+    Bước chưa tạo có thể bổ sung sau bằng <b>Chạy tiếp bước chưa xong</b>.</p>
+  <% moi.oNhap.forEach((nhom) => { const b = seedBuoc(nhom.so); const can = phuThuoc[nhom.so] || []; %>
+    <div class="card" data-khoi-buoc="<%= nhom.so %>" style="margin-bottom:12px">
+    <h3 style="margin:0 0 8px">
+      <label style="display:inline;font:inherit;margin:0;cursor:pointer">
+        <input type="checkbox" name="buoc" value="<%= nhom.so %>" checked style="width:auto" data-can="<%= can.join(',') %>">
+        <%= nhom.so %>. <%= b ? b.ten : '' %>
+      </label>
+      <% if (can.length) { %><span class="small muted" style="font-weight:normal"> — cần bước <%= can.join(', ') %></span><% } %>
+    </h3>
+    <div class="row" style="flex-wrap:wrap" data-o-buoc="<%= nhom.so %>">
+      <% nhom.o.forEach(([khoa, nhan, kieu]) => { %>
+        <% if (kieu === 'tieuDe') { %>
+          <div style="flex:1 1 100%;margin-top:8px;font-weight:600"><%= nhan %></div>
+        <% } else if (kieu === 'checkbox') { %>
+          <div style="flex:1 1 100%">
+            <input type="hidden" name="gt__<%= khoa %>" value="0">
+            <label style="display:inline-flex;gap:6px;align-items:center;margin:0;cursor:pointer">
+              <input type="checkbox" name="gt__<%= khoa %>" value="1" style="width:auto" data-bat="<%= khoa %>" <%= moi.giaTri[khoa] ? 'checked' : '' %>> <%= nhan %>
+            </label>
+          </div>
+        <% } else { %>
+          <div style="flex:<%= [1, 2, 3, 4, 5, 7, 8].includes(nhom.so) ? '0 0 calc((100% - 36px) / 4);min-width:180px' : '1 1 260px' %>" data-thuoc="<%= khoa.startsWith('sanPham.BT.') ? khoa : '' %>">
+            <label><%= nhan %></label>
+            <input name="gt__<%= khoa %>" value="<%= moi.giaTri[khoa] %>" <%= kieu === 'number' ? 'type=number min=0' : '' %>>
+          </div>
+        <% } %>
+      <% }) %>
+    </div>
+    </div>
+  <% }) %>
+
+  <div class="card flex" style="margin-top:4px">
+    <label style="margin:0">Môi trường chạy (lấy URL):
+      <select name="profileId">
+        <%# Mặc định Server dev — seed chạy trên môi trường dev dùng chung; Local dev chỉ khi tự chọn. %>
+        <% profiles.forEach((p) => { %><option value="<%= p.id %>" <%= p.name === 'Server dev' ? 'selected' : '' %>><%= p.name %> — <%= p.baseUrl %></option><% }) %>
+      </select>
+    </label>
+    <button class="primary right" id="nut-tao" <%= profiles.length ? '' : 'disabled' %>>Tạo dữ liệu</button>
+  </div>
+  <p class="small muted">Bước 1–3 đăng nhập bằng TCT của hồ sơ (không có thì TCT trong <span class="mono">.env</span>);
+    từ bước 4 dùng TCT riêng của bộ. Các bước xếp hàng nối tiếp, mỗi bước một run.</p>
+</form>
+<script>
+(() => {
+  const o = [...document.querySelectorAll('input[name="buoc"]')];
+  const theoSo = Object.fromEntries(o.map((x) => [x.value, x]));
+  const can = (x) => (x.dataset.can ? x.dataset.can.split(',') : []);
+  const capNhat = () => {
+    // Bước bị bước khác đang tích cần tới thì khoá ở trạng thái tích — bỏ nó là bộ thiếu nền.
+    const batBuoc = new Set();
+    const keo = (so) => can(theoSo[so]).forEach((c) => { if (!batBuoc.has(c)) { batBuoc.add(c); keo(c); } });
+    o.filter((x) => x.checked).forEach((x) => keo(x.value));
+    o.forEach((x) => {
+      if (batBuoc.has(x.value)) x.checked = true;
+      x.disabled = batBuoc.has(x.value);
+      x.title = x.disabled ? 'Bước khác đang tích cần bước này' : '';
+      const khung = document.querySelector(`[data-khoi-buoc="${x.value}"]`);
+      if (khung) khung.style.opacity = x.checked ? '1' : '.5';
+    });
+    document.getElementById('nut-tao').disabled = !o.some((x) => x.checked);
+    // SP chính: tắt "Có biến thể"/"Có đơn vị quy đổi" thì mờ ô con.
+    const bat = (k) => document.querySelector(`[data-bat="${k}"]`)?.checked;
+    const mo = (sel, on) => document.querySelectorAll(sel).forEach((e) => { e.style.opacity = on ? '1' : '.4'; });
+    mo('[data-thuoc="sanPham.BT.thuocTinh"],[data-thuoc="sanPham.BT.giaTri"]', bat('sanPham.BT.coBienThe'));
+    mo('[data-thuoc="sanPham.BT.donViGoc"],[data-thuoc="sanPham.BT.quyDoi"]', bat('sanPham.BT.coQuyDoi'));
+  };
+  o.forEach((x) => x.addEventListener('change', capNhat));
+  document.querySelectorAll('[data-bat]').forEach((x) => x.addEventListener('change', capNhat));
+  // Ô bị khoá (disabled) KHÔNG được gửi lên ⇒ bật lại ngay trước khi submit; server cũng tự tính lại.
+  document.getElementById('nut-tao').form.addEventListener('submit', () => o.forEach((x) => { x.disabled = false; }));
+  capNhat();
+
+  // Đổi tiền tố ⇒ thay tiền tố cũ ở đầu các ô (tài khoản dùng chữ thường). Ô đã sửa tay không mang
+  // tiền tố cũ thì giữ nguyên.
+  const tt = document.getElementById('o-tien-to');
+  let cu = tt.dataset.macDinh;
+  const chuanTT = (v) => { const x = v.trim().toUpperCase().replace(/_+$/, ''); return x ? `${x}_` : tt.dataset.macDinh; };
+  tt.addEventListener('input', () => {
+    const moi = chuanTT(tt.value);
+    if (moi === cu) return;
+    document.querySelectorAll('input[name^="gt__"]:not([type=hidden]):not([type=checkbox])').forEach((e) => {
+      if (e.value.startsWith(cu)) e.value = moi + e.value.slice(cu.length);
+      else if (e.value.startsWith(cu.toLowerCase())) e.value = moi.toLowerCase() + e.value.slice(cu.length);
+    });
+    cu = moi;
+  });
+})();
+</script>
+
+</section>
+
+<section data-panel="bo">
+
+<% if (bo.length === 0) { %><p class="small muted">Chưa có bộ nào.</p><% } %>
+<% bo.forEach((x) => { const xong = x.buoc.filter((b) => b.xong).length; const tk = (x.buoc.find((b) => b.so === 3) || {}); %>
+  <div class="card">
+    <div class="flex">
+      <b><a href="/seed/bo/<%= x.lane %>">Bộ dữ liệu <%= x.lane %></a></b>
+      <span class="mono small"><%= x.prefix || '' %></span>
+      <% if (xong === x.buoc.length) { %><span class="badge b-pass">đủ <%= xong %>/<%= x.buoc.length %> bước</span>
+      <% } else { %><span class="badge b-no"><%= xong %>/<%= x.buoc.length %> bước</span><% } %>
+      <span class="small muted right">sổ <span class="mono"><%= x.soFile %></span></span>
+    </div>
+
+    <table class="small" style="margin-top:8px">
+      <% x.buoc.forEach((b) => { %>
+        <tr><td style="white-space:nowrap"><%= b.xong ? '✅' : '☐' %> <%= b.so %>. <%= b.ten %></td>
+          <td class="mono"><%= b.giaTri.join(' · ') || '—' %></td></tr>
+      <% }) %>
+    </table>
+
+    <% if (x.luuVao.length) { %>
+      <p class="small">Đã lưu vào hồ sơ:
+        <% x.luuVao.forEach((l) => { const p = profiles.find((q) => q.id === l.profileId); %>
+          <span class="badge b-pass"><%= p ? p.name : ('#' + l.profileId) %> · <%= l.soVai %> vai · <%= l.soO %> ô · <%= l.luc %></span>
+        <% }) %></p>
+    <% } %>
+
+    <div class="flex" style="margin-top:8px">
+      <form method="post" action="/seed/luu" class="flex" style="margin:0">
+        <input type="hidden" name="lane" value="<%= x.lane %>">
+        <select name="profileId">
+          <% profiles.forEach((p) => { %><option value="<%= p.id %>" <%= p.id === (x.profileId || 0) || (!x.profileId && p.name === 'Server dev') ? 'selected' : '' %>><%= p.name %></option><% }) %>
+        </select>
+        <button class="primary" style="white-space:nowrap;flex:0 0 auto;width:auto" <%= tk.xong ? '' : 'disabled title="Chưa tạo xong tài khoản (bước 3)"' %>>Lưu vào hồ sơ môi trường</button>
+      </form>
+      <% if (xong < x.buoc.length) { %>
+        <form method="post" action="/seed/chay-tiep" class="flex right" style="margin:0">
+          <input type="hidden" name="lane" value="<%= x.lane %>">
+          <% const mt = profiles.find((p) => p.id === x.profileId); %>
+          <% if (mt) { %><span class="small muted">trên <b><%= mt.name %></b></span>
+          <% } else { %><select name="profileId" title="Môi trường bộ này đã tạo">
+            <% profiles.forEach((p) => { %><option value="<%= p.id %>" <%= p.name === 'Server dev' ? 'selected' : '' %>><%= p.name %></option><% }) %>
+          </select><% } %>
+          <button style="white-space:nowrap;flex:0 0 auto;width:auto">Chạy tiếp bước chưa xong</button>
+        </form>
+      <% } %>
+    </div>
+    <p class="small muted">Lưu = ghi tài khoản của mọi vai trò trong bộ vào các vai tương ứng của hồ sơ
+      (mật khẩu mặc định) và rót tên/mã/SKU vào ô input bắt buộc của case (ô người dùng đã tự khai thì giữ nguyên).</p>
+  </div>
+<% }) %>
+</section>
+
+<script>
+(() => {
+  // Tab nhớ theo `?tab=` — sau "Lưu vào hồ sơ" server chuyển về đúng tab "Các bộ đã tạo".
+  const hien = (ten) => {
+    document.querySelectorAll('.seed-tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === ten)));
+    document.querySelectorAll('[data-panel]').forEach((p) => { p.hidden = p.dataset.panel !== ten; });
+    const u = new URL(location.href); u.searchParams.set('tab', ten); history.replaceState(null, '', u);
+  };
+  document.querySelectorAll('.seed-tab').forEach((t) => t.addEventListener('click', () => hien(t.dataset.tab)));
+  hien(new URL(location.href).searchParams.get('tab') === 'bo' ? 'bo' : 'moi');
+})();
+</script>

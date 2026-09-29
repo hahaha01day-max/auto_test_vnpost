@@ -1,0 +1,430 @@
+{
+  "_note": "Phân hệ 19 Quản lý khách hàng. 🔴 Xoá khách KHÔNG hoàn tác; thu công nợ TẠO PHIẾU THU THẬT trong sổ quỹ.",
+  "cases": {
+    "19_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "19_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "19_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "19_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "19_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "19_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "19_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "19_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "19_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "19_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "19_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "19_050_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "19_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_070_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_070_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_080_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_080_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "19_090_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "19_100_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_note": "28/09: đổi về vai shop sau khi user gán IMPORT_EXCEL_CUSTOMER cho CHT."
+    },
+    "19_100_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {},
+      "_note": "28/09: đổi về vai shop sau khi user gán IMPORT_EXCEL_CUSTOMER cho CHT."
+    },
+    "19_110_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "19_110_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "19_110_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "19_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "19_020_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_020_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_020_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_020_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_020_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_020_009": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_020_010": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_020_011": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_020_012": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_010_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_010_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_010_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_010_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_010_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_060_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_090_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_090_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_090_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "19_090_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "data": {
+        "soTien": [
+          0,
+          -1000
+        ]
+      }
+    },
+    "19_090_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "19_030_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_030_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_030_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_030_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_050_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "19_050_007": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "19_050_008": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_130_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "_vai": "tct — quyền customer-group/create chỉ CORP_ADMIN/CORP_FINANCE"
+    },
+    "19_130_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_130_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_130_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_130_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_130_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_130_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_130_008": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "19_120_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_120_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "19_120_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_120_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "   "
+      }
+    },
+    "19_120_005": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    },
+    "19_120_006": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "19_120_007": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    }
+  }
+}

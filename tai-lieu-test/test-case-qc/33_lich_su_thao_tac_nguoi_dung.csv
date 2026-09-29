@@ -1,0 +1,65 @@
+﻿,Chức năng,,LỊCH SỬ THAO TÁC NGƯỜI DÙNG,,,,,,,,
+,Mã Testcase,,33_lich_su_thao_tac_nguoi_dung,,,,,,,,
+,Tổng các tình huống kiểm thử,,24,,,,,,,,
+,Chưa thực hiện,,24,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,LỊCH SỬ THAO TÁC NGƯỜI DÙNG,,,,,,,,,,
+,010 — Mở màn hình lịch sử và đọc hiểu bảng kết quả,,,,,,,,,,
+33_010_001,Màn Lịch sử người dùng mở được và xếp mới nhất trước,Vai: province. Hệ thống đã có thao tác ghi dữ liệu,"1. Mở /chain/user-action-history;
+2. Đọc cột thời gian từ trên xuống",,"Danh sách các thao tác ĐÃ THAY ĐỔI DỮ LIỆU, xếp mới nhất trước",,,,,,
+,020 — Lọc để tìm đúng thao tác cần kiểm tra,,,,,,,,,,
+33_020_001,Đổi bộ lọc luôn quay về trang đầu,Vai: province. Danh sách có nhiều hơn 1 trang,"1. Sang trang 2;
+2. Đổi một điều kiện lọc",,Danh sách quay về TRANG ĐẦU sau khi đổi bộ lọc (tránh sót dòng do còn đứng ở trang cũ),,,,,,
+33_020_002,Nhiều điều kiện lọc cùng lúc là AND,Vai: province. Có thao tác thoả điều kiện A nhưng không thoả B,1. Đặt đồng thời điều kiện A và B,,Bảng chỉ còn thao tác thoả TOÀN BỘ điều kiện,,,,,,
+,030 — Xem chi tiết một thao tác và đối chiếu thuộc tính đã đổi,,,,,,,,,,
+33_030_001,Chi tiết thao tác hiện thuộc tính đã đổi kèm trước và sau,Vai: province. Có thao tác sửa dữ liệu,1. Mở chi tiết một thao tác,,Hiện chính xác những thuộc tính nào đã đổi và nội dung TRƯỚC - SAU của từng thuộc tính,,,,,,
+,040 — Đối chiếu toàn văn dữ liệu trước và sau thay đổi,,,,,,,,,,
+33_040_001,Đối chiếu toàn văn dữ liệu trước và sau,Vai: province. Có thao tác sửa dữ liệu,"1. Mở chi tiết;
+2. Mở phần đối chiếu toàn văn",,"Hiện trọn vẹn dữ liệu của đối tượng ở HAI thời điểm, đủ để tự đối chiếu phần mà bảng so sánh gom lại thành một dòng mô tả",,,,,,
+,050 — Theo dõi nhanh nhật ký thao tác ở Trang chủ,,,,,,,,,,
+33_050_001,Trang chủ hiện mười thao tác mới nhất,Vai: province. Hệ thống có ít nhất 10 thao tác,1. Mở /,,Khối nhật ký thao tác ở Trang chủ hiện đúng 10 thao tác mới nhất,,,,,,
+33_050_002,Mở chi tiết ngay từ Trang chủ,Vai: province. Trang chủ có nhật ký thao tác,1. Bấm một dòng trong khối nhật ký ở Trang chủ,,Mở được chi tiết dòng đó mà KHÔNG cần qua màn hình tra cứu,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+33_PQ_001,Vai điểm bán không vào được lịch sử thao tác,Vai: gdv,1. Mở /chain/user-action-history,,"Bị chặn — cả 5 task chỉ khai TONG_CONG_TY, BUU_DIEN_TINH, BUU_DIEN_XA",,,,,,
+,010 — Mở màn hình lịch sử và đọc hiểu bảng kết quả,,,,,,,,,,
+33_010_002,Bảng lịch sử hiển thị đủ chín cột,Vai: tct,"1. Mở /chain/user-action-history;
+2. Đọc tiêu đề các cột",,"Có đủ: ""STT"", ""Nhóm nghiệp vụ"", ""Hành động"", ""Người thao tác"", ""Vai trò"", ""Đơn vị"", ""IP"", ""Thời gian"", và cột hành động cuối chứa biểu tượng Xem chi tiết",,,,,,
+33_010_003,Cột hành động ghim bên phải khi cuộn ngang,Vai: tct. Bảng rộng hơn khung nhìn,"1. Mở màn;
+2. Cuộn ngang bảng sang phải",,"Cột hành động cuối vẫn hiện, ghim bên phải, không bị cuộn mất",,,,,,
+33_010_004,Hiển thị dấu ba gạch khi không tra được tên,Vai: tct. Có bản ghi mà người thao tác đã bị xoá hoặc đổi,"1. Tìm bản ghi không tra được tên người thao tác;
+2. Đọc cột Người thao tác, Vai trò, Đơn vị",,"Ô không tra được hiện dấu ""---""; mã nhân viên vẫn được giữ trong dữ liệu",,,,,,
+33_010_005,Thời gian hiển thị theo giờ Việt Nam,Vai: tct,"1. Mở màn;
+2. Thực hiện một thao tác được ghi log ở thời điểm đã biết;
+3. Đọc cột Thời gian của bản ghi mới nhất",,"Thời gian hiển thị theo giờ Việt Nam (+7), khớp thời điểm thao tác thật",,,,,,
+,020 — Lọc để tìm đúng thao tác cần kiểm tra,,,,,,,,,,
+33_020_003,Ô lọc Nhóm nghiệp vụ có đủ 15 giá trị,Vai: tct,"1. Mở màn;
+2. Mở danh sách ô lọc ""Nhóm nghiệp vụ""",,Danh sách có đúng 15 nhóm nghiệp vụ theo,,,,,,
+33_020_004,Ô lọc Hành động có đủ 9 giá trị,Vai: tct,"1. Mở màn;
+2. Mở danh sách ô lọc ""Hành động""",,Danh sách có đúng 9 hành động theo,,,,,,
+33_020_005,Tìm người thao tác khớp một phần không phân biệt hoa thường,Vai: tct. Biết tên một người có bản ghi,"1. Gõ một phần tên người thao tác bằng chữ thường;
+2. Ngừng gõ;
+3. Gõ lại bằng chữ hoa",,"Cả hai lần đều lọc ra đúng người đó; hệ thống tự lọc sau khi ngừng gõ, không cần bấm nút",,,,,,
+33_020_006,Nút xoá nhanh ô tìm người thao tác,Vai: tct,"1. Gõ từ khoá vào ô tìm người thao tác;
+2. Bấm dấu nhân để xoá nhanh",,Ô về trống và danh sách trở lại như chưa lọc,,,,,,
+33_020_007,Bỏ chọn bộ lọc thì không lọc theo tiêu chí đó,Vai: tct,"1. Chọn một Nhóm nghiệp vụ;
+2. Bỏ chọn lại",,Danh sách trở lại không lọc theo nhóm nghiệp vụ,,,,,,
+33_020_008,Tìm người thao tác bằng ký tự đặc biệt,Vai: tct,1. Gõ chuỗi chứa % và _ vào ô tìm người thao tác,,Không lỗi 500; không trả về toàn bộ bản ghi.,,,,,,
+33_020_009,Tìm người thao tác không dấu,Vai: tct. Có người thao tác tên chứa dấu tiếng Việt,1. Gõ tên người đó KHÔNG dấu,,Chưa chốt kỳ vọng — ghi nhận thực tế: tìm bằng từ khoá KHÔNG DẤU có trả về người dùng tên viết có dấu hay không.,,,,,,
+33_020_010,Lọc khoảng ngày có Đến ngày trước Từ ngày,Vai: tct,1. Chọn Từ ngày sau Đến ngày,,Bị chặn ở bộ chọn ngày hoặc trả rỗng.,,,,,,
+,"060 — Danh sách rỗng, phân trang và sắp xếp",,,,,,,,,,
+33_060_001,Danh sách lịch sử rỗng khi kỳ không có thao tác,Vai: tct,1. Lọc một khoảng ngày chắc chắn không có thao tác nào,,"Hiện trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+33_060_002,Phân trang danh sách lịch sử,Vai: tct. Kỳ lọc có nhiều hơn một trang,"1. Sang trang 2;
+2. Đổi số dòng mỗi trang;
+3. Về trang cuối",,Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi. Cột STT đánh số theo TRANG HIỆN TẠI,,,,,,
+33_060_003,Sắp xếp mặc định mới nhất lên đầu,Vai: tct,"1. Mở màn;
+2. Đọc cột Thời gian của các dòng đầu",,Dòng đầu có thời gian mới nhất; thứ tự giảm dần theo thời gian,,,,,,
+,070 — Phạm vi truy cập theo vai,,,,,,,,,,
+33_070_001,Vai bưu điện xã không vào được lịch sử thao tác,Vai: ward,"1. Đăng nhập vai ward;
+2. Mở /chain/user-action-history",,Bị chặn hoặc không thấy mục menu. Route đòi quyền shop_private_permission hoặc manage_price_policy,,,,,,

@@ -1,0 +1,336 @@
+﻿,Chức năng,,SẢN PHẨM VÀ BẢNG GIÁ NHÀ CUNG CẤP,,,,,,,,
+,Mã Testcase,,12_2_san_pham_va_bang_gia_ncc,,,,,,,,
+,Tổng các tình huống kiểm thử,,50,,,,,,,,
+,Chưa thực hiện,,50,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,SẢN PHẨM VÀ BẢNG GIÁ NHÀ CUNG CẤP,,,,,,,,,,
+,010 — Tra cứu mặt hàng của nhà cung cấp,,,,,,,,,,
+12_2_010_001,Mở Danh sách sản phẩm theo NCC khi có dữ liệu,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình: - Title ""Danh sách sản phẩm theo nhà cung cấp"" - Hiển thị 3 nút ""Bảng giá"", ""Thêm mới/Cập nhật SP"" và ""X(Đóng)"" - Bảng sản phẩm với các cột: Tên sản phẩm, SKU, Đơn vị tính, Nguồn cung cấp, Giá nhập, Mặc định, Cập nhật lần cuối, Hành động - Cột hành động: Lịch sử giá, xoá - Button Icon: làm mới, cài đặt hiển thị các cột, phóng to/ thu nhỏ Hiển thị tất cả sản phẩm",,,,,,
+12_2_010_002,Kiểm tra xem lịch sử giá của sản phẩm,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn lịch sử giá của sản phẩm đầu tiên",,Hiển thị danh sách giá đã áp dụng của sản phẩm,,,,,,
+12_2_010_003,Kiểm tra ghi nhận lịch sử giá của sản phẩm,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Bảng giá mới của nhà cung cấp có hiệu lực
+5. Chọn sản phẩm
+6. Chọn lịch sử giá của sản phẩm đầu tiên",,Ghi nhận giá thay đổi của sản phẩm,,,,,,
+12_2_010_004,Kiểm tra xác nhận xoá sản phẩm,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn lịch sử giá của sản phẩm đầu tiên
+6. Chọn xoá sản phẩm có tên là Bánh bao đầu tiên
+7. Chọn xác nhận",,Xoá sản phẩm khỏi danh sách sản phẩm,,,,,,
+12_2_010_005,Kiểm tra huỷ xoá sản phẩm,"Vai `tct` đăng nhập, đang ở màn Danh sách sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn lịch sử giá của sản phẩm đầu tiên
+6. Chọn xoá sản phẩm có tên là Bánh bao đầu tiên
+7. Chọn huỷ",,Không xoá sản phẩm,,,,,,
+,020 — Gán thêm mặt hàng cho nhà cung cấp,,,,,,,,,,
+12_2_020_001,Kiểm tra hiển thị màn hình,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình: - Title ""Thêm / Cập nhật sản phẩm NCC"" - Hiển thị 3 nút ""Bảng giá"", ""Thêm mới/Cập nhật SP"" và ""X(Đóng)"" - Bảng sản phẩm với các cột: Tên sản phẩm, SKU, Đơn vị tính, Nguồn cung cấp, Giá nhập, Mặc định, Cập nhật lần cuối, Hành động - Cột hành động: Lịch sử giá, xoá - Button Icon: làm mới, cài đặt hiển thị các cột, phóng to/ thu nhỏ",,,,,,
+12_2_020_002,Kiểm tra Thêm / Cập nhật sản phẩm NCC,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin - Bánh bao 729211g
+7. Xác nhận",,Hiển thị 'Cập nhật sản phẩm thành công',,,,,,
+12_2_020_003,Kiểm tra Tìm kiếm sản phẩm bằng tên sản phẩm,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin - Bánh bao 729211g",,Hiển thị sản phẩm có tên trùng với dữ liệu nhập,,,,,,
+12_2_020_004,Kiểm tra Tìm kiếm sản phẩm bằng mã SKU,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin - Chọn Tên SP, chuyển sang SKU - Nhập vào text là SKU729211_S",,Hiển thị sản phẩm có mã SKU trùng với dữ liệu nhập,,,,,,
+12_2_020_005,Kiểm tra Tìm kiếm sản phẩm bằng mã Barcode,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập thông tin - Chọn Tên SP, chuyển sang Barcode - Nhập vào text là BC729211_S",,Hiển thị sản phẩm có mã Barcode trùng với dữ liệu nhập,,,,,,
+12_2_020_006,Kiểm tra ghi nhận thông tin từ file excel tải lên,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel
+7. Tải file excel",,- Ghi nhận thông tin Cột A là mã SKU - Cột B là Giá nhập - Cột C là trạng thái chọn Mặc định - Cột trạng thái hiển thị có tìm thấy sản phẩm trong danh sách không,,,,,,
+12_2_020_007,Kiểm tra thêm sản phầm từ file excel,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC, chọn chỉ khai báo sản phẩm
+6. Nhập từ excel
+7. Tải file excel
+8. Chọn xác nhận",,- Thêm các sản phấm Trạng thái 'Tìm thấy' vào danh sách sản phẩm,,,,,,
+12_2_020_008,Kiểm tra tải về file excel mẫu,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Tải file excel",,"- File excel mẫu bao gồm các cột: SKU, Giá nhập, Mặc định",,,,,,
+12_2_020_009,Upload file chứa SKU đã mapping,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có sản phẩm chứa SKU đã mapping",,"SKU hiển thị tại tab ""SKU đã mapping""",,,,,,
+12_2_020_010,Upload file chứa SKU chưa mapping,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có sản phẩm chứa SKU chưa mapping",,"SKU hiển thị tại tab ""SKU chưa mapping""",,,,,,
+12_2_020_011,Upload file chứa SKU chưa khai báo,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có sản phẩm chứa SKU chưa khai báo",,"SKU hiển thị tại tab ""SKU chưa khai báo""",,,,,,
+12_2_020_012,Xác nhận import khi có SKU hợp lệ,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file
+7. Click ""Xác nhận""",,Tạo thành công sản phẩm NCC,,,,,,
+12_2_020_013,Xác nhận khi không có dữ liệu hợp lệ,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file
+7. Click ""Xác nhận""",,Không cho phép import,,,,,,
+12_2_020_014,Upload file chứa SKU có mã trùng nhau,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Upload file có mã SKU trùng nhau
+7. Click ""Xác nhận""",,Hiển thị cảnh báo,,,,,,
+12_2_020_015,Kiểm tra xoá sản phẩm trong danh sách,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Xoá sản phẩm có mã SKU729211_S
+6. Chọn Đồng ý",,- Hiển thị thông báo thành công,,,,,,
+12_2_020_016,Kiểm tra ghi nhận thông tin từ file excel tải lên,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Tải file excel",,- Ghi nhận thông tin Cột A là mã SKU - Cột B là Giá nhập - Cột C là trạng thái chọn Mặc định - Cột trạng thái hiển thị có tìm thấy sản phẩm trong danh sách không,,,,,,
+12_2_020_017,Mapping đúng SKU chưa liên kết NCC,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm chưa liên kết với với NCC",,"Hiển thị tại tab ""SKU chưa mapping""",,,,,,
+12_2_020_018,Mapping đúng SKU đã liên kết NCC,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm đã liên kêt với với NCC",,"Hiển thị tại tab ""SKU đã mapping""",,,,,,
+12_2_020_019,Kiểm tra giá nhập bằng 0,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm giá nhập = 0",,Cảnh báo,,,,,,
+12_2_020_020,Kiểm tra giá nhập âm,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm giá nhập < 0",,Báo lỗi,,,,,,
+12_2_020_021,Kiểm tra VAT = 0%,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm VAT = 0",,Ghi nhận thành công,,,,,,
+12_2_020_022,Kiểm tra VAT = 100%,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm VAT = 100",,Xử lý theo rule hệ thống,,,,,,
+12_2_020_023,Kiểm tra VAT âm,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm VAT < 0",,Báo lỗi,,,,,,
+12_2_020_024,Kiểm tra giá nhập có số lẻ,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có giá nhập là số lẻ",,Hiển thị đúng định dạng,,,,,,
+12_2_020_025,"Kiểm tra loại giá ""Giá gốc""","Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có giá nhập là giá gốc",,Hiển thị đúng nhãn,,,,,,
+12_2_020_026,Kiểm tra SL tối thiểu = 0,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có số lượng tối thiểu = 0",,Xử lý theo rule,,,,,,
+12_2_020_027,Kiểm tra SL tối thiểu âm,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có số lượng tối thiểu < 0",,Báo lỗi,,,,,,
+12_2_020_028,Kiểm tra SL tặng âm,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm có số lượng tặng < 0",,Báo lỗi,,,,,,
+12_2_020_029,Xác nhận import thành công,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Thêm/Cập nhật sản phẩm NCC
+6. Nhập từ excel, chọn khai báo sản phẩm và giá
+7. Upload file với sản phẩm hợp lệ",,Tạo sản phẩm NCC và bảng giá,,,,,,
+12_2_020_030,Xác nhận khi tồn tại dòng lỗi,"Vai `tct` đăng nhập, đang ở màn Thêm / Cập nhật sản phẩm theo nhà cung cấp","Click ""Xác nhận""",,Không cho import,,,,,,
+,040 — Tra cứu bảng giá của nhà cung cấp,,,,,,,,,,
+12_2_040_001,Mở Bảng giá NCC khi có dữ liệu,"Đã đăng nhập, có quyền xem danh sách bảng giá nhà cung cấp; nhà cung cấp đã có ít nhất một bảng giá","1. Mở màn danh sách mặt hàng của nhà cung cấp
+2. Bấm Bảng giá ở góc trên bên phải
+3. Quan sát bảng danh sách
+4. Vai Tổng công ty: chọn một tỉnh ở ô Lọc theo bưu điện tỉnh",,"Màn Bảng giá nhà cung cấp hiện danh sách, mỗi dòng cho biết mã, tên bảng giá, cấp tạo, trạng thái, thời hạn hiệu lực, số mặt hàng, phạm vi áp dụng và ngày tạo. Vai Tổng công ty lọc được theo bưu điện tỉnh. Bấm Xem ở cột Hành động mở chi tiết bảng giá kèm danh sách mặt hàng và đơn giá.",,,,,,
+12_2_040_002,Kiểm tra hiển thị màn hình,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình: - Title ""Bảng giá nhà cung cấp"" - Dropdown list hiển thị danh sách bưu điện tỉnh - Button tạo bảng giá - Button Icon: Làm mới, cài đặt, phóng to, thu nhỏ - Button Xem, Huỷ, Sửa, Ban hành -Bảng giá tổng công ty hiển thị đầy đủ các cột: Mã, Tên bảng giá, Trạng thái, Hiệu lực từ, Đến, Số SKU,Ngày tạo, Hành động",,,,,,
+12_2_040_003,Kiểm tra hiển thị màn hình Tạo bảng giá mới,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Tạo bảng giá - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình: - Title ""Tạo bảng giá mới"" - Ô text nhập: Tên bảng giá, Thời gian hiệu lực, Ghi chú - Danh sách sản phẩm hiển thị đầy đủ các cột: SKU, Loại giá, Giá nhập trước VAT, VAT (%),Giá nhập sau VAT, SL tối thiểu, SL tặng, Mô tả - Button: Tải file mẫu, Import Excel, Thêm dòng, Huỷ, Lưu nháp, Upload chứng từ",,,,,,
+12_2_040_004,Kiểm tra danh sách bảng giá tổng công ty,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá",,"Ở cột hành động: - Phiếu trạng thái nháp hiển thị button Xem, Sửa, Ban hành - Phiếu trạng thái Đã ban hành hiển thị button Xem, Huỷ - Phiếu trạng thái Hết hạn hiển thị button Xem",,,,,,
+12_2_040_005,Kiểm tra Tạo bảng giá nháp,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Tạo bảng giá - Nhập tên bảng giá là Bảng giá nháp + 1 mã random - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000
+7. Chọn Lưu nháp",,Hiển thị phiếu trạng thái là Nháp,,,,,,
+12_2_040_006,Kiểm tra Ban hành bảng giá nháp,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Chọn bảng giá vừa thêm ở case NCC_45
+7. Chọn button ban hành",,Hiển thị phiếu trạng thái là Đã ban hành,,,,,,
+12_2_040_007,Kiểm tra Import Excel sản phẩm với phiếu bảng giá nháp,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Import Excel sản phẩm
+7. Nhập tên bảng giá là Bảng giá nháp + số random
+8. Nhập Thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc
+9. Chọn lưu nháp",,"Hiển thị danh sách sản phẩm khi thêm file excel, hiển thị thông báo thành công khi lưu nháp",,,,,,
+12_2_040_008,Kiểm tra Import Excel sản phẩm khi tạo bảng giá,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Chọn bảng giá vừa thêm ở case NCC_47
+7. Chọn ban hành",,"Hiển thị thành công, xem chi tiết bảng giá hiển thị đúng sản phẩm",,,,,,
+12_2_040_009,Kiểm tra thêm sản phẩm loại giá gốc,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Tạo bảng giá - Nhập tên bảng giá là Bảng giá nháp + 1 mã random - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000
+7. Chọn Lưu nháp",,"- Không hiển thị ô nhập SL tối thiếu, SL tặng",,,,,,
+12_2_040_010,Kiểm tra thêm sản phẩm loại giá khuyến mại,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Tạo bảng giá - Nhập tên bảng giá là Bảng giá nháp + 1 mã random - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000, chọn loại giá là khuyến mại
+7. Chọn Lưu nháp",,- Không hiển thị ô nhập SL tặng,,,,,,
+12_2_040_011,Kiểm tra thêm sản phẩm loại giá tặng hàng,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Tạo bảng giá - Nhập tên bảng giá là Bảng giá nháp + 1 mã random - Chọn thời gian bắt đầu là ngày hôm nay, bỏ trống thời gian kết thúc - Nhập mã SKU: SKU729211_S, Nhập VAT là 10, Nhập giá là 88000 - Nhập mã SKU: SKU729211_S, chọn loại giá là tặng hàng, nhấp số lượng tối thiểu là 30, số lượng tặng là 1
+7. Chọn Lưu nháp",,"- Hiển thị ô nhập SL tối thiếu, SL tặng",,,,,,
+12_2_040_012,Kiểm tra Huỷ bảng giá,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Chọn bảng giá của case NCC_51,chọn huỷ
+7. Chọn đồng ý",,- Trạng thái bảng giá cập nhật là Đã huỷ - Hiển thị thông báo 'Hủy bảng giá thành công',,,,,,
+12_2_040_013,Kiểm tra Xem chi tiết bảng giá,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Chọn bảng giá của case NCC_51
+7. Chọn Xem",,"Hiển thị: Mã, Tên, NCC, Hiệu lực từ, Đến, Ngày ban hành, Ngày tạo, Danh sách sản phẩm (Số lượng sản phẩm)",,,,,,
+12_2_040_014,Kiểm tra Lọc bảng giá,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn nhà cung cấp
+4. Chọn sản phẩm
+5. Chọn Bảng giá
+6. Chọn Bưu điện Hà Tĩnh",,Hiển thị các bảng giá tương ứng với bưu điện tỉnh,,,,,,
+12_2_040_015,Kiểm tra hết hạn bảng giá,"Vai `tct` đăng nhập, đang ở màn Bảng giá nhà cung cấp","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn Đặt hàng NCC
+4. Chọn Tạo đơn đặt hàng
+5. Chọn Đặt hàng sản phẩm với bảng giá hết hạn",,Hiển thị chưa có giả của sản phẩm,,,,,,

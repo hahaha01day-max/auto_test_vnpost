@@ -1,0 +1,8 @@
+{'startTime': '2026-09-25T13:11:57.138Z', 'duration': 83221.646, 'expected': 2, 'skipped': 0, 'unexpected': 2, 'flaky': 0}
+
+ failed | 24_040_003 — Ghi nhận tiền khách trả và cập nhật trạng thái phiếu
+   ! Error: Ô "Nhân viên tạo phiếu" (bắt buộc) không có lựa chọn nào — không lưu được phiếu thu  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 24_PQ_002 — Cán bộ Bưu điện xã xem công nợ nhân viên
+   @ đo : {"chonDiemBan":{"ten":null,"lyDo":"chonDiemBan: locator.waitFor: Timeout 20000ms exceeded."},"status":200,"so":0}
+   ! Error: Vai xã bị chặn (quyền EMPLOYEE_DEBT không gán WARD_MANAGER): undefined  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "undefined"

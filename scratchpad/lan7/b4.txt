@@ -1,0 +1,17 @@
+{'startTime': '2026-09-25T12:56:45.357Z', 'duration': 352563.419, 'expected': 9, 'skipped': 1, 'unexpected': 3, 'flaky': 0}
+
+ failed | 24_070_001 — Hệ thống tự chia tiền ưu tiên khoản ghi nợ sớm nhất
+   @ phân bổ : [{"dong":"20.000 20.000 Chưa thanh toán 25/09/2026 19:16","tra":20000},{"dong":"30.000 30.000 Chưa thanh toán 25/09/2026 19:16","tra":30000}]
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: 31000 Received: 50000
+
+ failed | 24_070_004 — Nhập số tiền bằng 0 hoặc số âm khi nộp tiền
+   @ ô sau khi gõ -100000 : -100000
+   ! Error: Ô số nhận giá trị âm  expect(received).not.toMatch(expected)  Expected pattern: not /^-/ Received string:      "-100000"
+
+ failed | 24_070_002 — Ghi nhận nhân viên nộp tiền trả nợ
+   @ payload : {"shopId":68151,"sysUserId":123463460,"totalAmount":50000,"paymentMethod":"CASH","note":"AUTO test 24_070_002 — nhân viên nộp tiền","items":[{"debtHistoryId":35,"amount":20000},{"debtHistoryId":33,"amount":30000}]}
+   @ DB : [{"id":33,"amount":30000,"paid":0,"st":"NOT_PAY"},{"id":35,"amount":20000,"paid":0,"st":"NOT_PAY"}] → [{"id":33,"amount":30000,"paid":30000,"st":"PAY_COMPLETED"},{"id":35,"amount":20000,"paid":20000,"st":"PAY_COMPLETED"}]
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: "PAY_PARTIAL" Received: "PAY_COMPLETED"
+
+ skipped | 24_070_008 — Số liệu liên quan cập nhật sau khi nộp tiền
+   @ skip : GDV đã trả hết nợ — chạy lại tiền đề 24.

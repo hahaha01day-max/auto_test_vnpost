@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "tests/logo-hoa-don.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/settings"
+      ],
+      "fe": [
+        "src/features/shop/pages/settingPage/settingContents/PrinterSetting.jsx"
+      ]
+    },
+    "tests/doi-tra-validate.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/settings"
+      ],
+      "fe": [],
+      "ghiBu": true,
+      "ghiChu": "đo DOM bằng probe"
+    },
+    "tests/cau-hinh-don-hang.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/settings"
+      ],
+      "fe": [
+        "src/features/chain/services/chainApi.js",
+        "src/features/chain/utils/coreChainConfig.js",
+        "src/features/shop/pages/settingPage/settingContents/paymentSetting/AllowedPaymentMethodsSetting.jsx"
+      ]
+    }
+  }
+}

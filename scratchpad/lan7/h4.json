@@ -1,0 +1,1205 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 122,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:45.421Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 90,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:45.623Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_manager (Quản lý Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:45.717Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-08f00-ager-Quản-lý-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f8f6b4aac219a09d704d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai ward (Bưu điện Xã)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:45.817Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-ward-Bưu-điện-Xã--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2d044c7a88341d00c4f3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:45.917Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop (Nhân viên điểm bán seed (AUTO_SHOP))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.016Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-edaa4-ên-điểm-bán-seed-AUTO-SHOP--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-21ce4f527c1091b58dc7",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop2 (Nhân viên điểm bán seed (tồn đầu kỳ))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 98,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.115Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2bfc1-n-điểm-bán-seed-tồn-đầu-kỳ--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f0046fb8388f9f34d70f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_gdv (Giao dịch viên điểm bán seed)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 78,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.216Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-f973e-ao-dịch-viên-điểm-bán-seed--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-279e54db4435dd5b2b7f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_cung_ung (Quản lý cung ứng Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 104,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.298Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-a2b0c-n-lý-cung-ứng-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-dc10cbea1b53e3115f7d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_ke_toan (Kế toán Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.406Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-b0041--toan-Kế-toán-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-810d07ac3b8180d5b8cd",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_marketing (Marketing Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 78,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.498Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-1d056-ing-Marketing-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-ad384e1a74119c1d55a2",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_cung_ung (Quản lý cung ứng Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 92,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.579Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-4db67--ung-Quản-lý-cung-ứng-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-3fc0d4a301467ed2a16a",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_ke_toan (Kế toán Tỉnh (vai PROVINCE_ACCOUNTANT))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 94,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.674Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2a396-nh-vai-PROVINCE-ACCOUNTANT--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2ad6ba1bf90fea1e4edf",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop_nhan_vien (Nhân viên khác điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 97,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.771Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-v-bd39c-en-Nhân-viên-khác-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2720920e7dafcea1da21",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T14:58:46.873Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "bao-cao-ctkm.shop.spec.js",
+      "file": "bao-cao-ctkm.shop.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "30 · Báo cáo hiệu quả CTKM (vai shop, chỉ đọc)",
+          "file": "bao-cao-ctkm.shop.spec.js",
+          "line": 37,
+          "column": 6,
+          "specs": [
+            {
+              "title": "30_010_003 — Thẻ tổng hợp hiển thị đủ sáu chỉ số",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "thẻ thật",
+                      "description": "{\"Số chương trình\":\"14\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"0\",\"Doanh thu thuần (gồm VAT)\":\"0\",\"Tiền giảm giá\":\"0\",\"Lợi nhuận gộp\":\"-\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13652,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:58:47.209Z",
+                      "annotations": [
+                        {
+                          "type": "thẻ thật",
+                          "description": "{\"Số chương trình\":\"14\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"0\",\"Doanh thu thuần (gồm VAT)\":\"0\",\"Tiền giảm giá\":\"0\",\"Lợi nhuận gộp\":\"-\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-1d902--hợp-hiển-thị-đủ-sáu-chỉ-số-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "16ca899f6e479e76dc54-f20c8abf3fa6d22c9127",
+              "file": "bao-cao-ctkm.shop.spec.js",
+              "line": 44,
+              "column": 2
+            },
+            {
+              "title": "30_010_004 — Bảng hiệu quả theo chương trình đủ chín cột",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "cột thật",
+                      "description": "STT · Tên chương trình · Trạng thái · Số hoá đơn áp dụng · Doanh thu (gồm VAT) · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Doanh số tăng thêm · Lợi nhuận gộp · Ngân sách đã dùng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13173,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:59:00.939Z",
+                      "annotations": [
+                        {
+                          "type": "cột thật",
+                          "description": "STT · Tên chương trình · Trạng thái · Số hoá đơn áp dụng · Doanh thu (gồm VAT) · Doanh thu thuần (gồm VAT) · Tiền giảm giá · Doanh số tăng thêm · Lợi nhuận gộp · Ngân sách đã dùng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-05994-eo-chương-trình-đủ-chín-cột-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "16ca899f6e479e76dc54-fc47d0fd1e44fde6a22a",
+              "file": "bao-cao-ctkm.shop.spec.js",
+              "line": 51,
+              "column": 2
+            },
+            {
+              "title": "30_050_001 — Danh sách báo cáo rỗng khi kỳ không có chương trình",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "kỳ + API",
+                      "description": "01/01/2020 → 31/01/2020 · 200/200 · 0 · 200/200 effectiveness/customer-groups · 200/200 effectiveness/summary · 200/200 effectiveness · 200/200 effectiveness/summary · 200/200 effectiveness"
+                    },
+                    {
+                      "type": "nguyên văn trạng thái rỗng",
+                      "description": "Trống"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16481,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:59:14.116Z",
+                      "annotations": [
+                        {
+                          "type": "kỳ + API",
+                          "description": "01/01/2020 → 31/01/2020 · 200/200 · 0 · 200/200 effectiveness/customer-groups · 200/200 effectiveness/summary · 200/200 effectiveness · 200/200 effectiveness/summary · 200/200 effectiveness"
+                        },
+                        {
+                          "type": "nguyên văn trạng thái rỗng",
+                          "description": "Trống"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-df818-hi-kỳ-không-có-chương-trình-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "16ca899f6e479e76dc54-9b08ab5c8079a4ffe7ac",
+              "file": "bao-cao-ctkm.shop.spec.js",
+              "line": 58,
+              "column": 2
+            },
+            {
+              "title": "30_050_004 — Chọn khoảng thời gian có ngày kết thúc trước ngày bắt đầu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "hành vi thật",
+                      "description": "sau khi gõ \"25/09/2026\" → \"20/09/2026\": ô \"25/09/2026\" → \"25/09/2026\" · lời gọi {\"s\":\"2026-09-19T17:00:00.000Z\",\"e\":\"2026-09-25T16:59:59.999Z\"} · 10 dòng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16499,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:59:30.603Z",
+                      "annotations": [
+                        {
+                          "type": "hành vi thật",
+                          "description": "sau khi gõ \"25/09/2026\" → \"20/09/2026\": ô \"25/09/2026\" → \"25/09/2026\" · lời gọi {\"s\":\"2026-09-19T17:00:00.000Z\",\"e\":\"2026-09-25T16:59:59.999Z\"} · 10 dòng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-6ea1c-kết-thúc-trước-ngày-bắt-đầu-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "16ca899f6e479e76dc54-2141d8b9b25e64ed82ab",
+              "file": "bao-cao-ctkm.shop.spec.js",
+              "line": 73,
+              "column": 2
+            },
+            {
+              "title": "30_050_002 — Phân trang bảng hiệu quả chương trình",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "tổng",
+                      "description": "1 - 10 trên 14 chương trình"
+                    },
+                    {
+                      "type": "trang 2",
+                      "description": "{\"page\":\"1\",\"size\":\"10\",\"startDate\":\"1788195600000\",\"endDate\":\"1790355599999\"} · 4 dòng"
+                    },
+                    {
+                      "type": "size 20",
+                      "description": "{\"page\":\"0\",\"size\":\"20\",\"startDate\":\"1788195600000\",\"endDate\":\"1790355599999\"} · 14 dòng"
+                    },
+                    {
+                      "type": "trang cuối",
+                      "description": "undefined · undefined"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 38309,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T14:59:47.106Z",
+                      "annotations": [
+                        {
+                          "type": "tổng",
+                          "description": "1 - 10 trên 14 chương trình"
+                        },
+                        {
+                          "type": "trang 2",
+                          "description": "{\"page\":\"1\",\"size\":\"10\",\"startDate\":\"1788195600000\",\"endDate\":\"1790355599999\"} · 4 dòng"
+                        },
+                        {
+                          "type": "size 20",
+                          "description": "{\"page\":\"0\",\"size\":\"20\",\"startDate\":\"1788195600000\",\"endDate\":\"1790355599999\"} · 14 dòng"
+                        },
+                        {
+                          "type": "trang cuối",
+                          "description": "undefined · undefined"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-85704--bảng-hiệu-quả-chương-trình-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "16ca899f6e479e76dc54-4bfa0a53413ef9bf3ee6",
+              "file": "bao-cao-ctkm.shop.spec.js",
+              "line": 87,
+              "column": 2
+            },
+            {
+              "title": "30_050_003 — Xoá bộ lọc trở về mặc định",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "{\"macDinh\":{\"the\":{\"Số chương trình\":\"14\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"0\",\"Doanh thu thuần (gồm VAT)\":\"0\",\"Tiền giảm giá\":\"0\",\"Lợi nhuận gộp\":\"-\"},\"n\":10},\"giua\":{\"the\":{\"Số chương trình\":\"0\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"-\",\"Doanh thu thuần (gồm VAT)\":\"-\",\"Tiền giảm giá\":\"-\",\"Lợi nhuận gộp\":\"-\"},\"n\":0},\"sau\":{\"the\":{\"Số chương trình\":\"14\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"0\",\"Doanh thu thuần (gồm VAT)\":\"0\",\"Tiền giảm giá\":\"0\",\"Lợi nhuận gộp\":\"-\"},\"n\":10},\"q1\":\"page=0&size=10&keyword=KHONG_CO_CTKM_NAO_30&campaignStatus=RAN&startDate=1788195600000&endDate=1790355599999\"}"
+                    },
+                    {
+                      "type": "nút xoá lọc",
+                      "description": "🚫 KHÔNG có nút xoá/đặt lại bộ lọc — phải xoá tay từng ô"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 37489,
+                      "error": {
+                        "message": "TypeError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must be a string\n\nReceived has value: \u001b[31mundefined\u001b[39m",
+                        "stack": "TypeError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must be a string\n\nReceived has value: \u001b[31mundefined\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js:139:55",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js",
+                          "column": 55,
+                          "line": 139
+                        },
+                        "snippet": "  137 | \t\texpect(giua.n, 'Lọc từ khoá không tồn tại mà vẫn còn dòng').toBe(0);\n  138 | \t\texpect(sau).toEqual(macDinh);\n> 139 | \t\texpect(loc2.url, 'Còn gửi keyword sau khi xoá').not.toMatch(/keyword=/);\n      | \t\t                                                    ^\n  140 | \t\texpect(loc2.url, 'Còn gửi campaignStatus sau khi xoá').not.toMatch(/campaignStatus=/);\n  141 | \t});\n  142 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js",
+                            "column": 55,
+                            "line": 139
+                          },
+                          "message": "TypeError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must be a string\n\nReceived has value: \u001b[31mundefined\u001b[39m\n\n  137 | \t\texpect(giua.n, 'Lọc từ khoá không tồn tại mà vẫn còn dòng').toBe(0);\n  138 | \t\texpect(sau).toEqual(macDinh);\n> 139 | \t\texpect(loc2.url, 'Còn gửi keyword sau khi xoá').not.toMatch(/keyword=/);\n      | \t\t                                                    ^\n  140 | \t\texpect(loc2.url, 'Còn gửi campaignStatus sau khi xoá').not.toMatch(/campaignStatus=/);\n  141 | \t});\n  142 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js:139:55"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:00:25.422Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "{\"macDinh\":{\"the\":{\"Số chương trình\":\"14\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"0\",\"Doanh thu thuần (gồm VAT)\":\"0\",\"Tiền giảm giá\":\"0\",\"Lợi nhuận gộp\":\"-\"},\"n\":10},\"giua\":{\"the\":{\"Số chương trình\":\"0\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"-\",\"Doanh thu thuần (gồm VAT)\":\"-\",\"Tiền giảm giá\":\"-\",\"Lợi nhuận gộp\":\"-\"},\"n\":0},\"sau\":{\"the\":{\"Số chương trình\":\"14\",\"Số hoá đơn áp dụng\":\"0\",\"Doanh thu (gồm VAT)\":\"0\",\"Doanh thu thuần (gồm VAT)\":\"0\",\"Tiền giảm giá\":\"0\",\"Lợi nhuận gộp\":\"-\"},\"n\":10},\"q1\":\"page=0&size=10&keyword=KHONG_CO_CTKM_NAO_30&campaignStatus=RAN&startDate=1788195600000&endDate=1790355599999\"}"
+                        },
+                        {
+                          "type": "nút xoá lọc",
+                          "description": "🚫 KHÔNG có nút xoá/đặt lại bộ lọc — phải xoá tay từng ô"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-e473d--Xoá-bộ-lọc-trở-về-mặc-định-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-e473d--Xoá-bộ-lọc-trở-về-mặc-định-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-e473d--Xoá-bộ-lọc-trở-về-mặc-định-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-e473d--Xoá-bộ-lọc-trở-về-mặc-định-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js",
+                        "column": 55,
+                        "line": 139
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "16ca899f6e479e76dc54-99282f7e005f2ce394ae",
+              "file": "bao-cao-ctkm.shop.spec.js",
+              "line": 126,
+              "column": 2
+            },
+            {
+              "title": "30_050_005 — Tìm chương trình bằng ký tự đặc biệt",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "hành vi thật",
+                      "description": "tổng không lọc undefined · {\"%\":{\"code\":\"200\",\"n\":14,\"ten\":[\"A7KH19_KM_30 Giảm giá hè 823175\",\"A7KH19_KM_30 Giảm giá hè 618245\",\"A7KH19_KM_30 Giảm giá hè 436106\"]},\"_\":{\"code\":\"200\",\"n\":14,\"ten\":[\"A7KH19_KM_30 Giảm giá hè 823175\",\"A7KH19_KM_30 Giảm giá hè 618245\",\"A7KH19_KM_30 Giảm giá hè 436106\"]},\"%_%\":{\"code\":\"200\",\"n\":14,\"ten\":[\"A7KH19_KM_30 Giảm giá hè 823175\",\"A7KH19_KM_30 Giảm giá hè 618245\",\"A7KH19_KM_30 Giảm giá hè 436106\"]},\"'\":{\"code\":\"200\",\"n\":0,\"ten\":[]}}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 43569,
+                      "error": {
+                        "message": "Error: Từ khoá \"%\" trả về TOÀN BỘ 14/undefined chương trình (ký tự đại diện LIKE không được escape)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Từ khoá \"%\" trả về TOÀN BỘ 14/undefined chương trình (ký tự đại diện LIKE không được escape)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js:155:148",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js",
+                          "column": 148,
+                          "line": 155
+                        },
+                        "snippet": "  153 | \t\t\texpect(String(v.code), `Từ khoá \"${tu}\" lỗi`).toBe('200');\n  154 | \t\t\tconst khop = v.ten.every((t) => t.includes(tu));\n> 155 | \t\t\texpect(v.n < tong0 || (khop && v.n > 0), `Từ khoá \"${tu}\" trả về TOÀN BỘ ${v.n}/${tong0} chương trình (ký tự đại diện LIKE không được escape)`).toBe(true);\n      | \t\t\t                                                                                                                                                ^\n  156 | \t\t}\n  157 | \t});\n  158 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js",
+                            "column": 148,
+                            "line": 155
+                          },
+                          "message": "Error: Từ khoá \"%\" trả về TOÀN BỘ 14/undefined chương trình (ký tự đại diện LIKE không được escape)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  153 | \t\t\texpect(String(v.code), `Từ khoá \"${tu}\" lỗi`).toBe('200');\n  154 | \t\t\tconst khop = v.ten.every((t) => t.includes(tu));\n> 155 | \t\t\texpect(v.n < tong0 || (khop && v.n > 0), `Từ khoá \"${tu}\" trả về TOÀN BỘ ${v.n}/${tong0} chương trình (ký tự đại diện LIKE không được escape)`).toBe(true);\n      | \t\t\t                                                                                                                                                ^\n  156 | \t\t}\n  157 | \t});\n  158 | });\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js:155:148"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T15:01:03.556Z",
+                      "annotations": [
+                        {
+                          "type": "hành vi thật",
+                          "description": "tổng không lọc undefined · {\"%\":{\"code\":\"200\",\"n\":14,\"ten\":[\"A7KH19_KM_30 Giảm giá hè 823175\",\"A7KH19_KM_30 Giảm giá hè 618245\",\"A7KH19_KM_30 Giảm giá hè 436106\"]},\"_\":{\"code\":\"200\",\"n\":14,\"ten\":[\"A7KH19_KM_30 Giảm giá hè 823175\",\"A7KH19_KM_30 Giảm giá hè 618245\",\"A7KH19_KM_30 Giảm giá hè 436106\"]},\"%_%\":{\"code\":\"200\",\"n\":14,\"ten\":[\"A7KH19_KM_30 Giảm giá hè 823175\",\"A7KH19_KM_30 Giảm giá hè 618245\",\"A7KH19_KM_30 Giảm giá hè 436106\"]},\"'\":{\"code\":\"200\",\"n\":0,\"ten\":[]}}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-9442b-g-trình-bằng-ký-tự-đặc-biệt-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-9442b-g-trình-bằng-ký-tự-đặc-biệt-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-9442b-g-trình-bằng-ký-tự-đặc-biệt-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/test-output/playwright-results/bao-cao-ctkm.shop-30-·-Báo-9442b-g-trình-bằng-ký-tự-đặc-biệt-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/30_bao_cao_ctkm/tests/bao-cao-ctkm.shop.spec.js",
+                        "column": 148,
+                        "line": 155
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "16ca899f6e479e76dc54-c66c0c2b5792579d8ac7",
+              "file": "bao-cao-ctkm.shop.spec.js",
+              "line": 143,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T14:58:45.154Z",
+    "duration": 182552.22300000003,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

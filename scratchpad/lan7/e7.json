@@ -1,0 +1,312 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:38:25.877Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 90,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:38:26.084Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tu-sinh.gdv.spec.js",
+      "file": "tu-sinh.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "26 · Phiếu thu tự sinh (vai gdv)",
+          "file": "tu-sinh.gdv.spec.js",
+          "line": 52,
+          "column": 6,
+          "specs": [
+            {
+              "title": "26_060_003 — Đổi hàng thu chênh lệch sinh phiếu thu tự động",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 36237,
+                      "error": {
+                        "message": "Error: Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_GDV\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('AUTO7_SHOP', { exact: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_GDV with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('AUTO7_SHOP', { exact: true }).first()\u001b[22m\n",
+                        "stack": "Error: Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_GDV\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('AUTO7_SHOP', { exact: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_GDV with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('AUTO7_SHOP', { exact: true }).first()\u001b[22m\n\n    at dangNhapVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:122:5)\n    at moTrang (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:359:28)\n    at Object.moBan (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/18_1_ban_hang_tai_quay/tests/pos-18.js:86:2)\n    at Object.banDon (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/18_5_doi_tra_hang/tests/doi-tra.js:34:13)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:198:14",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js",
+                          "column": 5,
+                          "line": 122
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../../shared/auth/login.js:122\n\n  120 |     ten.first(),\n  121 |     `Không thấy đơn vị \"${cred.scopeLabel}\" trên màn chọn phạm vi — kiểm lại ${role.envScope}`,\n> 122 |   ).toBeVisible({ timeout: 30_000 });\n      |     ^\n  123 |\n  124 |   const dong = cred.roleLabel\n  125 |     ? ten.locator("
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js",
+                            "column": 5,
+                            "line": 122
+                          },
+                          "message": "Error: Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_GDV\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('AUTO7_SHOP', { exact: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Không thấy đơn vị \"AUTO7_SHOP\" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_GDV with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('AUTO7_SHOP', { exact: true }).first()\u001b[22m\n\n\n   at ../../shared/auth/login.js:122\n\n  120 |     ten.first(),\n  121 |     `Không thấy đơn vị \"${cred.scopeLabel}\" trên màn chọn phạm vi — kiểm lại ${role.envScope}`,\n> 122 |   ).toBeVisible({ timeout: 30_000 });\n      |     ^\n  123 |\n  124 |   const dong = cred.roleLabel\n  125 |     ? ten.locator(\n    at dangNhapVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:122:5)\n    at moTrang (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js:359:28)\n    at Object.moBan (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/18_1_ban_hang_tai_quay/tests/pos-18.js:86:2)\n    at Object.banDon (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/18_5_doi_tra_hang/tests/doi-tra.js:34:13)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:198:14"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:38:26.398Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth/login.js",
+                        "column": 5,
+                        "line": 122
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-48f6d01a9deb1c8af82a",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 195,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T13:38:25.592Z",
+    "duration": 37284.913,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

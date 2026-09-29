@@ -1,0 +1,101 @@
+{
+  "spec": {
+    "tests/quay-thu-ngan.shop.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "ghiBu": true,
+      "man": [
+        "/finance/cashier-counter"
+      ],
+      "fe": [
+        "src/features/finance/cashierCounter/pages/CashierCounterPage.jsx",
+        "src/features/finance/cashierCounter/components/ModalAddOrUpdateCounter.jsx",
+        "src/features/finance/cashierCounter/services/cashierCounterService.js"
+      ]
+    },
+    "tests/seed-quay-thu-ngan.shop.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "ghiBu": true,
+      "man": [
+        "/finance/cashier-counter"
+      ],
+      "fe": [
+        "src/features/finance/cashierCounter/pages/CashierCounterPage.jsx",
+        "src/features/finance/cashierCounter/components/ModalAddOrUpdateCounter.jsx",
+        "src/features/finance/cashierCounter/services/cashierCounterService.js"
+      ]
+    },
+    "tests/quay-ghi.shop.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/finance/cashier-counter"
+      ],
+      "fe": [
+        "src/features/finance/cashierCounter/pages/CashierCounterPage.jsx",
+        "src/features/finance/cashierCounter/components/ModalAddOrUpdateCounter.jsx",
+        "src/features/finance/cashierCounter/services/cashierCounterService.js"
+      ]
+    },
+    "tests/quy-ghi.shop.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/finance/fund"
+      ],
+      "fe": [
+        "src/features/finance/fund/pages/FundPage.jsx",
+        "src/features/finance/fund/components/TableFundData.jsx",
+        "src/features/finance/fund/components/DrawerFundDetail.jsx",
+        "src/features/finance/fund/components/ModalAddFundHistory.jsx",
+        "src/features/finance/fund/components/ModalTransferFund.jsx",
+        "src/features/finance/fund/components/SelectFund.jsx",
+        "src/features/finance/fund/components/SelectFundPaymentType.jsx",
+        "src/features/finance/fund/services/fundService.js",
+        "src/features/timekeeping/services/shiftReportApi.js"
+      ]
+    },
+    "tests/quay-pham-vi.province.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/finance/cashier-counter"
+      ],
+      "fe": [
+        "src/features/finance/cashierCounter/pages/CashierCounterPage.jsx",
+        "src/features/finance/cashierCounter/components/ModalAddOrUpdateCounter.jsx",
+        "src/features/finance/cashierCounter/services/cashierCounterService.js",
+        "src/components/selectShopMultiple/SelectShopMultiple.jsx"
+      ]
+    },
+    "tests/quay-pham-vi.tct.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/finance/cashier-counter",
+        "/finance/fund"
+      ],
+      "fe": [
+        "src/features/finance/cashierCounter/pages/CashierCounterPage.jsx",
+        "src/features/finance/cashierCounter/components/ModalAddOrUpdateCounter.jsx",
+        "src/features/finance/cashierCounter/services/cashierCounterService.js",
+        "src/features/finance/fund/pages/FundPage.jsx",
+        "src/features/finance/fund/components/ModalTransferFund.jsx",
+        "src/components/selectShopMultiple/SelectShopMultiple.jsx"
+      ]
+    },
+    "tests/quay-pham-vi.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/finance/cashier-counter"
+      ],
+      "fe": [
+        "src/features/finance/cashierCounter/pages/CashierCounterPage.jsx",
+        "src/features/finance/cashierCounter/components/ModalAddOrUpdateCounter.jsx",
+        "src/features/finance/cashierCounter/services/cashierCounterService.js"
+      ]
+    }
+  }
+}

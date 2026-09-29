@@ -1,0 +1,712 @@
+ ,Chức năng,,QUẢN LÝ ĐẶT HÀNG,,,,,,,,
+,Mã Testcase,,BANGGIA,,,,,,,,
+,Tổng các tình huống kiểm thử,,81,,,,,,,,
+,Chưa thực hiện,,58,,,,,,,,
+,Đạt yêu cầu,,20,,,,,,,,
+,Không đạt yêu cầu,,3,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện,Ghi chú
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn Thêm Bảng giá,,,,,,,,,,
+,Tab Thông tin chung,,,,,,,,,,
+BANGGIA_1,Kiểm tra các trường mặc định,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"" và quan sát",,,"1. Mặc định tích checkbox ""Không cài đặt khung giờ""
+2. Trạng thái mặc định tích giá trị ""Kích hoạt""
+3. Phương thức tính thuế VAT mặc định giá trị ""Đơn giá đã bao gồm VAT (Giá sau thuế)""
+4. Ngày bắt đẩu: Mặc định fill ngày hiện  tại",,,,,Quản lý
+,Tab Sản phẩm,,,,,,,,,,
+BANGGIA_2,Kiểm tra giao diện và các giá trị mặc định khi Phương thức tính thuế VAT là Đơn giá đã bao gồm VAT (Giá sau thuế),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Nhấn vào tab ""Sản phẩm"" và quan sát",,,"1. Phần thêm sản phẩm mặc định tích giá trị ""Theo danh mục""
+2. Loại sản phẩm mặc định giá trị ""Sản phẩm""
+3. Hình thức mặc định ""Mua bán""
+4. Bộ lọc theo loại sản phẩm mặc định giá trị ""Sản phẩm""
+5. Bảng ""Danh sách sản phẩm được áp dụng bảng giá"" gồm các cột:
+- SKU
+- Tên sản phẩm
+- Loại sản phẩm
+- Danh mục
+- Đơn vị
+- Giá bán
+- Giá niêm yết
+- Tỷ lệ chiết khấu: disabled
+- Thao tác",,,,,Quản lý
+BANGGIA_3,Kiểm tra giao diện và các giá trị mặc định khi Phương thức tính thuế VAT là Đơn giá chưa bao gồm VAT (Giá trước thuế),"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Nhấn vào tab ""Sản phẩm"" và quan sát",,,"1. Phần thêm sản phẩm mặc định tích giá trị ""Theo danh mục""
+2. Loại danh mục mặc định giá trị ""Sản phẩm"" và disabled không cho sửa
+3. Hình thức mặc định ""Mua bán""
+4. Bộ lọc theo loại sản phẩm mặc định giá trị ""Sản phẩm""
+5. Bảng ""Danh sách sản phẩm được áp dụng bảng giá"" gồm các cột:
+- SKU
+- Tên sản phẩm
+- Loại sản phẩm
+- Danh mục
+- Đơn vị
+- Giá bán
+- Giá niêm yết
+- Tỷ lệ chiết khấu: disabled không cho phép nhập
+- Thao tác",,,,,Quản lý
+BANGGIA_4,Kiểm tra giao diện khi hình thức là Ký gửi,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Nhấn vào tab ""Sản phẩm""
+4. Chọn hình thức Ký gửi và quan sát",,,"Bảng ""Danh sách sản phẩm được áp dụng bảng giá"" gồm các cột:
+- SKU
+- Tên sản phẩm
+- Loại sản phẩm
+- Danh mục
+- Đơn vị
+- Giá bán
+- Tỷ lệ chiết khấu: enabled cho phép nhập
+- Thao tác",,,,,Quản lý
+,Kiểm tra hiển thị dòng note khi thêm Combo vào bảng giá có Phương thức tính thuế VAT là Đơn giá đã bao gồm VAT (Giá sau thuế) ,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Nhấn vào tab ""Sản phẩm""
+4. Thêm ít nhất 1 combo vào bảng sản phẩm và quan sát",,,"Hiển thị note ""Giá combo là giá sau VAT; hệ thống tự tính giá trước VAT theo thành phần""",,,,,Quản lý
+,Kiểm tra giá trị bộ lọc theo danh mục khi thay đổi giá trị bộ lọc Loại sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Nhấn vào tab ""Sản phẩm""
+4. Bộ lọc Loại sản phẩm mặc định giá trị ""Sản phẩm""
+5. Nhấn vào bộ lọc Danh mục và quan sát
+6. Đổi bộ lọc Loại sản phẩm sang giá trị ""Combo""
+7. Nhấn vào bộ lọc Danh mục và quan sát",,,"1. Ở bước 5, danh sách danh mục hiển thị tất cả cây danh mục sản phẩm đang tồn tại trên hệ thống theo phân cấp
+2. Ở bước 7, danh sách danh mục hiển thị tất cả cây danh mục combo đang tồn tại trên hệ thống theo phân cấp",,,,,Quản lý
+,Kiểm tra clear dữ liệu bộ lọc danh mục khi thay đổi giá trị bộ lọc Loại sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Nhấn vào tab ""Sản phẩm""
+4. Bộ lọc Loại sản phẩm mặc định giá trị ""Sản phẩm""
+5. Nhấn vào bộ lọc Danh mục và chọn danh mục
+6. Đổi bộ lọc Loại sản phẩm sang giá trị ""Combo""
+7. Quan sát dữ liệu trong bộ lọc danh mục",,,"Khi đổi giá trị trong bộ lọc Loại danh mục, các dữ liệu danh mục đã được chọn trước đó được clear hết",,,,,Quản lý
+,Kiểm tra giao diện màn Sửa bảng giá,,,,,,,,,,
+,Tab Sản phẩm,,,,,,,,,,
+BANGGIA_8,Kiểm tra bảng sản phẩm tại tab Sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa bảng giá",,,,"Có 2 bảng:
+- Sản phẩm thêm mới: Nằm ở trên
+- Sản phẩm hiện tại: Nằm ở dưới. Chứa các sản phẩm đã nằm trong bảng giá trước đó",,,,,Quản lý
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng Tạo bảng giá,,,,,,,,,,
+,Kiểm tra chức năng Tạo bảng giá – Tab Thông tin chung,,,,,,,,,,
+BANGGIA_9,Kiểm tra tạo bảng giá mới thành công với đầy đủ thông tin,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá không VAT Quý 4/2026"", Tên phiên bản ""1""
+4. Chọn Ngày bắt đầu: 20/04/2026
+5. Chọn Ngày kết thúc sau ngày bắt đầu: 25/04/2026
+5. Bỏ tích checkbox ""Không cài đặt khung giờ""
+6. Chọn giờ bắt đầu: 05:00
+7. Chọn giờ kết thúc sau giờ hiện tại: 22:00
+8. Trạng thái mặc định: ""Kích hoạt"".
+9. Phương thức tính thuế VAT mặc định
+Tab phạm vi áp dụng:
+10. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+Tab sản phẩm:
+11. Thêm 1 sản phẩm bằng SKU: cans
+12. Nhập giá bán = giá niêm yết = 50,000đ
+13. Nhấn ""Lưu"".",Cao,Thêm bảng Giá/Tab Thông tin chung,"- Hệ thống lưu thành công, điều hướng về màn hình Quản lý bảng giá.
+- Bảng giá ""Bảng giá không VAT Quý 4/2026"" xuất hiện trong danh sách.
+- Hiển thị đúng: Tên; Thời gian hiệu lực bao gồm ngày bắt đầu, ngày kết thúc vô thời hạn kèm icon đồng hồ, khi hover chuột hiển thị giờ bắt đầu, giờ kết thúc; Giá gồm thuế = Bao gồm VAT; Trạng thái = Kích hoạt; Trạng thái phê duyệt = Chờ phê duyệt.","Từ bước 7 chọn ngày kết thúc đang báo lỗi ""Vui lòng chọn giờ bắt đầu"" ở ngày bắt đầu nên ko lưu đc",Fail,Mạnh LĐ,,Quản lý
+BANGGIA_10,Kiểm tra tạo bảng giá – không nhập các trường bắt buộc,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Bỏ trống các trường bắt buộc
+Tab phạm vi áp dụng:
+4. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+Tab sản phẩm:
+5. Thêm 1 sản phẩm bằng SKU: cans
+6. Nhập giá bán = giá niêm yết = 60,000đ
+7. Nhấn ""Lưu"".",Cao,Thêm bảng Giá/Tab Thông tin chung,"- Hệ thống hiển thị toast message: Vui lòng nhập đầy đủ thông tin chung bắt buộc
+- Điều hướng tới Tab thông tin chung và hiển thị focus kèm message tại các trường bắt buộc",,Pass,,,Quản lý
+BANGGIA_11,Kiểm tra tạo bảng giá nhập ngày kết thúc trước ngày bắt đầu,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá không VAT Quý 1/2027"", Tên phiên bản ""1""
+4. Chọn Ngày bắt đầu: 24/06/2026
+5. Chọn Ngày kết thúc trước ngày bắt đầu: 20/06/2026
+6. Trạng thái và Phương thức tính thuế: Giá trị mặc định
+Tab phạm vi áp dụng:
+7. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+Tab sản phẩm:
+8. Thêm 1 sản phẩm bằng SKU: cans
+9. Nhập giá bán = giá niêm yết = 60,000đ
+10. Nhấn ""Lưu"".",Cao,Thêm bảng Giá/Tab Thông tin chung,"1. Từ bước 5, hệ thống hiển thị message lỗi tại 2 trường Ngày bắt đầu và Ngày kết thúc
+2. Từ bước 10, hiển thị toast message Vui lòng kiểm tra lại thông tin và không lưu bảng giá",,Pass,,,Quản lý
+BANGGIA_12,Kiểm tra nhập tên bảng giá trùng với bảng giá đã tồn tại,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã có bảng giá ""Bảng giá không VAT Quý 4/2026""","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập trùng tên bảng giá đã tồn tại trên hệ thống: Bảng giá không VAT Quý 4/2026
+4. Nhập hợp lệ các trường bắt buộc:
+- Ngày bắt đầu: 24/06/2026
+- Trạng thái và Phương thức tính thuế: Giá trị mặc định
+Tab phạm vi áp dụng:
+5. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Hà Giang
+6. Thêm 1 sản phẩm bằng SKU: cans
+7. Nhập giá bán = giá niêm yết = 60,000đ
+8. Nhấn ""Lưu"".",,Thêm bảng Giá/Tab Thông tin chung,"- Hệ thống KHÔNG lưu.
+- Hiển thị thông báo: Tên bảng giá đã tồn tại trong hệ thống",,Pass,,,Quản lý
+BANGGIA_13,Kiểm tra chọn giờ kết thúc trước giờ bắt đầu,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá không VAT Quý 2/2026"", Tên phiên bản ""1""
+4. Chọn Ngày bắt đầu: 20/04/2026
+5. Chọn Ngày kết thúc sau ngày bắt đầu: 25/04/2026
+5. Bỏ tích checkbox ""Không cài đặt khung giờ""
+6. Chọn giờ bắt đầu: 13:00
+7. Chọn giờ kết thúc sau giờ hiện tại: 05:00
+8. Chọn Trạng thái: "" Ngừng kích hoạt"".
+9. Chọn Phương thức tính thuế VAT: Đơn giá đã bao gồm VAT (Giá sau thuế)
+Tab phạm vi áp dụng:
+10. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+Tab sản phẩm:
+11. Thêm 1 sản phẩm bằng SKU: cans
+12. Nhập giá bán = giá niêm yết = 50,000đ
+13. Nhấn ""Lưu"".",TB,Thêm bảng Giá/Tab Thông tin chung,"1. Từ bước 7, hệ thống hiển thị message lỗi tại 2 trường Giờ bắt đầu và Giờ kết thúc
+2. Từ bước 10, hiển thị toast message Vui lòng kiểm tra lại thông tin và không lưu bảng giá",tương tự case 09,Fail,Mạnh LĐ,,Quản lý
+BANGGIA_14,Kiểm tra tạo bảng giá với trạng thái Ngừng kích hoạt,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá không VAT Quý 2/2026"", Tên phiên bản ""1""
+4. Chọn Ngày bắt đầu: 20/04/2026
+5. Chọn Trạng thái: "" Ngừng kích hoạt"".
+9. Phương thức tính thuế VAT mặc dịnh
+Tab phạm vi áp dụng:
+10. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+Tab sản phẩm:
+11. Thêm 1 sản phẩm bằng SKU: cans
+12. Nhập giá bán = giá niêm yết = 50,000đ
+13. Nhấn ""Lưu"".",TB,Thêm bảng Giá/Tab Thông tin chung,"- Hệ thống lưu thành công, điều hướng về màn hình Quản lý bảng giá.
+- Bảng giá ""Bảng giá không VAT Quý 2/2026"" xuất hiện trong danh sách và hiển thị đúng: Trạng thái = Ngừng kích hoạt",,Pass,,,Quản lý
+BANGGIA_15,Kiểm tra tạo bảng giá chưa bao gồm thuế VAT,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá không VAT Quý 4/2026"", Tên phiên bản ""1""
+4. Ngày bắt đầu, Trạng thái: giá trị mặc định.
+5. Chọn Phương thức tính thuế VAT: Đơn giá chưa bao gồm VAT (Giá trước thuế)
+Tab phạm vi áp dụng:
+6. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+Tab sản phẩm:
+7. Thêm 1 sản phẩm bằng SKU: cans
+8. Nhập giá bán = giá niêm yết = 50,000đ
+9. Nhấn ""Lưu"".",TB,Thêm bảng Giá/Tab Thông tin chung,"- Hệ thống lưu thành công, điều hướng về màn hình Quản lý bảng giá.
+- Bảng giá ""Bảng giá không VAT Quý 2/2026"" xuất hiện trong danh sách và hiển thị đúng: Giá gồm thuế = Chưa bao gồm VAT",,Pass,,,Quản lý
+BANGGIA_16,"Kiểm tra nhấn ""Hủy"" khi đang nhập thông tin bảng giá","Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Nhập Tên bảng giá và một số trường.
+4. Nhấn nút ""Hủy"".",TB,Thêm bảng Giá,"- Hệ thống KHÔNG lưu bảng giá.
+- Quay về màn hình Quản lý bảng giá.
+- Không có bản ghi mới được thêm vào danh sách.",,Pass,,,Quản lý
+,Kiểm tra chức năng Tạo bảng giá – Tab Phạm vi khu vực,,,,,,,,,,
+BANGGIA_17,Chọn phạm vi áp dụng theo Điểm bán – chọn ít nhất 1 điểm,"Đang ở màn hình Thêm bảng giá, đã điền xong Tab Thông tin chung.","1. Chuyển sang Tab ""Phạm vi khu vực"".
+2. Chọn ""Áp dụng cho: Điểm bán"".
+3. Click vào ""Bưu điện Thành phố Hà Nội"" ở cột cấp Tỉnh.
+4. Click vào ""Bưu điện Quận Long Biên"" ở cột cấp Xã/Phường.
+5. Tích checkbox ""Cửa hàng AD"" ở cột Điểm bán.
+6. Nhấn ""Lưu"".",Cao,Thêm bảng Giá/Tab Phạm vi khu vực,"- Hệ thống lưu thành công.
+- Bảng giá được áp dụng cho điểm bán ""Cửa hàng AD"" thuộc Quận Long Biên, Hà Nội.
+- Số đơn vị đã chọn hiển thị đúng (ví dụ: ""Đã chọn 1 đơn vị/điểm bán"").",,,,,Quản lý
+BANGGIA_18,Tick checkbox cấp Tỉnh → tự động chọn tất cả Xã/Phường và Điểm bán bên dưới,"Đang ở Tab Phạm vi khu vực, chọn Áp dụng cho: Điểm bán.","1. Click vào ""Bưu điện Thành phố Hà Nội"" ở cột cấp Tỉnh.
+2. Tích checkbox ""Bưu điện Thành phố Hà Nội"".
+3. Quan sát kết quả.",Cao,Thêm bảng Giá/Tab Phạm vi khu vực,"- Tất cả Xã/Phường thuộc Hà Nội tự động được tích.
+- Tất cả Điểm bán thuộc các Xã/Phường đó tự động được tích.
+- Số lượng đơn vị đã chọn tăng lên tương ứng.",,,,,Quản lý
+BANGGIA_19,Áp dụng cho Bưu điện xã – chọn đúng cấp,Đang ở Tab Phạm vi khu vực.,"1. Chọn ""Áp dụng cho: Bưu điện xã"".
+2. Tích chọn một số Bưu điện xã.
+3. Nhấn ""Lưu"".",TB,Thêm bảng Giá/Tab Phạm vi khu vực,"- Hệ thống lưu thành công.
+- Phạm vi áp dụng ghi nhận đúng cấp Bưu điện xã đã chọn.",,,,,Quản lý
+BANGGIA_20,Áp dụng cho Bưu điện tỉnh – chọn đúng cấp,Đang ở Tab Phạm vi khu vực.,"1. Chọn ""Áp dụng cho: Bưu điện tỉnh"".
+2. Tích chọn một hoặc nhiều Bưu điện tỉnh.
+3. Nhấn ""Lưu"".",TB,Thêm bảng Giá/Tab Phạm vi khu vực,"- Hệ thống lưu thành công.
+- Phạm vi áp dụng ghi nhận đúng cấp Bưu điện tỉnh đã chọn.",,,,,Quản lý
+BANGGIA_21,Kiểm tra tạo bảng giá không chọn bất kỳ điểm nào ở Tab Phạm vi khu vực,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá không VAT Quý 4/2026"", Tên phiên bản ""1""
+4. Ngày bắt đầu, Trạng thái, Phương thức tính thuế VAT: giá trị mặc định
+5. Tab phạm vi: không chọn điểm nào
+Tab sản phẩm:
+6. Thêm 1 sản phẩm bằng SKU: cans
+7. Nhập giá bán = giá niêm yết = 50,000đ
+8. Nhấn ""Lưu"".",Cao,Thêm bảng Giá/Tab Phạm vi khu vực,"1. Điều hướng tới Tab Phạm vi áp dụng
+2. Hiển thị toast message ""Vui lòng chọn khu vực áp dụng""
+3. Không lưu bảng giá",,,,,Quản lý
+BANGGIA_22,Kiểm tra chức năng Hiển thị các đơn vị đã chọn,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Vào tab Phạm vi áp dụng
+4. Tích chọn các điểm
+5. Tích checkbox ""Hiển thị các đơn vị đã chọn"".
+6. Quan sát danh sách hiển thị.",Trung bình,Thêm bảng Giá/Tab Phạm vi khu vực,"- Danh sách chỉ hiển thị các đơn vị/điểm bán đã được tích chọn.
+- Số lượng đúng với số đã chọn (ví dụ: ""Đã chọn 3 đơn vị/điểm bán"").",,,,,Quản lý
+BANGGIA_23,Tìm kiếm điểm bán theo tên trong Tab Phạm vi khu vực,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Vào tab Phạm vi áp dụng
+4. Nhập từ khóa tìm kiếm (ví dụ: ""Long Biên"") vào ô tìm kiếm của cột Cấp Tổng công ty/Cấp Tỉnh
+5. Quan sát kết quả lọc.",Trung bình,Thêm bảng Giá/Tab Phạm vi khu vực,"- Danh sách cột Xã/Phường chỉ hiển thị các mục có tên chứa ""Long Biên"".
+- Kết quả lọc chính xác, không hiển thị dữ liệu không liên quan.",,,,,Quản lý
+,Kiểm tra chức năng Tạo bảng giá – Tab Sản phẩm (Bảng giá Mua bán),,,,,,,,,,
+BANGGIA_24,Kiểm tra thêm sản phẩm hình thức mua bán theo danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã tạo sẵn danh mục chứa cả 2 loại sản phẩm mua bán và ký gửi:
+- Danh mục: Đồ ăn nhanh
+- Sản phẩm hình thức Mua bán: Bánh bao chiên
+- Sản phẩm hình thức Ký gửi: Ký gửi","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Vào Tab Sản phẩm.
+4. Tích chọn danh mục ""Đồ ăn nhanh"" và ấn Áp dụng
+5. Quan sát danh sách sản phẩm hiển thị.",Cao,Thêm bảng Giá/Tab Sản phẩm,"Hiển thị toast message ""Đã thêm x sản phẩm mới"". x là số lượng sản phẩm hình thức mua bán nằm trong cây danh mục đã chọn được thêm vào bảng, trong đó:
+- Sản phẩm Bánh bao chiên xuất hiện trong danh sách. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là Sản phẩm, Danh mục, Đơn vị. Các cột Giá bán, Giá niêm yết có thể nhập.
+- Sản phẩm Ký gửi KHÔNG xuất hiện trong danh sách.",,Pass,,,Quản lý
+BANGGIA_25,Kiểm tra thêm sản phẩm hình thức mua bán theo SKU,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã tạo sẵn sản phẩm mua bán
+-  SKU sản phẩm hình thức Mua bán: SKU_DEMO_1","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Đổi option ""Theo SKU"".
+5. Nhập mã SKU ""SKU_DEMO_1"" vào ô tìm kiếm.
+6. Nhấn Enter hoặc nhấn ""Áp dụng"" và quan sát
+",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị toast message ""Đã thêm 1 sản phẩm mới""
+2. Sản phẩm có SKU ""SKU_DEMO_1"" được thêm vào bảng
+3. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là Sản phẩm, Danh mục, Đơn vị.
+4. Các cột Giá bán, Giá niêm yết có thể nhập.",,Pass,,,Quản lý
+BANGGIA_26,Kiểm tra nhập SKU của sản phẩm Ký gửi vào bảng giá Mua bán,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã tạo sẵn sản phẩm ký gửi
+-  SKU sản phẩm hình thức Ký gửi: SKUdemo2","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Đổi option ""Theo SKU"".
+5. Nhập mã SKU ""SKUdemo2"" vào ô tìm kiếm.
+6. Nhấn Enter hoặc nhấn ""Áp dụng"" và quan sát
+",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị toast message ""Không tìm thấy sản phẩm nào""
+- Sản phẩm có SKU ""SKUdemo2"" không xuất hiện trên bảng",,Pass,,,Quản lý
+BANGGIA_27,Kiểm tra thêm Combo Mua bán vào bảng giá Mua bán theo danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Phương thức tính thuế VAT là Đơn giá đã bao gồm VAT (Giá sau thuế)
+Đã tạo sẵn danh mục chứa cả 2 loại combo sản phẩm mua bán và ký gửi:
+- Danh mục: Khuyến mại
+- Sản phẩm hình thức Mua bán: Combo Bút xoá + vở Hồng hà
+- Sản phẩm hình thức Ký gửi: Combo ký gửi","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Tại phần Thêm sản phẩm, đổi giá trị Loại sản phẩm thành ""Combo""
+5. Tích chọn danh mục Khuyến mại và nhấn áp dụng
+6. Quan sát",Cao,Thêm bảng Giá/Tab Sản phẩm,"Hiển thị toast message ""Đã thêm x sản phẩm mới"". x là số lượng combo hình thức mua bán trong cây danh mục đã chọn được thêm vào bảng. Trong đó
+- Combo sản phẩm Combo Bút xoá + vở Hồng hà xuất hiện trong danh sách. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là combo, Danh mục, Đơn vị. Các cột Giá bán, Giá niêm yết có thể nhập.
+- Combo sản phẩm Combo ký gửi KHÔNG xuất hiện trong danh sách.",,Pass,,,Quản lý
+BANGGIA_28,Thêm Combo Mua bán vào bảng giá Mua bán theo SKU,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Phương thức tính thuế VAT là Đơn giá đã bao gồm VAT (Giá sau thuế)
+Đã tạo sẵn sản phẩm mua bán
+- SKU combo sản phẩm hình thức Mua bán: 12","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Tại phần Thêm sản phẩm, đổi giá trị Loại sản phẩm thành ""Combo""
+5. Đổi option ""Theo SKU""
+6. Nhập ""12"" và nhấn Áp dụng
+7. Quan sát",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị toast message ""Đã thêm 1 sản phẩm mới""
+2. Combo sản phẩm có SKU ""12"" được thêm vào bảng
+3. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là Combo sản phẩm, Danh mục, Đơn vị.
+4. Các cột Giá bán, Giá niêm yết có thể nhập.",,Pass,,,Quản lý
+BANGGIA_29,Kiểm tra nhập SKU của combo sản phẩm Ký gửi vào bảng giá Mua bán,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã tạo sẵn combo sản phẩm ký gửi
+-  SKU combo sản phẩm hình thức Ký gửi: combokygui","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Tại phần Thêm sản phẩm, đổi giá trị Loại sản phẩm thành ""Combo""
+5. Đổi option ""Theo SKU""
+6. Nhập ""combokygui"" và nhấn Áp dụng
+7. Quan sát",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị toast message ""Không tìm thấy sản phẩm nào""
+Combo sản phẩm có SKU ""combokygui"" không xuất hiện trên bảng",,,,,Quản lý
+,Kiểm tra thêm lại sản phẩm đã tồn tại trong bảng,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Thêm sản phẩm theo danh mục hoặc SKU
+5. Thêm tiếp theo danh mục hoặc SKU đã tồn tại thêm bảng
+6. Quan sát",,,"Nếu trong tổng số sản phẩm được thêm chứa cả SKU đã tồn tại trên bảng và SKU chưa tồn tại trên bảng, hiển thị message ""Đã thêm x sản phẩm mới"". Trong đó x là tổng số sản phẩm chưa tồn tại trên bảng và các sản phẩm đó được thêm vào bảng. Các sản phẩm cũ vẫn giữ nguyên.
+Nếu tất cả các sản phẩm đc thêm đều đã tồn tại trên bảng, hiển thị message ""Tất cả sản phẩm vừa chọn đã tồn tại trên bảng.""",,Pass,,,Quản lý
+,Kiểm tra nhập giá bán > giá niêm yết,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Thêm sản phẩm vào bảng giá -> Giá bán và giá niêm yết của sản phẩm mặc định = 
+5. Nhập giá bán = 50,000đ
+6. Quan sát giá niêm yết
+",,Thêm bảng Giá/Tab Sản phẩm,"Giá niêm yết tự động nhảy = giá bán nếu nhập giá bán > giá niêm yết
+Vẫn cho phép nhập lại giá niêm yết nhưng phải lớn hơn giá bán",,Pass,,,Quản lý
+,Kiểm tra nhập giá niếm yết < giá bán,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Thêm sản phẩm vào bảng giá -> Giá bán và giá niêm yết của sản phẩm mặc định = 
+5. Nhập giá bán = 50,000đ -> Giá niêm yết tự động nhảy = 50,000đ
+6. Sửa giá niêm yết = 40,000đ
+7. Quan sát giá niêm yết
+",,Thêm bảng Giá/Tab Sản phẩm,Giá niêm yết tự động nhảy = giá bán nếu nhập giá niêm yết < Giá bán,,Pass,,,Quản lý
+BANGGIA_35,Kiểm tra trường tỷ lệ chiết khấu tự động tính khi nhập Giá niêm yết và giá bán,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Thêm sản phẩm vào bảng giá -> Giá bán và giá niêm yết của sản phẩm mặc định = 
+5. Nhập giá bán = 50,000đ -> Giá niêm yết tự động nhảy = 50,000đ
+6. Sửa giá niêm yết = 60,000đ
+7. Quan sát Tỷ lệ chiết khấu
+",Cao,Thêm bảng Giá/Tab Sản phẩm,"Tỷ lệ chiết khấu tự động hiển thị = [(Giá niêm yết-Giá bán)/Giá niêm yết]*100%
+1. Ở bước 5, Tỷ lệ chiết khấu = 0%
+2. Ở bước 7, Tỷ lệ chiết khấu = 16.67%",,Pass,,,Quản lý
+BANGGIA_34,Kiểm tra thêm sản phẩm Mua bán từ file Excel,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Cột Hình thức phân phối trong file chứa cả giá trị ""MUA_BAN"" và ""KY_GUI""","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Chọn Nhập từ Excel
+5. Upload file và nhấn Xác nhận nhập",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị popup ""Cảnh báo hình thức phân phối"" có nội dung ""File có x sản phẩm không thuộc hình thức ""Mua bán"" và sẽ bị bỏ qua. Còn lại n sản phẩm phù hợp sẽ được nhập. Bạn có muốn tiếp tục?"". Trong đó, x là tổng số dòng có Hình thức phân phối là KY_GUI; n là tổng số dòng có hình thức phân phối là ""MUA_BAN"".
+2. Sau khi nhấn xác nhận, chỉ thêm vào trong bảng n sản phẩm MUA_BAN",,,,pending,
+BANGGIA_35,Upload file Excel chứa SKU của sản phẩm Ký gửi vào bảng giá Mua bán → bị loại bỏ / báo lỗi,"Đang ở Tab Sản phẩm, bảng giá hình thức Mua bán.
+Đã chuẩn bị file Excel chứa SKU của sản phẩm Ký gửi.","1. Nhấn ""Nhập từ Excel"".
+2. Upload file chứa SKU sản phẩm Ký gửi.
+3. Nhấn ""Xác nhận"".",Cao,Thêm bảng Giá/Tab Sản phẩm,"- Hệ thống báo lỗi cho các dòng có SKU Ký gửi: ""Sản phẩm không thuộc hình thức Mua bán"".
+- Các dòng hợp lệ (nếu có) vẫn được thêm.
+- Sản phẩm Ký gửi KHÔNG được thêm vào bảng giá Mua bán.",,,,pending,
+BANGGIA_36,Kiểm tạo bảng giá khi không thêm sản phẩm nào vào bảng giá,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá An Giang"", Tên phiên bản ""1""
+4. Ngày bắt đầu, Trạng thái: giá trị mặc định.
+5. Chọn Phương thức tính thuế VAT: Đơn giá chưa bao gồm VAT (Giá trước thuế)
+Tab phạm vi áp dụng:
+6. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh An Giang
+7. Tab sản phẩm: Không thêm sản phẩm nào vào trong bảng giá
+8. Nhấn ""Lưu"".",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hệ thống KHÔNG lưu.
+2. Hiển thị toast message ""Vui lòng chọn sản phẩm""",,,,pending,
+,Kiểm tạo Bảng giá mua bán thành công khi khai báo hợp lệ,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã có sản phẩm hình thức mua bán có SKU là cans","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá mua bán 2026"", Tên phiên bản ""1""
+4. Chọn Ngày bắt đầu: 25/05/2026
+5. Chọn Ngày kết thúc sau ngày bắt đầu: 26/05/2026
+5. Bỏ tích checkbox ""Không cài đặt khung giờ""
+6. Chọn giờ bắt đầu: 1:00
+7. Chọn giờ kết thúc sau giờ hiện tại: 23:45
+8. Trạng thái mặc định: """"Kích hoạt"""".
+9. Phương thức tính thuế VAT mặc định
+Tab phạm vi áp dụng:
+10. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+Tab sản phẩm:
+11. Thêm 1 sản phẩm bằng SKU: cans
+12. Nhập giá bán = giá niêm yết = 50,000đ
+13. Nhấn """"Lưu"""".""",,,"- Hệ thống lưu thành công, điều hướng về màn hình Quản lý bảng giá.
+- Cột Hình thức hiển thị đúng giá trị ""Mua bán""",,Pass,,,Quản lý
+,Kiểm tra chức năng Tạo bảng giá – Tab Sản phẩm (Bảng giá Ký gửi),,,,,,,,,,
+BANGGIA_38,Kiểm tra thêm sản phẩm hình thức ký gửi theo danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã tạo sẵn danh mục chứa cả 2 loại sản phẩm mua bán và ký gửi:
+- Danh mục: Đồ ăn nhanh
+- Sản phẩm hình thức Mua bán: Bánh bao chiên
+- Sản phẩm hình thức Ký gửi: Ký gửi","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+4. Tích chọn danh mục ""Đồ ăn nhanh"" và ấn Áp dụng
+5. Quan sát danh sách sản phẩm hiển thị.",Cao,Thêm bảng Giá/Tab Sản phẩm,"Hiển thị toast message ""Đã thêm x sản phẩm mới"". x là số lượng sản phẩm hình thức ký gửi nằm trong cây danh mục đã chọn được thêm vào bảng, trong đó:
+- Sản phẩm Ký gửi xuất hiện trong danh sách. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là Sản phẩm, Danh mục, Đơn vị. Các cột Giá bán, Tỷ lệ chiết khấu có thê nhập.
+- Sản phẩm Bánh bao chiên KHÔNG xuất hiện trong danh sách.",,,,,Quản lý
+BANGGIA_39,Kiểm tra thêm sản phẩm hình thức ký gửi theo SKU,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã tạo sẵn sản phẩm ký gửi
+-  SKU sản phẩm hình thức ký gửi: SKUdemo2","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+4. Đổi option ""Theo SKU"".
+5. Nhập mã SKU ""SKUdemo2"" vào ô tìm kiếm.
+6. Nhấn Enter hoặc nhấn ""Áp dụng"" và quan sát
+",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị toast message ""Đã thêm 1 sản phẩm mới""
+2. Sản phẩm có SKU ""SKUdemo2"" được thêm vào bảng
+3. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là Sản phẩm, Danh mục, Đơn vị.
+4. Các cột Giá bán, Tỷ lệ chiết khấu có thể nhập.",,,,,Quản lý
+BANGGIA_40,Kiểm tra nhập SKU của sản phẩm Mua bán vào bảng giá Ký gửi,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã tạo sẵn sản phẩm mua bán
+-  SKU sản phẩm hình thức Mua bán: SKU_DEMO_1","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+4. Đổi option ""Theo SKU"".
+5. Nhập mã SKU ""SKU_DEMO_1"" vào ô tìm kiếm.
+6. Nhấn Enter hoặc nhấn ""Áp dụng"" và quan sát
+",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị toast message ""Không tìm thấy sản phẩm nào""
+- Sản phẩm có SKU ""SKU_DEMO__1"" không xuất hiện trên bảng",,,,,Quản lý
+BANGGIA_41,Kiểm tra thêm Combo Ký gửi vào bảng giá Ký gửi theo danh mục,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Phương thức tính thuế VAT là Đơn giá đã bao gồm VAT (Giá sau thuế)
+Đã tạo sẵn danh mục chứa cả 2 loại combo sản phẩm mua bán và ký gửi:
+- Danh mục: Khuyến mại
+- Sản phẩm hình thức Mua bán: Combo Bút xoá + vở Hồng hà
+- Sản phẩm hình thức Ký gửi: Combo ký gửi","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+4. Tại phần Thêm sản phẩm, đổi giá trị Loại sản phẩm thành ""Combo""
+5. Tích chọn danh mục Khuyến mại và nhấn áp dụng
+6. Quan sát",Cao,Thêm bảng Giá/Tab Sản phẩm,"Hiển thị toast message ""Đã thêm x sản phẩm mới"". x là số lượng combo hình thức ký gửi trong cây danh mục đã chọn được thêm vào bảng. Trong đó
+- Combo sản phẩm ""Combo ký gửi"" xuất hiện trong danh sách. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là combo, Danh mục, Đơn vị. Các cột Giá bán, Tỷ lệ chiết khấu có thể nhập.
+- Combo sản phẩm ""Combo Bút xoá + vở Hồng hà"" KHÔNG xuất hiện trong danh sách.",,,,,Quản lý
+BANGGIA_42,Thêm Combo Ký gửi vào bảng giá Ký gửi theo SKU,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Phương thức tính thuế VAT là Đơn giá đã bao gồm VAT (Giá sau thuế)
+Đã tạo sẵn sản phẩm ký gửi
+- SKU combo sản phẩm hình thức ký gửi: combokygui","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+4. Tại phần Thêm sản phẩm, đổi giá trị Loại sản phẩm thành ""Combo""
+5. Đổi option ""Theo SKU""
+6. Nhập ""combokygui"" và nhấn Áp dụng
+7. Quan sát",Cao,Thêm bảng Giá/Tab Sản phẩm,"1. Hiển thị toast message ""Đã thêm 1 sản phẩm mới""
+2. Combo sản phẩm có SKU ""combokygui"" được thêm vào bảng
+3. Hiển thị đúng thông tin: SKU, Tên sản phẩm, Loại sản phẩm là Combo sản phẩm, Danh mục, Đơn vị.
+4. Các cột Giá bán, Tỷ lệ chiết khấu có thể nhập.",,,,,Quản lý
+BANGGIA_43,Thêm sản phẩm Ký gửi từ file Excel – thành công,"Đang ở Tab Sản phẩm, bảng giá hình thức Ký gửi.
+Đã chuẩn bị file Excel chứa SKU sản phẩm Ký gửi hợp lệ.","1. Nhấn ""Nhập từ Excel"".
+2. Upload file chứa SKU sản phẩm Ký gửi.
+3. Nhấn ""Xác nhận"".",Cao,Thêm bảng Giá/Tab Sản phẩm,"- Sản phẩm Ký gửi từ file được thêm thành công vào bảng.
+- Hiển thị đúng thông tin các cột (không có Giá niêm yết).
+- Sản phẩm Mua bán trong file (nếu có) báo lỗi và không được thêm.",,,,pending,
+BANGGIA_44,Kiểm tra nhập Giá bán và Tỷ lệ chiết khấu thủ công cho sản phẩm Ký gửi,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+4. Đổi option ""Theo SKU""
+5. Nhập mã SKU ""SKUdemo2"" vào ô tìm kiếm.
+6. Nhấn Enter hoặc nhấn ""Áp dụng""
+7. Nhập Giá bán = 90.000đ
+8. Nhập Tỷ lệ chiết khấu = 10%.
+9. Quan sát kết quả.",Cao,Thêm bảng Giá/Tab Sản phẩm,"- Giá bán và Tỷ lệ chiết khấu nhập thành công.
+- KHÔNG có trường Giá niêm yết.",,,,pending,
+,Kiểm tra nhập Tỷ lệ chiết khấu > 100,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+4. Đổi option ""Theo SKU""
+5. Nhập mã SKU ""SKUdemo2"" vào ô tìm kiếm.
+6. Nhấn Enter hoặc nhấn ""Áp dụng""
+7. Nhập Tỷ lệ chiết khấu = 105%.
+8. Quan sát kết quả.",,,Tỷ lệ chiết khấu tự động nhảy xuống 100,,,,,
+,Kiểm tạo Bảng giá ký gửi thành công khi khai báo hợp lệ,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá
+Đã có sản phẩm hình thức mua bán có SKU là JEANS","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+Tab Thông tin chung:
+3. Nhập Tên bảng giá ""Bảng giá ký gửi 2026"", Tên phiên bản ""1""
+4. Chọn Ngày bắt đầu: 25/05/2026
+5. Chọn Ngày kết thúc sau ngày bắt đầu: 26/05/2026
+5. Bỏ tích checkbox ""Không cài đặt khung giờ""
+6. Chọn giờ bắt đầu: 1:00
+7. Chọn giờ kết thúc sau giờ hiện tại: 23:45
+8. Trạng thái mặc định: ""Kích hoạt""
+9. Phương thức tính thuế VAT mặc định
+Tab phạm vi áp dụng:
+10. Chọn ít nhất 1 phạm vi áp dụng: Bưu điện Tỉnh Nghệ An
+11. Vào Tab Sản phẩm, đổi thành option ""Ký gửi""
+12. Thêm 1 sản phẩm bằng SKU: cans
+13. Nhập giá bán = 50,000đ, tỷ lệ chiết khấu = 1
+14. Nhấn ""Lưu""",,,"- Hệ thống lưu thành công, điều hướng về màn hình Quản lý bảng giá.
+- Cột Hình thức hiển thị đúng giá trị ""Ký gửi""",,,,,Quản lý
+,Kiểm tra chức năng Tạo bảng giá – Tab Sản phẩm (case chung cho cả hình thức Mua bán và Ký gửi),,,,,,,,,,
+,Kiểm tra thêm lại sản phẩm đã tồn tại trong bảng,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới""
+3. Vào Tab Sản phẩm.
+4. Thêm sản phẩm theo danh mục hoặc SKU
+5. Thêm tiếp theo danh mục hoặc SKU đã tồn tại thêm bảng
+6. Quan sát",,Thêm bảng Giá/Tab Sản phẩm,"Nếu trong tổng số sản phẩm được thêm chứa cả SKU đã tồn tại trên bảng và SKU chưa tồn tại trên bảng, hiển thị message ""Đã thêm x sản phẩm mới"". Trong đó x là tổng số sản phẩm chưa tồn tại trên bảng và các sản phẩm đó được thêm vào bảng. Các sản phẩm cũ vẫn giữ nguyên.
+Nếu tất cả các sản phẩm đc thêm đều đã tồn tại trên bảng, hiển thị message ""Tất cả sản phẩm vừa chọn đã tồn tại trên bảng.""",,Pass,,,Quản lý
+BANGGIA_48,Xóa hàng loạt sản phẩm khỏi bảng giá,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Vào Tab Sản phẩm.
+4. Tích chọn danh mục ""Đồ ăn nhanh"" và ấn Áp dụng
+5. Tích checck box các sản phẩm cần xóa
+6. Nhấn Xóa hàng loạt",Trung bình,Thêm bảng Giá/Tab Sản phẩm,"- Các dòng sản phẩm được chọn bị xóa khỏi danh sách.
+- Dòng còn lại vẫn hiển thị bình thường.",,Pass,,pending,Quản lý
+,Kiểm tra nhập số âm cho các trường cần nhập số,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Vào Tab Sản phẩm, chọn hình thức ""Mua bán"" hoặc ""Ký gửi""
+4. Thêm sản phẩm vào bảng
+5. Nhập Giá bán và Giá niêm yết số âm = -90,000  (Nếu là bảng giá Mua bán)
+Nhập Giá bán và Tỷ lệ chiết khấu số âm = -90 (Nếu là bảng giá Ký gửi)
+6. Quan sát",,Thêm bảng Giá/Tab Sản phẩm,"Sau khi nhập số âm, các trường tự động nhảy về = 0",,Pass,,,Quản lý
+,Kiểm tra khi thêm sản phẩm theo danh mục hoặc SKU nhưng sản phẩm không tồn tại,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Tạo bảng giá","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn nút ""Thêm mới"".
+3. Vào Tab Sản phẩm, chọn hình thức ""Mua bán"" hoặc ""Ký gửi""
+4. Thêm sản phẩm vào bảng theo danh mục nhưng danh mục không chứa sản phẩm nào hoặc theo SKU nhưng SKU không tồn tại
+6. Quan sát",,,"Hiển thị message ""Không tìm thấy sản phẩm nào"" và không sản phẩm mới nào được thêm vào bảng",,Pass,,,Quản lý
+,"Kiểm tra khi đã tồn tại combo trong bảng sản phẩm sau đó thay đổi ""Phương thức tính thuế VAT
+"" thành ""Đơn giá chưa bao gồm VAT (Giá trước thuế)""","Đang ở màn Thêm bảng giá có Phương thức tính thuế VAT là Đơn giá đã bao gồm VAT (Giá sau thuế)
+Đã có combo trong bảng Danh sách sản phẩm được áp dụng bảng giá","Tại tab Thông tin chung, đổi Phương thức tính thuế VAT sang option Đơn giá chưa bao gồm VAT (Giá trước thuế)",,,"1. Hiển thị popup ""Thay đổi Phương thức tính thuế VAT""
+Nội dung popup: ""Thay đổi Phương thức tính thuế VAT  sẽ xóa toàn bộ combo sản phẩm đã thêm. Bạn có chắc chắn muốn tiếp tục?""
+2. Sau khi xác nhận popup, các combo đang tồn tại trong bảng bị xóa",,Fail,,,Quản lý
+,Kiểm tra tìm kiếm sản phẩm trong danh sách theo mã SKU hoặc tên,"Đang ở màn Thêm bảng giá/Tab sản phẩm
+Đã có sản phẩm trong bảng Danh sách sản phẩm được áp dụng bảng giá",Nhập 1 phần hoặc toàn bộ ký tự chứa trong SKU hoặc tên sản phẩm và quan sát,,,Danh sách sản phẩm lọc đúng các sản phẩm có SKU hoặc tên chứa ký tự đã nhập,,,,,Quản lý
+,Kiểm tra tìm kiếm sản phẩm trong danh sách theo loại sản phẩm,"Đang ở màn Thêm bảng giá/Tab sản phẩm
+Đã có sản phẩm trong bảng Danh sách sản phẩm được áp dụng bảng giá","1. Quan sát bảng sản phẩm khi bộ lọc Loại sản phẩm mặc định giá trị ""Sản phẩm""
+2. Đổi Loại sản phẩm giá trị ""Combo"" và quan sát",,,"1. Ở bước 1, Danh sách sản phẩm lọc đúng các sản phẩm có Loại sản phẩm là ""Sản phẩm""
+2. Ở bước 2, Danh sách sản phẩm lọc đúng các sản phẩm có Loại sản phẩm là ""Combo""",,,,,Quản lý
+,Kiểm tra tìm kiếm sản phẩm trong danh sách theo danh mục,"Đang ở màn Thêm bảng giá/Tab sản phẩm
+Đã có sản phẩm trong bảng Danh sách sản phẩm được áp dụng bảng giá",Chọn danh mục trong bộ lọc danh mục và quan sát bảng sản phẩm,,,Danh sách sản phẩm lọc đúng các sản phẩm thuộc danh mục cấp nhỏ nhất của danh mục đã được chọn,,,,,Quản lý
+,Kiểm tra chức năng Xem danh sách và tìm kiếm bảng giá,,,,,,,,,,
+BANGGIA_55,Màn hình Quản lý bảng giá hiển thị đúng các cột thông tin,Đã có ít nhất 2 bảng giá trong hệ thống (1 Mua bán + 1 Ký gửi).,"1. Vào menu Sản phẩm > Bảng Giá.
+2. Quan sát màn hình danh sách.",Cao,Thêm bảng Giá/Tab Sản phẩm,"- Danh sách hiển thị đúng các cột: STT, Tên bảng giá, Thời gian hiệu lực, Thời gian tạo, Hình thức, Trạng thái, Trạng thái phê duyệt, Thao tác.
+- Hiển thị đúng Hình thức (Mua bán/Ký gửi) cho từng bảng giá.
+- Phân trang hiển thị đúng số lượng mặt hàng (mặc định 10/trang).",,,x,,Quản lý
+BANGGIA_56,Tìm kiếm bảng giá theo tên – kết quả đúng,"Đã có bảng giá tên ""Bảng giá Hà Nội"" trong danh sách.","1. Nhập ""Hà Nội"" vào ô tìm kiếm tên bảng giá.
+2. Quan sát kết quả lọc.",Cao,Thêm bảng Giá/Tab Sản phẩm,"- Chỉ hiển thị các bảng giá có tên chứa ""Hà Nội"".
+- Kết quả lọc chính xác, không hiển thị bảng giá không liên quan.",,,x,,Quản lý
+BANGGIA_57,Tìm kiếm bảng giá theo Trạng thái,"Đã có bảng giá với Trạng thái ""Kích hoạt"" và ""Ngừng kích hoạt"".","1. Chọn bộ lọc Trạng thái = ""Kích hoạt"".
+2. Quan sát kết quả.",TB,Thêm bảng Giá/Tab Sản phẩm,"- Chỉ hiển thị các bảng giá có Trạng thái = ""Kích hoạt"".
+- Bảng giá ""Ngừng kích hoạt"" không hiển thị.",,,x,,Quản lý
+BANGGIA_58,Tìm kiếm bảng giá theo Hình thức,Đã có bảng giá Mua bán và Ký gửi trong danh sách.,"1. Chọn bộ lọc Hình thức = ""Ký gửi"".
+2. Quan sát kết quả.",TB,Thêm bảng Giá/Tab Sản phẩm,"- Chỉ hiển thị các bảng giá có Hình thức = ""Ký gửi"".
+- Bảng giá ""Mua bán"" không hiển thị trong kết quả lọc.",,,x,,Quản lý
+BANGGIA_59,Tìm kiếm bảng giá theo Thời gian hiệu lực (khoảng ngày),Đã có các bảng giá với ngày bắt đầu khác nhau.,"1. Nhập Ngày bắt đầu = 01/03/2026 vào bộ lọc thời gian.
+2. Quan sát kết quả.",TB,Thêm bảng Giá/Tab Sản phẩm,"- Chỉ hiển thị các bảng giá có ngày bắt đầu từ 01/03/2026 trở đi (hoặc theo logic bộ lọc).
+- Kết quả lọc chính xác.",,,x,,Quản lý
+BANGGIA_60,Tìm kiếm kết hợp nhiều bộ lọc cùng lúc,Đã có nhiều bảng giá với các thuộc tính khác nhau.,"1. Nhập tên = ""Bảng giá"".
+2. Chọn Hình thức = ""Mua bán"".
+3. Chọn Trạng thái = ""Kích hoạt"".
+4. Quan sát kết quả.",TB,Thêm bảng Giá/Tab Sản phẩm,"- Chỉ hiển thị bảng giá thỏa mãn TẤT CẢ 3 điều kiện: tên chứa ""Bảng giá"" + Hình thức Mua bán + Kích hoạt.
+- Kết quả lọc chính xác.",,,x,,Quản lý
+BANGGIA_61,Tìm kiếm không có kết quả → hiển thị thông báo phù hợp,Đang ở màn hình Quản lý bảng giá.,"1. Nhập tên bảng giá = ""XXXXXXXXXXX"" (không tồn tại).
+2. Quan sát kết quả.",Thấp,Thêm bảng Giá/Tab Sản phẩm,"- Danh sách hiển thị trống hoặc thông báo ""Không có dữ liệu"".
+- Không có lỗi hệ thống.",,,x,,Quản lý
+,,,,,,,,,,,
+,Kiểm tra chức năng Sửa bảng giá,,,,,,,,,,
+BANGGIA_62,Kiểm tra sửa Tên bảng giá không trùng với tên đã tồn tại trong hệ thống,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa bảng giá
+Tồn tại ít nhất một bảng giá trong hệ thống","1. Vào menu Sản phẩm > Bảng Giá.
+2. Nhấn icon Sửa (bút chì) tại bảng giá cần sửa
+3. Sửa tên bảng giá không trùng với tên đã tồn tại trên hệ thống
+4. Nhấn ""Lưu"".",Cao,Sửa bảng giá,"- Hệ thống lưu thành công.
+- Tên bảng giá cập nhật thành tên mới trong danh sách.",,,,,Quản lý
+BANGGIA_63,Kiểm tra sửa bảng giá – thêm sản phẩm mới chưa nằm trong bảng giá vào Tab Sản phẩm,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Sửa bảng giá
+Tồn tại ít nhất một bảng giá trong hệ thống","1. Chuyển sang Tab Sản phẩm.
+2. Thêm sản phẩm mới bằng SKU hợp lệ.
+3. Nhập Giá bán và Giá niêm yết.
+4. Nhấn ""Lưu"".",Cao,Sửa bảng giá,"1. Ở bước 2, sản phẩm được thêm vào bảng ""Sản phẩm thêm mới"" kèm toast message ""Đã thêm 1 sản phẩm mới."", không thêm vào bảng ""Sản phẩm hiện tại""
+2. Hệ thống lưu thành công.",,,,,Quản lý
+,"Kiểm tra xóa sản phẩm trong bảng Sản phẩm hiện tại
+ và thêm lại chính sản phẩm đó",,,,,,,,,,
+BANGGIA_64,Sửa bảng giá – xóa sản phẩm khỏi Tab Sản phẩm,"Đang ở màn hình Sửa bảng giá, đã có ít nhất 2 sản phẩm.","1. Ở Tab Sản phẩm, nhấn icon X để xóa 1 dòng sản phẩm trong bảng ""Sản phẩm hiện tại""
+2. Nhấn ""Lưu"".",TB,Sửa bảng giá,"1. Hệ thống lưu thành công.
+2. Dòng sản phẩm bị xóa không còn trong bảng giá.",,,,,Quản lý
+BANGGIA_65,Sửa bảng giá – cập nhật phạm vi khu vực,"Đang ở màn hình Sửa bảng giá, đã có phạm vi khu vực được chọn.","1. Chuyển sang Tab Phạm vi khu vực.
+2. Bỏ tick một điểm bán đã chọn.
+3. Thêm một điểm bán mới.
+4. Nhấn ""Lưu"".",TB,Sửa bảng giá,"- Hệ thống lưu thành công.
+- Phạm vi khu vực cập nhật đúng: điểm cũ bị bỏ chọn, điểm mới được thêm.",,,,,Quản lý
+BANGGIA_66,Không thể sửa Hình thức (Mua bán / Ký gửi) của bảng giá đã tồn tại,"Đã có bảng giá hình thức ""Mua bán"" trong hệ thống.","1. Vào màn hình Sửa bảng giá.
+2. Quan sát trường Hình thức ở Tab Thông tin chung.",Cao,Sửa bảng giá,"- Trường Hình thức bị disable / không thể thay đổi khi sửa.
+- Hình thức luôn giữ nguyên giá trị đã tạo ban đầu.",,,,,Quản lý
+,Kiểm tra chức năng Phê duyệt bảng giá,,,,,,,,,,
+BANGGIA_67,Bảng giá mới tạo có Trạng thái phê duyệt = Chờ phê duyệt,Vừa tạo bảng giá mới thành công.,"1. Vào danh sách bảng giá.
+2. Quan sát cột Trạng thái phê duyệt của bảng giá vừa tạo.",Cao,Sản phẩm > Bảng Giá,"- Cột Trạng thái phê duyệt hiển thị ""Chờ phê duyệt"" (màu cam).
+- Nút tick phê duyệt hiển thị trong cột Thao tác.",,,x,,Quản lý
+BANGGIA_68,Phê duyệt bảng giá – Trạng thái phê duyệt chuyển thành Đã phê duyệt,"Đang ở màn hình Quản lý bảng giá, có bảng giá ""Chờ phê duyệt"".","1. Tìm bảng giá có Trạng thái phê duyệt = ""Chờ phê duyệt"".
+2. Nhấn icon phê duyệt (tick ✓) trong cột Thao tác.
+3. Xác nhận phê duyệt (nếu có popup).",Cao,Sản phẩm > Bảng Giá,"- Trạng thái phê duyệt chuyển thành ""Đã phê duyệt"" (màu xanh).
+- Icon phê duyệt ẩn đi (hoặc vô hiệu hóa) sau khi đã phê duyệt.
+- Bảng giá có thể được áp dụng vào hệ thống bán hàng.",,,x,,Quản lý
+BANGGIA_69,Bảng giá đã phê duyệt không thể phê duyệt lại,Đã có bảng giá với Trạng thái phê duyệt = Đã phê duyệt.,"1. Tìm bảng giá có Trạng thái phê duyệt = ""Đã phê duyệt"".
+2. Quan sát icon Thao tác.",TB,Sản phẩm > Bảng Giá,"- Icon tick phê duyệt không hiển thị hoặc bị disable.
+- Không thể thực hiện phê duyệt lần 2.",,,x,,Quản lý
+BANGGIA_70,Sửa bảng giá đã phê duyệt → Trạng thái phê duyệt quay về Chờ phê duyệt,Đã có bảng giá với Trạng thái phê duyệt = Đã phê duyệt.,"1. Nhấn icon Sửa trên bảng giá ""Đã phê duyệt"".
+2. Thay đổi bất kỳ thông tin nào.
+3. Nhấn ""Lưu"".
+4. Quan sát Trạng thái phê duyệt.",Cao,Sản phẩm > Bảng Giá,"- Sau khi lưu, Trạng thái phê duyệt chuyển về ""Chờ phê duyệt"".
+- Cần phê duyệt lại trước khi bảng giá được áp dụng.",,,,,Quản lý
+,Kiểm tra chức năng Xóa bảng giá,,,,,,,,,,
+BANGGIA_71,Xóa bảng giá – hiển thị popup xác nhận trước khi xóa,Đã có bảng giá trong danh sách.,"1. Vào danh sách bảng giá.
+2. Nhấn icon Xóa (thùng rác) trên một bảng giá.
+3. Quan sát phản hồi.",Cao,Sản phẩm > Bảng Giá,"- Hệ thống hiển thị popup xác nhận ""Bạn có chắc muốn xóa bảng giá này?"".
+- Có 2 nút: Xác nhận / Hủy.",,,x,,Quản lý
+BANGGIA_72,Xóa bảng giá – xác nhận xóa → xóa thành công,Đang hiển thị popup xác nhận xóa.,"1. Nhấn ""Xác nhận"" trong popup.
+2. Quan sát danh sách.",Cao,Sản phẩm > Bảng Giá,"- Bảng giá bị xóa khỏi danh sách.
+- Hệ thống hiển thị thông báo xóa thành công.
+- Số lượng bảng giá trong danh sách giảm 1.",,,x,,Quản lý
+BANGGIA_73,Xóa bảng giá – nhấn Hủy → bảng giá không bị xóa,Đang hiển thị popup xác nhận xóa.,"1. Nhấn ""Hủy"" trong popup.
+2. Quan sát danh sách.",Trung bình,Sản phẩm > Bảng Giá,"- Popup đóng lại.
+- Bảng giá KHÔNG bị xóa.
+- Danh sách không thay đổi.",,,x,,Quản lý
+BANGGIA_74,Không thể xóa bảng giá đang Kích hoạt và đã Phê duyệt (đang áp dụng),Đã có bảng giá Trạng thái = Kích hoạt + Phê duyệt = Đã phê duyệt.,"1. Nhấn icon Xóa trên bảng giá đang Kích hoạt và Đã phê duyệt.
+2. Quan sát phản hồi.",Cao,Sản phẩm > Bảng Giá,"- Hệ thống KHÔNG cho xóa, hoặc icon Xóa bị disable.
+- Hiển thị thông báo: không thể xóa bảng giá đang kích hoạt / đang được áp dụng.",,,x,,Quản lý
+,Kiểm tra giá bán sản phẩm trên POS,,,,,,,,,,
+,"Kiểm tra giá bán sản phẩm khi nằm trong 1 bảng giá chưa bao gồm VAT, có hiệu lực tại điểm bán","Đã khai báo sản phẩm trong bảng giá chưa gồm VAT, có hiệu lực tại điểm bán","1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm sản phẩm
+4. Thêm sản phẩm vào bill",,Bán hàng,"1. Thêm sản phẩm vào bill thành công
+2. Hiển thị trên thanh tìm kiếm và trên bill giá bán sau VAT = giá bán đã khai báo trong bảng giá*(1+% VAT)
+3. Hiển thị đúng VAT = Giá bán*% VAT",,,,,Giá bán
+,"Kiểm tra giá bán sản phẩm khi nằm trong 1 bảng giá gồm VAT, có hiệu lực tại điểm bán","Đã khai báo sản phẩm trong bảng giá gồm VAT, có hiệu lực tại điểm bán","1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm sản phẩm
+4. Thêm sản phẩm vào bill",,Bán hàng,"1. Thêm sản phẩm vào bill thành công
+2. Hiển thị trên thanh tìm kiếm và trên bill giá bán sau VAT = giá bán đã khai báo trong bảng giá
+3. Hiển thị đúng VAT = (Giá bán sau VAT/Giá bán trước VAT)-1",,,,,Giá bán
+,Kiểm tra giá bán sản phẩm khi không nằm trong bảng giá nào tại điểm bán,Không nằm trong bảng giá nào thuộc điểm bán,"1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm sản phẩm
+4. Thêm sản phẩm vào bill",,Bán hàng,"Không thêm được sản phẩm vào bill vào báo ""Sản phẩm: [Tên sản phẩm] chưa nằm trong bảng giá nào có hiệu lực tại điểm bán""",,,,,Giá bán
+,Kiểm tra giá bán sản phẩm khi nằm trong nhiều bảng giá tại điểm bán nhưng chưa có hiệu lực,"Đã khai báo sản phẩm trong nhiều bảng giá tại điểm bán, nhưng chưa  có hiệu lực","1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm sản phẩm
+4. Thêm sản phẩm vào bill",,Bán hàng,"Không thêm được sản phẩm vào bill vào báo ""Sản phẩm: [Tên sản phẩm] chưa nằm trong bảng giá nào có hiệu lực tại điểm bán""",,,,,Giá bán
+,Kiểm tra giá bán sản phẩm khi nằm trong nhiều bảng giá đang có hiệu lực tại điểm bán nhưng có ngày bắt đầu khác nhau ,"Đã khai báo sản phẩm trong nhiều bảng giá có hiệu lực tại điểm bán
+Các bảng giá đó có ngày bắt đầu khác nhau","1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm sản phẩm
+4. Thêm sản phẩm vào bill",,Bán hàng,"1. Thêm sản phẩm vào bill thành công
+2. Hiển thị trên thanh tìm kiếm và trên bill giá bán của bảng giá có ngày bắt đầu gần nhất
+3. Hiển thị đúng VAT",,,,,Giá bán
+,"Kiểm tra giá bán sản phẩm khi nằm trong nhiều bảng giá đang có hiệu lực tại điểm bán, có cùng ngày bắt đầu nhưng khác giờ bắt đầu","Đã khai báo sản phẩm trong nhiều bảng giá có hiệu lực tại điểm bán
+Các bảng giá có cùng ngày bất đầu nhưng khác giờ bắt đầu","1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm sản phẩm
+4. Thêm sản phẩm vào bill",,Bán hàng,"1. Thêm sản phẩm vào bill thành công
+2. Hiển thị trên thanh tìm kiếm và trên bill giá bán của bảng giá có ngày bắt đầu gần nhất
+3. Hiển thị đúng VAT",,,,,Giá bán
+,Kiểm tra giá bán sản phẩm khi nằm trong bảng giá có hiệu lực tại điểm bán khác,Đã khai báo sản phẩm trong bảng giá có hiệu lực tại điểm bán khác,"1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm sản phẩm
+4. Thêm sản phẩm vào bill",,Bán hàng,"Không thêm được sản phẩm vào bill vào báo ""Sản phẩm: [Tên sản phẩm] chưa nằm trong bảng giá nào có hiệu lực tại điểm bán""",,,,,Giá bán
+,Kiểm tra giá bán combo khi nằm trong 1 bảng giá có hiệu lực tại điểm bán,Đã khai báo combo trong bảng giá có hiệu lực tại điểm bán,"1. User truy cập vào hệ thống
+2. Chọn ""Bán hàng"" trên header
+3. Tìm kiếm combo
+4. Thêm combo vào bill",,Bán hàng,"1. Thêm sản phẩm vào bill thành công
+2. Hiển thị trên thanh tìm kiếm và trên bill giá bán = giá đã khai báo trên bảng giá
+3. Hiển thị đúng VAT combo = Giá bán combo sau giảm* [ (Giá con A*Thuế A*SL + Giá con B*Thuế B*SL + ...) / (Giá con A*SL + Giá con B*SL+ ...) ]",,,,,Giá bán

@@ -1,0 +1,5 @@
+{'startTime': '2026-09-25T13:47:21.964Z', 'duration': 45021.273, 'expected': 1, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 27_070_005 — Tải lên trùng file XML đã đối soát
+   @ hoá đơn của PO : 52:C26PO00001000 → 52:C26PO00001000 · thông báo ""
+   ! Error: Hoá đơn 52 không còn Khớp sau lượt tải lại  expect(received).toBe(expected) // Object.is equality  Expected: "MATCHED" Received: "MISMATCHED"

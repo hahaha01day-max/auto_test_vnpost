@@ -1,0 +1,137 @@
+{
+  "_ghi_chu": "Khoá là mã case trong test-cases.csv. Phân hệ CHỈ ĐỌC, trừ 010_005 cần sinh một thao tác để đo timezone. 🚫 Không đặt tài khoản/mật khẩu vào file này.",
+  "cases": {
+    "33_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "33_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "33_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "33_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "33_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "33_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "33_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "33_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "33_010_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_010_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_010_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_010_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "33_020_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_020_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_020_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_020_006": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_020_007": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_020_008": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "33_020_009": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_020_010": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_060_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_060_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_060_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "33_070_001": {
+      "enabled": true,
+      "role": "ward",
+      "mutates": false
+    }
+  }
+}

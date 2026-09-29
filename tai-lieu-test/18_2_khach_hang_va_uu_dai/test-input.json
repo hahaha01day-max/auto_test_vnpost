@@ -1,0 +1,871 @@
+{
+  "_note": "Phân hệ 18_2 Khách hàng và ưu đãi tại quầy. 🔴 Toàn bộ nhóm 020 (CTKM) THANH TOÁN THẬT — tạo đơn hàng và trừ tồn kho thật. Nhóm 050 đổi điểm TRỪ ĐIỂM THẬT của khách. Mọi case mutates để enabled=false.",
+  "cases": {
+    "18_2_010_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_note": "28/09: viết lại ở tao-don.gdv.spec.js trên POS làn (spec cũ không khớp testMatch)."
+    },
+    "18_2_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "_note": "28/09 B3 — tao-don.gdv.spec.js (không cho sửa giảm giá tay)"
+    },
+    "18_2_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — CTKM nhóm khách dựng trong spec (ctkm-nhom.js), dọn finally"
+    },
+    "18_2_010_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_010_014": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_010_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_note": "28/09: viết lại ở tao-don.gdv.spec.js trên POS làn (spec cũ không khớp testMatch)."
+    },
+    "18_2_020_002": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_090_001",
+      "_blocked": "TRÙNG 11_090_001 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_003": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_090_003",
+      "_blocked": "TRÙNG 11_090_003 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_004": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_090_005",
+      "_blocked": "TRÙNG 11_090_005 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_005": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_090_006",
+      "_blocked": "TRÙNG 11_090_006 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_006": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_004",
+      "_blocked": "TRÙNG 11_120_004 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_007": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_090_008",
+      "_blocked": "TRÙNG 11_090_008 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_008": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_001",
+      "_blocked": "TRÙNG 11_100_001 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_009": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_002",
+      "_blocked": "TRÙNG 11_100_002 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_010": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_003",
+      "_blocked": "TRÙNG 11_100_003 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_011": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_004",
+      "_blocked": "TRÙNG 11_100_004 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_012": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_005",
+      "_blocked": "TRÙNG 11_100_005 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_013": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_006",
+      "_blocked": "TRÙNG 11_100_006 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_014": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_007",
+      "_blocked": "TRÙNG 11_100_007 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_015": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_008",
+      "_blocked": "TRÙNG 11_100_008 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_016": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_009",
+      "_blocked": "TRÙNG 11_100_009 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_017": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_010",
+      "_blocked": "TRÙNG 11_100_010 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_018": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_011",
+      "_blocked": "TRÙNG 11_100_011 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_019": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_012",
+      "_blocked": "TRÙNG 11_100_012 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_020": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_100_013",
+      "_blocked": "TRÙNG 11_100_013 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_021": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_001",
+      "_blocked": "TRÙNG 11_110_001 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_022": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_002",
+      "_blocked": "TRÙNG 11_110_002 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_023": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_003",
+      "_blocked": "TRÙNG 11_110_003 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_024": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_004",
+      "_blocked": "TRÙNG 11_110_004 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_025": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_005",
+      "_blocked": "TRÙNG 11_110_005 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_026": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_006",
+      "_blocked": "TRÙNG 11_110_006 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_027": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_007",
+      "_blocked": "TRÙNG 11_110_007 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_028": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_008",
+      "_blocked": "TRÙNG 11_110_008 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_029": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_009",
+      "_blocked": "TRÙNG 11_110_009 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_030": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_010",
+      "_blocked": "TRÙNG 11_110_010 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_031": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_110_011",
+      "_blocked": "TRÙNG 11_110_011 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_032": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_001",
+      "_blocked": "TRÙNG 11_120_001 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_033": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_002",
+      "_blocked": "TRÙNG 11_120_002 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_034": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_003",
+      "_blocked": "TRÙNG 11_120_003 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_035": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_004",
+      "_blocked": "TRÙNG 11_120_004 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_036": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_005",
+      "_blocked": "TRÙNG 11_120_005 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_037": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_006",
+      "_blocked": "TRÙNG 11_120_006 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_038": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_007",
+      "_blocked": "TRÙNG 11_120_007 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_039": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_008",
+      "_blocked": "TRÙNG 11_120_008 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_040": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_009",
+      "_blocked": "TRÙNG 11_120_009 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_041": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_010",
+      "_blocked": "TRÙNG 11_120_010 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_042": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_011",
+      "_blocked": "TRÙNG 11_120_011 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_043": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_012",
+      "_blocked": "TRÙNG 11_120_012 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_044": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_013",
+      "_blocked": "TRÙNG 11_120_013 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_045": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_014",
+      "_blocked": "TRÙNG 11_120_014 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_020_046": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "gdv",
+      "data": {},
+      "trungVoi": "11_120_015",
+      "_blocked": "TRÙNG 11_120_015 — user chốt 28/09: đánh dấu trùng 11_khuyen_mai (đã có script thật trên làn), không viết lại."
+    },
+    "18_2_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_030_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_030_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_030_015": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_030_016": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — spec bien-lai.gdv"
+    },
+    "18_2_030_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — spec bien-lai.gdv"
+    },
+    "18_2_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_020": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — spec bien-lai.gdv"
+    },
+    "18_2_040_021": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_040_022": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — tat-hddt.gdv (tắt enableInvoice điểm bán, khôi phục afterAll)"
+    },
+    "18_2_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {}
+    },
+    "18_2_050_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — diem-ghi (ngưỡng đổi điểm tạm, khôi phục finally)"
+    },
+    "18_2_050_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_050_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true
+    },
+    "18_2_050_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_batBoi": "Làn seed 8: bật 26/09/2026 — diem-ghi"
+    }
+  }
+}

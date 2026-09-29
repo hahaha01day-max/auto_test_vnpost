@@ -1,0 +1,36 @@
+{'startTime': '2026-09-25T12:02:26.852Z', 'duration': 237368.98799999998, 'expected': 2, 'skipped': 0, 'unexpected': 4, 'flaky': 0}
+
+ failed | 20_050_005 — Sản phẩm giảm giá bị loại khỏi tiền tính điểm
+   @ CTKM rác : 693 A7KH19_KM_20_050_005_755356
+   @ cấu hình tạm : {"scopeType":"DIEM_BAN","scopes":"171 đơn vị","noPointForDiscountedProduct":true,"orderAmountPerPoint":1000,"orderAmountConditional":0}
+   @ giỏ : {"truocVat":190000,"vat":0,"sauVat":190000,"canThanhToan":190000}
+   @ đơn : 370
+   @ giảm dòng SP_FIFO : 0
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"gOqsrC"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"anryVr"}]
+   @ dừng CTKM rác : 693 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"ndVDWc"}
+   ! Error: CTKM SP rác không áp lên dòng SP_FIFO  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 20_050_013 — Đạt mức tối thiểu nhưng có sản phẩm giảm giá
+   @ CTKM rác : 694 A7KH19_KM_20_050_013_819659
+   @ cấu hình tạm : {"scopeType":"DIEM_BAN","scopes":"171 đơn vị","noPointForDiscountedProduct":true,"orderAmountPerPoint":1000,"orderAmountConditional":101000}
+   @ giỏ : {"truocVat":190000,"vat":0,"sauVat":190000,"canThanhToan":190000}
+   @ đơn : 372
+   @ giảm dòng SP_FIFO : 0
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"uFTYND"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"EScsSM"}]
+   @ dừng CTKM rác : 694 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"ndVDWc"}
+   ! Error: CTKM SP rác không áp lên dòng SP_FIFO  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 20_050_014 — Không đạt mức tối thiểu và có sản phẩm giảm giá
+   @ CTKM rác : 695 A7KH19_KM_20_050_014_883546
+   @ cấu hình tạm : {"scopeType":"DIEM_BAN","scopes":"171 đơn vị","noPointForDiscountedProduct":true,"orderAmountPerPoint":1000,"orderAmountConditional":191000}
+   @ giỏ : {"truocVat":190000,"vat":0,"sauVat":190000,"canThanhToan":190000}
+   @ đơn : 373
+   @ giảm dòng SP_FIFO : 0
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"xFXrzI"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"YwZTFf"}]
+   @ dừng CTKM rác : 695 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"ndVDWc"}
+   ! Error: CTKM SP rác không áp lên dòng SP_FIFO  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 20_050_006 — Sản phẩm sửa giá tăng lên vẫn tích điểm
+   @ ô trên dòng hàng : 1
+   @ khôi phục (lỗi) : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"ppKlci"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"rHeqNB"}]
+   ! Error: POS không cho sửa đơn giá trên dòng hàng (ô giá khoá / không có) — không dựng được "SP sửa giá tăng"  expect(received).toBeGreaterThanOrEqual(expected)  Expected: >= 0 Received:    -1

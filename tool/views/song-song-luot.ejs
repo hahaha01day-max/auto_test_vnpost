@@ -1,0 +1,74 @@
+<div class="flex">
+  <h1 style="margin:0">Lượt <span class="mono"><%= t.luot %></span></h1>
+  <span class="right" id="pha"></span>
+</div>
+<p class="sub">Màn này tự cập nhật. <a href="/song-song">← Các lượt</a></p>
+
+<div class="card" id="nut-dung" hidden>
+  <form method="post" action="/song-song/<%= t.luot %>/dung" style="margin:0"
+        onsubmit="return confirm('Dừng lượt này? Các file spec đang chạy sẽ bị huỷ, kết quả đã ghi vẫn giữ.')">
+    <button style="width:auto">Dừng lượt</button>
+  </form>
+</div>
+
+<div class="card">
+  <b>Làn</b>
+  <table class="small" style="width:100%;margin-top:6px">
+    <thead><tr><th style="text-align:left">Làn</th><th style="text-align:left">Seed</th><th style="text-align:left">Thiếu dữ liệu bổ sung</th></tr></thead>
+    <tbody id="lan"></tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="flex"><b>File spec</b><span class="right small" id="dem"></span></div>
+  <table class="small" style="width:100%;margin-top:6px">
+    <thead><tr><th style="text-align:left">Phân hệ / file</th><th>Case</th><th>Làn</th><th style="text-align:left">Trạng thái</th><th style="text-align:left">Kết quả ghi CSV</th><th></th></tr></thead>
+    <tbody id="viec"></tbody>
+  </table>
+</div>
+
+<div class="card">
+  <b>Log lượt</b>
+  <div id="log" class="mono small" style="margin-top:8px;white-space:pre-wrap;max-height:360px;overflow:auto"></div>
+</div>
+
+<script>
+(() => {
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const lopViec = { 'Chờ': 'b-no', 'Đang chạy': 'b-run', 'Đạt hết': 'b-pass', 'Có case hỏng': 'b-fail', 'Lỗi chạy': 'b-fail' };
+  const ve = (t) => {
+    document.getElementById('pha').innerHTML = `<span class="badge ${t.dangChay ? 'b-run' : (t.pha === 'Xong' ? 'b-pass' : 'b-no')}">${esc(t.pha)}</span>`
+      + (t.loi ? ` <span class="small" style="color:#b00">${esc(t.loi)}</span>` : '');
+    document.getElementById('nut-dung').hidden = !t.dangChay;
+    document.getElementById('lan').innerHTML = (t.lan || []).map((l) => `
+      <tr><td class="mono">${l.so}</td>
+        <td><span class="badge ${l.hong ? 'b-fail' : (l.seed === 'Đủ' || l.seed === 'Dùng sẵn' ? 'b-pass' : 'b-run')}">${esc(l.seed)}</span></td>
+        <td class="muted">${esc((l.thieuBoSung || []).join(', '))}</td></tr>`).join('');
+    const viec = t.viec || [];
+    document.getElementById('dem').textContent = Object.entries(t.dem || {}).map(([k, v]) => `${k}: ${v}`).join(' · ')
+      + (viec.length ? ` / ${viec.length} file` : '');
+    document.getElementById('viec').innerHTML = viec.map((v) => `
+      <tr><td class="mono">${esc(v.mod)}/${esc(v.file)}${v.chung ? ' <span class="badge b-no">chung</span>' : ''}</td>
+        <td style="text-align:center">${v.soCase}</td>
+        <td style="text-align:center">${v.lan ?? ''}</td>
+        <td><span class="badge ${lopViec[v.trangThai] || 'b-no'}">${esc(v.trangThai)}</span>${v.phut != null ? ` <span class="muted">${v.phut}p</span>` : ''}</td>
+        <td class="muted">${esc(v.tomTat)}</td>
+        <td>${v.out && v.trangThai !== 'Chờ' && v.trangThai !== 'Đang chạy' ? `<a href="/song-song-file/${encodeURI(v.out)}/report/index.html" target="_blank">báo cáo</a>` : ''}</td></tr>`).join('');
+    const log = document.getElementById('log');
+    const cuoi = log.scrollTop + log.clientHeight >= log.scrollHeight - 20;
+    log.textContent = t.log || '';
+    if (cuoi) log.scrollTop = log.scrollHeight;
+    return t.dangChay;
+  };
+  const dau = <%- JSON.stringify(t).replace(/</g, '\\u003c') %>;
+  let chay = ve(dau);
+  const tick = async () => {
+    try {
+      const r = await fetch('/song-song/<%= t.luot %>/state');
+      chay = ve(await r.json());
+    } catch { /* mạng chập chờn — lần sau thử lại */ }
+    setTimeout(tick, chay ? 5000 : 30000);
+  };
+  setTimeout(tick, 3000);
+})();
+</script>

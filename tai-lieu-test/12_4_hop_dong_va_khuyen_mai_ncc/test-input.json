@@ -1,0 +1,683 @@
+{
+  "_note": "Phân hệ 12_4 Hợp đồng và khuyến mãi nhà cung cấp. 🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở MỌI PO sau đó. CTKM cấp NCC áp ở mức RULE, không phải mức sản phẩm.",
+  "cases": {
+    "12_4_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      }
+    },
+    "12_4_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "required": [],
+      "data": {
+        "soHopDong": "AUTO-TEST-KHONG-DUNG",
+        "maNCC": ""
+      }
+    },
+    "12_4_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      }
+    },
+    "12_4_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần có hợp đồng hết hạn trong vòng 30 ngày"
+    },
+    "12_4_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      }
+    },
+    "12_4_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần có hợp đồng loại ký gửi"
+    },
+    "12_4_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Cần hợp đồng đã có >=2 đơn đặt hàng"
+    },
+    "12_4_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      }
+    },
+    "12_4_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "required": [],
+      "data": {
+        "tenNCC": "AUTO_NCC_62391304",
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      }
+    },
+    "12_4_060_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_060_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_070_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_018": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_019": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_021": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_022": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_023": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_024": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_025": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_026": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_027": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_028": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_029": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_030": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_031": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_032": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_033": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_034": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_035": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_036": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_037": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_038": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_039": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_080_040": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "ANCC62391304",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "required": [],
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_016": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_017": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_018": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_019": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_090_020": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      },
+      "allowMutation": true,
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: khai/phê duyệt/ngừng hợp đồng NCC hoặc CTKM đặt hàng. Hợp đồng đang hiệu lực chi phối chiết khấu và hạn mức công nợ của PO thật."
+    },
+    "12_4_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "maNCC": "",
+        "soHopDong": "AUTO-TEST-KHONG-DUNG"
+      }
+    }
+  }
+}

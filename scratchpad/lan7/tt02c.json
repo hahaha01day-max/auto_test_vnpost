@@ -1,0 +1,1230 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 1800000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 1800000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 1800000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 1800000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.187Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 88,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.390Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_manager (Quản lý Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.482Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f8f6b4aac219a09d704d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai ward (Bưu điện Xã)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 99,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.582Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2d044c7a88341d00c4f3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 86,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.685Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop (Nhân viên điểm bán seed (AUTO_SHOP))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 94,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.774Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-21ce4f527c1091b58dc7",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop2 (Nhân viên điểm bán seed (tồn đầu kỳ))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.873Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f0046fb8388f9f34d70f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_gdv (Giao dịch viên điểm bán seed)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:57.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-279e54db4435dd5b2b7f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_cung_ung (Quản lý cung ứng Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:58.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-dc10cbea1b53e3115f7d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_ke_toan (Kế toán Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 68,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:58.185Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-810d07ac3b8180d5b8cd",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_marketing (Marketing Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 97,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:58.256Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-ad384e1a74119c1d55a2",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_cung_ung (Quản lý cung ứng Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:58.357Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-3fc0d4a301467ed2a16a",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_ke_toan (Kế toán Tỉnh (vai PROVINCE_ACCOUNTANT))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:58.458Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2ad6ba1bf90fea1e4edf",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop_nhan_vien (Nhân viên khác điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 78,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:58.557Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2720920e7dafcea1da21",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T05:16:58.639Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tt02-tra-hang-ncc.tct.spec.js",
+      "file": "tt02-tra-hang-ncc.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "50 · TT02 Toàn trình điểm bán trả hàng NCC",
+          "file": "tt02-tra-hang-ncc.tct.spec.js",
+          "line": 68,
+          "column": 6,
+          "specs": [
+            {
+              "title": "tien de TT02 — hàng TD1 (NCC tỉnh) về điểm bán qua nhánh tỉnh đủ hàng + lô TC từ TT01",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [
+                    {
+                      "type": "nguồn hàng",
+                      "description": "TD1: PO PO2609287988 → đề xuất DX2609285239 → chuyển CK280926AA01 · TC: TT01 DX2609286914 → chuyển CK2809267F5C"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 149,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:16:58.982Z",
+                      "annotations": [
+                        {
+                          "type": "nguồn hàng",
+                          "description": "TD1: PO PO2609287988 → đề xuất DX2609285239 → chuyển CK280926AA01 · TC: TT01 DX2609286914 → chuyển CK2809267F5C"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-b56c659ecd7ebe61fa71",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 96,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_010 — Điểm bán lập phiếu trả hàng NCC (hàng tự doanh tỉnh + hàng TCT)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "phiếu RTR-CDE74D78 · lô TD1 28092632F2 / TC 28092665HY0B · tồn {\"1171363\":55,\"1171522\":1} → {\"1171363\":55,\"1171522\":1}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21971,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:16:59.205Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "phiếu RTR-CDE74D78 · lô TD1 28092632F2 / TC 28092665HY0B · tồn {\"1171363\":55,\"1171522\":1} → {\"1171363\":55,\"1171522\":1}"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-f6029fac58116b853c18",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 155,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_020 — Xã duyệt phiếu trả",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "trạng thái WARD_APPROVED · tồn điểm bán {\"1171363\":55,\"1171522\":1} (trước lập phiếu {\"1171363\":55,\"1171522\":1})"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8397,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:21.183Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "trạng thái WARD_APPROVED · tồn điểm bán {\"1171363\":55,\"1171522\":1} (trước lập phiếu {\"1171363\":55,\"1171522\":1})"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-7eed2d2768b5fe0d6af6",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 175,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_030 — Tỉnh duyệt phiếu trả",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "trạng thái APPROVED · giữ hàng 2077 · tồn điểm bán {\"1171363\":54,\"1171522\":0} (trước lập phiếu {\"1171363\":55,\"1171522\":1})"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1214,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:29.594Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "trạng thái APPROVED · giữ hàng 2077 · tồn điểm bán {\"1171363\":54,\"1171522\":0} (trước lập phiếu {\"1171363\":55,\"1171522\":1})"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-4cf9374e3c33148f1fc2",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 184,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_040 — Tỉnh tách phiếu theo nguồn NCC",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "tách",
+                      "description": "RTR-CDE74D78-1/PROVINCE_NOT_RETURNED/TINH/AUTO7_NCC_TINH · RTR-CDE74D78-2/TCT_NOT_SENT/TCT/null"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 912,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:30.830Z",
+                      "annotations": [
+                        {
+                          "type": "tách",
+                          "description": "RTR-CDE74D78-1/PROVINCE_NOT_RETURNED/TINH/AUTO7_NCC_TINH · RTR-CDE74D78-2/TCT_NOT_SENT/TCT/null"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-e737b13f0e585a995637",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 194,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_050 — Nhánh NCC tỉnh: tỉnh trả NCC, NCC xác nhận đợt trả",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "đợt #189 CONFIRMED · 50000 đ · [{\"itemId\":1126,\"ten\":\"AUTO7_SP_TD1\",\"dvt\":\"Cái\",\"sl\":1,\"tien\":50000}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1861,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:31.759Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "đợt #189 CONFIRMED · 50000 đ · [{\"itemId\":1126,\"ten\":\"AUTO7_SP_TD1\",\"dvt\":\"Cái\",\"sl\":1,\"tien\":50000}]"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-77c2f9f0a3279d331612",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 208,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_060 — Nhánh NCC tỉnh: nạp hoá đơn điều chỉnh giảm, chốt chứng từ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "đối soát",
+                      "description": "KHOP"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "hoá đơn #109 SETTLED KHOP"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2623,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:33.637Z",
+                      "annotations": [
+                        {
+                          "type": "đối soát",
+                          "description": "KHOP"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "hoá đơn #109 SETTLED KHOP"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-59c1eed51232e8014358",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 223,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_070 — Nhánh TCT: tỉnh gửi phiếu con hàng TCT lên Tổng công ty",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "gửi TCT",
+                      "description": "SSHOP-500 Đơn vị nhận hàng chưa khai báo kho mặc định để nhận hàng trả từ cấp dưới (swWbis)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 380,
+                      "error": {
+                        "message": "Error: Tỉnh gửi TCT (lô TC có nguồn PO TCT — 14_2 050_001 từng bị BE chặn) lỗi: Đơn vị nhận hàng chưa khai báo kho mặc định để nhận hàng trả từ cấp dưới (swWbis)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m",
+                        "stack": "Error: Tỉnh gửi TCT (lô TC có nguồn PO TCT — 14_2 050_001 từng bị BE chặn) lỗi: Đơn vị nhận hàng chưa khai báo kho mặc định để nhận hàng trả từ cấp dưới (swWbis)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n    at ok (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js:37:95)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js:245:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js",
+                          "column": 95,
+                          "line": 37
+                        },
+                        "snippet": "  35 | const ghiChu = (type, description) => test.info().annotations.push({ type, description: String(description).slice(0, 900) });\n  36 | const du = () => seed.doc().duLieu;\n> 37 | const ok = (b, viec) => expect(String(b?.status?.code), `${viec} lỗi: ${b?.status?.message}`).toBe('200');\n     |                                                                                               ^\n  38 |\n  39 | /** Lô tại điểm bán sinh từ phiếu chuyển `maChuyen` (đọc chi tiết phiếu chuyển bằng phiên điểm bán). */\n  40 | async function loTuPhieuChuyen(ps, maChuyen, productId) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js",
+                            "column": 95,
+                            "line": 37
+                          },
+                          "message": "Error: Tỉnh gửi TCT (lô TC có nguồn PO TCT — 14_2 050_001 từng bị BE chặn) lỗi: Đơn vị nhận hàng chưa khai báo kho mặc định để nhận hàng trả từ cấp dưới (swWbis)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n\n  35 | const ghiChu = (type, description) => test.info().annotations.push({ type, description: String(description).slice(0, 900) });\n  36 | const du = () => seed.doc().duLieu;\n> 37 | const ok = (b, viec) => expect(String(b?.status?.code), `${viec} lỗi: ${b?.status?.message}`).toBe('200');\n     |                                                                                               ^\n  38 |\n  39 | /** Lô tại điểm bán sinh từ phiếu chuyển `maChuyen` (đọc chi tiết phiếu chuyển bằng phiên điểm bán). */\n  40 | async function loTuPhieuChuyen(ps, maChuyen, productId) {\n    at ok (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js:37:95)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js:245:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:36.277Z",
+                      "annotations": [
+                        {
+                          "type": "gửi TCT",
+                          "description": "SSHOP-500 Đơn vị nhận hàng chưa khai báo kho mặc định để nhận hàng trả từ cấp dưới (swWbis)"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results/tt02-tra-hang-ncc.tct-50-·-0cd28-n-hàng-TCT-lên-Tổng-công-ty-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results/tt02-tra-hang-ncc.tct-50-·-0cd28-n-hàng-TCT-lên-Tổng-công-ty-tct/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results/tt02-tra-hang-ncc.tct-50-·-0cd28-n-hàng-TCT-lên-Tổng-công-ty-tct/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results/tt02-tra-hang-ncc.tct-50-·-0cd28-n-hàng-TCT-lên-Tổng-công-ty-tct/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results/tt02-tra-hang-ncc.tct-50-·-0cd28-n-hàng-TCT-lên-Tổng-công-ty-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/test-output/playwright-results/tt02-tra-hang-ncc.tct-50-·-0cd28-n-hàng-TCT-lên-Tổng-công-ty-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js",
+                        "column": 95,
+                        "line": 37
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-85f59271a6fba72f78b9",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 239,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_080 — Nhánh TCT: TCT duyệt, tách, trả NCC, NCC xác nhận",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Bước trước chưa xong (thiếu phieuTct).",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js",
+                        "line": 77,
+                        "column": 17
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:37.235Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Bước trước chưa xong (thiếu phieuTct).",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js",
+                            "line": 77,
+                            "column": 17
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-66bf95321826a81ab97f",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 257,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_090 — Nhánh TCT: nạp hoá đơn điều chỉnh giảm, chốt chứng từ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Bước trước chưa xong (thiếu dotTct).",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js",
+                        "line": 77,
+                        "column": 17
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:37.320Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Bước trước chưa xong (thiếu dotTct).",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/50_toan_trinh/tests/tt02-tra-hang-ncc.tct.spec.js",
+                            "line": 77,
+                            "column": 17
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-3f51a9f3cb3adc8d6efb",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 278,
+              "column": 2
+            },
+            {
+              "title": "50_TT02_100 — Đối chiếu cuối: tồn điểm bán, công nợ NCC, trạng thái phiếu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [
+                    {
+                      "type": "tồn điểm bán",
+                      "description": "{\"1171363\":55,\"1171522\":1} → {\"1171363\":54,\"1171522\":0}"
+                    },
+                    {
+                      "type": "công nợ NCC — trả hàng",
+                      "description": "NCC tỉnh 0 → 50000 · NCC TCT 0 → 0"
+                    },
+                    {
+                      "type": "trạng thái (chờ chốt kỳ vọng)",
+                      "description": "gốc SPLIT · con tỉnh RETURNED · con TCT TCT_NOT_SENT · TCT null"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31117,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-28T05:17:37.324Z",
+                      "annotations": [
+                        {
+                          "type": "tồn điểm bán",
+                          "description": "{\"1171363\":55,\"1171522\":1} → {\"1171363\":54,\"1171522\":0}"
+                        },
+                        {
+                          "type": "công nợ NCC — trả hàng",
+                          "description": "NCC tỉnh 0 → 50000 · NCC TCT 0 → 0"
+                        },
+                        {
+                          "type": "trạng thái (chờ chốt kỳ vọng)",
+                          "description": "gốc SPLIT · con tỉnh RETURNED · con TCT TCT_NOT_SENT · TCT null"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "72a6eef0e1e57b224edb-02626a5a51b7d64577d4",
+              "file": "tt02-tra-hang-ncc.tct.spec.js",
+              "line": 294,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-28T05:16:56.907Z",
+    "duration": 71727.568,
+    "expected": 23,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

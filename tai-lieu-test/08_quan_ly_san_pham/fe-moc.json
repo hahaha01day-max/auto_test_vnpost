@@ -1,0 +1,90 @@
+{
+  "spec": {
+    "tests/san-pham-form.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/normal"
+      ],
+      "fe": [
+        "src/pages/product/addProduct/AddProductDrawer.jsx",
+        "src/pages/product/index.jsx"
+      ]
+    },
+    "tests/san-pham-in-tem.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/product/normal"
+      ],
+      "fe": [
+        "src/pages/product/index.jsx",
+        "src/pages/product/components/barcodePrinter/setup/DrawerBarcodePrinterSetup.jsx"
+      ]
+    },
+    "tests/danh-muc-ghi.tct.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/product/category?type=0"
+      ],
+      "fe": [
+        "src/pages/category/CategoryManagementPage.jsx",
+        "src/pages/category/addAndUpdateCategory.js/ImportFileCategoryModal.jsx",
+        "src/components/importExcelDrawer/DrawerImportBase.jsx"
+      ]
+    },
+    "tests/sp-form-ghi.tct.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/product/normal"
+      ],
+      "fe": [
+        "src/pages/product/addProduct/AddProductDrawer.jsx",
+        "src/pages/product/index.jsx",
+        "src/pages/product/updateProduct/DrawerUpdateProduct.jsx"
+      ]
+    },
+    "tests/sp-sua-xoa.tct.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/product/normal",
+        "/pos"
+      ],
+      "fe": [
+        "src/pages/product/addProduct/AddProductDrawer.jsx",
+        "src/pages/product/index.jsx",
+        "src/pages/product/updateProduct/DrawerUpdateProduct.jsx",
+        "src/pages/product/components/modalConfirmDeleteMultipleProducts/ModalConfirmDeleteMultipleProducts.jsx",
+        "src/features/order/pages/orderDetail/OrderDetail.jsx"
+      ]
+    },
+    "tests/combo-ghi.tct.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/product/combo"
+      ],
+      "fe": [
+        "src/pages/product/productCombo/components/AddOrUpdate/DrawerAddOrUpdateComboProduct.jsx",
+        "src/features/stockAlert/components/ProductUnitSearchSelector.jsx"
+      ]
+    },
+    "tests/ngung-kich-hoat.tct.spec.js": {
+      "commit": "7d7a40fa20f753e19aab94030025845c609688b5",
+      "ngay": "2026-09-26",
+      "man": [
+        "/product/normal",
+        "/product/combo",
+        "/pos"
+      ],
+      "fe": [
+        "src/pages/product/index.jsx",
+        "src/pages/product/components/productSaleScope/DrawerProductSaleScopeEditor.jsx",
+        "src/pages/product/components/productSaleScope/ModalProductSaleScopeConfirm.jsx"
+      ]
+    }
+  }
+}

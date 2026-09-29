@@ -1,0 +1,133 @@
+{
+  "spec": {
+    "tests/them-sua-khach.shop.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/customer",
+        "/customer/detail/:customerId"
+      ],
+      "fe": [
+        "src/components/addAndUpdateCustomer/index.jsx",
+        "src/components/addAndUpdateCustomer/actions.js",
+        "src/components/uploadAvatar/index.jsx",
+        "src/pages/customer/index.jsx"
+      ]
+    },
+    "tests/trang-thai-khach.province.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/customer/detail/:customerId"
+      ],
+      "fe": [
+        "src/pages/customer/customerInfoTab/CustomerInfoTab.jsx",
+        "src/pages/customer/customerDetail/index.jsx",
+        "src/pages/customer/actions.js"
+      ]
+    },
+    "tests/dong-bo-khach.tct.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/customer"
+      ],
+      "fe": [
+        "src/pages/customer/index.jsx",
+        "src/pages/customer/actions.js",
+        "src/components/addAndUpdateCustomer/index.jsx"
+      ]
+    },
+    "tests/dong-bo-khach.gdv.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/customer"
+      ],
+      "fe": [
+        "src/pages/customer/index.jsx"
+      ]
+    },
+    "tests/cong-no-khach.shop.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/customer/detail/:customerId"
+      ],
+      "fe": [
+        "src/pages/customer/customerDebt/CustomerDebt.jsx",
+        "src/pages/customer/customerDebt/DrawerCreateCustomerDebt.jsx",
+        "src/pages/customer/customerOrdersTab/index.jsx",
+        "src/pages/customer/customerPointHistoryTab/CustomerPointHistoryTab.jsx",
+        "src/pages/customer/purchasedProducts/index.jsx"
+      ]
+    },
+    "tests/tien-de.gdv.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/pages/customer/index.jsx"
+      ]
+    },
+    "tests/don-rac.tct.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/customer"
+      ],
+      "fe": [
+        "src/pages/customer/actions.js"
+      ]
+    },
+    "tests/nang-hang.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order",
+        "/promotion/customer-group"
+      ],
+      "fe": [
+        "src/components/paymentModals/PaymentMethodModal.jsx",
+        "src/pages/promotionCampaign/loyaltyGroup/services/groupCustomerApi.js"
+      ]
+    },
+    "tests/nhom-doi-tuong.tct.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/promotion/customer-group"
+      ],
+      "fe": [
+        "src/pages/promotionCampaign/loyaltyGroup/views/LoyaltyGroupManagement.jsx",
+        "src/pages/promotionCampaign/loyaltyGroup/views/components/drawer/DrawerAddGroup.jsx",
+        "src/pages/promotionCampaign/loyaltyGroup/views/components/drawer/TableCondition.jsx"
+      ]
+    },
+    "tests/ctkm-nhom.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order",
+        "/promotion/campaign"
+      ],
+      "fe": [
+        "src/pages/promotionCampaign/campaignManagement/controllers/CampaignManagementControllers.jsx",
+        "src/pages/promotionCampaign/campaignManagement/services/promotionApi.js"
+      ]
+    },
+    "tests/nhap-excel.shop.spec.js": {
+      "commit": "7a0c54fc3af72292b45142bdbe3b300672366f19",
+      "ngay": "2026-09-25",
+      "man": [
+        "/customer"
+      ],
+      "fe": [
+        "src/pages/customer/components/DrawerImportCustomer.jsx",
+        "src/components/importExcelDrawer/DrawerImportBase.jsx"
+      ]
+    }
+  }
+}

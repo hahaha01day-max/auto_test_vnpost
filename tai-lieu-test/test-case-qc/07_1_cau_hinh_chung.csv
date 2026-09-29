@@ -1,0 +1,81 @@
+﻿,Chức năng,,CẤU HÌNH CHUNG TOÀN HỆ THỐNG,,,,,,,,
+,Mã Testcase,,07_1_cau_hinh_chung,,,,,,,,
+,Tổng các tình huống kiểm thử,,29,,,,,,,,
+,Chưa thực hiện,,29,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,CẤU HÌNH CHUNG TOÀN HỆ THỐNG,,,,,,,,,,
+,010 — Khai báo cách làm tròn tiền,,,,,,,,,,
+07_1_010_001,Nhóm Làm tròn tiền mở được từ danh sách cấu hình,Vai: tct,1. Mở /settings?setting=roundingAmount,,"Thẻ ""Cấu hình làm tròn tiền"" hiện, có công tắc ở góc phải và nút Sửa",,,,,,
+07_1_010_002,Bật cấu hình làm tròn tiền báo đúng thông điệp,Vai: tct. Cấu hình làm tròn tiền đang tắt,1. Bật công tắc ở góc phải thẻ Cấu hình làm tròn tiền,,"Hệ thống lưu ngay và báo nguyên văn ""Đã bật cấu hình làm tròn""",,,,,,
+07_1_010_003,Ô Xem trước kết quả tính theo số mẫu 12.345,678,Vai: tct. Đang mở màn Cấu hình làm tròn tiền,,"1. Nhập Đơn vị làm tròn = 3; 2. Chọn Phương thức ""Làm tròn thông thường (0.5 làm tròn lên)""; 3. Đọc ô Xem trước kết quả",,,,,,
+07_1_010_004,Chặn lưu khi bỏ trống Đơn vị làm tròn,Vai: tct. Đang mở màn Cấu hình làm tròn tiền,"1. Xoá trống ô Đơn vị làm tròn;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng nhập số chữ số làm tròn"" và không lưu",,,,,,
+07_1_010_005,Đơn vị làm tròn chỉ nhận số nguyên từ -3 đến 3,Vai: tct. Đang mở màn Cấu hình làm tròn tiền,"1. Nhập Đơn vị làm tròn = 4;
+2. Bấm lưu",,Hệ thống chặn giá trị ngoài khoảng -3..3; giá trị đang lưu không đổi,,,,,,
+07_1_010_006,Phương thức làm tròn mặc định là Làm tròn thông thường,Vai: tct. Cấu hình chưa từng đổi phương thức,"1. Mở màn Cấu hình làm tròn tiền;
+2. Đọc ô Phương thức làm tròn",,"Ô hiện sẵn ""Làm tròn thông thường (0.5 làm tròn lên)""",,,,,,
+07_1_010_007,Đơn vị làm tròn tiền tại biên -3 và 3,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); đang ở nhóm ""Làm tròn tiền""","1. Nhập -3 → lưu, ghi kết quả
+2. Nhập 3 → lưu
+3. Nhập -4 → ghi kết quả
+4. Nhập 4 → ghi kết quả
+5. Nhập 1.5 → ghi kết quả",,"-3 và 3 lưu được (biên đóng); -4 và 4 bị chặn; Đây là biên của `07_1_010_005`, tách riêng để biết ô nào hỏng.",,,,,,
+,020 — Khai báo cách làm tròn số lượng,,,,,,,,,,
+07_1_020_001,Bật cấu hình làm tròn số lượng báo đúng thông điệp,Vai: tct. Cấu hình làm tròn số lượng đang tắt,"1. Mở /settings?setting=roundingQuantity;
+2. Bật công tắc",,"Hệ thống báo nguyên văn ""Đã bật cấu hình làm tròn số lượng""",,,,,,
+07_1_020_002,Chặn lưu khi bỏ trống Đơn vị làm tròn số lượng,Vai: tct. Đang mở màn Cấu hình làm tròn số lượng,"1. Xoá trống ô Đơn vị làm tròn;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng nhập đơn vị làm tròn"" và không lưu",,,,,,
+07_1_020_003,Đơn vị làm tròn số lượng mặc định là 2 và chỉ nhận 0 đến 3,Vai: tct. Cấu hình chưa từng đổi,"1. Mở màn Cấu hình làm tròn số lượng;
+2. Đọc giá trị mặc định;
+3. Nhập 5 rồi lưu",,Giá trị mặc định = 2. Nhập 5 bị chặn (chỉ nhận 0..3),,,,,,
+07_1_020_004,Xem trước kết quả làm tròn số lượng theo số mẫu 12.3456,Vai: tct. Đang mở màn Cấu hình làm tròn số lượng,"1. Nhập Đơn vị làm tròn = 0;
+2. Đọc ô Xem trước kết quả",,Ô Xem trước hiện kết quả áp lên số mẫu 12.3456 = 12,,,,,,
+,030 — Khai báo loại tiền tệ của hệ thống,,,,,,,,,,
+07_1_030_001,Thẻ Tiền tệ hiện loại tiền đang áp dụng,Vai: tct. Cấu hình tiền tệ đang bật,"1. Mở /settings?setting=currency;
+2. Đọc dòng Tiền tệ dưới tên thẻ",,Dòng Tiền tệ hiện tên loại tiền đang áp dụng (VND hoặc USD),,,,,,
+07_1_030_002,Cấu hình tiền tệ đang tắt thì hiện Đang tắt,Vai: tct. Cấu hình tiền tệ đang tắt,"1. Mở /settings?setting=currency;
+2. Đọc dòng Tiền tệ",,"Dòng Tiền tệ hiện ""Đang tắt"" thay cho tên loại tiền",,,,,,
+07_1_030_003,Bật cấu hình tiền tệ báo đúng thông điệp,Vai: tct. Cấu hình tiền tệ đang tắt,1. Bật công tắc ở góc phải thẻ Cấu hình tiền tệ,,"Hệ thống báo nguyên văn ""Đã bật cấu hình tiền tệ""",,,,,,
+07_1_030_004,Chặn lưu khi chưa chọn loại tiền tệ,Vai: tct. Đang mở màn Cấu hình tiền tệ,"1. Xoá lựa chọn ở ô Chọn loại tiền tệ;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng chọn tiền tệ""",,,,,,
+07_1_030_005,Ô Mô tả giới hạn 200 ký tự và có bộ đếm,Vai: tct. Đang mở màn Cấu hình tiền tệ,"1. Gõ 250 ký tự vào ô Mô tả;
+2. Đọc bộ đếm ở góc dưới ô nhập",,Ô chỉ nhận tối đa 200 ký tự; bộ đếm hiện 200/200,,,,,,
+07_1_030_006,Ô Mô tả tiền tệ nhập toàn khoảng trắng,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); đang ở nhóm ""Tiền tệ""","1. Nhập 10 dấu cách vào ô Mô tả
+2. Lưu
+3. Mở lại cấu hình",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+,040 — Khai báo thuế suất VAT mặc định,,,,,,,,,,
+07_1_040_001,Thẻ VAT mặc định hiện thuế suất đang áp dụng,Vai: tct. Cấu hình VAT đang bật,"1. Mở /settings?setting=vatDefault;
+2. Đọc dòng Thuế suất dưới tên thẻ",,"Dòng Thuế suất hiện mức đang áp dụng; nếu cấu hình tắt thì hiện ""Đang tắt""",,,,,,
+07_1_040_002,Bật cấu hình VAT mặc định báo đúng thông điệp,Vai: tct. Cấu hình VAT đang tắt,1. Bật công tắc ở góc phải thẻ Cấu hình VAT mặc định,,"Hệ thống báo nguyên văn ""Đã bật cấu hình VAT mặc định""",,,,,,
+07_1_040_003,Danh sách thuế suất chỉ có 0% 5% 8% 10% và mặc định 8%,Vai: tct. Đang mở màn Cấu hình VAT mặc định,1. Mở ô Chọn thuế suất VAT,,"Danh sách đúng 4 lựa chọn 0%, 5%, 8%, 10%; giá trị mặc định là 8%",,,,,,
+07_1_040_004,Chặn lưu khi chưa chọn thuế suất VAT,Vai: tct. Đang mở màn Cấu hình VAT mặc định,"1. Xoá lựa chọn thuế suất;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng chọn thuế suất VAT""",,,,,,
+,050 — Khai báo thời gian chờ tự động đăng xuất,,,,,,,,,,
+07_1_050_001,Bật cấu hình tự động đăng xuất báo đúng thông điệp,Vai: tct. Cấu hình đang tắt,"1. Mở /settings?setting=autoLock;
+2. Bật công tắc",,"Hệ thống báo nguyên văn ""Đã bật cấu hình tự động khóa màn hình""",,,,,,
+07_1_050_002,Thời gian chờ chỉ chọn trong danh sách cố định,Vai: tct. Đang mở màn Cấu hình Tự động đăng xuất,"1. Mở ô Thời gian chờ tự động đăng xuất;
+2. Thử gõ số tuỳ ý",,"Danh sách đúng 5 lựa chọn 1 phút, 5 phút, 10 phút, 15 phút, 30 phút; mặc định 5 phút; KHÔNG gõ được số tuỳ ý",,,,,,
+07_1_050_003,Chặn lưu khi chưa chọn thời gian chờ,Vai: tct. Đang mở màn Cấu hình Tự động đăng xuất,"1. Xoá lựa chọn thời gian chờ;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng chọn thời gian chờ""",,,,,,
+07_1_050_004,Huỷ giữa chừng khi đang sửa cấu hình,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`)","1. Mở một nhóm cấu hình, đổi giá trị nhưng KHÔNG lưu
+2. Chuyển sang nhóm cấu hình khác
+3. Quay lại nhóm ban đầu",,Giá trị trở về như trước khi sửa; không có request lưu nào được gửi.,,,,,,
+07_1_050_005,"Sau khi lưu cấu hình, mở lại trang vẫn đúng giá trị","Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`)","1. Đổi một cấu hình và lưu
+2. Tải lại trang (F5)
+3. Mở lại nhóm cấu hình đó",,"Giá trị mới được giữ sau khi tải lại trang (đã lưu lên server, không phải chỉ ở client).",,,,,,
+,060 — Của phân hệ này.,,,,,,,,,,
+07_1_060_001,"Nhóm ""Làm tròn tiền phần kho"" — nhóm cấu hình CHƯA có case nào","Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`)","1. Mở nhóm cấu hình ""Làm tròn tiền phần kho"" (`/settings?setting=roundingAmountStock`)
+2. Đọc các ô của biểu mẫu
+3. Đối chiếu với nhóm ""Làm tròn tiền"" (`roundingAmount`)",,"Làm tròn tiền phần kho đụng trực tiếp vào giá vốn — nguồn giữ scale 6, chỉ làm tròn lúc tính, nên sai thứ tự làm tròn là lệch tiền.",,,,,,
+07_1_060_002,Làm tròn tiền và Làm tròn tiền phần kho đặt khác nhau,"Vai `tct` đăng nhập, đang ở màn Cấu hình (`/settings`); cả hai nhóm cấu hình đang bật","1. Đặt ""Làm tròn tiền"" = đơn vị 0 (đồng)
+2. Đặt ""Làm tròn tiền phần kho"" = đơn vị -2 (trăm đồng)
+3. Lập một phiếu nhập kho và một đơn bán cùng sản phẩm
+4. Đối chiếu số tiền trên hai chứng từ",,"Hai cấu hình áp cho hai nhóm số khác nhau và KHÔNG được lẫn: tiền bán hàng theo cấu hình thứ nhất, tiền phần kho theo cấu hình thứ hai. Nếu một số bị áp cả hai lần thì đó là lỗi làm tròn hai lần.",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+07_1_PQ_001,Vai Bưu điện Tỉnh không sửa được cấu hình cấp Tổng công ty,Vai: province,1. Mở /settings?setting=roundingAmount,,Không thấy nút Sửa và không bật/tắt được công tắc; hoặc API trả lỗi phân quyền (5 task nhóm này đều khai vai_tro chỉ TONG_CONG_TY),,,,,,

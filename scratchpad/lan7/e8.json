@@ -1,0 +1,351 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 116,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:39:08.829Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 73,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:39:09.019Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tu-sinh.gdv.spec.js",
+      "file": "tu-sinh.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "26 · Phiếu thu tự sinh (vai gdv)",
+          "file": "tu-sinh.gdv.spec.js",
+          "line": 52,
+          "column": 6,
+          "specs": [
+            {
+              "title": "26_060_003 — Đổi hàng thu chênh lệch sinh phiếu thu tự động",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "khối tiền",
+                      "description": "Trả hàng Tổng tiền hàng gốc 95.000 đ Chiết khấu khuyến mãi (1) Tổng tiền hàng trả lại 95.000 đ Phí trả hàng Lý do trả hàng Chọn lý do trả hàng Đổi hàng Tổng tiền hàng mua 200.000 đ Ghi chú đơn hàng Xuất hóa đơn điều chỉnh In hóa đơn hoàn trả Tổng tiền đổi (mua hàng) 200.000 đ Tổng tiền trả 95.000 đ "
+                    },
+                    {
+                      "type": "hoàn trả",
+                      "description": "\"\" · undefined"
+                    },
+                    {
+                      "type": "modal thanh toán đổi hàng",
+                      "description": "Tổng tiền cần thanh toán 200.000 đ"
+                    },
+                    {
+                      "type": "phiếu mới",
+                      "description": "[{\"id\":438,\"code\":null,\"cat\":\"Thanh toán đơn hàng\",\"nguon\":\"ANONYMOUS\",\"tien\":200000,\"orderType\":0,\"he\":true}] · kỳ vọng 105000"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 127821,
+                      "error": {
+                        "message": "Error: Không sinh phiếu thu 105000đ cho đổi hàng thu chênh lệch sinh phiếu thu tự động\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Không sinh phiếu thu 105000đ cho đổi hàng thu chênh lệch sinh phiếu thu tự động\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:230:133",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js",
+                          "column": 133,
+                          "line": 230
+                        },
+                        "snippet": "  228 | \t\t\tghiChu('phiếu mới', `${JSON.stringify(moi.map(tomTat))} · kỳ vọng ${tienThu}`);\n  229 | \t\t\texpect(tienThu, 'Không đọc được số tiền khách trả thêm / phí trả hàng').toBeGreaterThan(0);\n> 230 | \t\t\texpect(moi.some((x) => Number(tomTat(x).tien) === Number(tienThu)), `Không sinh phiếu thu ${tienThu}đ cho ${ten.toLowerCase()}`).toBe(true);\n      | \t\t\t                                                                                                                                 ^\n  231 | \t\t});\n  232 | \t}\n  233 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js",
+                            "column": 133,
+                            "line": 230
+                          },
+                          "message": "Error: Không sinh phiếu thu 105000đ cho đổi hàng thu chênh lệch sinh phiếu thu tự động\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  228 | \t\t\tghiChu('phiếu mới', `${JSON.stringify(moi.map(tomTat))} · kỳ vọng ${tienThu}`);\n  229 | \t\t\texpect(tienThu, 'Không đọc được số tiền khách trả thêm / phí trả hàng').toBeGreaterThan(0);\n> 230 | \t\t\texpect(moi.some((x) => Number(tomTat(x).tien) === Number(tienThu)), `Không sinh phiếu thu ${tienThu}đ cho ${ten.toLowerCase()}`).toBe(true);\n      | \t\t\t                                                                                                                                 ^\n  231 | \t\t});\n  232 | \t}\n  233 | });\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js:230:133"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T13:39:09.315Z",
+                      "annotations": [
+                        {
+                          "type": "khối tiền",
+                          "description": "Trả hàng Tổng tiền hàng gốc 95.000 đ Chiết khấu khuyến mãi (1) Tổng tiền hàng trả lại 95.000 đ Phí trả hàng Lý do trả hàng Chọn lý do trả hàng Đổi hàng Tổng tiền hàng mua 200.000 đ Ghi chú đơn hàng Xuất hóa đơn điều chỉnh In hóa đơn hoàn trả Tổng tiền đổi (mua hàng) 200.000 đ Tổng tiền trả 95.000 đ "
+                        },
+                        {
+                          "type": "hoàn trả",
+                          "description": "\"\" · undefined"
+                        },
+                        {
+                          "type": "modal thanh toán đổi hàng",
+                          "description": "Tổng tiền cần thanh toán 200.000 đ"
+                        },
+                        {
+                          "type": "phiếu mới",
+                          "description": "[{\"id\":438,\"code\":null,\"cat\":\"Thanh toán đơn hàng\",\"nguon\":\"ANONYMOUS\",\"tien\":200000,\"orderType\":0,\"he\":true}] · kỳ vọng 105000"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/test-output/playwright-results/tu-sinh.gdv-26-·-Phiếu-thu-f94ce-lệch-sinh-phiếu-thu-tự-động-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/26_phieu_thu/tests/tu-sinh.gdv.spec.js",
+                        "column": 133,
+                        "line": 230
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c698b22fc0d98c80bb4e-48f6d01a9deb1c8af82a",
+              "file": "tu-sinh.gdv.spec.js",
+              "line": 195,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T13:39:08.611Z",
+    "duration": 129513.883,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

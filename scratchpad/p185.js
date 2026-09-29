@@ -1,0 +1,22 @@
+const { chromium } = require('playwright');
+require('../tai-lieu-test/shared/config');
+const { storageStateFor } = require('../tai-lieu-test/shared/auth/accounts');
+const { moTrang } = require('../tai-lieu-test/shared/auth/login');
+(async () => {
+  const b = await chromium.launch();
+  const c = await b.newContext({ storageState: storageStateFor('shop') });
+  const page = await c.newPage();
+  const api = [];
+  page.on('response', (r) => { if (/\/(order|return)/.test(r.url())) api.push(r.request().method()+' '+r.status()+' '+r.url().slice(0,150)); });
+  await moTrang(page, process.env.VNPOST_BASE_URL + '/order/return-orders', 'shop');
+  await page.waitForTimeout(6000);
+  console.log('TITLE', await page.locator('.ant-page-header-heading-title').allInnerTexts());
+  console.log('TABS', await page.locator('.ant-tabs-tab').allInnerTexts());
+  console.log('COLS', await page.locator('.ant-table-thead th').allInnerTexts());
+  console.log('ROWS', await page.locator('.ant-table-tbody tr.ant-table-row').count());
+  console.log('PLACEHOLDERS', await page.locator('main input').evaluateAll(l=>l.map(e=>e.placeholder)));
+  console.log('SELECTS', await page.locator('main .ant-select').allInnerTexts());
+  console.log('BTNS', await page.locator('main button').allInnerTexts());
+  console.log('API', api.join('\n'));
+  await b.close();
+})();

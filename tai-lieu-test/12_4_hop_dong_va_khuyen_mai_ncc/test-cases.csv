@@ -1,0 +1,141 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong,Ma goc,Nguon,Trang thai chay,Ngay chay,Ghi chu chay
+12_4_010_001,Màn Hợp đồng nhà cung cấp mở được,Vai: tct,1. Mở /supplier/contracts,"Danh sách hợp đồng hiện kèm ô ""Tìm số HĐ / tên / mã NCC"" và ô Hiệu lực",NCC_189,Sheet QC,Đạt,29/09/2026,
+12_4_010_002,Tìm hợp đồng theo số hợp đồng hoặc mã NCC,Vai: tct. Biết trước số hợp đồng có thật,1. Gõ số hợp đồng vào ô Tìm số HĐ / tên / mã NCC,Danh sách trả về đúng hợp đồng mang số đó,NCC_202;NCC_203;NCC_204,Sheet QC,Đạt,29/09/2026,
+12_4_010_003,Lọc theo ba mức hiệu lực,Vai: tct. Có hợp đồng ở nhiều mức hiệu lực,1. Mở ô Hiệu lực,"Ô có đúng 3 lựa chọn: Còn hiệu lực, Sắp hết hạn (30 ngày), Hết hiệu lực",NCC_206;NCC_207,Sheet QC,Đạt,29/09/2026,
+12_4_010_004,Lọc Sắp hết hạn chỉ trả hợp đồng còn dưới 30 ngày,Vai: tct. Có hợp đồng hết hạn trong vòng 30 ngày,"1. Chọn Hiệu lực = ""Sắp hết hạn (30 ngày)""; 2. Đọc ngày hết hạn từng dòng",Mọi dòng trả về đều có ngày hết hạn trong vòng 30 ngày kể từ hôm nay,,HDSD 010,Đạt,29/09/2026,
+12_4_020_001,Khai báo hợp đồng NCC mới,Vai: tct. Nhà cung cấp đã khai báo trong hệ thống,"1. Bấm ""Thêm mới""; 2. Điền số hợp đồng, thời hạn hiệu lực, điều khoản thương mại; 3. Lưu","Hợp đồng mới xuất hiện trong danh sách với trạng thái Nháp, đúng số hợp đồng và thời hạn đã khai",NCC_190;NCC_217,Sheet QC,Đạt,29/09/2026,
+12_4_020_002,Chặn khai hợp đồng khi bỏ trống trường bắt buộc,Vai: tct. Đang mở màn Thêm hợp đồng NCC,1. Để trống số hợp đồng; 2. Lưu,Form báo lỗi validate; KHÔNG có request tạo hợp đồng nào được gửi,NCC_191;NCC_212;NCC_213;NCC_214;NCC_215,Sheet QC,Đạt,29/09/2026,
+12_4_030_001,Nút thao tác đổi theo trạng thái hợp đồng,Vai: tct. Có hợp đồng ở trạng thái Nháp và hợp đồng đang Hiệu lực,1. Đọc cột Thao tác của cả hai dòng,"Hợp đồng Nháp có nút ""Phê duyệt""; hợp đồng đang Hiệu lực có nút ""Ngừng KH""",NCC_230;NCC_231,Sheet QC,Đạt,29/09/2026,
+12_4_030_002,Phê duyệt hợp đồng Nháp,Vai: tct. Có hợp đồng ở trạng thái Nháp,"1. Bấm ""Phê duyệt""; 2. Bấm ""Phê duyệt"" trong hộp xác nhận",Hợp đồng chuyển sang trạng thái Hiệu lực và nút Phê duyệt biến mất,NCC_194,Sheet QC,Đạt,29/09/2026,
+12_4_030_003,Ngừng kích hoạt hợp đồng đang hiệu lực,Vai: tct. Có hợp đồng đang Hiệu lực,"1. Bấm ""Ngừng KH""; 2. Xác nhận",Hợp đồng chuyển sang trạng thái ngừng kích hoạt và không dùng cho đơn đặt hàng mới,NCC_195;NCC_228,Sheet QC,Đạt,29/09/2026,
+12_4_040_001,Chi tiết hợp đồng hiện đủ điều khoản,Vai: tct. Có ít nhất 1 hợp đồng,"1. Bấm ""Xem"" ở cột Thao tác","Thẻ ""Thông tin hợp đồng"" hiện số hợp đồng, nhà cung cấp, loại hợp đồng, thời hạn, tổng giá trị và các điều khoản thương mại",NCC_192;NCC_223,Sheet QC,Đạt,29/09/2026,
+12_4_040_002,Hợp đồng ký gửi có nhãn riêng,Vai: tct. Có hợp đồng loại ký gửi,1. Mở chi tiết hợp đồng ký gửi,"Cạnh tiêu đề có nhãn ""Hàng ký gửi""",,HDSD 040,Không đạt,29/09/2026,"Error: expect(received).toContain(expected) // indexOf Expected substring: ""Hàng ký gửi"" Received string: ""Chi tiết hợp đồng Thông tin hợp đồng Danh sách PO Số hợp đồng - Trạng thái Nhà cung cấp - Mã NCC - Loại hợp đồng — Hình thức Mua đứt Tổng giá trị — Ngày bắt đầu — Ngày kết thúc — Chiết khấu (%)"
+12_4_040_003,Thẻ Danh sách PO xếp đơn mới nhất trước,Vai: tct. Hợp đồng đã có từ 2 đơn đặt hàng trở lên,"1. Mở chi tiết hợp đồng; 2. Bấm thẻ ""Danh sách PO""; 3. Đọc ngày của các dòng","Các đơn xếp theo ngày giảm dần, đơn mới nhất ở trên cùng",,HDSD 040,Đạt,29/09/2026,
+12_4_050_001,Màn Khuyến mãi đặt hàng NCC mở được,Vai: tct,1. Mở /supplier/promotions,"Danh sách chương trình hiện kèm ô ""Tìm theo mã / tên chương trình"" và ô Nhà cung cấp",NCC_240,Sheet QC,Đạt,29/09/2026,
+12_4_050_002,Lọc chương trình theo nhà cung cấp,Vai: tct. Có chương trình của nhiều NCC,1. Chọn một nhà cung cấp ở ô Nhà cung cấp,Danh sách chỉ còn chương trình của nhà cung cấp đã chọn,,HDSD 050,Đạt,29/09/2026,
+12_4_060_001,Chặn lập CTKM khi mặt hàng chưa gán cho nhà cung cấp,Vai: tct. Có mặt hàng CHƯA gán cho NCC được chọn,"1. Bấm ""Thêm mới""; 2. Chọn nhà cung cấp; 3. Thêm mặt hàng chưa gán; 4. Lưu",Hệ thống chặn: mặt hàng ưu đãi phải đã gán cho nhà cung cấp đó,,HDSD 060,Không đạt,29/09/2026,"Error: 🔴 BE nhận CTKM có mặt hàng chưa gán cho NCC expect(received).not.toBe(expected) // Object.is equality Expected: not ""200"""
+12_4_060_002,Lập chương trình khuyến mãi đặt hàng,Vai: tct. Nhà cung cấp và mặt hàng đã gán đầy đủ,"1. Bấm ""Thêm mới""; 2. Điền mã, tên chương trình, thời gian áp dụng và quy tắc ưu đãi; 3. Lưu",Chương trình mới xuất hiện trong danh sách với trạng thái Nháp,NCC_241,Sheet QC,Đạt,29/09/2026,
+12_4_070_001,Nút thao tác CTKM đổi theo trạng thái,Vai: tct. Có chương trình Nháp và chương trình Đang áp dụng,1. Đọc cột Thao tác của các dòng,"Chương trình Nháp hoặc Đang ngừng có nút ""Kích hoạt""; chương trình Đang áp dụng có nút ""Ngừng""",,HDSD 070,Đạt,29/09/2026,
+12_4_070_002,Kích hoạt chương trình khuyến mãi,Vai: tct. Có chương trình ở trạng thái Nháp,"1. Bấm ""Kích hoạt""; 2. Xác nhận",Chương trình chuyển sang Đang áp dụng; ưu đãi được tự tính khi lập đơn đặt hàng NCC,NCC_246,Sheet QC,Đạt,29/09/2026,
+12_4_070_003,Ngừng chương trình đang áp dụng,Vai: tct. Có chương trình Đang áp dụng,"1. Bấm ""Ngừng""; 2. Xác nhận",Chương trình chuyển sang Đang ngừng và không còn tự tính ưu đãi khi lập đơn,NCC_245,Sheet QC,Đạt,29/09/2026,
+12_4_080_011,Kiểm tra sửa thông tin hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",1. Mở màn hình danh sách hợp đồng. 2. Chọn Sửa 3. Nhập thông tin thay đổi 4. Click button Lưu,"-Hợp đồng mới ở trạng thái Nháp.
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_193,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_012,Kiểm tra kích hoạt hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng,"- Hiển thị hợp đồng trạng thái Hoạt động
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_196,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_013,Kiểm tra loại hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",1. Mở màn hình danh sách hợp đồng. 2. Thêm hợp đồng mới 3. Chọn 1 trong 2 loại hợp đồng 4. Chọn lưu,"- Đối với loại hợp đồng trọn gói: Sẽ có Tổng giá trị hợp đồng (trọn gói) - Tỉnh là toàn bộ Công nợ NCC trong thời gian phát sinh giao dịch - Đối với loại hợp đồng Nguyên tắc(Khung): Ghi nhận công nợ đối với các giao dịch phát sinh
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_197,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_014,Kiểm tra chiết khấu %,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Xem thông tin giảm giá,"- Xem giảm giá % toàn đơn đúng với hợp đồng đã cài đặt
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_198,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: PO không giảm 5% theo hợp đồng expect(received).toMatch(expected) Expected pattern: /27\.778|30\.000|5%/ Received string: ""Tổng giá trị đặt hàng 600.000 đ Tổng sản phẩm 1 Hàng tặng kèm 0 dòng Người tạo — Ngày tạo 29/09/2026 06:50 1 AUTO8_SKU_TC AUTO8_SP_TC Cái 55.556 8% 8% — 555.555 8% 44.445"
+12_4_080_015,Kiểm tra theo hạn mức công nợ,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Đặt hàng NCC,"- Trong trường hợp tổng số tiền phát sinh chưa thanh toán > Hạn mức công nợ sẽ thêm cảnh báo với số tiền vượt mức Hạn mức công nợ
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_199,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: Vượt hạn mức công nợ không có cảnh báo expect(received).toMatch(expected) Expected pattern: /hạn mức|vượt/i Received string: """""
+12_4_080_016,Kiểm tra hạn thanh toán,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",1. Chọn nhà cung cấp,"- Hiển thị thông báo cảnh báo các đơn hàng quá hạn thanh toán
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_200,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: Không cảnh báo đơn quá hạn thanh toán expect(received).toMatch(expected) Expected pattern: /quá hạn|hạn thanh toán/i Received string: """""
+12_4_080_017,Kiểm tra thời hạn được trả hàng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",1. Cửa hàng tạo đơn trả hàng NCC 2. Đến bước TCT duyệt trả hàng NCC 3. Kiểm tra thời hạn trả hàng,"- Kiểm tra đơn dặt ứng với hợp đồng nào. Nếu quá hạn hiển thị thông báo không cho trả hàng và nhập hàng trả lại Cửa hàng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_201,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_018,Tìm kiếm không tồn tại,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhập giá trị không tồn tại,"Hiển thị ""Không có dữ liệu""
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_205,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_019,Xóa bộ lọc,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhấn Xóa bộ lọc,"Hiển thị toàn bộ dữ liệu
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_208,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_020,Refresh danh sách,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhấn Refresh,"Reload dữ liệu mới nhất
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_209,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: Refresh không gọi lại danh sách expect(received).toBeTruthy() Received: null
+12_4_080_021,Phân trang,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Chuyển trang,"Hiển thị đúng dữ liệu trang được chọn
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_210,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_022,Mở popup thêm hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhấn Thêm mới,"Hiển thị form thêm hợp đồng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_211,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_023,Ngày kết thúc nhỏ hơn ngày bắt đầu,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Chọn ngày kết thúc trước ngày bắt đầu,"Không cho lưu, hiển thị lỗi
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_216,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_024,Trùng số hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhập số HĐ trùng,"Hiển thị thông báo trùng dữ liệu
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_218,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_025,Upload tài liệu hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Upload file,"Upload thành công
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_219,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_026,Upload file sai định dạng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Upload file exe,"Báo lỗi định dạng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_220,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,Error: 🔴 Nhận tệp .exe không báo lỗi định dạng expect(received).toBe(expected) // Object.is equality Expected: true Received: false
+12_4_080_027,Upload file vượt dung lượng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Upload file,"Hiển thị lỗi dung lượng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_221,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_028,Hủy thêm mới,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhấn Hủy,"Đóng popup, không lưu dữ liệu
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_222,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_029,Xem tài liệu hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhấn file,"Mở/tải đúng file
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_224,Sheet QC (chuyển thể nguyên văn),Không đạt,29/09/2026,"Error: 🔴 Link tệp hợp đồng không có URL http(s) (f.url rỗng / s3://…) ⇒ bấm không mở được expect(received).toMatch(expected) Expected pattern: /^https?:/ Received string: ""(không có href)"""
+12_4_080_030,Hiển thị đúng trạng thái hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Mở chi tiết,"Trạng thái hiển thị đúng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_225,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_031,Kích hoạt hợp đồng đang Ngừng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhấn Kích hoạt → Xác nhận,"Trạng thái chuyển sang Hiệu lực
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_226,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_032,Hủy thao tác kích hoạt,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Chọn Hủy,"Không thay đổi trạng thái
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_227,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_033,Hủy thao tác ngừng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Chọn Hủy,"Không thay đổi trạng thái
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_229,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_034,Kiểm tra tổng giá trị hợp đồng,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Mở chi tiết,"Tổng giá trị hiển thị đúng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_233,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_035,Đóng popup chi tiết,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhấn Đóng hoặc X,"Popup đóng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_234,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_036,Kiểm tra dữ liệu sau khi reload,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Refresh màn hình,"Trạng thái vẫn chính xác
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_235,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_037,Kiểm tra hiệu lực theo ngày hiện tại,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Mở danh sách,"Trạng thái hiển thị đúng theo quy tắc nghiệp vụ
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_236,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_038,Kiểm tra khoảng trắng đầu/cuối khi nhập số HĐ,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp","Nhập "" HD001 ""","Hệ thống tự trim hoặc validate đúng
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_237,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_039,Nhập giá trị âm cho hạn mức công nợ,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhập -1000,"Không cho lưu, hiển thị lỗi
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_238,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_080_040,Nhập chiết khấu >100%,"Vai `tct` đăng nhập, đang ở màn Hợp đồng nhà cung cấp",Nhập 120,"Hiển thị validate không hợp lệ
+
+🔴 Hợp đồng NCC quyết định chiết khấu, hạn mức công nợ, hạn thanh toán và thời hạn được trả hàng — sai là sai tiền ở mọi PO sau đó. CTKM cấp NCC là rule-level (xem `supplier_promotion_ctkm`).",NCC_239,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_011,Kiểm tra thêm mới CTKM bỏ trống trường thông tin bắt buộc,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Mở màn hình danh sách CTKM 2. Chọn Thêm mới 3. Bỏ trống thông tin bắt buộc 4. Click button thêm mới,"- Hiển thị thông báo lỗi: Hãy nhập thông tin cho trường Tên chương trình Hãy nhập thông tin cho trường Nhà cung cấp Hãy nhập thông tin cho trường Thời gian hiệu lực
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_242,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_012,Kiểm tra xem chi tiết thông tin CTKM,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Mở màn hình danh sách CTKM. 2. Chọn Xem,"- Hiển thị chi tiết thông tin chương trình khuyến mãi
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_243,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_013,Kiểm tra sửa thông tin CTKM,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Mở màn hình danh sách CTKM 2. Chọn Sửa 3. Nhập thông tin thay đổi 4. Click button Lưu,"- Trong trường hợp đang có phiếu PO đang trong tiến trình phê duyệt/tạo chưa hoàn thành có sử dụng CTKM không được phép chỉnh sửa. - Còn lại thì chỉnh sửa và áp dụng bình thường - CTKM khi cập nhật ở trạng thái Nháp
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_244,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_014,Kiểm tra Huỷ CTKM,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Truy cập màn Khuyến mãi đặt hàng NCC 2. Chọn Huỷ CTKM của NCC,"- Trạng thái CTKM ở trạng thái Đã huỷ, không thể kích hoạt lại CTKM
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_247,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_015,Kiểm tra chiết khấu % toàn đơn,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Xem thông tin giảm giá,"- Xem giảm giá % toàn đơn đúng với CTKM đã cài đặt đáp ứng đủ số lượng / số tiền
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_248,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_016,Kiểm tra chiết khấu giảm tiền toàn đơn,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Xem thông tin giảm giá,"- Xem giảm giá tiền toàn đơn đúng với CTKM đã cài đặt đáp ứng đủ số lượng / số tiền
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_249,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_017,Kiểm tra hình thức Mua X tặng Y,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Xem thông tin giảm giá,"- Xem tặng số lượng đáp ứng đúng giá trị Mua X tặng Y, theo đúng MÃ SKU đã chọn
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_250,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_018,Kiểm tra giảm giá tiền theo sản phẩm,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Xem thông tin giảm giá,"- Xem số tiền đúng với mã SKU đã chọn. giảm đúng số tiền đã cài đặt
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_251,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_019,Kiểm tra áp dụng CTKM với giá trị đơn tối thiểu,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Xem thông tin giảm giá,"- Kiểm tra số tiền Tổng đơn được áp dụng CTKM
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_252,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_090_020,Kiểm tra áp dụng CTKM với số lượng đơn tối thiểu,"Vai `tct` đăng nhập, đang ở màn Khuyến mãi đặt hàng nhà cung cấp",1. Tạo đơn đặt hàng NCC 2. Chọn nhà cung cấp 3. Chọn hợp đồng 4. Chọn sản phẩm đặt hàng 5. Xem thông tin giảm giá,"- Kiểm tra số lượng Tổng đơn được áp dụng CTKM
+
+🔴 CTKM đặt hàng NCC áp ở mức RULE, không phải mức sản phẩm — đối chiếu phải theo rule đã khai.",NCC_253,Sheet QC (chuyển thể nguyên văn),Đạt,29/09/2026,
+12_4_PQ_001,Vai điểm bán không vào được hợp đồng NCC,Vai: shop,1. Mở /supplier/contracts,Bị chặn — cả 7 task chỉ khai vai_tro TONG_CONG_TY và BUU_DIEN_TINH,NCC_232,Sheet QC,Đạt,29/09/2026,

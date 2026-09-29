@@ -1,0 +1,242 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 132,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:22:04.331Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "loyalty-goc.tct.spec.js",
+      "file": "loyalty-goc.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "tham do pham vi 20 — check-scope điểm bán làn trước/sau khi thêm tỉnh làn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "check-scope",
+                  "description": "gốc {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":false,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}} · +tỉnh {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":true,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":\"SHOP_CODE\",\"matchedOrgUnitCode\":\"AUTO7_T_01_A01\",\"reason\":\"Cửa hàng thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}} · +mã shop {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":true,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":\"SHOP_CODE\",\"matchedOrgUnitCode\":\"AUTO7_T_01_A01\",\"reason\":\"Cửa hàng thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}} · +shopId {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":true,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":\"SHOP_CODE\",\"matchedOrgUnitCode\":\"AUTO7_T_01_A01\",\"reason\":\"Cửa hàng thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}}"
+                },
+                {
+                  "type": "khôi phục",
+                  "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"FxvUVu\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"iIBJZc\"}]"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "tct",
+              "projectName": "tct",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:22:04.847Z",
+                  "annotations": [
+                    {
+                      "type": "check-scope",
+                      "description": "gốc {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":false,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}} · +tỉnh {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":true,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":\"SHOP_CODE\",\"matchedOrgUnitCode\":\"AUTO7_T_01_A01\",\"reason\":\"Cửa hàng thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}} · +mã shop {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":true,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":\"SHOP_CODE\",\"matchedOrgUnitCode\":\"AUTO7_T_01_A01\",\"reason\":\"Cửa hàng thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}} · +shopId {\"chainId\":626,\"shopId\":68151,\"orgUnitCode\":\"VNPOST\",\"provinceCode\":\"AUTO7_T\",\"wardCode\":\"AUTO7_T_01\",\"shopCode\":\"AUTO7_T_01_A01\",\"addPoint\":{\"allowed\":true,\"campaignId\":14,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":\"SHOP_CODE\",\"matchedOrgUnitCode\":\"AUTO7_T_01_A01\",\"reason\":\"Cửa hàng thuộc phạm vi áp dụng của chương trình tích điểm\"},\"redeemPoint\":{\"allowed\":false,\"campaignId\":5,\"scopeType\":\"DIEM_BAN\",\"matchedBy\":null,\"matchedOrgUnitCode\":null,\"reason\":\"Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm\"}}"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"FxvUVu\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"iIBJZc\"}]"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/loyalty-goc.tct-tham-do-ph-ca936-trước-sau-khi-thêm-tỉnh-làn-tct/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5d2d8f2fb6b938c1183-a3547d729e763fb8011b",
+          "file": "loyalty-goc.tct.spec.js",
+          "line": 37,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T10:22:04.012Z",
+    "duration": 10391.519,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

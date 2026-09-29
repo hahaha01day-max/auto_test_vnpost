@@ -1,0 +1,44 @@
+<div class="flex">
+  <h1>Run <span class="mono"><%= run.id %></span></h1>
+  <span id="run-status" class="right"><span class="badge <%= statusClass %>"><%= statusLabel %></span></span>
+</div>
+<p class="sub">
+  <%= run.module_name %> · môi trường <b><%= run.profile_name %></b>
+  <span class="mono small"><%= run.envSnapshot.baseUrl %></span> ·
+  <%= run.wholeModule ? 'cả module' : run.caseIds.length + ' case' %> · bởi <%= run.created_by %>
+</p>
+
+<% if (run.status === 'QUEUED') { %>
+<div class="warn">Đang <b>xếp hàng</b>: môi trường <%= run.profile_name %> có run khác đang chạy.
+Chỉ một run cho mỗi môi trường tại một thời điểm — chạy song song là hai run phá dữ liệu của nhau.</div>
+<% } %>
+
+<div class="card">
+  <div class="flex" style="margin-bottom:10px">
+    <b>Log</b>
+    <span class="right">
+      <% if (['QUEUED','RUNNING'].includes(run.status)) { %>
+        <form method="post" action="/runs/<%= run.id %>/stop" style="display:inline"><button class="danger">Dừng</button></form>
+      <% } else { %>
+        <a class="btn" href="/runs/<%= run.id %>/report">Xem báo cáo</a>
+      <% } %>
+    </span>
+  </div>
+  <div id="log"><%= logTail %></div>
+</div>
+
+<script>
+// 🔴 EventSource thuần — 🚫 dùng `htmx-sse.js`: file đó là bản cho htmx 1, chạy với htmx 2 thì không
+//    nhận sự kiện nào ⇒ log đứng im, trang treo "Đang chạy" dù run đã xong.
+// Chỉ nối khi run chưa kết thúc — run đã xong mà nối thì server báo `done` ngay ⇒ tải lại vô tận.
+<% if (['QUEUED', 'RUNNING'].includes(run.status)) { %>(() => {
+  const log = document.getElementById('log');
+  const es = new EventSource('/runs/<%= run.id %>/stream');
+  es.addEventListener('log', (e) => {
+    log.insertAdjacentHTML('beforeend', e.data);
+    log.scrollTop = log.scrollHeight;
+  });
+  // Run kết thúc → server phát `done` → tải lại trang để hiện trạng thái + nút báo cáo.
+  es.addEventListener('done', () => { es.close(); setTimeout(() => window.location.reload(), 400); });
+})();<% } %>
+</script>

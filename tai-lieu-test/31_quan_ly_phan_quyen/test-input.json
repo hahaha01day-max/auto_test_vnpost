@@ -1,0 +1,258 @@
+{
+  "_ghi_chu": "Khoá là mã case trong test-cases.csv. 🔴 Phân hệ PHÂN QUYỀN: mọi case mutates đổi quyền THẬT của người đang dùng hệ thống — allowMutation=false tuyệt đối. 🚫 Không đặt tài khoản/mật khẩu vào file này.",
+  "cases": {
+    "31_010_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_010_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_010_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_010_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_010_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_010_006": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_010_007": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_010_008": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_010_009": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "_blocked_cu": "Xoá vai trò kéo theo xoá toàn bộ phân công nhân viên — KHÔNG hoàn tác được",
+      "_note": "28/09: chạy trên VAI TRÒ RÁC A7PQ31_* do test tạo và xoá (không gán nhân viên) — không chạm vai trò thật."
+    },
+    "31_020_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_020_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_020_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true,
+      "_blocked_cu": "Gán quyền chức năng đổi quyền thật của người đang dùng hệ thống",
+      "_note": "28/09: chạy trên VAI TRÒ RÁC A7PQ31_* do test tạo và xoá (không gán nhân viên) — không chạm vai trò thật."
+    },
+    "31_030_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_006": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_007": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_008": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_040_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_040_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "31_040_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_040_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_040_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_040_006": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "     "
+      }
+    },
+    "31_050_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_060_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_060_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_060_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_070_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_080_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_080_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "31_080_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_080_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_080_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_080_006": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_080_007": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_080_008": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_080_009": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_080_010": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_080_011": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "31_090_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "31_090_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "31_030_009": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "blockedReason": "Kỳ vọng \"font chữ chuẩn theo design\" KHÔNG đo được: sheet QC không nói font-family/font-size/line-height chuẩn là bao nhiêu, và repo không có bản thiết kế đối chiếu. 🚫 Không hạ xuống thành \"màn hình hiển thị được\" cho dễ tự động hoá (luật Bước 4 của skill test-scenario). Gỡ bằng cách: user cung cấp giá trị chuẩn từ Figma, khi đó đo bằng getComputedStyle.",
+      "_blocked_cu": "",
+      "_goBoi": "26/09/2026: chuẩn = token mặc định antd v6 (app không ghi đè font)"
+    }
+  }
+}

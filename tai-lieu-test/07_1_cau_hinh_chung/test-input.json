@@ -1,0 +1,264 @@
+{
+  "_note": "Phân hệ 07_1 Cấu hình chung (làm tròn tiền · làm tròn tiền phần kho · làm tròn số lượng · tiền tệ · VAT mặc định · tự động đăng xuất). 🔴 Mọi cấu hình ở đây áp cho CẢ ĐƠN VỊ và đụng vào cách tính tiền — làm tròn sai thứ tự là lệch tiền ở mọi chứng từ sau đó.",
+  "cases": {
+    "07_1_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_1_010_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. Bật công tắc là áp làm tròn tiền cho toàn hệ thống ngay",
+      "_goBoi": "27/09/2026: user cho sửa cấu hình chuỗi, khôi phục ở finally"
+    },
+    "07_1_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "donViLamTron": 3,
+        "soMau": "12,345.678",
+        "ketQuaKyVong": "12.000"
+      }
+    },
+    "07_1_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "Phải mở màn sửa cấu hình thật; chỉ bật khi đã xác nhận validate chặn ở FE và không gửi request lưu",
+      "data": {
+        "thongBao": "Vui lòng nhập số chữ số làm tròn"
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: mọi request lưu cấu hình bị chặn ở mạng (chanGhiBat) — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_1_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "Thử lưu giá trị ngoài khoảng trên cấu hình toàn hệ thống",
+      "data": {
+        "giaTriSai": 4
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: mọi request lưu cấu hình bị chặn ở mạng (chanGhiBat) — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_1_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_1_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: mọi request lưu cấu hình bị chặn ở mạng (chanGhiBat) — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_1_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "thongBao": "Đã bật cấu hình làm tròn số lượng"
+      },
+      "_blocked_cu": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. Bật công tắc áp toàn hệ thống",
+      "_goBoi": "27/09/2026: user cho sửa cấu hình chuỗi, khôi phục ở finally"
+    },
+    "07_1_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "Phải mở màn sửa cấu hình thật",
+      "data": {
+        "thongBao": "Vui lòng nhập đơn vị làm tròn"
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: mọi request lưu cấu hình bị chặn ở mạng (chanGhiBat) — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_1_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "macDinh": 2
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: mọi request lưu cấu hình bị chặn ở mạng (chanGhiBat) — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_1_020_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "donViLamTron": 0,
+        "soMau": "12.3456",
+        "ketQuaKyVong": "12"
+      }
+    },
+    "07_1_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_1_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_1_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "thongBao": "Đã bật cấu hình tiền tệ"
+      },
+      "_blocked_cu": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. Bật công tắc tiền tệ áp toàn hệ thống",
+      "_goBoi": "27/09/2026: user cho sửa cấu hình chuỗi, khôi phục ở finally"
+    },
+    "07_1_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "Phải mở màn sửa cấu hình thật",
+      "data": {
+        "thongBao": "Vui lòng chọn tiền tệ"
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: mọi request lưu cấu hình bị chặn ở mạng (chanGhiBat) — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_1_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "gioiHan": 200
+      }
+    },
+    "07_1_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. 🔴 Kỳ vọng chưa chốt: chưa biết ô Mô tả có trim khoảng trắng hay không. Case còn GHI cấu hình.",
+      "_goBoi": "27/09/2026: user cho sửa cấu hình chuỗi, khôi phục ở finally"
+    },
+    "07_1_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_1_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "thongBao": "Đã bật cấu hình VAT mặc định"
+      },
+      "_blocked_cu": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. Bật công tắc VAT mặc định áp toàn hệ thống",
+      "_goBoi": "27/09/2026: user cho sửa cấu hình chuỗi, khôi phục ở finally"
+    },
+    "07_1_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "macDinh": "8%"
+      }
+    },
+    "07_1_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "thongBao": "Vui lòng chọn thuế suất VAT"
+      }
+    },
+    "07_1_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "thongBao": "Đã bật cấu hình tự động khóa màn hình"
+      },
+      "_blocked_cu": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. Bật công tắc tự động đăng xuất áp toàn hệ thống",
+      "_goBoi": "27/09/2026: user cho sửa cấu hình chuỗi, khôi phục ở finally"
+    },
+    "07_1_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "macDinh": "5 phút"
+      }
+    },
+    "07_1_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "thongBao": "Vui lòng chọn thời gian chờ"
+      }
+    },
+    "07_1_050_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_1_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. GHI cấu hình thật áp cho cả đơn vị.",
+      "_goBoi": "27/09/2026: user cho sửa cấu hình chuỗi, khôi phục ở finally"
+    },
+    "07_1_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_blocked": "Nhóm cấu hình \"Làm tròn tiền phần kho\" chưa được HDSD 07_1 mô tả — phải trace code để biết nó có ô nào và áp cho con số nào trước khi viết assert.",
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: mọi request lưu cấu hình bị chặn ở mạng (chanGhiBat) — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_1_060_002": {
+      "enabled": false,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": false,
+      "_blocked": "🔴 Cấu hình áp cho CẢ CHUỖI (chainId 626 dùng chung mọi làn test và người dùng dev) — bật/tắt hay lưu là đổi hành vi của mọi người ngay; chỉ chạy khi user cho phép ghi cấu hình chuỗi. Cần đặt hai cấu hình làm tròn khác nhau rồi lập chứng từ để đo — GHI cấu hình áp cho cả đơn vị."
+    },
+    "07_1_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    }
+  }
+}

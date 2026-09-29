@@ -1,0 +1,402 @@
+{
+  "_note": "Phân hệ 27 Đối soát hoá đơn. 🔴 HDSD khai vai nghiệp vụ (nhan_vien_mua_hang, ke_toan) — CHƯA có tài khoản tương ứng, vai tct chỉ là giả định. Hạch toán công nợ là điểm không quay lại.",
+  "cases": {
+    "27_010_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_tienDe": "PO riêng của làn (NCC làn) đã có phiếu nhập kho — để upload hoá đơn XML khớp PO mà không đụng PO người khác",
+      "_tienDe_xong": "seed 19 po-rieng (28/09)",
+      "_blocked_cu": "Làn 7 không có PO riêng; upload hoá đơn vào PO của người khác mà khớp là HỆ THỐNG TỰ HẠCH TOÁN + ghi công nợ NCC (autoAccountIfMatched) — không dọn được. Cần seed PO AUTO7_ có phiếu nhập."
+    },
+    "27_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "tepLoi": "AUTOTEST_loi.xml"
+      },
+      "_ghiChu": "Tệp lỗi parse + FE không gửi shopId ⇒ BE ném trước khi ghi (đọc PoInvoiceReconcileServiceImpl.uploadOne)."
+    },
+    "27_010_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE"
+      },
+      "_ghiChu": "Upload GOC số khác cho PO1000: BE trả requireConfirm TRƯỚC khi lưu file; bấm Huỷ. Nếu lỡ ghi đè, test DON trả snapshot."
+    },
+    "27_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE"
+      }
+    },
+    "27_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "27_020_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2607165382",
+        "poId": 727
+      }
+    },
+    "27_020_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2607165382",
+        "poId": 727
+      }
+    },
+    "27_020_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2607165382",
+        "poId": 727
+      }
+    },
+    "27_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2607165382",
+        "poId": 727
+      }
+    },
+    "27_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2607165382",
+        "poId": 727
+      }
+    },
+    "27_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2607165382",
+        "poId": 727
+      }
+    },
+    "27_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "invoiceId": 43,
+        "poId": 813,
+        "shopId": 56392,
+        "poCode": "PO2607292185"
+      }
+    },
+    "27_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE"
+      }
+    },
+    "27_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE"
+      }
+    },
+    "27_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "Xoá XML = xoá mềm hoá đơn thật, không có chức năng khôi phục. Cần hoá đơn AUTO7_ riêng (cần PO riêng).",
+      "_note": "28/09: chạy trên PO RIÊNG của làn (seed 19) — không đụng PO/công nợ thật."
+    },
+    "27_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE",
+        "snapshot": {
+          "invoiceSerial": "C26PO",
+          "invoiceNo": "00001000",
+          "sellerName": "Nhà cung cấp BAOKE",
+          "sellerTaxCode": "010000122",
+          "buyerName": "Kho tổng",
+          "paymentMethod": "Chuyển khoản",
+          "totalBeforeTax": 12000,
+          "totalTax": 960,
+          "totalAmount": 12960,
+          "items": [
+            {
+              "lineNo": 1,
+              "productName": "Bút nước m.8",
+              "unitName": "Chiếc",
+              "quantity": 1,
+              "unitPrice": 12000,
+              "discountAmount": 0,
+              "amountBeforeTax": 12000,
+              "vatRate": 8,
+              "vatAmount": 960,
+              "amountAfterTax": 12960
+            }
+          ]
+        },
+        "slMoi": 2
+      },
+      "_ghiChu": "PO1000 đã hạch toán ⇒ recompute KHÔNG tự hạch toán lại. Sửa SL rồi trả nguyên snapshot; test DON cuối file kiểm/trả lại lần nữa."
+    },
+    "27_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE"
+      },
+      "_ghiChu": "Chỉ thêm/xoá dòng trong drawer, KHÔNG bấm Lưu; chanGhi chặn mọi request ghi."
+    },
+    "27_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE"
+      },
+      "allowMutation": true,
+      "_ghiChu": "Rerun trên PO đã hạch toán, dữ liệu không đổi ⇒ idempotent. Tiền đề 'phiếu nhập vừa xác nhận sau khi HĐ về' không dựng được, chỉ kiểm chạy lại + cột Đối soát theo kết quả."
+    },
+    "27_060_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "_tienDe": "PO riêng của làn (NCC làn) đã có phiếu nhập kho — để upload hoá đơn XML khớp PO mà không đụng PO người khác",
+      "allowMutation": true,
+      "_tienDe_xong": "seed 19 po-rieng (28/09)",
+      "_blocked_cu": "Không có hoá đơn điều chỉnh chưa rõ dấu trên server dev (SELECT SHOP_PO_INVOICE_XML: 1 hoá đơn ĐC duy nhất, dấu GIAM). Dựng bằng upload cần PO riêng."
+    },
+    "27_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "poKhop": {
+          "poCode": "PO2609238817",
+          "invoiceId": 52,
+          "poId": 1000,
+          "shopId": 56392,
+          "invoiceNo": "00001000",
+          "mst": "010000122",
+          "tenNcc": "Nhà cung cấp BAOKE"
+        },
+        "poLech": {
+          "invoiceId": 43,
+          "poId": 813,
+          "shopId": 56392,
+          "poCode": "PO2607292185"
+        }
+      },
+      "_ghiChu": "Đối chứng thêm PO813: Σ phiếu nhập ở bảng Đối soát theo sản phẩm phải khớp SL ở thẻ Phiếu nhập kho."
+    },
+    "27_060_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "Hạch toán công nợ không hoàn tác được (ghi công nợ NCC, mở thanh toán) — skill cấm chạy.",
+      "_note": "28/09: chạy trên PO RIÊNG của làn (seed 19) — không đụng PO/công nợ thật."
+    },
+    "27_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "27_070_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_070_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_070_003": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false,
+      "data": {
+        "maTinh": "AUTO7_T"
+      }
+    },
+    "27_070_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_070_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "27_070_006": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE",
+        "soAnh": 10,
+        "soXml": 1,
+        "gioiHan": 10
+      },
+      "_ghiChu": "Chặn bằng route: GET danh sách chứng từ trả rỗng, POST upload trả 200 giả ⇒ không ghi. Đo giới hạn phía FE."
+    },
+    "27_070_007": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "route": "/report/po-reconciliation"
+      },
+      "_ghiChu": "Đổi vai shop→tct (shop 401)."
+    },
+    "27_070_008": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_070_009": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_071_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      },
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_071_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "PO-KHONGTONTAI-0000"
+      },
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_071_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_ghiChu_doiVai": "Đo 20/09/2026: vai shop mở màn được nhưng MỌI lời gọi /po-invoice-reconcile/invoices và /shops/<id>/supplier đều trả 401 ⇒ không có dữ liệu để kiểm. Chuyển case đọc/lọc sang vai tct (341 điểm bán, 10 dòng đối soát); phần phạm vi của vai shop giữ ở 27_PQ_001."
+    },
+    "27_071_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tep": "AUTOTEST_sai.txt"
+      },
+      "_ghiChu": "Đổi vai shop→tct (shop 401)."
+    },
+    "27_071_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "poCode": "PO2609238817",
+        "invoiceId": 52,
+        "poId": 1000,
+        "shopId": 56392,
+        "invoiceNo": "00001000",
+        "mst": "010000122",
+        "tenNcc": "Nhà cung cấp BAOKE"
+      },
+      "_ghiChu": "Đổi vai shop→tct: shop nhận 401 mọi lời gọi (xem 27_070_001)."
+    }
+  }
+}

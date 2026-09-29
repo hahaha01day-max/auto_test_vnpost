@@ -1,0 +1,154 @@
+,Chức năng,,,ĐỔI TRẢ HÀNG,,,,,,,
+,Mã Testcase,,,REALTIME_,,,,,,,
+,Tổng các tình huống kiểm thử,,,8,,,,,,,
+,Chưa thực hiện,,,3,,,,,,,
+,Đạt yêu cầu,,,4,,,,,,,
+,Không đạt yêu cầu,,,1,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng nhóm khách hàng,,,,,,,,,,
+REALTIME__1,Kiểm tra tạo điều kiện theo nhóm khách hàng thành công,"1. Nhóm hạng KIM CƯƠNG
+2. Điều kiện: ""Tổng tiền hàng đã mua"" >= 20,000,000 đ","- Đăng nhập thành công hệ thống
+- Có quyền role Admin - Tổng công ty thực hiện tạo nhóm đối tượng
+","1. Vào Khuyến mãi > Danh sách nhóm đối tượng
+2. Nhập tên nhóm khách hàng
+3. Click nhóm đối tượng KH được áp dụng: ""Nhóm khách hàng""
+4. Thiết lập điều kiện cho nhóm
+5. Click ""Xác nhận""
+6. Kiểm tra kết quả trả về",Cao,Màn thêm nhóm đối tượng khách hàng áp dụng,"1. Hiển thị thông báo ""Tạo nhóm đối tượng thành công""
+2. Hiển thị nhóm đối tượng khách hàng vừa tạo
+3. Cập nhật danh sách khách hàng đủ điều kiện vào nhóm","1. Hiển thị thông báo ""Tạo nhóm đối tượng thành công""
+2. Hiển thị nhóm đối tượng khách hàng vừa tạo
+3. Cập nhật danh sách khách hàng đủ điều kiện vào nhóm",Pass,,
+REALTIME__2,Kiểm tra thêm mới CTKM theo nhóm đối tượng - cập nhật realtime trên toàn bộ giá trị đơn hàng,"1. Chương trình khuyến mãi: Khách hàng KIM CƯƠNG
+2. Đối tượng áp dụng: nhóm hạng KIM CƯƠNG
+3. Áp dụng: theo đơn hàng (cập nhật realtime trên toàn bộ giá trị đơn hàng)
+4. Thiết lập giảm giá - theo % hóa đơn: 5% 
+5. Chọn phạm vi áp dụng: toàn bộ điểm bán của Tổng công ty","- Đăng nhập thành công hệ thống
+- Có quyền role Admin - Tổng công ty thực hiện tạo nhóm đối tượng
+","1. Vào khuyến mãi > Danh sách chương trình
+2. Nhập tên chương trình: Khách hàng Kim Cương
+3. Chọn đối tượng áp dụng (VD: Hạng KIM CƯƠNG)
+4. Thiết lập thời gian áp dụng
+5. Click ""Theo đơn hàng""
+6. Tùy chọn nâng cao: tick chọn ""Hệ thống tự động xác minh nhóm KH ngay trong đơn (cập nhật realtime)""
+7. Chọn mức tính giảm giá theo ""Toàn bộ giá trị đơn hàng""
+8. Thiết lập giảm giá % theo hóa đơn",Cao,Màn thêm mới chương trình khuyến mãi,"1. Hiển thị thông báo ""Tạo chiến dịch thành công""
+2. Hiển thị chương trình đã tạo trong danh sách CTKM","1. Hiển thị thông báo ""Tạo chiến dịch thành công""
+2. Hiển thị chương trình đã tạo trong danh sách CTKM",Pass,,
+REALTIME__3,Kiểm tra nâng hạng realtime khi thanh toán - tiền mặt (toàn bộ),"1. Hóa đơn gốc HD_0001 (hình thức thanh toán: thanh toán hết - tiền mặt)
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo","1. Vào bán hàng 
+2. Chọn Khách hàng (""Mới"")
+3. Chọn sản phẩm, số lượng
+4. Kiểm tra số lượng chương trình khuyến mãi áp dụng
+5. Chọn hình thức ""Thanh toán hết"" (phương thức: tiền mặt)
+6. Nhấn ""Xác nhận thanh toán""
+7. Kiểm tra kết quả trả về ",Cao,Màn bán hàng,"1. Tại thời điểm chọn khách hàng (Mới) => chọn sản phẩm Socola đắng => lập tức danh sách CTKM tự động tích chọn CT Nhóm hạng Kim Cương
+2. Hiển thị áp dụng đúng % ưu đãi giảm giá cho toàn bộ giá trị đơn hàng hiện tại
+3. Thông báo tạo đơn hàng thành công","1. Tại thời điểm chọn khách hàng (Mới) => chọn sản phẩm Socola đắng => lập tức danh sách CTKM tự động tích chọn CT Nhóm hạng Kim Cương
+2. Hiển thị áp dụng đúng % ưu đãi giảm giá cho toàn bộ giá trị đơn hàng hiện tại
+3. Thông báo tạo đơn hàng thành công",Pass,,
+REALTIME__4,Kiểm tra nâng hạng realtime khi thanh toán sau (thanh toán nợ đơn hàng),"1. Hóa đơn gốc HD_0001 (hình thức thanh toán: thanh toán sau)
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo","1. Vào bán hàng 
+2. Chọn Khách hàng (""Mới"")
+3. Chọn sản phẩm, số lượng
+4. Kiểm tra số lượng chương trình khuyến mãi áp dụng
+5. Chọn hình thức ""Thanh toán sau""
+6. Kiểm tra kết quả trả về ",Cao,Màn bán hàng,"1. Tại thời điểm chọn khách hàng (Mới) => chọn sản phẩm Socola đắng => lập tức danh sách CTKM tự động tích chọn CT Nhóm hạng Kim Cương
+2. Hiển thị áp dụng đúng % ưu đãi giảm giá cho toàn bộ giá trị đơn hàng hiện tại
+3. Khi chọn hình thức thanh toán sau => Hệ thống báo message cảnh báo ""Chương trình khuyến mãi áp dụng không đủ điều kiện vui lòng kiểm tra lại""","1. Tại thời điểm chọn khách hàng (Mới) => chọn sản phẩm Socola đắng => lập tức danh sách CTKM tự động tích chọn CT Nhóm hạng Kim Cương
+2. Hiển thị áp dụng đúng % ưu đãi giảm giá cho toàn bộ giá tị đơn hàng hiện tại
+3. Khi chọn hình thức thanh toán sau => Hệ thống báo message cảnh báo ""Chương trình khuyến mãi áp dụng không đủ điều kiện vui lòng kiểm tra lại""",Pass,,
+REALTIME__5,Kiểm tra nâng hạng realtime khi đơn hàng lưu nháp,"1. Hóa đơn gốc HD_0001 (hình thức: Lưu nháp)
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo","1. Vào bán hàng 
+2. Chọn Khách hàng (""Mới"")
+3. Chọn sản phẩm, số lượng
+4. Kiểm tra số lượng chương trình khuyến mãi áp dụng
+5. Chọn hình thức ""Lưu nháp""
+6. Kiểm tra kết quả trả về ",Cao,Màn bán hàng,"1. Tại thời điểm chọn khách hàng (Mới) => chọn sản phẩm Socola đắng => lập tức danh sách CTKM tự động tích chọn CT Nhóm hạng Kim Cương
+2. Hiển thị áp dụng đúng % ưu đãi giảm giá cho toàn bộ giá trị đơn hàng hiện tại
+3. Khi chọn hình thức Lưu nháp => Hệ thống báo message cảnh báo ""Chương trình khuyến mãi áp dụng không đủ điều kiện vui lòng kiểm tra lại""","1. Tại thời điểm chọn khách hàng (Mới) => chọn sản phẩm Socola đắng => lập tức danh sách CTKM tự động tích chọn CT Nhóm hạng Kim Cương
+2. Hiển thị áp dụng đúng % ưu đãi giảm giá cho toàn bộ giá tị đơn hàng hiện tại
+3. Khi chọn hình thức Lưu nháp => Tạo đơn Lưu nháp thành công",Fail,,
+REALTIME__6,Kiểm tra nâng hạng realtime khi đơn hàng thanh toán trả góp,"1. Hóa đơn gốc HD_0001 (hình thức thanh toán: thanh toán trả góp)
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo","1. Vào bán hàng 
+2. Chọn Khách hàng (""Mới"")
+3. Chọn sản phẩm, số lượng
+4. Kiểm tra số lượng chương trình khuyến mãi áp dụng
+5. Chọn hình thức ""Trả góp""
+6. Nhấn ""Xác nhận thanh toán""
+7. Kiểm tra kết quả trả về ",Cao,Màn bán hàng,"1. Tại thời điểm chọn khách hàng (Mới) => chọn sản phẩm Socola đắng => lập tức danh sách CTKM tự động tích chọn CT Nhóm hạng Kim Cương
+2. Hiển thị áp dụng đúng % ưu đãi giảm giá cho toàn bộ giá trị đơn hàng hiện tại
+3. Khi chọn hình thức Thanh toán trả góp => ",,,,
+,Kiểm tra nâng hạng realtime khi đơn hàng thanh toán hết bằng chuyển khoản,"1. Hóa đơn gốc HD_0001 (hình thức thanh toán: thanh toán chuyển khoản)
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo","1. Vào bán hàng 
+2. Chọn Khách hàng (""Mới"")
+3. Chọn sản phẩm, số lượng
+4. Kiểm tra số lượng chương trình khuyến mãi áp dụng
+5. Chọn hình thức thanh toán ""Chuyển khoản""
+6. Kiểm tra kết quả trả về ",Cao,Màn bán hàng,,,,,
+,Kiểm tra nâng hạng realtime khi đơn hàng thanh toán bằng QR,"1. Hóa đơn gốc HD_0001 (hình thức thanh toán: thanh toán QR)
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo","1. Vào bán hàng 
+2. Chọn Khách hàng (""Mới"")
+3. Chọn sản phẩm, số lượng
+4. Kiểm tra số lượng chương trình khuyến mãi áp dụng
+5. Chọn hình thức thanh toán ""Chuyển khoản""
+6. Kiểm tra kết quả trả về ",,,,,,,
+,Kiểm tra nâng hạng realtime khi đơn hàng thanh toán bằng điểm,"1. Hóa đơn gốc HD_0001 (hình thức thanh toán: thanh toán bằng điểm
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo",,,,,,,,
+,Kiểm tra nâng hạng realtime khi đơn hàng thanh toán Đa phương thức,"1. Hóa đơn gốc HD_0001 (hình thức thanh toán: thanh toán sau)
+2. Chọn khách hàng: Mới 
+- Tổng tiền mua hàng hiện tại: 19,900,000 đ 
+- Đạt mức nhóm VÀNG (hưởng mức ưu đãi giảm giá toàn đơn: 1%)
+3. Mua sản phẩm: Socola đắng (200.000 đ) - số lượng sp: 1","- Đăng nhập thành công hệ thống
+- Có quyền truy cập vào điểm bán tạo đơn hàng kiểm tra nâng hạng realtime tại thời điểm mua hàng
+- Đầy đủ danh sách các chương trình khuyến mãi đã tạo",,,,,,,,
+,Kiểm tra hủy đơn hàng khi đã nâng hạng realtime,,,,,,,,,,
+,Kiểm tra hoàn trả toàn bộ khi đã nâng hạng realtime,,,,,,,,,,
+,Kiểm tra hoàn trả một phần khi đã nâng hạng realtime,,,,,,,,,,

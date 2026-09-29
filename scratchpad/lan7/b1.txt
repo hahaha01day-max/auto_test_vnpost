@@ -1,0 +1,52 @@
+{'startTime': '2026-09-25T12:31:52.378Z', 'duration': 419276.76300000004, 'expected': 1, 'skipped': 17, 'unexpected': 0, 'flaky': 0}
+
+ skipped | 24_050_002 — Lọc theo trạng thái trả nợ
+   @ skip : None
+
+ skipped | 24_050_004 — Tìm nhân viên ở thẻ Công nợ với cửa hàng
+   @ skip : None
+
+ skipped | 24_050_005 — Cấp tỉnh chọn điểm bán ở thẻ Công nợ với cửa hàng
+   @ skip : None
+
+ skipped | 24_050_006 — Lọc trạng thái Tất cả tương đương không lọc
+   @ skip : None
+
+ skipped | 24_050_007 — Trạng thái từng dòng khớp bộ lọc đã chọn
+   @ skip : None
+
+ skipped | 24_050_008 — Phân trang thẻ Công nợ với cửa hàng
+   @ skip : None
+
+ skipped | 24_060_001 — Ba thẻ số liệu là số cộng dồn không giới hạn thời gian
+   @ skip : None
+
+ skipped | 24_060_002 — Cột Loại phiếu cho biết nguồn khoản nợ
+   @ skip : None
+
+ skipped | 24_060_003 — Ba thẻ lịch sử tách bạch nhau
+   @ skip : None
+
+ skipped | 24_070_001 — Hệ thống tự chia tiền ưu tiên khoản ghi nợ sớm nhất
+   @ skip : None
+
+ skipped | 24_070_003 — Bỏ trống tổng số tiền khi nhân viên nộp tiền
+   @ skip : None
+
+ skipped | 24_070_004 — Nhập số tiền bằng 0 hoặc số âm khi nộp tiền
+   @ skip : None
+
+ skipped | 24_070_005 — Nộp nhiều hơn tổng nợ còn lại
+   @ skip : None
+
+ skipped | 24_070_006 — API thanh toán trả lỗi
+   @ skip : None
+
+ skipped | 24_070_007 — Đóng form thanh toán giữa chừng
+   @ skip : None
+
+ skipped | 24_070_002 — Ghi nhận nhân viên nộp tiền trả nợ
+   @ skip : None
+
+ skipped | 24_070_008 — Số liệu liên quan cập nhật sau khi nộp tiền
+   @ skip : None

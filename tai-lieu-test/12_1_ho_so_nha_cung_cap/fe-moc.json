@@ -1,0 +1,53 @@
+{
+  "_note": "Mốc vnpost-web theo từng spec — đọc bởi `node tool/bin/fe-thay-doi.js`. `commit` = sha ĐẦY ĐỦ của vnpost-web lúc trace/probe spec đó (`git -C vnpost-web rev-parse HEAD`, 🚫 qua rtk). `fe` = file FE đã đọc khi viết locator/kỳ vọng. `man` = route màn. `ghiBu: true` = spec viết trước khi có quy ước mốc, mốc ghi bù bằng commit mà spec đã chạy xanh trên đó.",
+  "spec": {
+    "tests/supplier-page.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "ghiBu": true,
+      "man": ["/supplier/list", "/supplier/groups"],
+      "fe": [
+        "src/features/supplier/pages/supplier.jsx",
+        "src/features/supplier/pages/TableData.jsx",
+        "src/features/supplier/services/supplierApi.js"
+      ]
+    },
+    "tests/nha-cung-cap.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "ghiBu": true,
+      "man": ["/supplier/list", "/supplier/groups"],
+      "fe": [
+        "src/features/supplier/pages/supplier.jsx",
+        "src/features/supplier/pages/TableData.jsx",
+        "src/features/supplier/pages/SupplierGroupPage.jsx",
+        "src/features/supplier/services/supplierApi.js",
+        "src/utils/service/supplierGroupService.js"
+      ]
+    },
+    "tests/ghi-du-lieu.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "ghiBu": true,
+      "man": ["/supplier/list", "/supplier/groups"],
+      "fe": [
+        "src/features/supplier/pages/supplier.jsx",
+        "src/features/supplier/pages/AddModal.jsx",
+        "src/features/supplier/pages/SupplierGroupPage.jsx",
+        "src/utils/service/supplierGroupService.js"
+      ]
+    },
+    "tests/ncc-ghi.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-23",
+      "man": ["/supplier/list"],
+      "fe": [
+        "src/features/supplier/pages/supplier.jsx",
+        "src/features/supplier/pages/TableData.jsx",
+        "src/features/supplier/pages/AddModal.jsx",
+        "src/features/supplier/pages/SupplierDetailDrawer.jsx",
+        "src/features/supplier/services/supplierApi.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "_note": "Phân hệ 29 Báo cáo quản trị. 🔴 Chốt trị giá tồn kho là CHỐT SỔ; các nút tổng hợp chạy job thật trên hệ thống báo cáo.",
+  "cases": {
+    "29_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_010_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "29_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "29_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "29_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_070_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_080_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_090_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_100_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_110_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_110_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "29_120_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_120_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "province",
+      "data": {}
+    },
+    "29_130_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_130_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_130_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_140_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {}
+    },
+    "29_140_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "29_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "29_200_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_200_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_200_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_200_004": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    },
+    "29_200_005": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    },
+    "29_200_006": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "29_200_007": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    },
+    "29_200_008": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    },
+    "29_210_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_002": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    },
+    "29_210_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_210_007": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_210_008": {
+      "enabled": true,
+      "role": "province",
+      "mutates": false
+    },
+    "29_210_009": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false
+    },
+    "29_210_010": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_011": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_012": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_013": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_014": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_015": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_016": {
+      "enabled": true,
+      "role": "province",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_210_017": {
+      "enabled": true,
+      "role": "province",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "29_220_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_007": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_008": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_009": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_010": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_011": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_012": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_013": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_220_014": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_230_001": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_230_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_230_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_230_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_230_005": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_240_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "29_240_002": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_240_003": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      },
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_240_004": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": false,
+      "_blocked_cu": "Cần tài khoản vai tct",
+      "_batBoi": "seed 00_seed — tài khoản vai `tct` đã khai trong .env và dùng chạy suốt bộ seed"
+    },
+    "29_240_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    }
+  }
+}

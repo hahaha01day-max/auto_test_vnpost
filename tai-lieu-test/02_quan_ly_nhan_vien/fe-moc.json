@@ -1,0 +1,46 @@
+{
+  "spec": {
+    "tests/cong-no-nv.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/employee/detail/:name/:sysUserId/:shopId"
+      ],
+      "fe": [
+        "src/pages/employee/employeeDetail/index.jsx",
+        "src/pages/employee/employeeDebt/EmployeeDebt.jsx"
+      ]
+    },
+    "tests/dieu-chuyen.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/employee",
+        "/employee/detail/:id"
+      ],
+      "fe": [
+        "src/pages/employee/employeeWorkingBranch/TransferEmployeeDrawer.jsx"
+      ]
+    },
+    "tests/tra-cuu.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/employee/list"
+      ],
+      "fe": [
+        "src/pages/employee/index.jsx"
+      ]
+    },
+    "tests/sua-nhan-vien.tct.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/employee/list"
+      ],
+      "fe": [
+        "src/pages/employee/addOrEditEmployeeModal/index.jsx"
+      ]
+    }
+  }
+}

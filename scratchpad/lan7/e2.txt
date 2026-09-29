@@ -1,0 +1,23 @@
+{'startTime': '2026-09-25T13:20:52.977Z', 'duration': 107555.58899999999, 'expected': 2, 'skipped': 1, 'unexpected': 5, 'flaky': 0}
+
+ failed | 26_060_001 — Bán hàng thanh toán sinh phiếu thu tự động
+   ! Error: view_all_receipts lỗi: {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 26_060_002 — Đơn nháp hoặc chưa thanh toán không sinh phiếu thu
+   ! Error: view_all_receipts lỗi: {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ failed | 26_040_004 — Phiếu thu tiền bán hàng có thông báo riêng khi xoá
+   ! Error: view_all_receipts lỗi: {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"
+
+ skipped | 26_040_003 — Phiếu do hệ thống tự sinh không xoá được
+   @ phiếu hôm nay : [{"id":416,"code":null,"nguon":"A7KH198157186 AUTO TEST KHONG DUNG 20_050_014","tien":190000,"orderType":0,"he":true},{"id":414,"code":null,"nguon":"A7KH198093443 AUTO TEST KHONG DUNG 20_050_013","tien":190000,"orderType":0,"he":true},{"id":413,"code":null,"nguon":"A7KH198031320 AUTO TEST KHONG DUNG
+   @ skip : Hôm nay điểm bán không có phiếu thu hệ thống nào ngoài tiền bán hàng (chạy 24_070_002 trước).
+
+ failed | 26_060_005 — Thu hồi nợ nhân viên từ kho sinh phiếu thu tự động
+   @ phiếu "Thu hồi nợ" hôm nay : []
+   @ lần nộp tiền NV gần nhất : ["22","4000.0000"]
+   ! Error: Nhân viên nộp 4000.0000đ mà không sinh phiếu thu "Thu hồi nợ" đối tượng Nhân viên  expect(received).toBeTruthy()  Received: undefined
+
+ failed | 26_070_002 — Cấp dưới không xem được phiếu của cấp trên
+   @ đo : 0 phiếu · lạ []
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"

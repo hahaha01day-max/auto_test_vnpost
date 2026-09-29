@@ -1,0 +1,74 @@
+ID,Ten test case,Tien dieu kien,Buoc kiem thu,Ket qua ky vong,Ma goc,Nguon,Trang thai chay,Ngay chay,Ghi chu chay
+31_010_001,Mở màn Quản lý vai trò,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Vào Quản lý vai trò > Vai trò
+2. Quan sát danh sách vai trò và các control trên màn hình","Admin mở được màn Quản lý vai trò, thấy danh sách vai trò và các control chính",FUNC_VAITRO__1,Sheet QC,Đạt,29/09/2026,
+31_010_002,Kiểm tra control chính trên danh sách vai trò,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Vào Quản lý vai trò > Vai trò
+2. Quan sát ô tìm kiếm, bộ lọc, nút Thêm vai trò
+3. Quan sát bảng danh sách và cột Thao tác của từng dòng","Có tìm kiếm, lọc, nút thêm mới, bảng danh sách và thao tác theo dòng",FUNC_VAITRO__2;FUNC_VAITRO__3;FUNC_VAITRO__8,Sheet QC,Không đạt,29/09/2026,"Error: Màn KHÔNG có ô LỌC nào (chỉ có ô tìm kiếm) — kịch bản đòi ""tìm kiếm, lọc"" expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0"
+31_010_003,Mở form Thêm vai trò và kiểm tra trường bắt buộc,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Vào Quản lý vai trò > Vai trò
+2. Bấm Thêm vai trò ở góc trên bên phải
+3. Quan sát các trường trên màn Thêm mới vai trò","Form có Mã vai trò, Tên vai trò, Phạm vi, Mô tả và nút Xác nhận, Huỷ",FUNC_VAITRO__21,Sheet QC,Không đạt,29/09/2026,"Error: Form KHÔNG có nút ""Huỷ"" (chỉ có dấu X ""Đóng · Xác nhận"") expect(received).toBe(expected) // Object.is equality Expected: true Received: false"
+31_010_004,Thêm vai trò - validate form rỗng,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Bấm Thêm vai trò ở góc trên bên phải
+2. Để trống Mã vai trò, Tên vai trò, Phạm vi
+3. Bấm Xác nhận",Bấm Xác nhận khi chưa nhập trường bắt buộc thì phải hiển thị lỗi validation,FUNC_VAITRO__23;FUNC_VAITRO__24;FUNC_VAITRO__25,Sheet QC,Đạt,29/09/2026,
+31_010_005,Thêm vai trò hợp lệ,Đã đăng nhập vai Admin có quyền Tạo vai trò; đang ở màn Quản lý vai trò > Vai trò,"1. Bấm Thêm vai trò ở góc trên bên phải
+2. Nhập Mã vai trò gồm chữ không dấu, chữ số, gạch dưới hoặc gạch ngang
+3. Nhập Tên vai trò
+4. Chọn Phạm vi trong năm giá trị: Tổng Công Ty, Bưu Điện Tỉnh, Bưu Điện Xã, Pos Plus, Điểm Bán
+5. Nhập Mô tả
+6. Bấm Xác nhận","Nhập Mã vai trò, Tên vai trò, Phạm vi, Mô tả thì lưu thành công và thấy vai trò trong danh sách",FUNC_VAITRO__22,Sheet QC,Đạt,29/09/2026,
+31_010_006,Tìm kiếm vai trò theo mã/tên,Đã đăng nhập vai Admin; đã có vai trò vừa tạo ở bước trước,"1. Vào Quản lý vai trò > Vai trò
+2. Nhập mã hoặc tên vai trò vừa tạo vào ô tìm kiếm
+3. Quan sát danh sách",Nhập từ khoá vai trò vừa tạo thì danh sách hiển thị đúng vai trò đó,FUNC_VAITRO__14,Sheet QC,Đạt,29/09/2026,
+31_010_007,Cập nhật tên/phạm vi vai trò,Đã đăng nhập vai Admin có quyền Tạo vai trò; đã có vai trò cần sửa,"1. Tìm dòng vai trò cần sửa trên danh sách
+2. Bấm thao tác chỉnh sửa ở cột Thao tác
+3. Sửa Tên vai trò và đổi Phạm vi
+4. Bấm Xác nhận","Mở form chỉnh sửa, sửa tên và phạm vi thì lưu thành công và danh sách cập nhật",FUNC_VAITRO__28;FUNC_VAITRO__29,Sheet QC,Đạt,29/09/2026,
+31_010_008,Hủy thao tác xóa vai trò,Đã đăng nhập vai Admin có quyền Xoá vai trò; đã có vai trò cần xoá,"1. Tìm dòng vai trò cần xoá trên danh sách
+2. Bấm Xoá ở cột Thao tác
+3. Ở popup xác nhận, bấm Huỷ",Bấm Xoá thì popup xác nhận hiển thị; bấm Huỷ thì vai trò vẫn còn,FUNC_VAITRO__34,Sheet QC,Đạt,29/09/2026,
+31_010_009,Xóa vai trò vừa tạo,Đã đăng nhập vai Admin có quyền Xoá vai trò; đã có vai trò vừa tạo để xoá,"1. Tìm dòng vai trò vừa tạo trên danh sách
+2. Bấm Xoá ở cột Thao tác
+3. Ở popup xác nhận, bấm Đồng ý",Bấm Xoá rồi bấm Đồng ý thì hệ thống xoá thành công và vai trò không còn trong danh sách,FUNC_VAITRO__33,Sheet QC,Đạt,29/09/2026,
+31_020_001,Mở màn gán quyền chức năng cho vai trò,Đã đăng nhập vai Admin có quyền Tạo chức năng; vai trò đã tồn tại và danh mục chức năng đã khai báo xong,"1. Vào Quản lý vai trò > Vai trò
+2. Tìm dòng vai trò cần cấu hình
+3. Bấm Gán chức năng ở cột Thao tác","Từ dòng vai trò mở được màn Phân quyền chức năng, thấy danh sách quyền để tích chọn",FUNC_VAITRO__35,Sheet QC,Đạt,29/09/2026,
+31_020_002,Tick quyền chức năng và hủy,Đang mở màn Gán chức năng của một vai trò,"1. Mở màn Gán chức năng của vai trò
+2. Mở một nhóm chức năng, tích ô chọn ở đầu vài dòng chức năng
+3. Bỏ tích một chức năng đang được tích sẵn
+4. Bấm Huỷ","Tích và bỏ tích được quyền, bấm Huỷ thì thu hồi thao tác",,HDSD 020,Đạt,29/09/2026,
+31_020_003,Tick quyền chức năng và xác nhận,Đang mở màn Gán chức năng của một vai trò,"1. Mở màn Gán chức năng của vai trò
+2. Mở một nhóm chức năng, tích ô chọn ở đầu dòng chức năng cần cấp
+3. Bấm Xác nhận ở cuối màn hình",Tích quyền chức năng rồi bấm Xác nhận thì hệ thống lưu thành công hoặc trả lỗi rõ ràng,FUNC_VAITRO__43,Sheet QC,Đạt,29/09/2026,
+31_030_001,Bảng danh sách vai trò hiển thị đủ dữ liệu,Vai: tct,1. Mở /role-management/assign; 2. Đọc các dòng trong bảng,"Mỗi dòng hiện đủ mã vai trò, tên vai trò và phạm vi; không có dòng trống hay ô rỗng bất thường",FUNC_VAITRO__4,Sheet QC,Không đạt,29/09/2026,"Error: Bảng KHÔNG có cột mã vai trò. Cột thật: Tên Vai trò / Nhóm Phạm vi Ghi chú Thao tác expect(received).toMatch(expected) Expected pattern: /Mã/ Received string: ""Tên Vai trò / Nhóm Phạm vi Ghi chú Thao tác"""
+31_030_002,Ô tìm kiếm vai trò hiển thị đầy đủ,Vai: tct,1. Mở màn; 2. Đọc ô tìm kiếm,Ô tìm kiếm hiện rõ kèm placeholder gợi ý tìm theo mã hoặc tên. Ghi lại nguyên văn placeholder,FUNC_VAITRO__5,Sheet QC,Đạt,29/09/2026,
+31_030_003,Nút Thêm vai trò hiển thị đúng,Vai: tct,1. Mở màn; 2. Tìm nút Thêm vai trò,"Nút hiện ở thanh công cụ, bấm được. Ghi lại nguyên văn nhãn nút",FUNC_VAITRO__6,Sheet QC,Đạt,29/09/2026,
+31_030_004,Nút thu gọn tất cả hoạt động đúng,Vai: tct. Danh sách vai trò có nhóm mở rộng,1. Mở màn; 2. Bấm nút thu gọn tất cả,Mọi nhóm đang mở đều thu lại; bấm lần nữa hoặc mở lại thì bung ra,FUNC_VAITRO__7,Sheet QC,Đạt,29/09/2026,
+31_030_005,Mỗi dòng vai trò có nút Chỉnh sửa,Vai: tct,1. Mở màn; 2. Đọc cột thao tác của từng dòng,Mỗi dòng đều có nút Chỉnh sửa và bấm được,FUNC_VAITRO__11,Sheet QC,Đạt,29/09/2026,
+31_030_006,Mỗi dòng vai trò có nút Xóa,Vai: tct,1. Mở màn; 2. Đọc cột thao tác của từng dòng,Mỗi dòng đều có nút Xóa và bấm được,FUNC_VAITRO__12,Sheet QC,Đạt,29/09/2026,
+31_030_007,Mỗi dòng vai trò có nút Phân quyền chức năng,Vai: tct,1. Mở màn; 2. Đọc cột thao tác của từng dòng,Mỗi dòng đều có nút Phân quyền chức năng và bấm được,FUNC_VAITRO__13,Sheet QC,Đạt,29/09/2026,
+31_030_008,Giao diện co giãn khi thu nhỏ màn hình,Vai: tct,1. Mở màn; 2. Thu nhỏ cửa sổ trình duyệt xuống bề ngang hẹp,"Giao diện không vỡ, không tràn ngang; bảng chuyển sang cuộn ngang hoặc xếp lại",FUNC_VAITRO__9,Sheet QC,Đạt,29/09/2026,
+31_040_001,Tìm vai trò với từ khoá không tồn tại,Vai: tct,1. Gõ một chuỗi chắc chắn không khớp vai trò nào; 2. Enter,"Bảng về trạng thái rỗng, không lỗi kỹ thuật. Ghi lại nguyên văn dòng chữ trạng thái rỗng",FUNC_VAITRO__15,Sheet QC,Không đạt,29/09/2026,Error: Tìm không ra vai trò nào mà màn KHÔNG có dòng chữ trạng thái rỗng nào. Chữ trên màn: Quản lý vai trò Xuất excel Thêm vai trò Tổng cộng: 0 Thu gọn tất cả Tên Vai trò / Nhóm Phạm vi Ghi chú Thao tác expect(received).toBe(expected) // Object.is equality Expected: true Received: false
+31_040_002,Tìm vai trò với ký tự đặc biệt,Vai: tct,1. Gõ chuỗi chứa % và _ vào ô tìm kiếm; 2. Enter,Không lỗi 500; không trả về toàn bộ vai trò. Ghi lại hành vi thật,FUNC_VAITRO__16,Sheet QC,Không đạt,29/09/2026,Error: Tìm bằng ký tự đại diện SQL vẫn trả đủ 10 vai trò ⇒ wildcard không được xử lý expect(received).toBeLessThan(expected) Expected: < 10 Received: 10
+31_040_003,Tìm vai trò với từ khoá có khoảng trắng đầu cuối,Vai: tct. Biết một tên vai trò có thật,1. Gõ tên vai trò kèm dấu cách ở đầu và cuối; 2. Enter,Vẫn tìm ra vai trò đó (khoảng trắng được cắt),FUNC_VAITRO__17,Sheet QC,Đạt,29/09/2026,
+31_040_004,Tìm vai trò không phân biệt hoa thường,Vai: tct. Biết một tên vai trò có thật,1. Gõ tên vai trò bằng chữ thường; 2. Enter; 3. Gõ lại bằng chữ hoa; 4. Enter,Hai lần cho cùng kết quả,FUNC_VAITRO__18,Sheet QC,Đạt,29/09/2026,
+31_040_005,Tìm vai trò khi để trống ô tìm kiếm,Vai: tct,1. Xoá trắng ô tìm kiếm; 2. Enter,Trả về toàn bộ danh sách vai trò như ban đầu,FUNC_VAITRO__19,Sheet QC,Đạt,29/09/2026,
+31_040_006,Tìm vai trò với nhiều khoảng trắng liên tiếp,Vai: tct,1. Gõ nhiều dấu cách liên tiếp vào ô tìm kiếm; 2. Enter,"Coi như không lọc, trả về toàn bộ danh sách. Ghi lại hành vi thật nếu khác",FUNC_VAITRO__20,Sheet QC,Đạt,29/09/2026,
+31_050_001,Thêm vai trò bị trùng tên,Vai: tct. Biết một tên vai trò đã tồn tại,1. Mở form Thêm vai trò; 2. Nhập đúng tên vai trò đã có; 3. Lưu,"Bị chặn, không tạo vai trò mới. Ghi lại nguyên văn thông báo trùng tên",FUNC_VAITRO__26,Sheet QC,Không đạt,29/09/2026,"Error: Tạo được vai trò THỨ HAI cùng tên ""Admin"" (mã A7PQ31_TRUNG_993066) — không chặn trùng tên expect(received).toBeNull() Received: ""A7PQ31_TRUNG_993066"""
+31_060_001,Mở màn chỉnh sửa vai trò nạp sẵn thông tin,Vai: tct. Có vai trò đang tồn tại,1. Bấm Chỉnh sửa ở một dòng vai trò,"Màn chỉnh sửa mở, các ô nạp sẵn đúng thông tin hiện tại của vai trò đó",FUNC_VAITRO__27,Sheet QC,Đạt,29/09/2026,
+31_060_002,Chỉnh sửa bỏ trống trường bắt buộc,Vai: tct. Có vai trò đang tồn tại,1. Mở màn chỉnh sửa; 2. Xoá trắng ô Tên vai trò; 3. Lưu,"Bị chặn, không lưu. Ghi lại nguyên văn thông báo lỗi",FUNC_VAITRO__30,Sheet QC,Đạt,29/09/2026,
+31_060_003,Huỷ thao tác chỉnh sửa vai trò,Vai: tct. Có vai trò đang tồn tại,1. Mở màn chỉnh sửa; 2. Sửa tên vai trò; 3. Đóng bằng Huỷ hoặc X; 4. Đọc lại danh sách,Màn đóng; thông tin vai trò giữ nguyên như trước khi sửa,FUNC_VAITRO__31,Sheet QC,Đạt,29/09/2026,
+31_070_001,Nội dung popup xác nhận xoá vai trò,Vai: tct. Có vai trò đang tồn tại,1. Bấm Xóa ở một dòng vai trò; 2. Đọc nội dung popup,"Popup hiện đúng nội dung cảnh báo. Ghi lại nguyên văn — code có chuỗi ""Vai trò và toàn bộ phân công nhân viên bên dưới sẽ bị xóa. Hành động này không thể hoàn tác.""",FUNC_VAITRO__32,Sheet QC,Chưa chạy,29/09/2026,Dòng vai trò không có nút xoá. Nút đang có: · Gán chức năng · Gán nhân viên ·
+31_080_001,Tìm chức năng với từ khoá hợp lệ ở màn phân quyền,Vai: tct. Đang ở màn phân quyền chức năng,1. Mở màn phân quyền của một vai trò; 2. Gõ tên một chức năng có thật; 3. Enter,Chỉ hiện các chức năng khớp từ khoá,FUNC_VAITRO__36,Sheet QC,Đạt,29/09/2026,
+31_080_002,Tìm chức năng với ký tự đặc biệt,Vai: tct. Đang ở màn phân quyền chức năng,1. Gõ chuỗi chứa % và _ vào ô tìm chức năng; 2. Enter,Không lỗi 500; không trả về toàn bộ chức năng. Ghi lại hành vi thật,FUNC_VAITRO__37,Sheet QC,Đạt,29/09/2026,
+31_080_003,Tìm chức năng với từ khoá có khoảng trắng,Vai: tct. Đang ở màn phân quyền chức năng,1. Gõ tên chức năng kèm dấu cách đầu cuối; 2. Enter,Vẫn tìm ra chức năng đó,FUNC_VAITRO__38,Sheet QC,Đạt,29/09/2026,
+31_080_004,Tìm chức năng không phân biệt hoa thường,Vai: tct. Đang ở màn phân quyền chức năng,1. Gõ tên chức năng chữ thường rồi chữ hoa,Hai lần cho cùng kết quả,FUNC_VAITRO__39,Sheet QC,Đạt,29/09/2026,
+31_080_005,Tìm chức năng khi để trống ô tìm kiếm,Vai: tct. Đang ở màn phân quyền chức năng,1. Xoá trắng ô tìm chức năng; 2. Enter,Trả về toàn bộ cây chức năng như ban đầu,FUNC_VAITRO__40,Sheet QC,Đạt,29/09/2026,
+31_080_006,Chọn tất cả chức năng cho vai trò,Vai: tct. Đang ở màn phân quyền chức năng,1. Bấm chọn tất cả; 2. Đọc trạng thái các ô tick,Mọi chức năng trong cây đều được tick; bộ đếm đã chọn bằng tổng số chức năng,FUNC_VAITRO__42,Sheet QC,Đạt,29/09/2026,
+31_080_007,Chỉ hiển thị mục đã chọn,Vai: tct. Đã tick một số chức năng,"1. Tick vài chức năng; 2. Bật ""chỉ hiển thị mục đã chọn""",Cây chỉ còn các chức năng đang được tick,FUNC_VAITRO__44,Sheet QC,Đạt,29/09/2026,
+31_080_008,Làm mới các chức năng đã chọn,Vai: tct. Đã tick một số chức năng nhưng chưa lưu,1. Tick vài chức năng; 2. Bấm làm mới,"Các lựa chọn chưa lưu bị bỏ, cây trở về trạng thái đang lưu trong hệ thống",FUNC_VAITRO__45,Sheet QC,Không đạt,29/09/2026,"Error: ""Làm mới"" không bỏ lựa chọn chưa lưu (nút chỉ nạp lại danh sách chức năng) expect(received).toBe(expected) // Object.is equality Expected: 0 Received: 1"
+31_080_009,Gán chức năng thành công cho vai trò,Vai: tct. Có vai trò đang tồn tại,1. Mở màn phân quyền; 2. Tick thêm một chức năng; 3. Xác nhận,"Hiện thông báo nguyên văn ""Gán chức năng thành công""; mở lại màn thì chức năng đó vẫn được tick",,Code FE features/role,Đạt,29/09/2026,
+31_080_010,Xoá vai trò thành công,Vai: tct. Có vai trò vừa tạo để xoá,1. Bấm Xóa; 2. Xác nhận ở popup,"Hiện thông báo nguyên văn ""Xóa vai trò thành công""; vai trò biến mất khỏi danh sách",,Code FE features/role,Đạt,29/09/2026,
+31_080_011,Gán nhân viên khi chưa chọn ai,Vai: tct. Đang ở màn gán nhân viên cho vai trò,1. Mở màn gán nhân viên; 2. Không chọn nhân viên nào; 3. Xác nhận,"Hiện thông báo nguyên văn ""Vui lòng thêm ít nhất một nhân viên""",,Code FE features/role + kỹ thuật 3.4 #1,Đạt,29/09/2026,
+31_090_001,Vai điểm bán không vào được màn quản lý vai trò,Vai: gdv,1. Đăng nhập vai gdv; 2. Mở /role-management/assign,Bị chặn hoặc không thấy mục menu. Ghi lại hành vi thật,,Kỹ thuật 3.4 #10 — phạm vi theo vai,Đạt,29/09/2026,
+31_090_002,Phân trang danh sách vai trò,Vai: tct. Danh sách có nhiều hơn một trang,1. Sang trang 2; 2. Đổi số dòng mỗi trang; 3. Về trang cuối,Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi,,Kỹ thuật 3.4 #7 — phân trang,Không đạt,29/09/2026,Error: Danh sách vai trò KHÔNG có phân trang: nạp một lần size=5000 (10 vai trò) vào cây expect(received).toBeGreaterThan(expected) Expected: > 0 Received: 0
+31_030_009,Font chữ và khoảng cách dòng đúng thiết kế,Vai: tct,1. Mở /role-management/assign; 2. So sánh font chữ và khoảng cách dòng với bản thiết kế,"Font chữ và khoảng cách dòng khớp bản thiết kế. 🔴 Kỳ vọng này KHÔNG đo được bằng auto test khi chưa có giá trị chuẩn (font-family, font-size, line-height) — xem lý do BLOCKED",FUNC_VAITRO__10,Sheet QC,Đạt,29/09/2026,

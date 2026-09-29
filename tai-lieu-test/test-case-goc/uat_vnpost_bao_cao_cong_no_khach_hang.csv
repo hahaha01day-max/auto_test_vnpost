@@ -1,0 +1,76 @@
+,Chức năng,,QUẢN LÝ ĐẶT HÀNG,,,,,,,
+,Mã Testcase,,FUNC_1,,,,,,,
+,Tổng các tình huống kiểm thử,,13,,,,,,,
+,Chưa thực hiện,,13,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,
+,Thực hiện sau,,0,,,,,,,
+,Không phải thực hiện,,0,,,,,,,
+,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,
+,Kiểm tra bộ lọc thời gian,,,,,,,,,
+,Kiểm tra chọn ngày bắt đầu trùng ngày kết thúc,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Chọn ngày bắt đầu và ngày kết thúc là ngày hiện tại",,,Hệ thống hiển thị đầy đủ dữ liệu báo cáo công nợ khách hàng của ngày được chọn,,,,
+,Kiểm tra chọn ngày bắt đầu < ngày kết thúc,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Chọn ngày bắt đầu < ngày kết thúc ",,,Hệ thống hiển thị đầy đủ dữ liệu báo cáo công nợ khách hàng của khoảng thời gian được chọn,,,,
+,Kiểm tra chọn ngày bắt đầu > ngày kết thúc,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Chọn ngày bắt đầu > ngày kết thúc ",,,"Hệ thống tự động fill ngày bắt đầu là ngày nhỏ hơn, ngày kết thúc là ngày lớn hơn và hiển thị đầy đủ dữ liệu báo cáo công nợ khách hàng của khoảng thời gian được chọn",,,,
+,Kiểm tra chức năng tìm kiếm,,,,,,,,,
+,Kiểm tra khi nhập space vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập toàn space vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị toàn bộ dữ liệu công nợ ,,,,
+,Kiểm tra nhập chính xác tên khách hàng có công nợ vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập chính xác tên khách hàng có công nợ vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị chính xác dữ liệu công nợ của khách hàng được tìm kiếm,,,,
+,Kiểm tra nhập chính xác 1 phần tên khách hàng có công nợ vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập chính xác 1 phần tên khách hàng có công nợ vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị chính xác dữ liệu công nợ của khách hàng có 1 phần tên giống dữ liệu tìm kiếm,,,,
+,Kiểm tra nhập tên khách hàng không phát sinh công nợ/không tồn tại trên hệ thống vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập tên khách hàng không phát sinh công nợ/không tồn tại trên hệ thống vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị dữ liệu công nợ rỗng,,,,
+,Kiểm tra nhập chính xác SĐT khách hàng có công nợ vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập chính xác SĐT khách hàng có công nợ vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị chính xác dữ liệu công nợ của khách hàng có SĐT được tìm kiếm,,,,
+,Kiểm tra nhập chính xác 1 phần SĐT khách hàng có công nợ vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập chính xác 1 phần SĐT khách hàng có công nợ vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị chính xác dữ liệu công nợ của khách hàng có 1 phần SĐT giống dữ liệu tìm kiếm,,,,
+,Kiểm tra nhập SĐT khách hàng không phát sinh công nợ/không tồn tại trên hệ thống hoặc SĐT không đúng định dạng vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập SĐT khách hàng không phát sinh công nợ/không tồn tại trên hệ thống hoặc SĐT không đúng định dạng vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị dữ liệu công nợ rỗng,,,,
+,Kiểm tra nhập chính xác mã đơn hàng còn nợ vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập chính xác mã đơn hàng còn nợ vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị chính xác dữ liệu công nợ của mã đơn được tìm kiếm ở tab dữ liệu công nợ theo đơn,,,,
+,Kiểm tra nhập chính xác 1 phần mã đơn hàng còn nợ vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập chính xác 1 phần mã đơn hàng còn nợ vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị chính xác dữ liệu công nợ của mã đơn có 1 phần giống dữ liệu được tìm kiếm ở tab dữ liệu công nợ theo đơn,,,,
+,Kiểm tra nhập mã đơn hàng không còn nợ/không tồn tại vào ô tìm kiếm,,"1. User đăng nhập vào hệ thống
+2. Truy cập menu ""Báo cáo""-> ""Báo cáo công nợ khách hàng""
+3. Nhập mã đơn hàng không còn nợ/không tồn tại vào ô tìm kiếm
+4. Click Enter hoặc icon tìm kiếm",,,Hệ thống hiển thị dữ liệu công nợ rỗng ở tab dữ liệu công nợ theo đơn,,,,
+,Kiểm tra báo cáo nhanh,,,,,,,,,
+,"Kiểm tra thẻ ""Khách còn nợ"" khi có thêm 1 khách hàng mới phát sinh công nợ",,,,,,,,,
+,"Kiểm tra thẻ ""Khách còn nợ"" khi khách hàng đã có trong danh sách nợ phát sinh thêm công nợ",,,,,,,,,
+,"Kiểm tra thẻ ""Đơn còn nợ"" khi phát sinh thêm 1 đơn nợ",,,,,,,,,
+,"Kiểm tra thẻ ""Đơn còn nợ"" khi có 1 đơn nợ được thanh toán",,,,,,,,,
+,"Kiểm tra thẻ ""Đơn còn nợ"" khi có 1 đơn nợ được thanh toán 1 phần",,,,,,,,,

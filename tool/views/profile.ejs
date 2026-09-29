@@ -1,0 +1,48 @@
+<div class="flex"><h1><%= profile.name %></h1>
+  <% if (profile.isProd) { %><span class="badge b-prod">PROD</span><% } %>
+  <a class="right small" href="/">← Về danh sách</a></div>
+<p class="sub mono"><%= profile.baseUrl %></p>
+
+<form method="post" action="/profiles/<%= profile.id %>" class="card">
+  <div class="row" style="margin-bottom:12px">
+    <div><label>Tên hồ sơ</label><input name="name" value="<%= profile.name %>"></div>
+    <div><label>Base URL</label><input name="baseUrl" value="<%= profile.baseUrl %>"></div>
+    <div><label>API base URL</label><input name="apiBaseUrl" value="<%= profile.apiBaseUrl %>"></div>
+  </div>
+  <div class="flex">
+    <label style="margin:0"><input type="checkbox" name="isProd" style="width:auto" <%= profile.isProd ? 'checked' : '' %>> Môi trường thật</label>
+    <button class="primary right">Lưu</button>
+  </div>
+</form>
+
+<h2>Tài khoản theo vai</h2>
+<p class="sub small">Vai lấy từ <span class="mono">shared/auth/accounts.js</span>.
+Mật khẩu <b>chỉ ghi, không đọc lại</b> — để trống là giữ nguyên mật khẩu cũ.</p>
+
+<% profile.accounts.forEach((a) => { %>
+<form method="post" action="/profiles/<%= profile.id %>/accounts/<%= a.key %>" class="card" style="padding:12px">
+  <div class="flex" style="margin-bottom:8px">
+    <b><%= a.label %></b> <span class="mono small muted"><%= a.key %></span>
+    <% if (a.configured) { %><span class="badge b-pass">đã cấu hình</span>
+    <% } else { %><span class="badge b-no">chưa cấu hình</span><% } %>
+  </div>
+  <div class="small muted" style="margin-bottom:8px"><%= a.viec || '' %></div>
+  <div class="row">
+    <div><label>Tài khoản</label><input name="account" value="<%= a.account %>"></div>
+    <div><label>Mật khẩu <%= a.configured ? '(để trống = giữ nguyên)' : '' %></label>
+      <input name="password" type="password" placeholder="<%= a.configured ? '••••••••' : '' %>"></div>
+    <div><label>Nhãn phạm vi (tuỳ chọn)</label><input name="scopeLabel" value="<%= a.scopeLabel %>"></div>
+    <div style="flex:0 0 auto;display:flex;align-items:flex-end"><button>Lưu vai</button></div>
+  </div>
+</form>
+<% }) %>
+
+<h2>Kiểm tra kết nối</h2>
+<p class="sub small">Ping web rồi thử đăng nhập từng vai đã khai. Mất khoảng 30–90 giây,
+nhưng rẻ hơn nhiều so với chạy cả bộ test rồi mới biết sai mật khẩu.</p>
+<div class="card">
+  <button hx-post="/profiles/<%= profile.id %>/verify" hx-target="#verify-result" hx-indicator="#verify-busy">
+    Kiểm tra ngay</button>
+  <span id="verify-busy" class="htmx-indicator muted small"> đang kiểm…</span>
+  <div id="verify-result" style="margin-top:12px"></div>
+</div>

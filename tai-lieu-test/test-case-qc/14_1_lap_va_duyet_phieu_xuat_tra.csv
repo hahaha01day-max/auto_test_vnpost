@@ -1,0 +1,326 @@
+﻿,Chức năng,,LẬP VÀ DUYỆT PHIẾU XUẤT TRẢ NHÀ CUNG CẤP,,,,,,,,
+,Mã Testcase,,14_1_lap_va_duyet_phieu_xuat_tra,,,,,,,,
+,Tổng các tình huống kiểm thử,,144,,,,,,,,
+,Chưa thực hiện,,144,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,LẬP VÀ DUYỆT PHIẾU XUẤT TRẢ NHÀ CUNG CẤP,,,,,,,,,,
+,010 — Lập phiếu xuất trả nhà cung cấp,,,,,,,,,,
+14_1_010_001,Màn Tạo phiếu xuất trả mở đủ trường bắt buộc,Vai: shop; có ít nhất 1 phiếu nhập kho còn tồn,"1. Mở /inventory/stock-return-request;
+2. Bấm Tạo phiếu trả",,"Mở màn ""Tạo phiếu xuất trả nhà cung cấp"" có: 2 nút nguồn hàng, ô ""Mã phiếu nhập / chuyển kho"" kèm nút ""Tìm"", ô ""Lý do trả hàng"", bảng ""Danh sách sản phẩm trả"" và dải cảnh báo vàng nhắc hàng chưa bị khoá tồn",,,,,,
+14_1_010_002,Nguồn hàng mặc định là Theo phiếu nhập kho,Vai: shop,1. Mở /inventory/stock-return-request/create,,"Nút ""Theo phiếu nhập kho"" ở trạng thái đang chọn; chỉ ô ""Mã phiếu nhập / chuyển kho"" hiện, 3 ô SKU/Mã lô/Serial ẩn",,,,,,
+14_1_010_003,Đổi nguồn sang Theo SKU / Mã lô / Serial thì đổi bộ ô nhập,Vai: shop,"1. Mở /inventory/stock-return-request/create;
+2. Bấm ""Theo SKU / Mã lô / Serial""",,"Ô ""Mã phiếu nhập / chuyển kho"" ẩn đi; hiện 3 ô ""Thêm sản phẩm theo SKU"", ""Mã lô hàng"", ""Nhập / quét serial""",,,,,,
+14_1_010_004,Tra mã phiếu nhập hợp lệ nạp đủ sản phẩm và lô còn tồn,Vai: shop; có mã phiếu nhập kho của chính điểm bán,"1. Mở /inventory/stock-return-request/create;
+2. Gõ mã phiếu nhập vào ô ""Mã phiếu nhập / chuyển kho"";
+3. Bấm ""Tìm""",,"Bảng ""Danh sách sản phẩm trả"" nạp đúng số dòng của phiếu nhập; cột đúng thứ tự STT, Sản phẩm, SL phiếu, SL khả dụng, ĐVT trả, SL trả, Lô, Serial",,,,,,
+14_1_010_005,Tra mã phiếu nhập không tồn tại bị chặn,Vai: shop,"1. Mở /inventory/stock-return-request/create;
+2. Gõ ""KHONGTONTAI999"";
+3. Bấm ""Tìm""",,"Báo lỗi nguyên văn ""Không tìm thấy phiếu nhập/chuyển kho với mã đã nhập""; bảng sản phẩm rỗng",,,,,,
+14_1_010_006,Tra mã phiếu nhập toàn khoảng trắng không gọi API,Vai: shop,"1. Mở /inventory/stock-return-request/create;
+2. Gõ 5 dấu cách vào ô mã phiếu;
+3. Bấm ""Tìm""",,Không phát sinh request GET /stock/v2/import-export/detail; bảng sản phẩm rỗng; không hiện thông báo lỗi,,,,,,
+14_1_010_007,Tra mã phiếu nhập viết thường vẫn tìm được,Vai: shop; có phiếu nhập mã chữ hoa,"1. Mở /inventory/stock-return-request/create;
+2. Gõ mã phiếu bằng chữ thường;
+3. Bấm ""Tìm""",,Nạp đúng phiếu như khi gõ chữ hoa. Nếu không nạp được thì ghi nhận là lỗ hổng: mã phiếu phân biệt hoa thường,,,,,,
+14_1_010_008,Tra mã lô còn tồn thêm được sản phẩm của lô,Vai: shop; có lô còn tồn > 0,"1. Mở /inventory/stock-return-request/create;
+2. Chọn nguồn ""Theo SKU / Mã lô / Serial"";
+3. Gõ mã lô vào ô ""Mã lô hàng"";
+4. Bấm ""Tìm""",,"Bảng thêm dòng sản phẩm của lô đó, cột lô hiện đúng mã lô vừa tra, SL khả dụng = tồn còn lại của lô",,,,,,
+14_1_010_009,Tra mã lô không còn tồn bị chặn,Vai: shop,"1. Mở /inventory/stock-return-request/create;
+2. Chọn nguồn SKU/Lô/Serial;
+3. Gõ ""LO_KHONG_CO"";
+4. Bấm ""Tìm""",,"Báo lỗi nguyên văn: Không tìm thấy lô ""LO_KHONG_CO"" còn tồn trong kho",,,,,,
+14_1_010_010,Bấm Tìm khi ô mã lô rỗng bị chặn,Vai: shop,"1. Mở /inventory/stock-return-request/create;
+2. Chọn nguồn SKU/Lô/Serial;
+3. Để trống ô ""Mã lô hàng"";
+4. Bấm ""Tìm""",,"Báo cảnh báo nguyên văn ""Vui lòng nhập mã lô""",,,,,,
+14_1_010_011,Tra lại lô đã có trong danh sách không nhân đôi dòng,Vai: shop,"1. Tra 1 mã lô thành công;
+2. Tra lại đúng mã lô đó",,"Báo ""Sản phẩm của lô này đã có trong danh sách""; số dòng trong bảng không đổi",,,,,,
+14_1_010_012,Quét serial hợp lệ thêm đúng 1 đơn vị,Vai: shop; có serial còn tồn tại điểm bán,"1. Mở /inventory/stock-return-request/create;
+2. Chọn nguồn SKU/Lô/Serial;
+3. Gõ serial vào ô ""Nhập / quét serial"";
+4. Bấm ""Tìm""",,"Bảng thêm dòng sản phẩm mang serial đó, SL trả = 1, cột Serial chứa đúng số serial vừa quét",,,,,,
+14_1_010_013,Quét serial không tồn tại bị chặn,Vai: shop,"1. Mở /inventory/stock-return-request/create;
+2. Chọn nguồn SKU/Lô/Serial;
+3. Gõ ""SERIALKHONGCO"";
+4. Bấm ""Tìm""",,"Báo lỗi nguyên văn: Serial ""SERIALKHONGCO"" không tồn tại hoặc đã xuất kho",,,,,,
+14_1_010_014,Bấm Tìm khi ô serial rỗng bị chặn,Vai: shop,"1. Mở /inventory/stock-return-request/create;
+2. Chọn nguồn SKU/Lô/Serial;
+3. Để trống ô serial;
+4. Bấm ""Tìm""",,"Báo cảnh báo nguyên văn ""Vui lòng nhập serial""",,,,,,
+14_1_010_015,Quét lại serial đã có trong danh sách,Vai: shop,"1. Quét 1 serial thành công;
+2. Quét lại đúng serial đó",,"Báo ""Serial này đã có trong danh sách""; ô serial được xoá trắng; số dòng và SL trả không đổi",,,,,,
+14_1_010_016,Bỏ trống Lý do trả hàng bị chặn khi tạo phiếu,Vai: shop; đã có ít nhất 1 dòng hàng có SL trả > 0,"1. Không chọn ""Lý do trả hàng"";
+2. Bấm ""Tạo phiếu (chờ duyệt)""",,"Ô ""Lý do trả hàng"" viền đỏ kèm thông báo nguyên văn ""Chọn lý do trả hàng""; không phát sinh POST /stock/v2/stock-return-request",,,,,,
+14_1_010_017,Chọn Lý do khác mà bỏ trống Nội dung lý do bị chặn,Vai: shop; đã có dòng hàng có SL trả > 0,"1. Chọn ""Lý do trả hàng"" = ""Lý do khác"";
+2. Để trống ô ""Nội dung lý do"";
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Thông báo nguyên văn ""Nhập lý do trả hàng""; không phát sinh POST",,,,,,
+14_1_010_018,Nội dung lý do toàn khoảng trắng bị coi là bỏ trống,Vai: shop; đã có dòng hàng có SL trả > 0,"1. Chọn ""Lý do khác"";
+2. Gõ 5 dấu cách vào ""Nội dung lý do"";
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Thông báo nguyên văn ""Nhập lý do trả hàng"" (luật whitespace); không phát sinh POST",,,,,,
+14_1_010_019,Tạo phiếu khi chưa nhập SL trả cho dòng nào bị chặn,"Vai: shop; đã nạp bảng sản phẩm, mọi dòng SL trả = 0","1. Chọn lý do hợp lệ;
+2. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo nguyên văn ""Nhập số lượng trả cho ít nhất 1 sản phẩm""; không phát sinh POST",,,,,,
+14_1_010_020,Tạo phiếu nguồn phiếu nhập mà chưa tra mã hợp lệ bị chặn,"Vai: shop; nguồn = Theo phiếu nhập kho, chưa bấm Tìm thành công","1. Gõ mã phiếu nhưng không bấm ""Tìm"";
+2. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo nguyên văn ""Vui lòng nhập mã phiếu nhập/chuyển kho hợp lệ""",,,,,,
+14_1_010_021,Còn dòng chưa nhập SL thì hỏi lại trước khi tạo phiếu,"Vai: shop; bảng có 3 dòng, chỉ nhập SL cho 1 dòng","1. Chọn lý do;
+2. Bấm ""Tạo phiếu (chờ duyệt)"";
+3. Trong hộp hỏi bấm ""Ở lại nhập tiếp""",,"Hộp xác nhận tiêu đề ""Có sản phẩm chưa nhập số lượng trả"", nội dung ""2 sản phẩm chưa nhập số lượng sẽ KHÔNG được đưa vào phiếu. Bạn vẫn muốn tiếp tục?"", hai nút ""Tiếp tục tạo phiếu"" / ""Ở lại nhập tiếp"". Bấm ""Ở lại nhập tiếp"" thì không phát sinh POST",,,,,,
+14_1_010_022,SL trả vượt SL khả dụng bị chặn,Vai: shop; dòng hàng có SL khả dụng = 10,"1. Nhập SL trả = 11;
+2. Chọn lý do;
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo dạng: Sản phẩm ""<tên>"": SL trả (11 <ĐVC>) vượt SL khả dụng (10 <ĐVC>); không phát sinh POST",,,,,,
+14_1_010_023,SL trả bằng đúng SL khả dụng được chấp nhận,Vai: shop; dòng hàng có SL khả dụng = 10,"1. Nhập SL trả = 10;
+2. Chọn lý do;
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Không hiện cảnh báo vượt SL khả dụng; phiếu được tạo, báo ""Đã tạo phiếu xuất trả — chờ duyệt""",,,,,,
+14_1_010_024,SL trả âm không nhập được,Vai: shop,"1. Gõ ""-5"" vào ô SL trả của một dòng",,Ô SL trả giữ giá trị 0 (InputNumber min=0); không có dòng nào được đưa vào phiếu,,,,,,
+14_1_010_025,SL trả thập phân theo đơn vị quy đổi,Vai: shop; hàng có ĐVT lớn (Thùng) quy đổi ra ĐVC,"1. Chọn ĐVT trả = Thùng;
+2. Nhập SL trả = 1,5",,Hệ thống quy về đơn vị chính rồi so với SL khả dụng.,,,,,,
+14_1_010_026,Hàng serial thiếu serial so với SL trả bị chặn,Vai: shop; hàng quản lý serial,"1. Nhập SL trả = 3;
+2. Chỉ quét 2 serial;
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo dạng: Sản phẩm ""<tên>"" quản lý serial: cần 3 serial (theo <ĐVC>), đang chọn 2",,,,,,
+14_1_010_027,Hàng serial thừa serial so với SL trả bị chặn,Vai: shop; hàng quản lý serial,"1. Quét 3 serial;
+2. Sửa SL trả xuống 2;
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo dạng: Sản phẩm ""<tên>"" quản lý serial: cần 2 serial (theo <ĐVC>), đang chọn 3",,,,,,
+14_1_010_028,Hàng nhiều lô mà không nhập SL cho lô nào bị chặn,Vai: shop; hàng có ≥ 2 lô còn tồn,"1. Chọn 2 lô;
+2. Để SL của cả 2 lô = 0;
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo dạng: Sản phẩm ""<tên>"": nhập SL trả cho từng lô",,,,,,
+14_1_010_029,SL trả của một lô vượt tồn của chính lô đó bị chặn,Vai: shop; lô L001 còn tồn 5,"1. Chọn lô L001 và L002;
+2. Nhập SL lô L001 = 6;
+3. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo dạng: Sản phẩm ""<tên>"", lô L001: SL trả vượt tồn của lô (5 <ĐVC>)",,,,,,
+14_1_010_030,Hàng có lô mà không chọn lô bị chặn,"Vai: shop; hàng có lô, nguồn = phiếu nhập kho","1. Nhập SL trả > 0 nhưng bỏ trống cột ""Lô"";
+2. Bấm ""Tạo phiếu (chờ duyệt)""",,"Cảnh báo dạng: Sản phẩm ""<tên>"": chọn lô hàng để trả",,,,,,
+14_1_010_031,Trả hàng NCC theo một lô làm giảm đúng tồn lô đó,"Vai: shop; lô L001 tồn 10, lô L002 tồn 10","1. Lập phiếu trả 5 đơn vị từ lô L001;
+2. Nộp phiếu;
+3. Xã và Tỉnh duyệt đủ 5;
+4. Mở Kho hàng › Quản lý tồn kho xem lô",,"Sau khi TỈNH duyệt: lô L001 còn 5, lô L002 giữ nguyên 10",,,,,,
+14_1_010_032,Trả hàng NCC theo nhiều lô làm giảm đúng từng lô,"Vai: shop; lô L001 tồn 10, lô L002 tồn 10","1. Lập phiếu trả 5 từ L001 và 5 từ L002;
+2. Nộp phiếu;
+3. Xã và Tỉnh duyệt đủ;
+4. Xem tồn theo lô",,Sau khi Tỉnh duyệt: lô L001 còn 5 và lô L002 còn 5,,,,,,
+14_1_010_033,Trả hàng NCC theo mã serial làm giảm đúng lô chứa serial,Vai: shop; lô L001 tồn 10 hàng serial,"1. Quét 5 serial thuộc lô L001;
+2. Nộp phiếu;
+3. Xã và Tỉnh duyệt đủ;
+4. Xem tồn lô L001",,"Lô L001 còn 5; 5 serial đã trả chuyển sang trạng thái đã xuất kho, quét lại báo ""không tồn tại hoặc đã xuất kho""",,,,,,
+14_1_010_034,Không lập được phiếu trả khi tồn bằng 0,Vai: shop; sản phẩm có tồn = 0 tại điểm bán,"1. Chọn nguồn SKU/Lô/Serial;
+2. Thêm sản phẩm tồn 0 theo SKU;
+3. Nhập SL trả = 1;
+4. Bấm ""Tạo phiếu (chờ duyệt)""",,"Bị chặn: Giao diện cảnh báo SL trả vượt SL khả dụng (0), hoặc Hệ thống trả ""Sản phẩm \""<tên>\"" trong kho điểm bán chỉ còn 0, không đủ để trả (1). Vui lòng kiểm tra lại tồn kho.""",,,,,,
+14_1_010_035,Không lập được phiếu trả khi tồn âm,Vai: shop; sản phẩm có tồn âm do bán âm,"1. Chọn nguồn SKU/Lô/Serial;
+2. Thêm sản phẩm tồn âm;
+3. Nhập SL trả = 1;
+4. Bấm ""Tạo phiếu (chờ duyệt)""",,"Bị chặn với cùng thông báo ""... trong kho điểm bán chỉ còn <số âm>, không đủ để trả (1). Vui lòng kiểm tra lại tồn kho.""",,,,,,
+14_1_010_036,Hàng quá thời hạn trả theo hợp đồng bị chặn lúc nộp phiếu,"Vai: shop; hợp đồng NCC khai maxReturnDays, hàng nhập đã quá hạn","1. Lập phiếu trả sản phẩm đó;
+2. Bấm ""Tạo phiếu (chờ duyệt)""",,"Hệ thống chặn với thông báo dạng: Sản phẩm ""<tên>"" đã quá thời hạn trả hàng theo hợp đồng <mã HĐ>: đã <N> ngày kể từ ngày nhập kho, hợp đồng chỉ cho phép trả trong <M> ngày.",,,,,,
+14_1_010_037,Lưu nháp bỏ qua mọi phép kiểm tồn và lý do,"Vai: shop; bảng có dòng hàng SL trả vượt SL khả dụng, chưa chọn lý do","1. Bấm ""Lưu nháp""",,"Phiếu được lưu, báo ""Đã lưu nháp""; phiếu xuất hiện trên danh sách với nhãn ""Nháp""; không hiện cảnh báo vượt tồn",,,,,,
+14_1_010_038,Tạo phiếu chờ duyệt thành công,"Vai: shop; đủ lý do, đủ SL, đủ lô/serial","1. Bấm ""Tạo phiếu (chờ duyệt)""",,"Báo ""Đã tạo phiếu xuất trả — chờ duyệt"", quay về /inventory/stock-return-request; phiếu mới ở đầu danh sách mang nhãn ""Chờ duyệt""",,,,,,
+14_1_010_039,Rời màn tạo phiếu không lưu lại gì,Vai: shop; đã nhập SL và lý do nhưng chưa bấm nút lưu,"1. Bấm nút Back trên tiêu đề màn tạo phiếu;
+2. Mở lại /inventory/stock-return-request",,Không có phiếu mới nào trong danh sách; không phát sinh POST /stock/v2/stock-return-request,,,,,,
+14_1_010_040,Xung đột lô và serial hỏi lại bằng ba lựa chọn,Vai: shop; một mặt hàng đã có trong bảng ở dạng trả theo serial,"1. Tra thêm đúng mặt hàng đó theo ""Mã lô hàng""",,"Hộp hỏi hiện 3 lựa chọn ""Giữ theo serial hiện tại"", ""Áp dụng theo lô"", ""Áp dụng cả 2"". Chọn ""Giữ theo serial hiện tại"" thì serial đã quét còn nguyên và mã lô vừa tìm bị bỏ",,,,,,
+14_1_010_041,Lập phiếu chưa khoá tồn hàng vẫn bán được,Vai: shop; sản phẩm tồn 10,"1. Lập và nộp phiếu trả 5 đơn vị;
+2. Mở Kho hàng › Quản lý tồn kho xem lại sản phẩm đó khi phiếu đang ""Chờ duyệt""",,Tồn khả dụng vẫn là 10 — hàng CHƯA bị khoá. Chỉ khoá khi Tỉnh duyệt (xem 14_1_040_024),,,,,,
+14_1_010_042,Không có ô nhập giá trên màn tạo phiếu,Vai: shop; hàng cùng SKU có 2 lô giá nhập khác nhau,"1. Thêm cả 2 lô vào bảng;
+2. Quan sát cột giá",,"Không có ô nào cho nhập giá. Sau khi tạo phiếu, màn chi tiết hiện ""Giá gốc lô"" khác nhau đúng bằng giá nhập của từng lô",,,,,,
+14_1_010_043,Vai cấp trên điểm bán không thấy nút Tạo phiếu trả,Vai: province,1. Mở /inventory/stock-return-request bằng tài khoản cấp tỉnh,,"Không có nút ""Tạo phiếu trả"" ở góc trên bên phải (chỉ vai điểm bán mới có)",,,,,,
+14_1_010_044,Vai cấp xã không thấy nút Tạo phiếu trả,Vai: ward,1. Mở /inventory/stock-return-request bằng tài khoản cấp xã,,"Không có nút ""Tạo phiếu trả""",,,,,,
+,020 — Sửa và nộp phiếu xuất trả,,,,,,,,,,
+14_1_020_001,Menu Xử lý của phiếu Nháp có đủ ba việc,Vai: shop; có phiếu trạng thái Nháp do chính điểm bán lập,"1. Mở /inventory/stock-return-request;
+2. Bấm ""Xử lý"" ở dòng phiếu Nháp",,"Menu hiện đúng 3 mục: ""Sửa"", ""Nộp phiếu"", ""Huỷ phiếu"" (mục Huỷ phiếu màu đỏ)",,,,,,
+14_1_020_002,Màn sửa phiếu nháp mở sẵn nguồn SKU và nút Nộp phiếu,Vai: shop; có phiếu Nháp,"1. Bấm ""Xử lý"" › ""Sửa""",,"Mở /inventory/stock-return-request/edit/<id>; nguồn hàng đang chọn ""Theo SKU / Mã lô / Serial""; nút chính ở cuối màn mang nhãn ""Nộp phiếu (chờ duyệt)"" chứ không phải ""Tạo phiếu (chờ duyệt)""",,,,,,
+14_1_020_003,Lưu sửa thay toàn bộ danh sách hàng chứ không cộng thêm,Vai: shop; phiếu Nháp có 3 dòng hàng,"1. Mở màn sửa;
+2. Xoá 1 dòng bằng biểu tượng thùng rác;
+3. Bấm ""Lưu nháp"";
+4. Mở lại Chi tiết phiếu",,"Báo ""Đã lưu nháp"". Phiếu còn đúng 2 dòng; dòng đã xoá biến mất hẳn; tổng tiền tính lại theo giá gốc lô",,,,,,
+14_1_020_004,Sửa phiếu Chờ duyệt bị kiểm lại tồn kho,"Vai: shop; phiếu Chờ duyệt, tồn sản phẩm đã giảm còn 3 sau khi lập phiếu","1. Mở màn sửa;
+2. Nâng SL trả lên 5;
+3. Bấm ""Nộp phiếu (chờ duyệt)""",,"Bị chặn với thông báo Hệ thống: Sản phẩm ""<tên>"" trong kho điểm bán chỉ còn 3, không đủ để trả (5). Vui lòng kiểm tra lại tồn kho.",,,,,,
+14_1_020_005,Nộp phiếu Nháp chưa có sản phẩm bị chặn,Vai: shop; phiếu Nháp lưu khi bảng còn rỗng,"1. Bấm ""Xử lý"" › ""Nộp phiếu"";
+2. Trong hộp ""Nộp phiếu nháp?"" bấm OK",,"Hộp lỗi ""Không nộp được phiếu"" kèm thông báo Hệ thống nguyên văn ""Phiếu nháp chưa có sản phẩm để nộp""; phiếu giữ nhãn ""Nháp""",,,,,,
+14_1_020_006,Nộp phiếu Nháp từ menu chuyển sang Chờ duyệt,Vai: shop; phiếu Nháp có ít nhất 1 dòng SL > 0,"1. Bấm ""Xử lý"" › ""Nộp phiếu"";
+2. Trong hộp ""Nộp phiếu nháp?"" bấm OK",,"Báo ""Đã nộp phiếu""; nhãn phiếu đổi từ ""Nháp"" sang ""Chờ duyệt""; menu Xử lý mất mục ""Nộp phiếu""",,,,,,
+14_1_020_007,Nộp lại phiếu đã ở Chờ duyệt không tạo phiếu trùng,Vai: shop; phiếu đang Chờ duyệt,1. Gọi POST /stock/v2/stock-return-request/<id>/submit lần thứ hai,,"Hệ thống trả lỗi nguyên văn ""Chỉ nộp được phiếu đang ở trạng thái Nháp""; không sinh phiếu thứ hai; trạng thái giữ nguyên ""Chờ duyệt""",,,,,,
+14_1_020_008,Không sửa được phiếu đã duyệt,Vai: shop; phiếu ở trạng thái Đã duyệt,1. Mở trực tiếp /inventory/stock-return-request/edit/<id>,,"Giao diện báo ""Chỉ sửa được phiếu ở trạng thái Nháp hoặc Chờ duyệt"" và quay về danh sách. Gọi thẳng PUT thì Hệ thống trả ""Chỉ sửa được phiếu đang ở trạng thái Nháp hoặc Chờ duyệt""",,,,,,
+14_1_020_009,Không sửa được phiếu của điểm bán khác,Vai: shop; biết id phiếu của điểm bán khác cùng tỉnh,1. Gọi PUT /stock/v2/stock-return-request/<id> với id phiếu điểm bán khác,,"Hệ thống trả lỗi nguyên văn ""Không có quyền sửa phiếu của điểm bán khác""",,,,,,
+14_1_020_010,Không nộp được phiếu nháp của điểm bán khác,Vai: shop; biết id phiếu Nháp của điểm bán khác,1. Gọi POST /stock/v2/stock-return-request/<id>/submit,,"Hệ thống trả lỗi nguyên văn ""Không có quyền nộp phiếu nháp của điểm bán khác""",,,,,,
+14_1_020_011,Rời màn sửa không lưu thay đổi,Vai: shop; phiếu Nháp có 3 dòng,"1. Mở màn sửa;
+2. Xoá 1 dòng;
+3. Bấm Back không bấm Lưu;
+4. Mở lại Chi tiết phiếu",,Phiếu vẫn còn đủ 3 dòng như trước,,,,,,
+14_1_020_012,Ma trận trạng thái phiếu và việc Sửa,Vai: shop; có phiếu ở đủ các trạng thái,"1. Với từng trạng thái Nháp, Chờ duyệt, Xã đã duyệt, Đã duyệt, Đã gom phiếu, Đã tách phiếu, Từ chối, Đã huỷ, Xử lý một phần, Đã xử lý xong: mở menu ""Xử lý""",,"Mục ""Sửa"" CHỈ hiện ở ""Nháp"" và ""Chờ duyệt""; 8 trạng thái còn lại không có mục ""Sửa""",,,,,,
+,030 — Tra cứu phiếu và xem chi tiết,,,,,,,,,,
+14_1_030_001,Mở danh sách Xuất trả NCC khi có dữ liệu,Vai: shop; điểm bán có ít nhất 1 phiếu trả,1. Mở /inventory/stock-return-request,,"PageContainer tiêu đề ""Xuất trả nhà cung cấp""; bảng liệt kê phiếu sắp theo ngày tạo mới nhất trước",,,,,,
+14_1_030_002,Danh sách hiện đủ 9 cột,Vai: shop; có dữ liệu,"1. Mở /inventory/stock-return-request;
+2. Đọc tiêu đề cột",,"Đủ 9 cột: STT, Mã phiếu, Mã PO tham chiếu, Nhà cung cấp, Tỉnh / Xã, Tổng tiền, Trạng thái, Ngày tạo, Hành động. Cột ""Mã PO tham chiếu"" trống hiện ""--""",,,,,,
+14_1_030_003,Lọc theo Trạng thái trả đúng tập phiếu,Vai: shop; có phiếu ở ≥ 2 trạng thái,"1. Chọn ""Trạng thái"" = ""Chờ duyệt"";
+2. Bấm ""Tìm kiếm""",,"Mọi dòng trong bảng đều mang thẻ ""Chờ duyệt""; request GET /stock/v2/stock-return-request mang tham số status=PENDING",,,,,,
+14_1_030_004,Tìm theo mã phiếu khớp chính xác,Vai: shop; biết mã phiếu có thật,"1. Gõ đủ mã phiếu vào ô ""Tìm theo mã phiếu"";
+2. Bấm ""Tìm kiếm""",,"Bảng trả đúng 1 dòng, cột ""Mã phiếu"" bằng đúng chuỗi đã gõ",,,,,,
+14_1_030_005,Tìm theo một phần mã phiếu,Vai: shop,"1. Gõ 4 ký tự giữa của mã phiếu;
+2. Bấm ""Tìm kiếm""",,Bảng trả về mọi phiếu có mã chứa chuỗi đó; nếu trả rỗng thì ghi nhận hệ thống chỉ khớp chính xác,,,,,,
+14_1_030_006,Tìm mã phiếu không tồn tại ra danh sách rỗng,Vai: shop,"1. Gõ ""ZZZ999999"";
+2. Bấm ""Tìm kiếm""",,"Bảng hiện trạng thái rỗng, tổng số bản ghi = 0; không hiện thông báo lỗi kỹ thuật",,,,,,
+14_1_030_007,Tìm bằng chuỗi toàn khoảng trắng,Vai: shop,"1. Gõ 5 dấu cách;
+2. Bấm ""Tìm kiếm""",,"Kết quả bằng đúng danh sách không lọc (chuỗi được trim), không báo lỗi",,,,,,
+14_1_030_008,Tìm bằng ký tự đặc biệt không gây lỗi,Vai: shop,"1. Gõ ""' OR 1=1 --"";
+2. Bấm ""Tìm kiếm""",,Bảng rỗng; không có response 500; không có thông báo kỹ thuật lọt ra màn hình,,,,,,
+14_1_030_009,Tìm không phân biệt hoa thường,Vai: shop; mã phiếu viết hoa,"1. Gõ mã phiếu bằng chữ thường;
+2. Bấm ""Tìm kiếm""",,Trả về đúng phiếu như khi gõ chữ hoa,,,,,,
+14_1_030_010,Lọc theo khoảng ngày tạo,Vai: shop; có phiếu ở nhiều ngày khác nhau,"1. Chọn ""Từ ngày tạo"" và ""Đến ngày tạo"" bao đúng 1 ngày có phiếu;
+2. Bấm ""Tìm kiếm""",,"Mọi dòng có ""Ngày tạo"" nằm trong khoảng đã chọn; phiếu ngoài khoảng không xuất hiện",,,,,,
+14_1_030_011,Chọn Từ ngày lớn hơn Đến ngày,Vai: shop,1. Trong RangePicker chọn ngày đầu muộn hơn ngày cuối,,"RangePicker của antd không cho chọn ngược; nếu ép qua URL thì kết quả phải là danh sách rỗng, không phải lỗi 500",,,,,,
+14_1_030_012,Tổ hợp ba bộ lọc cùng lúc,Vai: shop,"1. Chọn Trạng thái = ""Đã duyệt"";
+2. Gõ một phần mã phiếu;
+3. Chọn khoảng ngày;
+4. Bấm ""Tìm kiếm""",,"Kết quả thoả đồng thời cả ba điều kiện (phép AND), không phải hợp của ba",,,,,,
+14_1_030_013,Xoá lọc trả về danh sách đầy đủ,Vai: shop; đang lọc,"1. Bấm nút xoá (allowClear) ở cả 3 ô lọc;
+2. Bấm ""Tìm kiếm""",,Tổng số bản ghi trở về đúng bằng lúc chưa lọc,,,,,,
+14_1_030_014,Phân trang hoạt động đúng,Vai: shop; có > 20 phiếu,"1. Đọc số dòng trang 1;
+2. Đổi số dòng mỗi trang;
+3. Sang trang cuối",,Trang 1 hiện đúng số dòng mặc định; đổi số dòng thì request mang size mới và page về 1; trang cuối hiện phần dư đúng bằng tổng trừ các trang trước,,,,,,
+14_1_030_015,Danh sách sắp theo ngày tạo mới nhất trước,Vai: shop; có ≥ 3 phiếu khác ngày,"1. Mở /inventory/stock-return-request;
+2. Đọc cột ""Ngày tạo"" từ trên xuống",,Giá trị cột Ngày tạo giảm dần từ dòng 1 xuống dòng cuối,,,,,,
+14_1_030_016,Màn chi tiết phiếu có đủ bốn khối,Vai: shop; có phiếu đã phát sinh đợt trả NCC,"1. Bấm ""Chi tiết"" ở dòng phiếu",,"Mở ""Chi tiết phiếu xuất trả NCC"" gồm: khối thông tin chung, dải vòng đời phiếu, bảng ""Danh sách sản phẩm"" đủ 11 cột (STT, Sản phẩm, Lô, Serial, SL trả, SL duyệt, Đã trả, Đã nhập lại, Đã huỷ, Còn lại, Giá gốc lô), khối ""Các đợt trả nhà cung cấp""",,,,,,
+14_1_030_017,Bảng Danh sách sản phẩm tính đúng cột Còn lại,Vai: shop; phiếu đã duyệt và đã trả một phần,"1. Mở Chi tiết;
+2. Đọc 7 cột số lượng của một dòng hàng",,"Còn lại = SL duyệt − Đã trả − Đã nhập lại − Đã huỷ, đúng từng dòng. Cột ""Giá gốc lô"" giữ nguyên qua mọi cấp. Ba cột Đã trả / Đã nhập lại / Đã huỷ có tooltip giải thích khi rê chuột",,,,,,
+14_1_030_018,Xem lịch sử xử lý phiếu,Vai: shop; phiếu đã đi qua ≥ 2 cấp,"1. Mở Chi tiết;
+2. Bấm ""Xem lịch sử""",,Hiện danh sách các cấp phiếu đã đi qua kèm số lượng mỗi cấp đã xử lý; gọi GET /stock/v2/stock-return-request/<id>/history,,,,,,
+14_1_030_019,Mốc Chờ nhập kho về tỉnh không nằm trên trục thời gian,Vai: province; phiếu đã trả NCC nhưng chưa nhập kho tỉnh,"1. Mở Chi tiết phiếu;
+2. Đọc dải vòng đời",,"Mốc ""Chờ nhập kho về tỉnh"" vẫn xám trong khi mốc ""Trả hàng / Xử lý"" đã xanh — đây là hành vi đúng, không phải lỗi hiển thị",,,,,,
+14_1_030_020,Phiếu Đã xử lý xong mà đợt trả chờ NCC xác nhận thì vòng đời dừng,"Vai: province; phiếu status RETURNED, đợt trả status WAIT_CONFIRM","1. Mở Chi tiết phiếu;
+2. Đọc dải vòng đời",,"Nhãn trạng thái là ""Đã xử lý xong"" nhưng dải vòng đời dừng ở mốc ""Trả hàng / Xử lý"", mốc ""Hoàn tất"" còn xám",,,,,,
+14_1_030_021,Điểm bán chỉ thấy phiếu của chính mình,Vai: shop; tỉnh có ≥ 2 điểm bán đều có phiếu,1. Mở /inventory/stock-return-request bằng tài khoản điểm bán A,,Mọi dòng đều thuộc điểm bán A; không có phiếu nào của điểm bán B,,,,,,
+14_1_030_022,Cấp tỉnh thấy phiếu của mọi điểm bán trong tỉnh,Vai: province,1. Mở /inventory/stock-return-request bằng tài khoản cấp tỉnh,,"Số phiếu ≥ tổng số phiếu của từng điểm bán trong tỉnh; cột ""Tỉnh / Xã"" chỉ hiện đơn vị thuộc tỉnh đó",,,,,,
+14_1_030_023,Cấp xã không thấy phiếu của xã khác,Vai: ward; có phiếu ở xã khác cùng tỉnh,1. Mở /inventory/stock-return-request bằng tài khoản cấp xã,,"Không dòng nào có cột ""Tỉnh / Xã"" trỏ về xã khác",,,,,,
+14_1_030_024,Phiếu con ở TCT có vòng đời rút gọn bốn mốc,"Vai: tct; phiếu con do tỉnh gửi lên (isTct=1, createFromId != null)","1. Mở Chi tiết phiếu con;
+2. Đọc dải vòng đời",,"Đúng 4 mốc: ""Khởi tạo"", ""Chờ Tổng công ty duyệt"", ""Trả hàng / Xử lý"", ""Hoàn tất"" — không có mốc xuất kho và nhập kho tỉnh",,,,,,
+14_1_030_025,Phiếu bị từ chối dừng ở mốc duyệt đang dở,Vai: shop; phiếu status REJECTED đã qua duyệt xã,"1. Mở Chi tiết;
+2. Đọc dải vòng đời",,"Mốc ""Chờ duyệt cấp 2"" mang trạng thái lỗi (đỏ); các mốc trước đó xanh; các mốc sau xám",,,,,,
+,040 — Duyệt phiếu xuất trả,,,,,,,,,,
+14_1_040_001,Cấp xã duyệt phiếu Chờ duyệt,Vai: ward; phiếu Chờ duyệt thuộc xã,"1. Bấm ""Xử lý"" › ""Duyệt"";
+2. Giữ nguyên SL duyệt;
+3. Bấm ""Duyệt""",,"Báo ""Đã duyệt phiếu""; nhãn phiếu đổi sang ""Xã đã duyệt""",,,,,,
+14_1_040_002,Cấp tỉnh duyệt phiếu Xã đã duyệt,Vai: province; phiếu Xã đã duyệt,"1. Bấm ""Xử lý"" › ""Duyệt"";
+2. Bấm ""Duyệt""",,"Báo ""Đã duyệt phiếu""; nhãn đổi sang ""Đã duyệt""",,,,,,
+14_1_040_003,Cấp tỉnh duyệt thẳng phiếu Chờ duyệt khi điểm bán không thuộc xã,Vai: province; điểm bán không trực thuộc xã nào,"1. Bấm ""Xử lý"" › ""Duyệt"" trên phiếu Chờ duyệt;
+2. Bấm ""Duyệt""",,"Duyệt thành công, nhãn đổi thẳng sang ""Đã duyệt"" (bỏ qua mốc Xã đã duyệt)",,,,,,
+14_1_040_004,Cấp tỉnh không duyệt được phiếu Chờ duyệt khi có cấp xã,Vai: province; điểm bán trực thuộc một xã,1. Gọi POST /stock/v2/stock-return-request/<id>/approve trên phiếu đang Chờ duyệt,,"Hệ thống trả lỗi nguyên văn ""Cấp tỉnh chỉ duyệt được phiếu đã được cấp xã duyệt""",,,,,,
+14_1_040_005,Cấp xã không duyệt được phiếu ngoài trạng thái Chờ duyệt,Vai: ward; phiếu ở trạng thái Xã đã duyệt,1. Gọi POST.../approve,,"Hệ thống trả lỗi nguyên văn ""Cấp xã chỉ duyệt được phiếu đang Chờ duyệt""",,,,,,
+14_1_040_006,Vai điểm bán không duyệt được phiếu,Vai: shop; phiếu của chính điểm bán đang Chờ duyệt,"1. Mở menu ""Xử lý"";
+2. Gọi thẳng POST.../approve",,"Menu không có mục ""Duyệt""; gọi API trả lỗi nguyên văn ""Chỉ cấp xã, cấp tỉnh hoặc TCT được duyệt phiếu trả""",,,,,,
+14_1_040_007,Cấp xã không duyệt được phiếu của xã khác,Vai: ward; biết id phiếu thuộc xã khác,1. Gọi POST.../approve,,"Hệ thống trả lỗi nguyên văn ""Phiếu không thuộc phạm vi xã của bạn""",,,,,,
+14_1_040_008,Cấp tỉnh không duyệt được phiếu của tỉnh khác,Vai: province; biết id phiếu thuộc tỉnh khác,1. Gọi POST.../approve,,"Hệ thống trả lỗi nguyên văn ""Phiếu không thuộc phạm vi tỉnh của bạn""",,,,,,
+14_1_040_009,Tỉnh không duyệt được phiếu đã chuyển Tổng công ty,Vai: province; phiếu đã gửi TCT,1. Gọi POST.../approve,,"Hệ thống trả lỗi nguyên văn ""Phiếu đã chuyển Tổng công ty — chỉ TCT được duyệt""",,,,,,
+14_1_040_010,TCT không duyệt được phiếu hàng cấp tỉnh,Vai: tct; phiếu supplierLevel = TINH,1. Gọi POST.../approve,,"Hệ thống trả lỗi nguyên văn ""TCT chỉ duyệt được phiếu hàng TCT""",,,,,,
+14_1_040_011,SL duyệt điền sẵn bằng SL đề nghị,Vai: ward; phiếu Chờ duyệt có 3 dòng,"1. Mở màn ""Duyệt phiếu xuất trả NCC"";
+2. So cột ""SL duyệt"" với cột ""SL đề nghị""",,Từng dòng có SL duyệt = SL đề nghị,,,,,,
+14_1_040_012,Hạ SL duyệt thì phần cắt hoàn về kho điểm bán,"Vai: ward; dòng hàng SL đề nghị = 10, tồn điểm bán trước duyệt = 10","1. Sửa SL duyệt xuống 6;
+2. Bấm ""Duyệt"";
+3. Xem tồn sản phẩm ở điểm bán",,Phiếu ghi SL duyệt = 6; 4 đơn vị bị cắt được hoàn về kho điểm bán ngay (tồn khả dụng không giảm phần 4 này),,,,,,
+14_1_040_013,SL duyệt lớn hơn SL đề nghị bị chặn,Vai: ward; SL đề nghị = 10,1. Gọi POST.../approve với approvedQuantity = 11,,"Hệ thống trả lỗi nguyên văn ""Số lượng duyệt phải trong khoảng [0, 10]""",,,,,,
+14_1_040_014,SL duyệt âm bị chặn,Vai: ward; SL đề nghị = 10,1. Gọi POST.../approve với approvedQuantity = -1,,"Hệ thống trả lỗi nguyên văn ""Số lượng duyệt phải trong khoảng [0, 10]""",,,,,,
+14_1_040_015,SL duyệt bằng 0 thì hoàn trọn dòng về kho,Vai: ward; SL đề nghị = 10,"1. Sửa SL duyệt xuống 0;
+2. Bấm ""Duyệt""",,Phiếu duyệt thành công; dòng đó có SL duyệt = 0 và Còn lại = 0; toàn bộ 10 đơn vị hoàn về kho điểm bán,,,,,,
+14_1_040_016,SL duyệt bằng đúng SL đề nghị được chấp nhận,Vai: ward; SL đề nghị = 10,"1. Giữ SL duyệt = 10;
+2. Bấm ""Duyệt""",,"Duyệt thành công, không hiện lỗi khoảng giá trị",,,,,,
+14_1_040_017,Bỏ bớt serial duyệt thì SL duyệt tự giảm theo,Vai: ward; dòng hàng serial có 5 serial đề nghị,"1. Bấm dấu × trên 2 serial ở cột ""Serial duyệt"";
+2. Đọc lại ô ""SL duyệt""",,"SL duyệt tự đổi thành 3 (bám theo số serial còn lại, không theo số gõ tay)",,,,,,
+14_1_040_018,Chọn Nhập về kho tỉnh ngay mà bỏ trống Kho nhận bị chặn,Vai: province; phiếu Xã đã duyệt,"1. Chọn ""Nhập về kho tỉnh ngay"";
+2. Để trống ""Kho nhận"";
+3. Bấm ""Duyệt""",,"Cảnh báo nguyên văn ""Vui lòng chọn kho nhận hàng""; không phát sinh POST approve",,,,,,
+14_1_040_019,Chọn Tạm treo nhập kho sau thì hàng chưa vào kho nào,Vai: province; phiếu Xã đã duyệt,"1. Giữ mặc định ""Tạm treo, nhập kho sau"";
+2. Bấm ""Duyệt"";
+3. Mở Chi tiết phiếu",,"Phiếu đổi sang ""Đã duyệt""; mốc ""Chờ nhập kho về tỉnh"" còn xám; menu Xử lý xuất hiện mục ""Nhập hàng về kho""",,,,,,
+14_1_040_020,Ô chọn cách nhập kho chỉ hiện ở bước tỉnh duyệt,Vai: ward; phiếu Chờ duyệt,"1. Mở màn ""Duyệt phiếu xuất trả NCC"" bằng tài khoản cấp xã",,"Không có dòng ""Sau khi duyệt, hàng sẽ:"" và hai nút ""Tạm treo, nhập kho sau"" / ""Nhập về kho tỉnh ngay""",,,,,,
+14_1_040_021,Ghi chú khi duyệt là tuỳ chọn,Vai: ward; phiếu Chờ duyệt,"1. Để trống ô ghi chú cuối màn;
+2. Bấm ""Duyệt""",,"Duyệt thành công, không bị chặn vì thiếu ghi chú (placeholder ghi rõ ""Ghi chú khi duyệt (tuỳ chọn) / Lý do khi từ chối (bắt buộc)"")",,,,,,
+14_1_040_022,Từ chối mà bỏ trống lý do bị chặn,Vai: ward; phiếu Chờ duyệt,"1. Để trống ô ghi chú;
+2. Bấm ""Từ chối""",,"Cảnh báo nguyên văn ""Vui lòng nhập lý do từ chối""; không phát sinh POST",,,,,,
+14_1_040_023,Lý do từ chối toàn khoảng trắng bị coi là bỏ trống,Vai: ward; phiếu Chờ duyệt,"1. Gõ 5 dấu cách vào ô ghi chú;
+2. Bấm ""Từ chối""",,"Cảnh báo nguyên văn ""Vui lòng nhập lý do từ chối""",,,,,,
+14_1_040_024,Tỉnh duyệt là lúc hàng bị khoá tồn,"Vai: province; sản phẩm tồn 10, phiếu trả 5 đang Xã đã duyệt","1. Ghi lại tồn khả dụng trước khi duyệt;
+2. Bấm ""Duyệt"" đủ 5;
+3. Xem lại tồn khả dụng ở điểm bán",,Tồn khả dụng giảm từ 10 xuống 5 ngay sau khi TỈNH duyệt,,,,,,
+14_1_040_025,Đóng màn duyệt giữa chừng không ghi gì,Vai: ward; phiếu Chờ duyệt,"1. Mở màn duyệt;
+2. Sửa SL duyệt;
+3. Đóng bằng dấu X;
+4. Mở lại màn duyệt",,"SL duyệt trở lại bằng SL đề nghị; trạng thái phiếu vẫn ""Chờ duyệt""",,,,,,
+14_1_040_026,Ma trận trạng thái phiếu và việc Duyệt,Vai: ward; có phiếu ở đủ các trạng thái,"1. Với từng trạng thái Nháp, Chờ duyệt, Xã đã duyệt, Đã duyệt, Đã gom phiếu, Đã tách phiếu, Từ chối, Đã huỷ, Chưa gửi TCT, Đã xử lý xong: mở menu ""Xử lý""",,"Mục ""Duyệt"" CHỈ hiện ở ""Chờ duyệt"" (vai xã/tỉnh) và ""Xã đã duyệt"" (vai tỉnh); các trạng thái còn lại không có",,,,,,
+,050 — Từ chối hoặc huỷ phiếu xuất trả,,,,,,,,,,
+14_1_050_001,Điểm bán huỷ phiếu của chính mình,Vai: shop; phiếu Chờ duyệt do điểm bán lập,"1. Bấm ""Xử lý"" › ""Huỷ phiếu"";
+2. Bấm ""Huỷ phiếu"" trong hộp xác nhận",,"Báo ""Đã huỷ phiếu""; nhãn đổi sang ""Đã huỷ""; không cần nhập lý do",,,,,,
+14_1_050_002,Nhãn mục cuối menu đổi theo cấp người đăng nhập,Vai: province; cùng một phiếu Chờ duyệt,"1. Mở menu ""Xử lý"" bằng tài khoản điểm bán;
+2. Mở lại bằng tài khoản cấp tỉnh",,"Điểm bán thấy ""Huỷ phiếu""; cấp tỉnh thấy ""Từ chối"" — cùng một vị trí cuối menu",,,,,,
+14_1_050_003,Từ chối phiếu Đã duyệt hoàn hàng về kho điểm bán,"Vai: province; phiếu Đã duyệt, hàng đã khoá tồn 5 đơn vị","1. Bấm ""Xử lý"" › ""Từ chối"";
+2. Gõ lý do;
+3. Bấm ""Từ chối"";
+4. Xem tồn sản phẩm ở điểm bán",,"Báo ""Đã từ chối phiếu""; tồn khả dụng ở điểm bán tăng lại đúng 5 đơn vị; dải vòng đời có mốc duyệt dở màu đỏ",,,,,,
+14_1_050_004,"Không huỷ được phiếu đã gom, đã tách hoặc đã xử lý",Vai: province; phiếu ở trạng thái Đã gom phiếu / Đã tách phiếu / Xử lý một phần,1. Gọi POST /stock/v2/stock-return-request/<id>/cancel cho từng trạng thái,,"Hệ thống trả lỗi nguyên văn ""Không thể hủy phiếu đã xử lý/đã tách/đã gom"" ở cả ba trạng thái",,,,,,
+14_1_050_005,Phiếu đã huỷ chỉ còn nút Chi tiết,Vai: shop; phiếu Đã huỷ,"1. Mở /inventory/stock-return-request;
+2. Xem cột ""Hành động"" của dòng phiếu đó",,"Chỉ còn nút ""Chi tiết""; không còn nút ""Xử lý""",,,,,,
+14_1_050_006,Lý do từ chối hiện lại trên màn chi tiết,Vai: province; phiếu vừa bị từ chối kèm lý do,"1. Đăng nhập lại bằng tài khoản điểm bán;
+2. Mở Chi tiết phiếu bị từ chối",,Màn chi tiết hiện đúng nguyên văn lý do từ chối đã gõ,,,,,,
+14_1_050_007,Đóng hộp xác nhận từ chối không đổi gì,Vai: province; phiếu Chờ duyệt,"1. Bấm ""Xử lý"" › ""Từ chối"";
+2. Gõ lý do;
+3. Đóng hộp bằng nút Huỷ",,"Trạng thái phiếu vẫn ""Chờ duyệt""; không phát sinh POST cancel",,,,,,
+,060 — *(không có trong HDSD)* xuất trả theo PO,,,,,,,,,,
+14_1_060_001,Màn danh sách Xuất trả nhà cung cấp theo PO,Vai: shop; có ít nhất 1 phiếu xuất trả theo PO,1. Mở /inventory/return-to-supplier,,"Tiêu đề ""Xuất trả nhà cung cấp""; bảng đủ cột STT, Mã phiếu, Nhà cung cấp, Tổng tiền, Trạng thái, Ngày tạo, Hành động; vùng lọc có ô ""Nhà cung cấp"" và ô ""Tìm theo mã phiếu""",,,,,,
+14_1_060_002,Màn tạo phiếu xuất trả theo PO có đủ ba trường,Vai: shop,"1. Mở /inventory/return-to-supplier;
+2. Bấm nút tạo phiếu",,"Màn tạo hiện đủ 3 trường ""Nhà cung cấp"" (bắt buộc), ""Phiếu PO"" (placeholder ""Nhập mã PO"", nút ""Tìm""), ""Ghi chú"" (placeholder ""Ghi chú phiếu xuất trả""); bảng sản phẩm có các cột STT, Sản phẩm, Trạng thái, Đã nhập, Đã trả, Còn lại, Đơn giá, SL trả, Thành tiền; khi chưa tra PO bảng hiện ""Nhập mã PO để tải sản phẩm""",,,,,,
+14_1_060_003,Lọc danh sách phiếu trả theo nhà cung cấp,Vai: shop; có phiếu trả của ≥ 2 NCC,"1. Chọn một NCC ở ô ""Nhà cung cấp""",,Bảng chỉ còn phiếu của NCC đã chọn,,,,,,
+14_1_060_004,Tìm phiếu trả theo mã phiếu,Vai: shop; biết mã phiếu trả có thật,"1. Gõ mã phiếu vào ô ""Tìm theo mã phiếu""",,Bảng trả đúng phiếu mang mã đó,,,,,,
+14_1_060_005,Một phiếu PO trả hàng được nhiều lần,"Vai: shop; PO đã giao 100, chưa trả lần nào","1. Tạo phiếu trả 30 cho PO đó;
+2. Tạo tiếp phiếu trả 30 cho cùng PO;
+3. Mở lại màn tạo phiếu và tra lại mã PO",,"Cả 2 phiếu tạo thành công; lần tra thứ 3 cột ""Đã trả"" = 60 và cột ""Còn lại"" = 40",,,,,,
+14_1_060_006,PO trạng thái Nháp không trả hàng được,Vai: shop; có PO ở trạng thái Nháp,"1. Mở màn tạo phiếu trả;
+2. Chọn NCC của PO đó;
+3. Gõ mã PO Nháp;
+4. Bấm ""Tìm""",,"Hệ thống không nạp PO, hiện thông báo ""Không tìm thấy phiếu PO có mã đã nhập"" (PO chưa giao không nằm trong danh sách trả được)",,,,,,
+14_1_060_007,PO trạng thái Đã duyệt không trả hàng được,Vai: shop; có PO ở trạng thái Đã duyệt,1. Tra mã PO Đã duyệt ở màn tạo phiếu trả,,"Không nạp được PO, hiện ""Không tìm thấy phiếu PO có mã đã nhập""",,,,,,
+14_1_060_008,PO trạng thái Đã gửi NCC không trả hàng được,Vai: shop; có PO Đã gửi NCC,1. Tra mã PO Đã gửi NCC,,"Không nạp được PO, hiện ""Không tìm thấy phiếu PO có mã đã nhập""",,,,,,
+14_1_060_009,PO trạng thái NCC xác nhận không trả hàng được,Vai: shop; có PO NCC đã xác nhận nhưng chưa giao,1. Tra mã PO đó,,"Không nạp được PO, hiện ""Không tìm thấy phiếu PO có mã đã nhập""",,,,,,
+14_1_060_010,PO đã giao và đã nhập kho thì trả hàng được,Vai: shop; PO đã nhập kho đủ 100,1. Tra mã PO đó ở màn tạo phiếu trả,,"Bảng nạp đúng danh sách sản phẩm của PO; cột ""Đã nhập"" = 100, ""Đã trả"" = 0, ""Còn lại"" = 100",,,,,,
+14_1_060_011,PO giao một phần hiện đúng số lượng nhận thực tế,"Vai: shop; PO đặt 100, mới nhập kho 60",1. Tra mã PO đó,,"Cột ""Đã nhập"" = 60; ô ""SL trả"" có giá trị lớn nhất nhập được là 60 (thuộc tính max của ô số)",,,,,,
+14_1_060_012,Tạo phiếu trả cho PO giao một phần,"Vai: shop; PO đặt 100, đã nhập 60","1. Tra PO;
+2. Nhập SL trả = 50;
+3. Bấm ""Hoàn tất""",,"Báo ""Hoàn tất phiếu xuất trả""; phiếu xuất hiện ở danh sách với tổng tiền = 50 × đơn giá",,,,,,
+14_1_060_013,Không nhập được SL trả vượt số đã nhập,Vai: shop; PO đã nhập 60,"1. Tra PO;
+2. Gõ 61 vào ô ""SL trả""",,Ô SL trả tự chặn ở 60.,,,,,,
+14_1_060_014,Công nợ nhà cung cấp giảm đúng sau khi trả hàng,"Vai: shop; công nợ NCC trước khi trả = 10.000.000đ, trả hàng trị giá 2.000.000đ","1. Tạo và hoàn tất phiếu trả trị giá 2.000.000đ;
+2. Mở Nhà cung cấp › Công nợ NCC",,Công nợ NCC còn đúng 8.000.000đ,,,,,,
+14_1_060_015,Lịch sử công nợ ghi nhận giao dịch trả hàng,Vai: shop; vừa hoàn tất một phiếu trả,1. Mở lịch sử công nợ của NCC đó,,"Có dòng giao dịch giảm công nợ đúng bằng giá trị hàng trả, tham chiếu đúng mã phiếu trả vừa lập",,,,,,
+14_1_060_016,Trả hàng nhiều lần đến đúng số lượng tối đa,"Vai: shop; PO đã nhập 100, chưa trả lần nào","1. Trả 40;
+2. Trả 30;
+3. Trả 30",,Cả 3 phiếu tạo thành công; tổng số lượng đã trả = 100; tra lại PO thì bảng sản phẩm trống,,,,,,
+14_1_060_017,Không trả vượt tổng số lượng PO sau nhiều lần trả,"Vai: shop; PO đã nhập 100, đã trả 90","1. Tra lại PO;
+2. Đọc cột ""Còn lại"";
+3. Thử gõ 11 vào ô SL trả",,"Cột ""Còn lại"" = 10; ô SL trả tự chặn ở 10 nên không gửi được yêu cầu trả 11",,,,,,
+14_1_060_018,Cột Còn lại cập nhật sau mỗi lần trả,"Vai: shop; PO đã nhập 100, vừa trả 30",1. Tra lại mã PO,,"Cột ""Đã trả"" = 30 và cột ""Còn lại"" = 70",,,,,,
+14_1_060_019,PO đã trả hết hàng không còn sản phẩm để trả,Vai: shop; PO đã trả hết 100/100,1. Tra lại mã PO,,"Bảng sản phẩm hiện trạng thái rỗng kèm dòng ""PO không còn item để trả""",,,,,,
+14_1_060_020,Ghi chú phiếu trả được lưu và hiện lại ở chi tiết,Vai: shop,"1. Tra PO;
+2. Nhập SL trả;
+3. Gõ ghi chú vào ô ""Ghi chú"";
+4. Bấm ""Hoàn tất"";
+5. Mở chi tiết phiếu vừa tạo",,Chi tiết phiếu hiện đúng nguyên văn ghi chú đã nhập,,,,,,
+14_1_060_021,Bấm Tìm PO khi chưa chọn nhà cung cấp bị chặn,Vai: shop,"1. Mở màn tạo phiếu trả theo PO;
+2. Để trống ""Nhà cung cấp"";
+3. Gõ mã PO;
+4. Bấm ""Tìm""",,"Cảnh báo nguyên văn ""Vui lòng chọn nhà cung cấp trước""; không phát sinh GET purchase-orders/by-code",,,,,,
+14_1_060_022,Tra mã PO không tồn tại bị chặn,Vai: shop; đã chọn NCC,"1. Gõ ""POKHONGCO999"";
+2. Bấm ""Tìm""",,"Cảnh báo nguyên văn ""Không tìm thấy phiếu PO có mã đã nhập""; bảng sản phẩm giữ trạng thái rỗng",,,,,,
+14_1_060_023,Hoàn tất khi chưa chọn nhà cung cấp bị chặn,Vai: shop,"1. Để trống ""Nhà cung cấp"";
+2. Bấm ""Hoàn tất""",,"Cảnh báo nguyên văn ""Vui lòng chọn nhà cung cấp""; không phát sinh POST /stock/v2/return-to-supplier",,,,,,
+14_1_060_024,Hoàn tất khi chưa nhập SL trả bị chặn,"Vai: shop; đã tra PO, mọi dòng SL trả = 0","1. Bấm ""Hoàn tất""",,"Cảnh báo nguyên văn ""Vui lòng nhập số lượng cần trả cho ít nhất 1 sản phẩm""",,,,,,
+14_1_060_025,Lưu nháp phiếu trả theo PO,Vai: shop; đã tra PO và nhập SL trả,"1. Bấm ""Lưu nháp""",,"Báo ""Đã lưu nháp""; quay về /inventory/return-to-supplier; phiếu mới mang trạng thái nháp",,,,,,
+14_1_060_026,Hoàn tất phiếu trả theo PO,Vai: shop; đã tra PO và nhập SL trả,"1. Bấm ""Hoàn tất""",,"Báo ""Hoàn tất phiếu xuất trả""; quay về /inventory/return-to-supplier; phiếu mới ở đầu danh sách",,,,,,
+14_1_060_027,SL trả âm không nhập được ở màn theo PO,Vai: shop; đã tra PO,"1. Gõ ""-1"" vào ô ""SL trả""",,Ô giữ giá trị 0 (InputNumber min=0),,,,,,
+14_1_060_028,Vai cấp tỉnh xem được màn xuất trả theo PO ở phạm vi tỉnh,Vai: province,1. Mở /inventory/return-to-supplier bằng tài khoản cấp tỉnh,,Danh sách chỉ gồm phiếu của các điểm bán trong tỉnh; không có phiếu tỉnh khác,,,,,,
+,030 — Tra cứu phiếu và xem chi tiết,,,,,,,,,,
+14_1_030_026,Phiếu chưa duyệt hiện gạch ngang ở cột SL duyệt,Vai: shop; phiếu đang ở trạng thái Chờ duyệt,"1. Mở Chi tiết phiếu;
+2. Đọc cột ""SL duyệt""",,"Cột ""SL duyệt"" hiện ""--"" màu xám ở mọi dòng, KHÔNG lấy giá trị của cột ""SL trả"" thay thế",,,,,,
+14_1_030_027,Bảng phiếu con ở màn chi tiết hiện đủ sáu cột,Vai: province; phiếu đã tách theo nhà cung cấp,"1. Mở Chi tiết phiếu gốc;
+2. Đọc bảng phiếu con",,"Bảng phiếu con đủ 6 cột: Cấp, Mã phiếu, Trạng thái, NCC, SL duyệt, Cập nhật",,,,,,

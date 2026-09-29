@@ -1,5 +1,11 @@
 # Auto test Đơn vị vận tải
 
+**108 test case** (58 → 108) · phủ **12/12** case gốc sheet QC · script hiện có **73**.
+
+🔴 **CSV đã được DỰNG LẠI TỪ ĐẦU 18/09/2026** từ `resource/don_vi_van_tai.xlsx` (96 case). Bản trước lấy kỳ vọng từ **assertion của script** — vi phạm luật *không dùng kết quả thi hành làm đặc tả*.
+
+🔴 **Việc quan trọng nhất: rà lại 73 script hiện có** với kỳ vọng mới. Script viết theo tài liệu cũ, mà tài liệu cũ sinh ra từ chính script — vòng lặp đó có thể đang che một assertion sai.
+
 Nguồn test case: `resource/don_vi_van_tai.xlsx`.
 
 ## Case mẫu

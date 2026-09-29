@@ -1,0 +1,138 @@
+,Chức năng,,,ĐỔI TRẢ HÀNG,,,,,,,
+,Mã Testcase,,,FUNC_KHACHHANG_,,,,,,,
+,Tổng các tình huống kiểm thử,,,38,,,,,,,
+,Chưa thực hiện,,,38,,,,,,,
+,Đạt yêu cầu,,,0,,,,,,,
+,Không đạt yêu cầu,,,0,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,30,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng Thêm khách hàng,,,,,,,,,,
+FUNC_KHACHHANG__1,Thêm mới khách hàng thành công với 2 trường bắt buộc (Tên + SĐT),"Đã đăng nhập, có quyền 'thêm mới' khách hàng","Đã đăng nhập, có quyền 'thêm mới' khách hàng","1. Vào Menu > Khách hàng > Thêm khách hàng
+ 2. Nhập Tên khách hàng: 'Nguyễn Thị Lan'
+ 3. Nhập Số điện thoại: '0901234567'
+ 4. Click 'Xác nhận'",Cao,Màn Thêm khách hàng,"Khách hàng 'Nguyễn Thị Lan' được tạo thành công, hiển thị trong danh sách khách hàng với đúng Tên và SĐT đã nhập",,,x,
+FUNC_KHACHHANG__2,"Thêm khách hàng với đầy đủ Thông tin cơ bản, Thông tin xuất hóa đơn và Địa chỉ liên hệ","Đã đăng nhập, có quyền thêm mới khách hàng","Đã đăng nhập, có quyền thêm mới khách hàng","1. Mở form Thêm khách hàng
+ 2. Nhập Tên KH, SĐT (bắt buộc)
+ 3. Nhập Email, Giới tính, Ngày sinh, Ảnh đại diện
+ 4. Nhập Thông tin xuất hóa đơn: Mã số thuế, Tên doanh nghiệp, Họ và tên, CMT/CCCD, SĐT, Email, Địa chỉ
+ 5. Nhập Địa chỉ liên hệ, Facebook, Zalo
+ 6. Click 'Xác nhận'",Cao,Màn Thêm khách hàng,"Khách hàng được tạo thành công; toàn bộ thông tin ở cả 3 nhóm (Thông tin cơ bản, Thông tin xuất hóa đơn, Địa chỉ liên hệ) được lưu chính xác và hiển thị đúng khi xem chi tiết",,,x,
+FUNC_KHACHHANG__3,Tạo khách hàng tại cấp Tổng công ty - áp dụng đồng bộ xuống tất cả điểm bán,"Đăng nhập Admin cấp Tổng công ty, có quyền thêm khách hàng","Đăng nhập Admin cấp Tổng công ty, có quyền thêm khách hàng","1. Vào Menu > Khách hàng > Thêm khách hàng (tại cấp TCT)
+ 2. Nhập Tên khách hàng, Số điện thoại
+ 3. Click 'Xác nhận'
+ 4. Đăng nhập tại một điểm bán bất kỳ trong TCT, kiểm tra danh sách khách hàng",Cao,Màn Thêm khách hàng,Khách hàng tạo thành công tại TCT và xuất hiện trong danh sách khách hàng của tất cả điểm bán/cửa hàng thuộc Tổng công ty,,,x,
+FUNC_KHACHHANG__4,Tạo khách hàng tại cửa hàng - đồng bộ đẩy lên danh sách khách hàng cấp TCT và các cửa hàng khác,"Đăng nhập user tại 1 cửa hàng (Điểm bán), có quyền thêm khách hàng","Đăng nhập user tại 1 cửa hàng (Điểm bán), có quyền thêm khách hàng","1. Vào Menu > Khách hàng > Thêm khách hàng (tại cửa hàng)
+ 2. Nhập Tên khách hàng và Số điện thoại (bắt buộc làm định danh)
+ 3. Click 'Xác nhận'
+ 4. Kiểm tra danh sách khách hàng ở cấp TCT và ở một cửa hàng khác",Cao,Màn Thêm khách hàng,Khách hàng tạo thành công tại cửa hàng; đồng thời được đẩy lên và hiển thị trong danh sách khách hàng cấp TCT và tất cả điểm bán/cửa hàng khác,,,x,
+FUNC_KHACHHANG__5,Hủy thao tác thêm khách hàng giữa chừng - không tạo bản ghi mới,"Đang mở form Thêm khách hàng, đã nhập một số thông tin","Đang mở form Thêm khách hàng, đã nhập một số thông tin","1. Nhập Tên khách hàng và SĐT cùng một số thông tin khác
+ 2. Click 'Hủy'",Thấp,Màn Thêm khách hàng,"Form đóng lại; không có khách hàng mới được tạo trong hệ thống, dữ liệu vừa nhập bị hủy bỏ hoàn toàn",,,x,
+FUNC_KHACHHANG__6,Bỏ trống Tên khách hàng (bắt buộc) khi thêm mới,Đang ở form Thêm khách hàng,Đang ở form Thêm khách hàng,"1. Để trống Tên khách hàng
+ 2. Nhập Số điện thoại hợp lệ
+ 3. Click 'Xác nhận'",Cao,Màn Thêm khách hàng,Hệ thống hiển thị thông báo lỗi yêu cầu nhập Tên khách hàng (bắt buộc); không tạo được khách hàng mới,,,x,
+FUNC_KHACHHANG__7,Bỏ trống Số điện thoại (bắt buộc) khi thêm mới,Đang ở form Thêm khách hàng,Đang ở form Thêm khách hàng,"1. Nhập Tên khách hàng hợp lệ
+ 2. Để trống Số điện thoại
+ 3. Click 'Xác nhận'",Cao,Màn Thêm khách hàng,Hệ thống hiển thị thông báo lỗi yêu cầu nhập Số điện thoại (bắt buộc); không tạo được khách hàng mới,,,x,
+FUNC_KHACHHANG__8,Thêm khách hàng với Số điện thoại đã tồn tại trong hệ thống,Khách hàng 'Trần Văn B' với SĐT '0987654321' đã tồn tại,Khách hàng 'Trần Văn B' với SĐT '0987654321' đã tồn tại,"1. Mở form Thêm khách hàng
+ 2. Nhập Tên khách hàng mới: 'Trần Văn C'
+ 3. Nhập Số điện thoại: '0987654321' (đã tồn tại)
+ 4. Click 'Xác nhận'",Cao,Màn Thêm khách hàng,Hệ thống hiển thị thông báo lỗi 'Số điện thoại đã tồn tại' do SĐT là định danh khách hàng; không tạo bản ghi khách hàng trùng,,,x,
+FUNC_KHACHHANG__9,Thêm khách hàng với Số điện thoại sai định dạng,Đang ở form Thêm khách hàng,Đang ở form Thêm khách hàng,"1. Nhập Tên khách hàng hợp lệ
+ 2. Nhập Số điện thoại: 'abc123' hoặc '0912' (không đủ số)
+ 3. Click 'Xác nhận'",Cao,Màn Thêm khách hàng,Hệ thống hiển thị thông báo lỗi định dạng Số điện thoại không hợp lệ; không tạo được khách hàng mới,,,x,
+FUNC_KHACHHANG__10,Thêm khách hàng với Email sai định dạng,Đang ở form Thêm khách hàng,Đang ở form Thêm khách hàng,"1. Nhập Tên khách hàng, Số điện thoại hợp lệ
+ 2. Nhập Email: 'abc@@gmail' (sai định dạng)
+ 3. Click 'Xác nhận'",TB,Màn Thêm khách hàng,Hệ thống hiển thị thông báo lỗi định dạng Email không hợp lệ; không tạo được khách hàng mới,,,x,
+,Kiểm tra chức năng xem danh sách khách hàng,,,,,,,,,,
+FUNC_KHACHHANG__11,Xem danh sách khách hàng hiển thị đúng sau khi thêm mới thành công,Đã thêm ít nhất 1 khách hàng vào hệ thống,Đã thêm ít nhất 1 khách hàng vào hệ thống,"1. Vào Menu > Khách hàng
+ 2. Quan sát danh sách khách hàng",Cao,Màn quản lý khách hàng,"Danh sách hiển thị khách hàng vừa tạo với đúng thông tin (Tên, SĐT...) đã nhập",,,x,
+FUNC_KHACHHANG__12,Xem danh sách khách hàng khi hệ thống chưa có khách hàng nào,Hệ thống/cửa hàng chưa có khách hàng nào được tạo,Hệ thống/cửa hàng chưa có khách hàng nào được tạo,"1. Vào Menu > Khách hàng
+ 2. Quan sát màn hình",TB,Màn quản lý khách hàng,Hiển thị màn hình/thông báo trạng thái rỗng phù hợp; không bị lỗi giao diện,,,x,
+FUNC_KHACHHANG__13,Danh sách khách hàng đồng bộ hiển thị khách hàng được tạo từ cửa hàng khác,Khách hàng X được tạo thành công tại cửa hàng A,Khách hàng X được tạo thành công tại cửa hàng A,"1. Đăng nhập tại cửa hàng B (khác cửa hàng A)
+ 2. Vào Menu > Khách hàng
+ 3. Tìm khách hàng X trong danh sách",Cao,Màn quản lý khách hàng,"Danh sách khách hàng tại cửa hàng B hiển thị khách hàng X với thông tin đầy đủ, đúng (do cơ chế đồng bộ toàn Tổng công ty)",,,x,
+FUNC_KHACHHANG__14,Click vào Tên khách hàng trong danh sách để chuyển sang màn chi tiết,Danh sách khách hàng có ít nhất 1 bản ghi,Danh sách khách hàng có ít nhất 1 bản ghi,"1. Vào Menu > Khách hàng
+ 2. Click vào 'Tên khách hàng' của một bản ghi bất kỳ",TB,Màn quản lý khách hàng,Hệ thống chuyển sang màn Xem chi tiết khách hàng đúng với khách hàng đã click,,,x,
+,Kiểm tra chức năng Chi tiết khách hàng,,,,,,,,,,
+FUNC_KHACHHANG__15,Xem chi tiết khách hàng - Tab 1 Thông tin cá nhân hiển thị đầy đủ,Có ít nhất 1 khách hàng đã được tạo với đầy đủ thông tin,Có ít nhất 1 khách hàng đã được tạo với đầy đủ thông tin,"1. Vào danh sách khách hàng
+ 2. Click vào 'Tên khách hàng' bất kỳ
+ 3. Xem Tab 1 'Thông tin cá nhân'",Cao,Màn chi tiết khách hàng,"Hiển thị đầy đủ và chính xác Thông tin cơ bản, Thông tin xuất hóa đơn, Địa chỉ liên hệ đúng với dữ liệu đã nhập; có nút 'Chỉnh sửa' và icon 'Xóa'",,,x,
+FUNC_KHACHHANG__16,Xem chi tiết khách hàng - Tab 2 Đơn hàng hiển thị danh sách đơn đã mua,Khách hàng đã có ít nhất 1 đơn hàng đã mua,Khách hàng đã có ít nhất 1 đơn hàng đã mua,"1. Mở chi tiết khách hàng
+ 2. Click Tab 2 'Đơn hàng'",Cao,Màn chi tiết khách hàng,"Hiển thị danh sách đơn hàng khách hàng đã mua, đúng số lượng và thông tin từng đơn (mã đơn, ngày, giá trị, trạng thái)",,,x,
+FUNC_KHACHHANG__17,Xem Tab 2 Đơn hàng khi khách hàng chưa có đơn hàng nào,"Khách hàng mới tạo, chưa có đơn hàng nào","Khách hàng mới tạo, chưa có đơn hàng nào","1. Mở chi tiết khách hàng mới tạo
+ 2. Click Tab 2 'Đơn hàng'",TB,Màn chi tiết khách hàng,Hiển thị trạng thái rỗng (chưa có đơn hàng nào); không bị lỗi giao diện,,,x,
+FUNC_KHACHHANG__18,Xem chi tiết khách hàng - Tab 3 Sản phẩm đã mua hiển thị đúng dữ liệu,Khách hàng đã có đơn hàng với nhiều sản phẩm khác nhau,Khách hàng đã có đơn hàng với nhiều sản phẩm khác nhau,"1. Mở chi tiết khách hàng
+ 2. Click Tab 3 'Sản phẩm đã mua'",TB,Màn chi tiết khách hàng,"Hiển thị danh sách sản phẩm khách hàng đã mua, gộp từ tất cả đơn hàng, đúng với dữ liệu giao dịch thực tế",,,x,
+FUNC_KHACHHANG__19,Tab 4 Công nợ khách hàng - thực hiện 'Thanh toán' 1 đơn hàng còn nợ,Khách hàng có ít nhất 1 đơn hàng còn nợ (Tab 4),Khách hàng có ít nhất 1 đơn hàng còn nợ (Tab 4),"1. Mở chi tiết khách hàng, Tab 4 'Công nợ khách hàng'
+ 2. Chọn 1 đơn hàng còn nợ
+ 3. Click 'Thanh toán'
+ 4. Xác nhận",Cao,Màn chi tiết khách hàng,Đơn hàng được chọn chuyển trạng thái đã thanh toán; hệ thống tạo phiếu thu hồi nợ tương ứng cho đơn hàng đó,,,,
+FUNC_KHACHHANG__20,Tab 4 Công nợ - thực hiện 'Thanh toán' hàng loạt nhiều đơn hàng còn nợ,Khách hàng có ít nhất 2 đơn hàng còn nợ,Khách hàng có ít nhất 2 đơn hàng còn nợ,"1. Mở Tab 4 'Công nợ khách hàng'
+ 2. Tick chọn nhiều đơn hàng còn nợ
+ 3. Click 'Thanh toán'
+ 4. Xác nhận",Cao,Màn chi tiết khách hàng,Tất cả đơn hàng được chọn chuyển trạng thái đã thanh toán; phiếu thu hồi nợ được tạo tương ứng cho các đơn hàng đã thanh toán,,,,
+FUNC_KHACHHANG__21,Tab 4 Công nợ - thực hiện 'Gạch nợ' không tạo phiếu thu hồi nợ,Khách hàng có ít nhất 1 đơn hàng còn nợ,Khách hàng có ít nhất 1 đơn hàng còn nợ,"1. Mở Tab 4 'Công nợ khách hàng'
+ 2. Chọn 1 đơn hàng còn nợ
+ 3. Click 'Gạch nợ'
+ 4. Xác nhận",Cao,Màn chi tiết khách hàng,Đơn hàng chuyển trạng thái đã thanh toán/đã gạch nợ; hệ thống KHÔNG tạo phiếu thu hồi nợ cho thao tác này,,,,
+FUNC_KHACHHANG__22,Tab 4 Công nợ - thực hiện 'Ghi nợ' thủ công cho khách hàng,Khách hàng đã tồn tại trong hệ thống,Khách hàng đã tồn tại trong hệ thống,"1. Mở Tab 4 'Công nợ khách hàng'
+ 2. Click 'Ghi nợ'
+ 3. Nhập số tiền ghi nợ và thông tin liên quan
+ 4. Xác nhận",TB,Màn chi tiết khách hàng,"Khoản nợ mới được ghi nhận thủ công cho khách hàng, hiển thị trong danh sách công nợ với đúng số tiền đã nhập",,,,
+FUNC_KHACHHANG__23,Tab 4 Công nợ - click 'Thanh toán' khi không chọn đơn hàng nào,"Khách hàng có đơn hàng còn nợ, chưa tick chọn đơn nào","Khách hàng có đơn hàng còn nợ, chưa tick chọn đơn nào","1. Mở Tab 4 'Công nợ khách hàng'
+ 2. Không tick chọn đơn hàng nào
+ 3. Click 'Thanh toán'",TB,Màn chi tiết khách hàng,Hệ thống hiển thị thông báo yêu cầu chọn ít nhất 1 đơn hàng; không thực hiện thao tác thanh toán,,,,
+FUNC_KHACHHANG__24,Tab 4 Công nợ - 'Ghi nợ' với số tiền không hợp lệ (âm hoặc bằng 0),Đang ở popup Ghi nợ tại Tab 4,Đang ở popup Ghi nợ tại Tab 5,"1. Click 'Ghi nợ'
+ 2. Nhập số tiền: -100,000 hoặc 0
+ 3. Xác nhận",TB,Màn chi tiết khách hàng,Hệ thống hiển thị thông báo lỗi yêu cầu số tiền ghi nợ phải lớn hơn 0; không tạo bản ghi ghi nợ mới,,,,
+FUNC_KHACHHANG__25,Truy cập trực tiếp link chi tiết của khách hàng đã bị xóa,Khách hàng đã bị xóa khỏi hệ thống nhưng URL chi tiết cũ vẫn còn lưu,Khách hàng đã bị xóa khỏi hệ thống nhưng URL chi tiết cũ vẫn còn lưu,1. Truy cập trực tiếp URL chi tiết của khách hàng đã bị xóa,TB,Màn chi tiết khách hàng,Hệ thống hiển thị thông báo 'Khách hàng không tồn tại' hoặc tự động chuyển về màn danh sách; không phát sinh lỗi hệ thống (500/crash),,,x,
+,Kiểm tra chức năng Chỉnh sửa khách hàng,,,,,,,,,,
+FUNC_KHACHHANG__26,"Chỉnh sửa thông tin cơ bản (Tên, Email) của khách hàng thành công",Khách hàng đã tồn tại trong hệ thống,Khách hàng đã tồn tại trong hệ thống,"1. Mở chi tiết khách hàng, Tab 1 'Thông tin cá nhân'
+ 2. Click 'Chỉnh sửa'
+ 3. Sửa Tên khách hàng và Email
+ 4. Click 'Hoàn thành'",Cao,Màn chỉnh sửa khách hàng,Thông tin được cập nhật thành công; hiển thị giá trị mới trong màn chi tiết và danh sách khách hàng,,,x,
+FUNC_KHACHHANG__27,Chỉnh sửa Thông tin xuất hóa đơn và Địa chỉ liên hệ thành công,Khách hàng đã tồn tại trong hệ thống,Khách hàng đã tồn tại trong hệ thống,"1. Mở form Chỉnh sửa khách hàng
+ 2. Cập nhật Mã số thuế, Tên doanh nghiệp, Địa chỉ liên hệ, Facebook, Zalo
+ 3. Click 'Hoàn thành'",TB,Màn chỉnh sửa khách hàng,"Toàn bộ thông tin xuất hóa đơn và địa chỉ liên hệ được cập nhật và lưu chính xác, hiển thị đúng khi xem lại chi tiết",,,x,
+FUNC_KHACHHANG__28,Hủy chỉnh sửa khách hàng - dữ liệu không bị thay đổi,"Đang ở form Chỉnh sửa, đã sửa một số trường","Đang ở form Chỉnh sửa, đã sửa một số trường","1. Sửa Tên khách hàng và Số điện thoại
+ 2. Click 'Hủy'",TB,Màn chỉnh sửa khách hàng,"Form đóng lại; thông tin khách hàng giữ nguyên như trước khi chỉnh sửa, không có thay đổi nào được lưu",,,x,
+FUNC_KHACHHANG__29,Chỉnh sửa - bỏ trống Tên khách hàng (bắt buộc),Đang ở form Chỉnh sửa khách hàng,Đang ở form Chỉnh sửa khách hàng,"1. Click 'Chỉnh sửa'
+ 2. Xóa trống Tên khách hàng
+ 3. Click 'Hoàn thành'",Cao,Màn chỉnh sửa khách hàng,"Hệ thống hiển thị lỗi yêu cầu nhập Tên khách hàng (bắt buộc); không lưu được thay đổi, dữ liệu cũ vẫn giữ nguyên",,,x,
+FUNC_KHACHHANG__30,Chỉnh sửa - bỏ trống Số điện thoại (bắt buộc),Đang ở form Chỉnh sửa khách hàng,Đang ở form Chỉnh sửa khách hàng,"1. Click 'Chỉnh sửa'
+ 2. Xóa trống Số điện thoại
+ 3. Click 'Hoàn thành'",Cao,Màn chỉnh sửa khách hàng,Hệ thống hiển thị lỗi yêu cầu nhập Số điện thoại (bắt buộc); không lưu được thay đổi,,,x,
+FUNC_KHACHHANG__31,Chỉnh sửa - đổi Số điện thoại thành SĐT đã tồn tại của khách hàng khác,Khách hàng A (đang sửa) và khách hàng B đã tồn tại với SĐT '0911111111',Khách hàng A (đang sửa) và khách hàng B đã tồn tại với SĐT '0911111111',"1. Mở form Chỉnh sửa khách hàng A
+ 2. Đổi Số điện thoại thành '0911111111' (của khách hàng B)
+ 3. Click 'Hoàn thành'",Cao,Màn chỉnh sửa khách hàng,"Hệ thống hiển thị lỗi 'Số điện thoại đã tồn tại'; không lưu được thay đổi, SĐT của khách hàng A vẫn giữ nguyên giá trị cũ",,,x,
+FUNC_KHACHHANG__32,Chỉnh sửa - nhập Email sai định dạng,Đang ở form Chỉnh sửa khách hàng,Đang ở form Chỉnh sửa khách hàng,"1. Click 'Chỉnh sửa'
+ 2. Nhập Email: 'test@@invalid'
+ 3. Click 'Hoàn thành'",TB,Màn chỉnh sửa khách hàng,Hệ thống hiển thị lỗi định dạng Email không hợp lệ; không lưu được thay đổi,,,x,
+,Kiểm tra chức năng Xóa khách hàng,,,,,,,,,,
+FUNC_KHACHHANG__33,Xóa khách hàng thành công - xác nhận 'Đồng ý' tại popup,"Khách hàng tồn tại, đang ở màn chi tiết Tab 1","Khách hàng tồn tại, đang ở màn chi tiết Tab 2","1. Click icon 'Xóa'
+ 2. Popup confirm hiển thị: 'Hành động này sẽ không thể hoàn tác, bạn có chắc chắn muốn xóa?'
+ 3. Click 'Đồng ý'",Cao,Màn chi tiết khách hàng (popup confirm),Khách hàng bị xóa khỏi hệ thống; không còn hiển thị trong danh sách khách hàng,,,x,
+FUNC_KHACHHANG__34,Hủy xóa khách hàng - chọn 'Hủy' tại popup confirm,"Khách hàng tồn tại, popup confirm xóa đang hiển thị","Khách hàng tồn tại, popup confirm xóa đang hiển thị","1. Click icon 'Xóa'
+ 2. Popup confirm hiển thị
+ 3. Click 'Hủy'",TB,Màn chi tiết khách hàng (popup confirm),"Khách hàng không bị xóa, vẫn hiển thị nguyên vẹn trong danh sách và màn chi tiết; popup đóng lại",,,x,
+FUNC_KHACHHANG__35,Nội dung popup confirm xóa hiển thị đúng văn bản theo SRS,Đang ở màn chi tiết khách hàng bất kỳ,Đang ở màn chi tiết khách hàng bất kỳ,"1. Click icon 'Xóa'
+ 2. Quan sát nội dung popup",TB,Màn chi tiết khách hàng (popup confirm),"Popup hiển thị đúng nội dung: 'Hành động này sẽ không thể hoàn tác, bạn có chắc chắn muốn xóa?' với 2 nút 'Đồng ý' và 'Hủy'",,,x,
+FUNC_KHACHHANG__36,Xóa khách hàng đang có đơn hàng/công nợ chưa thanh toán,Khách hàng có ít nhất 1 đơn hàng còn nợ tại Tab 4,Khách hàng có ít nhất 1 đơn hàng còn nợ tại Tab 5,"1. Mở chi tiết khách hàng có công nợ chưa thanh toán
+ 2. Click icon 'Xóa'
+ 3. Click 'Đồng ý'",Cao,Màn chi tiết khách hàng (popup confirm),"Hệ thống cảnh báo khách hàng còn công nợ/đơn hàng chưa xử lý và từ chối xóa, không cho phép xóa khi còn dữ liệu công nợ liên quan",,,,
+FUNC_KHACHHANG__37,Xóa khách hàng khi user không có quyền 'xóa',Đăng nhập user không được phân quyền 'xóa' khách hàng,Đăng nhập user không được phân quyền 'xóa' khách hàng,"1. Mở chi tiết khách hàng
+ 2. Tìm icon 'Xóa'",Cao,Màn chi tiết khách hàng,Icon 'Xóa' không hiển thị hoặc bị disabled; user không thể thực hiện thao tác xóa khách hàng,,,,
+FUNC_KHACHHANG__38,Xóa khách hàng được tạo từ chuỗi (TCT) - kiểm tra đồng bộ xóa toàn Tổng công ty,Khách hàng X được tạo từ cấp TCT và áp dụng xuống tất cả điểm bán,Khách hàng X được tạo từ cấp TCT và áp dụng xuống tất cả điểm bán,"1. Tại 1 cửa hàng, mở chi tiết khách hàng X
+ 2. Click icon 'Xóa' > 'Đồng ý'
+ 3. Kiểm tra danh sách khách hàng tại cấp TCT và tại các cửa hàng khác",Cao,Màn chi tiết khách hàng,"Khách hàng X bị xóa đồng bộ khỏi danh sách khách hàng ở cấp TCT và tất cả điểm bán/cửa hàng khác trong Tổng công ty, không còn tồn tại ở bất kỳ đâu",,,x,

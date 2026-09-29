@@ -1,0 +1,5 @@
+{'startTime': '2026-09-25T12:28:38.293Z', 'duration': 34091.625, 'expected': 1, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 24_030_001 — Chi tiết công nợ nhân viên bung được lịch sử trả tiền
+   @ thẻ mở sẵn : Thông tin cá nhân (URL ?tab=debt)
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-table-tbody .ant-table-row-expand-icon, .ant-table-tbody button[aria-label*="xpand"]').first() 

@@ -13,6 +13,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#.env
-#.env.*
-#!.env.example
+.env
+.env.*
+!.env.example
+.auth/
+
+# Dữ liệu của web công cụ chạy test (DB, hồ sơ môi trường, artifact từng run)
+tool-data/
+.auth-lane*/
+
+# Sổ dữ liệu seed từng làn — sinh lại trên mỗi máy/mỗi lượt (`seed-state.js` là mã, vẫn commit)
+tai-lieu-test/00_seed/seed-state*.json

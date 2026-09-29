@@ -1,0 +1,18 @@
+const { chromium } = require("playwright");
+require("./tai-lieu-test/shared/config");
+const { storageStateFor } = require("./tai-lieu-test/shared/auth/accounts");
+const kk = require("./tai-lieu-test/04_4_kiem_kho/tests/kiem-kho-ghi");
+const k = require("./tai-lieu-test/04_3_nhap_xuat_chuyen_kho/tests/ghi-kho");
+(async()=>{const b=await chromium.launch();const c=await b.newContext({storageState:storageStateFor("shop"),viewport:{width:1440,height:1000}});const page=await c.newPage();
+const st=k.batHeader(page);
+page.on('response',async r=>{if(/inventory-check/.test(r.url())&&r.request().method()!=='GET'){console.log('RES',r.request().method(),r.url().slice(40,160),(await r.text().catch(()=>'')).slice(0,400))}});
+const sid=await kk.moPhien(page,'shop'); const tid=await kk.themPhieu(page); console.log('phien',sid,tid);
+await kk.themSp(page,'AUTO8_SP_TC'); await kk.demLo(page,'AUTO8_SP_TC',{'A8L6914817':0}); await kk.chonLyDo(page,'AUTO8_SP_TC').catch(e=>console.log('lydo',e.message.slice(0,80)));
+await page.getByRole('button',{name:'Xác nhận đếm'}).click(); await page.waitForTimeout(3000); console.log('sau xn dem',page.url(), await page.locator('.ant-message').allInnerTexts());
+await page.goto(process.env.VNPOST_BASE_URL+`/inventory/inventory-check/session-manage?shopId=68152&sessionId=${sid}`).catch(()=>{}); await page.waitForTimeout(5000); console.log(page.url());
+await page.getByRole('button',{name:'Chốt phiên'}).click(); await page.waitForTimeout(3000);
+console.log('drawers',await page.locator('.ant-drawer-open .ant-drawer-title, .ant-modal-confirm-title').allInnerTexts());
+const rv=page.locator('.ant-drawer-open').filter({hasText:'Xem lại bảng tổng hợp'}).last(); await rv.getByRole('button',{name:'Xác nhận chốt phiên'}).click(); await page.waitForTimeout(5000);
+console.log('sau chot',page.url(),await page.locator('.ant-drawer-open .ant-drawer-title, .ant-modal-confirm-title, .ant-message').allInnerTexts());
+await page.screenshot({path:'/private/tmp/claude-501/pr/p.png'});
+await kk.huyPhien(page,st,68152,sid); await b.close()})();

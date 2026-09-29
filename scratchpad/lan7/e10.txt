@@ -1,0 +1,4 @@
+{'startTime': '2026-09-25T13:42:58.998Z', 'duration': 32001.742, 'expected': 1, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 26_060_006 — Thu hồi nợ đơn vị vận tải sinh phiếu thu tự động
+   ! Error: Không thấy đơn vị "AUTO7_SHOP" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_SHOP  expect(locator).toBeVisible() failed  Locator: getByText('AUTO7_SHOP', { exact: true }).first() Expected: visible Timeout: 30000ms Error: element(s) not found  Call log:   - Không thấy đơn vị "AUTO7_SHOP" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LAB

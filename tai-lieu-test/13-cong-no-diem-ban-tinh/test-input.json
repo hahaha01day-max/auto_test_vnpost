@@ -1,0 +1,309 @@
+{
+  "cases": {
+    "CNDB-CD-001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-CD-002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-CD-003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-CD-004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-CD-005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-CD-006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-CD-007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "required": [],
+      "data": {
+        "soThieu": 5000
+      }
+    },
+    "CNDB-CD-008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-CD-009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {},
+      "allowMutation": true,
+      "_note": "28/09 kỳ vọng user chốt (A14/A15) — cong-no.province.spec.js"
+    },
+    "CNDB-CD-010": {
+      "enabled": false,
+      "mutates": true,
+      "role": "province",
+      "data": {},
+      "allowMutation": false,
+      "_blocked": "Cần phiếu nộp tiền đang chờ kiểm đếm; và phải làm dở rồi huỷ — dễ để lại trạng thái nửa vời trên dữ liệu thật."
+    },
+    "CNDB-CD-011": {
+      "enabled": false,
+      "mutates": true,
+      "role": "province",
+      "data": {},
+      "allowMutation": false,
+      "_blocked": "🔴 GHI: xác nhận nhận tiền tạo BÚT TOÁN thật và đóng phiếu con. Cần điểm bán + phiếu nộp tiền dựng riêng."
+    },
+    "CNDB-KY-001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-KY-002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "fromDate": "2026-08-01",
+        "toDate": "2026-08-15"
+      },
+      "allowMutation": false,
+      "_note": "28/09 B9 — cong-no.province.spec.js (chỉ đọc, chặn mạng POST)"
+    },
+    "CNDB-KY-003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-KY-004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-KY-005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-KY-006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-KY-007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-KY-008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-KY-009": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "_blocked": "Ghi dữ liệu: KÝ biên bản kỳ — không hoàn tác được",
+      "required": [
+        "periodId"
+      ],
+      "data": {
+        "periodId": ""
+      }
+    },
+    "CNDB-KY-010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {},
+      "allowMutation": true,
+      "_note": "28/09 kỳ vọng user chốt (A14/A15) — cong-no.province.spec.js"
+    },
+    "CNDB-KY-011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-KY-012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-LPB-001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-LPB-002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {},
+      "required": []
+    },
+    "CNDB-LPB-003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "status": "OPEN"
+      },
+      "required": []
+    },
+    "CNDB-ND-001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-ND-002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-ND-003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-ND-004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-ND-005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "CNDB-ND-006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "required": [
+        "openingAmount",
+        "note"
+      ],
+      "data": {
+        "openingAmount": 1000000,
+        "note": "Auto test - bien ban kiem ke ket"
+      }
+    },
+    "CNDB-ND-007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "CNDB-ND-008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-ND-009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "required": [],
+      "data": {}
+    },
+    "CNDB-ND-010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {},
+      "allowMutation": true,
+      "_note": "28/09 kỳ vọng user chốt (A14/A15) — cong-no.province.spec.js"
+    },
+    "CNDB-ND-011": {
+      "enabled": false,
+      "mutates": true,
+      "role": "province",
+      "data": {},
+      "allowMutation": false,
+      "_blocked": "GHI: mở form khai nợ đầu kỳ trên điểm bán thật."
+    },
+    "CNDB-PQ-001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "CNDB-PQ-002": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "_blocked": "Nếu bản deploy chưa có bản khoá 15/09 thì thao tác này ĐÓNG PHIẾU THẬT",
+      "required": [
+        "remittanceId"
+      ],
+      "data": {
+        "remittanceId": ""
+      }
+    },
+    "CNDB-PQ-003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{'startTime': '2026-09-25T12:11:54.106Z', 'duration': 122991.582, 'expected': 7, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 20_020_002 — Bấm Xác nhận khi chưa nhập gì ở form đổi điểm
+   @ lỗi : Vui lòng chọn thời gian bắt đầu
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"mZRGmP"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"JQBiCu"}]
+   ! Error: expect(received).toContain(expected) // indexOf  Expected substring: "Số tiền chi tiêu phải lớn hơn 0" Received string:    "Vui lòng chọn thời gian bắt đầu"

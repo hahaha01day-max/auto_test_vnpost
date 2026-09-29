@@ -1,0 +1,25 @@
+{'startTime': '2026-09-25T13:23:09.873Z', 'duration': 258423.324, 'expected': 3, 'skipped': 1, 'unexpected': 4, 'flaky': 0}
+
+ failed | 26_060_001 — Bán hàng thanh toán sinh phiếu thu tự động
+   @ đọc phiếu bằng : phiên CHT (GDV không có quyền view_all_receipts)
+   @ đơn : 393 26092568151AQXKD · cần thanh toán 95000 · phiếu hôm nay 43 → +0
+   @ phiếu : []
+   ! Error: Không có phiếu thu nào gắn đơn 26092568151AQXKD  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 26_040_004 — Phiếu thu tiền bán hàng có thông báo riêng khi xoá
+   @ đọc phiếu bằng : phiên CHT (GDV không có quyền view_all_receipts)
+   @ xoá : {"id":430,"code":null,"nguon":"ANONYMOUS","tien":95000,"orderType":0,"he":true} → {"code":"POD-0014","message":"Không được xoá phiếu thu tiền bán hàng (KDmGWe)","label":"DELETE_RECEIPTS_ERROR","requestId":"KDmGWe"}
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: "Không được xoá phiếu thu tiền bán hàng" Received: "Không được xoá phiếu thu tiền bán hàng (KDmGWe)"
+
+ skipped | 26_040_003 — Phiếu do hệ thống tự sinh không xoá được
+   @ phiếu hôm nay : [{"id":430,"code":null,"nguon":"ANONYMOUS","tien":95000,"orderType":0,"he":true},{"id":416,"code":null,"nguon":"A7KH198157186 AUTO TEST KHONG DUNG 20_050_014","tien":190000,"orderType":0,"he":true},{"id":414,"code":null,"nguon":"A7KH198093443 AUTO TEST KHONG DUNG 20_050_013","tien":190000,"orderType
+   @ skip : 90 ngày qua điểm bán làn không có phiếu thu hệ thống nào ngoài tiền bán hàng (orderType 0 bị chặn bằng câu riêng — 26_040_004).
+
+ failed | 26_060_005 — Thu hồi nợ nhân viên từ kho sinh phiếu thu tự động
+   @ phiếu "Thu hồi nợ" hôm nay : []
+   @ lần nộp tiền NV gần nhất : ["22","4000.0000"]
+   ! Error: Nhân viên nộp 4000.0000đ mà không sinh phiếu thu "Thu hồi nợ" đối tượng Nhân viên  expect(received).toBeTruthy()  Received: undefined
+
+ failed | 26_070_002 — Cấp dưới không xem được phiếu của cấp trên
+   @ đo : 0 phiếu · lạ []
+   ! Error: GDV không xem được phiếu thu của chính điểm bán (quyền view_all_receipts): {"code":"SSHOP-401","message":"Không có quyền truy cập","label":"ERROR_UNAUTHORIZED"}  expect(received).toBe(expected) // Object.is equality  Expected: "200" Received: "SSHOP-401"

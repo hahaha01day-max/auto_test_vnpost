@@ -1,0 +1,14 @@
+{'startTime': '2026-09-25T14:01:12.403Z', 'duration': 243985.557, 'expected': 11, 'skipped': 0, 'unexpected': 3, 'flaky': 0}
+
+ failed | 29_240_002 — Phân trang bảng báo cáo
+   @ đo : bảng tỉnh 16 dòng · thanh phân trang: 0
+   ! Error: Bảng báo cáo 16 dòng KHÔNG có phân trang (pagination={false})  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0
+
+ failed | 29_200_002 — Báo cáo kho phạm vi Tổng công ty
+   @ đo : rollup page=0&size=1&chainId=626&reportMonth=2026-08-01&level=TONG_CONG_TY&preview=true · KPI tổng 119.991.193.022.698 · [{"reportMonth":"2026-08-01","chainId":626,"podId":null,"shopId":null,"inventoryId":null,"provinceCode":null,"wardCode":null,"inVal":1860023795.03,"outVal":1040367496.36,"adjustVa
+   @ tổng các tỉnh : 0
+   ! Error: Tổng TCT ≠ tổng các tỉnh  expect(received).toBe(expected) // Object.is equality  Expected: 119991193022698 Received: 0
+
+ failed | 29_210_009 — Phạm vi chốt kho của vai cấp TCT
+   @ lựa chọn phạm vi : Toàn bộ phạm vi (gồm cấp dưới) · Chỉ shop trực thuộc TRỰC TIẾP · Chỉ định 1 shop
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for getByRole('dialog').filter({ hasText: 'Chốt tồn kho theo tháng' }).last().getByRole('button', { name: /Hu[ỷy]|Đóng|Cancel/ }).first() 

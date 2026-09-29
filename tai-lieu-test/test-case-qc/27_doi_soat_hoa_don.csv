@@ -1,0 +1,91 @@
+﻿,Chức năng,,ĐỐI SOÁT HOÁ ĐƠN,,,,,,,,
+,Mã Testcase,,27_doi_soat_hoa_don,,,,,,,,
+,Tổng các tình huống kiểm thử,,36,,,,,,,,
+,Chưa thực hiện,,36,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,ĐỐI SOÁT HOÁ ĐƠN,,,,,,,,,,
+,010 — Tải hoá đơn điện tử của nhà cung cấp lên hệ thống,,,,,,,,,,
+27_010_001,Tải hoá đơn XML lên và đối soát tự động,Vai: tct. Có tệp XML hoá đơn hợp lệ của NCC,"1. Mở /supplier/invoice-reconcile;
+2. Bấm ""Upload XML"";
+3. Kéo thả tệp;
+4. Bấm ""Upload""",,"Hệ thống báo nguyên văn ""Đã upload và đối soát XML""; mỗi hoá đơn thành một dòng ở thẻ Theo hoá đơn kèm mã phiếu đặt hàng tự tìm được và cột Đối soát nhận một trong ba giá trị Khớp / Lệch / Chưa đối soát",,,,,,
+27_010_002,Một tệp lỗi không làm hỏng cả lô,Vai: tct. Có lô gồm tệp hợp lệ và tệp không đọc được,1. Upload cả lô,,"Hệ thống báo dạng ""Đã upload, có N file lỗi parse""; các tệp còn lại VẪN vào hệ thống bình thường",,,,,,
+27_010_003,Hoá đơn gốc thứ hai cho cùng phiếu hỏi thay thế,Vai: tct. Phiếu đặt hàng đã có 1 hoá đơn gốc,1. Upload hoá đơn gốc thứ hai mang số khác cho cùng phiếu,,"Hệ thống dừng lại và hỏi nguyên văn ""Thay thế hoá đơn gốc đã có?"" kèm danh sách hoá đơn; bấm Huỷ thì KHÔNG có gì thay đổi",,,,,,
+,020 — Tra cứu tình trạng đối soát hoá đơn,,,,,,,,,,
+27_020_001,Ô tìm kiếm tra đồng thời bốn trường,Vai: tct. Có hoá đơn đã nạp,"1. Mở /supplier/invoice-reconcile;
+2. Gõ lần lượt mã PO, số hoá đơn, mã số thuế, tên NCC vào ô ""Mã PO, số HĐ, MST, NCC""",,Cả bốn loại từ khoá đều trả về kết quả đúng,,,,,,
+27_020_002,Lọc theo trạng thái đối soát,Vai: tct. Có hoá đơn ở nhiều trạng thái,1. Mở ô Trạng thái,,"Ô có đúng 4 lựa chọn: Khớp, Lệch, Chưa đối soát, Tất cả",,,,,,
+27_020_003,Bung nhóm hoá đơn cùng một phiếu,Vai: tct. Có dòng mang nhãn Gồm N hoá đơn,1. Bấm dấu + ở đầu dòng đó,,"Hiện các hoá đơn cùng phiếu, mỗi hoá đơn mang nhãn Gốc / Điều chỉnh / Thay thế",,,,,,
+27_020_004,Thẻ Theo phiếu PO nhìn theo phía phiếu đặt hàng,Vai: tct. Có phiếu đặt hàng đã nhận hoá đơn,"1. Bấm thẻ ""Theo phiếu PO""",,"Mỗi dòng là một phiếu kèm tổng tiền phiếu, tổng tiền hoá đơn và số hoá đơn đã nhận",,,,,,
+27_020_005,Cột Hạch toán là trạng thái của cả phiếu không phải của hoá đơn,Vai: tct. Có phiếu có từ 2 hoá đơn trở lên,"1. Ở thẻ Theo hoá đơn, đọc cột Hạch toán của các hoá đơn cùng một phiếu",,Mọi hoá đơn cùng một phiếu hiện CÙNG một trạng thái hạch toán,,,,,,
+,030 — Xem nội dung một hoá đơn và các hoá đơn cùng phiếu,,,,,,,,,,
+27_030_001,Chi tiết hoá đơn hiện danh sách hoá đơn của PO,Vai: tct. Có hoá đơn đã nạp,"1. Bấm ""Chi tiết"" ở cột Thao tác",,"Bảng ""Danh sách hoá đơn của PO"" hiện mọi hoá đơn cùng phiếu, mỗi dòng ghi Loại (Gốc/Điều chỉnh/Thay thế), số hoá đơn, tổng tiền và Dấu điều chỉnh",,,,,,
+27_030_002,Chi tiết hoá đơn con hiện dòng hàng đọc từ chính tệp đó,Vai: tct. Phiếu có nhiều hoá đơn,"1. Mở Chi tiết hoá đơn;
+2. Bấm ""Xem"" ở cột Chi tiết của một dòng",,"Màn ""Chi tiết hoá đơn con"" hiện tên hàng, đơn vị, số lượng, đơn giá, tiền trước thuế, phần trăm thuế và tiền sau thuế của RIÊNG hoá đơn đó",,,,,,
+27_030_003,Bảng Chi tiết hàng hoá là số của cả nhóm hoá đơn,Vai: tct. Phiếu có hoá đơn gốc và hoá đơn điều chỉnh,"1. Mở Chi tiết hoá đơn;
+2. So bảng Chi tiết hàng hoá ở cuối màn với Chi tiết hoá đơn con",,"Bảng cuối màn là tổng của CẢ NHÓM (gốc cộng trừ điều chỉnh) đặt cạnh số phiếu nhập kho, KHÁC số của riêng một hoá đơn",,,,,,
+,"040 — Tìm chỗ lệch giữa hoá đơn, phiếu đặt hàng và phiếu nhập kho",,,,,,,,,,
+27_040_001,Màn đối soát chia đôi chứng từ và hoá đơn,Vai: tct. Có hoá đơn đã nạp,"1. Bấm ""Đối soát"" ở cột Thao tác",,"Màn ""Đối soát hoá đơn, chứng từ"" chia đôi: trái là chứng từ đơn vị, phải là kết quả đọc hoá đơn và tệp gốc",,,,,,
+27_040_002,Thẻ Phiếu nhập kho đối chiếu số hàng thực nhận,Vai: tct. Phiếu đã có phiếu nhập kho,"1. Ở màn đối soát bấm thẻ ""Phiếu nhập kho""",,"Hiện mã phiếu, ngày xác nhận, người nhập kho và bảng sản phẩm kèm số lượng, đơn giá, thành tiền",,,,,,
+27_040_003,Thẻ Phiếu đặt hàng hiện ba con số theo mặt hàng,Vai: tct. Có phiếu đặt hàng,"1. Bấm thẻ ""Phiếu đặt hàng""",,"Mỗi mặt hàng hiện số đã đặt, số NCC xác nhận và số đã nhập kho",,,,,,
+27_040_004,Gỡ hoá đơn khỏi đối soát của phiếu,Vai: tct. Có hoá đơn gửi nhầm cần gỡ,"1. Bấm ""Xoá XML"" ở góc trên bên phải bảng Kết quả đối soát XML;
+2. Bấm ""Xoá""",,Hoá đơn bị gỡ khỏi đối soát của phiếu,,,,,,
+,050 — Sửa lại thông tin hoá đơn và cho đối chiếu lại,,,,,,,,,,
+27_050_001,Sửa hoá đơn rồi cho đối chiếu lại,Vai: tct. Có hoá đơn cần sửa,"1. Mở Chi tiết hoá đơn;
+2. Bấm ""Chỉnh sửa"";
+3. Sửa một ô;
+4. Bấm ""Lưu thông tin & đối soát lại""",,"Hệ thống báo nguyên văn ""Đã lưu và đối soát lại hoá đơn""; cột Đối soát ở danh sách cập nhật theo dữ liệu vừa sửa",,,,,,
+27_050_002,Thêm và xoá dòng hàng trong màn chỉnh sửa,Vai: tct. Đang mở màn Chỉnh sửa hoá đơn,"1. Bấm ""Thêm dòng"" rồi điền;
+2. Bấm biểu tượng thùng rác ở cuối một dòng",,Dòng mới được thêm và dòng thừa bị xoá khỏi bảng trước khi lưu,,,,,,
+27_050_003,Đối chiếu lại mà không sửa gì,Vai: tct. Phiếu nhập kho vừa được xác nhận sau khi hoá đơn đã về,1. Ở danh sách bấm biểu tượng làm mới ở cuối cột Thao tác của dòng đó,,Hệ thống chạy lại so khớp và cập nhật cột Đối soát,,,,,,
+,060 — Xác nhận hạch toán công nợ cho phiếu đặt hàng,,,,,,,,,,
+27_060_001,Cảnh báo khi còn hoá đơn điều chỉnh chưa rõ dấu,Vai: tct. Phiếu có hoá đơn điều chỉnh chưa xác định tăng giảm,"1. Mở thẻ Theo phiếu PO;
+2. Bấm ""Xem"";
+3. Đọc đầu thẻ Đối soát công nợ (PO)",,"Hiện dải cảnh báo màu vàng nguyên văn ""Có hoá đơn điều chỉnh chưa xác định được dấu tăng/giảm""; dòng hoá đơn đó có ô chọn Tính chất / Dấu với ba lựa chọn Tăng, Giảm, Không đổi",,,,,,
+27_060_002,Bảng Đối soát theo sản phẩm chỉ ra chỗ lệch,Vai: tct. Có phiếu đã nhận hoá đơn,1. Đọc bảng Đối soát theo sản phẩm,,Mỗi mặt hàng có tổng theo hoá đơn đặt cạnh tổng theo phiếu nhập; cột Kết quả ghi Khớp / Lệch SL / Lệch tiền,,,,,,
+27_060_003,Xác nhận hạch toán công nợ mở đường cho thanh toán,Vai: tct. Mọi mặt hàng của phiếu đều Khớp,"1. Bấm ""Xác nhận hạch toán công nợ"";
+2. Đọc màn ""Xác nhận hạch toán công nợ cho PO?"";
+3. Bấm ""Hạch toán""",,"Báo nguyên văn ""Đã hạch toán công nợ cho PO""; ô Trạng thái hạch toán chuyển thành ""Đã hạch toán công nợ""; nút đổi nhãn và KHÔNG bấm được nữa. Từ lúc này phiếu nhập kho thuộc PO mới được phép thanh toán công nợ",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+27_PQ_001,Vai không có quyền đối soát thì không vào được,Vai: shop. Không có quyền doi_soat_hoa_don_chung_tu,1. Mở /supplier/invoice-reconcile,,Bị chặn hoặc API trả lỗi phân quyền,,,,,,
+,070 — / 071 vì các nhóm 010–060 và PQ đã dùng hết ở bộ trước.,,,,,,,,,,
+27_070_001,Giao diện màn Đối soát hoá đơn PO đủ thành phần,Vai: shop,"1. Mở màn Đối soát hoá đơn PO;
+2. Đọc tiêu đề, ô tìm kiếm và các bộ lọc",,"Tiêu đề ""Đối soát hoá đơn PO""; ô tìm kiếm có placeholder nhắc Mã PO và số hoá đơn; có đủ các bộ lọc của màn",,,,,,
+27_070_002,Lọc danh sách theo nhà cung cấp,Vai: shop. Có phiếu của nhiều nhà cung cấp,"1. Mở màn;
+2. Chọn một nhà cung cấp ở bộ lọc",,Chỉ hiện các phiếu thuộc nhà cung cấp đã chọn,,,,,,
+27_070_003,Phạm vi danh sách nhà cung cấp theo cấp tỉnh và TCT,Vai: province rồi tct. Có nhà cung cấp riêng của tỉnh và của TCT,"1. Đăng nhập vai province, đọc danh sách NCC ở bộ lọc;
+2. Đăng nhập vai tct, đọc lại",,Vai province chỉ thấy nhà cung cấp của tỉnh mình; vai tct thấy toàn bộ,,,,,,
+27_070_004,Phân trang danh sách phiếu đối soát,Vai: shop. Kỳ lọc có nhiều hơn một trang,"1. Mở màn;
+2. Sang trang 2;
+3. Đổi số dòng mỗi trang;
+4. Về trang cuối",,Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi,,,,,,
+27_070_005,Tải lên trùng file XML đã đối soát,Vai: shop. Đã đối soát một file XML trước đó,"1. Tải lên lại đúng file XML đó;
+2. Đọc kết quả ở tab Theo hoá đơn",,"Hệ thống thực hiện đối soát lại file XML và hiển thị kết quả ở tab Theo hoá đơn, không nhân đôi bản ghi",,,,,,
+27_070_006,Tải ảnh vượt giới hạn số lượng ở tab đối soát phiếu PO,Vai: shop. Đang ở tab đối soát phiếu PO,"1. Tải lên nhiều hơn 9 ảnh kèm 1 file xml;
+2. Đọc kết quả",,Chỉ ghi nhận 9 ảnh và 1 file xml; phần vượt bị bỏ.,,,,,,
+27_070_007,Báo cáo đối soát hiển thị đúng các chỉ tiêu,Vai: shop. Đã có phiếu đối soát trong kỳ,"1. Mở báo cáo đối soát;
+2. Đọc các chỉ tiêu",,"Hiển thị đúng số lượng đã đối soát, số khớp, số lệch, số chưa đối soát; tổng các nhóm bằng số đã đối soát",,,,,,
+27_070_008,Danh sách phiếu đối soát rỗng,Vai: shop,1. Lọc một kỳ chắc chắn không có phiếu nào,,"Hiện trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+27_070_009,Tổ hợp bộ lọc trên màn đối soát,Vai: shop,"1. Lọc theo nhà cung cấp;
+2. Thêm lọc khoảng thời gian;
+3. Thêm lọc trạng thái đối soát",,Kết quả thoả đồng thời cả ba điều kiện,,,,,,
+,"071 — Bộ lọc, tìm kiếm và tải tệp sai định dạng",,,,,,,,,,
+27_071_001,Tìm phiếu bằng ký tự đặc biệt,Vai: shop,"1. Gõ chuỗi chứa % và _ vào ô tìm kiếm;
+2. Enter",,Không lỗi 500; không trả về toàn bộ phiếu.,,,,,,
+27_071_002,Tìm phiếu bằng mã PO không tồn tại,Vai: shop,"1. Gõ một mã PO chắc chắn không có;
+2. Enter",,"Bảng về trạng thái rỗng, không lỗi kỹ thuật",,,,,,
+27_071_003,Xoá bộ lọc trở về mặc định,Vai: shop,"1. Đặt nhiều bộ lọc;
+2. Xoá hết bộ lọc",,Danh sách trở về trạng thái mặc định của màn,,,,,,
+27_071_004,Tải lên tệp sai định dạng thay cho XML,Vai: shop,"1. Chọn một tệp không phải XML;
+2. Tải lên",,"Bị chặn, không thực hiện đối soát.",,,,,,
+27_071_005,Huỷ giữa chừng khi đang đối soát,Vai: shop,"1. Mở màn đối soát một phiếu;
+2. Nhập dở thông tin;
+3. Đóng bằng Huỷ hoặc X;
+4. Đọc lại trạng thái phiếu",,Phiếu giữ nguyên trạng thái đối soát cũ; không ghi nhận gì,,,,,,

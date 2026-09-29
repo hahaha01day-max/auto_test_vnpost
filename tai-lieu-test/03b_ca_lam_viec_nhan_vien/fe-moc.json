@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "tests/quay-nguoi-khac.seed_shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/lich-ca-nhan/ca-lam-viec"
+      ],
+      "fe": [
+        "src/features/timekeeping/pages/WorkShiftPage.jsx"
+      ]
+    },
+    "tests/ca-lam-viec.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/lich-ca-nhan/ca-lam-viec"
+      ],
+      "fe": [
+        "src/features/timekeeping/pages/WorkShiftPage.jsx"
+      ]
+    },
+    "tests/chot-mo-ca.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/lich-ca-nhan/ca-lam-viec"
+      ],
+      "fe": [
+        "src/features/timekeeping/pages/WorkShiftPage.jsx"
+      ]
+    }
+  }
+}

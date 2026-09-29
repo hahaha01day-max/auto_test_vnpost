@@ -1,0 +1,2609 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 135,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:22.506Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 84,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:22.727Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_manager (Quản lý Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 99,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:22.816Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-08f00-ager-Quản-lý-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f8f6b4aac219a09d704d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai ward (Bưu điện Xã)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 98,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:22.919Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-ward-Bưu-điện-Xã--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2d044c7a88341d00c4f3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 103,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.022Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop (Nhân viên điểm bán seed (AUTO_SHOP))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 86,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.128Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-edaa4-ên-điểm-bán-seed-AUTO-SHOP--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-21ce4f527c1091b58dc7",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop2 (Nhân viên điểm bán seed (tồn đầu kỳ))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 87,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.217Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2bfc1-n-điểm-bán-seed-tồn-đầu-kỳ--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f0046fb8388f9f34d70f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_gdv (Giao dịch viên điểm bán seed)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 97,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.307Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-f973e-ao-dịch-viên-điểm-bán-seed--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-279e54db4435dd5b2b7f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_cung_ung (Quản lý cung ứng Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.408Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-a2b0c-n-lý-cung-ứng-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-dc10cbea1b53e3115f7d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_ke_toan (Kế toán Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.509Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-b0041--toan-Kế-toán-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-810d07ac3b8180d5b8cd",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_marketing (Marketing Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.625Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-1d056-ing-Marketing-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-ad384e1a74119c1d55a2",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_cung_ung (Quản lý cung ứng Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 88,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.718Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-4db67--ung-Quản-lý-cung-ứng-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-3fc0d4a301467ed2a16a",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_ke_toan (Kế toán Tỉnh (vai PROVINCE_ACCOUNTANT))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.809Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2a396-nh-vai-PROVINCE-ACCOUNTANT--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2ad6ba1bf90fea1e4edf",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop_nhan_vien (Nhân viên khác điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:23.909Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-v-bd39c-en-Nhân-viên-khác-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2720920e7dafcea1da21",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T16:15:24.008Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "cong-no-ghi.gdv.spec.js",
+      "file": "cong-no-ghi.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "34 · Công nợ khách hàng có tiền đề (khách rác nợ 2 đơn)",
+          "file": "cong-no-ghi.gdv.spec.js",
+          "line": 106,
+          "column": 6,
+          "specs": [
+            {
+              "title": "34 tien de — khách rác có 2 đơn nợ (DB)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "tiền đề",
+                      "description": "{\"ma\":\"A7KH195749973\",\"ten\":\"A7CN34 Nguyễn Thị Nợ 749973\",\"sdt\":\"0925749973\",\"id\":846491794446522,\"data\":{\"customerId\":846491794446522,\"chainId\":626,\"shopId\":68151,\"customerName\":\"A7CN34 Nguyễn Thị Nợ 749973\",\"customerPhone\":\"84925749973\",\"customerGender\":null,\"customerAddress\":null,\"customerWardId\":null,\"customerWardName\":null,\"customerDistrictId\":null,\"customerDistrictName\":null,\"customerProvinceId\":null,\"customerProvinceName\":null,\"customerDob\":null,\"customerNote\":null,\"customerEmail\":null,\"customerFacebook\":null,\"customerZalo\":null,\"customerBranch\":null,\"customerSource\":1,\"customerOldNew\":null,\"customerRank\":0,\"createdDate\":1790525750265,\"modifiedDate\":1790525750265,\"status\":1,\"imageUri\":null,\"createdBy\":123463460,\"caringServiceList\":null,\"label\":null,\"reason\":null,\"createdByName\":null,\"createdByCode\":null,\"originShopCode\":null,\"originShopName\":null,\"careStatus\":null,\"typeIntroduce\":null,\"typeIntroduceId\":null,\"introducePhone\":null,\"sysUserId\":null,\"note\":null,\"sourceNote\":null,\"secondPhoneNumber\":null,\"customerCode\":\"A7KH195749973\",\"customerType\":null,\"businessStatus\":\"HOAT_DONG\",\"lastCheckIn\":null,\"lastScheduleIdCheckIn\":null,\"lastCheckOut\":null,\"lastScheduleIdCheckOut\":null,\"taxCode\":null,\"typeIntroduceName\":null,\"groupName\":null,\"dateDiff\":null,\"dayOfYear\":null,\"invoiceCustomerName\":null,\"invoiceCustomerPhone\":null,\"invoiceCustomerEmail\":null,\"invoiceCustomerAddress\":null,\"invoiceCustomerWardId\":null,\"invoiceCustomerWardName\":null,\"invoiceCustomerDistrictId\":null,\"invoiceCustomerDistrictName\":null,\"invoiceCustomerProvinceId\":null,\"invoiceCustomerProvinceName\":null,\"invoiceCompanyName\":null,\"idNumber\":null,\"passportNumber\":null,\"budgetRelationCode\":null,\"point\":0,\"totalPoints\":null,\"totalSpend\":null,\"totalSpendNet\":null,\"groups\":null,\"totalMoneyPurchased\":null,\"totalVirtualMoney\":0,\"totalMoneyOwed\":null,\"totalNetRevenue\":null,\"totalOrder\":null,\"lastOrderTime\":null,\"scheduleDoing\":null}} · đơn [[\"565\",\"26092768151ZN7YU\",\"95000.00\",\"0.00\"],[\"566\",\"260927681518PAHI\",\"95000.00\",\"0.00\"]]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 81,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:15:24.347Z",
+                      "annotations": [
+                        {
+                          "type": "tiền đề",
+                          "description": "{\"ma\":\"A7KH195749973\",\"ten\":\"A7CN34 Nguyễn Thị Nợ 749973\",\"sdt\":\"0925749973\",\"id\":846491794446522,\"data\":{\"customerId\":846491794446522,\"chainId\":626,\"shopId\":68151,\"customerName\":\"A7CN34 Nguyễn Thị Nợ 749973\",\"customerPhone\":\"84925749973\",\"customerGender\":null,\"customerAddress\":null,\"customerWardId\":null,\"customerWardName\":null,\"customerDistrictId\":null,\"customerDistrictName\":null,\"customerProvinceId\":null,\"customerProvinceName\":null,\"customerDob\":null,\"customerNote\":null,\"customerEmail\":null,\"customerFacebook\":null,\"customerZalo\":null,\"customerBranch\":null,\"customerSource\":1,\"customerOldNew\":null,\"customerRank\":0,\"createdDate\":1790525750265,\"modifiedDate\":1790525750265,\"status\":1,\"imageUri\":null,\"createdBy\":123463460,\"caringServiceList\":null,\"label\":null,\"reason\":null,\"createdByName\":null,\"createdByCode\":null,\"originShopCode\":null,\"originShopName\":null,\"careStatus\":null,\"typeIntroduce\":null,\"typeIntroduceId\":null,\"introducePhone\":null,\"sysUserId\":null,\"note\":null,\"sourceNote\":null,\"secondPhoneNumber\":null,\"customerCode\":\"A7KH195749973\",\"customerType\":null,\"businessStatus\":\"HOAT_DONG\",\"lastCheckIn\":null,\"lastScheduleIdCheckIn\":null,\"lastCheckOut\":null,\"lastScheduleIdCheckOut\":null,\"taxCode\":null,\"typeIntroduceName\":null,\"groupName\":null,\"dateDiff\":null,\"dayOfYear\":null,\"invoiceCustomerName\":null,\"invoiceCustomerPhone\":null,\"invoiceCustomerEmail\":null,\"invoiceCustomerAddress\":null,\"invoiceCustomerWardId\":null,\"invoiceCustomerWardName\":null,\"invoiceCustomerDistrictId\":null,\"invoiceCustomerDistrictName\":null,\"invoiceCustomerProvinceId\":null,\"invoiceCustomerProvinceName\":null,\"invoiceCompanyName\":null,\"idNumber\":null,\"passportNumber\":null,\"budgetRelationCode\":null,\"point\":0,\"totalPoints\":null,\"totalSpend\":null,\"totalSpendNet\":null,\"groups\":null,\"totalMoneyPurchased\":null,\"totalVirtualMoney\":0,\"totalMoneyOwed\":null,\"totalNetRevenue\":null,\"totalOrder\":null,\"lastOrderTime\":null,\"scheduleDoing\":null}} · đơn [[\"565\",\"26092768151ZN7YU\",\"95000.00\",\"0.00\"],[\"566\",\"260927681518PAHI\",\"95000.00\",\"0.00\"]]"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-a60ab4740025699cf016",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 133,
+              "column": 2
+            },
+            {
+              "title": "34_010_001 — Màn Công nợ khách hàng hiện tổng quy mô theo kỳ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (jNjiHo) · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "dòng {\"customerId\":846491794446522,\"customerName\":\"A7CN34 Nguyễn Thị Nợ 749973\",\"customerPhone\":\"84925749973\",\"totalShops\":1,\"totalOrders\":2,\"totalReceivable\":190000,\"totalPaid\":0,\"totalDebt\":190000,\"lastDebtTime\":\"2026-09-27T23:16:12\"} · DB còn nợ 190000 · thẻ: Quản lý công nợ khách hàng KHÁCH NỢ 7 SỐ ĐƠN CÒN NỢ 9 TỔNG PHẢI THU 2.970.000 đ TỔNG ĐÃ THU 1.010.000 đ TỔNG CÒN NỢ 1.960.000 đ Điểm bán (68151) # Tên khách hàng Số điện thoại Tổng số đơn Tổng phải thu Tổng đã trả Tổng còn nợ Lần ghi nợ cuối Thao tác # Tên khách hàng Số điện thoại Tổng số đơn Tổng p"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 36087,
+                      "error": {
+                        "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m",
+                        "stack": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:145:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:145:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:16:16.299Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (jNjiHo) · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "dòng {\"customerId\":846491794446522,\"customerName\":\"A7CN34 Nguyễn Thị Nợ 749973\",\"customerPhone\":\"84925749973\",\"totalShops\":1,\"totalOrders\":2,\"totalReceivable\":190000,\"totalPaid\":0,\"totalDebt\":190000,\"lastDebtTime\":\"2026-09-27T23:16:12\"} · DB còn nợ 190000 · thẻ: Quản lý công nợ khách hàng KHÁCH NỢ 7 SỐ ĐƠN CÒN NỢ 9 TỔNG PHẢI THU 2.970.000 đ TỔNG ĐÃ THU 1.010.000 đ TỔNG CÒN NỢ 1.960.000 đ Điểm bán (68151) # Tên khách hàng Số điện thoại Tổng số đơn Tổng phải thu Tổng đã trả Tổng còn nợ Lần ghi nợ cuối Thao tác # Tên khách hàng Số điện thoại Tổng số đơn Tổng p"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--6ac97-ng-hiện-tổng-quy-mô-theo-kỳ-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--6ac97-ng-hiện-tổng-quy-mô-theo-kỳ-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--6ac97-ng-hiện-tổng-quy-mô-theo-kỳ-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--6ac97-ng-hiện-tổng-quy-mô-theo-kỳ-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-6dca6db559506872cefb",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 142,
+              "column": 2
+            },
+            {
+              "title": "34_010_002 — Đổi kỳ thì tổng công nợ đổi theo",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (sSOuJk) · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "kỳ mặc định 1960000 · kỳ 01/2020 0 · ô 01/01/2020→31/01/2020 · q {\"fromDate\":\"2020-01-01\",\"toDate\":\"2020-01-31\",\"shopId\":\"68151\",\"page\":\"0\",\"size\":\"10\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 36809,
+                      "error": {
+                        "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m",
+                        "stack": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:162:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:162:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:16:53.010Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (sSOuJk) · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "kỳ mặc định 1960000 · kỳ 01/2020 0 · ô 01/01/2020→31/01/2020 · q {\"fromDate\":\"2020-01-01\",\"toDate\":\"2020-01-31\",\"shopId\":\"68151\",\"page\":\"0\",\"size\":\"10\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--4d0c0-ỳ-thì-tổng-công-nợ-đổi-theo-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--4d0c0-ỳ-thì-tổng-công-nợ-đổi-theo-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--4d0c0-ỳ-thì-tổng-công-nợ-đổi-theo-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--4d0c0-ỳ-thì-tổng-công-nợ-đổi-theo-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-cbb4a701dc2cc22fffcf",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 159,
+              "column": 2
+            },
+            {
+              "title": "34_020_001 — Công nợ chi tiết của một khách hiện từng khoản",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (WPmCNN) · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "url http://192.168.1.47:3200/customer/detail/846491794446522?tab=CUSTOMER-DEBT · Chi tiết khách hàng A7CN34 Nguyễn Thị Nợ 749973 Nữ 84925749973 Mã KH: 846491794446522 Tiền phát sinh 190.000 đ Tiền còn nợ 190.000 đ Điểm tích lũy 0 Số lần mua hàng 2 Thông tin cá nhân Đơn hàng Ví điểm Sản phẩm đã mua Công nợ khách hàng SỐ ĐƠN CÒN NỢ 2 TỔNG PHẢI THU 190.000 đ TỔNG ĐÃ THU 0 đ TỔNG CÒN NỢ 190.000 đ Còn nợ Thanh toán # Ngày tạo Mã phiếu / mã đơn Cửa hàng Tổng tiền Đã thanh toán Còn n"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 42805,
+                      "error": {
+                        "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m",
+                        "stack": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:190:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:190:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:17:30.531Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (WPmCNN) · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "url http://192.168.1.47:3200/customer/detail/846491794446522?tab=CUSTOMER-DEBT · Chi tiết khách hàng A7CN34 Nguyễn Thị Nợ 749973 Nữ 84925749973 Mã KH: 846491794446522 Tiền phát sinh 190.000 đ Tiền còn nợ 190.000 đ Điểm tích lũy 0 Số lần mua hàng 2 Thông tin cá nhân Đơn hàng Ví điểm Sản phẩm đã mua Công nợ khách hàng SỐ ĐƠN CÒN NỢ 2 TỔNG PHẢI THU 190.000 đ TỔNG ĐÃ THU 0 đ TỔNG CÒN NỢ 190.000 đ Còn nợ Thanh toán # Ngày tạo Mã phiếu / mã đơn Cửa hàng Tổng tiền Đã thanh toán Còn n"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--e42e3-a-một-khách-hiện-từng-khoản-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--e42e3-a-một-khách-hiện-từng-khoản-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--e42e3-a-một-khách-hiện-từng-khoản-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--e42e3-a-một-khách-hiện-từng-khoản-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-2d5e15a299f5b1b59884",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 187,
+              "column": 2
+            },
+            {
+              "title": "34_030_001 — Chi tiết phiếu công nợ cho biết nguồn gốc khoản nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai province",
+                      "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (adLWEY) · - khách"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 69033,
+                      "error": {
+                        "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m",
+                        "stack": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:208:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai province KHÔNG đọc được báo cáo công nợ khách (SSHOP-500)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSSHOP-5\u001b[27m00\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:208:3"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 43,
+                            "line": 215
+                          },
+                          "message": "TimeoutError: locator.innerText: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-layout-content').first()\u001b[22m\n\n\n  213 | \t\t\tawait ps.page.waitForTimeout(5_000);\n  214 | \t\t\tconst cot = (await khung(ps.page).locator('.ant-table-thead th').allInnerTexts()).map(chuan);\n> 215 | \t\t\tconst chu = chuan(await khung(ps.page).innerText());\n      | \t\t\t                                       ^\n  216 | \t\t\tghiChu('đo', `cột ${cot.join(' · ')} · ${chu.slice(0, 300)}`);\n  217 | \t\t\texpect(chu, 'Không thấy đơn nguồn của khoản nợ').toContain(donDb()[0][1]);\n  218 | \t\t\texpect(cot.join(' · '), 'Phiếu công nợ không cho biết AI chịu trách nhiệm (người tạo / nhân viên bán)').toMatch(/Nhân viên|Người tạo|Người bán|Thu ngân/);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:215:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:18:14.058Z",
+                      "annotations": [
+                        {
+                          "type": "vai province",
+                          "description": "API SSHOP-500 Có lỗi xảy ra, xin vui lòng thử lại sau ít phút (adLWEY) · - khách"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--fff7b-cho-biết-nguồn-gốc-khoản-nợ-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--fff7b-cho-biết-nguồn-gốc-khoản-nợ-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--fff7b-cho-biết-nguồn-gốc-khoản-nợ-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--fff7b-cho-biết-nguồn-gốc-khoản-nợ-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-a2bb8c4f02459cb55055",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 205,
+              "column": 2
+            },
+            {
+              "title": "34_040_002 — Chỉ vai điểm bán mới thu hồi nợ được",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "vai tỉnh: tab Công nợ 1 · nút Thanh toán 1 (bật false)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19245,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:19:23.816Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "vai tỉnh: tab Công nợ 1 · nút Thanh toán 1 (bật false)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-92a3b9db5f5f9f4db80c",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 222,
+              "column": 2
+            },
+            {
+              "title": "34_050_002 — Tìm theo tên khách hàng khớp chính xác",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"A7CN34 Nguyễn Thị Nợ 749973\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=A7CN34%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20N%E1%BB%A3%20749973&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 34892,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:19:43.159Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"A7CN34 Nguyễn Thị Nợ 749973\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=A7CN34%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20N%E1%BB%A3%20749973&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b564e-n-khách-hàng-khớp-chính-xác-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b564e-n-khách-hàng-khớp-chính-xác-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b564e-n-khách-hàng-khớp-chính-xác-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b564e-n-khách-hàng-khớp-chính-xác-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-8b8dcbc44ba8806098a3",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_003 — Tìm theo một phần tên khách hàng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"Nguyễn Thị Nợ\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=Nguy%E1%BB%85n%20Th%E1%BB%8B%20N%E1%BB%A3&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35337,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:20:18.653Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"Nguyễn Thị Nợ\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=Nguy%E1%BB%85n%20Th%E1%BB%8B%20N%E1%BB%A3&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eccc6-heo-một-phần-tên-khách-hàng-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eccc6-heo-một-phần-tên-khách-hàng-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eccc6-heo-một-phần-tên-khách-hàng-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eccc6-heo-một-phần-tên-khách-hàng-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-55e3226a54b9d240f17e",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_005 — Tìm theo số điện thoại khách khớp chính xác",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"0925749973\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=0925749973&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35238,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 71,
+                            "line": 262
+                          },
+                          "message": "Error: Tìm \"0925749973\" KHÔNG ra khách đang nợ A7CN34 Nguyễn Thị Nợ 749973\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  260 | \t\t\t\texpect(String(r?.b?.status?.code)).toBe('200');\n  261 | \t\t\t\tif (mong === 'co') {\n> 262 | \t\t\t\t\texpect(coKh(r), `Tìm \"${k}\" KHÔNG ra khách đang nợ ${D.kh.ten}`).toBe(true);\n      | \t\t\t\t\t                                                                 ^\n  263 | \t\t\t\t\tif (id === '34_050_002' || id === '34_050_005' || id === '34_050_008') expect(ds, 'Khớp chính xác mà ra nhiều khách').toHaveLength(1);\n  264 | \t\t\t\t} else if (mong === 'rong') {\n  265 | \t\t\t\t\texpect(await dong(ps.page).count()).toBe(0);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:262:71"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:20:54.649Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"0925749973\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=0925749973&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--12506--thoại-khách-khớp-chính-xác-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--12506--thoại-khách-khớp-chính-xác-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--12506--thoại-khách-khớp-chính-xác-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--12506--thoại-khách-khớp-chính-xác-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-ae5a8d13b335273ab70e",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_006 — Tìm theo một phần số điện thoại khách",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"749973\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=749973&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 34881,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:21:30.542Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"749973\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=749973&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--16a4f-ột-phần-số-điện-thoại-khách-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--16a4f-ột-phần-số-điện-thoại-khách-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--16a4f-ột-phần-số-điện-thoại-khách-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--16a4f-ột-phần-số-điện-thoại-khách-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-522976c8855654c1e49a",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_007 — Tìm theo số điện thoại không có công nợ hoặc không tồn tại",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"0999999001\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=0999999001&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35341,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:22:06.092Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"0999999001\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=0999999001&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2bf3f--công-nợ-hoặc-không-tồn-tại-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2bf3f--công-nợ-hoặc-không-tồn-tại-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2bf3f--công-nợ-hoặc-không-tồn-tại-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2bf3f--công-nợ-hoặc-không-tồn-tại-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-8982fd8dbbdacb01fa2a",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_008 — Tìm theo mã đơn hàng còn nợ khớp chính xác",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"26092768151ZN7YU\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=26092768151ZN7YU&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35631,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:22:42.106Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"26092768151ZN7YU\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=26092768151ZN7YU&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eb010--hàng-còn-nợ-khớp-chính-xác-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eb010--hàng-còn-nợ-khớp-chính-xác-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eb010--hàng-còn-nợ-khớp-chính-xác-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--eb010--hàng-còn-nợ-khớp-chính-xác-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-8d84e1b93199642e1e6c",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_009 — Tìm theo một phần mã đơn hàng còn nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"151ZN7YU\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=151ZN7YU&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 34964,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:23:18.413Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"151ZN7YU\" ⇒ 200 · 1 dòng · A7CN34 Nguyễn Thị Nợ 749973 · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=151ZN7YU&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--50ef8-một-phần-mã-đơn-hàng-còn-nợ-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--50ef8-một-phần-mã-đơn-hàng-còn-nợ-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--50ef8-một-phần-mã-đơn-hàng-còn-nợ-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--50ef8-một-phần-mã-đơn-hàng-còn-nợ-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-89fec3979dd16252600a",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_010 — Tìm theo mã đơn hàng đã hết nợ hoặc không tồn tại",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"ZZZ9999999999\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=ZZZ9999999999&page=0&size=10"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35398,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:23:54.047Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"ZZZ9999999999\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=ZZZ9999999999&page=0&size=10"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--dc83b-ã-hết-nợ-hoặc-không-tồn-tại-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--dc83b-ã-hết-nợ-hoặc-không-tồn-tại-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--dc83b-ã-hết-nợ-hoặc-không-tồn-tại-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--dc83b-ã-hết-nợ-hoặc-không-tồn-tại-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-52cd09d970da082dcee1",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_050_012 — Tìm công nợ theo tên khách không dấu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "\"A7CN34 Nguyen Thi No 749973\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=A7CN34%20Nguyen%20Thi%20No%20749973&page=0&size=10"
+                    },
+                    {
+                      "type": "hành vi thật",
+                      "description": "Tìm không dấu KHÔNG ra khách tên có dấu"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35294,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:253:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:24:30.166Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "\"A7CN34 Nguyen Thi No 749973\" ⇒ 200 · 0 dòng ·  · q fromDate=2026-09-01&toDate=2026-09-30&shopId=68151&keyword=A7CN34%20Nguyen%20Thi%20No%20749973&page=0&size=10"
+                        },
+                        {
+                          "type": "hành vi thật",
+                          "description": "Tìm không dấu KHÔNG ra khách tên có dấu"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--98fe8-nợ-theo-tên-khách-không-dấu-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--98fe8-nợ-theo-tên-khách-không-dấu-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--98fe8-nợ-theo-tên-khách-không-dấu-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--98fe8-nợ-theo-tên-khách-không-dấu-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-0dde863f549d9930c4a6",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 250,
+              "column": 3
+            },
+            {
+              "title": "34_060_001 — Danh sách công nợ rỗng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "vai gdv",
+                      "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                    },
+                    {
+                      "type": "đo",
+                      "description": "fromDate=2020-01-01&toDate=2020-01-02&shopId=68151&page=0&size=10 · 200 · 0"
+                    },
+                    {
+                      "type": "nguyên văn trạng thái rỗng",
+                      "description": "Trống"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 35768,
+                      "error": {
+                        "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m",
+                        "stack": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:277:3",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                          "column": 112,
+                          "line": 56
+                        },
+                        "snippet": "  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "column": 112,
+                            "line": 56
+                          },
+                          "message": "Error: Vai gdv KHÔNG đọc được báo cáo công nợ khách (SSHOP-401)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"SSHOP-401\"\u001b[39m\n\n  54 | \t\tconst b = await g.k.goiGhi(ps.page, ps.st, 'GET', API, { page: 0, size: 5 });\n  55 | \t\tghiChu(`vai ${vai}`, `API ${b?.status?.code} ${b?.status?.message ?? ''} · ${b?.page?.total_elements ?? '-'} khách`);\n> 56 | \t\texpect.soft(String(b?.status?.code), `Vai ${vai} KHÔNG đọc được báo cáo công nợ khách (${b?.status?.code})`).toBe('200');\n     | \t\t                                                                                                             ^\n  57 | \t} finally { await ps.dong(); }\n  58 | }\n  59 | /** Mở báo cáo bằng phiên phụ `vai` (mặc định shop) + bắt các response danh sách. */\n    at kiemVai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:56:112)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:277:3"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:25:06.128Z",
+                      "annotations": [
+                        {
+                          "type": "vai gdv",
+                          "description": "API SSHOP-401 Không có quyền truy cập · - khách"
+                        },
+                        {
+                          "type": "đo",
+                          "description": "fromDate=2020-01-01&toDate=2020-01-02&shopId=68151&page=0&size=10 · 200 · 0"
+                        },
+                        {
+                          "type": "nguyên văn trạng thái rỗng",
+                          "description": "Trống"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cc0c8-01-—-Danh-sách-công-nợ-rỗng-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cc0c8-01-—-Danh-sách-công-nợ-rỗng-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cc0c8-01-—-Danh-sách-công-nợ-rỗng-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cc0c8-01-—-Danh-sách-công-nợ-rỗng-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "column": 112,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-2681c2833d4cc2a37f4c",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 275,
+              "column": 2
+            },
+            {
+              "title": "34_060_006 — Huỷ giữa chừng khi thu hồi nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15153,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:308:11",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                          "column": 92,
+                          "line": 181
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                            "column": 92,
+                            "line": 181
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n\n   at ../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:308:11"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js",
+                            "column": 19,
+                            "line": 43
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n   at ../../19_quan_ly_khach_hang/tests/customer-page.js:43\n\n  41 | /** 🔴 Đăng ký chờ TRƯỚC hành động. */\n  42 | async function taiLaiBoi(page, hanhDong, { timeout = 60_000 } = {}) {\n> 43 | \tconst cho = page.waitForResponse((r) => API.test(r.url()) && r.status() !== 401, { timeout });\n     | \t                 ^\n  44 | \tawait hanhDong();\n  45 | \tconst res = await cho;\n  46 | \tawait page.waitForTimeout(1_000);\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:43:19)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:308:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:25:42.603Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b66d9-ỷ-giữa-chừng-khi-thu-hồi-nợ-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b66d9-ỷ-giữa-chừng-khi-thu-hồi-nợ-gdv/error-context.md"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b66d9-ỷ-giữa-chừng-khi-thu-hồi-nợ-gdv/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--b66d9-ỷ-giữa-chừng-khi-thu-hồi-nợ-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                        "column": 92,
+                        "line": 181
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-6d610461b69ffc70f201",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 303,
+              "column": 2
+            },
+            {
+              "title": "34_060_007 — Thu hồi nợ với số tiền bằng 0",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15467,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:330:12",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                          "column": 92,
+                          "line": 181
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                            "column": 92,
+                            "line": 181
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n\n   at ../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:330:12"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js",
+                            "column": 19,
+                            "line": 43
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n   at ../../19_quan_ly_khach_hang/tests/customer-page.js:43\n\n  41 | /** 🔴 Đăng ký chờ TRƯỚC hành động. */\n  42 | async function taiLaiBoi(page, hanhDong, { timeout = 60_000 } = {}) {\n> 43 | \tconst cho = page.waitForResponse((r) => API.test(r.url()) && r.status() !== 401, { timeout });\n     | \t                 ^\n  44 | \tawait hanhDong();\n  45 | \tconst res = await cho;\n  46 | \tawait page.waitForTimeout(1_000);\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:43:19)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:330:12"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:25:58.123Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cf195-u-hồi-nợ-với-số-tiền-bằng-0-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cf195-u-hồi-nợ-với-số-tiền-bằng-0-gdv/error-context.md"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cf195-u-hồi-nợ-với-số-tiền-bằng-0-gdv/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--cf195-u-hồi-nợ-với-số-tiền-bằng-0-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                        "column": 92,
+                        "line": 181
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-73d2eac1c246aa026b81",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 327,
+              "column": 3
+            },
+            {
+              "title": "34_060_008 — Thu hồi nợ vượt số tiền còn nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15466,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:330:12",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                          "column": 92,
+                          "line": 181
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                            "column": 92,
+                            "line": 181
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n\n   at ../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:330:12"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js",
+                            "column": 19,
+                            "line": 43
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n   at ../../19_quan_ly_khach_hang/tests/customer-page.js:43\n\n  41 | /** 🔴 Đăng ký chờ TRƯỚC hành động. */\n  42 | async function taiLaiBoi(page, hanhDong, { timeout = 60_000 } = {}) {\n> 43 | \tconst cho = page.waitForResponse((r) => API.test(r.url()) && r.status() !== 401, { timeout });\n     | \t                 ^\n  44 | \tawait hanhDong();\n  45 | \tconst res = await cho;\n  46 | \tawait page.waitForTimeout(1_000);\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:43:19)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:330:12"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:26:13.987Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--7508c--hồi-nợ-vượt-số-tiền-còn-nợ-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--7508c--hồi-nợ-vượt-số-tiền-còn-nợ-gdv/error-context.md"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--7508c--hồi-nợ-vượt-số-tiền-còn-nợ-gdv/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--7508c--hồi-nợ-vượt-số-tiền-còn-nợ-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                        "column": 92,
+                        "line": 181
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-a993c9f544162e68fa7d",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 327,
+              "column": 3
+            },
+            {
+              "title": "34_040_001 — Thu hồi nợ khách hàng sinh phiếu thu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15489,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:357:11",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                          "column": 92,
+                          "line": 181
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                            "column": 92,
+                            "line": 181
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first()\u001b[22m\n\n\n   at ../../19_quan_ly_khach_hang/tests/khach-ghi.js:181\n\n  179 | async function moChiTiet(page, tuKhoa) {\n  180 | \tawait taiLaiBoi(page, async () => {\n> 181 | \t\tawait khung(page).locator('input[placeholder=\"Tên / số điện thoại khách hàng\"]').first().fill(tuKhoa);\n      | \t\t                                                                                         ^\n  182 | \t});\n  183 | \tconst d = dong(page).filter({ hasText: tuKhoa }).first();\n  184 | \tawait expect(d, `Danh sách không ra khách \"${tuKhoa}\"`).toBeVisible({ timeout: 20_000 });\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:181:92)\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:44:8)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:357:11"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js",
+                            "column": 19,
+                            "line": 43
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n   at ../../19_quan_ly_khach_hang/tests/customer-page.js:43\n\n  41 | /** 🔴 Đăng ký chờ TRƯỚC hành động. */\n  42 | async function taiLaiBoi(page, hanhDong, { timeout = 60_000 } = {}) {\n> 43 | \tconst cho = page.waitForResponse((r) => API.test(r.url()) && r.status() !== 401, { timeout });\n     | \t                 ^\n  44 | \tawait hanhDong();\n  45 | \tconst res = await cho;\n  46 | \tawait page.waitForTimeout(1_000);\n    at taiLaiBoi (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/customer-page.js:43:19)\n    at Object.moChiTiet (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js:180:8)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js:357:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:26:29.856Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2779b-ợ-khách-hàng-sinh-phiếu-thu-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2779b-ợ-khách-hàng-sinh-phiếu-thu-gdv/error-context.md"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2779b-ợ-khách-hàng-sinh-phiếu-thu-gdv/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/test-output/playwright-results/cong-no-ghi.gdv-34-·-Công--2779b-ợ-khách-hàng-sinh-phiếu-thu-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/khach-ghi.js",
+                        "column": 92,
+                        "line": 181
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-d19c4c210bad0814e774",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 353,
+              "column": 2
+            },
+            {
+              "title": "34_060_003 — Đổi bộ lọc thì quay về trang đầu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Danh sách công nợ chỉ có 1 trang ở vai shop.",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                        "line": 395,
+                        "column": 9
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 26940,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-27T16:26:45.739Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Danh sách công nợ chỉ có 1 trang ở vai shop.",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/34_cong_no_khach_hang/tests/cong-no-ghi.gdv.spec.js",
+                            "line": 395,
+                            "column": 9
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5ab08c375b4a4de7364a-95ca15aa7c42227a6f08",
+              "file": "cong-no-ghi.gdv.spec.js",
+              "line": 390,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-27T16:15:22.209Z",
+    "duration": 710585.86,
+    "expected": 17,
+    "skipped": 1,
+    "unexpected": 18,
+    "flaky": 0
+  }
+}

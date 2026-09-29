@@ -1,0 +1,301 @@
+﻿,Chức năng,,PHIẾU ĐỀ XUẤT ĐẶT HÀNG VÀ PHÊ DUYỆT,,,,,,,,
+,Mã Testcase,,13_1_phieu_de_xuat_va_phe_duyet,,,,,,,,
+,Tổng các tình huống kiểm thử,,55,,,,,,,,
+,Chưa thực hiện,,55,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,PHIẾU ĐỀ XUẤT ĐẶT HÀNG VÀ PHÊ DUYỆT,,,,,,,,,,
+,030 — Lập phiếu đề xuất đặt hàng và gửi phê duyệt,,,,,,,,,,
+13_1_030_001,Tạo phiếu đề xuất - mở form và validate rỗng,"Đã đăng nhập, có quyền tạo phiếu đề xuất nhập hàng","1. Vào Kho hàng > Phiếu đề xuất đặt hàng
+2. Bấm Tạo phiếu đề xuất ở góc trên bên phải
+3. Xoá trống các trường đã điền sẵn
+4. Bấm Lưu phiếu",,"Màn lập phiếu mở ra với Mã phiếu đã sinh sẵn và sửa được. Lưu với form rỗng thì hệ thống chặn và báo lỗi ở trường bắt buộc Điểm bán / Kho nhận hàng cùng các trường bắt buộc khác; phiếu không được tạo. Vai cấp điểm bán không đổi được Kho nhận hàng, hệ thống tự điền.",,,,,,
+13_1_030_002,Kiểm tra hiển thị màn hình,"Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: - Có nút ""Lưu"" nút ""Hủy"", nút ""Quay lại"" và nút ""Gửi phê duyệt"" - Hiển thị các khu vực: Thông tin chung, Thông tin khác, Danh sách hàng hóa. - Thông tin chung: Mã phiếu, Điểm bán, Drop down list Nhà cung cấp, Ghi chú - Thông tin khác: Tổng sản phẩm, Người tạo, Ngày tạo - Ô tìm kiếm sản phẩm - Danh sách sản phẩm với các cột: STT, Sản phẩm, Đơn vị, Số lượng, Xoá",,,,,,
+13_1_030_003,Kiểm tra Tạo phiếu đề xuất đặt hàng nháp,"Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Nhập thông tin - Chọn sản phẩm Bim bim cay; số lượng 10 - Chọn sản phẩm Lược 0.3, số lượng 10
+6. Chọn Lưu",,Hiển thị Đã tạo phiếu đề xuất thành công - Trạng thái phiếu là đơn nháp,,,,,,
+13_1_030_004,Kiểm tra Tạo phiếu đề xuất đặt hàng,"Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Phiếu đề xuất ở case 224
+5. Chọn Gửi phê duyệt",,Hiển thị Đã tạo phiếu đề xuất thành công - Trạng thái phiếu là chờ duyệt,,,,,,
+13_1_030_005,"Kiểm tra Nút "" Huỷ""","Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Nhập thông tin - Chọn sản phẩm Bim bim cay; số lượng 10 - Chọn sản phẩm Lược 0.3, số lượng 10
+6. Chọn Huỷ",,Không lưu đơn đề xuất vừa tạo,,,,,,
+13_1_030_006,Kiểm tra Bỏ trống trường bắt buộc,"Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Bỏ trống trường bắt buộc
+6. Chọn Gửi phê duyệt",,Highlight focus vào điểm bán Hiển thị text Chọn điểm bán Hiển thị text ' Vui lòng chọn ít nhất 1 sản phẩm',,,,,,
+13_1_030_007,Kiểm tra Mã phiếu tự sinh,"Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất",,Mã phiếu sinh với công thức: DX và 2 số cuối của năm và tháng và ngày và STT,,,,,,
+13_1_030_008,Kiểm tra Sửa Mã phiếu tự sinh,"Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Sửa mã phiếu thành Mã phiếu cũ với chữ test
+6. Chọn Lưu",,Mã phiếu là Mã phiếu mới,,,,,,
+13_1_030_009,Kiểm tra Chọn điểm bán,"Vai `shop` đăng nhập, đang ở form tạo phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Điểm bán / Kho nhận hàng",,"Hiển thị popup với tiêu đề: ""Chọn điểm bán / kho"". Có nút đóng (X) ở góc phải.",,,,,,
+,"040 — Tra cứu, xem chi tiết và huỷ phiếu đề xuất",,,,,,,,,,
+13_1_040_001,Mở màn Phiếu đề xuất đặt hàng,N/A,"1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button, trường thông tin đúng và đủ tại màn hình: - Ô nhập Từ khóa (Mã phiếu / ghi chú) - Dropdown chọn Trạng thái - Ô chọn Khoảng thời gian (Từ ngày - Đến ngày) - Dropdown chọn Điểm bán / kho - Nút ""Tìm kiếm"" - Nút ""Xóa lọc"" - Nút ""+ Tạo phiếu đề xuất"" - Thông báo số lượng đơn đặt hàng NCC ở TCT cần xác nhận - Tab Phiếu đề xuất - Tab Phiếu đề xuất vượt hạn mức chờ duyệt - Bảng hiển thị 7 cột tiêu đề: STT, Mã phiếu, Cửa hàng / kho, Nhà cung cấp, Ngày nhập dự kiến, Trạng thái, Hành động - Cột ""Hành động"" có 3 icon: Thêm, Gộp/Tách và Sửa - Hiển thị dòng chữ: ""Phiếu đề xuất (Tổng số lượn phiếu)"" - Các icon điều hướng phụ: Hiển thị icon Làm mới, Cài đặt và Phóng to - Nút ""Back to Top""",,,,,,
+13_1_040_002,Xem chi tiết phiếu đề xuất khi có dữ liệu,"Đã đăng nhập, có quyền xem danh sách và chi tiết phiếu đề xuất; đã có ít nhất một phiếu","1. Vào Kho hàng > Phiếu đề xuất đặt hàng
+2. Gõ mã phiếu vào ô tìm kiếm
+3. Bấm vào một dòng trong bảng để mở chi tiết",,"Màn danh sách có ô tìm theo mã phiếu, ô Tất cả trạng thái để lọc trạng thái và ô chọn khoảng thời gian với các mốc nhanh Hôm nay, 7 ngày qua, 30 ngày qua, Tháng này. Bấm vào một dòng mở được chi tiết phiếu đúng mã đã chọn.",,,,,,
+13_1_040_003,Kiểm tra tìm kiếm theo Mã phiếu,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Nhập mã phiếu DX2606231201
+5. Click tìm kiếm",,Hiển thị đúng phiếu đề xuất có mã tương ứng.,,,,,,
+13_1_040_004,Kiểm tra lọc theo Trạng thái,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn trạng thái Đã đặt hàng
+5. Click tìm kiếm",,"Danh sách chỉ hiển thị các phiếu có trạng thái ""Đã đặt hàng"".",,,,,,
+13_1_040_005,Kiểm tra tìm Lọc theo Khoảng thời gian (Từ ngày - Đến ngày),"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn khoản thời gian 01/01/2025 đến nhày 31/12/2026
+5. Click tìm kiếm",,Chỉ hiển thị các phiếu được tạo trong khoảng thời gian đã chọn.,,,,,,
+13_1_040_006,Kiểm tra Lọc theo Điểm bán / kho cụ thể,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn Kho/Điểm bán là Pos mini bưu điện thành phố Sóc Trăng
+5. Click tìm kiếm",,Hiển thị danh sách phiếu thuộc kho/điểm bán đã chọn.,,,,,,
+13_1_040_007,Kiểm tra Kết hợp nhiều bộ lọc cùng lúc,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn/Nhập các thông tin trển tất cả các bộ lọc
+5. Click tìm kiếm",,Hiển thị đúng phiếu đề xuất đáp ứng đầy đủ điều kiện của các bộ lọc,,,,,,
+13_1_040_008,Kiểm tra Xoá lọc,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn trạng thái Đã đặt hàng
+5. Click tìm kiếm
+6. Click nút ""Xoá lọc""",,Reset toàn bộ các ô nhập/chọn về mặc định và hiển thị lại toàn bộ danh sách.,,,,,,
+13_1_040_009,Kiểm tra Tìm kiếm với từ khóa không tồn tại,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Nhập tìm kiếm mã hàng không tồn tại
+5. Click tìm kiếm",,Hiển thị thông báo bảng trống.,,,,,,
+13_1_040_010,Kiểm tra hiển thị tổng số phiếu,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng",,Con số cạnh tiêu đề (VD: 11 phiếu) phải khớp với tổng số dòng dữ liệu.,,,,,,
+13_1_040_011,Kiểm tra sắp xếp (nếu có click tiêu đề cột),"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn Cài đặt
+5. Chọn các cột, ghi cột",,Danh sách được sắp xếp theo Ngày tạo,,,,,,
+13_1_040_012,Kiểm tra Nút làm mới,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click nút làm mới",,Hệ thống tải lại dữ liệu mới nhất từ server.,,,,,,
+13_1_040_013,Kiểm tra Nút Phóng to/ Thu nhỏ màn hình,"Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click button Phóng to/ Thu nhỏ",,Màn hình Phóng to/ Thu nhỏ theo đúng thao tác,,,,,,
+13_1_040_014,"Kiểm tra Nút tách, gộp, chỉnh sửa","Vai `shop` đăng nhập, đang ở màn Phiếu đề xuất đặt hàng","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng",,"Chỉ hiển thị màu với các phiếu trạng thái là nháp, chờ duyệt Hiển thị màu xám với các phiếu trạng thái đã duyệt",,,,,,
+,050 — Duyệt hoặc từ chối phiếu đề xuất,,,,,,,,,,
+13_1_050_001,Kiểm tra hiển thị màn hình,"Vai `province` đăng nhập, đang ở bước chọn điểm bán","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Chọn điểm bán",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: - Hiển thị dòng chữ: ""Đã chọn 0 điểm bán"". + Sau khi chọn Cột 1: Hiển thị danh sách xã tương ứng - Cột 3 - Điểm bán/ Kho: + Mặc định khi chưa chọn cột 2 hiển thị chữ mờ ""Vui lòng chọn Xã / Phường trước"". + Sau khi chọn Cột 2: Hiển thị thanh lọc: Tất cả, Điểm bán, Kho. + Danh sách các cửa hàng kèm Radio button (nút tròn) để chọn. - Hiển thị nút 'Đóng', 'Xác nhận'",,,,,,
+13_1_050_002,"Kiểm tra Tìm kiếm Tỉnh, Xã, Kho/ Điểm bán","Vai `province` đăng nhập, đang ở bước chọn điểm bán","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click nhập tìm kiếm",,"Hiển thị Tỉnh, Xã, Kho/ Điểm bán tương ứng",,,,,,
+,060 — Chỉnh sửa phiếu đề xuất,,,,,,,,,,
+13_1_060_001,Kiểm tra hiển thị màn hình,"Vai `shop` đăng nhập, đang sửa một phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: - Có nút ""Cập nhật"" nút ""Hủy"", nút ""Quay lại"" và nút ""Gửi phê duyệt"" - Hiển thị các khu vực: Thông tin chung, Thông tin khác, Danh sách hàng hóa. - Thông tin chung: Mã phiếu, Điểm bán, Drop down list Nhà cung cấp, Ghi chú - Thông tin khác: Tổng sản phẩm, Người tạo, Ngày tạo - Ô tìm kiếm sản phẩm - Danh sách sản phẩm với các cột: STT, Sản phẩm, Đơn vị, Số lượng, Xoá",,,,,,
+13_1_060_002,Kiểm tra Sửa phiếu đề xuất đặt hàng nháp,"Vai `shop` đăng nhập, đang sửa một phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Nhập thông tin
+6. Chọn Lưu",,- Cập nhật thông tin vừa sửa - Trạng thái phiếu là đơn nháp,,,,,,
+13_1_060_003,Kiểm tra Sửa phiếu đề xuất đặt hàng trạng thái chờ duyệt,"Vai `shop` đăng nhập, đang sửa một phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Nhập thông tin
+6. Chọn Gửi phê duyệt",,- Cập nhật thông tin vừa sửa - Trạng thái phiếu là chờ duyệt,,,,,,
+13_1_060_004,"Kiểm tra Nút "" Huỷ""","Vai `shop` đăng nhập, đang sửa một phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Nhập thông tin
+6. Chọn Huỷ",,Không lưu đơn đề xuất vừa sửa,,,,,,
+13_1_060_005,Kiểm tra Bỏ trống trường bắt buộc,"Vai `shop` đăng nhập, đang sửa một phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Bỏ trống trường bắt buộc
+6. Chọn Gửi phê duyệt",,Highlight focus vào điểm bán Hiển thị text Chọn điểm bán,,,,,,
+13_1_060_006,Kiểm tra Sửa Mã phiếu tự sinh,"Vai `shop` đăng nhập, đang sửa một phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Sửa mã phiếu
+6. Chọn Lưu",,Mã phiếu là Mã phiếu mới,,,,,,
+13_1_060_007,Kiểm tra Chọn điểm bán,"Vai `shop` đăng nhập, đang sửa một phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tạo phiếu đề xuất
+5. Chọn điểm bán",,"Hiển thị popup với tiêu đề: ""Chọn điểm bán / kho"". Có nút đóng (X) ở góc phải.",,,,,,
+,070 — 🔴 **Gộp** phiếu đề xuất nhập hàng,,,,,,,,,,
+13_1_070_001,Kiểm tra hiển thị màn hình,"Vai `province` đăng nhập, đang ở màn gộp phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Gộp phiếu đề xuất nhập hàng",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: - Có nút ""Lưu"" nút ""Hủy"", nút ""Quay lại"" - Hiển thị các khu vực: Thông tin chung, Thông tin khác, Danh sách phiếu gộp, Danh sách sản phẩm sau gộp - Thông tin chung: Mã phiếu, Điểm bán, Drop down list Nhà cung cấp, Ghi chú, Ngày nhập dự kiến - Thông tin khác: Tổng sản phẩm, Người tạo, Ngày tạo - Ô tìm kiếm sản phẩm - Danh sách phiếu gộp với các cột:STT, Mã phiếu, Cửa hàng / kho, Nhà cung cấp, Ngày gửi, Ngày nhập dự kiến - Danh sách sản phẩm với các cột: STT, Sản phẩm, Đơn vị, Số lượng, Xoá - Nút Thêm phiếu gộp",,,,,,
+13_1_070_002,Kiểm tra Gộp phiếu đề xuất nhập hàng,"Vai `province` đăng nhập, đang ở màn gộp phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần gộp
+5. Nhập thông tin
+6. Chọn Lưu",,- Hiển thị Gộp phiếu thành công! - Ghi nhận số lượng sản phẩm = tổng các phiếu - Ghi nhận Lịch sử gộp / tách phiếu,,,,,,
+13_1_070_003,Kiểm tra Gộp phiếu các phiếu khác vào phiếu đã gộp,"Vai `province` đăng nhập, đang ở màn gộp phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần gộp
+5. Chọn thêm phiếu
+6. Chọn Lưu",,- Hiển thị Gộp phiếu thành công! - Ghi nhận số lượng sản phẩm = tổng các phiếu - Ghi nhận Lịch sử gộp / tách phiếu,,,,,,
+13_1_070_004,Kiểm tra nút Huỷ,"Vai `province` đăng nhập, đang ở màn gộp phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần gộp
+5. Nhập thông tin
+6. Chọn Huỷ",,- Không gộp các phiếu vừa chọn,,,,,,
+13_1_070_005,Kiểm tra nút Xoá phiếu khi có 2 phiếu,"Vai `province` đăng nhập, đang ở màn gộp phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần gộp
+5. Xoá 1 phiếu",,- Hiển thị 'Danh sách gộp cần ít nhất 2 phiếu. Vui lòng quay lại danh sách để chọn thêm!',,,,,,
+13_1_070_006,Kiểm tra nút Xoá phiếu khi có nhiều hơn 2 phiếu,"Vai `province` đăng nhập, đang ở màn gộp phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần gộp
+5. Xoá 1 phiếu",,- Cập nhật số lượng ở danh sách sản phẩm tương ứng,,,,,,
+,080 — 🔴 **Tách** phiếu đề xuất nhập hàng,,,,,,,,,,
+13_1_080_001,Kiểm tra hiển thị màn hình,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn Tách phiếu đề xuất nhập hàng",,"1. Hiển thị đầy đủ đúng logo, tiêu đề, các button: - Có nút ""Lưu nháp"" nút ""Hủy"", nút ""Gửi phê duyệt"" - Hiển thị Thông tin phiếu gốc: Cửa hàng/Kho, Mã phiếu gốc, Trạng thái, Nhà cung cấp và Ngày nhập dự kiến - Tổng giá trị đề xuất: số tiền, tổng sản phẩm gốc và ngày tạo gốc - Hiển thị danh sách các phiếu đã tách - Icon Sửa, Xoá - Nút ' Tách thêm phiếu' - Bảng sản phẩm có đầy đủ các cột: STT, Sản phẩm, Đơn vị, Tổng đề xuất, Phiếu 1, Phiếu 2, Các ô nhập liệu hiển thị mặc định (0)",,,,,,
+13_1_080_002,Kiểm tra Tách phiếu đề xuất nhập hàng nháp,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn phiếu cần tách
+5. Nhập thông tin
+6. Chọn Lưu nháp",,- Hiển thị Tách phiếu thành công! - Các phiếu vừa tách cập nhật trạng thái Phiếu nháp,,,,,,
+13_1_080_003,Kiểm tra Tách phiếu đề xuất nhập hàng,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn phiếu cần tách
+5. Nhập thông tin
+6. Chọn Gửi phê duyệt",,- Hiển thị Tách phiếu thành công! - Các phiếu vừa tách cập nhật trạng thái Chờ duyệt,,,,,,
+13_1_080_004,Kiểm tra nút tách thêm phiếu,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn phiếu cần tách
+5. Chọn tách thêm phiếu
+6. Nhập thông tin
+7. Chọn Gửi phê duyệt",,- Hiển thị Tách phiếu thành công! - Các phiếu vừa tách cập nhật trạng thái Chờ duyệt - Tách đúng số lượng đã chọn,,,,,,
+13_1_080_005,Kiểm tra nút Huỷ,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần tách
+5. Nhập thông tin
+6. Chọn Huỷ",,- Không tách các phiếu vừa chọn,,,,,,
+13_1_080_006,Kiểm tra nút Xoá phiếu khi có 2 phiếu,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn phiếu cần tách
+5. Xoá 1 phiếu",,Hiển thị ' Yêu cầu chia thành ít nhất 2 phiếu',,,,,,
+13_1_080_007,Kiểm tra nút Xoá phiếu khi có nhiều hơn 2 phiếu,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần tách
+5. Xoá 1 phiếu",,"- Cập nhật lại bảng Tách sản phẩm: số lượng sản phẩm, số lượng phiếu",,,,,,
+13_1_080_008,Kiểm tra chỉnh sửa thông tin phiếu,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần tách
+5. Chỉnh sửa Mã phiếu và ghi chú
+6. Ấn lưu",,- Cập nhật: Mã phiếu và Ghi chú,,,,,,
+13_1_080_009,Kiểm tra tự đồng điền số lượng còn lại vào phiếu bên cạnh,"Vai `province` đăng nhập, đang ở màn tách phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần tách
+5. Nhập số lượng sản phẩm vào 1 phiếu",,- Tự động fill số lượng còn lại ở phiếu bên cạnh,,,,,,
+,090 — 🔴 **Phê duyệt** phiếu đề xuất,,,,,,,,,,
+13_1_090_001,Kiểm tra vai trò Giám đốc xã duyệt tất cả số lượng trong phiếu đề xuất đặt hàng,"Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu trạng thái chờ duyệt
+5. Duyệt phiếu",,"Hiển thị Đã duyệt phiếu, trạng thái phiếu chuyển thành đã duyệt - Phiếu hiển thị lên cấp tỉnh/ TCT",,,,,,
+13_1_090_002,Kiểm tra vai trò Giám đốc xã duyệt một phần số lượng trong phiếu đề xuất đặt hàng,"Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu trạng thái chờ duyệt
+5. Duyệt phiếu",,"Hiển thị Đã duyệt phiếu, trạng thái phiếu chuyển thành đã duyệt - Số lượng xác nhận ghi nhận số lượng đã duyệt",,,,,,
+13_1_090_003,Kiểm tra vai trò Giám đốc xã huỷ phiếu,"Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Click chọn phiếu trạng thái chờ duyệt
+5. Chọn huỷ
+6. Nhập lí do huỷ phiếu
+7. Xác nhận huỷ",,- Trạng thái phiếu chuyền thành Từ chối,,,,,,
+13_1_090_004,Kiểm tra vai trò Giám đốc xã huỷ phiếu bỏ trống trường lí do,"Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn các phiếu cần gộp
+5. Nhập thông tin
+6. Chọn Lưu",,- Hiển thị Vui lòng nhập lí do,,,,,,
+13_1_090_005,Kiểm tra cấp Tỉnh gửi phiếu lên cấp TCT,"Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Chọn phiếu cần gửi
+5. Chọn gửi lên TCT
+6. Chọn điểm bán hàng
+7. Xác nhận gửi",,- Hiển thị phiếu ở trạng thái chờ duyệt cấp TCT,,,,,,
+13_1_090_006,Kiểm tra cấu hình hạn mức một bước duyệt,"Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Giám đốc xã duyệt bước 1",,"- Hiển thị bước duyệt là 1/1, hiển thị phiếu ở cấp tỉnh",,,,,,
+13_1_090_007,"Kiểm tra cấu hình hạn mức nhiều bước duyệt, bước 1 đồng ý phiếu","Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Giám đốc xã duyệt bước 1
+5. Tỉnh duyệt bước 2",,"- Hiển thị ở role giám đốc xã là 1/2, hiển thị ở role quản lý tỉnh là 2/2 - Role Giám đốc xã phải duyệt bước 1/2 mới hiển thị phiếu ở cấp tỉnh",,,,,,
+13_1_090_008,"Kiểm tra cấu hình hạn mức nhiều bước duyệt, bước 1 từ chối phiếu","Vai có quyền phê duyệt đăng nhập, đang ở màn phê duyệt phiếu đề xuất","1. User truy cập vào hệ thống
+2. Chọn kho hàng
+3. Chọn phiếu đề xuất đặt hàng
+4. Giám đốc xã từ chối bước 1
+5. Tỉnh duyệt bước 2",,"- Hiển thị ở role giám đốc xã là 1/2, không hiển thị lên cấp tỉnh",,,,,,

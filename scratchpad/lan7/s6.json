@@ -1,0 +1,633 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:11:54.450Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 87,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:11:54.706Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tao-sua-luu.shop.spec.js",
+      "file": "tao-sua-luu.shop.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "20 · Tạo/sửa chương trình có LƯU THẬT (vai shop, khôi phục sau mỗi case)",
+          "file": "tao-sua-luu.shop.spec.js",
+          "line": 132,
+          "column": 6,
+          "specs": [
+            {
+              "title": "20_010_001 — Mở form Thêm chương trình tích điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "thẻ Đơn hàng",
+                      "description": "flex-1 rounded-lg border p-4 cursor-pointer transition-all duration-200 border-[var(--app-primary-color)] bg-[var(--app-report-box-bg)]"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"zkehzK\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"LJViYf\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17866,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:11:55.052Z",
+                      "annotations": [
+                        {
+                          "type": "thẻ Đơn hàng",
+                          "description": "flex-1 rounded-lg border p-4 cursor-pointer transition-all duration-200 border-[var(--app-primary-color)] bg-[var(--app-report-box-bg)]"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"zkehzK\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"LJViYf\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--3c861-Thêm-chương-trình-tích-điểm-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0bc76c22d7271544141-15f2894aef5a1b7b8796",
+              "file": "tao-sua-luu.shop.spec.js",
+              "line": 427,
+              "column": 2
+            },
+            {
+              "title": "20_010_003 — Tạo chương trình tích điểm theo đơn hàng thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "body",
+                      "description": "{\"active\":true,\"campaignType\":0,\"orderAmountConditional\":null,\"orderAmountPerPoint\":10000,\"startTime\":\"25/09/2026\",\"endTime\":null,\"isAppliedAll\":true,\"customerGroupIds\":[],\"categoryIds\":null,\"scopeType\":\"TONG_CONG_TY\",\"scopes\":[]}"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"uymvWV\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VAQaEt\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19811,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:12:12.997Z",
+                      "annotations": [
+                        {
+                          "type": "body",
+                          "description": "{\"active\":true,\"campaignType\":0,\"orderAmountConditional\":null,\"orderAmountPerPoint\":10000,\"startTime\":\"25/09/2026\",\"endTime\":null,\"isAppliedAll\":true,\"customerGroupIds\":[],\"categoryIds\":null,\"scopeType\":\"TONG_CONG_TY\",\"scopes\":[]}"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"uymvWV\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VAQaEt\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--a7305-ểm-theo-đơn-hàng-thành-công-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0bc76c22d7271544141-0c66174163bd74c65679",
+              "file": "tao-sua-luu.shop.spec.js",
+              "line": 449,
+              "column": 2
+            },
+            {
+              "title": "20_020_001 — Mở form Thêm chương trình đổi điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "form",
+                      "description": "Tạo chương trình đổi điểm Đóng Xác nhận Thông tin chung Phạm vi áp dụng Sử dụng chương trình đổi điểm Cấu hình chương trình đổi điểm Tỷ lệ đổi điểm Điểm thành viên = Số tiền chi tiêu đ Thành viên có thể đổi 1 điểm để nhận ưu đãi trị giá 0 đ Thời gian áp dụng Thời gian bắt đầu Điều kiện Giá trị đơn hàng tối thiểu đ"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"GafpZl\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"kvmSIx\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17729,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:12:32.814Z",
+                      "annotations": [
+                        {
+                          "type": "form",
+                          "description": "Tạo chương trình đổi điểm Đóng Xác nhận Thông tin chung Phạm vi áp dụng Sử dụng chương trình đổi điểm Cấu hình chương trình đổi điểm Tỷ lệ đổi điểm Điểm thành viên = Số tiền chi tiêu đ Thành viên có thể đổi 1 điểm để nhận ưu đãi trị giá 0 đ Thời gian áp dụng Thời gian bắt đầu Điều kiện Giá trị đơn hàng tối thiểu đ"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"GafpZl\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"kvmSIx\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--607e0--Thêm-chương-trình-đổi-điểm-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0bc76c22d7271544141-4054df1f96cc6a203ea0",
+              "file": "tao-sua-luu.shop.spec.js",
+              "line": 466,
+              "column": 2
+            },
+            {
+              "title": "20_020_002 — Bấm Xác nhận khi chưa nhập gì ở form đổi điểm",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "lỗi",
+                      "description": "Vui lòng chọn thời gian bắt đầu"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"mZRGmP\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"JQBiCu\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 20211,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Số tiền chi tiêu phải lớn hơn 0\"\u001b[39m\nReceived string:    \u001b[31m\"Vui lòng chọn thời gian bắt đầu\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Số tiền chi tiêu phải lớn hơn 0\"\u001b[39m\nReceived string:    \u001b[31m\"Vui lòng chọn thời gian bắt đầu\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tao-sua-luu.shop.spec.js:491:27",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tao-sua-luu.shop.spec.js",
+                          "column": 27,
+                          "line": 491
+                        },
+                        "snippet": "  489 | \t\tghiChu('lỗi', loi.join(' | '));\n  490 | \t\texpect(loi.join(' | ')).toContain('Vui lòng chọn thời gian bắt đầu');\n> 491 | \t\texpect(loi.join(' | ')).toContain('Số tiền chi tiêu phải lớn hơn 0');\n      | \t\t                        ^\n  492 | \t\texpect(daGoi, `Vẫn gọi API ghi: ${daGoi.join(' ; ')}`).toEqual([]);\n  493 | \t});\n  494 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tao-sua-luu.shop.spec.js",
+                            "column": 27,
+                            "line": 491
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Số tiền chi tiêu phải lớn hơn 0\"\u001b[39m\nReceived string:    \u001b[31m\"Vui lòng chọn thời gian bắt đầu\"\u001b[39m\n\n  489 | \t\tghiChu('lỗi', loi.join(' | '));\n  490 | \t\texpect(loi.join(' | ')).toContain('Vui lòng chọn thời gian bắt đầu');\n> 491 | \t\texpect(loi.join(' | ')).toContain('Số tiền chi tiêu phải lớn hơn 0');\n      | \t\t                        ^\n  492 | \t\texpect(daGoi, `Vẫn gọi API ghi: ${daGoi.join(' ; ')}`).toEqual([]);\n  493 | \t});\n  494 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tao-sua-luu.shop.spec.js:491:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:12:50.548Z",
+                      "annotations": [
+                        {
+                          "type": "lỗi",
+                          "description": "Vui lòng chọn thời gian bắt đầu"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"mZRGmP\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"JQBiCu\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--c4185-hưa-nhập-gì-ở-form-đổi-điểm-shop/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--c4185-hưa-nhập-gì-ở-form-đổi-điểm-shop/test-failed-2.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--c4185-hưa-nhập-gì-ở-form-đổi-điểm-shop/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--c4185-hưa-nhập-gì-ở-form-đổi-điểm-shop/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--c4185-hưa-nhập-gì-ở-form-đổi-điểm-shop/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests/tao-sua-luu.shop.spec.js",
+                        "column": 27,
+                        "line": 491
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d0bc76c22d7271544141-3bfce1a41810d2e6c42f",
+              "file": "tao-sua-luu.shop.spec.js",
+              "line": 477,
+              "column": 2
+            },
+            {
+              "title": "20_020_003 — Tạo chương trình đổi điểm thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "body",
+                      "description": "{\"active\":true,\"orderAmountPerPoint\":1000,\"startTime\":\"25/09/2026\",\"endTime\":null,\"orderAmountConditional\":null,\"scopeType\":\"TONG_CONG_TY\",\"scopes\":[]}"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"SMldxx\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"DJaVbC\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23987,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:13:11.495Z",
+                      "annotations": [
+                        {
+                          "type": "body",
+                          "description": "{\"active\":true,\"orderAmountPerPoint\":1000,\"startTime\":\"25/09/2026\",\"endTime\":null,\"orderAmountConditional\":null,\"scopeType\":\"TONG_CONG_TY\",\"scopes\":[]}"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"SMldxx\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"DJaVbC\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--5318e-g-trình-đổi-điểm-thành-công-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0bc76c22d7271544141-c62c98439871eb739b02",
+              "file": "tao-sua-luu.shop.spec.js",
+              "line": 495,
+              "column": 2
+            },
+            {
+              "title": "20_040_004 — Trạng thái chương trình theo thời gian áp dụng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "get-campaign sau khi đặt bắt đầu = +2 ngày",
+                      "description": "{\"active\":false,\"startTime\":\"27/09/2026\"}"
+                    },
+                    {
+                      "type": "ô tích điểm",
+                      "description": "Chương trình tích điểm Ngừng hoạt động Thành viên chương trình tích điểm sẽ nhận được 1 điểm cho 1.000 đ chi tiêu Thời gian bắt đầu: 27/09/2026 Xem chi tiết Chỉnh sửa Chương trình đổi điểm Đang hoạt đ"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ewlPAp\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"CTyJjB\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "shop",
+                  "projectName": "shop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21482,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:13:35.566Z",
+                      "annotations": [
+                        {
+                          "type": "get-campaign sau khi đặt bắt đầu = +2 ngày",
+                          "description": "{\"active\":false,\"startTime\":\"27/09/2026\"}"
+                        },
+                        {
+                          "type": "ô tích điểm",
+                          "description": "Chương trình tích điểm Ngừng hoạt động Thành viên chương trình tích điểm sẽ nhận được 1 điểm cho 1.000 đ chi tiêu Thời gian bắt đầu: 27/09/2026 Xem chi tiết Chỉnh sửa Chương trình đổi điểm Đang hoạt đ"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ewlPAp\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"CTyJjB\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tao-sua-luu.shop-20-·-Tạo--9c390-rình-theo-thời-gian-áp-dụng-shop/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0bc76c22d7271544141-28c44a3fdd47fc7464cb",
+              "file": "tao-sua-luu.shop.spec.js",
+              "line": 511,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T12:11:54.106Z",
+    "duration": 122991.582,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

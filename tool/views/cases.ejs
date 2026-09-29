@@ -1,0 +1,88 @@
+<div class="flex"><h1><%= mod.name %></h1><a class="right small" href="/modules">← Danh sách module</a></div>
+<p class="sub mono small"><%= mod.id %> · <a href="/modules/<%= mod.id %>/inputs">Dữ liệu đầu vào của case →</a></p>
+
+<% if (inputs && inputs.stats.blocked > 0) { %>
+<div class="warn">
+  <b><%= inputs.stats.blocked %> case sẽ bị bỏ qua</b> vì thiếu input bắt buộc, đang tắt, hoặc chưa cho phép ghi dữ liệu:
+  <span class="mono small"><%= inputs.items.filter((i) => i.blockingReason).map((i) => i.caseId).join(', ') %></span>.
+  <div class="small" style="margin-top:6px"><a href="/modules/<%= mod.id %>/inputs">Mở màn dữ liệu đầu vào</a> để điền.</div>
+</div>
+<% } %>
+<% if (inputs && inputs.stats.withOverride > 0) { %>
+<div class="small muted" style="margin-bottom:12px"><%= inputs.stats.withOverride %> case đang chạy bằng input đã khai trên web (không phải giá trị trong test-input.json).</div>
+<% } %>
+
+<% if (error) { %><div class="err">Không liệt kê được test: <pre class="mono small" style="white-space:pre-wrap"><%= error %></pre></div><% } %>
+
+<% if (stats.untagged > 0) { %>
+<div class="warn">
+  <b><%= stats.untagged %> test không mở đầu bằng mã case</b> nên không tick lẻ được —
+  module này chỉ chạy được <b>nguyên module</b>.
+  <div class="small" style="margin-top:6px">Quy ước: title spec phải bắt đầu bằng mã case, ví dụ
+  <span class="mono">test('CNDB-ND-001 - ...')</span>.</div>
+</div>
+<% } %>
+
+<% if (stats.fixture > 0) { %>
+<div class="warn"><b><%= stats.fixture %> bước dựng dữ liệu</b> sẽ tự chạy kèm — không cần tick, không tính vào kết quả.</div>
+<% } %>
+
+<form method="post" action="/runs">
+<input type="hidden" name="moduleId" value="<%= mod.id %>">
+<div class="card">
+  <div class="row">
+    <div>
+      <label>Hồ sơ môi trường</label>
+      <select name="profileId" required>
+        <% profiles.forEach((p) => { %>
+          <option value="<%= p.id %>"><%= p.name %> — <%= p.baseUrl %><%= p.isProd ? '  [PROD]' : '' %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div style="flex:0 0 auto;display:flex;align-items:flex-end;gap:10px">
+      <label style="margin:0"><input type="checkbox" name="wholeModule" style="width:auto"> Chạy cả module</label>
+      <button class="primary">Chạy</button>
+    </div>
+  </div>
+  <div class="small muted" style="margin-top:10px">
+    Tổng <%= stats.total %> case — chạy được <%= stats.runnable %>,
+    chưa có script <%= stats.noScript %>, mồ côi <%= stats.orphan %>,
+    ghi dữ liệu <%= stats.writesData %>. Vai: <%= projects.join(', ') || '—' %>.
+  </div>
+</div>
+
+<table>
+  <tr>
+    <th style="width:28px"><input type="checkbox" id="all" style="width:auto"></th>
+    <th>Mã</th><th>Tên case</th><th>Trạng thái</th><th>Vai</th><th>Ghi DL</th>
+  </tr>
+  <% cases.forEach((c) => { %>
+  <tr>
+    <td><% if (c.selectable) { %><input type="checkbox" name="caseIds" value="<%= c.id %>" class="cb" style="width:auto"><% } %></td>
+    <td class="mono small"><%= c.id %></td>
+    <td>
+      <%= c.name %>
+      <% if (c.precondition || c.steps) { %>
+        <div class="small muted" style="margin-top:3px">
+          <% if (c.precondition) { %><b>Tiền đề:</b> <%= c.precondition %><br><% } %>
+          <% if (c.steps) { %><b>Bước:</b> <%= c.steps %><% } %>
+        </div>
+      <% } %>
+    </td>
+    <td>
+      <% if (c.status === 'RUNNABLE') { %><span class="badge b-run">chạy được</span>
+      <% } else if (c.status === 'NO_SCRIPT') { %><span class="badge b-no">chưa có script</span>
+      <% } else { %><span class="badge b-orphan">mồ côi</span><% } %>
+    </td>
+    <td class="small muted"><%= c.projects.join(', ') || '—' %></td>
+    <td><% if (c.writesData) { %><span class="badge b-write">ghi</span><% } %></td>
+  </tr>
+  <% }) %>
+</table>
+</form>
+
+<script>
+document.getElementById('all').addEventListener('change', (e) => {
+  for (const cb of document.querySelectorAll('.cb')) cb.checked = e.target.checked;
+});
+</script>

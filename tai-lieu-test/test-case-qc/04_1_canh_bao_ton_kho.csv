@@ -1,0 +1,146 @@
+﻿,Chức năng,,CẢNH BÁO TỒN KHO VÀ ĐỀ XUẤT NHẬP HÀNG,,,,,,,,
+,Mã Testcase,,04_1_canh_bao_ton_kho,,,,,,,,
+,Tổng các tình huống kiểm thử,,72,,,,,,,,
+,Chưa thực hiện,,72,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,CẢNH BÁO TỒN KHO VÀ ĐỀ XUẤT NHẬP HÀNG,,,,,,,,,,
+,010 — Theo dõi cảnh báo tồn kho,,,,,,,,,,
+04_1_010_001,Mở màn Cảnh báo tồn kho hiển thị đủ 9 nhóm cảnh báo,Đăng nhập vai TCT,1. Vào Kho hàng › Cảnh báo tồn kho,,"Dải thẻ có đủ 9 nhóm: Hết hàng, Dưới định mức Min, Vượt định mức Max, Sắp hết (7 ngày), Sắp hết (30 ngày), Tồn lâu ngày, Dự báo hết hàng, Sắp hết hạn, Đã hết hạn",,,,,,
+04_1_010_002,"Vai cấp trên chưa chọn điểm bán thì bảng trống, không báo lỗi",Vai TCT,"1. Mở màn, không chọn điểm bán",,Bảng hiện trạng thái trống; không có thông báo lỗi nào,,,,,,
+04_1_010_003,Chọn điểm bán thì bảng nạp dữ liệu của điểm bán đó,Vai TCT,"1. Bấm ô Điểm bán / Kho
+2. Chọn tỉnh, xã, điểm bán
+3. Xác nhận",,Bảng gọi lại API và hiển thị dữ liệu theo điểm bán đã chọn,,,,,,
+04_1_010_004,Cột bảng đúng với nhóm Hết hàng / Dưới Min / Vượt Max,Đã chọn điểm bán,1. Chọn nhóm Hết hàng,,"Bảng có các cột Sản phẩm, Đơn vị, Nguồn cấu hình, Tồn hiện tại, Tồn khả dụng, Ngưỡng Min, Ngưỡng Max, SL đã đề xuất, SL đã đặt hàng",,,,,,
+04_1_010_005,Nhóm Tồn lâu ngày ẩn cột Nguồn cấu hình và thêm cột tuổi tồn,Đã chọn điểm bán,1. Chọn nhóm Tồn lâu ngày,,"Không có cột Nguồn cấu hình; có các cột SL tồn lâu, Tuổi tồn cũ nhất, Tuổi tồn TB, Ngày nhập cũ nhất",,,,,,
+04_1_010_006,Nhóm Sắp hết hạn hiển thị cột Lô/Serial và SL sắp hết hạn,Đã chọn điểm bán,1. Chọn nhóm Sắp hết hạn,,"Bảng có cột Lô / Serial, SL sắp hết hạn, Trạng thái; không có cột Nguồn cấu hình",,,,,,
+04_1_010_007,"Hai nhóm hạn sử dụng đổi nút thao tác, không có nút tạo yêu cầu nhập",Đã chọn điểm bán,"1. Chọn nhóm Sắp hết hạn
+2. Tích một dòng",,Nút hiện ra là Chuyển sang Hàng xả kho và Xuất huỷ hàng hết hạn; KHÔNG có nút Tạo yêu cầu nhập hàng,,,,,,
+04_1_010_008,Tích chọn sản phẩm thì hiện nút Tạo yêu cầu nhập hàng kèm số dòng,"Đã chọn điểm bán, nhóm Hết hàng có dữ liệu",1. Tích 2 dòng,,"Nút Tạo yêu cầu nhập hàng xuất hiện phía trên bảng, nhãn kèm số dòng đang chọn",,,,,,
+04_1_010_009,Đổi nhóm cảnh báo thì bỏ chọn dòng đã tích,Đã tích dòng ở nhóm Hết hàng,1. Đổi sang nhóm khác,,Nút Tạo yêu cầu nhập hàng biến mất; không giữ lại lựa chọn của nhóm trước,,,,,,
+04_1_010_010,Bấm Tạo yêu cầu nhập hàng mở màn lập phiếu với sản phẩm điền sẵn,Đã tích dòng,1. Bấm Tạo yêu cầu nhập hàng,,"Hệ thống mở màn lập phiếu đề xuất, các sản phẩm đã chọn được điền sẵn",,,,,,
+04_1_010_011,Tìm kiếm SKU và tên sản phẩm ở thẻ Dự báo hết hàng,"Vai `tct` đăng nhập, đang ở màn Cảnh báo tồn kho (`StockAlertDashboard`), đã mở thẻ ""Dự báo hết hàng""","1. Nhập mã SKU đầy đủ của một sản phẩm đang có vào ô ""Tìm SKU, tên sản phẩm...""
+2. Chờ 0,5 giây cho bảng tự nạp lại
+3. Nhập một phần TÊN sản phẩm
+4. Nhập từ khoá không tồn tại",,Tìm theo SKU trả đúng sản phẩm đó; tìm theo phần tên trả các sản phẩm chứa từ khoá; từ khoá không tồn tại cho bảng rỗng.,,,,,,
+04_1_010_012,Phân trang thẻ Dự báo hết hàng,"Vai `tct` đăng nhập, đang ở màn Cảnh báo tồn kho (`StockAlertDashboard`), đã mở thẻ ""Dự báo hết hàng""; có hơn 20 dòng dữ liệu","1. Đọc số dòng mặc định của trang 1
+2. Sang trang 2
+3. Đổi số dòng mỗi trang sang 50
+4. Về trang cuối",,"Mặc định 20 dòng/trang; sang trang 2 hiện nhóm dòng tiếp theo, không lặp; đổi được số dòng mỗi trang; trang cuối hiện đúng số dòng còn lại.",,,,,,
+04_1_010_013,Nút làm mới bảng Dự báo hết hàng,"Vai `tct` đăng nhập, đang ở màn Cảnh báo tồn kho (`StockAlertDashboard`), đã mở thẻ ""Dự báo hết hàng""","1. Ghi lại số liệu một dòng
+2. Bấm nút làm mới trên thanh công cụ của bảng
+3. Quan sát",,Bảng gọi lại request và vẽ lại dữ liệu mới nhất; bộ lọc và từ khoá đang có được giữ nguyên.,,,,,,
+04_1_010_014,Cài đặt hiển thị cột của bảng Dự báo hết hàng,"Vai `tct` đăng nhập, đang ở màn Cảnh báo tồn kho (`StockAlertDashboard`), đã mở thẻ ""Dự báo hết hàng""","1. Mở nút cài đặt cột trên thanh công cụ
+2. Bỏ chọn 2 cột
+3. Đóng bảng cài đặt và quan sát
+4. Bật lại 2 cột đó",,"Hai cột bị bỏ chọn biến mất khỏi bảng, các cột còn lại giữ nguyên thứ tự; bật lại thì hiện lại.",,,,,,
+04_1_010_015,Nút phóng to / thu nhỏ bảng — phơi hành vi thật,"Vai `tct` đăng nhập, đang ở màn Cảnh báo tồn kho (`StockAlertDashboard`), đã mở thẻ ""Dự báo hết hàng""","1. Quan sát thanh công cụ của bảng
+2. Tìm nút phóng to toàn màn hình",,Bảng KHÔNG có nút phóng to / thu nhỏ; chỉ có nút tải lại và nút cấu hình cột.,,,,,,
+04_1_010_016,Chín thẻ cảnh báo hiển thị đủ và đúng nhãn,"Vai `tct` đăng nhập, đang ở màn Cảnh báo tồn kho",1. Đọc nhãn từng thẻ trên màn,,"Đủ 9 thẻ, đúng nhãn và thứ tự: Hết hàng · Dưới định mức Min · Vượt định mức Max · Sắp hết (7 ngày) · Sắp hết (30 ngày) · Tồn lâu ngày · Dự báo hết hàng · Sắp hết hạn · Đã hết hạn.",,,,,,
+,020 — Cài đặt định mức tồn tối thiểu và tối đa,,,,,,,,,,
+04_1_020_001,Mở màn Cài đặt cảnh báo từ nút trên màn Cảnh báo tồn kho,Vai TCT,1. Bấm Cài đặt cảnh báo,,"Mở màn Cài đặt cảnh báo với các thẻ Cài đặt nhanh, Theo từng sản phẩm, Đã cài đặt",,,,,,
+04_1_020_002,"Ba thẻ số đầu màn hiển thị Tổng phân loại SP, Đã cài ngưỡng, Chưa cài ngưỡng",Đã mở màn cài đặt,1. Quan sát đầu màn,,Hiện đủ ba thẻ số và giá trị là số,,,,,,
+04_1_020_003,Chọn Áp dụng cho = Sản phẩm chưa cài mức Max thì khoá ô Ngưỡng Min,Thẻ Cài đặt nhanh,1. Chọn Sản phẩm chưa cài mức Max,,Ô Ngưỡng Min bị khoá; ô Ngưỡng Max bắt buộc nhập,,,,,,
+04_1_020_004,Chọn Áp dụng cho = Sản phẩm chưa cài mức Min thì khoá ô Ngưỡng Max,Thẻ Cài đặt nhanh,1. Chọn Sản phẩm chưa cài mức Min,,Ô Ngưỡng Max bị khoá,,,,,,
+04_1_020_005,Nhãn nút áp dụng đổi theo lựa chọn Áp dụng cho,Thẻ Cài đặt nhanh,1. Đổi lần lượt bốn mức Áp dụng cho,,"Nhãn nút ở cuối thẻ đổi theo, ví dụ Áp dụng cho tất cả sản phẩm",,,,,,
+04_1_020_006,"Ngưỡng Min lớn hơn Ngưỡng Max thì bị chặn, không gửi request",Thẻ Cài đặt nhanh,"1. Nhập Min 100, Max 10
+2. Bấm áp dụng",,Hệ thống chặn lưu và nêu rõ lỗi; không gửi request ghi,,,,,,
+04_1_020_007,Nhập ngưỡng âm bị chặn,Thẻ Cài đặt nhanh,1. Nhập Min = -1,,Ô không nhận giá trị âm hoặc hiện lỗi validate,,,,,,
+04_1_020_008,Áp dụng cho tất cả sản phẩm phải qua màn xác nhận,Thẻ Cài đặt nhanh,"1. Chọn Tất cả sản phẩm
+2. Bấm áp dụng",,Hiện màn xác nhận; bấm Huỷ thì không gửi request ghi,,,,,,
+04_1_020_009,Cài đặt nhanh thành công cho nhóm Sản phẩm chưa cài ngưỡng,Điểm bán test,"1. Chọn Sản phẩm chưa cài ngưỡng
+2. Nhập Min/Max
+3. Áp dụng",,Hiện thông báo cài đặt thành công; ba thẻ số cập nhật lại,,,,,,
+04_1_020_010,Thẻ Theo từng sản phẩm: tìm và thêm sản phẩm cần cài ngưỡng,Điểm bán test,"1. Mở thẻ Theo từng sản phẩm
+2. Gõ tên hoặc mã sản phẩm
+3. Chọn sản phẩm",,Sản phẩm được thêm vào bảng với ô nhập Ngưỡng Min và Max,,,,,,
+04_1_020_011,Lưu cài đặt riêng cho từng sản phẩm thành công,Đã thêm sản phẩm,"1. Nhập Min/Max
+2. Bấm Lưu cài đặt",,Hiện thông báo thành công; sản phẩm xuất hiện ở thẻ Đã cài đặt với đúng ngưỡng,,,,,,
+04_1_020_012,Thẻ Đã cài đặt liệt kê đúng cấu hình vừa lưu,Đã lưu cấu hình,1. Mở thẻ Đã cài đặt,,Bảng chứa sản phẩm vừa cài với ngưỡng Min và Max đúng như đã nhập,,,,,,
+04_1_020_013,Hai thẻ con theo cấp đơn vị ở màn Cài đặt cảnh báo,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""","1. Đăng nhập vai cấp TỈNH, mở màn Cài đặt cảnh báo, đọc nhãn các thẻ con
+2. Đăng nhập vai cấp XÃ, làm lại
+3. Đăng nhập vai `tct`, làm lại",,"Cấp tỉnh: hai thẻ con ""Sản phẩm của tỉnh"" và ""Sản phẩm của Tổng công ty"". Cấp xã: ""Sản phẩm của xã"" và ""Sản phẩm của Tổng công ty""",,,,,,
+04_1_020_014,Khối tham khảo Cấu hình Tổng công ty,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""","1. Quan sát khối ""Cấu hình Tổng công ty"" phía trên các thẻ con
+2. Đọc danh sách SKU trong khối đó",,"Khối ""Cấu hình Tổng công ty"" hiện danh sách SKU mà TCT đã cài ngưỡng riêng, kèm số lượng cài mặc định.",,,,,,
+04_1_020_015,Tìm kiếm trong khối Cấu hình Tổng công ty,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""","1. Nhập mã SKU vào ô ""Tìm SKU, tên sản phẩm..."" NẰM TRONG khối Cấu hình Tổng công ty
+2. Quan sát
+3. Nhập một phần tên sản phẩm",,"Chỉ danh sách trong khối đó được lọc, các thẻ con phía dưới KHÔNG bị ảnh hưởng.",,,,,,
+04_1_020_016,Tìm kiếm ở thẻ Theo từng sản phẩm,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""; đang ở thẻ con ""Theo từng sản phẩm""","1. Nhập mã SKU → quan sát
+2. Nhập tên sản phẩm → quan sát
+3. Nhập barcode → quan sát",,SKU và tên sản phẩm đều tìm được.,,,,,,
+04_1_020_017,Ba thẻ số liệu tổng hợp ngưỡng cảnh báo,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""","1. Đọc ba thẻ số phía trên các thẻ con
+2. Đếm số dòng ở thẻ ""Đã cài đặt""
+3. Đối chiếu",,"Ba thẻ: ""Tổng phân loại SP"" (xanh dương) · ""Đã cài ngưỡng"" (xanh lá) · ""Chưa cài ngưỡng"". Tổng = Đã cài + Chưa cài; số ""Đã cài ngưỡng"" khớp số dòng ở thẻ ""Đã cài đặt"".",,,,,,
+04_1_020_018,Xoá sản phẩm khỏi danh sách đã cài ngưỡng,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""; thẻ con ""Đã cài đặt"" có ít nhất 1 dòng","1. Bấm xoá ở một dòng
+2. Đọc hộp thoại xác nhận
+3. Bấm ""Xoá""
+4. Đọc thông báo và bảng",,"Sau khi xoá: thông báo ""Xoá cấu hình thành công"", dòng biến mất, số ""Đã cài ngưỡng"" giảm 1 và ""Chưa cài ngưỡng"" tăng 1.",,,,,,
+04_1_020_019,Phạm vi Nhiều tỉnh chỉ cấu hình được sản phẩm Tổng công ty,"Vai `tct` hoặc vai có quyền nhiều tỉnh, đang ở màn Cài đặt cảnh báo","1. Đổi phạm vi sang ""Nhiều tỉnh / theo vùng miền""
+2. Chọn 2 tỉnh
+3. Quan sát các thẻ con và ba thẻ số liệu",,"KHÔNG có thẻ ""Sản phẩm của tỉnh"" — chỉ cấu hình được sản phẩm cấp Tổng công ty, vì ""sản phẩm của tỉnh"" là tập khác nhau ở mỗi tỉnh nên không có danh sách chung; backend cũng chặn. Ba thẻ số liệu tổng hợp cũng không hiện. Bảng ""Đã cài đặt"" có thêm cột ""Đơn vị"".",,,,,,
+04_1_020_020,Nhập chữ vào ô Min / Max — phơi hành vi thật,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""; đang ở thẻ con ""Theo từng sản phẩm""","1. Nhập chữ ""abc"" vào ô Min của một dòng
+2. Quan sát giá trị trong ô
+3. Làm lại với ô Max",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+04_1_020_021,Biên giá trị Min / Max và ô số ngày,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""; đang ở thẻ con ""Theo từng sản phẩm""","1. Nhập Min = 0 → lưu, ghi kết quả
+2. Nhập Min = -1 → ghi kết quả
+3. Nhập Min = 10.555 → ghi giá trị ô nhận
+4. Ô số ngày: nhập 365 → lưu; nhập 366 → ghi kết quả; nhập 10.5 → ghi kết quả",,"Min/Max: nhận 0, chặn số âm, làm tròn 2 chữ số thập phân. Ô số ngày: nhận 0–365, 366 bị kéo về 365, số thập phân bị làm tròn về số nguyên.",,,,,,
+04_1_020_022,Min lớn hơn Max — phơi hành vi thật,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""; đang ở thẻ con ""Theo từng sản phẩm""","1. Nhập Min = 100 và Max = 10 cho cùng một sản phẩm
+2. Lưu
+3. Quan sát",,"Kỳ vọng nghiệp vụ là phải chặn — cảnh báo ""dưới định mức Min"" và ""vượt định mức Max"" sẽ vô nghĩa nếu Min > Max.",,,,,,
+04_1_020_023,Huỷ hộp thoại xoá cấu hình thì không xoá gì,"Vai `province` đăng nhập, đang ở màn Cài đặt cảnh báo (`StockAlertConfigPage`), thẻ ""Cảnh báo tồn kho"", phạm vi ""Một đơn vị""; thẻ con ""Đã cài đặt"" có ít nhất 1 dòng","1. Bấm xoá ở một dòng
+2. Ở hộp thoại bấm ""Huỷ""
+3. Đọc lại bảng và ba thẻ số liệu",,Không gửi request xoá; dòng vẫn còn; ba thẻ số liệu không đổi.,,,,,,
+,030 — Nhập cấu hình định mức tồn từ tệp Excel,,,,,,,,,,
+04_1_030_001,Mở màn Import Excel từ thẻ Theo từng sản phẩm,Màn cài đặt cảnh báo,"1. Mở thẻ Theo từng sản phẩm
+2. Bấm Import Excel",,Mở màn Import cấu hình cảnh báo tồn với mục Tải file mẫu và Upload file,,,,,,
+04_1_030_002,Tải file mẫu thành công,Màn Import,1. Bấm Tải mẫu excel,,Tải về tệp.xlsx hoặc.xls,,,,,,
+04_1_030_003,"File sai định dạng bị chặn, không gửi lên server",Màn Import,1. Chọn tệp.pdf,,Hệ thống từ chối tệp; không gửi request nạp,,,,,,
+04_1_030_004,"Nạp file hợp lệ: ba số Tổng dòng, Đã áp dụng, Dòng lỗi đúng",Màn Import,1. Nạp tệp 2 dòng hợp lệ,,"Tổng dòng = 2, Đã áp dụng = 2, Dòng lỗi = 0",,,,,,
+04_1_030_005,File có dòng lỗi hiện bảng Danh sách dòng lỗi kèm lý do,Màn Import,1. Nạp tệp có 1 dòng SKU sai,,"Dòng lỗi = 1; bảng Danh sách dòng lỗi hiện số thứ tự dòng, mã sản phẩm và lý do",,,,,,
+04_1_030_006,Dòng có Min lớn hơn Max bị tính là dòng lỗi,Màn Import,1. Nạp tệp có dòng Min 100 Max 10,,Dòng đó nằm trong Danh sách dòng lỗi; không được áp dụng,,,,,,
+04_1_030_007,Nạp từng dòng độc lập: dòng đúng vẫn được áp khi có dòng sai,Màn Import,1. Nạp tệp gồm 1 dòng đúng và 1 dòng sai,,"Đã áp dụng = 1, Dòng lỗi = 1",,,,,,
+04_1_030_008,Nạp lại tệp đã sửa không tạo bản ghi trùng,Đã nạp một lần,"1. Sửa dòng lỗi
+2. Nạp lại",,Sản phẩm chỉ có một cấu hình duy nhất ở thẻ Đã cài đặt,,,,,,
+,040 — Cài đặt ngưỡng cảnh báo hạn sử dụng,,,,,,,,,,
+04_1_040_001,Vai cấp điểm bán không thấy thẻ Cảnh báo hết hạn,Vai Quản lý điểm bán,1. Mở màn Cài đặt cảnh báo,,Không có thẻ Cảnh báo hết hạn,,,,,,
+04_1_040_002,Vai TCT thấy thẻ Cảnh báo hết hạn và danh sách cấu hình,Vai TCT,1. Mở thẻ Cảnh báo hết hạn,,Hiện bảng danh sách cấu hình và nút Thêm cấu hình,,,,,,
+04_1_040_003,Mở màn Thêm cấu hình có hai thẻ Cấu hình và Phạm vi khu vực,Thẻ Cảnh báo hết hạn,1. Bấm Thêm cấu hình,,Màn mở ra có hai thẻ Cấu hình và Phạm vi khu vực,,,,,,
+04_1_040_004,Số ngày trước hạn mặc định là 30,Màn Thêm cấu hình,1. Quan sát trường số ngày,,Giá trị mặc định là 30,,,,,,
+04_1_040_005,"Đối tượng áp dụng mặc định Toàn bộ sản phẩm, không hiện trường phụ",Màn Thêm cấu hình,1. Quan sát,,Đối tượng áp dụng = Toàn bộ sản phẩm; không hiện ô Ngành hàng hay Sản phẩm,,,,,,
+04_1_040_006,Chọn Ngành hàng thì hiện ô chọn ngành hàng,Màn Thêm cấu hình,1. Chọn Ngành hàng,,"Hiện ô chọn ngành hàng, cho chọn nhiều",,,,,,
+04_1_040_007,Chọn Sản phẩm (SKU) thì hiện ô tìm sản phẩm và cột số ngày riêng,Màn Thêm cấu hình,"1. Chọn Sản phẩm (SKU)
+2. Tìm và thêm một sản phẩm",,"Sản phẩm vào danh sách, có ô Số ngày cảnh báo riêng cho từng dòng",,,,,,
+04_1_040_008,"Bỏ trống Tên cấu hình thì bị chặn, không gửi request",Màn Thêm cấu hình,"1. Bỏ trống tên
+2. Bấm lưu",,Hiện lỗi validate; không gửi request ghi,,,,,,
+04_1_040_009,Tạo cấu hình cảnh báo hết hạn thành công,Vai TCT,"1. Nhập tên, số ngày, phạm vi
+2. Lưu",,Cấu hình mới xuất hiện trong danh sách,,,,,,
+04_1_040_010,Xoá cấu hình vừa tạo,Đã tạo cấu hình test,"1. Bấm xoá trên dòng cấu hình
+2. Xác nhận",,Cấu hình biến mất khỏi danh sách,,,,,,
+,050 — Tính và tạo đề xuất nhập hàng theo tốc độ bán,,,,,,,,,,
+04_1_050_001,Mở màn Đề xuất nhập hàng từ nút trên màn Cảnh báo tồn kho,Vai TCT,1. Bấm Đề xuất nhập hàng,,Mở màn đề xuất nhập hàng,,,,,,
+04_1_050_002,Chưa chọn điểm bán thì không tính được gợi ý,Màn Đề xuất,1. Bấm Tính gợi ý khi chưa chọn điểm bán,,Hệ thống chặn hoặc bảng trống; không có kết quả sai,,,,,,
+04_1_050_003,Bấm Tính gợi ý trả về bảng Mặt hàng cần nhập bổ sung,Đã chọn điểm bán,1. Bấm Tính gợi ý,,"Bảng hiện với các cột Sản phẩm, Đơn vị, Lý do, Tồn hiện tại, Đang về, Bán/ngày, Còn bán được, Định mức cần đạt, NCC gợi ý, Số lượng đề xuất",,,,,,
+04_1_050_004,Cột Lý do hiển thị đúng nhóm lý do của hệ thống,Đã tính gợi ý,1. Đọc cột Lý do,,"Giá trị nằm trong nhóm Hết hàng, Dưới định mức, Hết trong 7 ngày, Hết trong 30 ngày, Chưa đủ lịch sử",,,,,,
+04_1_050_005,Mặt hàng chưa đủ lịch sử bán hiện dấu gạch ở cột Bán/ngày,Đã tính gợi ý,1. Tìm dòng có lý do Chưa đủ lịch sử,,"Cột Bán/ngày hiện dấu gạch, không hiện số",,,,,,
+04_1_050_006,Đổi điểm bán sau khi tính gợi ý thì xoá kết quả cũ,Đã tính gợi ý,1. Đổi sang điểm bán khác,,Bảng kết quả bị xoá; phải bấm Tính gợi ý lại,,,,,,
+04_1_050_007,Sửa được Số lượng đề xuất trực tiếp trong ô,Đã tính gợi ý,1. Sửa số lượng ở một dòng,,Ô nhận giá trị mới,,,,,,
+04_1_050_008,Bỏ tích dòng thì dòng đó không vào phiếu,Đã tính gợi ý,1. Bỏ tích một dòng,,Số dòng sẽ tạo phiếu giảm tương ứng,,,,,,
+04_1_050_009,Tạo phiếu đề xuất thành công,Đã tính gợi ý,"1. Bấm Tạo phiếu đề xuất
+2. Xác nhận",,Hiện thông báo đã tạo phiếu và chuyển sang danh sách Phiếu đề xuất đặt hàng,,,,,,
+,060 — Theo dõi phiếu đề xuất do hệ thống tự tạo,,,,,,,,,,
+04_1_060_001,Mở màn danh sách Phiếu đề xuất đặt hàng,Vai TCT,1. Vào Kho hàng › Phiếu đề xuất đặt hàng,,Màn danh sách mở với bảng phiếu,,,,,,
+04_1_060_002,Phiếu do hệ thống sinh có thẻ Tạo tự động dưới mã phiếu,Màn danh sách,1. Quan sát cột Mã phiếu,,Phiếu tự động có thẻ Tạo tự động; phiếu người lập thì không,,,,,,
+04_1_060_003,Lọc theo Mã phiếu,Màn danh sách,"1. Nhập mã phiếu
+2. Tìm kiếm",,Chỉ hiện phiếu khớp mã,,,,,,
+04_1_060_004,Lọc theo Trạng thái,Màn danh sách,"1. Chọn một trạng thái
+2. Tìm kiếm",,Mọi dòng đều đúng trạng thái đã chọn,,,,,,
+04_1_060_005,Lọc theo Khoảng thời gian,Màn danh sách,"1. Chọn khoảng ngày
+2. Tìm kiếm",,Request mang tham số thời gian; danh sách nạp lại,,,,,,
+04_1_060_006,Mở chi tiết phiếu xem mặt hàng và số lượng,Màn danh sách,1. Bấm mã phiếu,,"Mở chi tiết phiếu, hiện danh sách mặt hàng và số lượng",,,,,,

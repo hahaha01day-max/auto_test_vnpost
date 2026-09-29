@@ -1,0 +1,5 @@
+{'startTime': '2026-09-25T13:13:35.960Z', 'duration': 40459.97900000001, 'expected': 1, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 24_PQ_002 — Cán bộ Bưu điện xã xem công nợ nhân viên
+   @ đo : {"chonDiemBan":"chonDiemBan: locator.waitFor: Timeout 20000ms exceeded.","trong":{"st":{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"eefWBz"},"n":2},"ngoai":{"shopId":68038,"st":{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"eefWBz"},"
+   ! Error: Vai xã thấy công nợ điểm bán xã khác  expect(received).toBe(expected) // Object.is equality  Expected: 0 Received: 2

@@ -1,0 +1,234 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:08:29.919Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "loyalty-goc.tct.spec.js",
+      "file": "loyalty-goc.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "chup loyalty 20 — chụp cấu hình gốc",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "gốc",
+                  "description": "{\"tich\":{\"active\":true,\"campaignType\":0,\"orderAmountConditional\":30000,\"orderAmountPerPoint\":1000,\"startTime\":\"14/08/2026\",\"endTime\":null,\"noPointForDiscountedInvoice\":false,\"noPointForPointPaymentInvoice\":false,\"noPointForDiscountedProduct\":false,\"pointByCategory\":false,\"categoryIds\":null,\"isAppliedAll\":true,\"customerGroupIds\":[],\"scopeType\":\"DIEM_BAN\",\"scopes\":[{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"HN\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"HY\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"001\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"002\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"00\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"01\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"02\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"35\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"04\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"189565\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301239\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301240\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301241\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301243\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301244\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301245\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301250\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301251\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301253\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301254\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301255\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301256\"},{\"scopeType\":\""
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "tct",
+              "projectName": "tct",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:08:30.556Z",
+                  "annotations": [
+                    {
+                      "type": "gốc",
+                      "description": "{\"tich\":{\"active\":true,\"campaignType\":0,\"orderAmountConditional\":30000,\"orderAmountPerPoint\":1000,\"startTime\":\"14/08/2026\",\"endTime\":null,\"noPointForDiscountedInvoice\":false,\"noPointForPointPaymentInvoice\":false,\"noPointForDiscountedProduct\":false,\"pointByCategory\":false,\"categoryIds\":null,\"isAppliedAll\":true,\"customerGroupIds\":[],\"scopeType\":\"DIEM_BAN\",\"scopes\":[{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"HN\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"HY\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"001\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"002\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"00\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"01\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"02\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"35\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"04\"},{\"scopeType\":\"BUU_DIEN_TINH\",\"orgUnitCode\":\"189565\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301239\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301240\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301241\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301243\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301244\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301245\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301250\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301251\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301253\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301254\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301255\"},{\"scopeType\":\"DIEM_BAN\",\"orgUnitCode\":\"0192301256\"},{\"scopeType\":\""
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/loyalty-goc.tct-chup-loyalty-20-—-chụp-cấu-hình-gốc-tct/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5d2d8f2fb6b938c1183-899a257ababfed1bcda2",
+          "file": "loyalty-goc.tct.spec.js",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T10:08:29.655Z",
+    "duration": 9502.822,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

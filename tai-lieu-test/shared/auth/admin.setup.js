@@ -13,7 +13,8 @@ setup('đăng nhập và lưu session Admin', async ({ page }) => {
   const username = page.locator('input:visible:not([type="password"])').first();
   await username.fill(process.env.VNPOST_ACCOUNT);
   await password.fill(process.env.VNPOST_PASSWORD);
-  await page.getByRole('button', { name: /tiếp tục|đăng nhập|login|sign in/i }).click();
+  // 🔴 Trang đăng nhập có thêm nút "Đăng nhập bằng VNPOST SSO" ⇒ chỉ lấy nút submit.
+  await page.getByRole('button', { name: /tiếp tục|đăng nhập|login|sign in/i }).and(page.locator('button[type="submit"]')).click();
 
   const scopeLabel = process.env.VNPOST_SCOPE_LABEL || 'Admin';
   const scope = page.getByText(scopeLabel, { exact: true }).first();

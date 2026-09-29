@@ -1,0 +1,69 @@
+{'startTime': '2026-09-25T14:08:08.847Z', 'duration': 613750.469, 'expected': 13, 'skipped': 6, 'unexpected': 11, 'flaky': 0}
+
+ failed | 29_010_002 — Tổng hợp lại báo cáo cập nhật mốc thời gian
+   @ đo : {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"FXZOjX"} · "Tổng hợp báo cáo doanh thu thành công" · mốc 25/09/2026 - → 25/09/2026 -
+   ! Error: Mốc tổng hợp không đổi  expect(received).not.toBe(expected) // Object.is equality  Expected: not "25/09/2026 -"
+
+ failed | 29_020_001 — Xuất dữ liệu doanh thu ra Excel
+   ! Error: locator.click: Error: strict mode violation: locator('.ant-pro-page-container, main').first().getByRole('button', { name: /Xuất excel/i }) resolved to 3 elements:     1) <button type="button" class="ant-btn css-var-_r_3_ ant-btn-default ant-btn-color-default ant-btn-variant-outlined ant-dropdown-trigger">…</button> aka locator('form').getByRole('button', { name: 'download Xuất excel' })    
+
+ failed | 29_030_001 — Bảng lãi lỗ cân từ trên xuống
+   @ bảng : {"dt":1,"gt":2,"thuan":3,"gv":4,"gop":5,"cp":6,"rong":7}
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: -1 Received: 3
+
+ skipped | 29_030_002 — Kỳ không có phiếu chi thì lợi nhuận ròng bằng lợi nhuận gộp
+   @ bảng : {"dt":1,"gt":2,"thuan":3,"gv":4,"gop":5,"cp":6,"rong":7}
+   @ skip : Kỳ đang xem CÓ chi phí (6) — tỉnh làn không có kỳ nào không phiếu chi để đối chứng.
+
+ skipped | 29_050_001 — Mỗi dòng trị giá tồn kho tự kiểm chứng được
+   @ skip : Tỉnh làn chưa có dòng trị giá tồn kho ở tháng mặc định (tháng trước).
+
+ failed | 29_050_002 — Đối soát trị giá tồn kho với sổ cái
+   @ đo : tổng 0 · TK156 0 · chênh lệch 0
+   ! Error: Số dư TK 156 chính là tổng hệ thống (không đọc sổ cái) ⇒ chênh lệch luôn 0  expect(received).toBe(expected) // Object.is equality  Expected: false Received: true
+
+ failed | 29_040_001 — Chốt trị giá tồn kho theo tháng đổi trạng thái đơn vị
+   ! TimeoutError: locator.click: Timeout 15000ms exceeded. Call log:   - waiting for locator('.ant-pro-page-container, main').first().getByRole('button', { name: /^Chốt tồn kho/ }).first() 
+
+ failed | 29_210_016 — Chốt kho với Toàn bộ phạm vi gồm cấp dưới
+   @ tháng mặc định : 08/2026
+   @ kết quả chốt : Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc tháng chốt nhỏ hơn tháng có phiếu tồn đầu kỳ. Vui lòng kiểm tra và thử lại. Đã hiểu ·  · BE {"code":"200","message":"Thành công","label":"API_ST
+   ! Error: Chốt không thành công (Không thể chốt tồn kho kỳ tháng 08/2026 ⚠ Chưa thể chốt: 1 điểm bán Mã: AUTO7_T_01_A01 Lý do thường gặp: chưa chốt kỳ tháng trước (phải chốt tuần tự), hoặc thán)  expect(received).toMatch(expected)  Expected pattern: /Đã chốt tồn kho kỳ tháng|Đã chốt thành công/ Received string:  "Không thể chốt tồ
+
+ failed | 29_210_017 — Chốt kho chỉ với đơn vị trực thuộc trực tiếp
+   @ tháng mặc định : 08/2026
+   @ kết quả chốt : Chốt tồn kho theo tháng Tháng cần chốt Chỉ chốt được trong 2 tháng gần nhất (giới hạn lưu trữ dữ liệu thô). Phạm vi chốt Toàn bộ phạm vi (gồm cấp dưới) Chỉ shop trực thuộc TRỰC TIẾP Chỉ định 1 shop ⚠️ Sau khi chốt, mọi phiếu nhập/xuất/sửa trong tháng đã chốt sẽ bị chặn (block backdate). Snapshot báo
+   ! Error: Chốt không thành công (Chốt tồn kho theo tháng Tháng cần chốt Chỉ chốt được trong 2 tháng gần nhất (giới hạn lưu trữ dữ liệu thô). Phạm vi chốt Toàn bộ phạm vi (gồm cấp dưới) Chỉ shop)  expect(received).toMatch(expected)  Expected pattern: /Đã chốt tồn kho kỳ tháng|Đã chốt thành công/ Received string:  "Chốt tồn kho theo
+
+ skipped | 29_040_002 — Tổng hợp báo cáo tồn kho chạy nền và báo khi xong
+   @ banner : đang tổng hợp: false · sẵn sàng: false · Báo cáo Trị giá Tồn kho Báo cáo hàng ký gửi Tháng chốt: Phạm vi: AUTO7_TINH Chọn phạm vi Xã chưa chốt: 1 Shop chưa chốt: 1 Đang tổng hợp dữ liệu tạm thời... TỔNG TRỊ GIÁ TỒN KHO (HỆ THỐNG KHO) 0 đ = Σ
+   @ skip : Không có lượt chốt tồn kho nào vừa chạy ở phạm vi tỉnh làn (chốt đều bị "Chưa thể chốt" — 29_040_001) ⇒ không có banner tổng hợp.
+
+ failed | 29_210_002 — Cảnh báo số đơn vị chưa chốt trong phạm vi
+   @ đo : undefined · closing-stats [{"notClosedProvinceCount":1,"notClosedWardCount":1,"notClosedShopCount":1}]
+   ! Error: Không có dòng cảnh báo số đơn vị chưa chốt  expect(received).toBeTruthy()  Received: undefined
+
+ failed | 29_060_002 — Xuất NXT đặt tên tệp đúng quy ước
+   ! TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event "response"
+
+ skipped | 29_070_001 — Sản lượng bán hiện ngày phát sinh bán gần nhất
+   @ đo : ?page=0&size=10&chainId=626&fromMonth=2026-08-01&toMonth=2026-08-01 · 0 dòng · {}
+   @ skip : Tỉnh làn không có dòng "Sản lượng bán" trong khoảng tháng mặc định.
+
+ skipped | 29_080_001 — Vòng quay và số ngày tồn kho tính theo đúng kỳ đã lọc
+   @ đo : ?page=0&size=10&chainId=626&fromMonth=2026-08-01&toMonth=2026-08-01&avgMethod=ENDPOINTS · 0 dòng · {}
+   @ skip : Tỉnh làn không có dòng "Hiệu suất hàng hoá" trong khoảng tháng mặc định.
+
+ skipped | 29_090_001 — Lọc theo nhãn hàng bán chạy chậm luân chuyển hàng chết
+   @ đo : ?page=0&size=10&chainId=626&fromMonth=2026-08-01&toMonth=2026-08-01&avgMethod=ENDPOINTS&topPercent=20&slowDioDays=90 · 0 dòng · {}
+   @ skip : Tỉnh làn không có dòng "Bán chạy / Chậm luân chuyển" trong khoảng tháng mặc định.
+
+ failed | 29_130_002 — Chuyển báo cáo trên thanh nạp lại khung nội dung
+   @ menu : ["Báo Cáo Doanh Thu","Báo Cáo Tồn Kho","AUTOTEST_BC_099608"]
+   @ guest-token : 2 → 401
+   ! Error: expect(received).toBeLessThan(expected)  Expected: < 400 Received:   401
+
+ failed | 29_200_008 — Tìm kiếm Điểm bán hoặc kho trong bộ chọn phạm vi
+   @ cấp đầu : AUTO7_XA
+   @ tìm : "AUTO7_SHOP" → 
+   ! Error: Tìm "AUTO7_SHOP" không ra đơn vị  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false

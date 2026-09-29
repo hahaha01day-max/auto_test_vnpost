@@ -1,0 +1,87 @@
+PASS (18) FAIL (6)
+
+1. 19_020_006 — Huỷ thao tác thêm khách hàng giữa chừng
+   Error: Vai điểm bán KHÔNG thấy nút "Thêm khách hàng". Nút đang có: Xuất Excel · · ·
+   
+   [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+   
+   Expected: > [32m0[39m
+   Received:   [31m0[39m
+   
+     44 | 			'Vai điểm bán KHÔNG thấy nút "Thêm khách hàng". Nút đang có: ' +
+     45 | 				chuan((await khung(page).locator('button').allInnerTexts()).join(' · ')),
+   > 46 | 		).toBeGreaterThan(0);
+        | 		  ^
+     47 |
+     48 | 		const truoc = chuan(await khung(page).innerText());
+     49 | 		await nut.first().click();
+       at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/chi-tiet-khach.gdv.spec.js:46:5
+2. 19_050_005 — Vai điểm bán không ngừng hoạt động khách được
+   Error: Vai điểm bán thấy 1 nút "Ngừng hoạt động" trên chi tiết khách "A8KHNGS3D Khach test"
+   
+   [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+   
+   Expected: [32m0[39m
+   Received: [31m1[39m
+   
+     93 | 			description: chuan((await khung(page).locator('button').allInnerTexts()).join(' · ')),
+     94 | 		});
+   > 95 | 		expect(so, `Vai điểm bán thấy ${so} nút "Ngừng hoạt động" trên chi tiết khách "${ten}"`).toBe(0);
+        | 		                                                                                         ^
+     96 | 	});
+     97 |
+     98 | 	test('19_060_003 — Tab Đơn hàng khi khách chưa có đơn nào', async ({ page }) => {
+       at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/chi-tiet-khach.gdv.spec.js:95:92
+3. 19_120_002 — Tìm khách bằng ký tự đặc biệt
+   Error: Tìm bằng ký tự đại diện SQL "%_" trả về đúng tổng ban đầu (10261) ⇒ wildcard lọt xuống backend mà không được escape.
+   
+   [2mexpect([22m[31mreceived[39m[2m).[22mtoBeLessThan[2m([22m[32mexpected[39m[2m)[22m
+   
+   Expected: < [32m10261[39m
+   Received:   [31m10261[39m
+   
+     125 | 			`Tìm bằng ký tự đại diện SQL "${tuKhoa}" trả về đúng tổng ban đầu (${banDau}) ⇒ wildcard ` +
+     126 | 				'lọt xuống backend mà không được escape.',
+   > 127 | 		).toBeLessThan(banDau);
+         | 		  ^
+     128 | 	});
+     129 |
+     130 | 	test('19_120_003 — Tìm khách không dấu ra khách có dấu', async ({ page }) => {
+       at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/danh-sach-khach.gdv.spec.js:127:5
+4. 19_080_001 — Tab Sản phẩm đã mua hiện đủ cột
+   Error: Tab Sản phẩm đã mua thiếu cột "Đơn hàng"
+   
+   [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+   
+   Expected substring: [32m"Đơn hàng"[39m
+   Received string:    [31m"# · Ngày mua · Mã đơn hàng · Tên sản phẩm · Đơn vị · Số lượng · Thành tiền"[39m
+   
+     145 | 		const cot = (await khung(page).locator('.ant-table-thead th').allInnerTexts()).map(chuan);
+     146 | 		for (const nhan of ['Ngày mua', 'Tên sản phẩm', 'Đơn hàng', 'Loại', 'Số lượng', 'Tổng tiền']) {
+   > 147 | 			expect(cot.join(' · '), `Tab Sản phẩm đã mua thiếu cột "${nhan}"`).toContain(nhan);
+         | 			                                                                   ^
+     148 | 		}
+     149 | 	});
+     150 |
+       at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/chi-tiet-khach.shop.spec.js:147:71
+5. 19_010_003 — Tuỳ chỉnh cột hiển thị bật được cột đang tắt
+   Error: Màn KHÔNG có nút "Tùy chỉnh cột hiển thị" — kịch bản đòi bật cột "Nợ cần thu hiện tại" qua nút này. Nút đang có: Xuất Excel · Nhập Excel · Thêm khách hàng ·
+   
+   [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+   
+   Expected: > [32m0[39m
+   Received:   [31m0[39m
+   
+     56 | 			'Màn KHÔNG có nút "Tùy chỉnh cột hiển thị" — kịch bản đòi bật cột "Nợ cần thu hiện tại" ' +
+     57 | 				`qua nút này. Nút đang có: ${chuan((await khung(page).locator('button').allInnerTexts()).join(' · '))}`,
+   > 58 | 		).toBeGreaterThan(0);
+        | 		  ^
+     59 |
+     60 | 		await nut.first().click();
+     61 | 		await page.waitForTimeout(1_500);
+       at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/danh-sach-khach.province.spec.js:58:5
+
+... +1 more failures
+
+Time: 413011ms
+[full output: ~/Library/Application Support/rtk/tee/1790323084_playwright.log]

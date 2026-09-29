@@ -1,0 +1,190 @@
+,Chức năng,,QUẢN LÝ ĐẶT HÀNG,,,,,,,,,
+,Mã Testcase,,Baocao,,,,,,,,,
+,Tổng các tình huống kiểm thử,,38,,,,,,,,,
+,Chưa thực hiện,,20,,,,,,,,,
+,Đạt yêu cầu,,11,,,,,,,,,
+,Không đạt yêu cầu,,7,,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,,
+,,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện,,
+,,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,,
+,Báo cáo kho,,,,,,,,,,,
+Baocao_1,Kiểm tra giao diện,,"1. Truy cập Kho
+2. Chọn Báo cáo kho",TB,Báo cáo Trị giá Tồn kho,"Hiển thị đầy đủ:
+- Bộ lọc Tháng chốt
+- Chọn phạm vi
+- Nút Chốt tồn kho
+- Banner cảnh báo chưa chốt
+- Card Tổng trị giá tồn kho
+- Card TK156
+- Card Chênh lệch đối soát
+- Card SKU quản lý
+- Card SKU lệch giá vốn
+- Card Tổng tồn kho On-hand
+- Bảng danh sách SKU: SKU, TÊN SẢN PHẨM, ĐVT, SL ON-HAND (THỰC TẾ), ĐƠN GIÁ, VỐN BQGQ (VNĐ), TỔNG GIÁ TRỊ KHO (VNĐ), DƯ TK 156 TƯƠNG ỨNG (VNĐ), TRẠNG THÁI KẾ TOÁN","Hiển thị đầy đủ:
+- Bộ lọc Tháng chốt
+- Chọn phạm vi
+- Nút Chốt tồn kho
+- Banner cảnh báo chưa chốt
+- Card Tổng trị giá tồn kho
+- Card TK156
+- Card Chênh lệch đối soát
+- Card SKU quản lý
+- Card SKU lệch giá vốn
+- Card Tổng tồn kho On-hand
+- Bảng danh sách SKU: SKU, TÊN SẢN PHẨM, ĐVT, SL ON-HAND (THỰC TẾ), ĐƠN GIÁ, VỐN BQGQ (VNĐ), TỔNG GIÁ TRỊ KHO (VNĐ), DƯ TK 156 TƯƠNG ỨNG (VNĐ), TRẠNG THÁI KẾ TOÁN",Pass,,,,Báo cáo kho
+Baocao_2,Lọc báo cáo theo tháng,Có dữ liệu nhiều tháng,1. Chọn tháng khác và xem báo cáo,Cao,Báo cáo Trị giá Tồn kho,Hiển thị đúng dữ liệu của tháng được chọn,Hiển thị đúng dữ liệu của tháng được chọn,,,,,Báo cáo kho
+Baocao_3,Chọn phạm vi Tổng công ty,Có dữ liệu TCT,1. Chọn phạm vi Tổng công ty,Cao,Báo cáo Trị giá Tồn kho,Hiển thị số liệu tổng hợp toàn hệ thống,Hiển thị số liệu tổng hợp toàn hệ thống,,,,,Báo cáo kho
+Baocao_4,Chọn phạm vi Tỉnh,Có dữ liệu tỉnh,1. Chọn 1 tỉnh,Cao,Báo cáo Trị giá Tồn kho,Hiển thị số liệu đúng của tỉnh được chọn,Hiển thị số liệu đúng của tỉnh được chọn,,,,,Báo cáo kho
+Baocao_5,Chọn phạm vi Xã,Có dữ liệu xã,1. Chọn xã,TB,Báo cáo Trị giá Tồn kho,Hiển thị số liệu đúng phạm vi xã,Hiển thị số liệu đúng phạm vi xã,,,,,Báo cáo kho
+Baocao_6,Chọn phạm vi Điểm bán,Có dữ liệu điểm bán,1.Chọn điểm bán,TB,Báo cáo Trị giá Tồn kho,Hiển thị số liệu đúng điểm bán,Hiển thị số liệu đúng điểm bán,,,,,Báo cáo kho
+Baocao_7,Chốt tồn kho thành công,Chưa chốt tháng hiện tại,1. Nhấn Chốt tồn kho,Cao,Báo cáo Trị giá Tồn kho,"Hệ thống chốt tồn kho thành công 
+- Không thể tạo/chỉnh sửa các phiếu xuất/nhập kho khi đã chốt tồng kho","Hệ thống chốt tồn kho thành công 
+- Không thể tạo/chỉnh sửa các phiếu xuất/nhập kho khi đã chốt tồng kho",,,,,Báo cáo kho
+Baocao_8,Chốt tồn kho khi còn đơn phát sinh,Có giao dịch chưa xử lý,1. Thực hiện chốt,Cao,Báo cáo Trị giá Tồn kho,Hiển thị cảnh báo phù hợp hoặc không cho chốt,Hiển thị cảnh báo phù hợp hoặc không cho chốt,,,,,Báo cáo kho
+Baocao_9,Kiểm tra cảnh báo phạm vi chưa chốt,Có tỉnh/xã chưa chốt,1. Mở báo cáo,Cao,Báo cáo Trị giá Tồn kho,Hiển thị đúng số lượng đơn vị chưa chốt,Hiển thị đúng số lượng đơn vị chưa chốt,,,,,Báo cáo kho
+Baocao_10,Kiểm tra số liệu chênh lệch đối soát,Có dữ liệu lệch,1.Mở báo cáo,Cao,Báo cáo Trị giá Tồn kho,Giá trị chênh lệch hiển thị chính xác,Giá trị chênh lệch hiển thị chính xác,,,,,Báo cáo kho
+Baocao_11,Kiểm tra không ghi nhận phiếu xuất kho nháp,Trong tháng báo cáo có phiếu xuất kho nháp,1.Mở báo cáo,TB,Báo cáo Trị giá Tồn kho,Hiển thị đúng số lượng chưa trừ đi phiếu xuất kho nháp,Hiển thị đúng số lượng chưa trừ đi phiếu xuất kho nháp,,,,,Báo cáo kho
+Baocao_12,Kiểm tra không ghi nhận phiếu nhập kho nháp,Trong tháng báo cáo có phiếu nhập kho nháp,1.Mở báo cáo,TB,Báo cáo Trị giá Tồn kho,Hiển thị đúng số lượng cộng thêm phiếu nhập kho nháp,Hiển thị đúng số lượng cộng thêm phiếu nhập kho nháp,,,,,Báo cáo kho
+Baocao_13,Kiểm tra không ghi nhận phiếu bán hàng nháp,Trong tháng báo cáo có phiếu bán hàng nháp,1.Mở báo cáo,TB,Báo cáo Trị giá Tồn kho,Hiển thị đúng số lượng chưa trừ đi phiếu bán hàng nháp,Hiển thị đúng số lượng chưa trừ đi phiếu bán hàng nháp,,,,,Báo cáo kho
+Baocao_14,Kiểm tra tìm kiếm tỉnh trong phạm vi,,"1.Mở báo cáo
+2. Chọn Phạm vi
+3. Tìm kiếm",Cao,Báo cáo Trị giá Tồn kho,Hiển thị tỉnh và các xã/điểm bán/ kho thuộc tỉnh đó,Hiển thị tỉnh không hiển thị các xã/điểm bán/ kho thuộc tỉnh đó,Fail,,,,Báo cáo kho
+Baocao_15,Kiểm tra tìm kiếm bưu điện xã trong phạm vi,,"1.Mở báo cáo
+2. Chọn Phạm vi
+3. Tìm kiếm",Cao,Báo cáo Trị giá Tồn kho,Hiển thị điểm bán/ kho thuộc bưu điện  xã đó,Không hiển thị điểm bán/ kho thuộc bưu điện  xã đó,Fail,,,,Báo cáo kho
+Baocao_16,Kiểm tra tìm kiếm điểm bán/ kho trong phạm vi,,"1.Mở báo cáo
+2. Chọn Phạm vi
+3. Tìm kiếm",Cao,Báo cáo Trị giá Tồn kho,Hiển thị điểm bán/kho,Không hiển thị điểm bán/kho,Fail,,,,Báo cáo kho
+,Báo cáo đối soát,,,,,,,,,,,
+Baocao_17,Kiểm tra giao diện màn hình Đối soát công nợ NCC,,"1. Đăng nhập
+2. Vào Báo cáo đối soát",Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,"Hiển thị đầy đủ:
+- Tháng đối soát
+- Bộ lọc NCC
+- Nút Lọc báo cáo
+- Nút Xuất dữ liệu
+- Nút Tổng hợp lại báo cáo
+- Các card công nợ
+- Bảng danh sách NCC","Hiển thị đầy đủ:
+- Tháng đối soát
+- Bộ lọc NCC
+- Nút Lọc báo cáo
+- Nút Xuất dữ liệu
+- Nút Tổng hợp lại báo cáo
+- Các card công nợ
+- Bảng danh sách NCC",Pass,,,,Báo cáo đối soát
+Baocao_18,Lọc báo cáo theo tháng,Có dữ liệu nhiều tháng,1. Chọn tháng và lọc,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hiển thị dữ liệu đúng tháng,Hiển thị dữ liệu đúng tháng,,,,,Báo cáo đối soát
+Baocao_19,Lọc theo NCC,Có nhiều NCC,1. Nhập tên NCC và lọc,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Chỉ hiển thị NCC được chọn,Chỉ hiển thị NCC được chọn,Pass,,,,Báo cáo đối soát
+Baocao_20,Tổng hợp lại báo cáo,Có dữ liệu đối soát,1. Nhấn Tổng hợp lại báo cáo,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hệ thống tính toán lại dữ liệu mới nhất,Hệ thống tính toán lại dữ liệu mới nhất,Pass,,,,Báo cáo đối soát
+Baocao_21,Xuất dữ liệu Excel,Có dữ liệu,1. Nhấn Xuất dữ liệu,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,"File excel tải thành công, dữ liệu đúng","File excel tải thành công, dữ liệu đúng",Pass,,,,Báo cáo đối soát
+Baocao_22,Kiểm tra tổng nợ phải trả NCC,Có công nợ,1. Mở màn hình,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Giá trị bằng tổng công nợ tất cả NCC,Giá trị bằng tổng công nợ tất cả NCC,,,,,Báo cáo đối soát
+Baocao_23,Kiểm tra PO khớp đối soát,Có PO khớp,1. Mở màn hình,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hiển thị đúng số lượng PO khớp,Hiển thị đúng số lượng PO khớp,Fail,,,,Báo cáo đối soát
+Baocao_24,Kiểm tra PO lệch đối soát,Có PO lệch,1. Mở màn hình,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hiển thị đúng số lượng PO lệch,Hiển thị đúng số lượng PO lệch,Fail,,,,Báo cáo đối soát
+Baocao_25,Kiểm tra PO chưa đối soát,Có PO chưa đối soát,1. Mở màn hình,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hiển thị đúng số lượng,Hiển thị đúng số lượng,Pass,,,,Báo cáo đối soát
+Baocao_26,Mở chi tiết đối soát NCC,Có dữ liệu NCC,1. Nhấn Đối soát chi tiết,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Mở popup danh sách PO của NCC,Mở popup danh sách PO của NCC,Pass,,,,Báo cáo đối soát
+Baocao_27,Kiểm tra giao diện pop up Đối soát hóa đơn mua hàng,,1. Nhấn Đối soát chi tiết,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,"Hiển thị title Đối soát hóa đơn mua hàng - "" Tên NCC""
+- Hai bộ lọc : Trạng thái đối soát và Trạng thái thanh toán
+- Danh sách phiếu đối soát: Mã PO, Ngày PO, PO, Phiếu nhập kho, XML, PO ↔ XML, Trạng thái đối soát, TT Thanh toán, Lệch tiền","Hiển thị title Đối soát hóa đơn mua hàng - "" Tên NCC""
+- Hai bộ lọc : Trạng thái đối soát và Trạng thái thanh toán
+- Danh sách phiếu đối soát: Mã PO, Ngày PO, PO, Phiếu nhập kho, XML, PO ↔ XML, Trạng thái đối soát, TT Thanh toán, Lệch tiền",Pass,,,,Báo cáo đối soát
+Baocao_28,Xem chi tiết đối soát NCC,,1. Nhấn Đối soát chi tiết,Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hiển thị thông tin đôi soát đúng với thông tin khi thực hiện đối soát,Hiển thị số lượng XML =0,Fail,,,,Báo cáo đối soát
+Baocao_29,Kiểm tra bộ lọc trạng thái đối soát,,"1. Nhấn Đối soát chi tiết
+2. Chọn từng lựa chọn trong thạng thái đối soát",Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hiển thị thông tin đôi soát đúng với trạng thái đã chọn,Hiển thị thông tin đôi soát đúng với trạng thái đã chọn,Pass,,,,Báo cáo đối soát
+Baocao_30,Kiểm tra bộ lọc trạng thái thanh toán,,"1. Nhấn Đối soát chi tiết
+2. Chọn từng lựa chọn trong thạng thái thanh toán",Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,Hiển thị thông tin đôi soát đúng với thông tin khi thực hiện đối soát,Hiển thị thông tin đôi soát đúng với thông tin khi thực hiện đối soát,Pass,,,,Báo cáo đối soát
+Baocao_31,Kiểm tra giao diện drawer Chi tiết đối soát PO,,"1. Nhấn Đối soát chi tiết
+2. Chọn mã PO",Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,"Hiển thị thông tin của Phiếu nhập kho, Hóa đơn XML, Dòng sản phẩm
+","Hiển thị thông tin của Phiếu nhập kho, Hóa đơn XML, Dòng sản phẩm
+",Pass,,,,Báo cáo đối soát
+Baocao_32,Kiểm tra thông tin của Chi tiết đối soát PO,,"1. Nhấn Đối soát chi tiết
+2. Chọn mã PO",Cao,Báo cáo Đối soát Hóa đơn Mua hàng & Công nợ NCC,"Hiển thị thông tin của Phiếu nhập kho, Hóa đơn XML, Dòng sản phẩm
+",Hiển thị sai thông tin,Fail,,,,Báo cáo đối soát
+,Báo cáo doanh thu,,,,,,,,,,,
+Baocao_33,Kiểm tra giao diện,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Báo cáo",1. Truy cập Báo cáo>Báo cáo doanh thu,,Báo cáo doanh thu,"1. Header:
+- Tên màn hình
+- Button: Làm mới và Tổng hợp báo cáo tháng
+- Breadcrumb
+- Thời gian tổng hợp báo cáo lần cuối:
+2. Body: chia ra 3 khối
+- Khối 1: Bảng Doanh thu, Lợi nhuận gộp, Biên LN theo Tỉnh, Xã hoặc Điểm bán
+- Khối 2:
+ + Thống kê Doanh thu, Lợi nhuận gộp, Tỷ suất lợi nhuận
+ + Biểu đồ doanh thu, lợi nhuận
+ + Tỷ trọng ngành hàng
+- Khối 3: Top SKU
+ + Theo doanh thu
+ + Theo số lượng
+
+",,,,,,
+,Kiểm tra dữ liệu khi xem báo cáo theo tỉnh các tỉnh,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Báo cáo
+Tổng công ty có các bưu điện Tỉnh","1. Truy cập Báo cáo>Báo cáo doanh thu
+2. Quan sát  dữ liệu
+- Bảng Doanh thu, Lợi nhuận gộp, Biên LN; Thống kê
+- Thống kê Doanh thu, Lợi nhuận gộp, Tỷ suất lợi nhuận
+- Biểu đồ doanh thu, lợi nhuận
+- Tỷ trọng ngành hàng
+- Top SKU",,Báo cáo doanh thu,"1. Breadcrumb hiển thị Tổng công ty
+2. Bảng Doanh thu, Lợi nhuận gộp, Biên LN; Thống kê hiển thị:
+- đúng danh sách các Tỉnh thuộc Tổng công ty
+- đúng dữ liệu Doanh thu, Lợi nhuận gộp, Biên LN của từng Tỉnh
+3. Thống kê Doanh thu, lợi nhuận gộp, Tỷ suất lợi nhuận = Tổng dữ liệu của tất cả các Tỉnh trên bảng
+4. Tỷ trọng ngành hàng hiển thị đúng dữ liệu của tất cả các tỉnh trong bảng
+5. Top SKU:
+- Tab Theo doanh thu: Hiển thị đúng danh sách 10 SKU có doanh thu cao nhất; sắp xếp theo thứ tự từ doanh thu lớn nhất đến doanh thu nhỏ nhất
+- Tab Theo số lượng: Hiển thị đúng danh sách 10 SKU có số lượng bán ra cao nhất; sắp xếp theo thứ tự từ số lượng lớn nhất đến số lượng nhỏ nhất",,,,,,
+,Kiểm tra dữ liệu khi xem báo cáo theo các xã,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Báo cáo
+Bưu điện tỉnh có các bưu điện xã bên dưới","1. Truy cập Báo cáo>Báo cáo doanh thu
+2. Chọn 1 tỉnh trên bảng Doanh thu, Lợi nhuận gộp, Biên LN
+3. Quan sát dữ liệu
+- Bảng Doanh thu, Lợi nhuận gộp, Biên LN; Thống kê
+- Thống kê Doanh thu, Lợi nhuận gộp, Tỷ suất lợi nhuận
+- Biểu đồ doanh thu, lợi nhuận
+- Tỷ trọng ngành hàng
+- Top SKU",,Báo cáo doanh thu,"1. Breadcrumb hiển thị Tổng công ty/Tỉnh đã chọn
+2. Bảng Doanh thu, Lợi nhuận gộp, Biên LN; Thống kê hiển thị:
+- đúng danh sách các xã thuộc tỉnh đã chọn
+- đúng dữ liệu Doanh thu, Lợi nhuận gộp, Biên LN của từng xã
+3. Thống kê Doanh thu, lợi nhuận gộp, Tỷ suất lợi nhuận = Tổng dữ liệu của tất cả các xã trên bảng
+4. Tỷ trọng ngành hàng hiển thị đúng dữ liệu của tất cả các xã trong bảng
+5. Top SKU:
+- Tab Theo doanh thu: Hiển thị đúng danh sách 10 SKU có doanh thu cao nhất; sắp xếp theo thứ tự từ doanh thu lớn nhất đến doanh thu nhỏ nhất
+- Tab Theo số lượng: Hiển thị đúng danh sách 10 SKU có số lượng bán ra cao nhất; sắp xếp theo thứ tự từ số lượng lớn nhất đến số lượng nhỏ nhất",,,,,,
+,Kiểm tra dữ liệu khi xem báo cáo theo các điểm bán,"Đã đăng nhập vào hệ thống
+Có quyền thao tác chức năng Báo cáo
+Bưu điện xã có các điểm bán bên dưới","1. Truy cập Báo cáo>Báo cáo doanh thu
+2. Chọn 1 tỉnh trên bảng Doanh thu, Lợi nhuận gộp, Biên LN
+3. Chọn 1 xã trên bảng Doanh thu, Lợi nhuận gộp, Biên LN
+4. Quan sá dữ liệu
+- Bảng Doanh thu, Lợi nhuận gộp, Biên LN; Thống kê
+- Thống kê Doanh thu, Lợi nhuận gộp, Tỷ suất lợi nhuận
+- Biểu đồ doanh thu, lợi nhuận
+- Tỷ trọng ngành hàng
+- Top SKU",,Báo cáo doanh thu,"1. Breadcrumb hiển thị Tổng công ty/Tỉnh đã chọn/Xã đã chọn
+2. Bảng Doanh thu, Lợi nhuận gộp, Biên LN; Thống kê hiển thị:
+- đúng danh sách các điểm bán thuộc xã đã chọn
+- đúng dữ liệu Doanh thu, Lợi nhuận gộp, Biên LN của từng điểm bán
+3. Thống kê Doanh thu, lợi nhuận gộp, Tỷ suất lợi nhuận = Tổng dữ liệu của tất cả các điểm bán trên bảng
+4. Tỷ trọng ngành hàng hiển thị đúng dữ liệu của tất cả các điểm bán trong bảng
+5. Top SKU:
+- Tab Theo doanh thu: Hiển thị đúng danh sách 10 SKU có doanh thu cao nhất; sắp xếp theo thứ tự từ doanh thu lớn nhất đến doanh thu nhỏ nhất
+- Tab Theo số lượng: Hiển thị đúng danh sách 10 SKU có số lượng bán ra cao nhất; sắp xếp theo thứ tự từ số lượng lớn nhất đến số lượng nhỏ nhất",,,,,,
+Baocao_37,"Kiểm tra lọc Bảng Doanh thu, Lợi nhuận gộp, Biên LN của các tỉnh theo tháng",Có dữ liệu nhiều tháng,"1. Truy cập Báo cáo>Báo cáo doanh thu
+2. Xem danh sách bảng theo tỉnh, hoặc xã, hoặc điểm bán
+3. Tại bộ lọc tháng góc trên bên trái của bảng, chọn tháng lọc
+4. Quan sát bảng",,Báo cáo doanh thu,Hiển thị đúng dữ liệu của tháng được chọn,,,,,,
+Baocao_38,"Kiểm tra lọc Bảng Doanh thu, Lợi nhuận gộp, Biên LN theo tên Tỉnh/Xã/Điểm bán",,"1. Truy cập Báo cáo>Báo cáo doanh thu
+2. Xem danh sách bảng theo tỉnh, hoặc xã, hoặc điểm bán
+3. Tại bộ lọc theo tên, nhập tên của tỉnh/xã/điểm bán cần xem
+4. Quan sát bảng",,Báo cáo doanh thu,Danh sách hiển thị kết quả theo đúng tỉnh/xã/điểm bán đã được tìm kiếm,,,,,,

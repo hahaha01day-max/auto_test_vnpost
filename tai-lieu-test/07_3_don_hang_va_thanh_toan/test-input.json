@@ -1,0 +1,156 @@
+{
+  "_note": "Phân hệ 07_3 Cấu hình đơn hàng & thanh toán. 🔴 Tắt một phương thức thanh toán là chặn ngay khả năng thu tiền ở quầy; sửa cấu hình in hoá đơn đổi mẫu chứng từ giao cho khách.",
+  "cases": {
+    "07_3_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_3_010_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "macDinh": 7
+      },
+      "_blocked_cu": "Bật công tắc đổi trả áp cho toàn hệ thống",
+      "_goBoi": "27/09/2026"
+    },
+    "07_3_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "Phải bấm Lưu trên cấu hình toàn hệ thống",
+      "data": {
+        "giaTriSai": -1
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_3_010_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "🔴 Chưa chốt NGHĨA của giá trị 0 (không cho đổi trả, hay không giới hạn) và không có giới hạn trên. Case còn GHI cấu hình.",
+      "_goBoi": "27/09/2026"
+    },
+    "07_3_010_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "",
+      "_goBoi": "27/09/2026"
+    },
+    "07_3_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "07_3_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "07_3_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "_blocked": "Chưa có tệp logo sai định dạng / quá 5MB dựng sẵn trong repo",
+      "required": [],
+      "data": {
+        "fileLogoSai": ""
+      },
+      "allowMutation": true,
+      "_ghiChu": "Logo của điểm bán seed làn — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_3_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": true,
+      "_blocked": "Cần fixture ảnh 1 MB và ảnh đúng 5 MB — chưa có.",
+      "required": [],
+      "_ghiChu": "Logo của điểm bán seed làn — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_3_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Cần có sẵn ít nhất 1 tài khoản đã liên kết",
+      "_goBoi": "27/09/2026"
+    },
+    "07_3_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Cần trạng thái chưa liên kết tài khoản nào — không dựng lại được",
+      "_goBoi": "27/09/2026"
+    },
+    "07_3_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_3_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "07_3_040_002": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "tct",
+      "_blocked": "TẮT PHƯƠNG THỨC THANH TOÁN THẬT — quầy mất phương thức đó ngay lập tức",
+      "data": {
+        "phuongThuc": "Thẻ VISA"
+      }
+    },
+    "07_3_040_003": {
+      "enabled": false,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "allowMutation": false,
+      "_blocked": "Cần đơn đang mở dở đã chọn phương thức rồi mới tắt — khó dựng; và GHI cấu hình áp cho cả đơn vị."
+    },
+    "07_3_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "allowMutation": false,
+      "_note": "28/09 A12 — cau-hinh-don-hang.tct.spec.js giả lập mạng (PUT giữ lại), 🚫 ghi cấu hình chuỗi"
+    },
+    "07_3_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "07_3_PQ_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    }
+  }
+}

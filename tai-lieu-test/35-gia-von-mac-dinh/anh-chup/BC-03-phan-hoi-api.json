@@ -1,0 +1,97 @@
+{
+  "/chain-cost-method-config/system": {
+    "httpStatus": 200,
+    "status": {
+      "code": "200",
+      "message": "Thành công",
+      "label": "API_STATUS_SUCCESS",
+      "requestId": "PCLEhc"
+    },
+    "data": "MAC"
+  },
+  "/chain-cost-method-config/categories": {
+    "httpStatus": 200,
+    "status": {
+      "code": "200",
+      "message": "Thành công",
+      "label": "API_STATUS_SUCCESS",
+      "requestId": "mbwelb"
+    },
+    "data": [
+      {
+        "id": null,
+        "categoryId": 1,
+        "categoryName": "Thực phẩm",
+        "categoryCode": "CAT6262604288XP8C",
+        "parentId": 0,
+        "stockType": null,
+        "stockTypeName": null,
+        "effectiveStockType": "MAC",
+        "effectiveStockTypeName": "Bình quân gia quyền",
+        "source": "SYSTEM",
+        "inheritedFromCategoryName": null
+      },
+      {
+        "id": null,
+        "categoryId": 5,
+        "categoryName": "Đồ công nghệ",
+        "categoryCode": "DIEN_THOAI",
+        "parentId": 0,
+        "stockType": null,
+        "stockTypeName": null,
+        "effectiveStockType": "MAC",
+        "effectiveStockTypeName": "Bình quân gia quyền",
+        "source": "SYSTEM",
+        "inheritedFromCategoryName": null
+      },
+      {
+        "id": null,
+        "categoryId": 7,
+        "categoryName": "Điện thoại",
+        "categoryCode": "MAYXACHTAY",
+        "parentId": 5,
+        "stockType": null,
+        "stockTypeName": null,
+        "effectiveStockType": "MAC",
+        "effectiveStockTypeName": "Bình quân gia quyền",
+        "source": "SYSTEM",
+        "inheritedFromCategoryName": null
+      }
+    ],
+    "soDong": 346
+  },
+  "/chain-cost-method-config/apply-jobs?page=0&size=20": {
+    "httpStatus": 200,
+    "status": {
+      "code": "200",
+      "message": "Thành công",
+      "label": "API_STATUS_SUCCESS",
+      "requestId": "jZxqYY"
+    },
+    "data": [],
+    "soDong": 0,
+    "page": {
+      "total_pages": 0,
+      "has_next": false,
+      "has_previous": false,
+      "current_page": 0,
+      "total_elements": 0
+    }
+  },
+  "/chain-cost-method-config/preview-apply?stockType=FIFO": {
+    "httpStatus": 200,
+    "status": {
+      "code": "200",
+      "message": "Thành công",
+      "label": "API_STATUS_SUCCESS",
+      "requestId": "PGbWqU"
+    },
+    "data": {
+      "categoryName": null,
+      "affectedCategoryCount": 0,
+      "affectedProductCount": 4096,
+      "excludedSerialProductCount": 18,
+      "alreadyMatchedCount": 24
+    }
+  }
+}

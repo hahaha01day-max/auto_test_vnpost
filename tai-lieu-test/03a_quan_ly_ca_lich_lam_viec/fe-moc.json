@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "tests/them-sua-ca-ghi.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/employee/shift"
+      ],
+      "fe": [
+        "src/pages/timekeeping/ShiftPage.jsx"
+      ]
+    },
+    "tests/cau-hinh-cham-cong.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/employee/schedule"
+      ],
+      "fe": [
+        "src/pages/timekeeping/DrawerTimekeepingConfig.jsx"
+      ]
+    },
+    "tests/xep-lich.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/employee/schedule"
+      ],
+      "fe": [
+        "src/pages/timekeeping/DrawerSchedule.jsx",
+        "src/pages/timekeeping/ScheduleListPage.jsx"
+      ]
+    }
+  }
+}

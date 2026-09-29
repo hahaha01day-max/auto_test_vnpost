@@ -22,7 +22,7 @@ All minimum fields exist. Technical details may already be present.
 ### READY_WITH_CODE_LOOKUP
 
 Business intent, role, steps, and expected result are clear. Route, API,
-payload, and locator can be resolved from `sofin-business`.
+payload, and locator can be resolved from `vnpost-web`.
 
 Examples:
 

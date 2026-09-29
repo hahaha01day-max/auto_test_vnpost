@@ -1,0 +1,43 @@
+{'startTime': '2026-09-25T11:26:05.103Z', 'duration': 959119.7320000001, 'expected': 3, 'skipped': 0, 'unexpected': 7, 'flaky': 0}
+
+ failed | 20_060_001 — Đơn dưới điều kiện tối thiểu không được dùng điểm
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 1 × 100k · đổi điểm {"orderAmountConditional":300000}
+   @ đo : {"nutKhoa":false,"tb":"","coOtp":false,"modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Thanh toán bằng điểm Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 100.000 đ Bảng tính nhanh Nhập số tiề",
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"ijAvQJ"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"TeFOSo"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""
+
+ failed | 20_060_003 — Khách không đủ điểm vẫn cố dùng điểm
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 4 × 100k · đổi điểm {}
+   @ đo : {"nutKhoa":false,"tb":"","coOtp":false,"modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Thanh toán bằng điểm Đa phương thức Tổng tiền đơn hàng 400.000 đ Tổng tiền cần thanh toán 400.000 đ Bảng tính nhanh Nhập số tiề",
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"aITXDH"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"oiqNtF"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""
+
+ failed | 20_060_004 — Số tiền đổi điểm lớn hơn giá trị đơn
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 1 × 100k · đổi điểm {}
+   @ modal : undefined điểm · Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Thanh toán bằng điểm Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 100.000 đ Bảng tính nhanh Nhập số tiền khách đưa đ Tiền trả lại khách 
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"blZrhQ"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"WMlqkX"}]
+   ! Error: expect(received).toMatch(expected)  Expected pattern: /Tổng tiền cần thanh toán\s*0\s*đ/ Received string:  "Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Thanh toán bằng điểm Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 1
+
+ failed | 20_060_005 — Dùng điểm khi chương trình đổi điểm chưa tới ngày bắt đầu
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 1 × 100k · đổi điểm {"startTime":"26/09/2026"}
+   @ đo : {"nutKhoa":null,"tb":"","coOtp":false,"modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 100.000 đ Bảng tính nhanh Nhập số tiền khách đưa đ Tiền tr","
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"MrRvRB"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"LvdZJO"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""
+
+ failed | 20_060_006 — Dùng điểm khi chương trình đổi điểm đã kết thúc
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 1 × 100k · đổi điểm {"startTime":"15/09/2026","endTime":"24/09/2026"}
+   @ đo : {"nutKhoa":null,"tb":"","coOtp":false,"modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 100.000 đ Bảng tính nhanh Nhập số tiền khách đưa đ Tiền tr","
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"GuJIle"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"lnGSei"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""
+
+ failed | 20_060_007 — Dùng điểm khi không có chương trình đổi điểm nào hoạt động
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 1 × 100k · đổi điểm {"active":false}
+   @ đo : {"nutKhoa":null,"tb":"","coOtp":false,"modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 100.000 đ Bảng tính nhanh Nhập số tiền khách đưa đ Tiền tr","
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"JxuNzl"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"WuJplh"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""
+
+ failed | 20_060_008 — Dùng điểm ở điểm bán ngoài phạm vi áp dụng
+   @ dựng : khách A7KH195598852 có 300 điểm · giỏ 1 × 100k · đổi điểm {}
+   @ đo : {"nutKhoa":null,"tb":"","coOtp":false,"modal":"Thanh toán Hình thức thanh toán Thanh toán hết Trả góp Thanh toán sau Phương thức thanh toán Tiền mặt Chuyển khoản Quét QR Đa phương thức Tổng tiền đơn hàng 100.000 đ Tổng tiền cần thanh toán 100.000 đ Bảng tính nhanh Nhập số tiền khách đưa đ Tiền tr","
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"tpPIlJ"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"ikjges"}]
+   ! Error: Bị chặn mà không có thông báo lý do  expect(received).not.toBe(expected) // Object.is equality  Expected: not ""

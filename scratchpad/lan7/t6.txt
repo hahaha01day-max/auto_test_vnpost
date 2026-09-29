@@ -1,0 +1,12 @@
+{'startTime': '2026-09-25T12:06:37.346Z', 'duration': 236627.351, 'expected': 4, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 20_050_013 — Đạt mức tối thiểu nhưng có sản phẩm giảm giá
+   @ CTKM rác : 697 A7KH19_KM_20_050_013_067644
+   @ cấu hình tạm : {"scopeType":"DIEM_BAN","scopes":"171 đơn vị","noPointForDiscountedProduct":true,"orderAmountPerPoint":1000,"orderAmountConditional":101000}
+   @ giỏ : {"truocVat":190000,"vat":0,"sauVat":190000,"canThanhToan":190000}
+   @ đơn : 375
+   @ giảm dòng SP_FIFO : 10000
+   @ điểm : {"diem":100,"dong":1} · kỳ vọng 0
+   @ khôi phục : [{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"jhHAjt"},{"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"rjKFDY"}]
+   @ dừng CTKM rác : 697 → {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"ndVDWc"}
+   ! Error: Khách KHÔNG được tích mà vẫn có điểm  expect(received).toBe(expected) // Object.is equality  Expected: 0 Received: 100

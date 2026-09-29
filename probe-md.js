@@ -1,0 +1,10 @@
+const { chromium } = require("playwright");
+require("./tai-lieu-test/shared/config");
+const { storageStateFor } = require("./tai-lieu-test/shared/auth/accounts");
+const { moTrang } = require("./tai-lieu-test/shared/auth/login");
+(async()=>{const b=await chromium.launch();const c=await b.newContext({storageState:storageStateFor("shop"),viewport:{width:1440,height:1000}});const page=await c.newPage();
+page.on('response',async r=>{if(/\/shops\/\d+\/inventory/.test(r.url())&&r.request().method()!=='GET')console.log('RES',r.request().method(),r.url().slice(40),(r.request().postData()||'').slice(0,300),(await r.text()).slice(0,200))});
+await moTrang(page,process.env.VNPOST_BASE_URL+'/inventory/warehouses','shop'); await page.waitForTimeout(3000);
+await page.locator('.ant-table-tbody tr.ant-table-row').filter({hasText:'AUTO8_SHOP'}).first().locator('button').filter({has:page.locator('.anticon-edit')}).click();
+const dr=page.locator('.ant-drawer-open').filter({hasText:'Sửa kho hàng'}).last(); await dr.locator('.ant-form-item').filter({hasText:'Kho mặc định'}).locator('.ant-switch').click();
+await dr.getByRole('button',{name:'Xác nhận'}).click(); await page.waitForTimeout(4000); await b.close()})();

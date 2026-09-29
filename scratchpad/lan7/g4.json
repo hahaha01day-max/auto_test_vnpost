@@ -1,0 +1,1618 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests",
+        "testIgnore": [
+          "vnpost-org.playwright.spec.js"
+        ],
+        "testMatch": [
+          "/(vnpost-org|org\\.standard)\\.(playwright\\.)?spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.097Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 90,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.307Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_manager (Quản lý Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.400Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-08f00-ager-Quản-lý-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f8f6b4aac219a09d704d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai ward (Bưu điện Xã)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 82,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.484Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-ward-Bưu-điện-Xã--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2d044c7a88341d00c4f3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop (Quản lý điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 77,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.570Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-shop-Quản-lý-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f079c285dce6a723e5ab",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop (Nhân viên điểm bán seed (AUTO_SHOP))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 73,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.650Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-edaa4-ên-điểm-bán-seed-AUTO-SHOP--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-21ce4f527c1091b58dc7",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_shop2 (Nhân viên điểm bán seed (tồn đầu kỳ))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 94,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.726Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2bfc1-n-điểm-bán-seed-tồn-đầu-kỳ--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f0046fb8388f9f34d70f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai seed_gdv (Giao dịch viên điểm bán seed)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 96,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.824Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-f973e-ao-dịch-viên-điểm-bán-seed--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-279e54db4435dd5b2b7f",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_cung_ung (Quản lý cung ứng Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:44.925Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-a2b0c-n-lý-cung-ứng-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-dc10cbea1b53e3115f7d",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_ke_toan (Kế toán Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 87,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:45.018Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-b0041--toan-Kế-toán-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-810d07ac3b8180d5b8cd",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai tct_marketing (Marketing Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 88,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:45.108Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-1d056-ing-Marketing-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-ad384e1a74119c1d55a2",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_cung_ung (Quản lý cung ứng Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 82,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:45.201Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-4db67--ung-Quản-lý-cung-ứng-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-3fc0d4a301467ed2a16a",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province_ke_toan (Kế toán Tỉnh (vai PROVINCE_ACCOUNTANT))",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 86,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:45.286Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-2a396-nh-vai-PROVINCE-ACCOUNTANT--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2ad6ba1bf90fea1e4edf",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai shop_nhan_vien (Nhân viên khác điểm bán)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:45.375Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-v-bd39c-en-Nhân-viên-khác-điểm-bán--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-2720920e7dafcea1da21",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 95,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T16:30:45.459Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "gan-nv.tct.spec.js",
+      "file": "gan-nv.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "32_170 · Gán nhân viên (xã rác, vai tct)",
+          "file": "gan-nv.tct.spec.js",
+          "line": 119,
+          "column": 6,
+          "specs": [
+            {
+              "title": "32 don rac gan nv — gỡ phân công ở A7MH32*",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "đã gỡ",
+                      "description": "29943 xoá SSHOP-401 → nghỉ 200 (status 1)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:30:45.790Z",
+                      "annotations": [
+                        {
+                          "type": "đã gỡ",
+                          "description": "29943 xoá SSHOP-401 → nghỉ 200 (status 1)"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-265d1-nv-—-gỡ-phân-công-ở-A7MH32--tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-61d3386ebb2d4d2e2e39",
+              "file": "gan-nv.tct.spec.js",
+              "line": 122,
+              "column": 2
+            },
+            {
+              "title": "32_170_002 — Gán mới một nhân viên với vai trò Giám đốc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "vai trò \"Giám đốc xã\" · {\"assignments\":[{\"sysUserId\":123463456,\"orgUnitCode\":\"A7MH32T87376901\",\"roleId\":9,\"status\":1}]} · 200 · tb \"Gán nhân viên thành công\" · lỗi  · DB [[\"29944\",\"A7MH32T87376901\",\"9\",\"1\"]]"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1),29944 xoá SSHOP-401 → nghỉ 200 (status 0) · đơn vị A7MH32T87376901→200,A7MH32T873769→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46125,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:31:00.015Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "vai trò \"Giám đốc xã\" · {\"assignments\":[{\"sysUserId\":123463456,\"orgUnitCode\":\"A7MH32T87376901\",\"roleId\":9,\"status\":1}]} · 200 · tb \"Gán nhân viên thành công\" · lỗi  · DB [[\"29944\",\"A7MH32T87376901\",\"9\",\"1\"]]"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1),29944 xoá SSHOP-401 → nghỉ 200 (status 0) · đơn vị A7MH32T87376901→200,A7MH32T873769→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-1da05-n-viên-với-vai-trò-Giám-đốc-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-0c3bc617a5611a15fef9",
+              "file": "gan-nv.tct.spec.js",
+              "line": 127,
+              "column": 2
+            },
+            {
+              "title": "32_170_003 — Gán cùng một nhân viên cho nhiều đơn vị và vai trò",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "1: \"Gán nhân viên thành công\" · 2 (TEST_ROLE): \"Gán nhân viên thành công\" · DB [[\"29945\",\"A7MH32T91974101\",\"9\",\"1\"],[\"29946\",\"A7MH32T91974102\",\"61\",\"1\"]]"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1),29945 xoá SSHOP-401 → nghỉ 200 (status 0),29946 xoá SSHOP-401 → nghỉ 200 (status 0) · đơn vị A7MH32T91974101→200,A7MH32T91974102→200,A7MH32T919741→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 56490,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:31:46.145Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "1: \"Gán nhân viên thành công\" · 2 (TEST_ROLE): \"Gán nhân viên thành công\" · DB [[\"29945\",\"A7MH32T91974101\",\"9\",\"1\"],[\"29946\",\"A7MH32T91974102\",\"61\",\"1\"]]"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1),29945 xoá SSHOP-401 → nghỉ 200 (status 0),29946 xoá SSHOP-401 → nghỉ 200 (status 0) · đơn vị A7MH32T91974101→200,A7MH32T91974102→200,A7MH32T919741→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-9b903-cho-nhiều-đơn-vị-và-vai-trò-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-d7f8a8731df454441cde",
+              "file": "gan-nv.tct.spec.js",
+              "line": 146,
+              "column": 2
+            },
+            {
+              "title": "32_170_004 — Gán nhân viên có trạng thái Đã nghỉ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "hành vi thật",
+                      "description": "NV đã nghỉ buithanh01 (Bùi Thành) ⇒ dropdown: (không có)"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T97650101→200,A7MH32T976501→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 32261,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:32:42.641Z",
+                      "annotations": [
+                        {
+                          "type": "hành vi thật",
+                          "description": "NV đã nghỉ buithanh01 (Bùi Thành) ⇒ dropdown: (không có)"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T97650101→200,A7MH32T976501→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-79c5c--viên-có-trạng-thái-Đã-nghỉ-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-56e00a16d1f814fe0950",
+              "file": "gan-nv.tct.spec.js",
+              "line": 167,
+              "column": 2
+            },
+            {
+              "title": "32_170_005 — Đổi trạng thái nhân viên từ Đang làm sang Đã nghỉ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "hành vi thật",
+                      "description": "tb \"Gán nhân viên thành công\" · trước [[\"29947\",\"A7MH32T00862201\",\"9\",\"1\"],[\"29948\",\"A7MH32T00862202\",\"9\",\"1\"]] · sau [[\"29947\",\"A7MH32T00862201\",\"0\",\"1\"],[\"29948\",\"A7MH32T00862202\",\"1\",\"1\"]]"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29948 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T00862201→200,A7MH32T00862202→200,A7MH32T008622→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 66391,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:33:14.908Z",
+                      "annotations": [
+                        {
+                          "type": "hành vi thật",
+                          "description": "tb \"Gán nhân viên thành công\" · trước [[\"29947\",\"A7MH32T00862201\",\"9\",\"1\"],[\"29948\",\"A7MH32T00862202\",\"9\",\"1\"]] · sau [[\"29947\",\"A7MH32T00862201\",\"0\",\"1\"],[\"29948\",\"A7MH32T00862202\",\"1\",\"1\"]]"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29948 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T00862201→200,A7MH32T00862202→200,A7MH32T008622→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-02c9b-ên-từ-Đang-làm-sang-Đã-nghỉ-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-98fc739bd1b97b25d4ba",
+              "file": "gan-nv.tct.spec.js",
+              "line": 189,
+              "column": 2
+            },
+            {
+              "title": "32_170_006 — Xoá một dòng gán nhân viên bằng nút x",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "nút ✕: 2 · body {\"assignments\":[{\"sysUserId\":123463456,\"orgUnitCode\":\"A7MH32T07502001\",\"roleId\":9,\"status\":1}]} · tb \"Gán nhân viên thành công\" · DB [[\"29949\",\"A7MH32T07502001\",\"9\",\"1\"]]"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29949 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T07502001→200,A7MH32T075020→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47277,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:34:21.303Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "nút ✕: 2 · body {\"assignments\":[{\"sysUserId\":123463456,\"orgUnitCode\":\"A7MH32T07502001\",\"roleId\":9,\"status\":1}]} · tb \"Gán nhân viên thành công\" · DB [[\"29949\",\"A7MH32T07502001\",\"9\",\"1\"]]"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29949 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T07502001→200,A7MH32T075020→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-fca43-ng-gán-nhân-viên-bằng-nút-x-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-b7d466d099657bab083a",
+              "file": "gan-nv.tct.spec.js",
+              "line": 216,
+              "column": 2
+            },
+            {
+              "title": "32_170_007 — Bấm Thêm nhân viên và vai trò nhiều lần",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "số dòng trống: 0 → 1 → 2 → 3"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T12233401→200,A7MH32T122334→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30310,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:35:08.585Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "số dòng trống: 0 → 1 → 2 → 3"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T12233401→200,A7MH32T122334→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-f2839-n-viên-và-vai-trò-nhiều-lần-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-109c3e45cbec55707ac7",
+              "file": "gan-nv.tct.spec.js",
+              "line": 239,
+              "column": 2
+            },
+            {
+              "title": "32_170_008 — Xác nhận khi dòng mới chưa chọn nhân viên",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "Chọn nhân viên | Chọn vai trò · tb \"\" · request không"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T15268001→200,A7MH32T152680→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 42509,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:35:38.901Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "Chọn nhân viên | Chọn vai trò · tb \"\" · request không"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T15268001→200,A7MH32T152680→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-581b4-òng-mới-chưa-chọn-nhân-viên-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-913a4025ca73bf77c6e4",
+              "file": "gan-nv.tct.spec.js",
+              "line": 263,
+              "column": 3
+            },
+            {
+              "title": "32_170_009 — Xác nhận khi dòng mới chưa chọn vai trò",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "Chọn vai trò · tb \"\" · request không"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T19521201→200,A7MH32T195212→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46055,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:36:21.415Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "Chọn vai trò · tb \"\" · request không"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T19521201→200,A7MH32T195212→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-a47ec--dòng-mới-chưa-chọn-vai-trò-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-ae02308f5d647132dcb4",
+              "file": "gan-nv.tct.spec.js",
+              "line": 263,
+              "column": 3
+            },
+            {
+              "title": "32_170_010 — Gán trùng cùng nhân viên với cùng vai trò",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "nguyên văn",
+                      "description": "tb \"\" · request không · DB [[\"29950\",\"A7MH32T24107601\",\"9\",\"1\"]]"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29950 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T24107601→200,A7MH32T241076→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 66178,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"không được gán trùng vai trò\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"không được gán trùng vai trò\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:297:18",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                          "column": 18,
+                          "line": 297
+                        },
+                        "snippet": "  295 | \t\t\tghiChu('nguyên văn', `tb \"${kq.tb}\" · request ${kq.req ? 'CÓ' : 'không'} · DB ${JSON.stringify(pc)}`);\n  296 | \t\t\texpect(pc, 'Nhân đôi phân công cùng nhân viên + vai trò + đơn vị').toHaveLength(1);\n> 297 | \t\t\texpect(kq.tb).toContain('không được gán trùng vai trò');\n      | \t\t\t              ^\n  298 | \t\t} finally { await don(ps, r); }\n  299 | \t});\n  300 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                            "column": 18,
+                            "line": 297
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"không được gán trùng vai trò\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n  295 | \t\t\tghiChu('nguyên văn', `tb \"${kq.tb}\" · request ${kq.req ? 'CÓ' : 'không'} · DB ${JSON.stringify(pc)}`);\n  296 | \t\t\texpect(pc, 'Nhân đôi phân công cùng nhân viên + vai trò + đơn vị').toHaveLength(1);\n> 297 | \t\t\texpect(kq.tb).toContain('không được gán trùng vai trò');\n      | \t\t\t              ^\n  298 | \t\t} finally { await don(ps, r); }\n  299 | \t});\n  300 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:297:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:37:07.475Z",
+                      "annotations": [
+                        {
+                          "type": "nguyên văn",
+                          "description": "tb \"\" · request không · DB [[\"29950\",\"A7MH32T24107601\",\"9\",\"1\"]]"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29950 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T24107601→200,A7MH32T241076→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-d36ea--nhân-viên-với-cùng-vai-trò-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-d36ea--nhân-viên-với-cùng-vai-trò-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-d36ea--nhân-viên-với-cùng-vai-trò-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-d36ea--nhân-viên-với-cùng-vai-trò-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                        "column": 18,
+                        "line": 297
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d3411b285088021d896d-59b8b18db656363a1acd",
+              "file": "gan-nv.tct.spec.js",
+              "line": 280,
+              "column": 2
+            },
+            {
+              "title": "32_170_011 — Huỷ thao tác Gán nhân viên",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "request 0 · mở lại: Gắn nhân viên Danh sách nhân viên + Thêm nhân viên & vai trò Hủy Xác nhận"
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T30864301→200,A7MH32T308643→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 45581,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:38:14.751Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "request 0 · mở lại: Gắn nhân viên Danh sách nhân viên + Thêm nhân viên & vai trò Hủy Xác nhận"
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T30864301→200,A7MH32T308643→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-28857--Huỷ-thao-tác-Gán-nhân-viên-tct/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3411b285088021d896d-1b2c86a6199072b033cc",
+              "file": "gan-nv.tct.spec.js",
+              "line": 301,
+              "column": 2
+            },
+            {
+              "title": "32_170_013 — Đổi Đơn vị của một dòng gán đã có",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T35408101→200,A7MH32T35408102→200,A7MH32T354081→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 45891,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden)').last().locator('.ant-select-tree-treenode').filter({ hasText: /A7MH32T35408101|A7MH32 Xã rác 354081-1/ }).first().locator('.ant-select-tree-node-content-wrapper')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden)').last().locator('.ant-select-tree-treenode').filter({ hasText: /A7MH32T35408101|A7MH32 Xã rác 354081-1/ }).first().locator('.ant-select-tree-node-content-wrapper')\u001b[22m\n\n    at dienDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:83:164)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:331:4",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                          "column": 164,
+                          "line": 83
+                        },
+                        "snippet": "  81 | \t\tconst ten = o.dbDv(dv)?.ten ?? dv;\n  82 | \t\tconst esc = (x) => x.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');\n> 83 | \t\tawait dd.locator('.ant-select-tree-treenode').filter({ hasText: new RegExp(`${esc(dv)}|${esc(ten)}`) }).first().locator('.ant-select-tree-node-content-wrapper').click();\n     | \t\t                                                                                                                                                                 ^\n  84 | \t\tawait page.waitForTimeout(600);\n  85 | \t}\n  86 | \tif (nv) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                            "column": 164,
+                            "line": 83
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden)').last().locator('.ant-select-tree-treenode').filter({ hasText: /A7MH32T35408101|A7MH32 Xã rác 354081-1/ }).first().locator('.ant-select-tree-node-content-wrapper')\u001b[22m\n\n\n  81 | \t\tconst ten = o.dbDv(dv)?.ten ?? dv;\n  82 | \t\tconst esc = (x) => x.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');\n> 83 | \t\tawait dd.locator('.ant-select-tree-treenode').filter({ hasText: new RegExp(`${esc(dv)}|${esc(ten)}`) }).first().locator('.ant-select-tree-node-content-wrapper').click();\n     | \t\t                                                                                                                                                                 ^\n  84 | \t\tawait page.waitForTimeout(600);\n  85 | \t}\n  86 | \tif (nv) {\n    at dienDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:83:164)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:331:4"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:39:00.417Z",
+                      "annotations": [
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T35408101→200,A7MH32T35408102→200,A7MH32T354081→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-68992-n-vị-của-một-dòng-gán-đã-có-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-68992-n-vị-của-một-dòng-gán-đã-có-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-68992-n-vị-của-một-dòng-gán-đã-có-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-68992-n-vị-của-một-dòng-gán-đã-có-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                        "column": 164,
+                        "line": 83
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d3411b285088021d896d-7a1a6eaf8a5327ca5a0d",
+              "file": "gan-nv.tct.spec.js",
+              "line": 323,
+              "column": 2
+            },
+            {
+              "title": "32_170_014 — Số lượng nhân viên gán hiển thị đồng bộ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "đo",
+                      "description": "chi tiết trước \"undefined\" · sau \"undefined\" · nút cây \"A7MH32 Xã rác 400721-1\""
+                    },
+                    {
+                      "type": "dọn",
+                      "description": "phân công 29951 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T40072101→200,A7MH32T400721→200"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "tct",
+                  "projectName": "tct",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 54241,
+                      "error": {
+                        "message": "Error: Chi tiết đơn vị KHÔNG hiển thị số lượng nhân viên được gán\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m",
+                        "stack": "Error: Chi tiết đơn vị KHÔNG hiển thị số lượng nhân viên được gán\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:373:80",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                          "column": 80,
+                          "line": 373
+                        },
+                        "snippet": "  371 | \t\t\tconst cay = o.chuan(await o.nutCay(page).filter({ hasText: r.xa[0].ten }).first().innerText());\n  372 | \t\t\tghiChu('đo', `chi tiết trước \"${truoc}\" · sau \"${sau}\" · nút cây \"${cay}\"`);\n> 373 | \t\t\texpect(truoc, 'Chi tiết đơn vị KHÔNG hiển thị số lượng nhân viên được gán').toBeDefined();\n      | \t\t\t                                                                            ^\n  374 | \t\t\texpect(Number(sau)).toBe(Number(truoc) + 1);\n  375 | \t\t} finally { await don(ps, r); }\n  376 | \t});"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                            "column": 80,
+                            "line": 373
+                          },
+                          "message": "Error: Chi tiết đơn vị KHÔNG hiển thị số lượng nhân viên được gán\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n\n  371 | \t\t\tconst cay = o.chuan(await o.nutCay(page).filter({ hasText: r.xa[0].ten }).first().innerText());\n  372 | \t\t\tghiChu('đo', `chi tiết trước \"${truoc}\" · sau \"${sau}\" · nút cây \"${cay}\"`);\n> 373 | \t\t\texpect(truoc, 'Chi tiết đơn vị KHÔNG hiển thị số lượng nhân viên được gán').toBeDefined();\n      | \t\t\t                                                                            ^\n  374 | \t\t\texpect(Number(sau)).toBe(Number(truoc) + 1);\n  375 | \t\t} finally { await don(ps, r); }\n  376 | \t});\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js:373:80"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T16:39:46.991Z",
+                      "annotations": [
+                        {
+                          "type": "đo",
+                          "description": "chi tiết trước \"undefined\" · sau \"undefined\" · nút cây \"A7MH32 Xã rác 400721-1\""
+                        },
+                        {
+                          "type": "dọn",
+                          "description": "phân công 29951 xoá SSHOP-401 → nghỉ 200 (status 0),29943 xoá SSHOP-401 → nghỉ 200 (status 1) · đơn vị A7MH32T40072101→200,A7MH32T400721→200"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-f0ffd-n-viên-gán-hiển-thị-đồng-bộ-tct/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-f0ffd-n-viên-gán-hiển-thị-đồng-bộ-tct/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-f0ffd-n-viên-gán-hiển-thị-đồng-bộ-tct/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/test-output/playwright-results/gan-nv.tct-32-170-·-Gán-nh-f0ffd-n-viên-gán-hiển-thị-đồng-bộ-tct/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/32_mo_hinh_to_chuc/tests/gan-nv.tct.spec.js",
+                        "column": 80,
+                        "line": 373
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d3411b285088021d896d-e7a2a65791ecc8c87ba3",
+              "file": "gan-nv.tct.spec.js",
+              "line": 352,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T16:30:43.822Z",
+    "duration": 598074.9380000001,
+    "expected": 25,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,56 @@
+﻿,Chức năng,,BÁO CÁO HIỆU QUẢ CHƯƠNG TRÌNH KHUYẾN MẠI,,,,,,,,
+,Mã Testcase,,30_bao_cao_ctkm,,,,,,,,
+,Tổng các tình huống kiểm thử,,20,,,,,,,,
+,Chưa thực hiện,,20,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,BÁO CÁO HIỆU QUẢ CHƯƠNG TRÌNH KHUYẾN MẠI,,,,,,,,,,
+,010 — Tra cứu hiệu quả các chương trình khuyến mại trong kỳ,,,,,,,,,,
+30_010_001,Báo cáo hiệu quả CTKM mở được và hiện thẻ tổng hợp,Vai: province. Có chương trình khuyến mại trong kỳ,1. Mở /promotion/report,,Màn hiện thẻ tổng hợp cho con số toàn kỳ và bảng số liệu từng chương trình,,,,,,
+30_010_002,Nhận ra chương trình đang tiêu gần hết ngân sách,Vai: province. Có chương trình dùng gần hết ngân sách,1. Đọc bảng số liệu từng chương trình,,Bảng cho biết chương trình nào đang tiêu gần hết ngân sách (tỷ lệ ngân sách đã dùng),,,,,,
+,020 — Lọc báo cáo theo tiêu chí,,,,,,,,,,
+30_020_001,Lọc theo tiêu chí thu hẹp bảng và cập nhật thẻ tổng hợp,Vai: province. Có nhiều chương trình,"1. Đặt một tiêu chí lọc;
+2. Đọc tiêu đề bảng và các thẻ tổng hợp",,Bảng chỉ còn chương trình thoả mọi tiêu chí; tiêu đề bảng hiện đúng số chương trình tìm được; các thẻ tổng hợp phản ánh ĐÚNG tập kết quả đang lọc (không phải toàn kỳ),,,,,,
+30_020_002,Nhiều tiêu chí cùng lúc là điều kiện AND,Vai: province. Có chương trình thoả tiêu chí A nhưng không thoả B,1. Đặt đồng thời tiêu chí A và B,,Chương trình chỉ thoả A KHÔNG xuất hiện trong kết quả,,,,,,
+,030 — Xem chi tiết hiệu quả một chương trình,,,,,,,,,,
+30_030_001,Chi tiết chương trình hiện mười chỉ số hiệu quả,Vai: province. Có chương trình có phát sinh,1. Mở chi tiết một chương trình,,"Hiện cấu hình chương trình, mười chỉ số hiệu quả và danh sách hoá đơn tạo ra các chỉ số đó",,,,,,
+30_030_002,Truy được từ chỉ số xuống hoá đơn tạo ra nó,Vai: province. Có chương trình có phát sinh,"1. Mở chi tiết;
+2. Đối chiếu một chỉ số với danh sách hoá đơn bên dưới",,Danh sách hoá đơn giải thích được con số của chỉ số đó (đủ để giải thích thay vì phỏng đoán),,,,,,
+,040 — Xuất báo cáo hiệu quả ra tệp Excel,,,,,,,,,,
+30_040_001,Xuất báo cáo hiệu quả ra Excel giữ nguyên thứ tự cột,Vai: province. Có dữ liệu,1. Bấm xuất Excel,,Tệp tải về mang mốc ngày giờ kết xuất; giữ NGUYÊN thứ tự và tên cột như trên màn hình,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+30_PQ_001,Vai điểm bán chỉ thấy số liệu CTKM trong phạm vi,Vai: gdv,1. Mở /promotion/report,,"Số liệu giới hạn trong phạm vi điểm bán (cả 4 task khai đủ 4 cấp nên vào được, nhưng dữ liệu phải bị giới hạn)",,,,,,
+,010 — Tra cứu hiệu quả các chương trình khuyến mại trong kỳ,,,,,,,,,,
+30_010_003,Thẻ tổng hợp hiển thị đủ sáu chỉ số,Vai: shop. Kỳ lọc có chương trình khuyến mại,"1. Mở /promotion/report;
+2. Đọc dải thẻ tổng hợp",,"Có đủ 6 nhãn: ""Số chương trình"", ""Số hoá đơn áp dụng"", ""Doanh thu (gồm VAT)"", ""Doanh thu thuần (gồm VAT)"", ""Tiền giảm giá"", ""Lợi nhuận gộp""",,,,,,
+30_010_004,Bảng hiệu quả theo chương trình đủ chín cột,Vai: shop. Kỳ lọc có chương trình khuyến mại,"1. Mở /promotion/report;
+2. Đọc tiêu đề bảng ""Hiệu quả theo từng chương trình""",,"Có đủ: ""STT"", ""Tên chương trình"", ""Trạng thái"", ""Số hoá đơn áp dụng"", ""Doanh thu (gồm VAT)"", ""Doanh thu thuần (gồm VAT)"", ""Tiền giảm giá"", ""Lợi nhuận gộp"", ""Ngân sách đã dùng""",,,,,,
+,030 — Xem chi tiết hiệu quả một chương trình,,,,,,,,,,
+30_030_003,Bảng đơn hàng đã áp dụng chương trình đủ cột,Vai: shop. Đã mở chi tiết một chương trình,"1. Mở chi tiết chương trình;
+2. Đọc bảng ""Đơn hàng đã áp dụng chương trình""",,"Có đủ: ""STT"", ""Mã đơn hàng"", ""Thời gian"", ""Tỉnh"", ""Điểm bán"", ""Giá trị đơn"", ""Tiền giảm"", ""Đã thanh toán"", ""Còn nợ""",,,,,,
+30_030_004,Doanh thu thuần nhỏ hơn hoặc bằng doanh thu,Vai: shop. Kỳ lọc có chương trình có phát sinh,"1. Đọc ""Doanh thu (gồm VAT)"" và ""Doanh thu thuần (gồm VAT)"" của cùng một chương trình",,Doanh thu thuần luôn nhỏ hơn hoặc bằng doanh thu; chênh lệch bằng phần đã trả hàng,,,,,,
+30_030_005,Tổng tiền giảm của các đơn bằng tiền giảm giá của chương trình,Vai: shop. Chương trình có ít đơn đủ để cộng tay,"1. Mở chi tiết chương trình;
+2. Cộng tay cột ""Tiền giảm"" của mọi đơn;
+3. So với thẻ ""Tiền giảm giá""",,Hai số bằng nhau,,,,,,
+,"050 — Danh sách rỗng, phân trang và bộ lọc báo cáo",,,,,,,,,,
+30_050_001,Danh sách báo cáo rỗng khi kỳ không có chương trình,Vai: shop,1. Lọc một kỳ chắc chắn không có chương trình nào,,"Hiện trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+30_050_002,Phân trang bảng hiệu quả chương trình,Vai: shop. Kỳ lọc có nhiều hơn một trang chương trình,"1. Sang trang 2;
+2. Đổi số dòng mỗi trang;
+3. Về trang cuối",,"Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi. Mặc định size 20, page 0-based",,,,,,
+30_050_003,Xoá bộ lọc trở về mặc định,Vai: shop,"1. Đặt nhiều tiêu chí lọc;
+2. Xoá hết bộ lọc",,Bảng và thẻ tổng hợp trở về trạng thái mặc định của màn,,,,,,
+30_050_004,Chọn khoảng thời gian có ngày kết thúc trước ngày bắt đầu,Vai: shop,1. Chọn ngày bắt đầu sau ngày kết thúc,,Bị chặn ở bộ chọn ngày hoặc trả rỗng.,,,,,,
+30_050_005,Tìm chương trình bằng ký tự đặc biệt,Vai: shop,"1. Gõ chuỗi chứa % và _ vào ô tìm tên chương trình;
+2. Enter",,Không lỗi 500; không trả về toàn bộ chương trình.,,,,,,
+30_050_006,Tìm chương trình không dấu,Vai: shop. Có chương trình tên chứa dấu tiếng Việt,"1. Gõ tên chương trình KHÔNG dấu;
+2. Enter",,Chưa chốt kỳ vọng — ghi nhận thực tế: tìm bằng từ khoá KHÔNG DẤU có trả về chương trình tên viết có dấu hay không.,,,,,,
+,060 — Phạm vi số liệu theo vai,,,,,,,,,,
+30_060_001,Vai tỉnh thấy số liệu CTKM của các điểm bán trực thuộc,Vai: province,"1. Đăng nhập vai province;
+2. Mở /promotion/report;
+3. Đọc cột Tỉnh và Điểm bán ở bảng chi tiết",,"Chỉ thấy số liệu của các điểm bán thuộc tỉnh mình, không thấy tỉnh khác",,,,,,

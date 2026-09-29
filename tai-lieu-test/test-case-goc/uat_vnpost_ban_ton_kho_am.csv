@@ -1,0 +1,80 @@
+,Chức năng,,QUẢN LÝ ĐẶT HÀNG,,,,,,,
+,Mã Testcase,,BANAM,,,,,,,
+,Tổng các tình huống kiểm thử,,9,,,,,,,
+,Chưa thực hiện,,8,,,,,,,
+,Đạt yêu cầu,,1,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,
+,Thực hiện sau,,0,,,,,,,
+,Không phải thực hiện,,0,,,,,,,
+,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,
+,Kiểm tra giao diện màn Thêm danh mục,,,,,,,,,
+,Kiểm tra hiển thị màn hình Thêm danh mục,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""",,,"1. Hiển thị drawer ""Thêm danh mục"".
+2. Trường ""Loại sản phẩm"" mặc định giá trị của loại sản phẩm đang tạo danh mục, hiển thị dạng disabled
+3. Các trường bắt buộc hiển thị dấu * màu đỏ.",,,,
+,Kiểm tra dữ liệu trường Danh mục cha,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Click trường ""Danh mục cha""",,,"1. Dữ liệu hiển thị dạng cây cha con, mặc định mở ra tất cả các cấp
+2. 1 cây danh mục chỉ hiển thị đến danh mục cấp 4 để chọn",,,,
+,Kiểm tra giao diện màn Sửa danh mục,,,,,,,,,
+,Kiểm tra hiển thị màn hình Sửa danh mục,,"1. Vào màn hình Quản lý danh mục
+2. Tại cột thao tác, click button sửa của 1 bản ghi",,,"1. Hiển thị drawer ""Sửa danh mục"".
+2. Trường ""Loại sản phẩm"" mặc định giá trị của loại sản phẩm đang tạo danh mục, hiển thị dạng disabled
+3. Các trường bắt buộc hiển thị dấu * màu đỏ.
+4. Hiển thị đúng dữ liệu các trường đã khai báo ở màn Thêm danh mục",,,,
+,Kiểm tra giao diện màn Quản lý danh mục,,,,,,,,,
+,Kiểm tra hiển thị bảng danh sách danh mục,,1. Vào màn hình Quản lý danh mục,,,Mặc định mở hết tất cả các cấp,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,
+,Bình quân gia quyền,,,,,,,,,
+,Kiểm tra chức năng ghi nhận giá vốn tạm tính,,,,,,,,,
+,Kiểm tra ghi nhận giá vốn tạm tính khi tồn kho = 0 và bán âm,"Tồn kho
+- SL = 0
+- Giá vốn = 50.000đ","1. Bán sản phẩm:
+- Số lượng: 2
+2. Kiểm tra giá vốn tạm tính ở màn chi tiết đơn
+3. Kiểm tra giá vốn tạm tính ở PXK
+4. Kiểm tra giá vốn tạm tính ở màn Tổng quan",,,"1. Ở bước 2, giá vốn tạm tính = giá vốn đơn vị thời điểm trước khi bán * số lượng xuất = 50.000 * 2 = 100.000đ
+2. Ở bước 3, PXK ghi nhận giá vốn tạm tính = giá vốn đơn vị thời điểm trước khi bán = 50.000đ
+Số lượng = 2
+Tổng tiền = 50.000 * 2 = 100.000
+3. Ở bước 4, màn Tổng quan ghi nhận giá vốn tạm tính = giá vốn đơn vị thời điểm trước khi bán = 50.000đ
+Số lượng = - 2
+Tổng tiền = 50.000 * (-2) = -100.000",,,,
+,Kiểm tra ghi nhận giá vốn tạm tính khi bán tồn kho > 0 và bán âm,"Tồn kho
+- SL = 2
+- Giá vốn = 80.000đ","1. Bán sản phẩm:
+- Số lượng: 6
+2. Kiểm tra giá vốn tạm tính ở màn chi tiết đơn
+3. Kiểm tra giá vốn tạm tính ở PXK
+4. Kiểm tra giá vốn tạm tính ở màn Tổng quan",,,"1. Ở bước 2, giá vốn = giá vốn lượng hàng tồn + giá vốn tạm tính lượng hàng âm = giá vốn lượng hàng tồn + giá vốn đơn vị thời điểm trước khi bán * số lượng xuất = 80.000*2 + 80.000*4 = 480.000đ
+2. Ở bước 3, PXK ghi nhận 2 dòng:
+- Sản phẩm tồn kho:
+  + SL = 2
+  + Giá vốn = 80.000đ
+  + Tổng tiền = 160.000đ
+- Sản phẩm âm:
+  + SL = 4
+  + Giá vốn = 80.000đ
+  + Tổng tiền = 320.000đ
+3. Ở bước 4, màn Tổng quan ghi nhận giá vốn tạm tính = giá vốn đơn vị thời điểm trước khi bán = 80.000đ
+Số lượng = - 4
+Tổng tiền = 80.000 * (-4) = -320.000",,Pass,,
+,Kiểm tra ghi nhận giá vốn tạm tính khi bán tồn kho < 0 và bán âm,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Bỏ trống trường ""Tên danh mục""
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message đỏ dưới trường ""Nhập tên danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,,,
+,Kiểm tra chức năng thêm danh mục khi khai báo các trường không hợp lệ,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Nhập ""Tên danh mục"" trùng với tên danh mục khác cùng thuộc cấp cha
+4. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Tên danh mục '[Tên danh mục]' đã tồn tại trong cùng cấp cha""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,,,
+,,,"1. Vào màn hình Quản lý danh mục
+2. Click ""Thêm mới""
+3. Nhập ""Tên danh mục"" trùng với tên danh mục khác cùng thuộc cấp cha
+4. Gán cấp cha là danh mục đã chứa sản phẩm
+5. Nhấn nút ""Lưu""",,,"1. Hiển thị message ""Không thể gán danh mục '[Tên danh mục]' làm danh mục cha vì danh mục đã được gán sản phẩm. Vui lòng chuyển sản phẩm sang danh mục cấp nhỏ nhất trước khi thay đổi cấu trúc danh mục""
+2. Không lưu lại bản ghi và không điều hướng sang màn khác",,,,

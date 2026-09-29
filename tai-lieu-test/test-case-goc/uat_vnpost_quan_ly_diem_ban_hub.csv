@@ -1,0 +1,184 @@
+,Chức năng,,,ĐỔI TRẢ HÀNG,,,,,,,
+,Mã Testcase,,,DIEMBAN_,,,,,,,
+,Tổng các tình huống kiểm thử,,,54,,,,,,,
+,Chưa thực hiện,,,54,,,,,,,
+,Đạt yêu cầu,,,0,,,,,,,
+,Không đạt yêu cầu,,,0,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng xem danh sách điểm bán/hub,,,,,,,,,,
+DIEMBAN__1,Danh sách hiển thị đầy đủ các cột đúng giao diện,"Đã đăng nhập, vào Vận hành > Quản lý cửa hàng; hệ thống có ít nhất 1 điểm bán","Đã đăng nhập, vào Vận hành > Quản lý cửa hàng; hệ thống có ít nhất 1 điểm bán","1. Vào Menu > Vận hành > Quản lý cửa hàng
+ 2. Quan sát bảng danh sách",Cao,Màn danh sách điểm bán,"Bảng hiển thị đúng 7 cột: STT, Tên điểm bán/hub, Mã điểm, Phân loại, Bưu điện Xã, Bưu điện Tỉnh, Trạng thái, Hành động; dữ liệu khớp với hệ thống",,,,
+DIEMBAN__2,Phân trang hoạt động đúng - mặc định 10 bản ghi/trang,Hệ thống có hơn 10 điểm bán,Hệ thống có hơn 10 điểm bán,"1. Vào màn Danh sách điểm bán
+ 2. Kiểm tra số bản ghi trang 1
+ 3. Click sang trang 2
+ 4. Thay đổi số bản ghi/trang",TB,Màn danh sách điểm bán,"Trang 1 mặc định hiển thị 10 bản ghi; click sang trang 2 tải đúng 10 bản ghi tiếp theo; có thể thay đổi số bản ghi/trang (10, 20...)",,,,
+DIEMBAN__3,Tìm kiếm theo tên điểm bán - trả về kết quả đúng,Điểm bán 'Pos mini Liên Châu 12' tồn tại trong hệ thống,Điểm bán 'Pos mini Liên Châu 12' tồn tại trong hệ thống,"1. Nhập 'Liên Châu' vào ô Tìm theo tên, mã điểm bán
+ 2. Quan sát kết quả",Cao,Màn danh sách điểm bán,Danh sách lọc chỉ hiển thị các điểm bán có tên chứa 'Liên Châu'; các bản ghi không khớp bị ẩn,,,,
+DIEMBAN__4,Tìm kiếm theo mã điểm bán - trả về đúng 1 kết quả,Điểm bán mã 'DB67822' tồn tại,Điểm bán mã 'DB67822' tồn tại,"1. Nhập 'DB67822' vào ô tìm kiếm
+ 2. Quan sát kết quả",Cao,Màn danh sách điểm bán,Danh sách hiển thị đúng 1 bản ghi 'Pos mini Liên Châu 12' - DB67822; không có bản ghi khác,,,,
+DIEMBAN__5,Lọc theo Phân loại - hiển thị đúng loại được chọn,"Có cả 3 phân loại: Pos mini, Pos plus, Hub trong hệ thống","Có cả 3 phân loại: Pos mini, Pos plus, Hub trong hệ thống","1. Click dropdown 'Phân loại'
+ 2. Chọn 'Hub'
+ 3. Quan sát danh sách",Cao,Màn danh sách điểm bán,Danh sách chỉ hiển thị các bản ghi có Phân loại = Hub; Pos mini và Pos plus không xuất hiện,,,,
+DIEMBAN__6,Lọc theo Trạng thái - chỉ hiển thị bản ghi Ngừng hoạt động,Có ít nhất 1 điểm bán trạng thái Ngừng hoạt động,Có ít nhất 1 điểm bán trạng thái Ngừng hoạt động,"1. Click dropdown 'Trạng thái'
+ 2. Chọn 'Ngừng hoạt động'
+ 3. Quan sát danh sách",TB,Màn danh sách điểm bán,Danh sách chỉ hiển thị điểm bán có trạng thái 'Ngừng hoạt động' (chữ đỏ); điểm bán Đang hoạt động không xuất hiện,,,,
+DIEMBAN__7,Lọc theo Bưu điện tỉnh/thành phố,Có điểm bán thuộc 'Bưu điện Tỉnh Vĩnh Phúc',Có điểm bán thuộc 'Bưu điện Tỉnh Vĩnh Phúc',"1. Click dropdown 'Bưu điện tỉnh / thành phố'
+ 2. Chọn 'Bưu điện Tỉnh Vĩnh Phúc'
+ 3. Quan sát danh sách",TB,Màn danh sách điểm bán,Chỉ hiển thị điểm bán thuộc Bưu điện Tỉnh Vĩnh Phúc; dropdown 'Bưu điện phường/xã' tự lọc theo tỉnh đã chọn,,,,
+DIEMBAN__8,Lọc kết hợp nhiều điều kiện cùng lúc (Phân loại + Trạng thái),Có điểm bán loại Hub đang hoạt động,Có điểm bán loại Hub đang hoạt động,"1. Chọn Phân loại = Hub
+ 2. Chọn Trạng thái = Đang hoạt động
+ 3. Quan sát danh sách",TB,Màn danh sách điểm bán,Danh sách chỉ hiển thị bản ghi thỏa mãn cả 2 điều kiện: Phân loại = Hub VÀ Trạng thái = Đang hoạt động,,,,
+DIEMBAN__9,Tìm kiếm với từ khóa không tồn tại,Hệ thống có dữ liệu điểm bán,Hệ thống có dữ liệu điểm bán,"1. Nhập từ khóa không tồn tại: 'XXXXXX' vào ô tìm kiếm
+ 2. Quan sát danh sách",TB,Màn danh sách điểm bán,Danh sách hiển thị trạng thái rỗng / thông báo 'Không tìm thấy kết quả'; không bị lỗi giao diện,,,,
+DIEMBAN__10,Danh sách hiển thị trạng thái rỗng khi chưa có điểm bán,Hệ thống chưa có điểm bán nào (môi trường mới),Hệ thống chưa có điểm bán nào (môi trường mới),"1. Vào Menu > Vận hành > Quản lý cửa hàng
+ 2. Quan sát màn hình",Thấp,Màn danh sách điểm bán,"Hiển thị màn hình trạng thái rỗng phù hợp; không có lỗi giao diện; các nút Nhập Excel, Xuất Excel, Thêm điểm bán vẫn hiển thị",,,,
+,Kiểm tra chức năng thêm mới điểm bán/hub,,,,,,,,,,
+DIEMBAN__11,Thêm mới Pos mini thành công với đầy đủ trường bắt buộc,"Admin đăng nhập; danh mục Bưu điện tỉnh, Bưu điện xã, Tỉnh/TP, Xã/Phường đã có dữ liệu","Admin đăng nhập; danh mục Bưu điện tỉnh, Bưu điện xã, Tỉnh/TP, Xã/Phường đã có dữ liệu","1. Click '+ Thêm điểm bán'
+ 2. Drawer hiện ra
+ 3. Chọn Phân loại = Pos mini
+ 4. Nhập Tên điểm bán: 'Pos mini Test 01'
+ 5. Chọn Bưu điện tỉnh/TP: 'Bưu điện Tỉnh Vĩnh Phúc'
+ 6. Chọn Bưu điện xã/phường: 'Bưu điện Huyện Yên Lạc'
+ 7. Chọn Tỉnh/TP: 'Tỉnh Vĩnh Phúc'
+ 8. Chọn Xã/Phường: 'Xã Liên Châu'
+ 9. Click 'Xác nhận'",Cao,Màn thêm mới điểm bán/hub,"Điểm bán 'Pos mini Test 01' được tạo thành công với mã tự sinh (DBxxxxx); hiển thị đầu tiên hoặc đúng vị trí trong danh sách với Phân loại=Pos mini, Trạng thái=Đang hoạt động",,,,
+DIEMBAN__12,Thêm mới Pos mini kèm Địa chỉ chi tiết (trường tùy chọn),Admin đăng nhập; điều kiện tương tự CH_2.01,Admin đăng nhập; điều kiện tương tự CH_2.02,"1. Thực hiện như CH_2.01
+ 2. Bổ sung nhập Địa chỉ: '123 Đường ABC, Xã Liên Châu'
+ 3. Click 'Xác nhận'",TB,Màn thêm mới điểm bán/hub,"Điểm bán được tạo thành công; khi xem chi tiết, trường 'Địa chỉ chi tiết' hiển thị đúng '123 Đường ABC, Xã Liên Châu'",,,,
+DIEMBAN__13,Thêm mới Pos plus - form chỉ hiện Tỉnh/TP và Xã/Phường (không có Bưu điện tỉnh/xã),Admin đăng nhập,Admin đăng nhập,"1. Click '+ Thêm điểm bán'
+ 2. Chọn Phân loại = Pos plus
+ 3. Quan sát các trường hiển thị trên form",Cao,Màn thêm mới điểm bán/hub,"Form chỉ hiển thị: Tên điểm bán, Tỉnh/TP, Xã/Phường, Địa chỉ. Hai trường 'Bưu điện tỉnh/thành phố' và 'Bưu điện xã/phường' KHÔNG xuất hiện (khác với Pos mini)",,,,
+DIEMBAN__14,Thêm mới Pos plus thành công với đầy đủ trường,Admin đăng nhập; Phân loại đã chọn = Pos plus,Admin đăng nhập; Phân loại đã chọn = Pos plus,"1. Click '+ Thêm điểm bán', chọn Pos plus
+ 2. Nhập Tên điểm bán: 'Pos plus Test 01'
+ 3. Chọn Tỉnh/TP: 'Tỉnh Phú Thọ'
+ 4. Chọn Xã/Phường: 'Thành phố Việt Trì'
+ 5. Click 'Xác nhận'",Cao,Màn thêm mới điểm bán/hub,Điểm bán 'Pos plus Test 01' được tạo thành công; hiển thị trong danh sách với Phân loại = Pos plus và Trạng thái = Đang hoạt động,,,,
+DIEMBAN__15,"Thêm mới Hub - label đổi thành 'Tên Hub', có đủ Bưu điện tỉnh/xã và Tỉnh/TP",Admin đăng nhập,Admin đăng nhập,"1. Click '+ Thêm điểm bán'
+ 2. Chọn Phân loại = Hub
+ 3. Quan sát các trường hiển thị",Cao,Màn thêm mới điểm bán/hub,"Form hiển thị label 'Tên Hub' (không phải 'Tên điểm bán'); có đủ 4 trường địa chỉ: Bưu điện tỉnh/thành phố, Bưu điện xã/phường, Tỉnh/TP, Xã/Phường",,,,
+DIEMBAN__16,Thêm mới Hub thành công với đầy đủ trường,Admin đăng nhập; Phân loại đã chọn = Hub,Admin đăng nhập; Phân loại đã chọn = Hub,"1. Click '+ Thêm điểm bán', chọn Hub
+ 2. Nhập Tên Hub: 'Hub Test Hà Nội'
+ 3. Chọn Bưu điện tỉnh/TP, Bưu điện xã/phường, Tỉnh/TP, Xã/Phường
+ 4. Click 'Xác nhận'",Cao,Màn thêm mới điểm bán/hub,Hub 'Hub Test Hà Nội' được tạo thành công; hiển thị trong danh sách với Phân loại = Hub và Trạng thái = Đang hoạt động,,,,
+DIEMBAN__17,Phân loại mặc định khi mở drawer là Pos mini,Admin đăng nhập,Admin đăng nhập,"1. Click '+ Thêm điểm bán'
+ 2. Quan sát radio button Phân loại khi drawer vừa mở",Thấp,Màn thêm mới điểm bán/hub,Radio button 'Pos mini' được chọn sẵn (selected) khi drawer mở; 'Pos plus' và 'Hub' chưa được chọn,,,,
+DIEMBAN__18,Bỏ trống Tên điểm bán (bắt buộc) khi thêm mới,"Drawer Thêm điểm bán đang mở, Phân loại = Pos mini","Drawer Thêm điểm bán đang mở, Phân loại = Pos mini","1. Để trống trường Tên điểm bán
+ 2. Điền đầy đủ các trường địa chỉ
+ 3. Click 'Xác nhận'",Cao,Màn thêm mới điểm bán/hub,Hệ thống hiển thị thông báo lỗi yêu cầu nhập Tên điểm bán (bắt buộc); không tạo được bản ghi mới,,,,
+DIEMBAN__19,Bỏ trống Bưu điện tỉnh/thành phố (bắt buộc với Pos mini) khi thêm mới,"Drawer Thêm điểm bán, Phân loại = Pos mini","Drawer Thêm điểm bán, Phân loại = Pos mini","1. Nhập Tên điểm bán hợp lệ
+ 2. Để trống Bưu điện tỉnh/thành phố
+ 3. Click 'Xác nhận'",Cao,Màn thêm mới điểm bán/hub,Hệ thống hiển thị lỗi yêu cầu chọn Bưu điện tỉnh/thành phố; không tạo được điểm bán,,,,
+DIEMBAN__20,Tên điểm bán vượt quá 200 ký tự (giới hạn theo UI),Drawer Thêm điểm bán đang mở,Drawer Thêm điểm bán đang mở,"1. Nhập Tên điểm bán với chuỗi 201 ký tự
+ 2. Quan sát ô nhập liệu và counter '0/200'",TB,Màn thêm mới điểm bán/hub,Hệ thống không cho nhập quá 200 ký tự (tự cắt hoặc hiển thị cảnh báo); counter hiển thị '200/200' khi đã đủ giới hạn,,,,
+DIEMBAN__21,Dropdown Bưu điện xã/phường tự lọc theo Bưu điện tỉnh đã chọn,Drawer Thêm điểm bán (Pos mini) đang mở,Drawer Thêm điểm bán (Pos mini) đang mở,"1. Chọn Bưu điện tỉnh/TP = 'Bưu điện Tỉnh Vĩnh Phúc'
+ 2. Click vào dropdown Bưu điện xã/phường
+ 3. Quan sát danh sách tùy chọn",TB,Màn thêm mới điểm bán/hub,Dropdown Bưu điện xã/phường chỉ hiển thị các bưu điện xã thuộc 'Bưu điện Tỉnh Vĩnh Phúc'; không hiển thị bưu điện xã của tỉnh khác,,,,
+,Kiểm tra chức năng xem chi tiết điểm bán/hub,,,,,,,,,,
+DIEMBAN__22,Click icon thông tin (ⓘ) mở drawer Chi tiết - hiển thị đúng tất cả trường,Điểm bán 'Pos mini Liên Châu 12' đang ở danh sách,Điểm bán 'Pos mini Liên Châu 12' đang ở danh sách,"1. Tại danh sách, click icon ⓘ ở cột Hành động của 'Pos mini Liên Châu 12'
+ 2. Quan sát drawer Chi tiết",Cao,Màn xem chi tiết điểm bán/hub,"Drawer mở hiển thị đúng: Tên điểm bán, Trạng thái (màu xanh 'Đang hoạt động'), Phân loại, Bưu điện Tỉnh/TP, Bưu điện Xã/Phường, Tỉnh/TP, Xã/Phường, Địa chỉ chi tiết (-- nếu trống), Thời gian tạo",,,,
+DIEMBAN__23,Chi tiết điểm bán Ngừng hoạt động - Trạng thái hiển thị màu đỏ + nút Khôi phục,Có điểm bán trạng thái 'Ngừng hoạt động' trong danh sách,Có điểm bán trạng thái 'Ngừng hoạt động' trong danh sách,"1. Lọc danh sách theo Trạng thái = Ngừng hoạt động
+ 2. Click icon ⓘ của 1 điểm bán
+ 3. Quan sát drawer Chi tiết",Cao,Màn xem chi tiết điểm bán/hub,Trạng thái hiển thị màu đỏ 'Ngừng hoạt động'; góc trên phải của drawer có nút 'Khôi phục' (màu xanh lá); không có nút Xóa,,,,
+DIEMBAN__24,"Chi tiết điểm bán Đang hoạt động - có nút Xóa (đỏ), không có nút Khôi phục",Có điểm bán trạng thái 'Đang hoạt động',Có điểm bán trạng thái 'Đang hoạt động',"1. Click icon ⓘ của điểm bán đang hoạt động
+ 2. Quan sát các nút action góc trên phải",TB,Màn xem chi tiết điểm bán/hub,Góc trên phải có nút 'Xóa' (màu đỏ); nút 'Khôi phục' không xuất hiện,,,,
+,Kiểm tra chức năng chỉnh sửa điểm bán/hub,,,,,,,,,,
+DIEMBAN__25,Chỉnh sửa Tên điểm bán thành công,Drawer Sửa đang mở với dữ liệu 'Pos mini Liên Châu 12',Drawer Sửa đang mở với dữ liệu 'Pos mini Liên Châu 12',"1. Xóa tên cũ, nhập tên mới: 'Pos mini Liên Châu 12 Updated'
+ 2. Giữ nguyên các trường khác
+ 3. Click 'Xác nhận'",Cao,Màn sửa điểm bán/hub,Tên điểm bán được cập nhật thành 'Pos mini Liên Châu 12 Updated'; danh sách hiển thị tên mới; mã điểm DB67822 không thay đổi,,,,
+DIEMBAN__26,Chỉnh sửa Bưu điện tỉnh/thành phố và Bưu điện xã/phường thành công,Drawer Sửa điểm bán (Pos mini) đang mở,Drawer Sửa điểm bán (Pos mini) đang mở,"1. Đổi Bưu điện tỉnh/TP sang tỉnh khác
+ 2. Chọn lại Bưu điện xã/phường phù hợp
+ 3. Click 'Xác nhận'",TB,Màn sửa điểm bán/hub,Bưu điện tỉnh và xã được cập nhật; hiển thị đúng trong danh sách cột 'Bưu điện Xã' và 'Bưu điện Tỉnh',,,,
+DIEMBAN__27,Chỉnh sửa - bỏ trống Tên điểm bán (bắt buộc),Drawer Sửa điểm bán đang mở,Drawer Sửa điểm bán đang mở,"1. Xóa trống trường Tên điểm bán
+ 2. Click 'Xác nhận'",Cao,Màn sửa điểm bán/hub,"Hệ thống hiển thị lỗi yêu cầu nhập Tên điểm bán; không lưu được thay đổi, dữ liệu cũ giữ nguyên",,,,
+DIEMBAN__28,Chỉnh sửa - bỏ trống Bưu điện tỉnh/thành phố (bắt buộc với Pos mini),Drawer Sửa điểm bán (Pos mini) đang mở,Drawer Sửa điểm bán (Pos mini) đang mở,"1. Xóa/bỏ chọn Bưu điện tỉnh/thành phố
+ 2. Click 'Xác nhận'",Cao,Màn sửa điểm bán/hub,Hệ thống hiển thị lỗi yêu cầu chọn Bưu điện tỉnh/thành phố; không lưu được thay đổi,,,,
+DIEMBAN__29,Đóng drawer Sửa bằng nút X - dữ liệu không bị thay đổi,"Drawer Sửa đang mở, đã chỉnh sửa một số trường","Drawer Sửa đang mở, đã chỉnh sửa một số trường","1. Sửa Tên điểm bán thành tên mới bất kỳ
+ 2. Click dấu X đóng drawer",Thấp,Màn sửa điểm bán/hub,Drawer đóng lại; danh sách vẫn hiển thị tên điểm bán cũ (không bị lưu thay đổi),,,,
+,Kiểm tra chức năng xóa/khôi phục điểm bán/hub,,,,,,,,,,
+DIEMBAN__30,Xóa điểm bán - click 'Đồng ý' chuyển trạng thái sang Ngừng hoạt động,Popup confirm xóa đang hiển thị,Popup confirm xóa đang hiển thị,"1. Click 'Đồng ý' tại popup
+ 2. Quan sát trạng thái điểm bán trong danh sách",Cao,Màn xem chi tiết điểm bán/hub,Điểm bán chuyển sang trạng thái 'Ngừng hoạt động' (chữ đỏ) trong danh sách; drawer Chi tiết mở lại sẽ hiển thị nút 'Khôi phục' thay vì 'Xóa',,,,
+DIEMBAN__31,"Hủy xóa điểm bán - click 'Hủy' tại popup, trạng thái không đổi",Popup confirm xóa đang hiển thị,Popup confirm xóa đang hiển thị,"1. Click 'Hủy' tại popup
+ 2. Quan sát trạng thái điểm bán",TB,Màn xem chi tiết điểm bán/hub,Popup đóng lại; điểm bán vẫn giữ trạng thái 'Đang hoạt động'; không có thay đổi nào xảy ra,,,,
+DIEMBAN__32,Khôi phục điểm bán Ngừng hoạt động - click 'Khôi phục' tại Chi tiết,Điểm bán đang ở trạng thái Ngừng hoạt động,Điểm bán đang ở trạng thái Ngừng hoạt động,"1. Lọc danh sách Trạng thái = Ngừng hoạt động
+ 2. Click icon ⓘ của điểm bán
+ 3. Click nút 'Khôi phục' (xanh lá)
+ 4. Xác nhận (nếu có popup)",Cao,Màn xem chi tiết điểm bán/hub,"Điểm bán chuyển trạng thái từ 'Ngừng hoạt động' sang 'Đang hoạt động'; nút 'Khôi phục' biến mất, xuất hiện nút 'Xóa'",,,,
+DIEMBAN__33,Điểm bán sau khi xóa không còn hiển thị khi lọc Trạng thái = Đang hoạt động,Điểm bán vừa bị xóa (chuyển sang Ngừng hoạt động),Điểm bán vừa bị xóa (chuyển sang Ngừng hoạt động),"1. Sau khi xóa điểm bán X
+ 2. Lọc Trạng thái = Đang hoạt động
+ 3. Tìm kiếm điểm bán X",Cao,Màn xem chi tiết điểm bán/hub,Điểm bán X không xuất hiện trong kết quả lọc Đang hoạt động; chỉ thấy khi lọc Ngừng hoạt động,,,,
+,Kiểm tra chức năng xóa/khôi phục điểm bán/hub,,,,,,,,,,
+DIEMBAN__34,Xóa điểm bán - click 'Đồng ý' chuyển trạng thái sang Ngừng hoạt động,Popup confirm xóa đang hiển thị,Popup confirm xóa đang hiển thị,"1. Click 'Đồng ý' tại popup
+ 2. Quan sát trạng thái điểm bán trong danh sách",Cao,Màn xem chi tiết điểm bán/hub,Điểm bán chuyển sang trạng thái 'Ngừng hoạt động' (chữ đỏ) trong danh sách; drawer Chi tiết mở lại sẽ hiển thị nút 'Khôi phục' thay vì 'Xóa',,,,
+DIEMBAN__35,"Hủy xóa điểm bán - click 'Hủy' tại popup, trạng thái không đổi",Popup confirm xóa đang hiển thị,Popup confirm xóa đang hiển thị,"1. Click 'Hủy' tại popup
+ 2. Quan sát trạng thái điểm bán",TB,Màn xem chi tiết điểm bán/hub,Popup đóng lại; điểm bán vẫn giữ trạng thái 'Đang hoạt động'; không có thay đổi nào xảy ra,,,,
+DIEMBAN__36,Khôi phục điểm bán Ngừng hoạt động - click 'Khôi phục' tại Chi tiết,Điểm bán đang ở trạng thái Ngừng hoạt động,Điểm bán đang ở trạng thái Ngừng hoạt động,"1. Lọc danh sách Trạng thái = Ngừng hoạt động
+ 2. Click icon ⓘ của điểm bán
+ 3. Click nút 'Khôi phục' (xanh lá)
+ 4. Xác nhận (nếu có popup)",Cao,Màn xem chi tiết điểm bán/hub,"Điểm bán chuyển trạng thái từ 'Ngừng hoạt động' sang 'Đang hoạt động'; nút 'Khôi phục' biến mất, xuất hiện nút 'Xóa'",,,,
+DIEMBAN__37,Điểm bán sau khi xóa không còn hiển thị khi lọc Trạng thái = Đang hoạt động,Điểm bán vừa bị xóa (chuyển sang Ngừng hoạt động),Điểm bán vừa bị xóa (chuyển sang Ngừng hoạt động),"1. Sau khi xóa điểm bán X
+ 2. Lọc Trạng thái = Đang hoạt động
+ 3. Tìm kiếm điểm bán X",Cao,Màn xem chi tiết điểm bán/hub,Điểm bán X không xuất hiện trong kết quả lọc Đang hoạt động; chỉ thấy khi lọc Ngừng hoạt động,,,,
+,Kiểm tra chức năng xóa/khôi phục điểm bán/hub,,,,,,,,,,
+DIEMBAN__38,Gán mới 1 nhân viên với vai trò Cửa hàng trưởng thành công,Popup Gán nhân viên của 'Pos mini Liên Châu 12' đang mở; nhân viên 'Phúc - 84944374459' tồn tại,Popup Gán nhân viên của 'Pos mini Liên Châu 12' đang mở; nhân viên 'Phúc - 84944374459' tồn tại,"1. Click '+ Thêm nhân viên & vai trò'
+ 2. Chọn Nhân viên = 'Phúc - 84944374459'
+ 3. Chọn Vai trò = 'Cửa hàng trưởng'
+ 4. Chọn Trạng thái = 'Đang làm'
+ 5. Click 'Xác nhận'",Cao,Màn gắn nhân viên,Nhân viên 'Phúc' được gán vai trò 'Cửa hàng trưởng' tại điểm bán; popup đóng; khi mở lại hiển thị dòng gán vừa thêm,,,,
+DIEMBAN__39,Thêm nhiều nhân viên trong 1 lần lưu,Popup Gán nhân viên đang mở; có ít nhất 2 nhân viên trong danh mục,Popup Gán nhân viên đang mở; có ít nhất 2 nhân viên trong danh mục,"1. Click '+ Thêm nhân viên & vai trò' 2 lần
+ 2. Dòng 1: NV Phúc - Cửa hàng trưởng - Đang làm
+ 3. Dòng 2: NV khác - Giao dịch viên - Đang làm
+ 4. Click 'Xác nhận'",Cao,Màn gắn nhân viên,Cả 2 nhân viên được gán cùng lúc; khi mở lại popup hiển thị đúng 2 dòng vừa gán,,,,
+DIEMBAN__40,Xóa 1 dòng gán bằng nút X trên dòng,Popup Gán nhân viên có ít nhất 2 dòng,Popup Gán nhân viên có ít nhất 2 dòng,"1. Mở popup Gán nhân viên
+ 2. Click X ở dòng cuối cùng
+ 3. Click 'Xác nhận'",TB,Màn gắn nhân viên,"Dòng được click X bị xóa ngay khỏi danh sách hiển thị; sau khi Xác nhận, nhân viên đó không còn trong danh sách gán của điểm bán",,,,
+DIEMBAN__41,Xác nhận khi dòng mới bỏ trống Nhân viên (bắt buộc),"Đã click '+ Thêm nhân viên & vai trò', dòng mới chưa chọn Nhân viên","Đã click '+ Thêm nhân viên & vai trò', dòng mới chưa chọn Nhân viên","1. Thêm dòng mới
+ 2. Chỉ chọn Vai trò, để trống Nhân viên
+ 3. Click 'Xác nhận'",Cao,Màn gắn nhân viên,Hệ thống hiển thị lỗi yêu cầu chọn Nhân viên cho dòng trống; không lưu được,,,,
+DIEMBAN__42,Xác nhận khi dòng mới bỏ trống Vai trò (bắt buộc),"Đã click '+ Thêm nhân viên & vai trò', dòng mới chưa chọn Vai trò","Đã click '+ Thêm nhân viên & vai trò', dòng mới chưa chọn Vai trò","1. Thêm dòng mới, chọn Nhân viên
+ 2. Để trống Vai trò
+ 3. Click 'Xác nhận'",Cao,Màn gắn nhân viên,Hệ thống hiển thị lỗi yêu cầu chọn Vai trò; không lưu được thay đổi,,,,
+DIEMBAN__43,Hủy thao tác Gán nhân viên - dữ liệu không bị lưu,"Popup đang mở, đã thêm dòng mới","Popup đang mở, đã thêm dòng mới","1. Thêm dòng mới NV và Vai trò hợp lệ
+ 2. Click 'Hủy'",TB,Màn gắn nhân viên,"Popup đóng; mở lại popup điểm bán đó: dòng mới không tồn tại, danh sách gán giữ nguyên như trước",,,,
+,Kiểm tra chức năng Nhập từ excel,,,,,,,,,,
+DIEMBAN__44,Tải về file mẫu thành công,"Admin đăng nhập, đang ở màn Danh sách điểm bán","Admin đăng nhập, đang ở màn Danh sách điểm bán","1. Click 'Nhập từ excel'
+ 2. Popup 'Nhập điểm bán từ file excel' mở
+ 3. Click '↓ Tải về file mẫu'",TB,Màn nhập từ excel,File mẫu Excel (.xls hoặc .xlsx) được tải về máy thành công với đúng định dạng cột cần nhập,,,,
+DIEMBAN__45,"Upload file Excel hợp lệ - nhập thành công, hiển thị Tổng/Thành công/Thất bại","File Excel đúng định dạng mẫu, có 20 dòng dữ liệu hợp lệ","File Excel đúng định dạng mẫu, có 20 dòng dữ liệu hợp lệ","1. Click 'Nhập từ excel'
+ 2. Kéo thả hoặc chọn file Excel hợp lệ
+ 3. Click 'Xác nhận nhập'",Cao,Màn nhập từ excel,"Quá trình nhập hoàn tất; tab 'Lịch sử nhập' tự cập nhật dòng mới với: Thời gian tạo, Thời gian hoàn thành, Tổng=20, Thành công=20 (xanh), Thất bại=0, Trạng thái='Thành công'; 20 điểm bán xuất hiện trong danh sách",,,,
+DIEMBAN__46,Lịch sử nhập hiển thị đúng với file có cả bản ghi lỗi và thành công,File Excel có 1 bản ghi hợp lệ và 1 bản ghi lỗi (thiếu Tên),File Excel có 1 bản ghi hợp lệ và 1 bản ghi lỗi (thiếu Tên),"1. Upload file có 2 bản ghi (1 hợp lệ, 1 thiếu Tên)
+ 2. Click 'Xác nhận nhập'
+ 3. Mở tab 'Lịch sử nhập'",Cao,Màn nhập từ excel,"Dòng lịch sử hiển thị: Tổng=2, Thành công=1 (xanh), Thất bại=1 (đỏ), Trạng thái='Thành công'; Chỉ 1 điểm bán được tạo",,,,
+DIEMBAN__47,"Upload file không phải định dạng Excel (.pdf, .docx, .csv)",Popup Nhập từ excel đang mở,Popup Nhập từ excel đang mở,"1. Kéo thả file .pdf hoặc .docx vào vùng upload
+ 2. Quan sát thông báo",Cao,Màn nhập từ excel,"Hệ thống hiển thị thông báo lỗi 'Vui lòng chọn file excel' (như giao diện đã thấy) hoặc 'Định dạng file không hợp lệ, chỉ hỗ trợ .xls, .xlsx'; không thực hiện import",,,,
+DIEMBAN__48,Click 'Xác nhận nhập' khi chưa chọn file,"Popup Nhập từ excel đang mở, chưa chọn file nào","Popup Nhập từ excel đang mở, chưa chọn file nào","1. Mở popup Nhập từ excel
+ 2. Không chọn file
+ 3. Click 'Xác nhận nhập'",TB,Màn nhập từ excel,Hệ thống hiển thị thông báo 'Vui lòng chọn file excel'; không thực hiện import,,,,
+DIEMBAN__49,Lọc Lịch sử nhập theo khoảng thời gian,Tab Lịch sử nhập có nhiều bản ghi import trong các ngày khác nhau,Tab Lịch sử nhập có nhiều bản ghi import trong các ngày khác nhau,"1. Mở popup Nhập từ excel > tab 'Lịch sử nhập'
+ 2. Đổi khoảng ngày từ 01/06/2026 đến 10/06/2026
+ 3. Quan sát danh sách",Thấp,Màn nhập từ excel,"Popup đóng; mở lại popup điểm bán đó: dòng mới không tồn tại, danh sách gán giữ nguyên như trước",,,,
+DIEMBAN__50,Lọc Lịch sử nhập theo Trạng thái,Tab Lịch sử nhập có bản ghi Thành công và bản ghi Thất bại,Tab Lịch sử nhập có bản ghi Thành công và bản ghi Thất bại,"1. Tab 'Lịch sử nhập'
+ 2. Chọn dropdown Trạng thái = 'Thành công'
+ 3. Quan sát danh sách",Thấp,Màn nhập từ excel,Chỉ hiển thị các bản ghi import có Trạng thái = 'Thành công'; các bản ghi Thất bại không xuất hiện,,,,
+DIEMBAN__51,"Upload file Excel rỗng (chỉ có header, không có dữ liệu)",Popup Nhập từ excel đang mở,Popup Nhập từ excel đang mở,"1. Upload file Excel chỉ có dòng tiêu đề, không có dữ liệu
+ 2. Click 'Xác nhận nhập'",TB,Màn nhập từ excel,"Hệ thống hiển thị thông báo 'File không có dữ liệu để nhập' hoặc import hoàn tất với Tổng=0, Thành công=0; không tạo bản ghi mới",,,,
+,Kiểm tra chức năng Xuất excel,,,,,,,,,,
+DIEMBAN__52,Xuất Excel toàn bộ danh sách điểm bán thành công,Hệ thống có ít nhất 5 điểm bán,Hệ thống có ít nhất 5 điểm bán,"1. Tại màn Danh sách điểm bán
+ 2. Click '↓ Xuất excel'
+ 3. Chờ file được tải về",TB,Màn danh sách điểm bán,"File Excel được tải về thành công; chứa đúng dữ liệu toàn bộ điểm bán hiện có với các cột: Tên điểm bán/hub, Mã điểm, Phân loại, Bưu điện Xã, Bưu điện Tỉnh, Trạng thái",,,,
+DIEMBAN__53,Xuất Excel áp dụng bộ lọc hiện tại - chỉ xuất dữ liệu đang lọc,Đang lọc danh sách theo Phân loại = Hub,Đang lọc danh sách theo Phân loại = Hub,"1. Lọc danh sách theo Phân loại = Hub
+ 2. Click '↓ Xuất excel'",TB,Màn danh sách điểm bán,"File Excel chỉ chứa các điểm bán phân loại Hub (đúng kết quả đang lọc trên màn hình, không xuất tất cả)",,,,
+DIEMBAN__54,Xuất Excel khi danh sách đang hiển thị kết quả tìm kiếm,"Đang tìm kiếm theo từ khóa 'Phú Thọ', có 3 kết quả","Đang tìm kiếm theo từ khóa 'Phú Thọ', có 3 kết quả","1. Nhập 'Phú Thọ' vào ô tìm kiếm
+ 2. Click '↓ Xuất excel'",Thấp,Màn danh sách điểm bán,File Excel chứa đúng 3 bản ghi khớp kết quả tìm kiếm 'Phú Thọ'; không xuất toàn bộ dữ liệu,,,,

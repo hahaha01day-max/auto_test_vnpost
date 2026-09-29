@@ -1,0 +1,656 @@
+{
+  "_note": "Phân hệ 07_2 Cấu hình kho (Khoá kho · Bán tồn kho âm · Cảnh báo hết hạn). 🔴 Cài một cấu hình khoá kho là CHẶN NGAY nghiệp vụ nhập/xuất/chuyển/kiểm kho của toàn bộ phạm vi đã chọn — chạy nhầm là đóng băng kho thật. Nhóm 080 là câu hỏi GIÁ VỐN của bán âm.",
+  "cases": {
+    "07_2_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "07_2_010_002": {
+      "enabled": false,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "Cần hệ thống chưa có cấu hình khoá kho nào — không dựng lại được",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "07_2_010_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "Phải mở màn khai báo thật; chỉ bật khi đã xác nhận validate ở FE",
+      "data": {
+        "thongBao": "Vui lòng chọn ít nhất một phạm vi khu vực",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "07_2_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_010_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "maDonVi": "",
+        "lyDo": "AUTO TEST KHONG DUNG",
+        "tenDanhMuc": ""
+      },
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_010_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": false,
+      "_blocked_cu": "Cần sản phẩm tự doanh (của tỉnh/xã) — chưa có dữ liệu nền.",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_010_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": false,
+      "_blocked_cu": "Cần sản phẩm thuộc Tổng công ty — chưa có dữ liệu nền.",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_010_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": false,
+      "_blocked_cu": "🔴 Mâu thuẫn với 07_2_PQ_001 đang khai vai tỉnh vào được — cần đối chiếu và chốt.",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_010_013": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "07_2_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "thongBao": "Bỏ khoá cấu hình này?",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "data": {
+        "thongBao": "Đã bỏ khoá kho",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "data": {
+        "thongBao": "Vui lòng nhập tên cấu hình",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: request ghi bị chặn ở mạng — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "allowMutation": false,
+      "role": "tct",
+      "data": {
+        "thongBao": "Vui lòng chọn ít nhất một phạm vi áp dụng",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "Bỏ chọn toàn bộ 158 đơn vị ở form bán tồn âm CHUỖI dùng chung — thao tác cây lớn, chưa viết (validate FE đã không chặn tên trống, xem 030_001).",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "gioiHan": 200,
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: request ghi bị chặn ở mạng — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "data": {
+        "thongBao": "Nhập tên cấu hình",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: request ghi bị chặn ở mạng — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "data": {
+        "thongBao": "Nhập số ngày",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: request ghi bị chặn ở mạng — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "data": {
+        "thongBao": "Chọn ngành hàng",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: request ghi bị chặn ở mạng — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "data": {
+        "thongBao": "Vui lòng thêm ít nhất 1 SKU",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "required": [],
+      "_ghiChu": "Chạy KHÔNG ghi: request ghi bị chặn ở mạng — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_040_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "required": [],
+      "data": {
+        "soNgayChung": 30,
+        "sku1": "AUTOSKU62391304",
+        "sku2": "AUTOSKUFIFO73216447",
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "_ghiChu": "Chạy KHÔNG ghi: request ghi bị chặn ở mạng — 24/09/2026",
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "required": [
+        "sku"
+      ],
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      }
+    },
+    "07_2_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "07_2_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần có cấu hình mặc định của hệ thống trong bảng",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {
+        "soNgayMoi": 45,
+        "sku": "",
+        "tenDanhMuc": ""
+      },
+      "_blocked_cu": "Sửa ngưỡng cảnh báo thật, ảnh hưởng cảnh báo HSD đang chạy",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_060_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần luồng bán hàng tại quầy (18_1) cho vai gdv.",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_060_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_060_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_060_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_060_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần phiếu chuyển kho ĐÃ xuất (đang đi đường) tới điểm bán bị khoá rồi bên nhận xác nhận — bên nhận của làn là điểm bán rác không có tài khoản; kỳ vọng hàng treo cần user chốt.",
+      "_goBoi": "26/09/2026: HUB → điểm bán seed (có tài khoản)"
+    },
+    "07_2_060_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Kỳ vọng tăng/giảm khi SP bị khoá chưa chốt; ngoài ra khoá chọn điểm bán bị lưu thành khoá cả xã (xem 010_006).",
+      "_goBoi": "26/09/2026: khuôn 04_4"
+    },
+    "07_2_060_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần luồng bán hàng tại quầy (18_1).",
+      "_goBoi": "26/09/2026"
+    },
+    "07_2_060_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_060_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "07_2_060_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Chuyển kho SP đã bỏ khoá: đã phủ gián tiếp ở 04_3_060_* (chuyển kho bình thường) — chưa viết riêng.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_060_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần bên nhận xác nhận phiếu chuyển — điểm bán nhận của làn không có tài khoản.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_060_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần phiên kiểm kho lệch sau bỏ khoá — phủ ở 04_4 (kiểm kho), chưa nối vào đây.",
+      "_goBoi": "26/09/2026: khuôn 04_4"
+    },
+    "07_2_070_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Khoá phạm vi cấp TỈNH chặn mọi điểm bán của tỉnh — chỉ làm được trên tỉnh seed AUTO8_TINH (1 xã, 1 điểm bán + HUB); chưa viết.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "ward",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Như 070_001 cho cấp xã — thực tế 010_006 đang tạo khoá cấp xã do lỗi phạm vi.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 GHI: cài/bỏ cấu hình khoá kho (chặn ngay nghiệp vụ kho của cả phạm vi đã chọn), hoặc lập chứng từ kho/bán hàng để đo hành vi chặn. Cần điểm bán + sản phẩm dựng riêng.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_070_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "Cần nhiều cấp cùng lúc trên dữ liệu seed — chưa viết.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_070_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_blocked_cu": "🔴 Chưa có đặc tả: sản phẩm thêm vào danh mục SAU khi khoá có bị chặn không. Case còn GHI thật.",
+      "_goBoi": "26/09/2026: khoá dựng bằng API, đo freeze-check"
+    },
+    "07_2_080_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_note": "28/09 A10/A11 — gia-von-ban-am.shop.spec.js, SP FIFO làn 5, bán âm bật riêng điểm bán"
+    },
+    "07_2_080_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_note": "28/09 A10/A11 — gia-von-ban-am.shop.spec.js, SP FIFO làn 5, bán âm bật riêng điểm bán"
+    },
+    "07_2_080_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": true,
+      "_note": "28/09 A10/A11 — gia-von-ban-am.shop.spec.js, SP FIFO làn 5, bán âm bật riêng điểm bán"
+    },
+    "07_2_080_004": {
+      "enabled": false,
+      "mutates": true,
+      "role": "tct",
+      "data": {
+        "sku": "AUTOSKU62391304",
+        "tenDanhMuc": ""
+      },
+      "allowMutation": false,
+      "_blocked": "Case thuộc quản lý DANH MỤC sản phẩm, bị đặt nhầm nhóm trong sheet — cần user chốt giữ ở phân hệ nào (08 quản lý sản phẩm?).",
+      "required": [
+        "sku"
+      ]
+    },
+    "07_2_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    },
+    "07_2_PQ_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "sku": "",
+        "tenDanhMuc": ""
+      }
+    }
+  }
+}

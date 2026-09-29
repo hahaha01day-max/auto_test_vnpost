@@ -1,0 +1,177 @@
+﻿,Chức năng,,ĐỔI TRẢ HÀNG,,,,,,,,
+,Mã Testcase,,18_5_doi_tra_hang,,,,,,,,
+,Tổng các tình huống kiểm thử,,58,,,,,,,,
+,Chưa thực hiện,,58,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,ĐỔI TRẢ HÀNG,,,,,,,,,,
+,010 — Bắt đầu một đơn đổi trả từ đơn gốc,,,,,,,,,,
+18_5_010_001,Mở đổi trả từ chi tiết đơn gốc nạp sẵn đơn,Vai: gdv. Có đơn đã bán cho khách,"1. Mở /order/created-orders;
+2. Mở chi tiết một đơn;
+3. Bấm ""Đổi trả hàng""",,"Màn đổi trả mở với đơn gốc đã chọn sẵn; tab đơn mang tên ""Hoàn trả:"" kèm mã đơn gốc; bảng Hàng hoàn trả nạp sẵn toàn bộ hàng của đơn gốc; khối tiền hiện Tổng tiền trả hàng bằng giá trị đơn gốc",,,,,,
+18_5_010_002,Chặn hoàn trả khi chưa chọn đơn gốc,Vai: gdv,"1. Mở /order/return-orders;
+2. Bấm ""Đổi trả hàng"";
+3. Không chọn đơn gốc;
+4. Bấm ""Hoàn trả""",,"Hệ thống báo nguyên văn ""Vui lòng chọn đơn hàng đổi trả"" và KHÔNG tạo gì",,,,,,
+18_5_010_003,Cảnh báo khi đơn gốc quá thời hạn trả hàng,Vai: gdv. Có đơn gốc đã bán quá thời hạn cho phép trả,"1. Chọn đơn gốc quá hạn ở màn ""Chọn đơn hàng đổi trả"";
+2. Bấm Đồng ý",,"Hệ thống chặn bằng cảnh báo nguyên văn ""Đơn hàng quá thời hạn trả hàng"" trước khi cho đi tiếp, có hai nút Đồng ý và Hủy",,,,,,
+,020 — Chọn hàng khách trả lại và lý do trả,,,,,,,,,,
+18_5_020_001,Số lượng trả không vượt số đã bán trên đơn gốc,Vai: gdv. Đang mở màn đổi trả với đơn gốc,1. Sửa Số lượng một dòng lớn hơn số đã bán,,Hệ thống giới hạn ở đúng số đã bán trên đơn gốc,,,,,,
+18_5_020_002,Chặn hoàn trả khi bỏ hết hàng khỏi bảng,Vai: gdv. Đang mở màn đổi trả,"1. Bỏ toàn bộ dòng khỏi bảng Hàng hoàn trả;
+2. Bấm ""Hoàn trả""",,"Hệ thống báo nguyên văn ""Đơn trả hàng cần có ít nhất một sản phẩm trả""",,,,,,
+18_5_020_003,Chỉ thêm được mặt hàng có trong đơn gốc,Vai: gdv. Đang mở màn đổi trả,1. Gõ tìm một mặt hàng KHÔNG có trong đơn gốc vào bảng hàng hoàn trả,,"Hệ thống báo nguyên văn ""Chỉ có thể thêm sản phẩm có trong đơn hàng gốc""",,,,,,
+18_5_020_004,Quà tặng bắt buộc hoàn trả không sửa được số lượng,Vai: gdv. Đơn gốc có quà tặng bắt buộc hoàn trả,1. Sửa số lượng ở dòng quà tặng bắt buộc hoàn trả,,"Hệ thống báo nguyên văn ""Quà tặng bắt buộc hoàn trả nên không được thay đổi số lượng""",,,,,,
+,030 — Thêm hàng đổi mới và nhập phí trả hàng,,,,,,,,,,
+18_5_030_001,Đổi sang hàng đắt hơn thì chiều tiền là Khách trả,Vai: gdv. Đang mở màn đổi trả,"1. Thêm hàng đổi có giá trị lớn hơn hàng trả;
+2. Đọc khối tiền",,"Khối tiền hiện dòng ""Cần thanh toán (Khách trả)"". Khi bấm Hoàn trả hệ thống mở màn thanh toán để thu thêm tiền",,,,,,
+18_5_030_002,Tiền hoàn nhỏ hơn giá niêm yết khi đơn gốc có chiết khấu,Vai: gdv. Đơn gốc có chiết khấu,"1. Chọn trả một mặt hàng;
+2. So Tiền hoàn của dòng với đơn giá niêm yết",,Tiền hoàn NHỎ HƠN đơn giá niêm yết đúng bằng phần chiết khấu được phân bổ cho dòng đó,,,,,,
+18_5_030_003,Phí trả hàng trừ thẳng vào tiền hoàn,Vai: gdv. Đang mở màn đổi trả,"1. Ghi lại Tổng tiền trả hàng;
+2. Nhập Phí trả hàng = 10.000;
+3. Đọc lại khối tiền",,Số tiền cần hoàn giảm đúng 10.000 so với trước khi nhập phí,,,,,,
+,040 — Xử lý quà tặng khuyến mại khi khách trả hàng,,,,,,,,,,
+18_5_040_001,Màn xử lý quà tặng chỉ mở khi cần,Vai: gdv. Đơn gốc KHÔNG có quà tặng thuộc chương trình còn hiệu lực,"1. Chọn hàng trả;
+2. Bấm ""Hoàn trả""",,"Hệ thống tạo đơn luôn, KHÔNG mở màn xử lý quà tặng",,,,,,
+18_5_040_002,Hai cách xử lý quà tặng cho kết quả tiền khác nhau,Vai: gdv. Đơn gốc có quà tặng thuộc chương trình còn hiệu lực,"1. Bấm ""Hoàn trả"";
+2. Ở màn quà tặng chọn ""Khấu trừ giá trị quà tặng"" cho một dòng;
+3. Đổi sang ""Thu hồi quà tặng""",,"Chọn khấu trừ: dòng ""Cần thanh toán (Cửa hàng trả)"" giảm đúng giá trị quà. Chọn thu hồi: tiền hoàn giữ nguyên và quà được nhập lại kho",,,,,,
+,050 — Hoàn tiền cho khách và chốt đơn hoàn trả,,,,,,,,,,
+18_5_050_001,Chốt đơn hoàn trả thành công,Vai: gdv. Đã chọn hàng trả và phương thức hoàn trả,"1. Bấm ""Hoàn trả""",,"Hệ thống báo nguyên văn ""Tạo đơn hoàn trả thành công""; đơn hoàn trả có mã riêng và xuất hiện ở /order/return-orders",,,,,,
+18_5_050_002,Đơn hoàn trả đã chốt thì không sửa được,Vai: gdv. Vừa chốt một đơn hoàn trả,"1. Mở lại đơn hoàn trả vừa tạo;
+2. Tìm thao tác sửa",,Không có thao tác sửa nào khả dụng,,,,,,
+18_5_050_003,Đơn gốc quá hạn thì đơn hoàn trả nằm ở Chờ duyệt,Vai: gdv. Đơn gốc quá thời hạn trả và đã bấm Đồng ý ở cảnh báo,"1. Chốt đơn hoàn trả;
+2. Mở /order/return-orders;
+3. Đọc cột Trạng thái",,"Trạng thái = ""Chờ duyệt"". Hàng CHƯA nhập lại kho, tiền CHƯA hoàn, đơn gốc CHƯA đổi",,,,,,
+,060 — Tra cứu danh sách đơn hàng hoàn trả,,,,,,,,,,
+18_5_060_001,Tra cứu đơn hoàn trả theo khoảng thời gian và mã đơn,Vai: shop. Có đơn hoàn trả trong khoảng,"1. Mở /order/return-orders;
+2. Chọn Ngày bắt đầu và Ngày kết thúc;
+3. Gõ Mã đơn",,"Bảng ""Danh sách hoàn trả"" chỉ còn đơn khớp bộ lọc; tiêu đề bảng hiện đúng số đơn",,,,,,
+18_5_060_002,Xuất Excel danh sách hoàn trả theo bộ lọc hiện tại,Vai: shop. Có đơn hoàn trả,"1. Đặt bộ lọc;
+2. Bấm ""Xuất Excel""",,Tệp tải về chứa đúng danh sách đang hiển thị theo bộ lọc,,,,,,
+18_5_060_003,Mã đơn hàng và mã đơn trả mở hai màn khác nhau,Vai: shop. Có đơn hoàn trả,"1. Bấm ""Mã đơn hàng"";
+2. Quay lại và bấm ""Mã đơn trả""",,Mã đơn hàng mở đơn gốc; mã đơn trả mở đơn hoàn trả — hai màn hình khác nhau,,,,,,
+,070 — Duyệt hoặc từ chối đơn hoàn trả quá hạn,,,,,,,,,,
+18_5_070_001,Lọc đơn Chờ duyệt và ba biểu tượng hành động,Vai: shop. Có đơn hoàn trả Chờ duyệt,"1. Mở /order/return-orders;
+2. Chọn Trạng thái = ""Chờ duyệt"";
+3. Đọc cột Hành động",,"Cột Hành động có 3 biểu tượng: dấu tích xanh (phê duyệt), chữ i trong vòng tròn (xem chi tiết), dấu nhân đỏ (từ chối)",,,,,,
+18_5_070_002,Phê duyệt đơn hoàn trả quá hạn,Vai: shop. Có đơn Chờ duyệt,"1. Bấm dấu tích xanh;
+2. Hệ thống hỏi ""Xác nhận phê duyệt đơn hoàn trả hàng quá hạn?"";
+3. Bấm Đồng ý",,"Báo nguyên văn ""Phê duyệt đơn hoàn trả thành công""; trạng thái đổi sang ""Hoàn thành""; hàng được nhập lại kho; điểm tích luỹ của khách được hoàn; đơn gốc cập nhật số lượng và tổng tiền",,,,,,
+18_5_070_003,Từ chối đơn hoàn trả quá hạn,Vai: shop. Có đơn Chờ duyệt,"1. Bấm dấu nhân đỏ;
+2. Hệ thống hỏi ""Xác nhận không phê duyệt đơn hoàn trả hàng quá hạn?"";
+3. Bấm Đồng ý",,"Báo nguyên văn ""Từ chối đơn hoàn trả thành công""; trạng thái đổi sang ""Từ chối""",,,,,,
+,080 — Xem chi tiết một đơn hoàn trả,,,,,,,,,,
+18_5_080_001,Chi tiết đơn trả hàng hiện đủ chỉ tiêu tiền,Vai: shop. Có đơn hoàn trả,1. Bấm vào Mã đơn trả,,"Màn ""Chi tiết đơn trả hàng"" hiện khối Thông tin chung với hai dòng ""Số tiền hoàn trả"" và ""Phí hoàn trả"" ở đầu cột phải",,,,,,
+18_5_080_002,Khối Sản phẩm trả hàng hiện đủ cột,Vai: shop. Có đơn hoàn trả,"1. Mở chi tiết đơn trả;
+2. Cuộn xuống khối Sản phẩm trả hàng",,"Bảng có các cột Tên sản phẩm, SL trả, Đơn giá, Tiền hoàn, Lý do",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+18_5_PQ_001,Vai giao dịch viên không duyệt được đơn hoàn trả quá hạn,Vai: gdv. Không có quyền approve_reject_return_order,"1. Mở /order/return-orders;
+2. Lọc Chờ duyệt",,Không có biểu tượng phê duyệt / từ chối trên dòng đơn,,,,,,
+,010 — Bắt đầu một đơn đổi trả từ đơn gốc,,,,,,,,,,
+18_5_010_004,Hoàn trả khi mã đơn gốc không tồn tại trong hệ thống,Vai: gdv,"1. Mở màn đổi trả;
+2. Gõ một mã đơn chắc chắn không có;
+3. Enter",,"Không hiện mã đơn đó trong danh sách đơn để chọn; form vẫn mở để nhập lại, không lỗi kỹ thuật",,,,,,
+,090 — Hoàn trả đơn thanh toán sau và đơn nợ,,,,,,,,,,
+18_5_090_001,Hoàn trả đơn nợ toàn bộ (thanh toán sau),Vai: gdv. Đơn gốc ghi nợ toàn bộ,"1. Mở đổi trả từ đơn nợ toàn bộ;
+2. Trả toàn bộ hàng;
+3. Chốt phiếu trả",,"Phiếu trả được tạo; trạng thái đơn gốc chuyển ""Đã hủy""; KHÔNG phát sinh phiếu chi (khách chưa trả tiền); công nợ khách giảm đúng phần đã ghi nợ",,,,,,
+18_5_090_002,Hoàn trả đơn nợ một phần (trả góp),Vai: gdv. Đơn gốc đã thu một phần và còn nợ,"1. Mở đổi trả từ đơn trả góp;
+2. Trả hàng;
+3. Chốt phiếu trả",,"Phiếu trả được tạo; trạng thái đơn gốc chuyển ""Đã trả""; KHÔNG phát sinh phiếu chi vì khách vẫn còn nợ; công nợ khách giảm tương ứng",,,,,,
+18_5_090_003,Đơn nháp không cho phép trả hàng,Vai: gdv. Có đơn ở trạng thái nháp,"1. Mở chi tiết đơn nháp;
+2. Tìm nút ""Đổi trả hàng""",,"Nút ""Đổi trả hàng"" KHÔNG hiện",,,,,,
+18_5_090_004,Hoàn trả đơn đã ở trạng thái Đơn hủy,Vai: gdv. Đơn gốc đã huỷ,"1. Mở đơn đã huỷ;
+2. Thực hiện hoàn trả",,"Trạng thái đơn giữ ""Đã hủy""; sinh phiếu chi đúng số tiền đã thu; tồn kho sản phẩm tăng đúng số lượng trả (nhập kho)",,,,,,
+18_5_090_005,Huỷ đơn hàng sinh phiếu chi và nhập lại kho,Vai: gdv. Đơn đã thanh toán,"1. Mở chi tiết đơn;
+2. Huỷ đơn hàng;
+3. Xác nhận",,"Trạng thái đơn chuyển ""Đã hủy""; sinh phiếu chi đúng số tiền đã thu; tồn kho sản phẩm tăng đúng số lượng của đơn",,,,,,
+,100 — Hoàn trả đơn có VAT,,,,,,,,,,
+18_5_100_001,Hoàn trả toàn bộ đơn có VAT,Vai: gdv. Đơn gốc có bật VAT và đã thanh toán đủ,"1. Mở đổi trả;
+2. Trả toàn bộ hàng;
+3. Chốt phiếu trả",,"Phiếu trả được tạo; trạng thái đơn chuyển ""Đã hủy""; phiếu chi = tổng tiền đơn ĐÃ GỒM VAT; tồn kho tăng đúng số lượng trả",,,,,,
+18_5_100_002,Hoàn trả một phần đơn có VAT,Vai: gdv. Đơn gốc có bật VAT và nhiều dòng hàng,"1. Mở đổi trả;
+2. Trả một phần hàng;
+3. Chốt phiếu trả",,"Phiếu trả được tạo; phiếu chi = tiền hàng trả CỘNG phần VAT tương ứng dòng trả, không phải tiền hàng trần",,,,,,
+,110 — Trả hàng thuộc combo,,,,,,,,,,
+18_5_110_001,Trả một sản phẩm trong combo làm phá vỡ combo,Vai: gdv. Đơn gốc có mua combo,"1. Mở đổi trả;
+2. Chọn trả một sản phẩm thuộc combo;
+3. Chốt phiếu trả",,"Phiếu trả được tạo; trạng thái đơn ""Đã trả""; tiền hoàn tính theo giá LẺ của phần còn lại (clawback), không theo giá combo",,,,,,
+18_5_110_002,Trả nốt sản phẩm còn lại của combo đã phá vỡ,Vai: gdv. Đơn gốc đã trả một phần combo ở lần trước,"1. Mở đổi trả lần hai;
+2. Trả nốt sản phẩm còn lại của combo;
+3. Chốt phiếu trả",,Phiếu trả được tạo; tiền hoàn lần này bù đúng phần chênh đã clawback ở lần trước; tổng hai lần hoàn bằng đúng giá combo đã thu,,,,,,
+18_5_110_003,Trả combo khi đơn mua từ hai combo cùng loại trở lên,Vai: gdv. Đơn gốc mua từ 2 combo cùng loại trở lên,"1. Mở đổi trả;
+2. Trả một phần thuộc một trong các combo;
+3. Chốt phiếu trả",,Tiền hoàn trừ đúng phần giá trị của các combo còn nguyên vẹn; chỉ combo bị phá vỡ mới áp clawback,,,,,,
+18_5_110_004,Chặn khi không tìm thấy thành phần của combo,Vai: gdv. Đơn gốc có combo bị lỗi dữ liệu thành phần,"1. Mở đổi trả;
+2. Chọn trả sản phẩm combo;
+3. Chốt",,"Backend chặn với nguyên văn ""Khong tim thay component trong combo""",,,,,,
+,120 — Điểm thưởng khi trả hàng,,,,,,,,,,
+18_5_120_001,Thu hồi điểm đã cộng khi trả hàng,Vai: gdv. Đơn gốc đã cộng điểm tích luỹ cho khách,"1. Mở đổi trả;
+2. Trả toàn bộ hàng;
+3. Chốt phiếu trả",,"Phiếu trả được tạo; trạng thái đơn ""Đã hủy""; sinh phiếu chi đúng số tiền; điểm tích luỹ của khách bị TRỪ đúng số đã cộng từ đơn gốc",,,,,,
+18_5_120_002,Hoàn lại điểm khách đã dùng khi trả hàng,Vai: gdv. Đơn gốc có thanh toán một phần bằng điểm,"1. Mở đổi trả;
+2. Trả toàn bộ hàng;
+3. Chốt phiếu trả",,Phiếu trả được tạo; sinh phiếu chi bằng phần khách trả bằng TIỀN; số điểm khách đã dùng được CỘNG TRẢ lại vào điểm khả dụng,,,,,,
+,130 — Ngưỡng tiền bất thường và lý do trả hàng,,,,,,,,,,
+18_5_130_001,Lọc đơn hoàn trả đạt ngưỡng tiền bất thường,Vai: shop. Đơn vị đã cấu hình ngưỡng tiền hoàn bất thường,"1. Mở /order/return-orders;
+2. Lọc nhóm tiền hoàn bất thường",,Chỉ hiện các đơn trả có tiền hoàn ĐẠT hoặc VƯỢT ngưỡng cấu hình; hiển thị đúng thời gian tạo đơn,,,,,,
+18_5_130_002,Lý do trả hàng hiển thị ở phiếu và chi tiết,Vai: gdv. Đơn gốc đã thanh toán,"1. Mở đổi trả;
+2. Nhập lý do trả hàng;
+3. Chốt phiếu trả;
+4. Mở chi tiết đơn trả và bản in",,"Phiếu trả được tạo; trạng thái đơn ""Đã hủy""; lý do trả hàng hiện đúng nguyên văn ở cả chi tiết đơn trả và bản in biên lai",,,,,,
+,140 — Ràng buộc chặn hoàn trả,,,,,,,,,,
+18_5_140_001,Chặn hoàn trả khi ca hiện tại chưa gắn quầy thu ngân,Vai: gdv. Ca đang mở nhưng chưa gắn quầy thu ngân,"1. Mở đổi trả;
+2. Chốt phiếu trả",,"Backend chặn với nguyên văn ""Ca hien tai chua gan quay thu ngan""",,,,,,
+18_5_140_002,Chặn khi không đủ lô để hoàn đúng số lượng,Vai: gdv. Sản phẩm quản lý theo lô,"1. Mở đổi trả;
+2. Yêu cầu hoàn số lượng lớn hơn số lô truy được;
+3. Chốt",,"Backend chặn với nguyên văn ""Không đủ lô để hoàn đúng số lượng yêu cầu""",,,,,,
+18_5_140_003,Chặn khi không đủ serial để hoàn,Vai: gdv. Sản phẩm quản lý serial,"1. Mở đổi trả;
+2. Chọn số lượng hoàn nhiều hơn số serial chọn được;
+3. Chốt",,"Backend chặn với nguyên văn ""Không đủ serial để hoàn""",,,,,,
+18_5_140_004,Chặn số lượng hoàn theo serial không phải số nguyên,Vai: gdv. Sản phẩm quản lý serial,"1. Mở đổi trả;
+2. Nhập số lượng hoàn có phần thập phân;
+3. Chốt",,"Backend chặn với nguyên văn ""Số lượng hoàn theo serial phải là số nguyên""",,,,,,
+18_5_140_005,Chặn khi serial nhập không tồn tại,Vai: gdv. Sản phẩm quản lý serial,"1. Mở đổi trả;
+2. Nhập một serial không có trong đơn gốc;
+3. Chốt",,"Backend chặn với nguyên văn bắt đầu bằng ""Không tìm thấy serial: "" kèm serial vừa nhập",,,,,,
+18_5_140_006,Chặn khi biến thể hoàn không khớp dòng đơn gốc,Vai: gdv. Sản phẩm có nhiều biến thể,"1. Mở đổi trả;
+2. Gửi hoàn một biến thể khác với biến thể trên đơn gốc;
+3. Chốt",,"Backend chặn với nguyên văn ""Bien the hoan khong khop voi dong don hang hien tai""",,,,,,
+18_5_140_007,Chặn khi không xác định được thời gian tạo đơn gốc,Vai: gdv. Đơn gốc thiếu thời gian tạo,"1. Mở đổi trả từ đơn đó;
+2. Chốt",,"Backend chặn với nguyên văn ""Không xác định được thời gian tạo đơn để kiểm tra chính sách hoàn trả""",,,,,,
+18_5_140_008,Chặn đổi hàng khi đơn hoàn trả đang chờ duyệt,Vai: gdv. Có đơn hoàn trả ở trạng thái Chờ duyệt,"1. Mở đơn hoàn trả đang chờ duyệt;
+2. Thực hiện đổi hàng",,"Backend chặn với nguyên văn ""Đơn hoàn trả đang chờ duyệt, chưa được phép đổi hàng""",,,,,,
+18_5_140_009,Chặn duyệt đơn hoàn không thuộc điểm bán hiện tại,Vai: shop. Biết mã một đơn hoàn của điểm bán khác,"1. Gửi yêu cầu duyệt đơn hoàn của điểm bán khác;
+2. Đọc phản hồi API",,"Backend chặn với nguyên văn ""Đơn hoàn không thuộc shop hiện tại""",,,,,,
+18_5_140_010,Chặn duyệt đơn hoàn không ở trạng thái chờ duyệt,Vai: shop. Có đơn hoàn đã duyệt xong,"1. Gửi yêu cầu duyệt lại đơn đó;
+2. Đọc phản hồi API",,"Backend chặn với nguyên văn ""Đơn hoàn không ở trạng thái chờ duyệt""",,,,,,
+,150 — Giá trị biên của phí và số lượng trả,,,,,,,,,,
+18_5_150_001,Phí trả hàng nhận giá trị âm,Vai: gdv. Đơn gốc đã thanh toán,"1. Mở đổi trả;
+2. Nhập phí trả hàng âm;
+3. Đọc ô tiền hoàn",,"Chưa chốt kỳ vọng — ghi nhận thực tế: ô phí trả hàng có nhận số âm không, và tiền hoàn cho khách có bị cộng thêm phần âm đó không.",,,,,,
+18_5_150_002,Phí trả hàng lớn hơn tiền hoàn,Vai: gdv. Đơn gốc đã thanh toán,"1. Mở đổi trả;
+2. Nhập phí trả hàng lớn hơn tiền hoàn;
+3. Chốt",,"Chưa chốt kỳ vọng — ghi nhận thực tế: phí trả hàng lớn hơn tiền hoàn thì bị chặn, tiền hoàn về 0, hay thành số âm.",,,,,,
+18_5_150_003,Số lượng trả bằng 0,Vai: gdv. Đơn gốc có hàng,"1. Mở đổi trả;
+2. Đặt số lượng trả của mọi dòng về 0;
+3. Chốt",,"Bị chặn, không tạo phiếu trả.",,,,,,
+,"160 — Danh sách, bộ lọc và tìm kiếm đơn hoàn trả",,,,,,,,,,
+18_5_160_001,Phân trang danh sách đơn hoàn trả,Vai: shop. Kỳ lọc có nhiều hơn một trang,"1. Mở /order/return-orders;
+2. Sang trang 2;
+3. Đổi số dòng mỗi trang;
+4. Về trang cuối",,Số dòng mỗi trang đúng lựa chọn; dữ liệu trang 2 khác trang 1; trang cuối không lỗi,,,,,,
+18_5_160_002,Danh sách đơn hoàn trả rỗng,Vai: shop,1. Lọc một kỳ chắc chắn không có đơn hoàn nào,,"Bảng về trạng thái rỗng, không lỗi kỹ thuật.",,,,,,
+18_5_160_003,Tổ hợp bộ lọc trên danh sách đơn hoàn trả,Vai: shop,"1. Lọc theo khoảng thời gian;
+2. Thêm lọc trạng thái;
+3. Thêm từ khoá mã đơn",,Kết quả thoả đồng thời cả ba điều kiện,,,,,,
+18_5_160_004,Tìm kiếm đơn hoàn trả bằng ký tự đặc biệt,Vai: shop,"1. Gõ chuỗi chứa % và _ vào ô tìm kiếm;
+2. Enter",,Không lỗi 500; không trả về toàn bộ đơn.,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+18_5_PQ_002,Vai bưu điện xã không xem được đơn hoàn trả của điểm bán,Vai: ward,"1. Đăng nhập vai ward;
+2. Mở /order/return-orders",,Không thấy đơn hoàn trả của điểm bán khác cấp.,,,,,,

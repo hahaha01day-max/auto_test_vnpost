@@ -1,0 +1,416 @@
+{
+  "_note": "Phân hệ 03b Ca làm việc của nhân viên — vai `gdv` (người bán hàng). 🔴 Đây là phân hệ ghi TIỀN MẶT: mở ca khai quỹ, chốt ca ghi chênh lệch, mở lại ca gỡ khoá số liệu đã chốt. Tất cả case ghi để `allowMutation:false`. Nhóm `03b_070_*` (offline) KHÔNG đo được trên web — xem `_blocked`.",
+  "cases": {
+    "03b_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop",
+      "data": {},
+      "_blocked_cu": "Cần ca ở đúng trạng thái chưa mở và đang trong giờ cho phép tại lúc chạy",
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ đọc (chanGhi), tiền đề đo bằng API lúc chạy, không đúng thì skip kèm lý do"
+    },
+    "03b_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Cần hôm nay có >=2 ca và 1 ca đang mở",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop2",
+      "data": {},
+      "_blocked_cu": "Cần ngày KHÔNG có lịch làm việc nào",
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ đọc (chanGhi), tiền đề đo bằng API lúc chạy, không đúng thì skip kèm lý do"
+    },
+    "03b_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Cần một ca đang ở trạng thái tạm chốt (DRAFT_CLOSED) — chỉ dựng được bằng cách mở ca và tạm chốt thật.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_010_009": {
+      "enabled": false,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "_blocked": "Cần một ca khai THIẾU giờ bắt đầu/kết thúc. Không tạo được từ UI 03a (hai ô đều bắt buộc) — phải có dữ liệu cũ hoặc sửa DB."
+    },
+    "03b_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Chấm công thật, ghi vào bảng công nhân viên",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Phải chấm công đến thật trước mới kiểm được lần hai",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_020_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_gdv",
+      "data": {},
+      "_blocked_cu": "Cần chạy vào thời điểm ngoài khoảng giờ cho phép chấm công của ca",
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ đọc (chanGhi), tiền đề đo bằng API lúc chạy, không đúng thì skip kèm lý do"
+    },
+    "03b_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Chấm công thật, ghi vào bảng công của nhân viên.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Chấm công thật, ghi vào bảng công của nhân viên.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_020_007": {
+      "enabled": false,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "_blocked": "Phải chạy ở ba mốc giờ khác nhau trong ngày — auto test không đổi được giờ hệ thống; cần hoặc ca dựng riêng theo giờ chạy, hoặc chấp nhận chạy tay."
+    },
+    "03b_030_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "required": [
+        "quayThuNgan"
+      ],
+      "data": {
+        "quayThuNgan": "Quầy 01",
+        "soTo500k": 2,
+        "soTo100k": 3
+      },
+      "_blocked_cu": "Mở ca thật, tạo phiên bán hàng",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "soTo500k": 2,
+        "soTo100k": 3,
+        "tongKyVong": 1300000
+      }
+    },
+    "03b_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Cần tồn tại một ca chưa chốt để bị chặn",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "_ghiChu": "22/09/2026: mọi kỳ vọng đều là \"không gửi request\" ⇒ chạy dưới chanGhi(), KHÔNG mở ca thật nên không còn là case ghi."
+    },
+    "03b_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "seed_shop",
+      "data": {},
+      "allowMutation": true,
+      "_note": "28/09 tests/quay-nguoi-khac.seed_shop.spec.js — gdv giữ ca OPEN ở Quầy 01, CHT (seed_shop, cùng điểm bán) thử mở ca cùng quầy"
+    },
+    "03b_030_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_note": "28/09 user cho phép ghi thật (C1) — chot-mo-ca.gdv.spec.js, làn 5"
+    },
+    "03b_030_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Chốt ca thật, khoá số liệu ca và ghi quỹ tiền mặt",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Chốt ca thật",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Chốt ca thật",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Mở ca + tạm chốt thật để quan sát. GHI quỹ tiền mặt.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Như 03b_040_004 — cần trạng thái đã tạm chốt.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Cần cả hai trạng thái lệch = 0 và lệch ≠ 0, tức phải khai lệch quỹ thật.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Cần chênh lệch khác 0 — tạo ra một phiếu chênh lệch chờ quản lý duyệt.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Như 03b_040_007.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_note": "28/09 A8 — ca-lam-viec.gdv.spec.js, chặn mạng request chốt"
+    },
+    "03b_040_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_blocked_cu": "Cần một ca đã chốt hẳn và môi trường in được; phiếu in không đọc được bằng assert DOM thông thường.",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_040_011": {
+      "enabled": false,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": false,
+      "_note": "28/09 user cho phép ghi thật (C1) — chot-mo-ca.gdv.spec.js, làn 5",
+      "_blocked": "BỎ CASE — user chốt 28/09 (B25): tính năng \"Mở lại ca\" đã gỡ khỏi FE (nút + handler comment ở WorkShiftPage.jsx)",
+      "blockedReason": "BỎ CASE (B25): tính năng Mở lại ca đã gỡ"
+    },
+    "03b_040_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": true,
+      "_note": "28/09 user cho phép ghi thật (C1) — chot-mo-ca.gdv.spec.js, làn 5"
+    },
+    "03b_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {},
+      "_blocked_cu": "Cần có 1 ca đang mở chưa chốt tại lúc chạy",
+      "_batBoi": "vòng đời ca thật dựng trong vong-doi-ca.gdv.spec.js (2 ca hôm nay do seed-ca-hom-nay xếp) — user chốt 22/09: môi trường test, được phép ghi"
+    },
+    "03b_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "03b_050_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_gdv",
+      "data": {},
+      "_blocked_cu": "Cần ngày chỉ có đúng 1 ca",
+      "required": [],
+      "_ghiChu": "Mở 23/09/2026 — chỉ đọc (chanGhi), tiền đề đo bằng API lúc chạy, không đúng thì skip kèm lý do"
+    },
+    "03b_050_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "nhanVienThuHai": "AUTO_NV_64359388"
+      },
+      "required": [
+        "nhanVienThuHai"
+      ],
+      "_blocked_cu": "Cần hai tài khoản nhân viên cùng điểm bán đều có ca trong ngày; chưa có tài khoản nền thứ hai trong `.env.accounts`.",
+      "_batBoi": "nhân viên THỨ HAI của điểm bán seed (vai seed_gdv) + orderGuard nay không còn danh sách SĐT bỏ qua (đo 23/09)"
+    },
+    "03b_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop2",
+      "data": {
+        "soDienThoaiTaiKhoan": "0968051351"
+      },
+      "required": [],
+      "_blocked_cu": "Cần tài khoản cấp điểm bán KHÔNG được xếp ca hôm nay, và phải chắc SĐT không nằm trong danh sách bỏ qua hardcode.",
+      "_ghiChu": "Mở 23/09/2026 — chỉ đọc (chanGhi), tiền đề đo bằng API lúc chạy, không đúng thì skip kèm lý do"
+    },
+    "03b_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "soDienThoaiTaiKhoan": "0968051351"
+      },
+      "required": [
+        "soDienThoaiTaiKhoan"
+      ],
+      "_blocked_cu": "Cần tài khoản đã xếp ca nhưng chưa mở ca; cùng ràng buộc SĐT như 03b_060_001.",
+      "_batBoi": "nhân viên THỨ HAI của điểm bán seed (vai seed_gdv) + orderGuard nay không còn danh sách SĐT bỏ qua (đo 23/09)"
+    },
+    "03b_060_003": {
+      "enabled": false,
+      "mutates": false,
+      "role": "gdv",
+      "data": {
+        "soDienThoaiTaiKhoan": "0968051351"
+      },
+      "_blocked": "Tiền đề không còn tồn tại: đo 23/09/2026, checkOrderCreateAccessLoader (vnpost-web/src/routes/helpers.js) KHÔNG còn danh sách SĐT bỏ qua nào — mọi tài khoản cấp điểm bán đều qua phép chặn ca. Lệch đặc tả: kịch bản viết theo code cũ, cần user bỏ hoặc sửa case. Hệ quả tốt: 03b_060_001/002 không thể pass giả vì SĐT.",
+      "required": [
+        "soDienThoaiTaiKhoan"
+      ]
+    },
+    "03b_060_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "soDienThoaiTaiKhoan": "0968051351"
+      },
+      "required": [
+        "soDienThoaiTaiKhoan"
+      ]
+    },
+    "03b_070_001": {
+      "enabled": false,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": false,
+      "_blocked": "🔴 KHÔNG đo được bằng Playwright trên vnpost-web: FE web không có chế độ offline (không xử lý navigator.onLine). Nghiệp vụ thuộc máy bán hàng / app POS."
+    },
+    "03b_070_002": {
+      "enabled": false,
+      "mutates": true,
+      "role": "gdv",
+      "data": {},
+      "allowMutation": false,
+      "_blocked": "Cùng lý do 03b_070_001. Hệ quả nhìn thấy trên web là cảnh báo đơn offline chưa về đủ ở 03a_060_006."
+    },
+    "03b_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    }
+  }
+}

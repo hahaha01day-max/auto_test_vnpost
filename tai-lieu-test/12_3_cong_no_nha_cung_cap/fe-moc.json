@@ -1,0 +1,18 @@
+{
+  "spec": {
+    "tests/cong-no-ghi.tct.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/debt-reconciliation/supplier-debt"
+      ],
+      "fe": [
+        "src/features/supplierDebt/pages/ShopDebtSupplierPage.jsx",
+        "src/features/supplierDebt/pages/ModalDebt.jsx",
+        "src/features/supplierDebt/pages/ModalCreateDebt.jsx",
+        "src/features/supplierDebt/pages/DrawerDebtAdjustment.jsx",
+        "src/features/supplierDebt/services/shopDebtSupplierApi.js"
+      ]
+    }
+  }
+}

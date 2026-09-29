@@ -1,0 +1,657 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 168,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:42:40.052Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 91,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:42:40.397Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T09:42:40.492Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "nang-hang.gdv.spec.js",
+      "file": "nang-hang.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "19_130 · Vào nhóm (nâng hạng) realtime theo thanh toán (vai gdv, GHI THẬT)",
+          "file": "nang-hang.gdv.spec.js",
+          "line": 118,
+          "column": 6,
+          "specs": [
+            {
+              "title": "19_130_007 — vào nhóm ngay sau khi thanh toán hết bằng Chuyển khoản",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "200 A7KH19_NHOM_19_130_007_393960 · điều kiện (300000, 400000] & 1 đơn"
+                    },
+                    {
+                      "type": "chặn bởi môi trường",
+                      "description": "Bạn không có bất kì tài khoản thanh toán nào vui lòng thêm trong cài đặt để thực hiện thanh toán qua hình thức này"
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Chuyển khoản: Bạn không có bất kì tài khoản thanh toán nào vui lòng thêm trong cài đặt để thực hiện thanh toán qua hình thức này",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                        "line": 134,
+                        "column": 11
+                      }
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "1"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "200 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"zffaYh\"}"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 66506,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:42:40.866Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "200 A7KH19_NHOM_19_130_007_393960 · điều kiện (300000, 400000] & 1 đơn"
+                        },
+                        {
+                          "type": "chặn bởi môi trường",
+                          "description": "Bạn không có bất kì tài khoản thanh toán nào vui lòng thêm trong cài đặt để thực hiện thanh toán qua hình thức này"
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Chuyển khoản: Bạn không có bất kì tài khoản thanh toán nào vui lòng thêm trong cài đặt để thực hiện thanh toán qua hình thức này",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                            "line": 134,
+                            "column": 11
+                          }
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "1"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "200 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"zffaYh\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-8193d--toán-hết-bằng-Chuyển-khoản-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6b2890490e128a876400-4488805ebf90148c9b89",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 124,
+              "column": 3
+            },
+            {
+              "title": "19_130_008 — vào nhóm ngay sau khi thanh toán hết bằng Quét QR",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "201 A7KH19_NHOM_19_130_008_460458 · điều kiện (400000, 500000] & 1 đơn"
+                    },
+                    {
+                      "type": "chặn bởi môi trường",
+                      "description": "QR đã sinh (không thấy request, 9 ảnh) — cần giao dịch chuyển khoản THẬT để webhook xác nhận"
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Quét QR: QR đã sinh (không thấy request, 9 ảnh) — cần giao dịch chuyển khoản THẬT để webhook xác nhận",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                        "line": 134,
+                        "column": 11
+                      }
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "3"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "201 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"nDreoI\"}"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 105987,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:43:47.451Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "201 A7KH19_NHOM_19_130_008_460458 · điều kiện (400000, 500000] & 1 đơn"
+                        },
+                        {
+                          "type": "chặn bởi môi trường",
+                          "description": "QR đã sinh (không thấy request, 9 ảnh) — cần giao dịch chuyển khoản THẬT để webhook xác nhận"
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Quét QR: QR đã sinh (không thấy request, 9 ảnh) — cần giao dịch chuyển khoản THẬT để webhook xác nhận",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                            "line": 134,
+                            "column": 11
+                          }
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "3"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "201 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"nDreoI\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-601f8-thanh-toán-hết-bằng-Quét-QR-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6b2890490e128a876400-83ed938b0069c24464a7",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 124,
+              "column": 3
+            },
+            {
+              "title": "19_130_004 — Nâng hạng realtime khi thanh toán sau rồi trả nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 480000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "202 A7KH19_NHOM_19_130_004_566997 · điều kiện (600000, 700000] & 1 đơn"
+                    },
+                    {
+                      "type": "sau khi ghi nợ",
+                      "description": "ĐÃ vào sau 5s — SAI"
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "1"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "202 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"LzpsEC\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 92617,
+                      "error": {
+                        "message": "Error: Mới GHI NỢ (chưa trả) mà khách đã vào nhóm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m5\u001b[39m",
+                        "stack": "Error: Mới GHI NỢ (chưa trả) mà khách đã vào nhóm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m5\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:179:63",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                          "column": 63,
+                          "line": 179
+                        },
+                        "snippet": "  177 | \t\t\tconst luc1 = await choVaoNhom(ctx.tct, ctx.groupId, ctx.kh.ma, 90_000);\n  178 | \t\t\tghiChu('sau khi ghi nợ', luc1 == null ? 'chưa vào nhóm (đúng)' : `ĐÃ vào sau ${luc1}s — SAI`);\n> 179 | \t\t\texpect(luc1, 'Mới GHI NỢ (chưa trả) mà khách đã vào nhóm').toBeNull();\n      | \t\t\t                                                           ^\n  180 | \t\t\t// Trả nợ bằng API thu nợ của phiên phụ Quản lý tỉnh (CHT thiếu quyền CREATE_CUSTOMER_DEBT — xem báo cáo 090_001).\n  181 | \t\t\tconst tinh = await g.k.moPhienPhu(browser, 'province', '/customer');\n  182 | \t\t\ttry {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                            "column": 63,
+                            "line": 179
+                          },
+                          "message": "Error: Mới GHI NỢ (chưa trả) mà khách đã vào nhóm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m5\u001b[39m\n\n  177 | \t\t\tconst luc1 = await choVaoNhom(ctx.tct, ctx.groupId, ctx.kh.ma, 90_000);\n  178 | \t\t\tghiChu('sau khi ghi nợ', luc1 == null ? 'chưa vào nhóm (đúng)' : `ĐÃ vào sau ${luc1}s — SAI`);\n> 179 | \t\t\texpect(luc1, 'Mới GHI NỢ (chưa trả) mà khách đã vào nhóm').toBeNull();\n      | \t\t\t                                                           ^\n  180 | \t\t\t// Trả nợ bằng API thu nợ của phiên phụ Quản lý tỉnh (CHT thiếu quyền CREATE_CUSTOMER_DEBT — xem báo cáo 090_001).\n  181 | \t\t\tconst tinh = await g.k.moPhienPhu(browser, 'province', '/customer');\n  182 | \t\t\ttry {\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js:179:63"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:45:33.443Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "202 A7KH19_NHOM_19_130_004_566997 · điều kiện (600000, 700000] & 1 đơn"
+                        },
+                        {
+                          "type": "sau khi ghi nợ",
+                          "description": "ĐÃ vào sau 5s — SAI"
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "1"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "202 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"LzpsEC\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-55b85-i-thanh-toán-sau-rồi-trả-nợ-gdv/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/tests/nang-hang.gdv.spec.js",
+                        "column": 63,
+                        "line": 179
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6b2890490e128a876400-0017c7e6533da23e5390",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 166,
+              "column": 2
+            },
+            {
+              "title": "19_130_006 — Nâng hạng realtime khi thanh toán trả góp",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm rác",
+                      "description": "203 A7KH19_NHOM_19_130_006_660261 · điều kiện (700000, 800000] & 1 đơn"
+                    },
+                    {
+                      "type": "trả góp 50%",
+                      "description": "{\"draft\":{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ieYZzf\"},\"orderId\":229,\"sdk\":\"có\",\"tb\":\"\"}"
+                    },
+                    {
+                      "type": "hành vi thật",
+                      "description": "trả góp 50%: vào nhóm sau 0s (tính theo tổng đơn)"
+                    },
+                    {
+                      "type": "số thành viên nhóm lúc xoá",
+                      "description": "2"
+                    },
+                    {
+                      "type": "xoá nhóm rác",
+                      "description": "203 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ucQMho\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 101811,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T09:47:07.141Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm rác",
+                          "description": "203 A7KH19_NHOM_19_130_006_660261 · điều kiện (700000, 800000] & 1 đơn"
+                        },
+                        {
+                          "type": "trả góp 50%",
+                          "description": "{\"draft\":{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ieYZzf\"},\"orderId\":229,\"sdk\":\"có\",\"tb\":\"\"}"
+                        },
+                        {
+                          "type": "hành vi thật",
+                          "description": "trả góp 50%: vào nhóm sau 0s (tính theo tổng đơn)"
+                        },
+                        {
+                          "type": "số thành viên nhóm lúc xoá",
+                          "description": "2"
+                        },
+                        {
+                          "type": "xoá nhóm rác",
+                          "description": "203 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ucQMho\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/19_quan_ly_khach_hang/test-output/playwright-results/nang-hang.gdv-19-130-·-Vào-a9fb5-time-khi-thanh-toán-trả-góp-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6b2890490e128a876400-7c0c98d289739d3c1158",
+              "file": "nang-hang.gdv.spec.js",
+              "line": 205,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T09:42:39.740Z",
+    "duration": 369400.016,
+    "expected": 4,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

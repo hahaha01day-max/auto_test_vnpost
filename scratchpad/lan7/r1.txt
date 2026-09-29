@@ -1,0 +1,30 @@
+{'startTime': '2026-09-25T15:04:36.611Z', 'duration': 509372.59300000005, 'expected': 28, 'skipped': 0, 'unexpected': 6, 'flaky': 0}
+
+ failed | 31_050_001 — Thêm vai trò bị trùng tên
+   @ nguyên văn : tên trùng "Admin" (Kế toán TỔNG CÔNG TY Kế toán Gán chức năng Gán nhân viên) · 200 {"code":"200","message":"Thành công","label":"API_STATUS_SUCCESS","requestId":"QrKAQD"} · tb "Thêm mới thành công" · số vai trò cùng tên sau: 2
+   @ dọn vai trò rác : A7PQ31_TRUNG_741729 → 200
+   ! Error: Tạo được vai trò THỨ HAI cùng tên "Admin" (mã A7PQ31_TRUNG_741729) — không chặn trùng tên  expect(received).toBeNull()  Received: "A7PQ31_TRUNG_741729"
+
+ failed | 31_060_001 — Mở màn chỉnh sửa vai trò nạp sẵn thông tin
+   @ nạp sẵn : {"ma":"A7PQ31_060001_759545","maKhoa":true,"ten":"A7PQ31 Vai trò rác 31_060_001 759545","phamVi":"","moTa":"AUTO TEST — rác 31"}
+   @ dọn vai trò rác : A7PQ31_060001_759545 → 200
+   ! Error: expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 1    Object {     "ma": "A7PQ31_060001_759545",     "maKhoa": true,     "moTa": "AUTO TEST — rác 31", -   "phamVi": "Điểm Bán", +   "phamVi": "",     "ten": "A7PQ31 Vai trò r
+
+ failed | 31_080_006 — Chọn tất cả chức năng cho vai trò
+   @ đo : tổng 413 · đã chọn 0
+   @ dọn vai trò rác : A7PQ31_080006_003701 → 200
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: 413 Received: 0
+
+ failed | 31_080_007 — Chỉ hiển thị mục đã chọn
+   @ đo : tick 2 · Đã chọn 0 · lá đang hiện 1 (chưa tick 1)
+   @ dọn vai trò rác : A7PQ31_080007_031847 → 200
+   ! Error: expect(received).toBe(expected) // Object.is equality  Expected: 2 Received: 0
+
+ failed | 31_080_008 — Làm mới các chức năng đã chọn
+   @ đo : đang lưu 0 · tick dở 1 · sau "Làm mới" 1
+   @ dọn vai trò rác : A7PQ31_080008_065280 → 200
+   ! Error: "Làm mới" không bỏ lựa chọn chưa lưu (nút chỉ nạp lại danh sách chức năng)  expect(received).toBe(expected) // Object.is equality  Expected: 0 Received: 1
+
+ failed | 31_090_002 — Phân trang danh sách vai trò
+   @ đo : 10 dòng vai trò trên 1 màn · 0 thanh phân trang · tham số {"page":"0","size":"5000","sort":"createdDate,desc"}
+   ! Error: Danh sách vai trò KHÔNG có phân trang: nạp một lần size=5000 (10 vai trò) vào cây  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0

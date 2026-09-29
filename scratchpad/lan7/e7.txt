@@ -1,0 +1,4 @@
+{'startTime': '2026-09-25T13:38:25.592Z', 'duration': 37284.913, 'expected': 2, 'skipped': 0, 'unexpected': 1, 'flaky': 0}
+
+ failed | 26_060_003 — Đổi hàng thu chênh lệch sinh phiếu thu tự động
+   ! Error: Không thấy đơn vị "AUTO7_SHOP" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABEL_GDV  expect(locator).toBeVisible() failed  Locator: getByText('AUTO7_SHOP', { exact: true }).first() Expected: visible Timeout: 30000ms Error: element(s) not found  Call log:   - Không thấy đơn vị "AUTO7_SHOP" trên màn chọn phạm vi — kiểm lại VNPOST_SCOPE_LABE

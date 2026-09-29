@@ -1,0 +1,250 @@
+﻿,Chức năng,,ĐƠN VỊ VẬN TẢI,,,,,,,,
+,Mã Testcase,,12-don-vi-van-tai,,,,,,,,
+,Tổng các tình huống kiểm thử,,108,,,,,,,,
+,Chưa thực hiện,,108,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,ĐƠN VỊ VẬN TẢI,,,,,,,,,,
+,070 — Tạo đơn vận chuyển từ phiếu chuyển kho (sheet QC),,,,,,,,,,
+12-don-vi-van-tai_070_001,Kiểm tra hiển thị drawer,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Tạo đơn vận chuyển",,"- Hiển thị Mã vận đơn, Mã vận chuyển, Đơn vị vận chuyển, Nhân viên vận chuyển, số tiền, biển số xe - Button Huỷ, Lưu",,,,,,
+12-don-vi-van-tai_070_002,Kiểm tra bỏ trống các trường bắt buộc,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Tạo đơn vận chuyển",,"- Hiển thị Nhập mã vận đơn, Chọn đơn vị vận chuyển, Chọn nhân viên, Nhập số tiền",,,,,,
+12-don-vi-van-tai_070_003,Kiểm tra nhập đầy đủ thông tin các trường,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Tạo đơn vận chuyển",,- Hiển thị tạo đơn thành công,,,,,,
+12-don-vi-van-tai_070_004,Kiểm tra chọn đơn vị vận chuyển,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Tạo đơn vận chuyển",,- Hiển thị danh sách đơn vị vân chuyển,,,,,,
+12-don-vi-van-tai_070_005,Kiểm tra chọn nhân viên,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Tạo đơn vận chuyển",,- Hiển thị danh sách nhân viên tương ứng với đơn vị vận chuyển,,,,,,
+12-don-vi-van-tai_070_006,Kiểm tra nhập số tiền âm,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Tạo đơn vận chuyển",,- Hiển thị Số tiền mặc định là 0,,,,,,
+12-don-vi-van-tai_070_007,Kiểm tra nhập số tiền bằng 0,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Tạo đơn vận chuyển",,- Hiển thị tạo đơn thành công,,,,,,
+12-don-vi-van-tai_070_008,Kiểm tra nhận kho ghi nhận bồi thường,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Xác nhận đơn vận chuyển
+3. Chọn ghi nhận bồi thường( do đơn vị vận chuyển)",,- Hiển thị số tiền ghi nhận mặc định là số tiền giao thiếu - Ghi nhận công nợ cho đơn vị vận chuyển,,,,,,
+12-don-vi-van-tai_070_009,Kiểm tra chỉnh sửa số tiền ghi nợ,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Xác nhận đơn vận chuyển
+3. Chọn ghi nhận bồi thường( do đơn vị vận chuyển)
+4. Sửa số tiền",,- Ghi nhận đúng công nợ cho đơn vị vận chuyển,,,,,,
+12-don-vi-van-tai_070_010,Kiểm tra ghi nợ lần 2,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Xác nhận đơn vận chuyển
+3. Chọn ghi nhận bồi thường( do đơn vị vận chuyển",,- Ghi nợ công nợ lần 2 vào công nợ đơn vị vận chuyển,,,,,,
+12-don-vi-van-tai_070_011,"Kiểm tra kho chuyển thiếu, cộng lại tồn kho chuyển","Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập phiếu chuyển kho
+2. Chọn Xác nhận đơn vận chuyển
+3. Chọn kho chuyển thiếu, cộng lại tồn kho chuyển",,- Hiển thị đúng số lượng và số tiền được nhận - Hàng giap thiếu cộng lại vào kho chuyển,,,,,,
+12-don-vi-van-tai_070_012,Kiểm tra chuyển trạng thái của đơn vận chuyển,"Vai `shop` đăng nhập, đang ở phiếu chuyển kho và mở drawer tạo đơn vận chuyển","1. Truy cập đơn vận chuyển
+2. Chuyển đổi trạng thái giao hàng",,- Ghi nhận đúng trạng thái giao hàng,,,,,,
+Vantai_1,Kiểm tra truy cập đơn vị vận chuyển role cấp tổng công ty,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Đơn vị vận chuyển",,Hiển thị đơn vị vận chuyển cấp tổng ty,,,,,,
+Vantai_10,Kiểm tra giao diện màn hình Quản lý đơn vận chuyển,User có quyền truy cập màn hình vận chuyển · Màn: Vận chuyển → Đơn vận chuyển,"1. Truy cập menu Vận chuyển → Đơn vận chuyển.
+2. Quan sát giao diện màn hình.",,"Hiển thị đầy đủ bộ lọc (Mã VĐ/Mã phiếu chuyển, ĐVVC, Trạng thái VC, Trạng thái TT), nút Tìm kiếm, Xóa lọc, Thêm mới. Bảng dữ liệu hiển thị đầy đủ các cột: Mã VĐ, Mã phiếu chuyển, ĐVVC, Nhân viên VC, Biển số, Trạng thái VC, Số tiền, Đã TT, Trạng thái TT, Hành động.",,,,,,
+Vantai_11,Kiểm tra giao diện popup Chi tiết đơn vận chuyển,Có ít nhất 1 đơn vận chuyển · Màn: Popup Chi tiết đơn vận chuyển,"1. Chọn đơn vận chuyển.
+2. Click ""Chi tiết"".",,"Hiển thị đầy đủ thông tin: Mã vận đơn, Mã phiếu chuyển, ĐVVC, Nhân viên VC, Biển số xe, Trạng thái vận chuyển, Số tiền, Đã thanh toán, Còn nợ, Trạng thái thanh toán. Hiển thị các button: Đóng, Ghi nhận bồi thường, Đổi trạng thái vận chuyển Hiển thị các nút chức năng đúng theo trạng thái đơn.",,,,,,
+Vantai_12,Kiểm tra giao diện popup Thanh toán đơn vận chuyển,Đơn vận chuyển còn công nợ · Màn: Popup Thanh toán đơn vận chuyển,"1. Chọn đơn có nút Thanh toán.
+2. Click Thanh toán.",,"Hiển thị đầy đủ thông tin vận đơn, số tiền ship, đã thanh toán, còn nợ, ô nhập số tiền thanh toán, phương thức thanh toán, ghi chú và nút Lưu/Hủy.",,,,,,
+Vantai_13,"Kiểm tra chuyển trạng thái vận chuyển từ ""Đang chờ"" sang ""Đang chuyển""",Có đơn vận chuyển trạng thái Đang chờ · Màn: Chi tiết đơn vận chuyển,"1. Mở chi tiết đơn.
+2. Chọn Đổi trạng thái vận chuyển.
+3. Chuyển sang Đang chuyển.",,"Hệ thống cập nhật trạng thái vận chuyển thành ""Đang chuyển"".",,,,,,
+Vantai_14,"Kiểm tra chuyển trạng thái vận chuyển từ ""Đang chuyển"" sang ""Đã giao""",Có đơn vận chuyển trạng thái Đang chuyển · Màn: Chi tiết đơn vận chuyển,"1. Mở chi tiết đơn.
+2. Đổi trạng thái sang Đã giao.",,"Hệ thống cập nhật trạng thái thành ""Đã giao"".",,,,,,
+Vantai_15,Kiểm tra thanh toán đơn vận chuyển toàn bộ số tiền ship,Đơn còn nợ phí ship · Màn: Thanh toán đơn vận chuyển,"1. Mở popup Thanh toán.
+2. Nhập đúng số tiền còn nợ.
+3. Lưu.",,Hệ thống ghi nhận thanh toán thành công. Còn nợ = 0. Trạng thái thanh toán = Đã thanh toán.,,,,,,
+Vantai_16,Kiểm tra thanh toán nhiều lần cho cùng đơn vận chuyển,Đơn còn nợ phí ship · Màn: Thanh toán đơn vận chuyển,"1. Thanh toán một phần.
+2. Thanh toán phần còn lại.",,Hệ thống ghi nhận nhiều lần thanh toán. Tổng tiền đã thanh toán bằng số tiền ship.,,,,,,
+Vantai_17,Kiểm tra không cho thanh toán vượt quá công nợ vận chuyển,Đơn còn nợ 10.000đ · Màn: Thanh toán đơn vận chuyển,"1. Nhập số tiền thanh toán lớn hơn 10.000đ.
+2. Lưu.",,Hiển thị mặc định về số tiền lớn nhất có thể thanh toán,,,,,,
+Vantai_18,Kiểm tra số tiền bồi thường không làm thay đổi số tiền đơn vận chuyển,Có đơn vận chuyển phát sinh bồi thường · Màn: Chi tiết đơn vận chuyển,"1. Ghi nhận bồi thường 100.000đ.
+2. Kiểm tra lại số tiền vận chuyển.",,Số tiền vận chuyển vẫn giữ nguyên. Không cộng/trừ theo tiền bồi thường.,,,,,,
+Vantai_19,Kiểm tra số tiền bồi thường không ảnh hưởng công nợ vận chuyển,Có đơn có công nợ vận chuyển và bồi thường · Màn: Chi tiết đơn vận chuyển,"1. Ghi nhận bồi thường.
+2. Kiểm tra công nợ vận chuyển.",,Công nợ vận chuyển chỉ tính theo phí ship. Không bị ảnh hưởng bởi tiền bồi thường.,,,,,,
+Vantai_2,Kiểm tra truy cập đơn vận chuyển role cấp tổng công ty,Vai `shop` đăng nhập · Màn: Quản lý đơn vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Đơn vận chuyển",,Hiển thị đơn vận chuyển phát sinh ở cấp tổng ty,,,,,,
+Vantai_20,Kiểm tra số tiền thanh toán chỉ ghi nhận cho phí ship,Có đơn vận chuyển phát sinh bồi thường · Màn: Thanh toán đơn vận chuyển,"1. Ghi nhận bồi thường.
+2. Thực hiện thanh toán phí vận chuyển.",,Số tiền thanh toán chỉ làm giảm công nợ vận chuyển. Không làm giảm tiền bồi thường.,,,,,,
+Vantai_21,Kiểm tra sinh đơn vận chuyển khi TCT chuyển kho xuống tỉnh,Có phiếu chuyển kho từ TCT xuống tỉnh · Màn: Chuyển kho → Vận chuyển,"1. Tạo phiếu chuyển kho.
+2. Xác nhận xuất kho.",,Hệ thống sinh đơn vận chuyển tương ứng.,,,,,,
+Vantai_22,Kiểm tra sinh đơn vận chuyển khi tỉnh chuyển kho xuống điểm bán,Có phiếu chuyển kho từ tỉnh xuống điểm bán · Màn: Chuyển kho → Vận chuyển,"1. Tạo phiếu chuyển kho.
+2. Xác nhận xuất kho.",,Hệ thống sinh đơn vận chuyển tương ứng.,,,,,,
+Vantai_23,Kiểm tra ghi nhận bồi thường khi điểm nhận xác nhận thiếu hàng,Có phiếu chuyển kho đã giao và thiếu hàng · Màn: Chi tiết đơn vận chuyển,"1. Điểm nhận xác nhận nhận thiếu hàng.
+2. Chọn Ghi nhận bồi thường.",,Hệ thống cho phép nhập số tiền bồi thường và ghi nhận thành công.,,,,,,
+Vantai_24,Kiểm tra ghi nhận bồi thường khi nhận đủ hàng,Phiếu nhận đủ số lượng · Màn: Chi tiết đơn vận chuyển,"1. Mở chi tiết đơn.
+2. Thực hiện ghi nhận bồi thường.",,Hệ thống cho ghi nhận số tiền bổi thường do hàng hỏng trong quá tình kiểm tra lại,,,,,,
+Vantai_25,Kiểm tra lịch sử thanh toán đơn vận chuyển,Đơn đã thanh toán nhiều lần · Màn: Chi tiết đơn vận chuyển,"1. Thanh toán nhiều lần.
+2. Mở chi tiết đơn.",,Hiển thị tổng đã thanh toán.,,,,,,
+Vantai_26,Kiểm tra tìm kiếm đơn vận chuyển theo mã vận đơn,Có dữ liệu vận đơn · Màn: Quản lý đơn vận chuyển,"1. Nhập mã vận đơn.
+2. Tìm kiếm.",,Hiển thị đúng đơn vận chuyển tương ứng.,,,,,,
+Vantai_27,Kiểm tra lọc theo trạng thái vận chuyển,Có dữ liệu nhiều trạng thái · Màn: Quản lý đơn vận chuyển,"1. Chọn trạng thái Đang chờ/Đang chuyển/Đã giao.
+2. Tìm kiếm.",,Chỉ hiển thị các đơn thuộc trạng thái được chọn.,,,,,,
+Vantai_28,Kiểm tra lọc theo trạng thái thanh toán,Có dữ liệu nhiều trạng thái thanh toán · Màn: Quản lý đơn vận chuyển,"1. Chọn trạng thái thanh toán.
+2. Tìm kiếm.",,Hiển thị đúng danh sách theo trạng thái thanh toán đã chọn.,,,,,,
+Vantai_29,Kiểm tra chọn phương thức thanh toán,Vai `shop` đăng nhập · Màn: Quản lý đơn vận chuyển,"1. Chọn trạng thái thanh toán.
+2. Chọn từng phương thức",,Ghi nhận đúng phương thức đã thanh toán,,,,,,
+Vantai_3,Kiểm tra truy cập nhân viên vận chuyển role cấp tổng công ty,Vai `shop` đăng nhập · Màn: Quản lý nhân viên vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Nhân viên vận chuyển",,Hiển thị nhân viên vận chuyển cấp tổng ty,,,,,,
+Vantai_30,Kiểm tra ghi nhận tổng số tiền bồi thường,Vai `shop` đăng nhập · Màn: Quản lý đơn vận chuyển,"1. Chọn đơn đã ghi nhận bồi thường lần 1
+2. Tiếp tục ghi nhận bồi thường",,Hiển thị lần lượt các phiếu ghi nợ ở tab lịch sử bồi thường của công nợ đơn vị vận tải,,,,,,
+Vantai_31,Kiểm tra giao diện,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,1. Chọn đơn vị vận chuyển,,"Hiển thị title"" Quản lý đơn vị vận chuyển"" Hiển thị ô tìm kiếm theo tên/mã Hiển thị bộ lọc loại ( Bên ngoài/ Nội bộ) Hiển thị trạng thái hoạt động Button thêm mới Bảng danh sách đơn vị vận chuyển với các cột: Mã, Tên đơn vị, Loại, Trạng thái, Tổng còn nợ, Hành động Phân trang",,,,,,
+Vantai_32,Kiểm tra tìm kiếm theo tên/mã,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,"1. Nhập tên/mã đơn vị vận chuyển
+2. Tìm kiếm",,Hiển thị danh sách đơn vị có thông tin tương ứng,,,,,,
+Vantai_33,Kiểm tra bộ lọc loại,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,1. Chọn phân loại Nội bộ/ Bên ngoài,,Hiển thị danh sách đơn vị có thông tin tương ứng,,,,,,
+Vantai_34,Kiểm tra bộ lọc trạng thái hoạt động,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,1. Chọn phân loại Hoà động/ Ngừng hoạt động,,Hiển thị danh sách đơn vị có thông tin tương ứng,,,,,,
+Vantai_35,Kiểm tra xem công nợ đơn vị vận chuyển,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,1. Chọn công nợ,,Hiển thị drawer Lịch sử ghi nợ và thanh toán - Tên đơn vị vận chuyển,,,,,,
+Vantai_36,Kiểm tra phân trang,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,1. Chọn phân trang,,Hiển thị số thứ tự đúng với phân trang đã chọn,,,,,,
+Vantai_37,Kiểm tra giao diện,User có quyền thêm đơn vị vận chuyển · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Vào màn hình Quản lý đơn vị vận chuyển.
+2. Click ""Thêm"".",,"Hiển thị title "" Thêm đơn vị vận chuyển"" Hiển thị nhập thông tin bắt buộc: Tên đơn vị, Mã đơn vị, Loại, Trạng thái",,,,,,
+Vantai_38,"Thêm mới đơn vị vận chuyển thành công với Loại = Bên ngoài, Trạng thái = Hoạt động",User có quyền thêm đơn vị vận chuyển · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Vào màn hình Quản lý đơn vị vận chuyển.
+2. Click ""Thêm"".
+3. Nhập Tên đơn vị.
+4. Nhập Mã đơn vị chưa tồn tại.
+5. Chọn Loại
+6. Chọn Trạng thái
+7. Click Lưu.",,"Hệ thống lưu thành công, hiển thị thông báo thành công và bản ghi mới xuất hiện trong danh sách.",,,,,,
+Vantai_39,"Thêm mới đơn vị vận chuyển thành công với Loại = Bên ngoài, Trạng thái = Ngừng hoạt động",User có quyền thêm · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Vào màn hình Quản lý đơn vị vận chuyển.
+2. Click ""Thêm"".
+3. Nhập Tên đơn vị.
+4. Nhập Mã đơn vị chưa tồn tại.
+5. Chọn Loại
+6. Chọn Trạng thái
+7. Click Lưu.",,"Tạo thành công, hiển thị đúng trạng thái Ngừng hoạt động.",,,,,,
+Vantai_4,Kiểm tra truy cập đơn vị vận chuyển role cấp tỉnh,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Đơn vị vận chuyển",,Hiển thị đơn vị vận chuyển cấp tổng ty,,,,,,
+Vantai_40,"Thêm mới đơn vị vận chuyển thành công với Loại = Nội bộ, Trạng thái = Hoạt động",User có quyền thêm · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Vào màn hình Quản lý đơn vị vận chuyển.
+2. Click ""Thêm"".
+3. Nhập Tên đơn vị.
+4. Nhập Mã đơn vị chưa tồn tại.
+5. Chọn Loại
+6. Chọn Trạng thái
+7. Click Lưu.",,"Tạo thành công, hiển thị đúng loại và trạng thái.",,,,,,
+Vantai_41,"Thêm mới đơn vị vận chuyển thành công với Loại = Nội bộ, Trạng thái = Ngừng hoạt động",User có quyền thêm · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Vào màn hình Quản lý đơn vị vận chuyển.
+2. Click ""Thêm"".
+3. Nhập Tên đơn vị.
+4. Nhập Mã đơn vị chưa tồn tại.
+5. Chọn Loại
+6. Chọn Trạng thái
+7. Click Lưu.",,"Tạo thành công, dữ liệu hiển thị chính xác.",,,,,,
+Vantai_42,Không nhập thông tin bắt buộc,Form thêm mới đang mở · Màn: Popup Thêm đơn vị vận chuyển,"1. Để trống trường bắt buộc.
+2. Nhập các trường còn lại hợp lệ.
+3. Click Lưu.",,"Hiển thị validate ""Vui lòng nhập tên"", "" Vui lòng nhập mã, không lưu dữ liệu.",,,,,,
+Vantai_43,Thêm đơn vị với Mã đơn vị đã tồn tại,Đã có đơn vị vận chuyển với mã tương ứng · Màn: Popup Thêm đơn vị vận chuyển,"1. Mở form thêm mới.
+2. Nhập Mã đơn vị đã tồn tại.
+3. Nhập các thông tin khác hợp lệ.
+4. Lưu.",,"Hiển thị thông báo mã đơn vị đã tồn tại, không lưu dữ liệu.",,,,,,
+Vantai_44,Sửa Tên đơn vị vận chuyển,Đã tồn tại đơn vị vận chuyển · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Chọn bản ghi.
+2. Click Sửa.
+3. Thay đổi Tên đơn vị.
+4. Lưu.",,"Cập nhật thành công, hiển thị tên mới.",,,,,,
+Vantai_45,Sửa Mã đơn vị vận chuyển hợp lệ,Đã tồn tại đơn vị vận chuyển · Màn: Vận chuyển > Đơn vị vận chuyển,Thay đổi Mã đơn vị chưa tồn tại và lưu,,Ô Mã đơn vị disable,,,,,,
+Vantai_46,Sửa Loại từ Bên ngoài sang Nội bộ,Có bản ghi loại Bên ngoài · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Mở form sửa.
+2. Đổi Loại thành Nội bộ.
+3. Lưu.",,"Cập nhật thành công, hiển thị loại Nội bộ.",,,,,,
+Vantai_47,Sửa Loại từ Nội bộ sang Bên ngoài,Có bản ghi loại Nội bộ · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Mở form sửa.
+2. Đổi Loại thành Bên ngoài.
+3. Lưu.",,Cập nhật thành công.,,,,,,
+Vantai_48,Sửa Trạng thái từ Hoạt động sang Ngừng hoạt động,Có bản ghi đang Hoạt động · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Mở form sửa.
+2. Chọn Ngừng hoạt động.
+3. Lưu.",,Trạng thái cập nhật thành công.,,,,,,
+Vantai_49,Sửa Trạng thái từ Ngừng hoạt động sang Hoạt động,Có bản ghi đang Ngừng hoạt động · Màn: Vận chuyển > Đơn vị vận chuyển,"1. Mở form sửa.
+2. Chọn Hoạt động.
+3. Lưu.",,Trạng thái cập nhật thành công.,,,,,,
+Vantai_5,Kiểm tra truy cập đơn vận chuyển role cấp tỉnh,Vai `shop` đăng nhập · Màn: Quản lý đơn vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Đơn vận chuyển",,Hiển thị đơn vận chuyển phát sinh ở cấp tổng ty,,,,,,
+Vantai_50,Sửa dữ liệu rồi click Hủy,Có bản ghi tồn tại · Màn: Popup Sửa đơn vị vận chuyển,"1. Mở form sửa.
+2. Thay đổi dữ liệu.
+3. Click Hủy.",,Không cập nhật dữ liệu.,,,,,,
+Vantai_51,Kiểm tra hiển thị giao diện màn hình Lịch sử ghi nợ,Đã có Đơn vị vận chuyển · Màn: Lịch sử ghi nợ,"1. Vào Vận chuyển → Đơn vị vận chuyển.
+2. Chọn 1 ĐVVC.
+3. Mở popup ""Lịch sử ghi nợ và thanh toán"".
+4. Chọn tab ""Lịch sử ghi nợ"".",,"Hiển thị đầy đủ các khối thống kê (Tổng ĐVVC nợ lại, Tổng tiền giao hàng, Đã thanh toán giao hàng, Tổng bồi thường, Tổng thu hồi). Hiển thị bộ lọc thời gian, danh sách ghi nợ, nút Thanh toán, Thu hồi bồi thường, Xuất Excel. Không bị vỡ layout.",,,,,,
+Vantai_52,Kiểm tra hiển thị giao diện màn hình Lịch sử thanh toán,Đã có dữ liệu thanh toán · Màn: Lịch sử thanh toán,"1. Mở popup lịch sử ghi nợ và thanh toán.
+2. Chọn tab ""Lịch sử thanh toán"".",,"Hiển thị danh sách phiếu thanh toán, các cột dữ liệu đúng thiết kế, icon mở rộng chi tiết hoạt động bình thường, dữ liệu căn lề đúng, không bị tràn nội dung.",,,,,,
+Vantai_53,Kiểm tra hiển thị giao diện màn hình Lịch sử bồi thường,Đã có dữ liệu bồi thường · Màn: Lịch sử bồi thường,"1. Mở popup lịch sử ghi nợ và thanh toán.
+2. Chọn tab ""Lịch sử bồi thường"".",,"Hiển thị danh sách phiếu bồi thường, cột Mã phiếu, Mã VĐ liên quan, Lý do, Số tiền trừ, Trạng thái, Hành động. Nút Hủy hiển thị đúng trạng thái áp dụng.",,,,,,
+Vantai_54,Kiểm tra hiển thị giao diện popup Thu hồi bồi thường,Có ít nhất 1 phiếu bồi thường còn số tiền thu hồi · Màn: Popup Thu hồi bồi thường,"1. Tại màn hình lịch sử bồi thường.
+2. Click ""Thu hồi bồi thường"".",,"Hiển thị các trường: Tổng còn lại có thể thu hồi, Số tiền thu hồi, Phương thức thu, Ghi chú và danh sách phiếu bồi thường. Tổng phân bổ hiển thị đúng. Không lỗi giao diện.",,,,,,
+Vantai_55,Kiểm tra hiển thị giao diện popup Thanh toán nợ vận chuyển,Có công nợ vận chuyển > 0 · Màn: Popup Thanh toán nợ vận chuyển,"1. Tại màn hình lịch sử ghi nợ.
+2. Click ""Thanh toán"".",,"Hiển thị đầy đủ các trường: Thời gian, Cửa hàng/Kho, Chế độ thanh toán nợ, Nợ hiện tại, Số tiền thanh toán, Phương thức thanh toán, Ghi chú. Các radio button hoạt động bình thường.",,,,,,
+Vantai_56,Không nhập số tiền thanh toán,Mở popup Thanh toán nợ vận chuyển · Màn: Popup Thanh toán nợ vận chuyển,"1. Mở popup Thanh toán nợ vận chuyển.
+2. Để trống trường Số tiền thanh toán.
+3. Click Lưu.",,"Hiển thị thông báo ""Nhập số tiền thanh toán"". Không cho phép lưu.",,,,,,
+Vantai_57,Nhập số tiền thanh toán bằng 0,Mở popup Thanh toán nợ vận chuyển · Màn: Popup Thanh toán nợ vận chuyển,"1. Nhập Số tiền thanh toán =
+0.
+2. Click Lưu.",,"Hiển thị thông báo ""Số tiền phải lớn hơn 0"". Không cho phép lưu.",,,,,,
+Vantai_58,Nhập số tiền thanh toán âm,Mở popup Thanh toán nợ vận chuyển · Màn: Popup Thanh toán nợ vận chuyển,"1. Nhập Số tiền thanh toán = -
+1.
+2. Click Lưu.",,"Hiển thị thông báo ""Số tiền phải lớn hơn 0"". Không cho phép lưu.",,,,,,
+Vantai_59,Nhập số tiền thanh toán lớn hơn nợ hiện tại,Nợ hiện tại có giá trị xác định · Màn: Popup Thanh toán nợ vận chuyển,"1. Nhập số tiền lớn hơn giá trị Nợ hiện tại.
+2. Click Lưu.",,Hiển thị mặc định số tiền về số tiền lớn nhất có thể thanh toán,,,,,,
+Vantai_6,Kiểm tra truy cập nhân viên vận chuyển role cấp tỉnh,Vai `shop` đăng nhập · Màn: Quản lý nhân viên vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Nhân viên vận chuyển",,Hiển thị nhân viên vận chuyển cấp tổng ty,,,,,,
+Vantai_60,Thanh toán nợ thành công,Có công nợ > 0 · Màn: Popup Thanh toán nợ vận chuyển,"1. Nhập số tiền thanh toán > 0 và ≤ Nợ hiện tại.
+2. Chọn phương thức thanh toán.
+3. Click Lưu.",,Tạo phiếu thanh toán thành công. Công nợ giảm tương ứng. Dữ liệu hiển thị tại tab Lịch sử thanh toán.,,,,,,
+Vantai_61,Chọn chế độ Thanh toán nợ cũ nhất,Có nhiều phiếu ghi nợ · Màn: Popup Thanh toán nợ vận chuyển,"1. Chọn ""Thanh toán nợ cũ nhất"".
+2. Nhập số tiền hợp lệ.
+3. Lưu.",,Hệ thống ưu tiên phân bổ tiền vào các phiếu nợ cũ nhất trước.,,,,,,
+Vantai_62,Chọn chế độ Thanh toán nợ mới nhất,Có nhiều phiếu ghi nợ · Màn: Popup Thanh toán nợ vận chuyển,"1. Chọn ""Thanh toán nợ mới nhất"".
+2. Nhập số tiền hợp lệ.
+3. Lưu.",,Hệ thống ưu tiên phân bổ tiền vào các phiếu nợ mới nhất trước.,,,,,,
+Vantai_63,Chọn chế độ Thanh toán theo danh sách phiếu,Có nhiều phiếu ghi nợ · Màn: Popup Thanh toán nợ vận chuyển,"1. Chọn ""Thanh toán theo danh sách phiếu"".
+2. Chọn các phiếu cần thanh toán.
+3. Nhập số tiền hợp lệ.
+4. Lưu.",,Hệ thống phân bổ tiền theo danh sách phiếu được chọn.,,,,,,
+Vantai_64,Không nhập số tiền thu hồi,Mở popup Thu hồi bồi thường · Màn: Popup Thu hồi bồi thường,"1. Để trống trường Số tiền thu hồi.
+2. Click Lưu.",,"Hiển thị thông báo ""Nhập số tiền thu hồi"". Không cho phép lưu.",,,,,,
+Vantai_65,Nhập số tiền thu hồi bằng 0,Mở popup Thu hồi bồi thường · Màn: Popup Thu hồi bồi thường,"1. Nhập Số tiền thu hồi =
+0.
+2. Click Lưu.",,"Hiển thị thông báo ""Số tiền phải lớn hơn 0"". Không cho phép lưu.",,,,,,
+Vantai_66,Nhập số tiền thu hồi âm,Mở popup Thu hồi bồi thường · Màn: Popup Thu hồi bồi thường,"1. Nhập Số tiền thu hồi = -
+1.
+2. Click Lưu.",,"Hiển thị thông báo ""Số tiền phải lớn hơn 0"". Không cho phép lưu.",,,,,,
+Vantai_67,Nhập số tiền thu hồi lớn hơn số tiền có thể thu hồi,Có giá trị Tổng còn lại có thể thu hồi · Màn: Popup Thu hồi bồi thường,"1. Nhập số tiền lớn hơn Tổng còn lại có thể thu hồi.
+2. Click Lưu.",,Hiển thị số tiền lớn nhất có thể thu hồi,,,,,,
+Vantai_68,Thu hồi bồi thường thành công,Có số tiền còn lại có thể thu hồi > 0 · Màn: Popup Thu hồi bồi thường,"1. Nhập số tiền thu hồi > 0 và ≤ Tổng còn lại có thể thu hồi.
+2. Chọn phương thức thu.
+3. Click Lưu.",,Tạo phiếu thu hồi thành công. Tổng thu hồi được cập nhật. Dữ liệu hiển thị tại Lịch sử bồi thường.,,,,,,
+Vantai_69,Kiểm tra tách biệt nghiệp vụ Thanh toán nợ và Thu hồi bồi thường,Có dữ liệu công nợ và bồi thường · Màn: Popup Thanh toán nợ / Thu hồi bồi thường,"1. Thực hiện thanh toán nợ.
+2. Kiểm tra dữ liệu thu hồi bồi thường.
+3. Thực hiện thu hồi bồi thường.
+4. Kiểm tra dữ liệu công nợ.",,Thanh toán nợ chỉ ảnh hưởng công nợ. Thu hồi bồi thường chỉ ảnh hưởng số tiền bồi thường. Hai nghiệp vụ không làm thay đổi số liệu của nhau.,,,,,,
+Vantai_7,Kiểm tra truy cập đơn vị vận chuyển role cấp điểm bán/kho,Vai `shop` đăng nhập · Màn: Quản lý đơn vị vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Đơn vị vận chuyển",,Hiển thị đơn vị vận chuyển cấp tổng ty,,,,,,
+Vantai_70,Kiểm tra các thao tác trên ở role quản lý tỉnh,Vai `shop` đăng nhập,"1. Đăng nhập role cấp tỉnh
+2. Thực hiện các tường hợp trên",,"Thông tin hiển thị đúng, các thao tác chỉ có ở tỉnh và cappas dưới không hiển thị ở TCT",,,,,,
+Vantai_71,Kiểm tra giao diện,Có dữ liệu nhân viên · Màn: Quản lý nhân viên vận chuyển,Truy cập màn hình Quản lý nhân viên vận chuyển,,"Hiển thị title""Quản lý nhân viên vận chuyển"" Hiển thị ô tìm kiếm theo tên/SĐT, Bộ lọc Đơn vị VC. Button tìm kiếm, xoá lọc, thêm mới, Phân trang Danh sách hiển thị đúng các cột Tên, SĐT, Email, Chức vụ, Đơn vị VC, Hành động",,,,,,
+Vantai_72,Hiển thị phân trang,Có > 1 trang dữ liệu · Màn: Quản lý nhân viên vận chuyển,Mở màn hình,,Hiển thị phân trang chính xác,,,,,,
+Vantai_73,Chuyển trang,Có nhiều trang · Màn: Quản lý nhân viên vận chuyển,Click trang tiếp theo,,Hiển thị dữ liệu của trang được chọn,,,,,,
+Vantai_74,Tìm kiếm theo tên,Có dữ liệu tên nhân viên · Màn: Quản lý nhân viên vận chuyển,Nhập tên → Tìm kiếm,,Trả về đúng nhân viên khớp điều kiện,,,,,,
+Vantai_75,Tìm kiếm theo SĐT,Có dữ liệu SĐT · Màn: Quản lý nhân viên vận chuyển,Nhập SĐT → Tìm kiếm,,Hiển thị đúng kết quả,,,,,,
+Vantai_76,Tìm kiếm không tồn tại,Không có dữ liệu khớp · Màn: Quản lý nhân viên vận chuyển,Nhập từ khóa bất kỳ → Tìm kiếm,,"Hiển thị ""Không tìm thấy dữ liệu""",,,,,,
+Vantai_77,Lọc theo đơn vị vận chuyển,Có nhiều đơn vị VC · Màn: Quản lý nhân viên vận chuyển,Chọn đơn vị VC → Tìm kiếm,,Chỉ hiển thị nhân viên thuộc đơn vị đã chọn,,,,,,
+Vantai_78,Xóa bộ lọc,Đã thực hiện tìm kiếm/lọc · Màn: Quản lý nhân viên vận chuyển,"Click ""Xóa lọc""",,Dữ liệu trở về trạng thái mặc định,,,,,,
+Vantai_79,Mở form thêm mới,Có quyền thêm mới · Màn: Quản lý nhân viên vận chuyển,"Click ""Thêm mới""",,Hiển thị popup Thêm nhân viên vận chuyển,,,,,,
+Vantai_8,Kiểm tra truy cập đơn vận chuyển role cấp điểm bán/kho,Vai `shop` đăng nhập · Màn: Quản lý đơn vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Đơn vận chuyển",,Hiển thị đơn vận chuyển phát sinh ở cấp tổng ty,,,,,,
+Vantai_80,Mở form sửa,Có dữ liệu · Màn: Quản lý nhân viên vận chuyển,"Click nút ""Sửa""",,Hiển thị popup sửa với dữ liệu hiện tại,,,,,,
+Vantai_81,Hiển thị nút xóa,Có dữ liệu · Màn: Quản lý nhân viên vận chuyển,Quan sát cột Hành động,,Hiển thị nút Xóa đúng UI,,,,,,
+Vantai_82,Hiển thị popup thêm mới,Người dùng có quyền thêm · Màn: Popup Thêm nhân viên VC,Click Thêm mới,,Popup hiển thị đầy đủ các trường,,,,,,
+Vantai_83,Thêm mới thành công,Nhập dữ liệu hợp lệ · Màn: Popup Thêm nhân viên VC,Điền đầy đủ thông tin → Lưu,,"Thêm thành công, hiển thị thông báo thành công",,,,,,
+Vantai_84,Không nhập thông tin bắt buộc,Mở popup · Màn: Popup Thêm nhân viên VC,Bỏ trống các thông tin bắt buộc,,Hiển thị validate bắt buộc,,,,,,
+Vantai_85,Nhập SĐT sai định dạng,Mở popup · Màn: Popup Thêm nhân viên VC,Nhập số điện thoại sai định dạng,,Hiển thị cảnh báo định dạng,,,,,,
+Vantai_86,Nhập SĐT đã tồn tại,Đã có SĐT trong hệ thống · Màn: Popup Thêm nhân viên VC,Nhập SĐT trùng → Lưu,,Hiển thị thông báo trùng dữ liệu,,,,,,
+Vantai_87,Nhập email sai định dạng,Mở popup · Màn: Popup Thêm nhân viên VC,Nhập abc@gmail,,Hiển thị cảnh báo định dạng email,,,,,,
+Vantai_88,Nhập chức vụ,Mở popup · Màn: Popup Thêm nhân viên VC,Nhập chức vụ hợp lệ,,Hiển thị và lưu đúng dữ liệu,,,,,,
+Vantai_89,Đóng popup khi chưa lưu,Đang nhập dữ liệu · Màn: Popup Thêm nhân viên VC,Click X,,Hiển thị cảnh báo mất dữ liệu (nếu có thiết kế),,,,,,
+Vantai_9,Kiểm tra truy cập nhân viên vận chuyển role cấp điểm bán/kho,Vai `shop` đăng nhập · Màn: Quản lý nhân viên vận chuyển,"1. Truy cập Vận chuyển
+2. Chọn Nhân viên vận chuyển",,Hiển thị nhân viên vận chuyển cấp tổng ty,,,,,,
+Vantai_90,Chỉnh sửa tên,Có dữ liệu · Màn: Popup Cập nhật nhân viên vận chuyển,Sửa tên → Lưu,,Dữ liệu được cập nhật,,,,,,
+Vantai_91,Chỉnh sửa SĐT hợp lệ,Có dữ liệu · Màn: Popup Cập nhật nhân viên vận chuyển,Sửa SĐT → Lưu,,Cập nhật thành công,,,,,,
+Vantai_92,Chỉnh sửa email hợp lệ,Có dữ liệu · Màn: Popup Cập nhật nhân viên vận chuyển,Sửa email → Lưu,,Cập nhật thành công,,,,,,
+Vantai_93,Xóa dữ liệu bắt buộc,Có dữ liệu · Màn: Popup Cập nhật nhân viên vận chuyển,Xóa tên/SĐT → Lưu,,Hiển thị validate bắt buộc,,,,,,
+Vantai_94,Nhập email sai định dạng,Có dữ liệu · Màn: Popup Cập nhật nhân viên vận chuyển,Sửa email sai định dạng → Lưu,,Hiển thị validate,,,,,,
+Vantai_95,Xác nhận xóa,Có dữ liệu · Màn: Popup xác nhận xóa,Click Xóa → Xác nhận,,Dữ liệu bị xóa khỏi danh sách,,,,,,
+Vantai_96,Hủy xóa,Có dữ liệu · Màn: Popup xác nhận xóa,Click Xóa → Hủy,,Không xóa dữ liệu,,,,,,

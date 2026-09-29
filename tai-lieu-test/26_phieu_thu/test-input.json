@@ -1,0 +1,254 @@
+{
+  "_note": "Phân hệ 26 Phiếu thu. 🔴 Lập/sửa/xoá phiếu thu đều chạm thẳng SỐ DƯ QUỸ. Chạy trên dev (được ghi). Vai chức năng = shop (Cửa hàng trưởng): gdv (SHOP_SALE) bị 401 view_all_receipts.",
+  "cases": {
+    "26_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "26_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "26_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "26_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "26_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "26_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "26_040_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "26_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "26_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "26_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {}
+    },
+    "26_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    },
+    "26_010_005": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "26_060_001": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "26_060_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "26_060_003": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "26_060_004": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "26_060_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "26_060_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "26_060_007": {
+      "enabled": true,
+      "role": "tct",
+      "mutates": true,
+      "allowMutation": true
+    },
+    "26_070_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "blockedReason": "Cần tài khoản vai province và dữ liệu phiếu ở các điểm bán trực thuộc"
+    },
+    "26_070_002": {
+      "enabled": true,
+      "role": "gdv",
+      "mutates": false
+    },
+    "26_070_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "blockedReason": "Cần hai điểm bán ngang hàng cùng có phiếu thu — vượt phạm vi dữ liệu của một tài khoản test"
+    },
+    "26_080_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "blockedReason": "Form lập phiếu thu chạm số dư quỹ; case chặn nhưng vẫn submit"
+    },
+    "26_080_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "blockedReason": "Như 080_001",
+      "data": {
+        "soTien": 0
+      }
+    },
+    "26_080_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "blockedReason": "Như 080_001",
+      "data": {
+        "soTien": -50000
+      }
+    },
+    "26_080_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "blockedReason": "Như 080_001"
+    },
+    "26_080_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "26_080_006": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "blockedReason": "Như 080_001"
+    },
+    "26_090_001": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "26_090_002": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "26_090_003": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false
+    },
+    "26_090_004": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "%_"
+      }
+    },
+    "26_090_005": {
+      "enabled": true,
+      "role": "shop",
+      "mutates": false,
+      "data": {
+        "tuKhoa": "PT-KHONGTONTAI-0000"
+      }
+    }
+  }
+}

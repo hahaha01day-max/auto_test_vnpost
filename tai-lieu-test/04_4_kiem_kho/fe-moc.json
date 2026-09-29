@@ -1,0 +1,101 @@
+{
+  "spec": {
+    "tests/kiem-kho-ghi.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/inventory-check",
+        "/inventory/inventory-check/session",
+        "/inventory/inventory-check/session-manage"
+      ],
+      "fe": [
+        "src/pages/warehouse/inventory_check/InventoryCheck.jsx",
+        "src/pages/warehouse/inventory_check/InventoryCheckSessionManagePage.jsx",
+        "src/pages/warehouse/inventory_check/InventoryCheckSessionPage.jsx",
+        "src/pages/warehouse/inventory_check/DrawerBatchCheck.jsx",
+        "src/pages/warehouse/inventory_check/DrawerImportExcel.jsx",
+        "src/pages/warehouse/inventory_check/MergedCheckDetailPanel.jsx",
+        "src/utils/service/stockService.js"
+      ]
+    },
+    "tests/kiem-kho-excel.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/inventory-check",
+        "/inventory/inventory-check/session",
+        "/inventory/inventory-check/session-manage"
+      ],
+      "fe": [
+        "src/pages/warehouse/inventory_check/InventoryCheck.jsx",
+        "src/pages/warehouse/inventory_check/InventoryCheckSessionManagePage.jsx",
+        "src/pages/warehouse/inventory_check/InventoryCheckSessionPage.jsx",
+        "src/pages/warehouse/inventory_check/DrawerBatchCheck.jsx",
+        "src/pages/warehouse/inventory_check/DrawerImportExcel.jsx",
+        "src/pages/warehouse/inventory_check/MergedCheckDetailPanel.jsx",
+        "src/utils/service/stockService.js"
+      ]
+    },
+    "tests/kiem-kho-loc.shop.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/inventory-check"
+      ],
+      "fe": [
+        "src/pages/warehouse/inventory_check/InventoryCheck.jsx"
+      ]
+    },
+    "tests/kiem-kho-mo-phien.province.spec.js": {
+      "commit": "af8cda07db5c483282c4a9799a237b3678cc49f0",
+      "ngay": "2026-09-24",
+      "man": [
+        "/inventory/inventory-check"
+      ],
+      "fe": [
+        "src/pages/warehouse/inventory_check/InventoryCheck.jsx"
+      ]
+    },
+    "tests/ton-am.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/inventory/inventory-check",
+        "/inventory/inventory-check/session",
+        "/inventory/inventory-check/session-manage",
+        "/order/create-order",
+        "/settings"
+      ],
+      "fe": [
+        "src/features/chain/services/negativeStockPolicyApi.js",
+        "src/features/shop/pages/settingPage/settingContents/NegativeStockPolicySetting.jsx",
+        "src/pages/warehouse/inventory_check/InventoryCheckSessionManagePage.jsx",
+        "src/pages/warehouse/inventory_check/InventoryCheckSessionPage.jsx",
+        "src/pages/warehouse/inventory_check/MergedCheckDetailPanel.jsx"
+      ]
+    },
+    "tests/ky-ke-toan.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/inventory/overview",
+        "/inventory/inventory-check/session",
+        "/inventory/inventory-check/session-manage"
+      ],
+      "fe": [
+        "src/features/inventory/overview/warehouseOverview.jsx",
+        "src/features/inventory/overview/components/ModalCloseInventory.jsx",
+        "src/features/inventory/services/closingApi.js",
+        "src/pages/warehouse/inventory_check/InventoryCheckSessionPage.jsx"
+      ]
+    },
+    "tests/ban-am-serial.shop.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": []
+    }
+  }
+}

@@ -1,0 +1,1239 @@
+{
+  "_note": "Phân hệ 12-don-vi-van-tai. 🔴 CSV đã được DỰNG LẠI TỪ ĐẦU (18/09/2026) từ `resource/don_vi_van_tai.xlsx` — bản trước lấy kỳ vọng từ assertion của script, vi phạm luật \"không dùng kết quả thi hành làm đặc tả\". Nhóm 040/050 là case TIỀN (ghi nợ · bồi thường · thanh toán công nợ đơn vị vận chuyển).",
+  "cases": {
+    "12-don-vi-van-tai_070_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "12-don-vi-van-tai_070_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "12-don-vi-van-tai_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO ĐƠN VẬN CHUYỂN thật hoặc GHI NỢ thật cho đơn vị vận chuyển — trước đây phân loại nhầm là đọc. Công nợ đơn vị vận chuyển là tiền thật."
+    },
+    "12-don-vi-van-tai_070_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "12-don-vi-van-tai_070_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "12-don-vi-van-tai_070_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "12-don-vi-van-tai_070_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO ĐƠN VẬN CHUYỂN thật hoặc GHI NỢ thật cho đơn vị vận chuyển — trước đây phân loại nhầm là đọc. Công nợ đơn vị vận chuyển là tiền thật."
+    },
+    "12-don-vi-van-tai_070_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO ĐƠN VẬN CHUYỂN thật hoặc GHI NỢ thật cho đơn vị vận chuyển — trước đây phân loại nhầm là đọc. Công nợ đơn vị vận chuyển là tiền thật."
+    },
+    "12-don-vi-van-tai_070_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO ĐƠN VẬN CHUYỂN thật hoặc GHI NỢ thật cho đơn vị vận chuyển — trước đây phân loại nhầm là đọc. Công nợ đơn vị vận chuyển là tiền thật."
+    },
+    "12-don-vi-van-tai_070_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO ĐƠN VẬN CHUYỂN thật hoặc GHI NỢ thật cho đơn vị vận chuyển — trước đây phân loại nhầm là đọc. Công nợ đơn vị vận chuyển là tiền thật."
+    },
+    "12-don-vi-van-tai_070_011": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": false,
+      "_mutates_ly_do": "🔴 ĐO 20/09/2026: case này TẠO ĐƠN VẬN CHUYỂN thật hoặc GHI NỢ thật cho đơn vị vận chuyển — trước đây phân loại nhầm là đọc. Công nợ đơn vị vận chuyển là tiền thật."
+    },
+    "12-don-vi-van-tai_070_012": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "_blocked": "🔴 GHI: tạo đơn vận chuyển / ghi nợ / bồi thường trên phiếu chuyển kho thật. Cần phiếu chuyển kho và đơn vị vận chuyển dựng riêng.",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      }
+    },
+    "Vantai_1": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_10": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_11": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_12": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_13": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "allowMutation": true,
+      "data": {},
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Case ghi du lieu that — cho user bat co"
+    },
+    "Vantai_14": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "allowMutation": true,
+      "data": {},
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: Case ghi du lieu that — cho user bat co"
+    },
+    "Vantai_15": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_16": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_17": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_18": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_19": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_2": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_20": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_21": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_22": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_23": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_24": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_25": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_26": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_27": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_28": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_29": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_3": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_30": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_31": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_32": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_33": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_34": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_35": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_36": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_37": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_38": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_39": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_4": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_40": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_41": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_42": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_43": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_44": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_45": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_46": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_47": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_48": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_49": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_5": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_50": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_51": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_52": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_53": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_54": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_55": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_56": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_57": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_58": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_59": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_6": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_60": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_61": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_62": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_63": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_64": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_65": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_66": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_67": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_68": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_69": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_7": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_70": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_71": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_72": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_73": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_74": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_75": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_76": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_77": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_78": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_79": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_8": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_80": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_81": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_82": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_83": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_84": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_85": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_86": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_87": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_88": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_89": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_9": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_90": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_91": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_92": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_93": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_94": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_95": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    },
+    "Vantai_96": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "maDonViVanChuyen": "",
+        "maVanDon": "",
+        "soTien": 0
+      },
+      "_goBoi": "26/09/2026 gỡ (môi trường test, cho ghi) — lý do cũ: 🔴 GHI: tạo/sửa/xoá đơn vị vận chuyển, nhân viên vận chuyển, đơn vận chuyển, hoặc ghi nợ / bồi thường / thanh toán vào công nợ đơn vị vận chuyển. Cần đơn vị vận chuyển dựng riêng."
+    }
+  }
+}

@@ -1,0 +1,150 @@
+﻿,Chức năng,,CẤU HÌNH KHO HÀNG,,,,,,,,
+,Mã Testcase,,07_2_cau_hinh_kho,,,,,,,,
+,Tổng các tình huống kiểm thử,,53,,,,,,,,
+,Chưa thực hiện,,53,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,CẤU HÌNH KHO HÀNG,,,,,,,,,,
+,010 — Thêm một cấu hình khoá kho,,,,,,,,,,
+07_2_010_001,Màn Khoá kho mở được và hiện bảng cấu hình,Vai: tct,1. Mở /settings?setting=stockFreeze,,"Bảng ""Danh sách cấu hình khoá kho"" hiện với các cột STT, Đối tượng khoá, Phạm vi áp dụng, Lý do, Hành động",,,,,,
+07_2_010_002,Chưa có cấu hình nào thì báo đúng thông điệp,Vai: tct. Hệ thống chưa có cấu hình khoá kho nào,1. Mở /settings?setting=stockFreeze,,"Bảng hiển thị nguyên văn ""Chưa có cấu hình khoá kho nào""",,,,,,
+07_2_010_003,Chặn thêm cấu hình khi chưa chọn phạm vi áp dụng,Vai: tct. Đang mở màn Thêm cấu hình khoá kho,"1. Không chọn đơn vị nào ở thẻ Phạm vi áp dụng;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng chọn ít nhất một phạm vi khu vực"" và không tạo cấu hình",,,,,,
+07_2_010_004,Hình thức khoá mặc định là Theo danh mục,Vai: tct. Đang mở màn Thêm cấu hình khoá kho,1. Đọc thẻ 2 Hình thức khoá,,"Lựa chọn đang chọn sẵn là ""Theo danh mục""; lựa chọn còn lại là ""Theo SKU""",,,,,,
+07_2_010_005,Đổi Loại hàng hoá xoá sạch danh mục đã tích,Vai: tct. Đang khoá Theo danh mục và đã tích vài danh mục với Loại hàng hoá = Sản phẩm,"1. Tích chọn vài danh mục;
+2. Đổi Loại hàng hoá sang ""Combo"";
+3. Quan sát danh sách đã tích",,"Toàn bộ danh mục đã tích bị xoá sạch, danh sách chọn trở về rỗng",,,,,,
+07_2_010_006,Tạo cấu hình khoá kho theo SKU,Vai: tct. Có sẵn mã SKU hợp lệ,"1. Bấm ""Thêm cấu hình khoá kho"";
+2. Chọn phạm vi đơn vị;
+3. Chọn Hình thức khoá = ""Theo SKU"";
+4. Thêm SKU;
+5. Nhập lý do;
+6. Lưu",,"Cấu hình mới xuất hiện trong bảng với Đối tượng khoá = ""Sản phẩm / SKU"" và đúng phạm vi, đúng lý do đã nhập",,,,,,
+07_2_010_007,Bộ lọc phạm vi áp dụng ở màn Khoá kho,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`); đã có cấu hình khoá ở nhiều phạm vi","1. Lọc theo phạm vi cấp tỉnh → quan sát
+2. Lọc theo cấp xã → quan sát
+3. Lọc theo điểm bán → quan sát
+4. Xoá lọc",,Mỗi lựa chọn chỉ còn cấu hình đúng phạm vi đó; xoá lọc trở về đầy đủ.,,,,,,
+07_2_010_008,Tìm kiếm theo tên danh mục ở màn Khoá kho,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`)","1. Nhập một phần tên danh mục sản phẩm
+2. Quan sát danh sách danh mục",,Hiện các danh mục có tên khớp từ khoá.,,,,,,
+07_2_010_009,Tìm kiếm SKU sản phẩm tự doanh ở màn Khoá kho,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`); hình thức khoá = theo SKU","1. Nhập SKU của một sản phẩm tự doanh (của tỉnh/xã)
+2. Quan sát",,Hiện đúng sản phẩm tự doanh theo SKU.,,,,,,
+07_2_010_010,Tìm kiếm SKU sản phẩm của Tổng công ty ở màn Khoá kho,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`); hình thức khoá = theo SKU","1. Nhập SKU của một sản phẩm thuộc Tổng công ty
+2. Quan sát",,"Hiện đúng sản phẩm TCT theo SKU; hai nhóm sản phẩm (tự doanh và TCT) đều tìm được, không nhóm nào bị bỏ.",,,,,,
+07_2_010_011,Tìm kiếm theo tên sản phẩm ở màn Khoá kho,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`); hình thức khoá = theo SKU","1. Nhập một phần tên sản phẩm
+2. Quan sát",,Hiện các sản phẩm có tên khớp.,,,,,,
+07_2_010_012,Chỉ vai cấp TCT và cấp tỉnh được cài đặt khoá kho,Có tài khoản cả 4 cấp,"1. Đăng nhập `tct` → mở nhóm Khoá kho, kiểm nút thêm cấu hình
+2. Đăng nhập `province` → kiểm
+3. Đăng nhập `ward` → kiểm
+4. Đăng nhập `shop` → kiểm",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+07_2_010_013,Xem danh sách đơn vị đã chọn trong cấu hình khoá,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`); có cấu hình khoá áp cho nhiều đơn vị","1. Mở chi tiết cấu hình đó
+2. Đọc danh sách đơn vị đã chọn",,"Hiện đủ và đúng các đơn vị đã chọn lúc cài đặt, không thiếu và không thêm đơn vị nào.",,,,,,
+,020 — Xem chi tiết và bỏ khoá một cấu hình khoá kho,,,,,,,,,,
+07_2_020_001,Xem chi tiết một cấu hình khoá kho,Vai: tct. Có ít nhất 1 cấu hình khoá kho,"1. Bấm ""Xem chi tiết"" ở cột Hành động",,Màn chi tiết hiện đúng ngành hàng / sản phẩm và các đơn vị mà cấu hình đang khoá,,,,,,
+07_2_020_002,Bỏ khoá hỏi xác nhận trước khi thực hiện,Vai: tct. Có ít nhất 1 cấu hình khoá kho,"1. Bấm ""Bỏ khoá"" trên dòng cấu hình",,"Hệ thống hỏi nguyên văn ""Bỏ khoá cấu hình này?"" với hai nút ""Bỏ khoá"" và ""Hủy""",,,,,,
+07_2_020_003,Huỷ ở hộp xác nhận thì giữ nguyên cấu hình,Vai: tct. Có ít nhất 1 cấu hình khoá kho,"1. Bấm ""Bỏ khoá"";
+2. Bấm ""Hủy"" ở hộp xác nhận",,Cấu hình vẫn còn nguyên trong bảng; không có request xoá nào được gửi,,,,,,
+07_2_020_004,Bỏ khoá xoá hẳn cấu hình khỏi bảng,Vai: tct. Có 1 cấu hình khoá kho dựng riêng để test,"1. Bấm ""Bỏ khoá"";
+2. Xác nhận ""Bỏ khoá""",,"Hệ thống báo nguyên văn ""Đã bỏ khoá kho""; dòng biến mất khỏi bảng; màn chi tiết đóng lại nếu đang mở. KHÔNG có nút bật lại cấu hình đó",,,,,,
+07_2_020_005,Một sản phẩm bị nhiều cấu hình khoá cùng lúc,Vai: tct. Một SKU bị khoá bởi 2 cấu hình khác nhau,"1. Bỏ khoá cấu hình thứ nhất;
+2. Thử phát sinh giao dịch kho cho SKU đó",,Hàng vẫn bị chặn vì còn cấu hình thứ hai; bảng danh sách vẫn còn dòng khoá thứ hai,,,,,,
+,030 — Khai báo cho phép bán tồn kho âm,,,,,,,,,,
+07_2_030_001,Chặn lưu cấu hình bán tồn kho âm khi bỏ trống Tên cấu hình,Vai: tct. Đang ở /settings?setting=negativeStock,"1. Xoá trống ô Tên cấu hình;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng nhập tên cấu hình""",,,,,,
+07_2_030_002,Chặn lưu khi chưa chọn phạm vi áp dụng,Vai: tct. Đang ở màn Cấu hình bán tồn kho âm,"1. Nhập Tên cấu hình;
+2. Không chọn đơn vị nào;
+3. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng chọn ít nhất một phạm vi áp dụng""",,,,,,
+07_2_030_003,Ô Mô tả giới hạn 200 ký tự,Vai: tct. Đang ở màn Cấu hình bán tồn kho âm,1. Gõ 250 ký tự vào ô Mô tả,,Ô chỉ nhận 200 ký tự; bộ đếm góc dưới hiện 200/200,,,,,,
+,040 — Thêm một cấu hình cảnh báo hàng sắp hết hạn,,,,,,,,,,
+07_2_040_001,Chặn thêm cấu hình cảnh báo hết hạn khi bỏ trống Tên cấu hình,Vai: tct. Đang mở màn Thêm cấu hình ngưỡng cảnh báo hết hạn,"1. Để trống Tên cấu hình;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Nhập tên cấu hình""",,,,,,
+07_2_040_002,Chặn khi bỏ trống Số ngày trước hạn sử dụng,Vai: tct. Đang mở màn Thêm cấu hình ngưỡng cảnh báo hết hạn,"1. Nhập Tên cấu hình;
+2. Để trống Số ngày;
+3. Bấm lưu",,"Hệ thống báo nguyên văn ""Nhập số ngày""",,,,,,
+07_2_040_003,Chặn khi chọn đối tượng Ngành hàng mà không chọn ngành nào,Vai: tct. Đang mở màn Thêm cấu hình ngưỡng cảnh báo hết hạn,"1. Chọn Đối tượng áp dụng = ""Ngành hàng"";
+2. Không chọn ngành nào;
+3. Bấm lưu",,"Hệ thống báo nguyên văn ""Chọn ngành hàng""",,,,,,
+07_2_040_004,Chặn khi chọn đối tượng SKU mà chưa thêm sản phẩm,Vai: tct. Đang mở màn Thêm cấu hình ngưỡng cảnh báo hết hạn,"1. Chọn Đối tượng áp dụng = ""Sản phẩm (SKU)"";
+2. Không thêm SKU nào;
+3. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng thêm ít nhất 1 SKU""",,,,,,
+07_2_040_005,Số ngày của từng sản phẩm mặc định lấy theo số ngày chung,Vai: tct. Đang mở màn Thêm cấu hình ngưỡng cảnh báo hết hạn,"1. Nhập Số ngày chung = 30;
+2. Chọn đối tượng Sản phẩm (SKU);
+3. Thêm 2 SKU",,Cột Số ngày cảnh báo của cả 2 dòng sản phẩm đều hiện 30 và sửa lại được cho riêng từng dòng,,,,,,
+,"050 — Tra cứu, sửa nhanh và xoá cấu hình cảnh báo hết hạn",,,,,,,,,,
+07_2_050_001,Lọc cấu hình cảnh báo theo SKU hoặc ngành hàng,Vai: tct. Có ít nhất 1 cấu hình cảnh báo hết hạn,"1. Mở /settings?setting=expiryAlert;
+2. Gõ mã SKU vào ô ""Tìm SKU / ngành hàng"";
+3. Bấm kính lúp",,Bảng chỉ còn cấu hình liên quan tới SKU đã gõ,,,,,,
+07_2_050_002,Bảng cảnh báo hết hạn hiện đủ cột,Vai: tct. Có ít nhất 1 cấu hình,"1. Mở /settings?setting=expiryAlert;
+2. Đọc tiêu đề bảng",,"Bảng có các cột Tên cấu hình, Đối tượng áp dụng, Chi tiết, Số ngày cảnh báo, Kích hoạt. Đối tượng Toàn bộ hiện ""Áp dụng cho tất cả sản phẩm""",,,,,,
+07_2_050_003,Công tắc Kích hoạt bị vô hiệu với cấu hình mặc định của hệ thống,Vai: tct. Có cấu hình mặc định của hệ thống trong bảng,"1. Tìm dòng cấu hình mặc định;
+2. Thử bật tắt công tắc Kích hoạt",,"Công tắc ở trạng thái vô hiệu hoá, không đổi được",,,,,,
+07_2_050_004,Sửa nhanh số ngày cảnh báo ngay trên dòng,Vai: tct. Có 1 cấu hình dựng riêng để test,"1. Sửa ô Số ngày cảnh báo trên dòng thành 45;
+2. Lưu;
+3. Tải lại trang",,Dòng giữ giá trị 45 sau khi tải lại,,,,,,
+,060 — **hành vi khi sản phẩm bị khoá / bỏ khoá**,,,,,,,,,,
+07_2_060_001,Bán hàng với sản phẩm đang bị khoá kho,Có cấu hình khoá kho đang hiệu lực cho một sản phẩm ở điểm bán đang thao tác,"1. Vai `gdv` tạo đơn bán sản phẩm đó
+2. Xác nhận đơn
+3. Đọc thông báo",,"Bị chặn với thông báo bắt đầu bằng nguyên văn **""Không thể xuất kho. Sản phẩm đang bị ""** (lấy trọn câu từ hệ thống); đơn không tạo được, tồn không đổi.",,,,,,
+07_2_060_002,Xuất kho với sản phẩm đang bị khoá,Có cấu hình khoá kho đang hiệu lực cho một sản phẩm ở điểm bán đang thao tác,"1. Lập phiếu xuất kho sản phẩm đó
+2. Duyệt phiếu
+3. Đọc thông báo",,"Bị chặn với thông báo ""Không thể xuất kho. Sản phẩm đang bị...""; phiếu không duyệt được.",,,,,,
+07_2_060_003,Nhập kho với sản phẩm đang bị khoá,Có cấu hình khoá kho đang hiệu lực cho một sản phẩm ở điểm bán đang thao tác,"1. Lập phiếu nhập kho sản phẩm đó
+2. Duyệt phiếu
+3. Đọc thông báo",,"Bị chặn với thông báo **""Không thể nhập kho. Sản phẩm đang bị...""** — câu này khác câu của xuất kho, không dùng lẫn.",,,,,,
+07_2_060_004,Chuyển kho sản phẩm đang bị khoá,Có cấu hình khoá kho đang hiệu lực cho một sản phẩm ở điểm bán đang thao tác,"1. Lập phiếu chuyển kho sản phẩm đó
+2. Lưu phiếu
+3. Đọc thông báo",,"Bị chặn với thông báo ""Không thể xuất kho. Sản phẩm đang bị..."" (chuyển kho là một dạng xuất).",,,,,,
+07_2_060_005,Xác nhận nhận hàng chuyển kho khi sản phẩm bị khoá,"Có cấu hình khoá kho đang hiệu lực cho một sản phẩm ở điểm bán đang thao tác; có phiếu chuyển kho lập TRƯỚC khi khoá, đang chờ xác nhận","1. Bên nhận mở phiếu và xác nhận nhận hàng
+2. Đọc thông báo",,"Bị chặn với thông báo ""Không thể xuất kho. Sản phẩm đang bị..."". Đây là tình huống nguy hiểm: hàng **đã rời kho gửi** mà bên nhận không nhận được ⇒ hàng treo giữa đường.",,,,,,
+07_2_060_006,Kiểm kho lệch với sản phẩm bị khoá,Có cấu hình khoá kho đang hiệu lực cho một sản phẩm ở điểm bán đang thao tác,"1. Lập phiếu kiểm kho có chênh lệch cho sản phẩm đó
+2. Áp dụng phiếu
+3. Đọc thông báo",,"Bị chặn với thông báo ""Không thể xuất kho. Sản phẩm đang bị..."" (chênh lệch giảm là một dạng xuất).",,,,,,
+07_2_060_007,Bán hàng với sản phẩm đã bỏ khoá,Sản phẩm vừa được BỎ khoá (cấu hình khoá đã xoá),"1. Vai `gdv` tạo và xác nhận đơn bán sản phẩm đó
+2. Đọc kết quả và tồn kho",,"Bán hàng bình thường, không còn thông báo chặn; tồn giảm đúng số bán.",,,,,,
+07_2_060_008,Nhập kho với sản phẩm đã bỏ khoá,Sản phẩm vừa được BỎ khoá (cấu hình khoá đã xoá),"1. Lập và duyệt phiếu nhập kho sản phẩm đó
+2. Đọc tồn kho",,"Nhập kho thành công, ghi nhận thêm số lượng nhập.",,,,,,
+07_2_060_009,Xuất kho với sản phẩm đã bỏ khoá,Sản phẩm vừa được BỎ khoá (cấu hình khoá đã xoá),"1. Lập và duyệt phiếu xuất kho sản phẩm đó
+2. Đọc tồn kho",,"Xuất kho thành công, trừ đi số lượng xuất.",,,,,,
+07_2_060_010,Chuyển kho sản phẩm đã bỏ khoá,Sản phẩm vừa được BỎ khoá (cấu hình khoá đã xoá),"1. Lập phiếu chuyển kho sản phẩm đó
+2. Lưu phiếu",,"Chuyển kho thành công, phiếu tạo được ở trạng thái Chờ xác nhận.",,,,,,
+07_2_060_011,Xác nhận chuyển kho sản phẩm đã bỏ khoá,Sản phẩm vừa được BỎ khoá (cấu hình khoá đã xoá); có phiếu chuyển kho chờ xác nhận,"1. Bên nhận xác nhận nhận hàng
+2. Đọc trạng thái phiếu và tồn hai bên",,Xác nhận thành công; phiếu sang Đã nhận; tồn hai bên đổi đúng.,,,,,,
+07_2_060_012,Kiểm kho lệch với sản phẩm đã bỏ khoá,Sản phẩm vừa được BỎ khoá (cấu hình khoá đã xoá),"1. Lập phiếu kiểm kho có chênh lệch cho sản phẩm đó
+2. Áp dụng phiếu
+3. Đọc tồn",,"Kiểm kho thành công, tồn cập nhật theo số mới đã đếm.",,,,,,
+,070 — **phạm vi áp dụng của,,,,,,,,,,
+07_2_070_001,Khoá kho với phạm vi áp dụng là Bưu điện tỉnh,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`)","1. Tạo cấu hình khoá phạm vi = một Bưu điện tỉnh
+2. Thử xuất kho sản phẩm đó ở một điểm bán TRONG tỉnh đó
+3. Thử ở một điểm bán thuộc tỉnh KHÁC",,"Trong tỉnh bị chặn với thông báo ""Không thể xuất kho. Sản phẩm đang bị...""; tỉnh khác **không bị chặn**.",,,,,,
+07_2_070_002,Khoá kho với phạm vi áp dụng là Bưu điện xã,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`)","1. Tạo cấu hình khoá phạm vi = một Bưu điện xã
+2. Thử xuất kho ở điểm bán trong xã đó
+3. Thử ở điểm bán xã khác cùng tỉnh",,Trong xã bị chặn; xã khác không bị chặn.,,,,,,
+07_2_070_003,Khoá kho với phạm vi áp dụng là điểm bán,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`)","1. Tạo cấu hình khoá phạm vi = một điểm bán
+2. Thử xuất kho ở điểm bán đó
+3. Thử ở điểm bán khác",,Điểm bán đã chọn bị chặn; điểm bán khác không bị chặn.,,,,,,
+07_2_070_004,Khoá kho áp cho nhiều cấp cùng lúc,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`)","1. Tạo cấu hình khoá chọn đồng thời một tỉnh, một xã thuộc tỉnh khác và một điểm bán
+2. Thử xuất kho ở từng nơi đã chọn và ở một nơi không chọn",,"Mọi nơi đã chọn đều bị chặn với thông báo ""Không thể xuất kho. Sản phẩm đang bị...""; nơi không chọn không bị chặn.",,,,,,
+07_2_070_005,Khoá kho theo DANH MỤC thay vì theo SKU,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Khoá kho"" (`/settings?setting=stockFreeze`)","1. Tạo cấu hình khoá hình thức ""Theo danh mục"", chọn một danh mục
+2. Thử xuất kho một sản phẩm THUỘC danh mục đó
+3. Thử một sản phẩm ngoài danh mục",,Sản phẩm thuộc danh mục bị chặn; sản phẩm ngoài danh mục không bị chặn.,,,,,,
+,080 — **giá vốn tạm tính khi bán âm**,,,,,,,,,,
+07_2_080_001,Giá vốn tạm tính khi tồn = 0 và bán âm,"Vai `shop`/`gdv` đăng nhập; sản phẩm có tồn = 0, chính sách bán âm đang bật","1. Ghi lại giá vốn đơn vị tại thời điểm trước khi bán
+2. Bán âm sản phẩm đó
+3. Đọc giá vốn ghi trên chứng từ xuất",,Giá vốn tạm tính = **giá vốn đơn vị tại thời điểm trước đó**.,,,,,,
+07_2_080_002,Giá vốn tạm tính khi tồn > 0 rồi bán vượt thành âm,Vai `shop`/`gdv` đăng nhập; sản phẩm có tồn dương nhưng nhỏ hơn số muốn bán,"1. Ghi lại tồn và giá vốn hiện tại
+2. Bán số lượng vượt tồn (thành tồn âm)
+3. Đọc giá vốn ghi trên chứng từ",,Giá vốn = **giá vốn của phần hàng còn tồn + giá vốn tạm tính của phần bán âm**.,,,,,,
+07_2_080_003,Giá vốn tạm tính khi tồn đang âm rồi bán tiếp,"Vai `shop`/`gdv` đăng nhập; sản phẩm đang có tồn âm, chính sách bán âm đang bật","1. Ghi lại tồn âm và giá vốn hiện tại
+2. Bán tiếp sản phẩm đó
+3. Đọc giá vốn ghi trên chứng từ và tồn sau bán",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+07_2_080_004,Thêm danh mục với các trường không hợp lệ,"Vai `tct` đăng nhập, đang ở màn quản lý danh mục sản phẩm","1. Bỏ trống ô ""Nhập tên danh mục"" → lưu
+2. Nhập tên danh mục đã tồn tại → lưu",,"Bước 1: message đỏ dưới ô ""Nhập tên danh mục"", không lưu được.",,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+07_2_PQ_001,Vai Bưu điện Tỉnh vào được Khoá kho và Cảnh báo hết hạn,Vai: province,"1. Mở /settings?setting=stockFreeze;
+2. Mở /settings?setting=expiryAlert",,Cả hai nhóm đều mở được (task 10/20/40/50 khai vai_tro gồm BUU_DIEN_TINH),,,,,,
+07_2_PQ_002,Vai Bưu điện Tỉnh KHÔNG vào được Bán tồn kho âm,Vai: province,1. Mở /settings?setting=negativeStock,,Bị chặn hoặc không sửa được — task 30 chỉ khai vai_tro TONG_CONG_TY,,,,,,

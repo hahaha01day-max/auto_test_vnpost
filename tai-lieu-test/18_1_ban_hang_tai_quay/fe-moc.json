@@ -1,0 +1,159 @@
+{
+  "spec": {
+    "tests/tab-khach.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order",
+        "/order/created-orders"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/orderPageHeader/tabBarExtraContent/searchProductInput/SearchProduct.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable_v2.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/QuantityControl.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/inputNumber/TableInputCurrency.jsx"
+      ]
+    },
+    "tests/chan-ban-hang.shop.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx"
+      ]
+    },
+    "tests/tim-them.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/orderPageHeader/tabBarExtraContent/searchProductInput/SearchProduct.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable_v2.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/QuantityControl.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/inputNumber/TableInputCurrency.jsx",
+        "src/features/order/services/ordersApi.js"
+      ]
+    },
+    "tests/quet-ma.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/components/UnifiedScanReceiver.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/QuantityControl.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable_v2.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/inputNumber/TableInputCurrency.jsx",
+        "src/features/order/pages/createOrderPage/orderPageHeader/tabBarExtraContent/searchProductInput/SearchProduct.jsx",
+        "src/features/order/pages/createOrderPage/utils/scanCommand.js",
+        "src/features/order/pages/createOrderPage/utils/variableMeasureBarcode.js"
+      ]
+    },
+    "tests/dong-hang.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/orderPageHeader/tabBarExtraContent/searchProductInput/SearchProduct.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable_v2.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/QuantityControl.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/inputNumber/TableInputCurrency.jsx",
+        "src/features/order/pages/createOrderPage/components/AddOrEditProductModal.jsx"
+      ]
+    },
+    "tests/can-dien-tu.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/components/UnifiedScanReceiver.jsx",
+        "src/features/order/pages/createOrderPage/components/scaleDataHelper.js",
+        "src/features/order/hooks/useSerialPort.js"
+      ]
+    },
+    "tests/phim-tat.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/orderPageHeader/tabBarExtraContent/menuBar/MenuBar.jsx"
+      ]
+    },
+    "tests/chon-lo.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/components/AddOrEditProductModal.jsx",
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx"
+      ]
+    },
+    "tests/thanh-toan.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx",
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx"
+      ]
+    },
+    "tests/qua-tang.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx",
+        "src/pages/promotionCampaign/campaignManagement/controllers/CampaignManagementControllers.jsx"
+      ]
+    },
+    "tests/ton-am.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/selectedProductsTable/SelectedProductsTable.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx",
+        "src/features/chain/services/negativeStockPolicyApi.js",
+        "src/features/shop/pages/settingPage/settingContents/NegativeStockPolicySetting.jsx"
+      ]
+    },
+    "tests/xa-kho.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "man": [
+        "/order/create-order",
+        "/inventory/clearance"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/components/AddOrEditProductModal.jsx",
+        "src/features/clearance/services/clearanceApi.js"
+      ]
+    }
+  }
+}

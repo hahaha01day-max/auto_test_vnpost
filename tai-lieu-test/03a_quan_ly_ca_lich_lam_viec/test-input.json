@@ -1,0 +1,714 @@
+{
+  "_note": "Phân hệ 03a Quản lý ca và lịch làm việc. 🔴 Case GHI: khai/sửa ca, cấu hình chấm công (áp cho TOÀN điểm bán), xếp lịch, HUỶ LỊCH (không dựng lại được bằng UI), và chốt số ca thủ công (ghi chênh lệch tiền chờ duyệt). Tất cả `allowMutation:false`. Case `enabled:false` là BLOCKED, xem `_blocked`.",
+  "cases": {
+    "03a_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_010_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "required": [
+        "tenCa"
+      ],
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca sang",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "12:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "12:30"
+      }
+    },
+    "03a_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_010_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca dem",
+        "gioBatDau": "22:00",
+        "gioKetThuc": "06:00"
+      }
+    },
+    "03a_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      },
+      "_note": "28/09 kỳ vọng user chốt (A3/A4) — script trong them-sua-ca-ghi.shop.spec.js"
+    },
+    "03a_010_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30",
+        "caTonTai": "",
+        "gioTonTaiTu": "",
+        "gioTonTaiDen": ""
+      },
+      "required": [
+        "caTonTai",
+        "gioTonTaiTu",
+        "gioTonTaiDen"
+      ]
+    },
+    "03a_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30",
+        "caTonTai": "",
+        "gioTonTaiTu": "",
+        "gioTonTaiDen": ""
+      },
+      "required": [
+        "caTonTai",
+        "gioTonTaiTu",
+        "gioTonTaiDen"
+      ]
+    },
+    "03a_010_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30",
+        "caTonTai": "",
+        "gioTonTaiTu": "",
+        "gioTonTaiDen": ""
+      },
+      "required": [
+        "caTonTai",
+        "gioTonTaiTu",
+        "gioTonTaiDen"
+      ]
+    },
+    "03a_010_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30",
+        "caTonTai": "",
+        "gioTonTaiTu": "",
+        "gioTonTaiDen": ""
+      },
+      "_note": "28/09 kỳ vọng user chốt (A3/A4) — script trong them-sua-ca-ghi.shop.spec.js"
+    },
+    "03a_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_010_018": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_020_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "required": [
+        "tenCaCanSua"
+      ],
+      "data": {
+        "tenCaCanSua": "",
+        "tenCaMoi": "AUTO TEST KHONG DUNG - Ca sang doi ten"
+      }
+    },
+    "03a_020_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "required": [
+        "tenCaCanSua"
+      ],
+      "data": {
+        "tenCaCanSua": ""
+      }
+    },
+    "03a_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "required": [],
+      "data": {
+        "tenCaDaChotSo": "",
+        "tenCa": "Ca sáng"
+      },
+      "_blocked_cu": "Cần ca đã có phiên chốt sổ; dựng dữ liệu đó phải chạy trọn luồng mở ca - bán hàng - chốt ca trên dữ liệu thật",
+      "_ghiChu": "Mở 23/09/2026 — chạy trên điểm bán seed, tự dọn trong finally"
+    },
+    "03a_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "required": [],
+      "data": {
+        "tenCaDaDung": ""
+      },
+      "_blocked_cu": "Cần ca đã gán nhân viên hoặc đã phát sinh giao dịch",
+      "_ghiChu": "Mở 23/09/2026 — chạy trên điểm bán seed, tự dọn trong finally"
+    },
+    "03a_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "required": [
+        "tenCaMoiKhai"
+      ],
+      "data": {
+        "tenCaMoiKhai": ""
+      }
+    },
+    "03a_020_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_020_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_020_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_020_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_020_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "data": {
+        "tenCa": "AUTO TEST KHONG DUNG - Ca kiem thu",
+        "gioBatDau": "08:00",
+        "gioKetThuc": "17:00",
+        "chamCongTu": "07:30",
+        "chamCongDen": "17:30"
+      }
+    },
+    "03a_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "diMuonSau": 5,
+        "veSomTruoc": 5
+      },
+      "_blocked_cu": "Cấu hình áp cho TOÀN BỘ điểm bán, đổi là ảnh hưởng mọi nhân viên đang chấm công",
+      "_ghiChu": "Mở khoá 23/09/2026 — case chụp cấu hình cũ và khôi phục ở cuối"
+    },
+    "03a_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_030_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_ghiChu": "Mở khoá 22/09/2026 — case tự CHỤP cấu hình cũ lúc mở drawer và KHÔI PHỤC ở cuối; cấu hình này áp cho toàn điểm bán."
+    },
+    "03a_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_ghiChu": "Mở khoá 22/09/2026 — case tự CHỤP cấu hình cũ lúc mở drawer và KHÔI PHỤC ở cuối; cấu hình này áp cho toàn điểm bán."
+    },
+    "03a_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_ghiChu": "Mở khoá 22/09/2026 — case tự CHỤP cấu hình cũ lúc mở drawer và KHÔI PHỤC ở cuối; cấu hình này áp cho toàn điểm bán."
+    },
+    "03a_030_007": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_ghiChu": "Mở khoá 22/09/2026 — case tự CHỤP cấu hình cũ lúc mở drawer và KHÔI PHỤC ở cuối; cấu hình này áp cho toàn điểm bán."
+    },
+    "03a_030_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_note": "28/09 kỳ vọng user chốt (A5/A6/A7)"
+    },
+    "03a_030_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_note": "28/09 kỳ vọng user chốt (A5/A6/A7)"
+    },
+    "03a_030_010": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {},
+      "_ghiChu": "Mở khoá 22/09/2026 — case tự CHỤP cấu hình cũ lúc mở drawer và KHÔI PHỤC ở cuối; cấu hình này áp cho toàn điểm bán."
+    },
+    "03a_030_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_040_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "required": [
+        "tenNhanVien",
+        "tenCa"
+      ],
+      "data": {
+        "tenNhanVien": "AUTO_NV_65402390",
+        "tenCa": "AUTO CA CA NGAY"
+      },
+      "_ghiChu": "Mở khoá 23/09/2026 — chạy trên điểm bán seed, nhân viên riêng AUTO_NV_65402390, huỷ lịch đã tạo trong finally"
+    },
+    "03a_040_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_040_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "soNgay": 120
+      }
+    },
+    "03a_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "required": [
+        "tenNhanVien",
+        "tenCa"
+      ],
+      "data": {
+        "tenNhanVien": "AUTO_NV_65402390",
+        "tenCa": "AUTO CA CA NGAY",
+        "cacThu": "T2,T4,T6"
+      },
+      "_ghiChu": "Mở khoá 23/09/2026 — chạy trên điểm bán seed, nhân viên riêng AUTO_NV_65402390, huỷ lịch đã tạo trong finally"
+    },
+    "03a_040_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "required": [
+        "tenNhanVien"
+      ]
+    },
+    "03a_040_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "required": [
+        "tenNhanVien"
+      ]
+    },
+    "03a_040_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "required": [
+        "tenNhanVien"
+      ]
+    },
+    "03a_040_008": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "_note": "28/09 kỳ vọng user chốt (A5/A6/A7)"
+    },
+    "03a_040_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "required": [
+        "tenNhanVien"
+      ]
+    },
+    "03a_050_001": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "required": [
+        "tenNhanVien"
+      ],
+      "data": {
+        "tenNhanVien": "AUTO_NV_65402390",
+        "tuNgay": "",
+        "tenCa": "AUTO CA CA NGAY"
+      },
+      "_ghiChu": "Mở khoá 23/09/2026 — chạy trên điểm bán seed, nhân viên riêng AUTO_NV_65402390, huỷ lịch đã tạo trong finally",
+      "_ghiChuTuNgay": "Mốc ngày tính động trong spec (hôm nay + 3), không lấy từ input"
+    },
+    "03a_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "required": [
+        "tenNhanVien"
+      ],
+      "data": {
+        "tenNhanVien": "AUTO_NV_65402390",
+        "tenCa": "AUTO CA CA NGAY"
+      },
+      "_ghiChu": "Mở khoá 23/09/2026 — chạy trên điểm bán seed, nhân viên riêng AUTO_NV_65402390, huỷ lịch đã tạo trong finally"
+    },
+    "03a_050_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "required": [
+        "tenNhanVien"
+      ]
+    },
+    "03a_050_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "required": [
+        "tenNhanVien"
+      ]
+    },
+    "03a_050_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_65402390",
+        "soLichMongDoi": 0,
+        "tenCa": "AUTO CA CA NGAY",
+        "soLich": 2
+      },
+      "required": [],
+      "_blocked_cu": "Cần nhân viên nền có đúng N lịch để đối chiếu con số trong thông báo; chưa có điểm bán dựng riêng. 🔴 Huỷ lịch không dựng lại được bằng UI.",
+      "_ghiChu": "Mở 23/09/2026 — chạy trên điểm bán seed, tự dọn trong finally"
+    },
+    "03a_050_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "seed_shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_65402390",
+        "tenCa": "AUTO CA CA NGAY"
+      },
+      "required": [
+        "tenNhanVien"
+      ],
+      "_blocked_cu": "Cần nhân viên nền KHÔNG có lịch nào từ một mốc ngày — chưa có dữ liệu nền.",
+      "_batBoi": "seed 00_seed — nhân viên mới tinh, chưa có lịch làm việc nào (seed bước 3)",
+      "_ghiChu": "Mở khoá 23/09/2026 — chạy trên điểm bán seed, nhân viên riêng AUTO_NV_65402390, huỷ lịch đã tạo trong finally"
+    },
+    "03a_050_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "seed_shop",
+      "data": {
+        "tenNhanVien": "AUTO_NV_68051351"
+      },
+      "required": [
+        "tenNhanVien"
+      ]
+    },
+    "03a_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "required": [
+        "tuNgay",
+        "denNgay"
+      ],
+      "data": {
+        "tuNgay": "",
+        "denNgay": ""
+      }
+    },
+    "03a_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_060_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {},
+      "_blocked_cu": "Cần một ca ĐÃ chốt có sẵn trong môi trường; chưa có thì case không đo được gì",
+      "_ghiChu": "Mở 23/09/2026 — Lý Sơn có ca đã chốt; case chỉ đọc (chanGhi)"
+    },
+    "03a_060_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_060_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_060_006": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "_blocked": "Cần ca có đơn offline chưa đồng bộ đủ — không dựng được bằng UI, phải có máy bán hàng offline.",
+      "data": {}
+    },
+    "03a_060_007": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "shop",
+      "_blocked": "🔴 GHI chênh lệch tiền chờ duyệt. Cần ca ở đúng trạng thái cho chốt thủ công; chạy nhầm là ghi một khoản lệch tiền vào sổ.",
+      "data": {}
+    },
+    "03a_060_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "03a_PQ_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "gdv",
+      "data": {}
+    }
+  }
+}

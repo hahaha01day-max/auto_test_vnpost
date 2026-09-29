@@ -1,0 +1,259 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "seedshop",
+        "name": "seedshop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.seed\\.spec\\.js/"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "17-bo-sung-ton-quy-trinh.tct.spec.js",
+      "file": "17-bo-sung-ton-quy-trinh.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "17 bo sung ton — đề xuất → xã duyệt → TCT giao thẳng HUB tỉnh → tỉnh chuyển kho theo đề xuất → điểm bán nhận",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1800000,
+              "annotations": [
+                {
+                  "type": "phiếu gốc",
+                  "description": "DX2609285079"
+                },
+                {
+                  "type": "phiếu TCT",
+                  "description": "ĐXTCT-20260928-2851"
+                },
+                {
+                  "type": "PO",
+                  "description": "PO2609281159"
+                },
+                {
+                  "type": "xác nhận giao thẳng",
+                  "description": "Đã xác nhận đơn giao thẳng · {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"xUmmQg\"}"
+                },
+                {
+                  "type": "phiếu gốc trước khi chuyển",
+                  "description": "TCT_TRANSFERRED · stockInOutId null · purchaseOrderId null"
+                },
+                {
+                  "type": "tạo phiếu chuyển",
+                  "description": "Thiếu đơn vị tính cho sản phẩm AUTO7_SP_TC · xuất ngay true · undefined"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "tct",
+              "projectName": "tct",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 111720,
+                  "error": {
+                    "message": "Error: Tạo phiếu chuyển kho từ phiếu đề xuất không thành công ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Tạo phiếu chuyển kho thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Thiếu đơn vị tính cho sản phẩm AUTO7_SP_TC\"\u001b[39m",
+                    "stack": "Error: Tạo phiếu chuyển kho từ phiếu đề xuất không thành công ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Tạo phiếu chuyển kho thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Thiếu đơn vị tính cho sản phẩm AUTO7_SP_TC\"\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests/17-bo-sung-ton-quy-trinh.tct.spec.js:111:87",
+                    "location": {
+                      "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests/17-bo-sung-ton-quy-trinh.tct.spec.js",
+                      "column": 87,
+                      "line": 111
+                    },
+                    "snippet": "  109 | \t\t\tconst c = await dp.taoChuyenTuDeXuat(tinh.page, kq.maGoc);\n  110 | \t\t\tghiChu('tạo phiếu chuyển', `${c.tb} · xuất ngay ${c.xuatNgay} · ${JSON.stringify(c.res?.status)}`);\n> 111 | \t\t\texpect(c.tb, `Tạo phiếu chuyển kho từ phiếu đề xuất không thành công (${c.lyDo})`).toContain('Tạo phiếu chuyển kho thành công');\n      | \t\t\t                                                                                   ^\n  112 | \t\t\tluu({ maChuyen: c.body?.code });\n  113 | \t\t}\n  114 | \t\tghiChu('phiếu chuyển', kq.maChuyen);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests/17-bo-sung-ton-quy-trinh.tct.spec.js",
+                        "column": 87,
+                        "line": 111
+                      },
+                      "message": "Error: Tạo phiếu chuyển kho từ phiếu đề xuất không thành công ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Tạo phiếu chuyển kho thành công\"\u001b[39m\nReceived string:    \u001b[31m\"Thiếu đơn vị tính cho sản phẩm AUTO7_SP_TC\"\u001b[39m\n\n  109 | \t\t\tconst c = await dp.taoChuyenTuDeXuat(tinh.page, kq.maGoc);\n  110 | \t\t\tghiChu('tạo phiếu chuyển', `${c.tb} · xuất ngay ${c.xuatNgay} · ${JSON.stringify(c.res?.status)}`);\n> 111 | \t\t\texpect(c.tb, `Tạo phiếu chuyển kho từ phiếu đề xuất không thành công (${c.lyDo})`).toContain('Tạo phiếu chuyển kho thành công');\n      | \t\t\t                                                                                   ^\n  112 | \t\t\tluu({ maChuyen: c.body?.code });\n  113 | \t\t}\n  114 | \t\tghiChu('phiếu chuyển', kq.maChuyen);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests/17-bo-sung-ton-quy-trinh.tct.spec.js:111:87"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-28T04:16:17.603Z",
+                  "annotations": [
+                    {
+                      "type": "phiếu gốc",
+                      "description": "DX2609285079"
+                    },
+                    {
+                      "type": "phiếu TCT",
+                      "description": "ĐXTCT-20260928-2851"
+                    },
+                    {
+                      "type": "PO",
+                      "description": "PO2609281159"
+                    },
+                    {
+                      "type": "xác nhận giao thẳng",
+                      "description": "Đã xác nhận đơn giao thẳng · {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"xUmmQg\"}"
+                    },
+                    {
+                      "type": "phiếu gốc trước khi chuyển",
+                      "description": "TCT_TRANSFERRED · stockInOutId null · purchaseOrderId null"
+                    },
+                    {
+                      "type": "tạo phiếu chuyển",
+                      "description": "Thiếu đơn vị tính cho sản phẩm AUTO7_SP_TC · xuất ngay true · undefined"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results/17-bo-sung-ton-quy-trinh.t-152fd-heo-đề-xuất-→-điểm-bán-nhận-tct/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results/17-bo-sung-ton-quy-trinh.t-152fd-heo-đề-xuất-→-điểm-bán-nhận-tct/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results/17-bo-sung-ton-quy-trinh.t-152fd-heo-đề-xuất-→-điểm-bán-nhận-tct/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results/17-bo-sung-ton-quy-trinh.t-152fd-heo-đề-xuất-→-điểm-bán-nhận-tct/test-failed-3.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results/17-bo-sung-ton-quy-trinh.t-152fd-heo-đề-xuất-→-điểm-bán-nhận-tct/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/test-output/playwright-results/17-bo-sung-ton-quy-trinh.t-152fd-heo-đề-xuất-→-điểm-bán-nhận-tct/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/00_seed/tests/17-bo-sung-ton-quy-trinh.tct.spec.js",
+                    "column": 87,
+                    "line": 111
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "959353a39381442a7726-3e6ac40cdb4f114e2a55",
+          "file": "17-bo-sung-ton-quy-trinh.tct.spec.js",
+          "line": 34,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-28T04:16:17.350Z",
+    "duration": 113216.47,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

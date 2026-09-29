@@ -1,0 +1,318 @@
+﻿,Chức năng,,KHÁCH HÀNG THÂN THIẾT,,,,,,,,
+,Mã Testcase,,20_khach_hang_than_thiet,,,,,,,,
+,Tổng các tình huống kiểm thử,,104,,,,,,,,
+,Chưa thực hiện,,104,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,KHÁCH HÀNG THÂN THIẾT,,,,,,,,,,
+,010 — Tạo chương trình tích điểm,,,,,,,,,,
+20_010_001,Mở form Thêm chương trình tích điểm,Vai: shop. Điểm bán CHƯA có chương trình tích điểm,"1. Vào /care/loyalty;
+2. Bấm liên kết ""Thêm chương trình tích điểm"" ở ô bên trái",,"Drawer tiêu đề ""Tạo chương trình tích điểm"" mở, có 2 thẻ ""Thông tin chung"" và ""Phạm vi áp dụng"", công tắc ""Sử dụng chương trình tích điểm"" BẬT sẵn, hai thẻ ""Đơn hàng""/""Sản phẩm"" hiện và ""Đơn hàng"" đang chọn",,,,,,
+20_010_002,Bấm Xác nhận khi chưa nhập gì ở form tích điểm,Vai: shop. Đang mở form Tạo chương trình tích điểm,"1. Không sửa trường nào;
+2. Xoá rỗng ô ngày ở khối Thời gian áp dụng;
+3. Bấm Xác nhận",,"Form chặn gửi; hiện đồng thời ""Vui lòng chọn thời gian áp dụng"" dưới ô ngày và ""Vui lòng chọn đối tượng áp dụng"" dưới nhóm nút tròn Toàn bộ khách hàng/Nhóm khách hàng. Không gọi POST /loyalty/campaign/create-campaign",,,,,,
+20_010_003,Tạo chương trình tích điểm theo đơn hàng thành công,Vai: shop. Chưa có chương trình tích điểm nào đang hoạt động,"1. Bật công tắc Sử dụng chương trình tích điểm;
+2. Chọn thẻ ""Đơn hàng"";
+3. Nhập Số tiền chi tiêu = 10.000;
+4. Chọn ngày bắt đầu = hôm nay, bỏ trống ngày kết thúc;
+5. Chọn Toàn bộ khách hàng;
+6. Bấm Xác nhận",,"Toast ""Tạo chương trình tích điểm thành công""; drawer đóng; ô trái màn chính đổi thành thẻ ""Chương trình tích điểm"" có nhãn ""Đang hoạt động"" và câu ""Thành viên chương trình tích điểm sẽ nhận được 1 điểm cho 10.000 đ chi tiêu""",,,,,,
+20_010_004,Tạo chương trình tích điểm theo sản phẩm thành công,Vai: shop. Chưa có chương trình tích điểm đang hoạt động,"1. Bật công tắc;
+2. Bấm thẻ ""Sản phẩm"";
+3. Nhập Giá bán sau thuế (VAT) = 20.000;
+4. Ngày bắt đầu = hôm nay;
+5. Toàn bộ khách hàng;
+6. Xác nhận",,"Nhãn ô tỷ lệ đổi từ ""Số tiền chi tiêu"" thành ""Giá bán sau thuế (VAT)""; toast ""Tạo chương trình tích điểm thành công""; màn chi tiết hiện Loại chương trình = ""Theo sản phẩm""",,,,,,
+20_010_005,Tạo chương trình theo đơn hàng có Giá trị đơn hàng tối thiểu,Vai: shop,"1. Chọn thẻ Đơn hàng;
+2. Số tiền chi tiêu = 10.000;
+3. Tích ô ""Giá trị đơn hàng tối thiểu"";
+4. Nhập 300.000 vào ô số tiền bên cạnh;
+5. Xác nhận",,"Ô số tiền bên cạnh chỉ nhập được SAU khi tích ô; toast ""Tạo chương trình tích điểm thành công""; màn chi tiết dòng ""Giá trị đơn hàng tối thiếu"" hiện 300.000 đ",,,,,,
+20_010_006,Tạo chương trình theo sản phẩm có Giá trị đơn hàng tối thiểu,Vai: shop,"1. Chọn thẻ Sản phẩm;
+2. Giá bán sau thuế (VAT) = 20.000;
+3. Tích Giá trị đơn hàng tối thiểu = 300.000;
+4. Xác nhận",,"Toast ""Tạo chương trình tích điểm thành công"".",,,,,,
+20_010_007,Tạo chương trình theo đơn hàng tick Không tích điểm cho sản phẩm giảm giá,Vai: shop,"1. Chọn thẻ Đơn hàng;
+2. Nhập tỷ lệ;
+3. Tích ""Không tích điểm cho sản phẩm giảm giá"";
+4. Xác nhận",,"Toast thành công; màn chi tiết dòng ""Không tích điểm cho SP giảm giá"" = ""Có""",,,,,,
+20_010_008,Tạo chương trình theo sản phẩm tick Không tích điểm cho sản phẩm giảm giá,Vai: shop,"1. Chọn thẻ Sản phẩm;
+2. Nhập tỷ lệ;
+3. Tích ""Không tích điểm cho sản phẩm giảm giá"";
+4. Xác nhận",,Toast thành công,,,,,,
+20_010_009,Tạo chương trình theo đơn hàng tick Không tích điểm cho hóa đơn giảm giá,Vai: shop,"1. Chọn thẻ Đơn hàng;
+2. Tích ""Không tích điểm cho hóa đơn giảm giá"";
+3. Xác nhận",,"Màn chi tiết dòng ""Không tích điểm cho HĐ giảm giá"" = ""Có""",,,,,,
+20_010_010,Tạo chương trình theo sản phẩm tick Không tích điểm cho hóa đơn giảm giá,Vai: shop,"1. Chọn thẻ Sản phẩm;
+2. Tích ""Không tích điểm cho hóa đơn giảm giá"";
+3. Xác nhận",,Toast thành công,,,,,,
+20_010_011,Tạo chương trình theo đơn hàng tick Không tích điểm cho hóa đơn thanh toán bằng điểm thưởng,Vai: shop,"1. Chọn thẻ Đơn hàng;
+2. Tích ""Không tích điểm cho hóa đơn thanh toán bằng điểm thưởng"";
+3. Xác nhận",,"Màn chi tiết dòng ""Không tích điểm cho HĐ thanh toán bằng điểm"" = ""Có"".",,,,,,
+20_010_012,Tạo chương trình theo sản phẩm tick Không tích điểm cho hóa đơn thanh toán bằng điểm thưởng,Vai: shop,"1. Chọn thẻ Sản phẩm;
+2. Tích ô tương ứng;
+3. Xác nhận",,Cấu hình lưu nhưng không có hiệu lực khi bán (cùng nguyên nhân 20_010_011),,,,,,
+20_010_013,Khai chương trình chỉ áp dụng cho Nhóm khách hàng cụ thể,Vai: shop. Đã có ít nhất 1 nhóm khách hàng ở phân hệ Chiến dịch,"1. Ở khối Đối tượng áp dụng chọn nút tròn ""Nhóm khách hàng"";
+2. Gõ tên nhóm vào ô ""Tìm kiếm và chọn nhóm khách hàng..."";
+3. Chọn nhóm từ danh sách;
+4. Xác nhận",,"Nhóm được chọn rơi xuống bảng có 5 cột STT | Tên nhóm | Đối tượng áp dụng | Số lượng thành viên | Thao tác, cột số lượng hiện dạng ""N thành viên""; màn chi tiết dòng ""Phạm vi khách hàng"" = ""Nhóm khách hàng cụ thể""",,,,,,
+20_010_014,Đặt ngày bắt đầu trong quá khứ rồi bật công tắc,Vai: shop,"1. Bật công tắc Sử dụng chương trình tích điểm;
+2. Chọn ngày bắt đầu = hôm qua;
+3. Nhập tỷ lệ;
+4. Xác nhận",,"Hệ thống LƯU BÌNH THƯỜNG và toast ""Tạo chương trình tích điểm thành công"" — Giao diện chỉ chặn ngày bắt đầu ở TƯƠNG LAI.",,,,,,
+20_010_015,Đặt ngày bắt đầu ở tương lai rồi bật công tắc,Vai: shop,"1. Bật công tắc;
+2. Chọn ngày bắt đầu = ngày mai;
+3. Nhập tỷ lệ;
+4. Xác nhận",,"Chặn ở Giao diện với toast đỏ nguyên văn ""Ngày bắt đầu ở trong tương lai, không thể kích hoạt chương trình""; không gọi API tạo",,,,,,
+20_010_016,Đặt ngày kết thúc bằng hôm nay rồi bật công tắc,Vai: shop,"1. Bật công tắc;
+2. Ngày bắt đầu = hôm nay;
+3. Ngày kết thúc = hôm nay;
+4. Xác nhận",,"Chặn với toast ""Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình""",,,,,,
+20_010_017,Chọn ngày kết thúc trước ngày bắt đầu,Vai: shop,"1. Mở ô chọn khoảng ngày;
+2. Chọn ngày bắt đầu = hôm nay;
+3. Thử chọn ngày kết thúc = hôm qua",,DatePicker.RangePicker không cho chọn ngược — ngày chọn thứ hai trở thành ngày bắt đầu mới.,,,,,,
+20_010_018,Nhập tỷ lệ tích điểm bằng 0,Vai: shop,"1. Nhập Số tiền chi tiêu = 0;
+2. Chọn ngày bắt đầu;
+3. Chọn Toàn bộ khách hàng;
+4. Xác nhận",,Hậu quả đo được: mọi đơn bán sau đó tích 0 điểm mà không báo gì.,,,,,,
+20_010_019,Nhập tỷ lệ tích điểm âm,Vai: shop,"1. Gõ -5000 vào ô Số tiền chi tiêu;
+2. Rời ô",,InputCurrency có min=0 nên ô tự kẹp về 0 hoặc bỏ dấu trừ; giá trị âm không gửi được lên API,,,,,,
+20_010_020,Bỏ trống riêng ô Số tiền chi tiêu,Vai: shop,"1. Xoá rỗng ô Số tiền chi tiêu;
+2. Điền đủ ngày và đối tượng áp dụng;
+3. Bấm Xác nhận",,"Bỏ trống Số tiền chi tiêu: form KHÔNG hiện lỗi ""Vui lòng nhập số tiền chi tiêu"" và vẫn gửi request — đây là hành vi sai cần ghi nhận.",,,,,,
+20_010_021,Gõ chữ vào ô Số tiền chi tiêu,Vai: shop,1. Gõ chuỗi abc vào ô Số tiền chi tiêu,,Ô số không nhận ký tự chữ; nội dung ô giữ nguyên rỗng hoặc giá trị số trước đó,,,,,,
+20_010_022,Nhập số tiền chi tiêu rất lớn,Vai: shop,"1. Nhập 999.999.999.999 vào ô Số tiền chi tiêu;
+2. Xác nhận",,Trường DB là double nên không tràn — nếu lưu được thì mọi đơn đều tích 0 điểm,,,,,,
+20_010_023,Tích ngành hàng nhưng để trống danh mục,Vai: shop,"1. Chọn thẻ ""Sản phẩm"";
+2. Tích ""Tích điểm sản phẩm theo ngành hàng"";
+3. Không chọn danh mục nào;
+4. Bấm Xác nhận",,"Chặn ở hai chỗ: ô danh mục hiện ""Vui lòng chọn danh mục hoặc combo"" và toast đỏ ""Bạn chưa chọn ngành hàng nào""; không gọi API",,,,,,
+20_010_024,Đổi loại danh mục sau khi đã chọn danh mục,Vai: shop,"1. Chọn thẻ Sản phẩm, tích Tích điểm sản phẩm theo ngành hàng;
+2. Chọn ""Danh mục sản phẩm"" rồi tích 2 danh mục;
+3. Đổi sang ""Danh mục combo""",,"Ô ""Tìm kiếm theo danh mục"" bị xoá trắng; 2 danh mục vừa chọn mất hết, không có hộp xác nhận nào hỏi lại",,,,,,
+20_010_025,Chọn trùng một nhóm khách hàng hai lần,Vai: shop. Đã chọn sẵn 1 nhóm,"1. Mở lại ô tìm nhóm;
+2. Chọn đúng nhóm vừa chọn",,"Toast đỏ ""Nhóm đã tồn tại trong danh sách""; bảng bên dưới vẫn chỉ có 1 dòng",,,,,,
+20_010_026,Chọn Nhóm khách hàng nhưng để bảng trống,Vai: shop,"1. Chọn nút tròn ""Nhóm khách hàng"";
+2. Không chọn nhóm nào;
+3. Bấm Xác nhận",,"Chặn với ""Vui lòng chọn ít nhất một nhóm khách hàng""; không gọi API tạo",,,,,,
+20_010_027,Xoá một nhóm khách hàng khỏi bảng đã chọn,Vai: shop. Bảng đang có 2 nhóm,"1. Bấm ""Xóa"" ở cột Thao tác của dòng thứ nhất",,"Bảng còn 1 dòng, cột STT đánh lại từ 1; nếu xoá nốt dòng cuối thì bảng hiện ""Chưa có nhóm khách hàng nào được chọn"" và Xác nhận bị chặn",,,,,,
+20_010_028,Tìm nhóm khách hàng bằng chữ thường và không dấu,Vai: shop. Có nhóm tên chứa dấu tiếng Việt,"1. Gõ từ khoá viết thường không dấu vào ô tìm nhóm;
+2. Quan sát danh sách gợi ý",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+20_010_029,Cuộn danh sách nhóm khách hàng để tải thêm,Vai: shop. Có trên 10 nhóm khách hàng,"1. Mở ô tìm nhóm;
+2. Cuộn xuống đáy danh sách gợi ý",,"Gọi tiếp GET /loyalty/api/v1/customer-group/get-list với page tăng dần, size=10; danh sách nối thêm nhóm mới và không lặp nhóm đã có",,,,,,
+20_010_030,Bấm Hủy giữa chừng khi đang tạo chương trình tích điểm,Vai: shop,"1. Nhập đủ tỷ lệ, ngày, đối tượng;
+2. Bấm nút ""Hủy"" ở góc trên bên phải;
+3. Mở lại form",,"Không gọi API tạo; mở lại form thì mọi ô trở về mặc định (công tắc bật, ngày bắt đầu = hôm nay, chưa chọn đối tượng áp dụng), phạm vi về ""Toàn hệ thống""",,,,,,
+20_010_031,Tắt công tắc khi đang TẠO MỚI chương trình tích điểm,Vai: shop. Đang ở form Tạo chương trình tích điểm,"1. Tắt công tắc Sử dụng chương trình tích điểm;
+2. Quan sát vùng ngay dưới công tắc",,"Hai thẻ ""Đơn hàng"" và ""Sản phẩm"" biến mất khỏi form; bật lại công tắc thì hiện lại. Ở màn Cập nhật thì hai thẻ luôn hiện — xem 20_040_011",,,,,,
+20_010_032,Tạo chương trình tích điểm khi đã có chương trình đang hoạt động,Vai: shop. Điểm bán đã có 1 chương trình tích điểm active,"1. Gọi tạo chương trình tích điểm thứ hai với active=true;
+2. Bấm Xác nhận",,"API trả lỗi nghiệp vụ nguyên văn ""Có một chiến dịch đang chạy, vui lòng tạm ngừng chiến dịch hiện tại trước khi tiếp tục.""; không tạo bản ghi thứ hai",,,,,,
+,020 — Tạo chương trình đổi điểm,,,,,,,,,,
+20_020_001,Mở form Thêm chương trình đổi điểm,Vai: shop. Điểm bán CHƯA có chương trình đổi điểm,"1. Vào /care/loyalty;
+2. Bấm ""Thêm chương trình đổi điểm"" ở ô bên phải",,"Drawer ""Tạo chương trình đổi điểm"" mở với 2 thẻ; có các khối ""Tỷ lệ đổi điểm"", ""Thời gian áp dụng"", ""Điều kiện""; KHÔNG có khối chọn loại tích điểm, điều kiện loại trừ hay đối tượng khách hàng; nút đóng mang nhãn ""Đóng""",,,,,,
+20_020_002,Bấm Xác nhận khi chưa nhập gì ở form đổi điểm,Vai: shop. Đang mở form Tạo chương trình đổi điểm,"1. Xoá rỗng ô ngày;
+2. Bấm Xác nhận",,"Chặn với ""Vui lòng chọn thời gian bắt đầu"" dưới ô ngày và ""Số tiền chi tiêu phải lớn hơn 0"" dưới ô tỷ lệ; không gọi POST /loyalty/redeem-campaign/create-campaign",,,,,,
+20_020_003,Tạo chương trình đổi điểm thành công,Vai: shop. Chưa có chương trình đổi điểm đang hoạt động,"1. Nhập Số tiền chi tiêu = 1.000;
+2. Ngày bắt đầu = hôm nay;
+3. Bấm Xác nhận",,"POST /loyalty/redeem-campaign/create-campaign trả 200; toast ""Tạo chương trình đổi điểm thành công""; ô phải màn chính hiện ""Thành viên có thể đổi 1 điểm để nhận ưu đãi trị giá 1.000 đ"" kèm nhãn ""Đang hoạt động""",,,,,,
+20_020_004,Nhập tỷ lệ đổi điểm bằng 0,Vai: shop,"1. Nhập Số tiền chi tiêu = 0;
+2. Bấm Xác nhận",,Không gọi API,,,,,,
+20_020_005,Nhập tỷ lệ đổi điểm âm,Vai: shop,"1. Gõ -1000 vào ô Số tiền chi tiêu;
+2. Bấm Xác nhận",,"InputCurrency min=0 kẹp giá trị về 0; sau đó bị chặn bởi ""Số tiền chi tiêu phải lớn hơn 0""",,,,,,
+20_020_006,Đặt ngày bắt đầu quá khứ cho chương trình đổi điểm rồi bật công tắc,Vai: shop,"1. Bật công tắc Sử dụng chương trình đổi điểm;
+2. Ngày bắt đầu = hôm qua;
+3. Nhập tỷ lệ 1.000;
+4. Xác nhận",,"Lưu bình thường với toast ""Tạo chương trình đổi điểm thành công"" — Giao diện chỉ chặn ngày bắt đầu ở tương lai.",,,,,,
+20_020_007,Đặt ngày bắt đầu tương lai cho chương trình đổi điểm rồi bật công tắc,Vai: shop,"1. Bật công tắc;
+2. Ngày bắt đầu = ngày mai;
+3. Xác nhận",,"Chặn với toast nguyên văn ""Ngày bắt đầu ở trong tương lai, không thể kich hoạt chương trình"" — chuỗi thiếu dấu ở chữ ""kich hoạt"", KHÁC chuỗi của màn tích điểm",,,,,,
+20_020_008,Đặt ngày kết thúc bằng hôm nay cho chương trình đổi điểm rồi bật công tắc,Vai: shop,"1. Bật công tắc;
+2. Ngày bắt đầu = hôm nay;
+3. Ngày kết thúc = hôm nay;
+4. Xác nhận",,Hai màn xử lý lệch nhau,,,,,,
+20_020_009,Đặt ngày kết thúc đã qua cho chương trình đổi điểm rồi bật công tắc,Vai: shop,"1. Bật công tắc;
+2. Ngày kết thúc = hôm qua;
+3. Xác nhận",,"Chặn với toast ""Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình""; không gọi API",,,,,,
+20_020_010,Ô số tiền tối thiểu bị khoá cho tới khi tích ô Giá trị đơn hàng tối thiểu,Vai: shop. Đang mở form đổi điểm,"1. Quan sát ô số tiền cạnh ô tích Giá trị đơn hàng tối thiểu;
+2. Tích ô;
+3. Nhập 200.000",,"Trước khi tích: ô số tiền ở trạng thái disabled, không gõ được.",,,,,,
+20_020_011,Bấm Đóng giữa chừng ở form đổi điểm,Vai: shop,"1. Nhập tỷ lệ và ngày;
+2. Bấm nút ""Đóng"";
+3. Mở lại form",,Không gọi API; mở lại form thì các ô về mặc định và phạm vi áp dụng về Toàn hệ thống,,,,,,
+20_020_012,Tạo chương trình đổi điểm khi đã có chương trình đang hoạt động,Vai: shop. Đã có 1 chương trình đổi điểm active,1. Gọi tạo chương trình đổi điểm thứ hai với active=true,,"API trả lỗi nguyên văn ""Có một chiến dịch đang chạy, vui lòng tạm ngừng trước khi tiếp tục.""",,,,,,
+,030 — Chọn phạm vi áp dụng của chương trình,,,,,,,,,,
+20_030_001,Phạm vi áp dụng mặc định là Toàn hệ thống,Vai: shop. Đang mở form tạo chương trình bất kỳ,"1. Bấm thẻ ""Phạm vi áp dụng""",,"Nút tròn ""Toàn hệ thống"" đang chọn sẵn; bảng chọn đơn vị chưa hiện",,,,,,
+20_030_002,Chọn phạm vi cụ thể nhưng không tích đơn vị nào,Vai: shop,"1. Vào thẻ Phạm vi áp dụng;
+2. Chọn ""Chọn phạm vi cụ thể"";
+3. Không tích đơn vị nào;
+4. Quay lại thẻ Thông tin chung và bấm Xác nhận",,"Chặn với toast ""Vui lòng chọn phạm vi áp dụng""; không gọi API. Hệ thống KHÔNG tự hiểu là toàn hệ thống",,,,,,
+20_030_003,Khai phạm vi tới cấp Bưu điện tỉnh,Vai: province,"1. Chọn ""Chọn phạm vi cụ thể"";
+2. Ở dòng ""Áp dụng cho"" chọn ""Bưu điện tỉnh"";
+3. Tích 1 tỉnh ở cột CẤP TỈNH;
+4. Xác nhận",,"Dòng ""Đã chọn … đơn vị/điểm bán"" hiện đúng số 1; toast thành công; mở lại màn chi tiết thẻ Phạm vi áp dụng hiện đúng tỉnh đã chọn",,,,,,
+20_030_004,Cột Cấp xã phường khi chưa chọn tỉnh,Vai: province,"1. Chọn phạm vi cụ thể;
+2. Chọn ""Áp dụng cho"" = ""Bưu điện xã"";
+3. Quan sát cột giữa",,"Cột CẤP XÃ / PHƯỜNG hiện chữ ""Chọn tỉnh/đơn vị trước"", không có ô tích nào",,,,,,
+20_030_005,Cột Điểm bán khi chưa chọn xã phường,Vai: province,"1. Chọn ""Áp dụng cho"" = ""Điểm bán"";
+2. Tích 1 tỉnh nhưng chưa tích xã;
+3. Quan sát cột phải",,"Cột ĐIỂM BÁN hiện chữ ""Chọn xã/phường trước""",,,,,,
+20_030_006,Đổi cấp Áp dụng cho sau khi đã tích đơn vị,Vai: province,"1. Chọn ""Bưu điện tỉnh"" và tích 2 tỉnh;
+2. Đổi ""Áp dụng cho"" sang ""Bưu điện xã""",,"Hiện hộp thoại ""Xác nhận thay đổi"" cảnh báo sẽ xoá toàn bộ lựa chọn hiện tại; bấm Đồng ý thì dòng ""Đã chọn"" về 0, bấm Hủy thì giữ nguyên 2 tỉnh và giữ nguyên cấp cũ",,,,,,
+20_030_007,Lọc nhanh bằng ô Hiển thị các đơn vị đã chọn,Vai: province,"1. Tích 3 tỉnh rải rác trong danh sách;
+2. Tích ô Hiển thị các đơn vị đã chọn",,Danh sách chỉ còn đúng 3 tỉnh đã tích; bỏ tích thì danh sách đầy đủ trở lại,,,,,,
+20_030_008,Đóng form khi đang khai phạm vi dở dang,Vai: shop,"1. Chọn phạm vi cụ thể và tích vài đơn vị;
+2. Bấm Hủy/Đóng;
+3. Mở lại form",,"Phạm vi trở về ""Toàn hệ thống"", lựa chọn dở dang mất hết",,,,,,
+20_030_009,Tìm đơn vị trong cột Cấp tỉnh,Vai: province,1. Gõ từ khoá vào ô Tìm kiếm của cột CẤP TỈNH: đúng tên · một phần tên · chuỗi không tồn tại · toàn khoảng trắng,,Khớp đúng và khớp một phần đều ra kết quả; chuỗi không tồn tại cho danh sách rỗng; chuỗi toàn khoảng trắng không được coi là từ khoá hợp lệ (không lọc mất hết danh sách).,,,,,,
+20_030_010,Điểm bán ngoài phạm vi áp dụng khi bán hàng,Vai: gdv của điểm bán KHÔNG nằm trong phạm vi đã khai,"1. Mở màn bán hàng ở điểm bán ngoài phạm vi;
+2. Chọn khách hàng;
+3. Quan sát khối tích điểm/đổi điểm",,GET /loyalty/campaign/check-scope trả kết quả không cho tham gia; đơn thanh toán tại điểm bán này tích 0 điểm và không dùng được điểm.,,,,,,
+,"040 — Xem chi tiết, chỉnh sửa và tạm ngừng chương trình",,,,,,,,,,
+20_040_001,Mở màn Quản lý chiến dịch Loyalty,Vai: tct. Tài khoản có quyền loyalty,"1. Đăng nhập;
+2. Vào menu Loyalty › Chiến dịch Loyalty (/care/loyalty)",,"PageContainer tiêu đề ""Quản lý chiến dịch Loyalty"", breadcrumb ẩn; nội dung là 1 ProCard chứa 2 ô: Chương trình tích điểm (trái) và Chương trình đổi điểm (phải)",,,,,,
+20_040_002,Kiểm tra control chính màn Loyalty,Vai: shop. Đang ở màn Chiến dịch Loyalty,"1. Quan sát hai ô;
+2. Quan sát phần tab và nút phía trên",,"Ô chưa có chương trình hiện liên kết ""Thêm chương trình tích điểm"" / ""Thêm chương trình đổi điểm""; ô đã có chương trình hiện 2 liên kết ""Xem chi tiết"" và ""Chỉnh sửa"" ở góc dưới bên phải.",,,,,,
+20_040_003,Xem chi tiết chương trình tích điểm,Vai: shop. Đã có chương trình tích điểm,"1. Bấm ""Xem chi tiết"" ở ô Chương trình tích điểm",,"Drawer ""Chi tiết chương trình tích điểm"" mở ở chế độ chỉ đọc, thẻ Thông tin chung có đủ 9 dòng: Trạng thái · Loại chương trình · Tỷ lệ tích điểm · Thời gian áp dụng · Giá trị đơn hàng tối thiếu · Không tích điểm cho SP giảm giá · Không tích điểm cho HĐ giảm giá · Không tích điểm cho HĐ thanh toán bằng điểm · Phạm vi khách hàng",,,,,,
+20_040_004,Trạng thái chương trình theo thời gian áp dụng,Vai: shop,"1. Tạo chương trình có ngày bắt đầu = hôm nay và bật công tắc;
+2. Tải lại màn chính;
+3. So với chương trình có ngày bắt đầu ở tương lai hoặc ngày kết thúc đã qua",,"Chương trình bắt đầu từ hôm nay hiện nhãn xanh ""Đang hoạt động""; chương trình chưa tới ngày bắt đầu hoặc đã quá ngày kết thúc bị GET /loyalty/campaign/get-campaign tự đặt active=false và hiện nhãn đỏ ""Ngừng hoạt động""",,,,,,
+20_040_005,Nhãn hiển thị trên màn chi tiết tích điểm đúng nguyên văn,Vai: shop. Đã có chương trình tích điểm cấu hình đủ điều kiện,"1. Mở Xem chi tiết;
+2. Đối chiếu từng nhãn dòng",,"Các dòng điều kiện hiện ""Có""/""Không""; chưa đặt mức tối thiểu thì hiện ""Không có""; không có ngày kết thúc thì hiện ""Không giới hạn""",,,,,,
+20_040_006,Xem chi tiết chương trình đổi điểm,Vai: shop. Đã có chương trình đổi điểm,"1. Bấm ""Xem chi tiết"" ở ô Chương trình đổi điểm",,"Drawer ""Chi tiết chương trình đổi điểm"" chỉ có 4 dòng: Trạng thái · Tỷ lệ đổi điểm (dạng ""1 điểm = X đ"") · Điều kiện hóa đơn (""Từ X đ"" hoặc ""Không có"") · Thời gian áp dụng",,,,,,
+20_040_007,Tạm ngừng chương trình tích điểm bằng công tắc,Vai: shop. Chương trình tích điểm đang hoạt động,"1. Bấm ""Chỉnh sửa"";
+2. Tắt công tắc Sử dụng chương trình tích điểm;
+3. Bấm Xác nhận",,"Toast ""Cập nhật chương trình tích điểm thành công""; ô trên màn chính đổi sang nhãn đỏ ""Ngừng hoạt động"" nhưng vẫn giữ nguyên câu tóm tắt tỷ lệ; các đơn bán sau đó tích 0 điểm",,,,,,
+20_040_008,Bật lại chương trình tích điểm đã tạm ngừng,Vai: shop. Chương trình đang Ngừng hoạt động và ngày kết thúc còn hiệu lực,"1. Bấm Chỉnh sửa;
+2. Bật công tắc;
+3. Xác nhận",,"Toast ""Cập nhật chương trình tích điểm thành công""; nhãn về ""Đang hoạt động""; cấu hình cũ (tỷ lệ, điều kiện, nhóm khách hàng) giữ nguyên không phải khai lại",,,,,,
+20_040_009,Tắt chương trình đổi điểm bằng công tắc,Vai: shop. Chương trình đổi điểm đang hoạt động,"1. Bấm Chỉnh sửa ở ô đổi điểm;
+2. Tắt công tắc;
+3. Xác nhận",,"Toast ""Cập nhật chương trình đổi điểm thành công""; nhãn đổi sang ""Ngừng hoạt động""; ở màn bán hàng gọi calculate-loyalty-amount trả lỗi ""Chiến dịch không hoạt động"" nên không dùng được điểm",,,,,,
+20_040_010,Bật lại chương trình có ngày kết thúc đã qua,Vai: shop. Chương trình đang tắt và có ngày kết thúc trước hôm nay,"1. Bấm Chỉnh sửa;
+2. Bật công tắc;
+3. Xác nhận",,"Chặn với ""Ngày kết thúc phải lớn hơn thời gian hiện tại, không thể kích hoạt chương trình""; phải sửa hoặc xoá ngày kết thúc mới bật được",,,,,,
+20_040_011,Hai thẻ loại tích điểm luôn hiện ở màn Cập nhật,Vai: shop. Đã có chương trình tích điểm,"1. Bấm Chỉnh sửa;
+2. Tắt công tắc;
+3. Quan sát vùng dưới công tắc",,"Hai thẻ ""Đơn hàng"" và ""Sản phẩm"" VẪN hiện (khác màn tạo mới ở 20_010_031); tiêu đề drawer là ""Cập nhật chương trình tích điểm""",,,,,,
+20_040_012,Đổi loại tích điểm từ Đơn hàng sang Sản phẩm khi sửa,Vai: shop. Chương trình đang là loại Đơn hàng,"1. Bấm Chỉnh sửa;
+2. Bấm thẻ Sản phẩm;
+3. Quan sát nhãn ô tỷ lệ;
+4. Xác nhận",,"Nhãn ô đổi từ ""Số tiền chi tiêu"" sang ""Giá bán sau thuế (VAT)"" nhưng GIÁ TRỊ SỐ GIỮ NGUYÊN; ô tích ""Tích điểm sản phẩm theo ngành hàng"" xuất hiện; sau khi lưu màn chi tiết hiện Loại chương trình = ""Theo sản phẩm""",,,,,,
+20_040_013,Sửa tỷ lệ tích điểm không tính lại đơn cũ,Vai: shop. Đã có đơn bán tích điểm với tỷ lệ cũ,"1. Ghi lại điểm hiện tại của khách;
+2. Sửa tỷ lệ tích điểm sang mức khác;
+3. Mở lại chi tiết khách hàng",,"Điểm đã tích của khách GIỮ NGUYÊN, không tính lại theo tỷ lệ mới; chỉ đơn bán sau thời điểm lưu mới áp tỷ lệ mới",,,,,,
+20_040_014,Không có nút xoá chương trình trên màn hình,Vai: shop. Đã có cả hai chương trình,1. Quan sát ô chương trình và cả hai drawer chi tiết/cập nhật,,Không có nút Xoá ở bất kỳ đâu; chỉ có Xem chi tiết và Chỉnh sửa.,,,,,,
+20_040_015,Mở lại màn Cập nhật sau khi đã lưu phạm vi cụ thể,Vai: shop. Chương trình đang khai phạm vi cụ thể,"1. Đóng form;
+2. Mở lại Chỉnh sửa;
+3. Vào thẻ Phạm vi áp dụng",,"Nút tròn ""Chọn phạm vi cụ thể"" được chọn sẵn và bảng đơn vị nạp lại đúng các đơn vị đã lưu (dữ liệu đọc từ API mỗi lần mở, không giữ state cũ)",,,,,,
+,050 — Tích điểm thực tế khi bán hàng (sheet QC uat_vnpost_loyalty.csv),,,,,,,,,,
+20_050_001,Đơn nhỏ hơn giá trị đơn hàng tối thiểu thì không tích điểm,Vai: gdv. Chương trình tích điểm đang chạy có Giá trị đơn hàng tối thiểu = 300.000,"1. Vào màn bán hàng;
+2. Thêm sản phẩm sao cho tổng đơn < 300.000;
+3. Chọn khách hàng;
+4. Thanh toán;
+5. Mở chi tiết khách hàng xem dòng ""Điểm hiện tại""",,Điểm của khách KHÔNG tăng; /loyalty/campaign/calculate-point trả point=0.,,,,,,
+20_050_002,Đơn bằng đúng giá trị đơn hàng tối thiểu thì tích điểm,Vai: gdv. Cấu hình như 20_050_001,"1. Thêm sản phẩm sao cho tổng đơn = đúng 300.000;
+2. Chọn khách;
+3. Thanh toán;
+4. Xem điểm khách",,Điểm tăng đúng floor(300.000 / tỷ lệ tích điểm),,,,,,
+20_050_003,Đơn lớn hơn giá trị đơn hàng tối thiểu thì tích điểm,Vai: gdv. Cấu hình như 20_050_001,"1. Thêm sản phẩm sao cho tổng đơn > 300.000;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm tăng đúng floor(tổng đơn / tỷ lệ).,,,,,,
+20_050_004,Sản phẩm không giảm giá vẫn tích điểm khi bật loại trừ sản phẩm giảm giá,Vai: gdv. Chương trình bật Không tích điểm cho sản phẩm giảm giá,"1. Thêm sản phẩm và KHÔNG sửa giá;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm tăng đúng floor(tổng tiền các dòng / tỷ lệ),,,,,,
+20_050_005,Sản phẩm giảm giá bị loại khỏi tiền tính điểm,Vai: gdv. Chương trình bật Không tích điểm cho sản phẩm giảm giá,"1. Thêm 2 sản phẩm;
+2. Giảm giá 1 dòng tới mức bị đánh allow_point=false;
+3. Thanh toán;
+4. Xem điểm khách",,"Điểm tính CHỈ trên các dòng còn lại, không phải trên cả đơn.",,,,,,
+20_050_006,Sản phẩm sửa giá tăng lên vẫn tích điểm,Vai: gdv. Chương trình bật Không tích điểm cho sản phẩm giảm giá,"1. Thêm sản phẩm rồi sửa giá CAO hơn giá gốc;
+2. Thanh toán;
+3. Xem điểm khách",,Dòng đó vẫn được tính (chỉ dòng allow_point=false mới bị loại); điểm = floor(tổng tiền sau sửa giá / tỷ lệ).,,,,,,
+20_050_007,Hóa đơn có giảm giá thì không tích điểm khi bật loại trừ hóa đơn giảm giá,Vai: gdv. Chương trình bật Không tích điểm cho hóa đơn giảm giá,"1. Tạo đơn rồi áp giảm giá trên tổng hóa đơn;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm KHÔNG tăng,,,,,,
+20_050_008,Hóa đơn không giảm giá thì tích điểm bình thường,Vai: gdv. Cấu hình như 20_050_007,"1. Tạo đơn không áp giảm giá hóa đơn;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm tăng đúng floor(tổng đơn / tỷ lệ),,,,,,
+20_050_009,Hóa đơn thanh toán bằng điểm thưởng khi bật loại trừ tương ứng,Vai: gdv. Chương trình bật Không tích điểm cho hóa đơn thanh toán bằng điểm thưởng,"1. Tạo đơn và dùng điểm để thanh toán một phần;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm của khách VẪN TĂNG dù cấu hình chương trình loại trừ trường hợp này — cấu hình không có hiệu lực.,,,,,,
+20_050_010,Đơn không thanh toán bằng điểm thưởng thì tích điểm,Vai: gdv. Cấu hình như 20_050_009,"1. Tạo đơn thanh toán tiền mặt;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm tăng đúng floor(tổng đơn / tỷ lệ),,,,,,
+20_050_011,Đạt mức tối thiểu và không có sản phẩm giảm giá,Vai: gdv. Chương trình bật CẢ Giá trị đơn hàng tối thiểu VÀ Không tích điểm cho sản phẩm giảm giá,"1. Tạo đơn đạt mức tối thiểu và không sửa giá dòng nào;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm tăng đúng floor(tổng đơn / tỷ lệ),,,,,,
+20_050_012,Không có sản phẩm giảm giá nhưng chưa đạt mức tối thiểu,Vai: gdv. Cấu hình như 20_050_011,"1. Tạo đơn dưới mức tối thiểu;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm KHÔNG tăng,,,,,,
+20_050_013,Đạt mức tối thiểu nhưng có sản phẩm giảm giá,Vai: gdv. Cấu hình như 20_050_011,"1. Tạo đơn đạt mức tối thiểu trong đó có 1 dòng bị giảm giá tới mức allow_point=false;
+2. Thanh toán;
+3. Xem điểm khách",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+20_050_014,Không đạt mức tối thiểu và có sản phẩm giảm giá,Vai: gdv. Cấu hình như 20_050_011,"1. Tạo đơn dưới mức tối thiểu và có dòng giảm giá;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm KHÔNG tăng.,,,,,,
+20_050_015,Đạt mức tối thiểu và hóa đơn không giảm giá,Vai: gdv. Chương trình bật CẢ Giá trị đơn hàng tối thiểu VÀ Không tích điểm cho hóa đơn giảm giá,"1. Tạo đơn đạt mức tối thiểu không áp giảm giá hóa đơn;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm tăng đúng floor(tổng đơn / tỷ lệ),,,,,,
+20_050_016,Hóa đơn không giảm giá nhưng chưa đạt mức tối thiểu,Vai: gdv. Cấu hình như 20_050_015,"1. Tạo đơn dưới mức tối thiểu;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm KHÔNG tăng,,,,,,
+20_050_017,Đạt mức tối thiểu nhưng hóa đơn có giảm giá,Vai: gdv. Cấu hình như 20_050_015,"1. Tạo đơn đạt mức tối thiểu rồi áp giảm giá hóa đơn;
+2. Thanh toán;
+3. Xem điểm khách",,"Điểm KHÔNG tăng — luật loại trừ hóa đơn giảm giá chặn trước khi tính, bất kể đã đạt mức tối thiểu.",,,,,,
+20_050_018,Không đạt mức tối thiểu và hóa đơn có giảm giá,Vai: gdv. Cấu hình như 20_050_015,"1. Tạo đơn dưới mức tối thiểu và áp giảm giá hóa đơn;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm KHÔNG tăng.,,,,,,
+20_050_019,Chương trình giới hạn nhóm khách hàng chỉ tích cho khách trong nhóm,Vai: gdv. Chương trình khai isAppliedAll=false với 1 nhóm khách hàng cụ thể,"1. Bán đơn giống hệt nhau cho khách A thuộc nhóm và khách B ngoài nhóm;
+2. So điểm hai khách",,Khách A tăng điểm đúng công thức; khách B tăng 0 điểm. Đơn không chọn khách hàng cũng ra 0 điểm,,,,,,
+20_050_020,Tích điểm theo ngành hàng chỉ tính sản phẩm thuộc danh mục đã chọn,Vai: gdv. Chương trình loại Sản phẩm bật Tích điểm sản phẩm theo ngành hàng với 1 danh mục,"1. Bán đơn gồm 1 sản phẩm thuộc danh mục đã chọn và 1 sản phẩm ngoài danh mục;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm chỉ tính trên tiền của sản phẩm thuộc danh mục; sản phẩm không bật cờ tích điểm cũng bị loại. Nếu bật theo ngành hàng mà danh mục hiệu lực rỗng thì trả 0 điểm,,,,,,
+20_050_021,Tỷ lệ tích điểm bằng 0 làm đơn không tích điểm mà không báo gì,Vai: gdv. Chương trình đang hoạt động với orderAmountPerPoint = 0 (tạo ở 20_010_018),"1. Bán một đơn giá trị lớn;
+2. Thanh toán;
+3. Xem điểm khách",,Đây là sai im lặng bắt nguồn từ lỗ hổng kiểm dữ liệu ở 20_010_018,,,,,,
+20_050_022,Điểm tích được làm tròn xuống,Vai: gdv. Tỷ lệ tích điểm = 10.000,"1. Bán đơn 25.000 cho khách;
+2. Thanh toán;
+3. Xem điểm khách",,"Điểm tăng đúng 2 (ép kiểu long, làm tròn XUỐNG), không phải 2,5 và không phải 3",,,,,,
+20_050_023,Chương trình chưa tới ngày bắt đầu hoặc đã hết hạn thì không tích điểm,Vai: gdv. Chương trình có ngày bắt đầu ở tương lai hoặc ngày kết thúc đã qua,"1. Bán một đơn có chọn khách hàng;
+2. Thanh toán;
+3. Xem điểm khách",,Điểm tăng 0; đồng thời lần gọi get-campaign kế tiếp tự đặt chương trình về Ngừng hoạt động,,,,,,
+,060 — Đổi điểm khi bán hàng (sheet QC + trace RedeemCampaignService),,,,,,,,,,
+20_060_001,Đơn dưới điều kiện tối thiểu không được dùng điểm,Vai: gdv. Chương trình đổi điểm có Giá trị đơn hàng tối thiểu = 300.000. Khách có đủ điểm,"1. Tạo đơn 200.000;
+2. Chọn khách hàng;
+3. Thử dùng điểm thưởng",,"Bị chặn với thông báo nghiệp vụ nguyên văn từ API ""Điều kiện không hợp lệ để sử dụng điểm thưởng""; tiền giảm không được áp",,,,,,
+20_060_002,Đơn đạt điều kiện tối thiểu được dùng điểm và giảm đúng tỷ lệ,Vai: gdv. Cấu hình như 20_060_001. Tỷ lệ đổi điểm = 1.000,"1. Tạo đơn 400.000;
+2. Chọn khách có ít nhất 50 điểm;
+3. Dùng 50 điểm;
+4. Xem tiền phải trả",,Tiền phải trả còn 350.000,,,,,,
+20_060_003,Khách không đủ điểm vẫn cố dùng điểm,Vai: gdv. Khách có 50 điểm,"1. Tạo đơn đạt điều kiện;
+2. Nhập dùng 100 điểm;
+3. Xác nhận",,Cùng một thông báo dùng cho cả trường hợp dưới mức tối thiểu nên người bán không phân biệt được nguyên nhân,,,,,,
+20_060_004,Số tiền đổi điểm lớn hơn giá trị đơn,Vai: gdv. Khách có nhiều điểm; tỷ lệ đổi điểm = 1.000,"1. Tạo đơn 100.000;
+2. Dùng 500 điểm (tương đương 500.000);
+3. Xem tiền giảm",,Tiền giảm bị kẹp bằng đúng tổng tiền đơn (100.000); khách không được hoàn phần dư và tiền phải trả = 0,,,,,,
+20_060_005,Dùng điểm khi chương trình đổi điểm chưa tới ngày bắt đầu,Vai: gdv. Chương trình đổi điểm active nhưng ngày bắt đầu ở tương lai,"1. Tạo đơn;
+2. Thử dùng điểm",,"API trả lỗi nguyên văn ""Chiến dịch chưa bắt đầu""",,,,,,
+20_060_006,Dùng điểm khi chương trình đổi điểm đã kết thúc,Vai: gdv. Chương trình có ngày kết thúc đã qua,"1. Tạo đơn;
+2. Thử dùng điểm",,"API trả lỗi nguyên văn ""Chiến dịch đã kết thúc""",,,,,,
+20_060_007,Dùng điểm khi không có chương trình đổi điểm nào hoạt động,Vai: gdv. Chương trình đổi điểm đang Ngừng hoạt động,"1. Tạo đơn;
+2. Thử dùng điểm",,"API trả lỗi nguyên văn ""Chiến dịch không hoạt động""",,,,,,
+20_060_008,Dùng điểm ở điểm bán ngoài phạm vi áp dụng,Vai: gdv của điểm bán ngoài phạm vi chương trình đổi điểm,"1. Tạo đơn;
+2. Thử dùng điểm",,"API trả lỗi nguyên văn ""Cửa hàng không thuộc phạm vi áp dụng của chương trình đổi điểm""",,,,,,
+,070 — Quyền và phạm vi vai,,,,,,,,,,
+20_070_001,Tài khoản không có quyền loyalty mở màn Chiến dịch Loyalty,Vai: tài khoản KHÔNG có permission key loyalty,"1. Đăng nhập;
+2. Tìm menu Loyalty;
+3. Gõ thẳng URL /care/loyalty",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+20_070_002,Điểm bán chưa bật cấu hình khách hàng thân thiết,Vai: shop của điểm bán có enableCustomerLoyalty = false,"1. Đăng nhập;
+2. Tìm mục Chiến dịch Loyalty trong menu",,"Đây là nguyên nhân khác hẳn thiếu quyền, cần phân biệt khi báo lỗi",,,,,,
+20_070_003,Giao dịch viên mở màn Chiến dịch Loyalty,Vai: gdv,"1. Đăng nhập;
+2. Vào /care/loyalty",,"Hiện màn KHÔNG khoá nút Chỉnh sửa theo vai, nên nếu vai gdv vào được là sửa được cấu hình toàn chain",,,,,,
+20_070_004,Cấu hình chương trình là của toàn chain chứ không theo điểm bán,Vai: province và vai shop của hai điểm bán khác nhau cùng chain,"1. Mở /care/loyalty bằng vai shop điểm bán A và ghi lại cấu hình;
+2. Mở bằng vai shop điểm bán B",,"Phạm vi điểm bán chỉ quyết định nơi chương trình CÓ HIỆU LỰC (bảng CAMPAIGN_SCOPE), không tách cấu hình",,,,,,

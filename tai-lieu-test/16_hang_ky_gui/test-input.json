@@ -1,0 +1,995 @@
+{
+  "_note": "Phân hệ 16 Hàng ký gửi. 🔴 Chốt kỳ là MỘT CHIỀU (biên bản đóng băng, không mở lại). Ghi nợ chính thức sinh bút toán vào sổ công nợ NCC và mở đường cho LỆNH CHI TIỀN. Mọi case mutates để enabled=false.",
+  "cases": {
+    "16_010_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_010_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_010_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_010_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_010_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh/xã/điểm bán có 0 khoản nghĩa vụ; TCT thấy 30 khoản của chuỗi"
+    },
+    "16_010_018": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_010_019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "16_010_020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "ward",
+      "data": {}
+    },
+    "16_010_021": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_tienDe": "Hợp đồng ký gửi (1 còn hiệu lực + 1 đã hết hạn) với NCC của làn, SP ký gửi có/không gán NCC, nhập hàng ký gửi + giá ký gửi ở điểm bán làn",
+      "_tienDe_xong": "seed bước 18 ky-gui (28/09)"
+    },
+    "16_010_022": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "gdv",
+      "data": {},
+      "_tienDe": "Hợp đồng ký gửi (1 còn hiệu lực + 1 đã hết hạn) với NCC của làn, SP ký gửi có/không gán NCC, nhập hàng ký gửi + giá ký gửi ở điểm bán làn",
+      "_tienDe_xong": "seed bước 18 ky-gui (28/09)"
+    },
+    "16_020_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_020_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_020_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_020_006": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_020_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_020_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "Đổi province → tct 24/09/2026: làn 7 tỉnh có 0 kỳ; TCT thấy 5 NCC · 36 kỳ"
+    },
+    "16_020_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {},
+      "allowMutation": true,
+      "_batBoi": "24/09/2026: case bấm thật 'Sinh kỳ từ hợp đồng' — không bị chặn là ghi kỳ; điểm bán/xã làn 7 không có hợp đồng ký gửi"
+    },
+    "16_020_015": {
+      "enabled": true,
+      "mutates": true,
+      "role": "ward",
+      "data": {},
+      "allowMutation": true,
+      "_batBoi": "24/09/2026: case bấm thật 'Sinh kỳ từ hợp đồng' — không bị chặn là ghi kỳ; điểm bán/xã làn 7 không có hợp đồng ký gửi"
+    },
+    "16_020_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_020_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {}
+    },
+    "16_030_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_030_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT",
+      "_tienDe": "Hợp đồng ký gửi (1 còn hiệu lực + 1 đã hết hạn) với NCC của làn, SP ký gửi có/không gán NCC, nhập hàng ký gửi + giá ký gửi ở điểm bán làn",
+      "allowMutation": true,
+      "_tienDe_xong": "seed 18 (ky-gui) tới 18.10 — 28/09",
+      "_note": "28/09: chốt THẬT 2 kỳ của NCC riêng làn (KG3, KG4) — không đụng kỳ thật của chuỗi."
+    },
+    "16_030_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_030_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_030_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_030_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_030_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_030_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_018": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_030_019": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_030_020": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_030_021": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_030_022": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_blocked_cu": "",
+      "_goBoi": "26/09/2026: môi trường dev, chốt kỳ cũ nhất sạch cảnh báo"
+    },
+    "16_030_023": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_024": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_025": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_030_026": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_030_027": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh không có kỳ (36/36 kỳ thuộc TCT)"
+    },
+    "16_030_028": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_005": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_011": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_015": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_040_019": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_004": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_009": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_012": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_013": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_014": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_015": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_017": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_019": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT (đo 25/09)"
+    },
+    "16_050_020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "16_060_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_060_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_060_003": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_004": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_005": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_060_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_060_008": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_009": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {}
+    },
+    "16_060_010": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_012": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_014": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_015": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_016": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_017": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_018": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_019": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_020": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_021": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_022": {
+      "enabled": false,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)",
+      "_tienDe": "Hợp đồng ký gửi (1 còn hiệu lực + 1 đã hết hạn) với NCC của làn, SP ký gửi có/không gán NCC, nhập hàng ký gửi + giá ký gửi ở điểm bán làn",
+      "_blocked": "28/09: seed ky-gui đã có (bán SP_KG sinh phiếu xuất + công nợ bình thường), nhưng biên bản kỳ đối soát chỉ đọc chứng từ ở pod của header — TCT (pod 1) không thấy điểm bán làn (pod 2), vai tỉnh/điểm bán không mở được màn đối soát ⇒ không có biên bản để so với báo cáo. Chờ user quyết B15."
+    },
+    "16_060_023": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_024": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_025": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_026": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_060_027": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {}
+    },
+    "16_060_028": {
+      "enabled": true,
+      "mutates": false,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — làn 7 tỉnh/điểm bán 0 dòng báo cáo ký gửi (đo 25/09)"
+    },
+    "16_070_001": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "tct",
+      "data": {}
+    },
+    "16_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "allowMutation": true,
+      "role": "tct",
+      "data": {},
+      "_vai": "tct — 36/36 kỳ ký gửi thuộc TCT"
+    },
+    "16_070_004": {
+      "enabled": false,
+      "mutates": true,
+      "allowMutation": false,
+      "role": "tct",
+      "data": {}
+    }
+  }
+}

@@ -1,0 +1,93 @@
+﻿,Chức năng,,CẤU HÌNH VẬN HÀNH,,,,,,,,
+,Mã Testcase,,07_4_van_hanh,,,,,,,,
+,Tổng các tình huống kiểm thử,,32,,,,,,,,
+,Chưa thực hiện,,32,,,,,,,,
+,Đạt yêu cầu,,0,,,,,,,,
+,Không đạt yêu cầu,,0,,,,,,,,
+,Thực hiện sau,,0,,,,,,,,
+,Không phải thực hiện,,0,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày tạo,Ngày thực hiện,
+,CẤU HÌNH VẬN HÀNH,,,,,,,,,,
+,010 — Khai báo cho phép nhận đặt hàng trước,,,,,,,,,,
+07_4_010_001,Nhóm Nhận đặt hàng trước mở được trên một biểu mẫu,Vai: tct,1. Mở /settings?setting=bookingReservation,,"Toàn bộ cấu hình nằm trên một biểu mẫu: Tên cấu hình, Mô tả, Phạm vi áp dụng và công tắc kích hoạt",,,,,,
+07_4_010_002,Chặn lưu khi bỏ trống Tên cấu hình,Vai: tct. Đang ở /settings?setting=bookingReservation,"1. Xoá trống ô Tên cấu hình;
+2. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng nhập tên cấu hình""",,,,,,
+07_4_010_003,Chặn lưu khi chưa chọn phạm vi áp dụng,Vai: tct. Đang ở /settings?setting=bookingReservation,"1. Nhập Tên cấu hình;
+2. Không tích đơn vị nào;
+3. Bấm lưu",,"Hệ thống báo nguyên văn ""Vui lòng chọn ít nhất một phạm vi áp dụng""",,,,,,
+07_4_010_004,Ô Mô tả giới hạn 200 ký tự và có bộ đếm,Vai: tct. Đang ở /settings?setting=bookingReservation,1. Gõ 250 ký tự vào ô Mô tả,,Ô chỉ nhận 200 ký tự; bộ đếm ở góc dưới hiện 200/200,,,,,,
+,020 — Khai báo hạn mức duyệt và các bước duyệt theo khoảng tiền,,,,,,,,,,
+07_4_020_001,Bảng Cấu hình hạn mức duyệt hiện đủ cột,Vai: tct,1. Mở /settings?setting=approvalLimit,,"Bảng ""Cấu hình hạn mức duyệt"" có các cột STT, Tên cấu hình, Số khoảng tiền",,,,,,
+07_4_020_002,Số khoảng tiền trên bảng khớp số khoảng đã khai trong chi tiết,Vai: tct. Có ít nhất 1 cấu hình hạn mức duyệt,"1. Đọc giá trị cột Số khoảng tiền của một dòng;
+2. Mở chi tiết cấu hình đó;
+3. Đếm số khoảng tiền",,Hai con số BẰNG NHAU,,,,,,
+07_4_020_003,Bật / tắt cấu hình hạn mức duyệt,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`); có cấu hình đã tạo","1. Tắt một cấu hình
+2. Đọc lại trạng thái trong bảng
+3. Bật lại
+4. Lập một phiếu thuộc khoảng tiền của cấu hình đó khi đang TẮT",,Trạng thái đổi đúng cả hai chiều.,,,,,,
+07_4_020_004,Chỉnh sửa cấu hình hạn mức duyệt,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`); có cấu hình đã tạo","1. Mở sửa cấu hình, đổi khoảng tiền và bước duyệt
+2. Lưu
+3. Mở lại
+4. Kiểm các phiếu ĐANG chờ duyệt theo cấu hình cũ",,"Cập nhật thành công, mở lại thấy đúng dữ liệu mới.",,,,,,
+,"030 — Khai báo nội dung, kênh gửi và vai trò nhận thông báo",,,,,,,,,,
+07_4_030_001,Tìm loại thông báo theo tính năng,Vai: tct. Có ít nhất 1 loại thông báo,"1. Mở /settings?setting=notificationConfig;
+2. Gõ từ khoá vào ô ""Tìm kiếm loại thông báo, theo tính năng""",,Danh sách lọc còn các loại thông báo khớp từ khoá,,,,,,
+07_4_030_002,Không tìm thấy thì báo đúng thông điệp,Vai: tct. Đang ở /settings?setting=notificationConfig,1. Gõ một chuỗi chắc chắn không khớp gì,,"Hệ thống hiển thị nguyên văn ""Không tìm thấy loại thông báo""",,,,,,
+07_4_030_003,Mã loại thông báo không sửa được khi xem loại đã có,Vai: tct. Có ít nhất 1 loại thông báo,"1. Bấm ""Chi tiết"" ở một dòng;
+2. Thử sửa ô Mã loại thông báo",,"Ô Mã loại thông báo ở trạng thái chỉ đọc (ví dụ TRANSFER_STOCK), không sửa được",,,,,,
+,040 — Khai báo và kiểm tra hòm mail nhận hoá đơn nhà cung cấp,,,,,,,,,,
+07_4_040_001,Bảng Hòm mail nhận hoá đơn NCC hiện đủ cột,Vai: tct,1. Mở /settings?setting=mailInbox,,"Bảng có các cột Đơn vị (kèm nhãn cấp Tổng công ty / Bưu điện tỉnh), Email (username), Máy chủ",,,,,,
+07_4_040_002,Cột Máy chủ ghép đúng định dạng máy chủ cổng giao thức,Vai: tct. Có ít nhất 1 hòm mail đã khai,1. Đọc cột Máy chủ của một dòng,,"Giá trị theo dạng <máy chủ>:<cổng> (<giao thức>), ví dụ imap.example.com:993 (imaps)",,,,,,
+07_4_040_003,Kiểm tra kết nối hòm mail trả kết quả rõ ràng,Vai: tct. Có ít nhất 1 hòm mail đã khai,1. Bấm kiểm tra kết nối trên dòng hòm mail,,Hệ thống trả kết quả kết nối được hoặc không kèm lý do; KHÔNG để trạng thái mập mờ,,,,,,
+,"050 — **Cấu hình luồng phê duyệt** — khoảng tiền, bước duyệt, thứ tự duyệt",,,,,,,,,,
+07_4_050_001,Giao diện cấu hình hạn mức duyệt có đủ trường,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Mở form tạo/sửa cấu hình
+2. Đọc đủ các trường",,Có đủ: **Mã cấu hình · Tên action · Hiệu lực**.,,,,,,
+07_4_050_002,Tạo hạn mức duyệt với một khoảng tiền,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Tạo cấu hình mới, khai đúng một khoảng tiền và một bước duyệt
+2. Lưu",,Lưu cấu hình thành công; bảng hiện cấu hình mới với đúng khoảng tiền đã khai.,,,,,,
+07_4_050_003,Tạo nhiều khoảng tiền trong một cấu hình,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Khai 3 khoảng tiền không giao nhau
+2. Lưu
+3. Mở lại",,"Lưu thành công đủ 3 khoảng; mở lại thấy đúng cả ba, đúng thứ tự.",,,,,,
+07_4_050_004,Một khoảng tiền có nhiều bước duyệt,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Ở một khoảng tiền, thêm 3 bước duyệt
+2. Lưu
+3. Mở lại",,Hệ thống lưu đầy đủ 3 bước duyệt đúng thứ tự.,,,,,,
+07_4_050_005,Mỗi bước duyệt chỉ gán được một vai,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`); đang khai bước duyệt","1. Ở một bước duyệt, thử chọn vai thứ hai
+2. Quan sát",,"Mỗi bước chỉ chọn được **một** vai; chọn vai mới thì thay vai cũ, không cộng thêm.",,,,,,
+07_4_050_006,Danh sách cấp tổ chức trong cấu hình duyệt,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Mở ô chọn cấp tổ chức
+2. Đọc các lựa chọn",,"Đủ 4 cấp, đúng nhãn: **Điểm bán · Bưu điện xã · Bưu điện tỉnh · Tổng công ty**.",,,,,,
+07_4_050_007,Khoảng tiền Min nhỏ hơn Max,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Nhập Min = 1.000.000, Max = 5.000.000
+2. Lưu",,Lưu cấu hình thành công.,,,,,,
+07_4_050_008,Khoảng tiền Min lớn hơn hoặc bằng Max,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Nhập Min = 5.000.000, Max = 1.000.000 → lưu, ghi lỗi
+2. Nhập Min = Max = 1.000.000 → lưu, ghi lỗi",,"Cả hai trường hợp báo lỗi **""Min phải nhỏ hơn Max""**; không lưu được.",,,,,,
+07_4_050_009,Hai khoảng tiền giao thoa nhau,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`)","1. Khai khoảng A: 1–5 triệu, 1 bước duyệt
+2. Khai khoảng B: 3–7 triệu, 2 bước duyệt
+3. Lưu
+4. Lập phiếu giá trị 4 triệu (thuộc cả hai khoảng)
+5. Đọc luồng duyệt phiếu đó",,Chưa chốt kỳ vọng — ghi lại hành vi thật của hệ thống khi test.,,,,,,
+07_4_050_010,Phiếu không thuộc khoảng tiền nào đã cấu hình,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`); đã có cấu hình chỉ phủ 1–5 triệu","1. Lập phiếu giá trị 10 triệu (ngoài mọi khoảng)
+2. Gửi duyệt
+3. Đọc thông báo và trạng thái phiếu",,Thông báo nêu rõ giá trị phiếu vượt hạn mức cấu hình và **không tìm thấy luồng duyệt**.,,,,,,
+07_4_050_011,Luồng duyệt nhiều bước: trạng thái phiếu,Đã có cấu hình 2 bước duyệt; vai đề xuất đăng nhập,"1. Lập phiếu thuộc khoảng tiền đó và gửi duyệt
+2. Đọc trạng thái phiếu",,Phiếu chuyển sang trạng thái **bước 1/2** (hiển thị rõ đang ở bước mấy trên tổng mấy bước).,,,,,,
+07_4_050_012,Thứ tự duyệt: vai bước 2 chưa thấy phiếu khi bước 1 chưa xong,Đã có cấu hình 2 bước duyệt; phiếu đang ở bước 1,"1. Đăng nhập bằng vai của **bước 2**
+2. Mở danh sách phiếu chờ duyệt",,**Không nhìn thấy** phiếu đó trong danh sách chờ duyệt của mình.,,,,,,
+07_4_050_013,Bước 2 được duyệt sau khi bước 1 hoàn thành,Đã có cấu hình 2 bước duyệt; phiếu đang ở bước 1,"1. Vai bước 1 duyệt phiếu
+2. Đăng nhập vai bước 2
+3. Mở danh sách phiếu chờ duyệt",,Phiếu **xuất hiện** trong danh sách chờ duyệt bước 2; trạng thái phiếu hiện bước 2/2.,,,,,,
+07_4_050_014,Từ chối tại bước 1,Phiếu đang ở bước 1 của luồng 2 bước,"1. Vai bước 1 từ chối phiếu
+2. Đọc trạng thái phiếu
+3. Đăng nhập vai bước 2 và kiểm danh sách chờ duyệt",,Phiếu chuyển trạng thái **Từ chối** và **không chuyển sang bước tiếp**; vai bước 2 không thấy phiếu đó.,,,,,,
+07_4_050_015,Từ chối phiếu khi không có quyền duyệt,Có phiếu chờ duyệt; đăng nhập bằng vai KHÔNG nằm trong luồng duyệt của phiếu,"1. Mở phiếu đó (nếu thấy)
+2. Thử từ chối",,Báo **không có quyền từ chối**; phiếu giữ nguyên trạng thái.,,,,,,
+07_4_050_016,Xoá một bước duyệt khỏi cấu hình,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`); cấu hình có ≥2 bước duyệt","1. Xoá bước duyệt thứ 2
+2. Lưu
+3. Mở lại cấu hình
+4. Kiểm phiếu đang chờ ở bước vừa bị xoá",,Bước duyệt bị xoá khỏi cấu hình.,,,,,,
+07_4_050_017,Xoá một khoảng tiền khỏi cấu hình,"Vai `tct` đăng nhập, đang ở nhóm cấu hình ""Hạn mức duyệt"" (`/settings?setting=approvalLimit`); cấu hình có ≥2 khoảng tiền","1. Xoá một khoảng tiền
+2. Lưu và mở lại
+3. Lập phiếu có giá trị thuộc khoảng vừa xoá",,Khoảng tiền bị xoá thành công. Phiếu thuộc khoảng vừa xoá rơi vào tình huống `07_4_050_010` (không tìm thấy luồng duyệt).,,,,,,
+,PQ — Kiểm tra permission,,,,,,,,,,
+07_4_PQ_001,Vai Bưu điện Tỉnh vào được Hòm mail nhưng không vào được Hạn mức duyệt,Vai: province,"1. Mở /settings?setting=mailInbox;
+2. Mở /settings?setting=approvalLimit",,Hòm mail: mở được (task 40 khai cả BUU_DIEN_TINH). Hạn mức duyệt: bị chặn (task 20 chỉ khai TONG_CONG_TY),,,,,,

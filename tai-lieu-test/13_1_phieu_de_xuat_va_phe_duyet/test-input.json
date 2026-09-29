@@ -1,0 +1,764 @@
+{
+  "cases": {
+    "13_1_030_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      }
+    },
+    "13_1_030_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_030_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_030_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_030_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_030_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_030_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_030_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_030_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      }
+    },
+    "13_1_040_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_006": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_040_007": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_040_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_010": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_011": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_040_012": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_040_013": {
+      "enabled": true,
+      "mutates": false,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_040_014": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_050_001": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_050_002": {
+      "enabled": true,
+      "mutates": false,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_060_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_060_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_060_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_060_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_060_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_060_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_060_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_070_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_070_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_070_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_070_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_070_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_070_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_080_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_080_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_080_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_080_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_080_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_080_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_080_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_080_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "province",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed 8: bật 24/09/2026 khi viết script thật"
+    },
+    "13_1_080_009": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_090_001": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_090_002": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_090_003": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_090_004": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_090_005": {
+      "enabled": true,
+      "mutates": true,
+      "role": "shop",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "_blocked": "🔴 GHI: lập / sửa / gộp / tách / phê duyệt phiếu đề xuất đặt hàng. Phiếu đi lên cấp trên và có thể sinh PO thật. Cần điểm bán + tỉnh dựng riêng và tài khoản đúng vai từng bước duyệt.",
+      "required": [],
+      "_batBoi": "Làn seed: dữ liệu đọc từ 00_seed/seed-state.lane<N>.json (bật 23/09/2026)"
+    },
+    "13_1_090_006": {
+      "enabled": true,
+      "mutates": true,
+      "role": "ward",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "24/09/2026: user cho phép bật cấu hình hạn mức trong case rồi trả về trạng thái cũ (finally)"
+    },
+    "13_1_090_007": {
+      "enabled": true,
+      "mutates": true,
+      "role": "ward",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "24/09/2026: user cho phép bật cấu hình hạn mức trong case rồi trả về trạng thái cũ (finally)"
+    },
+    "13_1_090_008": {
+      "enabled": true,
+      "mutates": true,
+      "role": "ward",
+      "data": {
+        "maPhieuDeXuat": "",
+        "maDiemBan": "",
+        "sku": ""
+      },
+      "allowMutation": true,
+      "required": [],
+      "_batBoi": "24/09/2026: user cho phép bật cấu hình hạn mức trong case rồi trả về trạng thái cũ (finally)"
+    }
+  },
+  "_note": "Phân hệ 13_1 Phiếu đề xuất đặt hàng và phê duyệt. 🔴 Lập/sửa/gộp/tách/phê duyệt phiếu đề xuất là GHI: phiếu đi lên cấp trên và sinh PO thật. Gộp/tách phải giữ TỔNG SỐ LƯỢNG — hụt là mất hàng. Callback TCT→tỉnh từng so pod sai (bẫy đã gặp)."
+}

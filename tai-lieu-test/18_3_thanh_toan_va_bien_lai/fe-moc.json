@@ -1,0 +1,75 @@
+{
+  "spec": {
+    "tests/thanh-toan.gdv.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/chan-ward.ward.spec.js": {
+      "commit": "8ac2c516e0fbf0b2c9f9104e761532ec69d6d181",
+      "ngay": "2026-09-25",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/CreateOrderPage.jsx"
+      ]
+    },
+    "tests/ctkm-realtime.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/campaign/OrderCampaignSelection.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/overviewInfo/campaign/customerGroupPreviewUtils.js",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/doi-diem-tat.gdv.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/components/paymentModals/PaymentMethodModal.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/ca-cht.shop.spec.js": {
+      "commit": "b04a77abdf8e3a45e75d066f1b2a1da0c09ebb3b",
+      "ngay": "2026-09-26",
+      "man": [
+        "/lich-ca-nhan/ca-lam-viec",
+        "/order/create-order"
+      ],
+      "fe": [
+        "src/features/timekeeping/pages/WorkShiftPage.jsx",
+        "src/features/order/pages/createOrderPage/createOrderContent/orderInfoTab/orderCheckout/OrderCheckoutComponent_v2.jsx"
+      ]
+    },
+    "tests/thanh-toan-diem.gdv.spec.js": {
+      "commit": "f9c5c858990fa6ea37043593fa980aea0e9e1044",
+      "ngay": "2026-09-28",
+      "ghiBu": true,
+      "ghiChu": "Luồng + locator chép từ 20/tests/doi-diem.gdv.spec.js (20_050_009, mốc b04a77ab 25/09); chạy xanh trên f9c5c858.",
+      "man": [
+        "/order/create-order",
+        "/care/loyalty"
+      ],
+      "fe": [
+        "src/components/paymentModals/PaymentMethodModal.jsx",
+        "src/components/paymentModals/ModalLoyaltyPointOtp.jsx",
+        "src/features/loyalty/pages/tabCampaign/DrawerUpdateRedeemCampaign.jsx"
+      ]
+    }
+  }
+}

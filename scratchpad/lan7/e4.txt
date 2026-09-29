@@ -1,0 +1,13 @@
+{'startTime': '2026-09-25T13:27:44.599Z', 'duration': 85567.974, 'expected': 3, 'skipped': 2, 'unexpected': 1, 'flaky': 0}
+
+ skipped | 26_040_004 — Phiếu thu tiền bán hàng có thông báo riêng khi xoá
+   @ skip : Thiếu dữ liệu: điểm bán lane chưa có phiếu thu tiền bán hàng; tiền đề là giao dịch bán/đổi trả thật (xuất kho + doanh thu + phiếu thu tự sinh) — bút toán không dọn được trong chuỗi case
+
+ skipped | 26_060_001 — Bán hàng thanh toán sinh phiếu thu tự động
+   @ skip : Phải lập + thanh toán đơn bán thật; tiền đề là giao dịch bán/đổi trả thật (xuất kho + doanh thu + phiếu thu tự sinh) — bút toán không dọn được trong chuỗi case
+
+ failed | 26_060_001 — Bán hàng thanh toán sinh phiếu thu tự động
+   @ đọc phiếu bằng : phiên CHT (GDV không có quyền view_all_receipts)
+   @ đơn : 395 26092568151Q1FW5 · cần thanh toán 95000 · phiếu hôm nay 44 → +1
+   @ phiếu : [{"id":431,"code":null,"nguon":"ANONYMOUS","tien":95000,"orderType":0,"he":true}]
+   ! Error: expect(received).toContain(expected) // indexOf  Expected substring: "Thanh toán đơn hàng" Received string:    "undefined"

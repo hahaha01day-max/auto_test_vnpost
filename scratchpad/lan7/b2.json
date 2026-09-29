@@ -1,0 +1,1533 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ward",
+        "name": "ward",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.ward\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai province (Kế toán Bưu điện Tỉnh)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 146,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:39:05.387Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-province-Kế-toán-Bưu-điện-Tỉnh--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-f49fdcf5083eeb044ae1",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "cua-hang.province.spec.js",
+      "file": "cua-hang.province.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "24 · Công nợ với cửa hàng (vai province)",
+          "file": "cua-hang.province.spec.js",
+          "line": 120,
+          "column": 6,
+          "specs": [
+            {
+              "title": "24_050_002 — Lọc theo trạng thái trả nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41505,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Trạng thái/ }).first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Trạng thái/ }).first()\u001b[22m\n\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:127:11",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 11,
+                          "line": 127
+                        },
+                        "snippet": "  125 | \t\tawait moThe2(page);\n  126 | \t\tconst o = khung(page).locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Trạng thái/ }).first();\n> 127 | \t\tawait o.click();\n      | \t\t        ^\n  128 | \t\tconst ds = (await page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').allInnerTexts()).map(chuan);\n  129 | \t\tghiChu('lựa chọn', ds.join(' · '));\n  130 | \t\texpect(ds).toEqual(['Tất cả', 'Chưa trả', 'Trả một phần', 'Đã trả']);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 11,
+                            "line": 127
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Trạng thái/ }).first()\u001b[22m\n\n\n  125 | \t\tawait moThe2(page);\n  126 | \t\tconst o = khung(page).locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Trạng thái/ }).first();\n> 127 | \t\tawait o.click();\n      | \t\t        ^\n  128 | \t\tconst ds = (await page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').allInnerTexts()).map(chuan);\n  129 | \t\tghiChu('lựa chọn', ds.join(' · '));\n  130 | \t\texpect(ds).toEqual(['Tất cả', 'Chưa trả', 'Trả một phần', 'Đã trả']);\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:127:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:39:05.844Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-c739a--Lọc-theo-trạng-thái-trả-nợ-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-c739a--Lọc-theo-trạng-thái-trả-nợ-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-c739a--Lọc-theo-trạng-thái-trả-nợ-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-c739a--Lọc-theo-trạng-thái-trả-nợ-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 11,
+                        "line": 127
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-6b44ef8acd3f29f78855",
+              "file": "cua-hang.province.spec.js",
+              "line": 123,
+              "column": 2
+            },
+            {
+              "title": "24_050_004 — Tìm nhân viên ở thẻ Công nợ với cửa hàng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "tham số",
+                      "description": "{\"page\":\"0\",\"size\":\"20\",\"keyword\":\"AUTO7_GDV\",\"shopId\":\"68151\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 27850,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:143:21",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 21,
+                          "line": 143
+                        },
+                        "snippet": "  141 | \t\texpect(thamSo(r).keyword).toBe(`AUTO${g.LAN}_GDV`);\n  142 | \t\tconst ds = (await dong2(page).allInnerTexts()).map(chuan);\n> 143 | \t\texpect(ds.length).toBeGreaterThan(0);\n      | \t\t                  ^\n  144 | \t\tfor (const d of ds) expect(d).toContain(`AUTO${g.LAN}_GDV`);\n  145 | \t});\n  146 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 21,
+                            "line": 143
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  141 | \t\texpect(thamSo(r).keyword).toBe(`AUTO${g.LAN}_GDV`);\n  142 | \t\tconst ds = (await dong2(page).allInnerTexts()).map(chuan);\n> 143 | \t\texpect(ds.length).toBeGreaterThan(0);\n      | \t\t                  ^\n  144 | \t\tfor (const d of ds) expect(d).toContain(`AUTO${g.LAN}_GDV`);\n  145 | \t});\n  146 |\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:143:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:39:47.952Z",
+                      "annotations": [
+                        {
+                          "type": "tham số",
+                          "description": "{\"page\":\"0\",\"size\":\"20\",\"keyword\":\"AUTO7_GDV\",\"shopId\":\"68151\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-9e8b3--ở-thẻ-Công-nợ-với-cửa-hàng-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-9e8b3--ở-thẻ-Công-nợ-với-cửa-hàng-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-9e8b3--ở-thẻ-Công-nợ-với-cửa-hàng-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-9e8b3--ở-thẻ-Công-nợ-với-cửa-hàng-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 21,
+                        "line": 143
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-0165cd37c0d35e5827e8",
+              "file": "cua-hang.province.spec.js",
+              "line": 133,
+              "column": 2
+            },
+            {
+              "title": "24_050_005 — Cấp tỉnh chọn điểm bán ở thẻ Công nợ với cửa hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "so sánh",
+                      "description": "shopId 68151: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · shopId khác 68154: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · màn: 0 dòng"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26654,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:40:16.394Z",
+                      "annotations": [
+                        {
+                          "type": "so sánh",
+                          "description": "shopId 68151: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · shopId khác 68154: [\"AUTO7_CHT\",\"AUTO7_GDV\"] · màn: 0 dòng"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-09581--ở-thẻ-Công-nợ-với-cửa-hàng-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-d9a48d8c6460d4e9138d",
+              "file": "cua-hang.province.spec.js",
+              "line": 147,
+              "column": 2
+            },
+            {
+              "title": "24_050_006 — Lọc trạng thái Tất cả tương đương không lọc",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41462,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first()\u001b[22m\n\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:68:11)\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:59:8)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:67:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:168:9",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 11,
+                          "line": 68
+                        },
+                        "snippet": "  66 | \tconst o = khung(page).locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first();\n  67 | \treturn taiLai2(page, async () => {\n> 68 | \t\tawait o.click();\n     | \t\t        ^\n  69 | \t\tawait page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').filter({ hasText: new RegExp(`^${nhan}$`) }).click();\n  70 | \t});\n  71 | }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 11,
+                            "line": 68
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first()\u001b[22m\n\n\n  66 | \tconst o = khung(page).locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first();\n  67 | \treturn taiLai2(page, async () => {\n> 68 | \t\tawait o.click();\n     | \t\t        ^\n  69 | \t\tawait page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').filter({ hasText: new RegExp(`^${nhan}$`) }).click();\n  70 | \t});\n  71 | }\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:68:11)\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:59:8)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:67:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:168:9"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 19,
+                            "line": 58
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n  56 |\n  57 | async function taiLai2(page, hanhDong) {\n> 58 | \tconst cho = page.waitForResponse((r) => API2.test(r.url()) && r.status() !== 401, { timeout: 30_000 });\n     | \t                 ^\n  59 | \tawait hanhDong();\n  60 | \tconst r = await cho;\n  61 | \tawait page.waitForTimeout(1_200);\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:58:19)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:67:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:168:9"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:40:43.122Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/error-context.md"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-cb0dc-ất-cả-tương-đương-không-lọc-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 11,
+                        "line": 68
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-ed22434651579dfef7c7",
+              "file": "cua-hang.province.spec.js",
+              "line": 164,
+              "column": 2
+            },
+            {
+              "title": "24_050_007 — Trạng thái từng dòng khớp bộ lọc đã chọn",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41491,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first()\u001b[22m\n\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:68:11)\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:59:8)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:67:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:182:10",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 11,
+                          "line": 68
+                        },
+                        "snippet": "  66 | \tconst o = khung(page).locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first();\n  67 | \treturn taiLai2(page, async () => {\n> 68 | \t\tawait o.click();\n     | \t\t        ^\n  69 | \t\tawait page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').filter({ hasText: new RegExp(`^${nhan}$`) }).click();\n  70 | \t});\n  71 | }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 11,
+                            "line": 68
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first()\u001b[22m\n\n\n  66 | \tconst o = khung(page).locator('.ant-tabs-tabpane-active .ant-select').filter({ hasText: /Tất cả|Chưa trả|Trả một phần|Đã trả|Trạng thái/ }).first();\n  67 | \treturn taiLai2(page, async () => {\n> 68 | \t\tawait o.click();\n     | \t\t        ^\n  69 | \t\tawait page.locator('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option').filter({ hasText: new RegExp(`^${nhan}$`) }).click();\n  70 | \t});\n  71 | }\n    at hanhDong (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:68:11)\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:59:8)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:67:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:182:10"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 19,
+                            "line": 58
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n  56 |\n  57 | async function taiLai2(page, hanhDong) {\n> 58 | \tconst cho = page.waitForResponse((r) => API2.test(r.url()) && r.status() !== 401, { timeout: 30_000 });\n     | \t                 ^\n  59 | \tawait hanhDong();\n  60 | \tconst r = await cho;\n  61 | \tawait page.waitForTimeout(1_200);\n    at taiLai2 (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:58:19)\n    at chonTrangThai (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:67:9)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:182:10"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:41:25.149Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-fd6ce-ng-dòng-khớp-bộ-lọc-đã-chọn-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-fd6ce-ng-dòng-khớp-bộ-lọc-đã-chọn-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-fd6ce-ng-dòng-khớp-bộ-lọc-đã-chọn-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 11,
+                        "line": 68
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-6727af72273c1fe8d955",
+              "file": "cua-hang.province.spec.js",
+              "line": 175,
+              "column": 2
+            },
+            {
+              "title": "24_050_008 — Phân trang thẻ Công nợ với cửa hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "trang đầu",
+                      "description": "{\"q\":{\"page\":\"0\",\"size\":\"20\",\"shopId\":\"68151\"},\"page\":{\"total_pages\":1,\"has_next\":false,\"has_previous\":false,\"current_page\":0,\"total_elements\":2}}"
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Chỉ 2 nhân viên — không có trang 2 với size 10.",
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "line": 209,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 26380,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:42:07.351Z",
+                      "annotations": [
+                        {
+                          "type": "trang đầu",
+                          "description": "{\"q\":{\"page\":\"0\",\"size\":\"20\",\"shopId\":\"68151\"},\"page\":{\"total_pages\":1,\"has_next\":false,\"has_previous\":false,\"current_page\":0,\"total_elements\":2}}"
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Chỉ 2 nhân viên — không có trang 2 với size 10.",
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "line": 209,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-07a95-ng-thẻ-Công-nợ-với-cửa-hàng-province/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-5a8ddb3ead1c6f64be14",
+              "file": "cua-hang.province.spec.js",
+              "line": 198,
+              "column": 2
+            },
+            {
+              "title": "24_060_001 — Ba thẻ số liệu là số cộng dồn không giới hạn thời gian",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41610,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:216:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:216:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:42:33.807Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-259d0-ồn-không-giới-hạn-thời-gian-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-440d1369d966e42f706b",
+              "file": "cua-hang.province.spec.js",
+              "line": 212,
+              "column": 2
+            },
+            {
+              "title": "24_060_002 — Cột Loại phiếu cho biết nguồn khoản nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41464,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:231:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:231:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:43:15.971Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-a7efe-iếu-cho-biết-nguồn-khoản-nợ-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-5823ce6cb48ceca79169",
+              "file": "cua-hang.province.spec.js",
+              "line": 227,
+              "column": 2
+            },
+            {
+              "title": "24_060_003 — Ba thẻ lịch sử tách bạch nhau",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41652,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:247:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:247:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:43:57.979Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0cc07--thẻ-lịch-sử-tách-bạch-nhau-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0cc07--thẻ-lịch-sử-tách-bạch-nhau-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0cc07--thẻ-lịch-sử-tách-bạch-nhau-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0cc07--thẻ-lịch-sử-tách-bạch-nhau-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-3085e669fe7db44434ed",
+              "file": "cua-hang.province.spec.js",
+              "line": 243,
+              "column": 2
+            },
+            {
+              "title": "24_070_001 — Hệ thống tự chia tiền ưu tiên khoản ghi nợ sớm nhất",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41553,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:270:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:270:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:44:40.235Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-12dbb--tiên-khoản-ghi-nợ-sớm-nhất-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-12dbb--tiên-khoản-ghi-nợ-sớm-nhất-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-12dbb--tiên-khoản-ghi-nợ-sớm-nhất-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-12dbb--tiên-khoản-ghi-nợ-sớm-nhất-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-995843f4353a3995c3b2",
+              "file": "cua-hang.province.spec.js",
+              "line": 264,
+              "column": 2
+            },
+            {
+              "title": "24_070_003 — Bỏ trống tổng số tiền khi nhân viên nộp tiền",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41467,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:292:21",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:292:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:45:22.385Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-bb493-tiền-khi-nhân-viên-nộp-tiền-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-bb493-tiền-khi-nhân-viên-nộp-tiền-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-bb493-tiền-khi-nhân-viên-nộp-tiền-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-bb493-tiền-khi-nhân-viên-nộp-tiền-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-2ad09bbb4afffa706870",
+              "file": "cua-hang.province.spec.js",
+              "line": 286,
+              "column": 3
+            },
+            {
+              "title": "24_070_004 — Nhập số tiền bằng 0 hoặc số âm khi nộp tiền",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41104,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:292:21",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:292:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:46:04.433Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-90aab-g-0-hoặc-số-âm-khi-nộp-tiền-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-90aab-g-0-hoặc-số-âm-khi-nộp-tiền-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-90aab-g-0-hoặc-số-âm-khi-nộp-tiền-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-90aab-g-0-hoặc-số-âm-khi-nộp-tiền-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-4666697aae6a152e8bef",
+              "file": "cua-hang.province.spec.js",
+              "line": 286,
+              "column": 3
+            },
+            {
+              "title": "24_070_005 — Nộp nhiều hơn tổng nợ còn lại",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41124,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:319:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:319:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:46:46.123Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0f192-p-nhiều-hơn-tổng-nợ-còn-lại-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0f192-p-nhiều-hơn-tổng-nợ-còn-lại-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0f192-p-nhiều-hơn-tổng-nợ-còn-lại-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-0f192-p-nhiều-hơn-tổng-nợ-còn-lại-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-7721830ed03e9abc2ef6",
+              "file": "cua-hang.province.spec.js",
+              "line": 314,
+              "column": 2
+            },
+            {
+              "title": "24_070_006 — API thanh toán trả lỗi",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41480,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:338:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:338:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:47:27.836Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-e7345-06-—-API-thanh-toán-trả-lỗi-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-e7345-06-—-API-thanh-toán-trả-lỗi-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-e7345-06-—-API-thanh-toán-trả-lỗi-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-e7345-06-—-API-thanh-toán-trả-lỗi-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-b1ac29f40146d09d388e",
+              "file": "cua-hang.province.spec.js",
+              "line": 330,
+              "column": 2
+            },
+            {
+              "title": "24_070_007 — Đóng form thanh toán giữa chừng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41078,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:357:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:357:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:48:09.960Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-f13ed--form-thanh-toán-giữa-chừng-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-f13ed--form-thanh-toán-giữa-chừng-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-f13ed--form-thanh-toán-giữa-chừng-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-f13ed--form-thanh-toán-giữa-chừng-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-808b91d3d841e13c7a60",
+              "file": "cua-hang.province.spec.js",
+              "line": 351,
+              "column": 2
+            },
+            {
+              "title": "24_070_002 — Ghi nhận nhân viên nộp tiền trả nợ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41574,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:378:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:378:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:48:51.588Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-48c25-n-nhân-viên-nộp-tiền-trả-nợ-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-48c25-n-nhân-viên-nộp-tiền-trả-nợ-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-48c25-n-nhân-viên-nộp-tiền-trả-nợ-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-48c25-n-nhân-viên-nộp-tiền-trả-nợ-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-c1f1dec324e9256a2319",
+              "file": "cua-hang.province.spec.js",
+              "line": 371,
+              "column": 2
+            },
+            {
+              "title": "24_070_008 — Số liệu liên quan cập nhật sau khi nộp tiền",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "province",
+                  "projectName": "province",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41715,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:404:20",
+                        "location": {
+                          "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                          "column": 68,
+                          "line": 77
+                        },
+                        "snippet": "  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                            "column": 68,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ant-pro-page-container, main').first().locator('.ant-tabs-tabpane-active .ant-table-tbody tr.ant-table-row').filter({ hasText: 'AUTO7_GDV' }).first().getByRole('button', { name: 'Chi tiết' })\u001b[22m\n\n\n  75 |\n  76 | async function moChiTietNv(page, ten) {\n> 77 | \tawait dongNv(page, ten).getByRole('button', { name: 'Chi tiết' }).click();\n     | \t                                                                  ^\n  78 | \tconst dr = page.locator('.ant-drawer-open').filter({ hasText: 'Chi tiết công nợ nhân viên' }).last();\n  79 | \tawait expect(dr).toBeVisible({ timeout: 15_000 });\n  80 | \tawait page.waitForTimeout(2_000);\n    at moChiTietNv (/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:77:68)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js:404:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T12:49:33.772Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-020be-n-cập-nhật-sau-khi-nộp-tiền-province/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-020be-n-cập-nhật-sau-khi-nộp-tiền-province/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-020be-n-cập-nhật-sau-khi-nộp-tiền-province/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/test-output/playwright-results/cua-hang.province-24-·-Côn-020be-n-cập-nhật-sau-khi-nộp-tiền-province/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/24_cong_no_nhan_vien/tests/cua-hang.province.spec.js",
+                        "column": 68,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e13eda0cb3713abe3db4-81367086848062908cab",
+              "file": "cua-hang.province.spec.js",
+              "line": 398,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T12:39:05.094Z",
+    "duration": 670781.552,
+    "expected": 2,
+    "skipped": 1,
+    "unexpected": 15,
+    "flaky": 0
+  }
+}

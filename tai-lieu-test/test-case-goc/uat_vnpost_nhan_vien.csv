@@ -1,0 +1,353 @@
+,Chức năng,,,ĐỔI TRẢ HÀNG,,,,,,,
+,Mã Testcase,,,FUNC_NHANVIEN_,,,,,,,
+,Tổng các tình huống kiểm thử,,,54,,,,,,,
+,Chưa thực hiện,,,54,,,,,,,
+,Đạt yêu cầu,,,0,,,,,,,
+,Không đạt yêu cầu,,,0,,,,,,,
+,Thực hiện sau,,,0,,,,,,,
+,Không phải thực hiện,,,0,,,,,,,
+,,,,,,,,,,,
+ID,Tình huống,,Điều kiện cần có,Các bước thực hiện,"Ưu tiên
+(Cao/ TB/ Thấp)",Ứng dụng/ màn hình,Kết quả mong  muốn,Kết quả thực tế,Kết quả,Người thực hiện,Ngày thực hiện
+,KIỂM THỬ GIAO DIỆN,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,Kiểm tra giao diện màn ...,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,KIỂM THỬ CHỨC NĂNG,,,,,,,,,,
+,Kiểm tra chức năng hiển thị ban đầu của màn Quản lý nhân viên,,,,,,,,,,
+FUNC_NHANVIEN__1,Kiểm tra hiển thị màn hình Quản lý nhân viên,,,"1. Truy cập vào link https://vnpost.sfin.vn
+2. Đăng nhập hệ thống
+3. Chọn menu ""Nhân viên""",TB,Màn quản lý nhân viên,"1. Hệ thống hiển thị màn hình Quản lý nhân viên đúng giao diện thiết kế (đúng về font chữ; cỡ chữ; màu sắc; khoảng cách các hàng; màu sắc...)
+2. Bố cục tổng thể: title, filter, bảng dữ liệu, phân trang căn chỉnh đúng thiết kế, không có lỗi trắng trang.",,,,
+FUNC_NHANVIEN__2,Kiểm tra giao diện chung,,,"1. Vào màn hình ""Quản lý nhân viên""
+2. Kiểm tra thanh tìm kiếm, thêm mới nhân viên, bảng dữ liệu và chi tiết nhân viên",TB,Màn quản lý nhân viên,"1. Ô tìm kiếm xuất hiện trên cùng, placeholder đúng: ""Tên nhân viên""
+2. Ô dropdown list xuất hiện trên cùng cạnh thanh tìm kiếm nhân viên đúng: ""Tất cả""; ""Đang làm""; ""Đã nghỉ""
+3. Bảng dữ liệu có các cột: STT, mã nhân viên, tên nhân viên, chi nhánh làm việc, vai trò, số diện thoại / email, trạng thái làm việc",,,,
+FUNC_NHANVIEN__3,Kiểm tra tiêu đề cột trong bảng,,,"1. Vào màn hình ""Quản lý nhân viên""
+2. Xác định bảng dữ liệu
+3. Quan sát tiêu đề các cột hiển thị trên bảng",TB,Màn quản lý nhân viên,"1. Các cột hiển thị: STT, mã nhân viên, tên nhân viên, chi nhánh làm việc, vai trò, số điện thoại/email, trạng thái làm việc
+2. Các tiêu đề viết hoa chữ cái đầu (theo chuẩn hệ thống)
+3. Giao diện căn giữa, trái, phải đúng thiết kế",,,,
+FUNC_NHANVIEN__4,Kiểm tra dữ liệu hiển thị trong bảng,,,"1. Vào màn hình ""Quản lý nhân viên""
+2. Quan sát dữ liệu từng dòng trong bảng",TB,Màn quản lý nhân viên,"1. Hành động mô tả đầy đủ
+2. Text mô tả hành động không bị mất hay cắt ngang
+3. Không hiển thị giá tị NULL hoặc rỗng bất thường",,,,
+,"Kiểm tra chức năng Tìm kiếm tên nhân viên, trạng thái",,,,,,,,,,
+FUNC_NHANVIEN__5,Kiểm tra tìm kiếm với từ khóa hợp lệ,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Xác định một từ khóa hợp lệ (VD: Marketing)
+3. Nhập từ khóa vào ô tìm kiếm
+4. Nhấn phím Enter
+5. Kiểm tra kết quả trả về",TB,Màn quản lý nhân viên,"1. Hệ thống hiển thị danh sách có chứa từ khóa tìm kiếm
+2. Giao diện bảng dữ liệu đúng định dạng, không lỗi căn lề, font chữ, màu sắc
+3. Cột Tên vai trò / nhóm, phạm vi, ghi chú, thao tác vẫn đủ, không thiếu trường
+4. Không xảy ra lỗi giao diện hoặc lỗi hệ thống",,,,
+FUNC_NHANVIEN__6,Kiểm tra tìm kiếm với từ khóa không tồn tại,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Nhập một từ khóa không có trong hệ thống vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý nhân viên,"1. Hệ thống trả về bảng trống
+2. Không phát sinh lỗi giao diện, giao diện vẫm giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__7,Kiểm tra tìm kiếm với ký tự đặc biệt,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Nhập các ký tự đặc biệt như: 
+!@#$%^&*() vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý nhân viên,"1. Hệ thống xử lý bình thường, không báo lỗi hệ thống
+2. Hệ thống trả về bảng trống
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__8,Kiểm tra tìm kiếm với từ khóa có khoảng trắng,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Nhập từ khóa có chứa khoảng trắng ở đầu hoặc cuối (VD: "" Marketing "")
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý nhân viên,"1. Hệ thống tự động loại bỏ khoảng trắng thừa
+2. Hiển thị kết quả tìm kiếm đúng với từ khóa chuẩn
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__9,"Kiểm tra tìm kiếm với phân biệt chữ hoa và chữ thường, không dấu",,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Nhập từ khóa bằng chữ hoa, chữ thường hoặc kết hợp
+3. Nhấn phím Enter
+4. So sánh kết quả tìm kiếm",TB,Màn quản lý nhân viên,"1. Hệ thống tìm kiếm không phân biệt chữ hoa chữ thường
+2. Hiển thị đúng danh sách bản ghi phù hợp
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__10,Kiểm tra tìm kiếm khi để trống ô tìm kiếm,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Không nhập gì vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn quản lý nhân viên,"1. Hệ thống về giao diện như lúc đầu
+2. Không phát sinh lỗi hệ thống, không phát sinh lỗi giao diện, giao diện giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__11,Kiểm tra nhập khoảng trắng liên tiếp vào ô tìm kiếm,,,"1. Tại ô tìm kiếm, nhập 1 chuỗi toàn dấu 
+("" "")
+2. Ấn phím Enter",TB,Màn quản lý nhân viên,"1. Hệ thống tự động tìm khoảng trắng
+2. Nếu chuỗi rỗng sau tìm. Hệ thống hiển thị danh sách ban đầu",,,,
+FUNC_NHANVIEN__12,Kiểm tra trạng thái làm việc,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Nhấn vào droplist
+3. Chọn các trạng thái bao gồm: Tất cả, đã nghỉ, đang làm
+4. Kiểm trả kết quả trả về",TB,Màn quản lý nhân viên,"1. Hệ thống hiển thị kết quả trả về ở cột Trạng thái làm việc trong bảng
+2. Không phát sinh lỗi hiển thị trạng thái đang tìm kiếm",,,,
+,Kiểm tra chức năng Thêm mới nhân viên,,,,,,,,,,
+FUNC_NHANVIEN__13,Kiểm tra khi mở màn Thêm nhân viên,,,"1. Truy cập màn hình ""Quản lý nhân viên""
+2. Click vào ""Thêm mới""",TB,Màn thêm mới nhân viên,Màn thêm mới nhân viên hiển thị,,,,
+FUNC_NHANVIEN__14,Kiểm tra khi thêm nhân viên thành công với đầy đủ thông tin bắt buộc,,,"1. Truy cập màn hình ""Quản lý nhân viên""
+2. Click vào thêm nhân viên
+3. Nhập đầy đủ các trường thông tin bắt buộc: Mã nhân viên, tên nhân viên, số điện thoại, Vai trò
+4. Click nút xác nhận thêm",TB,Màn thêm mới nhân viên,"1. Hiển thị thông báo ""Thêm mới thành công""
+2. Nhân viên mới hiển thị ngay trong danh sách
+3. Dữ liệu đúng theo thông tin đã nhập",,,,
+FUNC_NHANVIEN__15,Kiểm tra thêm nhân viên nhập đầy đủ tất cả các trường (bao gồm bắt buộc + tùy chọn),,,"1. Truy cập màn hình ""Quản lý nhân viên""
+2. Click vào thêm nhân viên
+3. Nhập đầy đủ các trường thông tin bắt buộc + tùy chọn bao gồm:
+- Mã nhân viên
+- Tên nhân viên
+- Số điện thoại
+- CCCD
+- Ngày bắt đầu làm việc
+- Chi nhánh trả lương
+- Giới tính
+- Ngày sinh
+- Địa chỉ
+- Trạng thái 
+- Vai trò
+4. Click nút xác nhận thêm mới nhân viên",TB,Màn thêm mới nhân viên,"1. Hiển thị thông báo ""Thêm mới thành công""
+2. Nhân viên mới hiển thị trong danh sách
+3. Dữ liệu đúng theo thông tin đã nhập",,,,
+FUNC_NHANVIEN__16,Kiểm tra thêm nhân viên thiếu trường bắt buộc,,,"1. Truy cập màn hình ""Quản lý nhân viên""
+2. Click Thêm nhân viên
+3. Bỏ trống mã nhân viên/tên nhân viên/số điện thoại/vai trò
+4. Nhập đầy đủ các trường khác
+5. Quan sát danh sách kết quả hiển thị
+6. Click xác nhận thêm",TB,Màn thêm mới nhân viên,"1. Hệ thống hiển thị cảnh báo ""Vui lòng nhập mã nhân viên""
+2. Không lưu dữ liệu, form giữ nguyên để người dùng sửa",,,,
+FUNC_NHANVIEN__17,Kiểm tra thêm nhân viên bị trùng số điện thoại,,,"1. Truy cập màn hình ""Quản lý nhân viên""
+2. Click Thêm nhân viên
+3. Nhập Số điện thoại trùng với tài khoản có sẵn
+4. Click xác nhận thêm",TB,Màn thêm mới nhân viên,"1. Hệ thống hiển thị lỗi: ""Số điện thoại đã tồn tại""
+2. Không thêm mới",,,,
+FUNC_NHANVIEN__18,Kiểm tra thêm nhân viên làm việc ở nhiều chi nhánh & nhiều vai trò khác nhau,,,"1. Truy cập màn hình ""Quản lý nhân viên""
+2. Click Thêm nhân viên
+3. Chọn chi nhánh & vai trò làm việc của nhân viên
+4. Click xác nhận thêm
+5. Kiểm tra kết quả trả về",TB,Màn thêm mới nhân viên,"1. Hệ thống hiển thị thông báo ""Thêm mới thành công""
+2. Hiển thị danh sách các chi nhánh & vai trò của nhân viên
+3. Dữ liệu đúng theo thông tin đã nhập",,,,
+FUNC_NHANVIEN__19,Kiểm tra thêm nhân viên làm việc trùng chi nhánh & khác vai trò,,,"1. Truy cập màn hình ""Quản lý nhân viên""
+2. Click Thêm mới nhân viên
+3. Chọn chi nhanh & vai trò làm việc của nhân viên
+4. Click xác nhân thêm
+5. Kiểm tra kết quả trả về",TB,Màn thêm mới nhân viên,"1. Hệ thống hiển thị thông báo ""Không thể gán trùng vai trò cho nhân viên trong cùng một đơn vị""
+2. Không thêm mới",,,,
+,Kiểm tra chức năng chỉnh sửa thông tin nhân viên,,,,,,,,,,
+FUNC_NHANVIEN__20,Kiểm tra khi mở màn chỉnh sửa thông tin,,,"1. Truy cập màn ""Quản lý nhân viên""
+2. Tại cột thao tác, click vào sửa thông tin của 1 nhân viên",TB,Màn chỉnh sửa nhân viên,"1. Màn hình chỉnh sửa thông tin nhân viên hiển thị
+2. Không lỗi hiển thị, giao diện bảng cân đối, không xộc xệch",,,,
+FUNC_NHANVIEN__21,Kiểm tra khi sửa tên nhân viên thành công,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Tại cột thao tác, click vào sửa thông tin của 1 nhân viên
+3. Đổi tên nhân viên sang tên mới (VD: Nguyễn Văn A => Nguyễn Văn B)
+4. Click xác nhận sửa",TB,Màn chỉnh sửa nhân viên,"1. Hiển thị thông báo ""Chỉnh sửa nhân viên thành công""
+2. Danh sách vai trò cập nhật tên nhân viên mới",,,,
+FUNC_NHANVIEN__22,"Kiểm tra khi sửa trạng thái ""Đang làm"" sang ""Đã nghỉ""",,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Tại cột thao tác, click vào sửa thông tin của 1 nhân viên
+3. Chọn trạng thái ""Đang làm"" chuyển sang trạng thái ""Đã nghỉ""
+4. Click xác nhận sửa",TB,Màn chỉnh sửa nhân viên,"Toàn bộ đơn vị + vai trò của nhân viên tự động chuyển sang ""Ngừng hoạt động""",,,,
+FUNC_NHANVIEN__23,Kiểm tra khi điều chuyển nhân viên sang chi nhánh mới,,,"1. Truy cập vào màn hình ""Quản lý nhân viên""
+2. Tại cột thao tác, click vào sửa thông tin của 1 nhân viên
+3. Nhấn thêm đơn vị mới (chi nhánh B) + vai trò mới
+4. Thao tác trạng thái ""Đã nghỉ"" ở chi nhánh A
+5. Click xác nhận sửa",TB,Màn chỉnh sửa nhân viên,"- Nhân viên được gán chi nhánh B, chi nhánh A ở trạng thái ""Đã nghỉ""
+- Nhân viên ở chi nhánh A sẽ không thể truy cập vào điểm bán",,,,
+,Kiểm tra chức năng xem chi tiết nhân viên,,,,,,,,,,
+FUNC_NHANVIEN__24,Kiểm tra khi xem chi tiết thông tin cá nhân của nhân viên,,,"1. Truy cập màn danh sách nhân viên
+2. Click tên nhân viên bất kỳ
+3. Nhấn xem tab ""Thông tin cá nhân""",TB,Màn xem chi tiết nhân viên,Hiển thị đầy đủ thông tin cá nhân của nhân viên đúng với dữ liệu đã nhập,,,,
+FUNC_NHANVIEN__25,Kiểm tra khi xem chi tiết nhân viên - Chi nhánh làm việc của nhân viên,,,"1. Truy cập màn danh sách nhân viên
+2. Click tên nhân viên bất kỳ
+3. Nhấn xem tab ""Chi nhánh làm việc",TB,Màn xem chi tiết nhân viên,Hiển thị danh sách đơn vị/chi nhánh và vai trò của nhân viên,,,,
+FUNC_NHANVIEN__26,Kiểm tra chi tiết nhân viên - Công nợ của nhân viên,,,"1. Truy cập màn danh sách nhân viên
+2. Click tên nhân viên bất kỳ
+3. Nhấn xem tab ""Công nợ nhân viên""",TB,Màn xem chi tiết nhân viên,Hiển thị danh sách các phiếu đơn hàng nợ của khách hàng mà nhân viên thực hiện bán hàng trong ca làm việc,,,,
+,Kiểm tra chức năng Quản lý ca làm việc,,,,,,,,,,
+FUNC_NHANVIEN__27,Kiểm tra thêm ca làm việc thành công với đầy đủ thông tin,,,"1. Truy cập vào màn hình ""Quản lý ca làm việc""
+2. Click vào thêm mới ca làm việc
+3. Nhập các trường thông tin bắt buộc: 
+- Tên ca làm việc
+- Thời gian làm việc
+- Thời gian cho phép nhân viên chấm công
+- Trạng thái
+4. Click xác nhận
+5. Kiểm tra kết quả trả về",TB,Màn Quản lý ca làm việc,"- Hiển thị thông báo ""Tạo ca làm việc"" thành công
+- Hiển thị ca làm việc mới ở màn danh sách ca làm việc",,,,
+FUNC_NHANVIEN__28,"Kiểm tra thêm ca làm việc với trạng thái ""Ngừng hoạt động""",,,"1. Thêm ca làm việc mới 
+2. Chọn trạng thái ""Ngừng hoạt động""
+3. Click ""Xác nhận""",TB,Màn Quản lý ca làm việc,"1. Hiển thị thông báo tạo ca làm việc thành công
+2. Hiển thị màn ca làm việc mới ở màn danh sách với trạng thái ""Ngừng hoạt động""
+",,,,
+FUNC_NHANVIEN__29,Kiểm tra thêm ca làm việc bỏ trống trường bắt buộc,,,"1. Truy cập vào màn ""Quản lý ca làm việc""
+2. Click tạo ca làm việc
+3. Bỏ trống 1 trong các trường thông tin bắt buộc và điền các trường thông tin còn lại:
+- Tên ca làm việc
+- Thời gian làm việc
+- Thời gian cho phép nhân viên chấm công
+- Trạng thái
+4. Click xác nhận",TB,Màn Quản lý ca làm việc,"1. Hiển thị thông báo lỗi yêu cầu nhập trường thông tin bắt buộc 
+2. Không tạo được ca làm việc",,,,
+FUNC_NHANVIEN__30,Kiểm tra khi chỉnh sửa ca làm việc thành công,,,"1. Truy cập vào màn ""Quản lý ca làm việc""
+2. Click vào ""chỉnh sửa"" ca làm việc trong danh sách ca làm việc bất kỳ
+3. Click xác nhận
+4. Kiểm tra kết quả trả về",TB,Màn Quản lý ca làm việc,"1. Hiển thị thông báo chỉnh sửa ca làm việc thành công
+2. Hiển thị trường thông tin cập nhật thành công trong danh sách ca làm việc",,,,
+FUNC_NHANVIEN__31,Kiểm tra Hủy chỉnh sửa ca làm việc,,,"1. Sửa một số trường
+2. Click ""Hủy""",TB,Màn Quản lý ca làm việc,Dữ liệu ca làm việc không thay đổi,,,,
+FUNC_NHANVIEN__32,Kiểm tra Xóa ca làm việc thành công,,,"1. Truy cập màn danh sách ca làm việc
+2. Click icon ""Xóa""
+3. Popup confirm hiển thị ""Hành động này sẽ không thể hoàn tác, bạn có chắc chắn muốn xóa?""
+4. Click ""Xác nhận""
+5. Kiểm tra kết quả trả về",TB,Màn Quản lý ca làm việc,Ca làm việc bị xóa khỏi danh sách ,,,,
+FUNC_NHANVIEN__33,Kiểm tra Xóa ca làm việc thất bại,,,"1. Truy cập màn danh sách ca làm việc
+2. Click icon ""Xóa""
+3. Popup confirm hiển thị ""Hành động này sẽ không thể hoàn tác, bạn có chắc chắn muốn xóa?""
+4. Click ""Hủy""
+5. Kiểm tra kết quả trả về",TB,Màn Quản lý ca làm việc,"Ca làm việc không bị xóa, vẫn hiển thị ở trong màn danh sách ca làm việc",,,,
+,Kiểm tra chức năng Lịch làm việc,,,,,,,,,,
+FUNC_NHANVIEN__34,"Kiểm tra thêm lịch làm việc không chọn ""Lặp lại""",,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Xếp lịch làm việc""
+3. Nhập các trường bắt buộc và các trường tùy chọn:
+- Nhân viên áp dụng (có thể chọn 1 hoặc nhiều nhân viên)
+- Ngày
+- Ca làm việc
+- Ghi chú
+4. Không thao tác click ""Lặp lại""
+5. Click xác nhận
+6. Kiểm tra kết quả trả về",TB,Màn Quản lý lịch làm việc,"1. Hiển thị thông báo thêm lịch làm việc thành công 
+2. Lịch được tạo cho 1 hoặc nhiều nhân viên cùng ngày và ca làm việc cụ thể
+3. Hiển thị lịch đúng trên calendar",,,,
+FUNC_NHANVIEN__35,"Kiểm tra thêm lịch làm việc và có tích chọn ""Lặp lại""",,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Xếp lịch làm việc""
+3. Click ""Lặp lại""
+4. Nhập các trường thông tin bắt buộc và tùy chọn:
+- Nhân viên áp dụng
+- Ngày bắt đầu
+- Ngày kết thúc
+- Cấu hình ca làm việc
+- Thêm ca
+- Ghi chú
+5. Click xác nhận
+6. Kiểm tra kết quả trả về",TB,Màn Quản lý lịch làm việc,"1. Hiển thị thông báo thêm lịch làm việc thành công
+2. Lịch được tạo cho toàn bộ khoảng thời gian đã chọn
+3. Hiển thị lịch đúng trên calendar
+",,,,
+FUNC_NHANVIEN__36,"Kiểm tra thêm lịch làm việc và có tích chọn ""Lặp lại"" - chỉ chọn ngày bắt đầu không chọn ngày kết thúc",,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Xếp lịch làm việc""
+3. Click ""Lặp lại""
+4. Nhập các trường thông tin bắt buộc và tùy chọn:
+- Nhân viên áp dụng
+- Ngày bắt đầu
+- Cấu hình ca làm việc
+- Thêm ca
+- Ghi chú
+5. Click xác nhận
+6. Kiểm tra kết quả trả về",TB,Màn Quản lý lịch làm việc,"1. Hiện thị thông báo thêm lịch làm việc thành công
+2. Lịch được tạo cho toàn bộ khoảng thời gian bắt đầu và không chọn ngày kết thúc (tối đa 90 ngày từ ngày bắt đầu)
+3. Hiển thị lịch đúng trên calendar",,,,
+FUNC_NHANVIEN__37,Kiểm tra khi thêm lịch làm việc bỏ trống trường thông tin bắt buộc,,,"1. Truy cập vào màn ""Lịch làm việc""
+2. Click ""Xếp lịch làm việc""
+3. Bỏ trống 1 trong các trường thông tin bắt buộc:
+- Nhân viên áp dụng
+- Ngày bắt đầu
+- Cấu hình ca làm việc
+4. Click xác nhận
+5. Kiểm tra kết quả trả về",TB,Màn Quản lý lịch làm việc,"1. Hiển thị thông báo lỗi yêu cầu nhập trường thông tin bắt buộc bị bỏ trống
+2. Không tạo được lịch làm việc",,,,
+FUNC_NHANVIEN__38,Kiểm tra Xem lịch làm việc,,,"1. Truy cập màn ""Lịch làm việc""
+2. Chọn dạng calendar",TB,Màn Quản lý lịch làm việc,Hiển thị lịch làm việc đúng trên giao diện calendar,,,,
+FUNC_NHANVIEN__39,Kiểm tra Xóa lịch làm việc khi chưa có dữ liệu chấm công thành công,,,"1. Vào danh sách lịch làm việc
+2. Click chọn nhân viên bất kỳ trong danh sách lịch làm việc của nhân viên trên calendar
+3. Nhấn ""Hủy lịch""
+4. Hiển thị popup ""Hủy lịch làm việc"" của nhân viên đã chọn
+5. Chọn ""từ nay về sau""
+6. Nhấn xác nhận",TB,Màn Quản lý lịch làm việc,Các lịch đã thiết lập của nhân viên sẽ bị mất trên calendar trong khoảng thời gian từ thời điểm hủy lịch đến thời gian lịch còn hiệu lực,,,,
+FUNC_NHANVIEN__40,Kiểm tra Xóa lịch làm việc khi chưa có dữ liệu chấm công thành công,,,"1. Vào danh sách lịch làm việc
+2. Click chọn nhân viên bất kỳ trong danh sách lịch làm việc của nhân viên trên calendar
+3. Nhấn ""Hủy lịch""
+4. Hiển thị popup ""Hủy lịch làm việc"" của nhân viên đã chọn
+5. Chọn ""tất cả các lịch""
+6. Nhấn xác nhận",TB,Màn Quản lý lịch làm việc,Các lịch đã thiết lập của nhân viên sẽ bị mất trên calendar trong khoảng thời gian từ thời điểm hủy lịch đến thời gian lịch còn hiệu lực,,,,
+FUNC_NHANVIEN__41,Kiểm trả cấu hình chấm công thành công,,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Cấu hình chấm công""
+3. Tick ""Cần tạo lịch trước""
+4. Chọn ""Ghi nhận theo giờ thực tế""
+5. Nhập thời gian đi muộn/về sớm
+6. Click xác nhận",TB,Màn cấu hình chấm công,"1. Hiển thị thông báo tạo cấu hình chấm công thành công
+2. Lưu dữ liệu cấu hình chấm công
+",,,,
+FUNC_NHANVIEN__42,Kiểm tra cấu hình ghi nhận giờ theo ca bắt đầuv à kết thục ca,,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Cấu hình chấm công""
+3. Tick chọn ""Theo giờ bắt đầu và kết thúc ca""
+4. Click ""Xác nhận""",TB,Màn cấu hình chấm công,"1. Hiển thị thông báo tạo cấu hình chấm công thành công
+2. Hệ thống lấy đúng giờ từ trường thời gian cho phép chấm công trong ca làm việc",,,,
+FUNC_NHANVIEN__43,Kiểm tra cấu hình cho phép chấm 1 lượt vào - ra khi làm nhiều ca liên tục,,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Cấu hình chấm công""
+3. Tick chọn ""Cho phép chấm 1 lượt vào - ra khi làm nhiều ca liên tục""
+4. Nhập số ca tối đa và thời gian cách nhau
+5. Click xác nhận
+6. Kiểm tra kết quả trả về",TB,Màn cấu hình chấm công,"1. Hiển thị thông báo tạo cấu hình chấm công thành công
+2. hệ thống tự động ghi nhận vào - ra cho các ca còn lại theo cấu hình",,,,
+FUNC_NHANVIEN__44,Kiểm tra khi cho phép tự động chấm công áp dụng cho tất cả nhân viên,,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Cấu hình chấm công""
+3. Tick chọn ""Cho phép tự động chấm công""
+4. Chọn ""Áp dụng cho tất cả nhân viên""
+5. Click xác nhận",TB,Màn cấu hình chấm công,"1. Hiển thị thông báo tạo cấu  hình chấm công thành công
+2. Hệ thống ghi nhận toàn bộ nhân viên được áp dụng cấu hình tự động chấm công",,,,
+FUNC_NHANVIEN__45,Kiểm tra khi cho phép tự động chấm công áp dụng cho nhân viên cụ thể,,,"1. Truy cập màn ""Lịch làm việc""
+2. Click ""Cấu hình chấm công""
+3. Tick chọn ""Cho phép tự động chấm công""
+4. Chọn ""Áp dụng cho nhân viên cụ thể""
+5. Click xác nhận",TB,Màn cấu hình chấm công,"1. Hiển thị thông báo tạo cấu hình chấm công thành công
+2. Hệ thống ghi nhận chỉ nhân viên được chọn áp dụng cấu hình tự động chấm công",,,,
+,Kiểm tra chức năng Công nợ nhân viên,,,,,,,,,,
+FUNC_NHANVIEN__46,Kiểm tra hiển thị màn Công nợ nhân viên,,,"Truy cập màn ""Quản lý công nợ nhân viên""",TB,Màn công nợ nhân viên,"1. Hệ thống hiển thị màn hình Công nợ nhân viên đúng giao diện thiết kế (đúng về font chữ; cỡ chữ; màu sắc; khoảng cách các hàng; màu sắc...)
+2. Bố cục tổng thể: title, filter, bảng dữ liệu, phân trang căn chỉnh đúng thiết kế, không có lỗi trắng trang.",,,,
+FUNC_NHANVIEN__47,Kiểm tra tìm kiếm với từ khóa hợp lệ,,,"1. Truy cập vào màn hình ""Công nợ nhân viên""
+2. Xác định một từ khóa hợp lệ (VD: CHT BÁCH HÓA BƯU ĐIỆN THANH XUÂN)
+3. Nhập từ khóa vào ô tìm kiếm
+4. Nhấn phím Enter
+5. Kiểm tra kết quả trả về",TB,Màn công nợ nhân viên,"1. Hệ thống hiển thị danh sách có chứa từ khóa tìm kiếm
+2. Giao diện bảng dữ liệu đúng định dạng, không lỗi căn lề, font chữ, màu sắc
+3. Cột STT, tên nhân viên, số điện thoại, tổng tiền khách nợ, hành động vẫn đủ, không thiếu trường
+4. Không xảy ra lỗi giao diện hoặc lỗi hệ thống",,,,
+FUNC_NHANVIEN__48,Kiểm tra tìm kiếm với từ khóa không tồn tại,,,"1. Truy cập vào màn hình ""Công nợ nhân viên""
+2. Nhập một từ khóa không có trong hệ thống vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn công nợ nhân viên,"1. Hệ thống trả về bảng trống
+2. Không phát sinh lỗi giao diện, giao diện vẫm giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__49,Kiểm tra tìm kiếm với ký tự đặc biệt,,,"1. Truy cập vào màn hình ""Công nợ nhân viên""
+2. Nhập các ký tự đặc biệt như: 
+!@#$%^&*() vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn công nợ nhân viên,"1. Hệ thống xử lý bình thường, không báo lỗi hệ thống
+2. Hệ thống trả về bảng trống
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__50,Kiểm tra tìm kiếm với từ khóa có khoảng trắng,,,"1. Truy cập vào màn hình ""Công nợ nhân viên""
+2. Nhập từ khóa có chứa khoảng trắng ở đầu hoặc cuối (VD: "" CHT BÁCH HÓA BƯU ĐIỆN THANH XUÂN "")
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn công nợ nhân viên,"1. Hệ thống tự động loại bỏ khoảng trắng thừa
+2. Hiển thị kết quả tìm kiếm đúng với từ khóa chuẩn
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__51,"Kiểm tra tìm kiếm với phân biệt chữ hoa và chữ thường, không dấu",,,"1. Truy cập vào màn hình ""Công nợ nhân viên""
+2. Nhập từ khóa bằng chữ hoa, chữ thường hoặc kết hợp
+3. Nhấn phím Enter
+4. So sánh kết quả tìm kiếm",TB,Màn công nợ nhân viên,"1. Hệ thống tìm kiếm không phân biệt chữ hoa chữ thường
+2. Hiển thị đúng danh sách bản ghi phù hợp
+3. Không phát sinh lỗi giao diện, giao diện vẫn giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__52,Kiểm tra tìm kiếm khi để trống ô tìm kiếm,,,"1. Truy cập vào màn hình ""Công nợ nhân viên""
+2. Không nhập gì vào ô tìm kiếm
+3. Nhấn phím Enter
+4. Kiểm tra kết quả trả về",TB,Màn công nợ nhân viên,"1. Hệ thống về giao diện như lúc đầu
+2. Không phát sinh lỗi hệ thống, không phát sinh lỗi giao diện, giao diện giữ định dạng chuẩn, không vỡ layout",,,,
+FUNC_NHANVIEN__53,Kiểm tra nhập khoảng trắng liên tiếp vào ô tìm kiếm,,,"1. Tại ô tìm kiếm, nhập 1 chuỗi toàn dấu 
+("" "")
+2. Ấn phím Enter",TB,Màn công nợ nhân viên,"1. Hệ thống tự động tìm khoảng trắng
+2. Nếu chuỗi rỗng sau tìm. Hệ thống hiển thị danh sách ban đầu",,,,
+FUNC_NHANVIEN__54,Kiểm tra xem chi tiết công nợ nhân viên thành công,,,"1. Truy cập vào màn hình ""Công nợ nhân viên""
+2. Click ""Chi tiết"" 
+3. Kiểm tra kết quả trả về",TB,Màn công nợ nhân viên,"1. Hệ thống hiển thị tab công nợ nhân viên trong chi tiết module Quản lý nhân viên
+2. Hiển thị đúng nhân viên và công nợ của nhân viên khi bán hàng cho khách
+3. Hiển thị đúng số tiền còn nợ ở 2 màn: Module công nợ nhân viên & tab công nợ nhân viên",,,,
+,,,,,,,"
+",,,,

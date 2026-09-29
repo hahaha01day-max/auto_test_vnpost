@@ -1,0 +1,84 @@
+<div class="flex">
+  <h1>Báo cáo — <%= run.module_name %></h1>
+  <span class="right">
+    <a class="btn" href="/runs/<%= run.id %>/export.xlsx">Xuất Excel</a>
+    <a class="btn" href="/runs/<%= run.id %>">Xem log</a>
+  </span>
+</div>
+<p class="sub">
+  <span class="mono"><%= run.id %></span> · môi trường <b><%= run.profile_name %></b>
+  <span class="mono small"><%= run.envSnapshot.baseUrl %></span> ·
+  <%= run.queued_at.replace('T',' ').slice(0,19) %> · bởi <%= run.created_by %>
+</p>
+
+<% if (!results) { %>
+  <div class="err">Run này không sinh được <span class="mono">results.json</span>.
+  <%= run.error %> — xem <a href="/runs/<%= run.id %>">log</a>.</div>
+<% } else { %>
+
+<% if (results.stats.setupFailed > 0) { %>
+<div class="err">
+  <b>🔴 <%= results.stats.setupFailed %>/<%= results.stats.setupTotal %> bước đăng nhập / dựng dữ liệu bị hỏng.</b>
+  Mọi case chạy sau đó đều vô nghĩa — <b>đừng đọc tỉ lệ đạt bên dưới như lỗi sản phẩm</b>.
+  Kiểm lại URL và tài khoản trong <a href="/profiles/<%= run.profile_id %>">hồ sơ môi trường</a>.
+</div>
+<% } %>
+
+<div class="card">
+  <span class="stat"><b><%= results.stats.passRate %>%</b><span>tỉ lệ đạt</span></span>
+  <span class="stat"><b><%= results.stats.passed %></b><span>đạt</span></span>
+  <span class="stat"><b style="color:var(--red)"><%= results.stats.failed %></b><span>lỗi</span></span>
+  <span class="stat"><b><%= results.stats.skipped %></b><span>bỏ qua</span></span>
+  <span class="stat"><b><%= (results.stats.durationMs/1000).toFixed(0) %>s</b><span>thời lượng</span></span>
+</div>
+
+<% if (diff.hasPrevious) { %>
+<div class="card">
+  <b>So với run trước</b> <span class="mono small muted"><%= run.summary.comparedWith %></span>
+  <div style="margin-top:8px">
+    <span class="stat"><b style="color:var(--red)"><%= diff.newFailures.length %></b><span>lỗi MỚI</span></span>
+    <span class="stat"><b><%= diff.stillFailing.length %></b><span>lỗi cũ còn nguyên</span></span>
+    <span class="stat"><b style="color:var(--green)"><%= diff.fixed.length %></b><span>đã hết lỗi</span></span>
+  </div>
+  <% if (diff.newFailures.length > 0) { %>
+    <div class="small" style="margin-top:8px"><b>Lỗi mới:</b>
+      <%= diff.newFailures.map((t) => t.caseId || t.title).join(', ') %></div>
+  <% } %>
+</div>
+<% } else { %>
+<div class="card small muted">Chưa có run nào trước đó của module này để so sánh.</div>
+<% } %>
+
+<h2>Bước đăng nhập / dựng dữ liệu</h2>
+<table>
+  <tr><th>Vai</th><th>Bước</th><th>Kết quả</th><th>Lỗi</th></tr>
+  <% results.setupTests.forEach((t) => { %>
+  <tr>
+    <td class="small"><%= t.project %></td>
+    <td class="small"><%= t.title %></td>
+    <td><span class="badge <%= t.status === 'passed' ? 'b-pass' : (t.status === 'skipped' ? 'b-no' : 'b-fail') %>"><%= label(t.status) %></span></td>
+    <td class="small muted"><%= t.error.split('\n')[0] %></td>
+  </tr>
+  <% }) %>
+</table>
+
+<h2>Case</h2>
+<table>
+  <tr><th>Mã</th><th>Tên</th><th>Vai</th><th>Kết quả</th><th>Thời lượng</th><th>Lỗi</th><th>Bằng chứng</th></tr>
+  <% results.tests.forEach((t) => { %>
+  <tr>
+    <td class="mono small"><%= t.caseId || '' %></td>
+    <td><%= t.title %></td>
+    <td class="small muted"><%= t.project %></td>
+    <td><span class="badge <%= t.status === 'passed' ? 'b-pass' : (t.status === 'skipped' ? 'b-no' : 'b-fail') %>"><%= label(t.status) %></span></td>
+    <td class="small"><%= (t.durationMs/1000).toFixed(1) %>s</td>
+    <td class="small muted" style="max-width:340px"><%= t.error.split('\n')[0] %></td>
+    <td class="small">
+      <% t.attachments.forEach((a) => { %>
+        <a href="/runs/<%= run.id %>/artifacts/<%= encodeURIComponent(a.rel) %>"><%= a.name %></a>
+      <% }) %>
+    </td>
+  </tr>
+  <% }) %>
+</table>
+<% } %>

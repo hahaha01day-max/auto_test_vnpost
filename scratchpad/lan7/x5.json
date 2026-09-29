@@ -1,0 +1,273 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 187,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:50:16.454Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tai-lai-xml.tct.spec.js",
+      "file": "tai-lai-xml.tct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "27_070_005 — Tải lên trùng file XML đã đối soát",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "lượt 1 (file đã đối soát)",
+                  "description": "{\"hoi\":\"\",\"tb\":\"\",\"kq\":\"{\\\"fileId\\\":274,\\\"invoiceId\\\":52,\\\"filename\\\":\\\"AUTOTEST_tai_lai_00001000.xml\\\",\\\"poCode\\\":\\\"PO2609238817\\\",\\\"parseStatus\\\":\\\"PARSED\\\",\\\"mappingStatus\\\":\\\"MAPPED\\\",\\\"reconcileStatus\\\":\\\"MISMATCHED\\\",\\\"message\\\":null,\\\"requireCo\"} · trạng thái MISMATCHED · hoá đơn 52:C26PO00001000 → 52:C26PO00001000"
+                },
+                {
+                  "type": "lượt 2 (tải lại đúng file)",
+                  "description": "{\"hoi\":\"\",\"tb\":\"\",\"kq\":\"{\\\"fileId\\\":275,\\\"invoiceId\\\":52,\\\"filename\\\":\\\"AUTOTEST_tai_lai_00001000.xml\\\",\\\"poCode\\\":\\\"PO2609238817\\\",\\\"parseStatus\\\":\\\"PARSED\\\",\\\"mappingStatus\\\":\\\"MAPPED\\\",\\\"reconcileStatus\\\":\\\"MISMATCHED\\\",\\\"message\\\":null,\\\"requireCo\"} · trạng thái MISMATCHED · hoá đơn 52:C26PO00001000"
+                },
+                {
+                  "type": "trả snapshot",
+                  "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"gSWZPs\"} · MATCHED"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "tct",
+              "projectName": "tct",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 56221,
+                  "error": {
+                    "message": "SyntaxError: Expected ':' after property name in JSON at position 201 (line 1 column 202)",
+                    "stack": "SyntaxError: Expected ':' after property name in JSON at position 201 (line 1 column 202)\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests/tai-lai-xml.tct.spec.js:69:15",
+                    "location": {
+                      "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests/tai-lai-xml.tct.spec.js",
+                      "column": 15,
+                      "line": 69
+                    },
+                    "snippet": "  67 | \t\t// Kết quả đối soát trả ngay trong response upload (toast tắt trước khi kịp đọc).\n  68 | \t\texpect(l2.kq, 'Tải lại mà response không có kết quả đối soát').toMatch(/\"reconcileStatus\":\"(MATCHED|MISMATCHED)\"/);\n> 69 | \t\texpect(JSON.parse(l2.kq.replace(/…$/, '') + (l2.kq.endsWith('}') ? '' : '\"}')).invoiceId ?? d.invoiceId, 'Tải lại gắn vào hoá đơn KHÁC').toBe(d.invoiceId);\n     | \t\t            ^\n  70 | \t\tconst tep2 = (await P.tim(page, `AUTOTEST_tai_lai_${d.invoiceNo}`)).filter((r) => (r.filename ?? '').includes(`AUTOTEST_tai_lai_${d.invoiceNo}`));\n  71 | \t\ttest.info().annotations.push({ type: 'bản ghi FILE cùng tên', description: `${tep2.length} (mỗi lượt tải lưu thêm 1 file; hoá đơn không nhân đôi)` });\n  72 | \t} finally {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests/tai-lai-xml.tct.spec.js",
+                        "column": 15,
+                        "line": 69
+                      },
+                      "message": "SyntaxError: Expected ':' after property name in JSON at position 201 (line 1 column 202)\n\n  67 | \t\t// Kết quả đối soát trả ngay trong response upload (toast tắt trước khi kịp đọc).\n  68 | \t\texpect(l2.kq, 'Tải lại mà response không có kết quả đối soát').toMatch(/\"reconcileStatus\":\"(MATCHED|MISMATCHED)\"/);\n> 69 | \t\texpect(JSON.parse(l2.kq.replace(/…$/, '') + (l2.kq.endsWith('}') ? '' : '\"}')).invoiceId ?? d.invoiceId, 'Tải lại gắn vào hoá đơn KHÁC').toBe(d.invoiceId);\n     | \t\t            ^\n  70 | \t\tconst tep2 = (await P.tim(page, `AUTOTEST_tai_lai_${d.invoiceNo}`)).filter((r) => (r.filename ?? '').includes(`AUTOTEST_tai_lai_${d.invoiceNo}`));\n  71 | \t\ttest.info().annotations.push({ type: 'bản ghi FILE cùng tên', description: `${tep2.length} (mỗi lượt tải lưu thêm 1 file; hoá đơn không nhân đôi)` });\n  72 | \t} finally {\n    at /Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests/tai-lai-xml.tct.spec.js:69:15"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T13:50:17.002Z",
+                  "annotations": [
+                    {
+                      "type": "lượt 1 (file đã đối soát)",
+                      "description": "{\"hoi\":\"\",\"tb\":\"\",\"kq\":\"{\\\"fileId\\\":274,\\\"invoiceId\\\":52,\\\"filename\\\":\\\"AUTOTEST_tai_lai_00001000.xml\\\",\\\"poCode\\\":\\\"PO2609238817\\\",\\\"parseStatus\\\":\\\"PARSED\\\",\\\"mappingStatus\\\":\\\"MAPPED\\\",\\\"reconcileStatus\\\":\\\"MISMATCHED\\\",\\\"message\\\":null,\\\"requireCo\"} · trạng thái MISMATCHED · hoá đơn 52:C26PO00001000 → 52:C26PO00001000"
+                    },
+                    {
+                      "type": "lượt 2 (tải lại đúng file)",
+                      "description": "{\"hoi\":\"\",\"tb\":\"\",\"kq\":\"{\\\"fileId\\\":275,\\\"invoiceId\\\":52,\\\"filename\\\":\\\"AUTOTEST_tai_lai_00001000.xml\\\",\\\"poCode\\\":\\\"PO2609238817\\\",\\\"parseStatus\\\":\\\"PARSED\\\",\\\"mappingStatus\\\":\\\"MAPPED\\\",\\\"reconcileStatus\\\":\\\"MISMATCHED\\\",\\\"message\\\":null,\\\"requireCo\"} · trạng thái MISMATCHED · hoá đơn 52:C26PO00001000"
+                    },
+                    {
+                      "type": "trả snapshot",
+                      "description": "{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"gSWZPs\"} · MATCHED"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results/tai-lai-xml.tct-27-070-005-a1f2d--trùng-file-XML-đã-đối-soát-tct/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results/tai-lai-xml.tct-27-070-005-a1f2d--trùng-file-XML-đã-đối-soát-tct/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results/tai-lai-xml.tct-27-070-005-a1f2d--trùng-file-XML-đã-đối-soát-tct/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/test-output/playwright-results/tai-lai-xml.tct-27-070-005-a1f2d--trùng-file-XML-đã-đối-soát-tct/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/27_doi_soat_hoa_don/tests/tai-lai-xml.tct.spec.js",
+                    "column": 15,
+                    "line": 69
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cd7b75036807b64e167a-5b13f9a989a45d006372",
+          "file": "tai-lai-xml.tct.spec.js",
+          "line": 29,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T13:50:16.196Z",
+    "duration": 57564.807,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

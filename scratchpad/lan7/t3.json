@@ -1,0 +1,2127 @@
+{
+  "config": {
+    "configFile": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/playwright.config.js",
+    "rootDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/shared/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/roles\\.setup\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "shop",
+        "name": "shop",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.shop\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "gdv",
+        "name": "gdv",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.gdv\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "province",
+        "name": "province",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.province\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tct",
+        "name": "tct",
+        "testDir": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.tct\\.spec\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../shared/auth/roles.setup.js",
+      "file": "../../shared/auth/roles.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "đăng nhập vai tct (Tổng công ty)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 181,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:24:26.473Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-tct-Tổng-công-ty--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-d6b4d089c0b1634762d3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "đăng nhập vai gdv (Giao dịch viên)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 102,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T10:24:26.759Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/roles.setup.js-đăng-nhập-vai-gdv-Giao-dịch-viên--setup/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "168296b5916bca3cd8b3-bb6c0820a6c25be59cc3",
+          "file": "../../shared/auth/roles.setup.js",
+          "line": 43,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "tich-diem.gdv.spec.js",
+      "file": "tich-diem.gdv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "20 · Tích điểm khi bán (vai gdv, SỬA TẠM cấu hình chuỗi)",
+          "file": "tich-diem.gdv.spec.js",
+          "line": 191,
+          "column": 6,
+          "specs": [
+            {
+              "title": "20_050_001 — Đơn nhỏ hơn giá trị đơn hàng tối thiểu thì không tích điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":101000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "257"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"oFkzcT\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"SVUUAp\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 101742,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:24:27.177Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":101000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "257"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"oFkzcT\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"SVUUAp\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-db6bf-i-thiểu-thì-không-tích-điểm-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-1a4ccdee5947a756f703",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 194,
+              "column": 2
+            },
+            {
+              "title": "20_050_002 — Đơn bằng đúng giá trị đơn hàng tối thiểu thì tích điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":100000,\"orderAmountPerPoint\":1000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "259"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"UdwpCC\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"sXSKsM\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 55404,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:26:08.999Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":100000,\"orderAmountPerPoint\":1000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "259"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"UdwpCC\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"sXSKsM\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-18b63-àng-tối-thiểu-thì-tích-điểm-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-8e37fbabed3813dd2d9b",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 203,
+              "column": 2
+            },
+            {
+              "title": "20_050_003 — Đơn lớn hơn giá trị đơn hàng tối thiểu thì tích điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":99000,\"orderAmountPerPoint\":1000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "260"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"PbiOtK\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"CxYIPS\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53792,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:27:04.409Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountConditional\":99000,\"orderAmountPerPoint\":1000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "260"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"PbiOtK\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"CxYIPS\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-db3e9-àng-tối-thiểu-thì-tích-điểm-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-ce0eed8c03665c0124f7",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 212,
+              "column": 2
+            },
+            {
+              "title": "20_050_004 — SP không giảm giá vẫn tích khi bật loại trừ SP giảm giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "262"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "0"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VeECXi\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"xubuDX\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 54572,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:27:58.207Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "262"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "0"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VeECXi\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"xubuDX\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-226ae-hi-bật-loại-trừ-SP-giảm-giá-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-d6bb8047dac57945f6c2",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_007 — HĐ có giảm giá không tích khi bật loại trừ HĐ giảm giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM rác",
+                      "description": "690 A7KH19_KM_20_050_007_140437"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":89000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":90000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "264"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "10000"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"bhGrsz\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"iIMjKZ\"}]"
+                    },
+                    {
+                      "type": "dừng CTKM rác",
+                      "description": "690 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 101899,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:28:52.784Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM rác",
+                          "description": "690 A7KH19_KM_20_050_007_140437"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":89000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":90000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "264"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "10000"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"bhGrsz\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"iIMjKZ\"}]"
+                        },
+                        {
+                          "type": "dừng CTKM rác",
+                          "description": "690 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-e65c5-hi-bật-loại-trừ-HĐ-giảm-giá-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-ab248f20644fc244141a",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_008 — HĐ không giảm giá tích bình thường",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "267"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "0"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ouWtDg\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"WwEmOj\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 54408,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:30:34.689Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "267"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "0"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ouWtDg\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"WwEmOj\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-56ab0-g-giảm-giá-tích-bình-thường-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-6fc30122ef365d8112dd",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_010 — Đơn không thanh toán bằng điểm thì tích điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForPointPaymentInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "268"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "0"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"wuZtsC\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"GrOOIw\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53740,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:31:29.102Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForPointPaymentInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "268"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "0"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"wuZtsC\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"GrOOIw\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-11c8a-oán-bằng-điểm-thì-tích-điểm-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-45d04afd47bda760563d",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_011 — Đạt tối thiểu và không có SP giảm giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "271"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "0"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"EzJjCI\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"TvNngu\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53918,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:32:22.850Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "271"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "0"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"EzJjCI\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"TvNngu\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-6a9e7-iểu-và-không-có-SP-giảm-giá-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-4ad7fb7deda3aa68a369",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_012 — Không có SP giảm giá nhưng chưa đạt tối thiểu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":101000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "273"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "0"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"onrdne\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"LRhlqv\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 101419,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:33:16.773Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedProduct\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":101000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "273"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "0"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"onrdne\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"LRhlqv\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-69cd7-iá-nhưng-chưa-đạt-tối-thiểu-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-dfdbe646e41432ccdb7a",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_015 — Đạt tối thiểu và HĐ không giảm giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "278"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "0"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"wojxXi\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"eLuCXh\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 54331,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:34:58.198Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "278"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "0"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"wojxXi\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"eLuCXh\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-1b560--thiểu-và-HĐ-không-giảm-giá-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-211ad519bf0c8868c23c",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_016 — HĐ không giảm giá nhưng chưa đạt tối thiểu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":101000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "279"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "0"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"QMhkCD\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"IjwlWD\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 101339,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:35:52.537Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":101000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "279"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "0"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"QMhkCD\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"IjwlWD\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-de06a-iá-nhưng-chưa-đạt-tối-thiểu-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-2410bbb9b4a0c930431c",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_017 — Đạt tối thiểu nhưng HĐ có giảm giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM rác",
+                      "description": "691 A7KH19_KM_20_050_017_661508"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":89000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":90000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "283"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "10000"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"gvbenz\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"mUNSVv\"}]"
+                    },
+                    {
+                      "type": "dừng CTKM rác",
+                      "description": "691 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 103735,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:37:33.896Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM rác",
+                          "description": "691 A7KH19_KM_20_050_017_661508"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":89000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":90000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "283"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "10000"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"gvbenz\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"mUNSVv\"}]"
+                        },
+                        {
+                          "type": "dừng CTKM rác",
+                          "description": "691 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-99a7b--thiểu-nhưng-HĐ-có-giảm-giá-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-53ba24dd591dff14257d",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_018 — Không đạt tối thiểu và HĐ có giảm giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM rác",
+                      "description": "692 A7KH19_KM_20_050_018_765337"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":91000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":90000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "286"
+                    },
+                    {
+                      "type": "giảm trên HĐ",
+                      "description": "10000"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"SSHOP-500\",\"message\":\"Lỗi hệ thống thử lại sau\",\"label\":\"ERROR_GENERAL_ERROR\"},{\"code\":\"SSHOP-500\",\"message\":\"Lỗi hệ thống thử lại sau\",\"label\":\"ERROR_GENERAL_ERROR\"}]"
+                    },
+                    {
+                      "type": "dừng CTKM rác",
+                      "description": "692 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 103836,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:39:17.636Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM rác",
+                          "description": "692 A7KH19_KM_20_050_018_765337"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"noPointForDiscountedInvoice\":true,\"orderAmountPerPoint\":1000,\"orderAmountConditional\":91000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":90000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "286"
+                        },
+                        {
+                          "type": "giảm trên HĐ",
+                          "description": "10000"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"SSHOP-500\",\"message\":\"Lỗi hệ thống thử lại sau\",\"label\":\"ERROR_GENERAL_ERROR\"},{\"code\":\"SSHOP-500\",\"message\":\"Lỗi hệ thống thử lại sau\",\"label\":\"ERROR_GENERAL_ERROR\"}]"
+                        },
+                        {
+                          "type": "dừng CTKM rác",
+                          "description": "692 → {\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"ndVDWc\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-fd1bd-tối-thiểu-và-HĐ-có-giảm-giá-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-a7a9716230eb419114bb",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "20_050_019 — Chương trình giới hạn nhóm khách hàng chỉ tích cho khách trong nhóm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "nhóm tuỳ chỉnh",
+                      "description": "208 — thành viên A7KH192894758"
+                    },
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"isAppliedAll\":false,\"customerGroupIds\":[208],\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "289"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"zMEcVd\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VwLsLt\"}]"
+                    },
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"isAppliedAll\":false,\"customerGroupIds\":[208],\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "291"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"oRcpdn\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"vNiGYC\"}]"
+                    },
+                    {
+                      "type": "xoá nhóm",
+                      "description": "{\"code\":\"SSHOP-405\",\"message\":\"Mã truy cập hết hạn\",\"label\":\"ERROR_TOKEN_EXPIRED\"}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 169122,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:41:01.479Z",
+                      "annotations": [
+                        {
+                          "type": "nhóm tuỳ chỉnh",
+                          "description": "208 — thành viên A7KH192894758"
+                        },
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"isAppliedAll\":false,\"customerGroupIds\":[208],\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "289"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · kỳ vọng 100"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"zMEcVd\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VwLsLt\"}]"
+                        },
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"isAppliedAll\":false,\"customerGroupIds\":[208],\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "291"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"oRcpdn\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"vNiGYC\"}]"
+                        },
+                        {
+                          "type": "xoá nhóm",
+                          "description": "{\"code\":\"SSHOP-405\",\"message\":\"Mã truy cập hết hạn\",\"label\":\"ERROR_TOKEN_EXPIRED\"}"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-6a2d2-ỉ-tích-cho-khách-trong-nhóm-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-c02dab0fa3ef838f1ab4",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 251,
+              "column": 2
+            },
+            {
+              "title": "20_050_020 — Tích điểm theo ngành hàng chỉ tính sản phẩm thuộc danh mục đã chọn",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"campaignType\":1,\"pointByCategory\":true,\"categoryIds\":[2761],\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "296"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":100,\"dong\":1} · danh mục 2761 · kỳ vọng ≈ floor(100000/1000)"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"sMFquQ\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"QPdIHr\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53458,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:43:50.610Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"campaignType\":1,\"pointByCategory\":true,\"categoryIds\":[2761],\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "296"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":100,\"dong\":1} · danh mục 2761 · kỳ vọng ≈ floor(100000/1000)"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"sMFquQ\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"QPdIHr\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-f639c-phẩm-thuộc-danh-mục-đã-chọn-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-b4a3c4986d3b502fe09e",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 278,
+              "column": 2
+            },
+            {
+              "title": "20_050_021 — Tỷ lệ tích điểm bằng 0 làm đơn không tích điểm mà không báo gì",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountPerPoint\":0,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "298"
+                    },
+                    {
+                      "type": "thông báo sau thanh toán",
+                      "description": "Thanh toán thành công"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"DHdxcM\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VbYGRr\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 101159,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:44:44.073Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountPerPoint\":0,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "298"
+                        },
+                        {
+                          "type": "thông báo sau thanh toán",
+                          "description": "Thanh toán thành công"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"DHdxcM\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"VbYGRr\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-3a8c9-g-tích-điểm-mà-không-báo-gì-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-f8619e0a07d11ff78ab3",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 294,
+              "column": 2
+            },
+            {
+              "title": "20_050_022 — Điểm tích được làm tròn xuống",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountPerPoint\":3000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "299"
+                    },
+                    {
+                      "type": "phép chia",
+                      "description": "100000 / 3000 = 33.333"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":33,\"dong\":1} · kỳ vọng 33"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lAtCnG\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"TkqdyN\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53772,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:46:25.237Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"orderAmountPerPoint\":3000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "299"
+                        },
+                        {
+                          "type": "phép chia",
+                          "description": "100000 / 3000 = 33.333"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":33,\"dong\":1} · kỳ vọng 33"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"lAtCnG\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"TkqdyN\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-45a53-ểm-tích-được-làm-tròn-xuống-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-fb8e55e76c5666eb0fc4",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 304,
+              "column": 2
+            },
+            {
+              "title": "20_050_023 — Chương trình chưa tới ngày bắt đầu hoặc đã hết hạn thì không tích điểm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"startTime\":\"20/09/2026\",\"endTime\":\"24/09/2026\",\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "300"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"qrbVsw\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"XakwCA\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 100594,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:47:19.015Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"scopeType\":\"DIEM_BAN\",\"scopes\":\"171 đơn vị\",\"startTime\":\"20/09/2026\",\"endTime\":\"24/09/2026\",\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "300"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"qrbVsw\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"XakwCA\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-39485-hết-hạn-thì-không-tích-điểm-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-77a1cde52b9a6c293c5c",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 315,
+              "column": 2
+            },
+            {
+              "title": "20_030_010 — Điểm bán ngoài phạm vi áp dụng khi bán hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 420000,
+                  "annotations": [
+                    {
+                      "type": "CTKM",
+                      "description": "bỏ 1 CTKM"
+                    },
+                    {
+                      "type": "cấu hình tạm",
+                      "description": "{\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                    },
+                    {
+                      "type": "giỏ",
+                      "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                    },
+                    {
+                      "type": "đơn",
+                      "description": "304"
+                    },
+                    {
+                      "type": "điểm",
+                      "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                    },
+                    {
+                      "type": "khôi phục",
+                      "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"mjjcEw\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"tZndPM\"}]"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "gdv",
+                  "projectName": "gdv",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 100920,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T10:48:59.615Z",
+                      "annotations": [
+                        {
+                          "type": "CTKM",
+                          "description": "bỏ 1 CTKM"
+                        },
+                        {
+                          "type": "cấu hình tạm",
+                          "description": "{\"orderAmountPerPoint\":1000,\"orderAmountConditional\":99000}"
+                        },
+                        {
+                          "type": "giỏ",
+                          "description": "{\"truocVat\":100000,\"vat\":0,\"sauVat\":100000,\"canThanhToan\":100000}"
+                        },
+                        {
+                          "type": "đơn",
+                          "description": "304"
+                        },
+                        {
+                          "type": "điểm",
+                          "description": "{\"diem\":0,\"dong\":0} · kỳ vọng 0"
+                        },
+                        {
+                          "type": "khôi phục",
+                          "description": "[{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"mjjcEw\"},{\"code\":\"200\",\"message\":\"Thành công\",\"label\":\"API_STATUS_SUCCESS\",\"requestId\":\"tZndPM\"}]"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/tungnguyen/project/java/vnpost/auto_test_vnpost/tai-lieu-test/20_khach_hang_than_thiet/test-output/playwright-results/tich-diem.gdv-20-·-Tích-đi-8819e-hạm-vi-áp-dụng-khi-bán-hàng-gdv/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed224871c7204922eb0b-52b1e0f3093e0f11e66a",
+              "file": "tich-diem.gdv.spec.js",
+              "line": 326,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-25T10:24:26.074Z",
+    "duration": 1575328.222,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
